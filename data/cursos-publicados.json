@@ -1911,6 +1911,308 @@
           "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-administracao-integrado",
+      "nome": "Técnico em Administração Integrado",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Arcos",
+        "Bambuí",
+        "Formiga",
+        "Ouro Branco",
+        "Ouro Preto",
+        "Ponte Nova",
+        "Ribeirão das Neves",
+        "Sabará"
+      ],
+      "modalidade": "Presencial, com carga EaD variável por campus",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "revisao_coordenacao": true,
+      "pendencias": [
+        "Confirmar PPC, matriz curricular e carga horária do integrado em cada campus",
+        "Conferir e-mails funcionais de Ouro Preto e Ribeirão das Neves",
+        "Confirmar componente EaD e cronogramas específicos de Arcos e Sabará",
+        "Identificar projetos, bolsas e resultados documentados por campus",
+        "Fotografias, autorizações e reconhecimentos do próprio curso"
+      ],
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Administração"
+            },
+            {
+              "rotulo": "Categoria / tipo",
+              "valor": "Técnico Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Arcos; Bambuí; Formiga; Ouro Branco; Ouro Preto; Ponte Nova; Ribeirão das Neves; Sabará"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos",
+              "validacao": "Confirmar o PPC vigente de cada campus, sem generalizar cargas horárias."
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com carga EaD variável por campus",
+              "validacao": "Arcos: 16% EaD; Sabará: 16,67% EaD. Os demais campi exigem leitura do PPC vigente."
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta",
+              "validacao": "Preencher carga horária total de ensino médio + técnico para cada campus, sem confundir com a parte profissionalizante."
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta",
+              "validacao": "Incluir documentos vigentes específicos de cada campus."
+            },
+            {
+              "rotulo": "Contatos",
+              "valor": "Informação incompleta",
+              "validacao": "Usar os e-mails funcionais disponíveis por campus na tabela; Ouro Preto e Ribeirão das Neves pendentes."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Administração Integrado",
+          "conteudo": "O **Técnico em Administração Integrado** permite cursar o ensino médio e uma formação técnica no IFMG. O estudante aprende a apoiar rotinas de planejamento, finanças, marketing, gestão de pessoas e logística, além das disciplinas da formação geral.\n\nA experiência acadêmica inclui diferentes projetos e oportunidades de aprendizagem, que variam conforme o campus."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Cursar o ensino médio e aprender Administração no mesmo percurso, com projetos que relacionam a escola, o trabalho e a comunidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a estudantes que concluíram o ensino fundamental e querem cursar o ensino médio junto com uma formação profissional em gestão.\n\nA formação desenvolve habilidades de organização, comunicação, análise de problemas, trabalho em equipe e uso de ferramentas para apoiar processos administrativos."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "O integrado oferece uma formação geral e técnica para quem deseja conhecer o mundo das organizações sem deixar de se preparar para a graduação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação técnica aborda áreas da Administração que aparecem em organizações de diferentes setores. A distribuição de disciplinas e suas cargas horárias seguem a matriz curricular do campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Gestão e planejamento",
+              "Organização de atividades, processos e rotinas administrativas."
+            ],
+            [
+              "Finanças",
+              "Noções de orçamento, custos, documentos e controle financeiro."
+            ],
+            [
+              "Marketing",
+              "Comunicação, públicos, mercado e relacionamento com clientes."
+            ],
+            [
+              "Pessoas e trabalho",
+              "Trabalho em equipe, relações humanas e gestão de pessoas."
+            ],
+            [
+              "Logística",
+              "Estoques, compras, materiais e processos de distribuição."
+            ],
+            [
+              "Empreendedorismo",
+              "Desenvolvimento de ideias, projetos e iniciativas de negócios."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Projetos e experiências",
+          "conteudo": "As experiências variam por campus. Em Arcos, as atividades incluem **Empresa Simulada**, **Hackathon Social** e eventos de empreendedorismo. Em Sabará, estudantes participaram de visita técnica à **Expo Favela Minas 2026**, em contato com iniciativas de negócios e inovação.\n\nOs projetos de ensino, pesquisa e extensão também podem conectar a formação a problemas reais das organizações e da comunidade."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Projetos, empresas simuladas e visitas técnicas ajudam a relacionar os conteúdos de gestão com situações concretas de trabalho e empreendedorismo."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde você pode atuar",
+          "conteudo": "O técnico pode trabalhar em funções de apoio administrativo em empresas, órgãos públicos e organizações sociais, colaborando com documentos, atendimento, finanças, recursos humanos, marketing, estoques e processos organizacionais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Administração Integrado",
+          "conteudo": "O curso é oferecido em oito campi, com aulas pela manhã e à tarde. A carga horária EaD e as experiências práticas variam conforme o campus escolhido."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Arcos",
+              "Manhã e tarde",
+              "Presencial (16% EaD)",
+              "tec.adm.arcos@ifmg.edu.br"
+            ],
+            [
+              "Bambuí",
+              "Manhã e tarde",
+              "Presencial",
+              "adm.tecnico.bambui@ifmg.edu.br"
+            ],
+            [
+              "Formiga",
+              "Manhã e tarde",
+              "Presencial",
+              "tec.adm.formiga@ifmg.edu.br"
+            ],
+            [
+              "Ouro Branco",
+              "Manhã e tarde",
+              "Presencial",
+              "coord.integradoadministracao.obr@ifmg.edu.br"
+            ],
+            [
+              "Ouro Preto",
+              "Manhã e tarde",
+              "Presencial",
+              "Informação incompleta"
+            ],
+            [
+              "Ponte Nova",
+              "Manhã e tarde",
+              "Presencial",
+              "coordadm.pontenova@ifmg.edu.br"
+            ],
+            [
+              "Ribeirão das Neves",
+              "Manhã e tarde",
+              "Presencial",
+              "Informação incompleta"
+            ],
+            [
+              "Sabará",
+              "Manhã e tarde",
+              "Presencial (16,67% EaD)",
+              "coordadm.sabara@ifmg.edu.br"
+            ]
+          ],
+          "validacao": "Informação incompleta: confirmar os e-mails funcionais das coordenações de Ouro Preto e Ribeirão das Neves; evitar endereços nominais de docentes."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Arcos",
+              "resposta": "Em Arcos, a formação inclui experiências como **Empresa Simulada**, **Hackathon Social**, **Mostra de Maquetes**, **Semana do Empreendedorismo e Inovação** e **Café Empresarial**. As aulas são presenciais, com 16% de carga horária EaD."
+            },
+            {
+              "pergunta": "Bambuí",
+              "resposta": "Em Bambuí, o técnico integrado reúne ensino médio e conteúdos de gestão, empreendedorismo, finanças, marketing, produção e logística ao longo de três anos. O campus também desenvolve projetos de ensino, pesquisa e extensão."
+            },
+            {
+              "pergunta": "Formiga",
+              "resposta": "Em Formiga, o curso integra ensino médio e formação para apoiar atividades de organizações. Os estudos abrangem planejamento, finanças, recursos humanos, marketing, logística, inovação e sustentabilidade."
+            },
+            {
+              "pergunta": "Ouro Branco",
+              "resposta": "Em Ouro Branco, o curso une formação geral e conhecimentos de gestão e negócios, com atenção a liderança, inovação, empreendedorismo e atuação ética em organizações."
+            },
+            {
+              "pergunta": "Ouro Preto",
+              "resposta": "Em Ouro Preto, o curso tem duração prevista de três anos e oferece formação geral e técnica para atividades administrativas, financeiras, de produção, marketing, recursos humanos e logística."
+            },
+            {
+              "pergunta": "Ponte Nova",
+              "resposta": "Em Ponte Nova, o curso integra o ensino médio à formação profissional em gestão, empreendedorismo, finanças, recursos humanos, marketing e processos administrativos."
+            },
+            {
+              "pergunta": "Ribeirão das Neves",
+              "resposta": "Em Ribeirão das Neves, a formação integrada trabalha planejamento, gestão financeira, marketing, recursos humanos, produção e logística, combinando qualificação profissional e formação cidadã."
+            },
+            {
+              "pergunta": "Sabará",
+              "resposta": "Em Sabará, o curso desenvolve conhecimentos de gestão e empreendedorismo. A oferta é presencial, com **16,67% da carga horária EaD**. Estudantes do curso participaram de visita técnica à **Expo Favela Minas 2026**, conhecendo iniciativas de empreendedorismo e inovação."
+            }
+          ]
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Cursos técnicos do IFMG",
+            "descricao": "Conheça as ofertas e formas de ingresso",
+            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
+          }
+        },
+        {
+          "tipo": "galeria",
+          "itens": [],
+          "validacao": "Selecionar fotografias autorizadas das atividades e laboratórios efetivamente ligados ao curso, por campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Reconhecimentos e premiações",
+          "conteudo": "Informação incompleta",
+          "validacao": "Localizar concursos, avaliações e premiações especificamente associados ao curso e aos campi, com ano e fonte. Não confundir homenagem individual com prêmio institucional do curso."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e bolsas",
+          "conteudo": "Informação incompleta",
+          "validacao": "Relacionar projetos e oportunidades de bolsas do Técnico em Administração em cada campus, indicando vínculo e período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": "Depois de concluir o curso integrado, você pode participar de processos seletivos de graduação. O IFMG oferece o **Bacharelado em Administração** em diferentes campi e também outras formações de nível superior.\n\nApós a graduação, é possível concorrer a cursos de pós-graduação, de acordo com os editais e requisitos de cada formação."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Graduação em Administração no IFMG",
+            "descricao": "Conheça as possibilidades de formação superior",
+            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **Sabará**, estudantes de Técnico em Administração receberam homenagens institucionais por destaque em **projetos de pesquisa** e **desempenho acadêmico** em 2025.",
+          "validacao": "Completar exemplos de resultados de outros campi, com fontes e autorização de uso de imagens/depoimentos."
+        }
+      ]
     }
   ]
 }

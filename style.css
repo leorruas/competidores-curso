@@ -118,7 +118,9 @@ h1 em{color:var(--accent);font-style:normal}
 .catalog-grid{display:block;border-top:1px solid var(--line-soft)}
 .course-card{min-height:0;display:grid;grid-template-columns:minmax(65px,.14fr) minmax(0,1fr) minmax(150px,.4fr) 23px;align-items:center;gap:18px;padding:25px 0;border:0;border-bottom:1px solid var(--line);background:none;text-decoration:none;transition:padding-left .2s,color .2s}
 .course-card:hover,.course-card:focus-visible{padding-left:10px;color:var(--accent);outline:none}
-.course-card .label{font:500 11px var(--mono);color:var(--accent);text-transform:lowercase}
+.course-card .label{font:500 11px var(--mono);color:var(--accent);text-transform:lowercase;align-self:start;padding-top:8px}
+.course-card-main{min-width:0}
+.course-card .course-type{display:block;color:var(--muted);font:500 11px var(--mono);margin-bottom:8px;text-transform:lowercase}
 .course-card h2{font-size:clamp(23px,3vw,37px);letter-spacing:-.058em;line-height:1.08;font-weight:600;margin:0}
 .course-card .course-meta{font-size:13px;color:var(--muted)}
 .card-arrow{font-size:23px;color:var(--accent);justify-self:end}

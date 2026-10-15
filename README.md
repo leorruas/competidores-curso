@@ -107,3 +107,7 @@ Os três primeiros pilotos foram **convertidos seletivamente para roteiros públ
 Ao alterar texto aprovado, preservar o identificador estável `id`. Para remover a visibilidade de um curso, exclua a entrada do arquivo público e faça um commit; apenas retirar o link do catálogo não retira o conteúdo do Git e do histórico. **Nunca** inclua dados confidenciais neste repositório, nem temporariamente.
 
 O projeto é um apoio editorial; para instruções gerais do CMS e permissões, consulte o [Guia do Portal IFMG](https://leorruas.github.io/guiaportalifmg/).
+
+## Controles editoriais separados do catálogo público (F5.5)
+
+O JSON público não contém notas de `validacao`, listas `pendencias`, flags `revisao_coordenacao` nem instruções internas de apuração. Tudo isso pertence à vault privada. O validador bloqueia essas chaves mesmo quando estariam ocultas na interface. O roteiro ainda pode estar `em_validacao`, e valores não comprovados permanecem como `Informação incompleta`, sem cópia do placeholder. O histórico de commits públicos antigos permanece acessível no Git.

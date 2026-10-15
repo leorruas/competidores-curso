@@ -87,3 +87,11 @@ test("identificador duplicado impede publicação", () => {
   assert.notEqual(result.status, 0);
   assert.match(result.output, /identificador duplicado/);
 });
+
+test("rejeita metadados privados em qualquer nível do JSON público", () => {
+  for (const k of ["validacao","pendencias","revisao_coordenacao","instrucao"]) {
+    const result=runValidation(data => {data.courses[0].blocos[0].campos[0][k]="nota interna";});
+    assert.notEqual(result.status,0,k);
+    assert.match(result.output,/metadado de auditoria/,k);
+  }
+});

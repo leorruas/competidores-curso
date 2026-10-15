@@ -17,13 +17,6 @@
       "modalidade": "Presencial (varia por campus)",
       "status": "em_validacao",
       "publicacao_autorizada": true,
-      "revisao_coordenacao": true,
-      "pendencias": [
-        "PPC e carga horária total variam por campus",
-        "Contato funcional da coordenação de Ouro Preto",
-        "Fotografias e experiências práticas por campus",
-        "Confirmar matriz e presencialidade de cada unidade"
-      ],
       "blocos": [
         {
           "tipo": "dados-basicos",
@@ -42,13 +35,11 @@
             },
             {
               "rotulo": "Duração",
-              "valor": "3 anos",
-              "validacao": "Confirmar o PPC e a duração de cada campus para 2027."
+              "valor": "3 anos"
             },
             {
               "rotulo": "Carga horária",
-              "valor": "Informação incompleta",
-              "validacao": "Confirmar carga horária total e técnica para cada campus; não atribuir um único número às cinco ofertas."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Modalidade",
@@ -64,8 +55,7 @@
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta",
-              "validacao": "Selecionar o PPC vigente de cada campus; não anexar um PPC único para os cinco."
+              "valor": "Informação incompleta"
             }
           ]
         },
@@ -112,8 +102,7 @@
         {
           "tipo": "texto",
           "titulo": "Por que escolher Técnico em Edificações no IFMG",
-          "conteudo": "No integrado, o estudante faz o ==ensino médio e a formação técnica num mesmo percurso==. Além de estudar componentes da educação básica, entra em contato com a construção civil e com áreas relacionadas a projetos, planejamento e infraestrutura.\n\nA experiência pode incluir aulas práticas, uso de espaços de ensino e participação em projetos, conforme as oportunidades efetivamente disponíveis em cada campus. A continuidade dos estudos em cursos superiores também é uma possibilidade após a conclusão do ensino médio.",
-          "validacao": "Verificar condições e experiências descritas com a coordenação antes de copiar para a página oficial."
+          "conteudo": "No integrado, o estudante faz o ==ensino médio e a formação técnica num mesmo percurso==. Além de estudar componentes da educação básica, entra em contato com a construção civil e com áreas relacionadas a projetos, planejamento e infraestrutura.\n\nA experiência pode incluir aulas práticas, uso de espaços de ensino e participação em projetos, conforme as oportunidades efetivamente disponíveis em cada campus. A continuidade dos estudos em cursos superiores também é uma possibilidade após a conclusão do ensino médio."
         },
         {
           "tipo": "introducao",
@@ -126,13 +115,11 @@
         },
         {
           "tipo": "galeria",
-          "itens": [],
-          "validacao": "Informação incompleta — selecionar fotografias reais do curso, legendas, créditos e autorizações."
+          "itens": []
         },
         {
           "tipo": "introducao",
-          "conteudo": "",
-          "validacao": "Destaque ainda sem projeto ou resultado comprovado; confirmar com a coordenação."
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -178,8 +165,7 @@
               "Presencial",
               "edificacoes.santaluzia@ifmg.edu.br"
             ]
-          ],
-          "validacao": "Um ou mais valores da tabela ainda estão incompletos ou exigem confirmação da coordenação."
+          ]
         },
         {
           "tipo": "faq",
@@ -204,8 +190,7 @@
               "pergunta": "Santa Luzia",
               "resposta": "No Campus Santa Luzia, o Técnico em Edificações Integrado é oferecido em período diurno, com duração de três anos. A formação relaciona ensino médio e competências profissionais em projetos, planejamento e acompanhamento de obras.\n\nO curso é presencial, com 10,3% de carga horária EaD. O campus disponibiliza PPC e matriz curricular para consulta."
             }
-          ],
-          "validacao": "Há respostas que dependem de confirmação acadêmica; revisar os itens indicados antes de transcrever."
+          ]
         },
         {
           "tipo": "links",
@@ -324,26 +309,22 @@
         {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
-          "conteudo": "Informação incompleta",
-          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Informação incompleta",
-          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Ao concluir o curso técnico, você pode continuar estudando em cursos de graduação, conforme os requisitos e processos seletivos. O IFMG oferece diferentes formações que permitem ampliar os estudos, inclusive em outros campi.",
-          "validacao": "Informação incompleta: pesquisar graduação relacionada e, quando houver continuidade após ela, pós-graduação pertinente no IFMG. Indicar campus, curso e regras de ingresso sem prometer acesso automático."
+          "conteudo": "Ao concluir o curso técnico, você pode continuar estudando em cursos de graduação, conforme os requisitos e processos seletivos. O IFMG oferece diferentes formações que permitem ampliar os estudos, inclusive em outros campi."
         },
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Informação incompleta",
-          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
+          "conteudo": "Informação incompleta"
         }
       ]
     },
@@ -359,13 +340,6 @@
       "modalidade": "EaD, com organização presencial específica de cada campus",
       "status": "em_validacao",
       "publicacao_autorizada": true,
-      "revisao_coordenacao": true,
-      "pendencias": [
-        "Confirmar se Governador Valadares terá nova seleção para ingresso 2027; curso ativo em 2026 pelo Edital 459/2026",
-        "Ribeirão das Neves: esclarecer conflito entre Edital 854/2026 (100% EaD) e PPC 2024.2 (20% presencial)",
-        "Confirmar contatos funcionais das coordenações e encontros obrigatórios em cada campus",
-        "Confirmar PPC/matriz e cargas vigentes, turnos e imagens de cada oferta"
-      ],
       "blocos": [
         {
           "tipo": "dados-basicos",
@@ -384,38 +358,31 @@
             },
             {
               "rotulo": "Eixo tecnológico",
-              "valor": "Gestão e Negócios",
-              "validacao": "Conferir enquadramento no PPC vigente."
+              "valor": "Gestão e Negócios"
             },
             {
               "rotulo": "Modalidade",
-              "valor": "EaD, com atividades presenciais conforme o campus",
-              "validacao": "Governador Valadares: há encontros presenciais ao final de cada módulo no processo seletivo de 2026; Ribeirão das Neves: divergência entre edital 2027 e PPC 2024.2."
+              "valor": "EaD, com atividades presenciais conforme o campus"
             },
             {
               "rotulo": "Duração",
-              "valor": "1 ano",
-              "validacao": "Confirmar prazo mínimo e máximo no PPC vigente; o PPC 2024.2 previa até dois anos."
+              "valor": "1 ano"
             },
             {
               "rotulo": "Carga horária",
-              "valor": "Informação incompleta",
-              "validacao": "Confirmar PPC, distribuição presencial, calendário e carga horária vigentes para 2027."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Turno / encontros",
-              "valor": "Informação incompleta",
-              "validacao": "Confirmar horários e atividades obrigatórias por campus. Governador Valadares: PPC anterior prevê funcionamento noturno e edital 2026 informa dois encontros ao final de módulos."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Vagas",
-              "valor": "Informação incompleta",
-              "validacao": "120 vagas para Ribeirão das Neves no edital 2027; Governador Valadares teve 60 vagas no edital independente de 2026. Não somar as duas seleções."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta",
-              "validacao": "Cada campus tem seu PPC. Governador Valadares: PPC 2024; Ribeirão das Neves: PPC 2024.2, cuja presencialidade conflita com o edital 2027."
+              "valor": "Informação incompleta"
             }
           ]
         },
@@ -462,8 +429,7 @@
         {
           "tipo": "texto",
           "titulo": "Como funciona o curso",
-          "conteudo": "A formação é organizada na modalidade **EaD**, com materiais, atividades e acompanhamento acadêmico. A obrigatoriedade e o calendário de encontros presenciais dependem do projeto pedagógico de cada campus.",
-          "validacao": "Ribeirão das Neves: conciliar a modalidade anunciada no Edital 854/2026 com o PPC 2024.2; Governador Valadares: confirmar a organização dos encontros para a próxima turma."
+          "conteudo": "A formação é organizada na modalidade **EaD**, com materiais, atividades e acompanhamento acadêmico. A obrigatoriedade e o calendário de encontros presenciais dependem do projeto pedagógico de cada campus."
         },
         {
           "tipo": "introducao",
@@ -505,8 +471,7 @@
         },
         {
           "tipo": "galeria",
-          "itens": [],
-          "validacao": "Informação incompleta — selecionar fotografias reais do curso, legendas, créditos e autorizações."
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -539,8 +504,7 @@
               "120 vagas",
               "Informação incompleta"
             ]
-          ],
-          "validacao": "Governador Valadares: oferta ativa em 2026, mas seleção 2027 não localizada no inventário principal. Confirmar vaga e e-mail funcional de ambos os campi; em Ribeirão das Neves, edital 2027 informa 120 vagas."
+          ]
         },
         {
           "tipo": "faq",
@@ -565,8 +529,7 @@
               "pergunta": "Onde um técnico em Logística pode trabalhar?",
               "resposta": "O profissional pode atuar em transportadoras, centros de distribuição, indústrias, comércios e organizações que precisam movimentar, armazenar e distribuir materiais."
             }
-          ],
-          "validacao": "Confirmar se Governador Valadares continua oferecendo a mesma organização em eventual turma 2027. Ribeirão das Neves: frequência de encontros presenciais depende de validação do PPC vigente."
+          ]
         },
         {
           "tipo": "links",
@@ -585,32 +548,27 @@
         {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
-          "conteudo": "Informação incompleta",
-          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Informação incompleta",
-          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Ao concluir o curso técnico, você pode continuar estudando em cursos de graduação, conforme os requisitos e processos seletivos. O IFMG oferece diferentes formações que permitem ampliar os estudos, inclusive em outros campi.",
-          "validacao": "Informação incompleta: pesquisar graduação relacionada e, quando houver continuidade após ela, pós-graduação pertinente no IFMG. Indicar campus, curso e regras de ingresso sem prometer acesso automático."
+          "conteudo": "Ao concluir o curso técnico, você pode continuar estudando em cursos de graduação, conforme os requisitos e processos seletivos. O IFMG oferece diferentes formações que permitem ampliar os estudos, inclusive em outros campi."
         },
         {
           "tipo": "texto",
           "titulo": "Ingresso e vagas por campus",
-          "conteudo": "Informação incompleta",
-          "validacao": "Governador Valadares realizou processo seletivo próprio em 2026; verificar edital para ingresso 2027 antes de informar quantidade de vagas. Ribeirão das Neves: 120 vagas em 2027."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Informação incompleta",
-          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
+          "conteudo": "Informação incompleta"
         }
       ],
       "aliases": [
@@ -628,13 +586,6 @@
       "modalidade": "Presencial (30% EaD no edital)",
       "status": "em_validacao",
       "publicacao_autorizada": true,
-      "revisao_coordenacao": true,
-      "pendencias": [
-        "PPC e matriz vigentes para 2027",
-        "Total de vagas somadas as formas de ingresso incluindo Sisu",
-        "Atividades práticas e regras de estágio e TCC",
-        "Imagens autorizadas do curso"
-      ],
       "blocos": [
         {
           "tipo": "dados-basicos",
@@ -657,13 +608,11 @@
             },
             {
               "rotulo": "Carga horária total",
-              "valor": "Informação incompleta",
-              "validacao": "PPC disponível traz 3.750 h com capa de setembro de 2024. Confirmar PPC vigente para 2027."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Modalidade",
-              "valor": "Presencial (30% EaD)",
-              "validacao": "Confirmar a distribuição das atividades no PPC vigente."
+              "valor": "Presencial (30% EaD)"
             },
             {
               "rotulo": "Turno",
@@ -671,18 +620,15 @@
             },
             {
               "rotulo": "Vagas do PS 2027",
-              "valor": "15 vagas — Histórico Escolar e Redação",
-              "validacao": "Edital 855/2026 confirma 15 nessa forma de seleção; total incluindo Sisu ainda não confirmado."
+              "valor": "15 vagas — Histórico Escolar e Redação"
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta",
-              "validacao": "A página do campus aponta PPC 2025, mas o PDF disponível tem capa de setembro de 2024. Confirmar versão vigente."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Coordenação/contato",
-              "valor": "direito.arcos@ifmg.edu.br",
-              "validacao": "Confirmar atualidade do e-mail funcional da coordenação, sem usar endereço nominal de coordenador."
+              "valor": "direito.arcos@ifmg.edu.br"
             }
           ]
         },
@@ -702,8 +648,7 @@
         },
         {
           "tipo": "introducao",
-          "conteudo": "",
-          "validacao": "Destaque ainda sem projeto ou resultado comprovado; confirmar com a coordenação."
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -759,8 +704,7 @@
         },
         {
           "tipo": "galeria",
-          "itens": [],
-          "validacao": "Informação incompleta — selecionar fotografias reais do curso, legendas, créditos e autorizações."
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -794,8 +738,7 @@
               "Projeto pedagógico",
               "Informação incompleta"
             ]
-          ],
-          "validacao": "Um ou mais valores da tabela ainda estão incompletos ou exigem confirmação da coordenação."
+          ]
         },
         {
           "tipo": "texto",
@@ -825,8 +768,7 @@
               "pergunta": "Quais oportunidades de pesquisa e extensão existem em Direito?",
               "resposta": "Além de projetos acadêmicos e atividades de pesquisa, a formação inclui **ações de extensão ligadas à prática jurídica**. Nos períodos finais, os estudantes desenvolvem atividades supervisionadas de orientação à comunidade e análise de casos, articulando estudos teóricos e situações reais."
             }
-          ],
-          "validacao": "Direito: respostas atualizadas a partir do PPC 2024, itens 8.6 (estágio 210 h), 8.8 (TCC 30 h) e 8.9 (extensão). Verificar a matriz e PPC vigentes para ingressantes 2027."
+          ]
         },
         {
           "tipo": "links",
@@ -845,26 +787,22 @@
         {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
-          "conteudo": "Informação incompleta",
-          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Informação incompleta",
-          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
-          "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
+          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta."
         },
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Informação incompleta",
-          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
+          "conteudo": "Informação incompleta"
         }
       ]
     },
@@ -880,14 +818,6 @@
       "modalidade": "Presencial, com atividades EaD conforme o campus",
       "status": "em_validacao",
       "publicacao_autorizada": true,
-      "revisao_coordenacao": true,
-      "pendencias": [
-        "Confirmar PPC/matriz de 2027 de Arcos (referência 2024/1) e Betim (referência 2023)",
-        "Conferir carga horária do estágio e organização do TCC em Betim; Arcos: estágio 350 h e TCC 30 h no PPC 2024",
-        "Conferir distribuição de vagas por modalidade de ingresso em cada campus, antes de publicar total por seleção",
-        "Validar correspondência de 25% EaD em Arcos com a matriz vigente e exigência de presença em Betim",
-        "Selecionar fotografias e resultados de projetos identificados por campus, com autorização"
-      ],
       "blocos": [
         {
           "tipo": "dados-basicos",
@@ -914,28 +844,23 @@
             },
             {
               "rotulo": "Modalidade",
-              "valor": "Presencial, com atividades EaD conforme o campus",
-              "validacao": "Arcos: 25% de EaD na matriz de ofertas 2027; Betim: presencial sem percentual informado no inventário."
+              "valor": "Presencial, com atividades EaD conforme o campus"
             },
             {
               "rotulo": "Carga horária total",
-              "valor": "Informação incompleta",
-              "validacao": "O PPC 2024 Arcos registra 3.600 h; Betim 2023 registra 3.600 h. Conferir vigência para os ingressantes 2027 antes de preencher."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta",
-              "validacao": "Confirmar PPC e matriz de Arcos e Betim de forma independente: não aproveitar o currículo de Arcos para Betim."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta",
-              "validacao": "Arcos: eng.mecanica.arcos@ifmg.edu.br; Betim: eng.mecanica.betim@ifmg.edu.br. Preencher por campus na tabela de ofertas."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Vagas",
-              "valor": "Informação incompleta",
-              "validacao": "Inventário de 2027 registra 50 vagas Arcos e 36 Betim; confirmar distribuição por via de seleção antes de indicar totais neste campo."
+              "valor": "Informação incompleta"
             }
           ]
         },
@@ -1002,8 +927,7 @@
         },
         {
           "tipo": "galeria",
-          "itens": [],
-          "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -1036,8 +960,7 @@
               "Presencial",
               "eng.mecanica.betim@ifmg.edu.br"
             ]
-          ],
-          "validacao": "Percentual EaD em Betim e documentos curriculares atualizados devem ser confirmados separadamente por campus."
+          ]
         },
         {
           "tipo": "texto",
@@ -1090,26 +1013,22 @@
         {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
-          "conteudo": "Informação incompleta",
-          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Em **Arcos**, os estudantes têm oportunidades de participar de projetos de pesquisa aplicada e de monitoria por meio de seleções específicas. Entre as iniciativas desenvolvidas está o projeto **kits didáticos e produtos mecânicos**, que relaciona conhecimento de engenharia à criação de recursos de aprendizagem.\n\nEm **Betim**, a graduação inclui atividades extensionistas e projetos acadêmicos relacionados à formação em Engenharia Mecânica.",
-          "validacao": "Arcos: Editais 192/2026 (pesquisa aplicada kits didáticos e produtos mecânicos) e 261/2026 (monitoria). Confirmar funcionamento, objetivos, resultados e oportunidades específicas de Betim antes de acrescentar exemplos."
+          "conteudo": "Em **Arcos**, os estudantes têm oportunidades de participar de projetos de pesquisa aplicada e de monitoria por meio de seleções específicas. Entre as iniciativas desenvolvidas está o projeto **kits didáticos e produtos mecânicos**, que relaciona conhecimento de engenharia à criação de recursos de aprendizagem.\n\nEm **Betim**, a graduação inclui atividades extensionistas e projetos acadêmicos relacionados à formação em Engenharia Mecânica."
         },
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
-          "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
+          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta."
         },
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Informação incompleta",
-          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
+          "conteudo": "Informação incompleta"
         }
       ],
       "aliases": [
@@ -1132,15 +1051,6 @@
       "modalidade": "Presencial, com carga EaD variável por campus",
       "status": "em_validacao",
       "publicacao_autorizada": true,
-      "revisao_coordenacao": true,
-      "pendencias": [
-        "Confirmar PPC, matriz e carga horária específicos em cada um dos seis campi",
-        "Confirmar os endereços funcionais das coordenações de Bambuí e Ribeirão das Neves",
-        "Verificar percentual EaD e atividades no PPC vigente de Formiga, Ouro Branco e Sabará",
-        "Confirmar critérios e resultados de reconhecimento dos demais campi",
-        "Selecionar projetos, bolsas e fotografias autorizadas por campus",
-        "Relacionar programas de pós-graduação do IFMG e suas regras de ingresso"
-      ],
       "blocos": [
         {
           "tipo": "dados-basicos",
@@ -1159,8 +1069,7 @@
             },
             {
               "rotulo": "Duração",
-              "valor": "4 anos",
-              "validacao": "Confirmar a duração nos PPCs de cada campus."
+              "valor": "4 anos"
             },
             {
               "rotulo": "Turno",
@@ -1168,28 +1077,23 @@
             },
             {
               "rotulo": "Modalidade",
-              "valor": "Presencial, com carga EaD variável por campus",
-              "validacao": "Confirmar a distribuição dos componentes presenciais e a distância em cada PPC. Formiga 20%, Ouro Branco 8%, Sabará 23,67% EaD."
+              "valor": "Presencial, com carga EaD variável por campus"
             },
             {
               "rotulo": "Carga horária total",
-              "valor": "Informação incompleta",
-              "validacao": "Verificar o PPC de cada um dos seis campi; não generalizar as 3.000 horas de Bambuí."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta",
-              "validacao": "PPC e matriz curricular são específicos de cada campus; não utilizar o PPC Bambuí como matriz multicampi."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta",
-              "validacao": "Os contatos são específicos de cada campus e estão na tabela de ofertas; Bambuí e Ribeirão das Neves precisam de caixa funcional confirmada."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Vagas",
-              "valor": "Informação incompleta",
-              "validacao": "As vagas dependem da unidade e da forma de ingresso; conferir editais de 2027 de cada campus."
+              "valor": "Informação incompleta"
             }
           ]
         },
@@ -1313,8 +1217,7 @@
               "Presencial",
               "adm.sje@ifmg.edu.br"
             ]
-          ],
-          "validacao": "Bambuí e Ribeirão das Neves: confirmar e-mail funcional da coordenação. Em todos os campi, conferir PPC e regras de presencialidade vigentes."
+          ]
         },
         {
           "tipo": "texto",
@@ -1366,32 +1269,27 @@
         },
         {
           "tipo": "galeria",
-          "itens": [],
-          "validacao": "Selecionar fotografias autorizadas das atividades de Administração em cada um dos seis campi, com legenda, crédito e texto alternativo."
+          "itens": []
         },
         {
           "tipo": "texto",
           "titulo": "Reconhecimentos e avaliações",
-          "conteudo": "No Campus Formiga, o curso de Administração obteve **conceito 4 em avaliação in loco do MEC**. Em Ouro Branco, recebeu **quatro estrelas no Guia da Faculdade de 2025**.",
-          "validacao": "Confirmar o ano de referência do conceito do MEC em Formiga e verificar avaliações, reconhecimentos e prêmios específicos dos outros quatro campi. Não atribuir o resultado de um campus aos demais."
+          "conteudo": "No Campus Formiga, o curso de Administração obteve **conceito 4 em avaliação in loco do MEC**. Em Ouro Branco, recebeu **quatro estrelas no Guia da Faculdade de 2025**."
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Informação incompleta",
-          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois do bacharelado em Administração, você pode continuar seus estudos em diferentes cursos de pós-graduação do IFMG, inclusive em outros campi.\n\nEm **Formiga**, o **Mestrado Profissional em Administração** desenvolve pesquisas aplicadas na área de Finanças. Em **Ouro Branco**, a **Especialização em Gestão de Negócios** aprofunda práticas de gestão empresarial, e o **Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)** é uma opção para quem deseja pesquisar educação profissional.\n\nO IFMG também oferece a **Especialização em Gestão**, na modalidade a distância, em iniciativa de **Bambuí e São João Evangelista**, com áreas de estudo relacionadas a empreendedorismo, marketing, pessoas e inovação.\n\nCada pós-graduação possui requisitos e processo seletivo próprios.",
-          "validacao": "Conferir os editais e requisitos vigentes dos cursos de pós-graduação em Formiga, Ouro Branco, Bambuí e São João Evangelista. Fontes e URLs permanecem no roteiro privado de Administração."
+          "conteudo": "Depois do bacharelado em Administração, você pode continuar seus estudos em diferentes cursos de pós-graduação do IFMG, inclusive em outros campi.\n\nEm **Formiga**, o **Mestrado Profissional em Administração** desenvolve pesquisas aplicadas na área de Finanças. Em **Ouro Branco**, a **Especialização em Gestão de Negócios** aprofunda práticas de gestão empresarial, e o **Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)** é uma opção para quem deseja pesquisar educação profissional.\n\nO IFMG também oferece a **Especialização em Gestão**, na modalidade a distância, em iniciativa de **Bambuí e São João Evangelista**, com áreas de estudo relacionadas a empreendedorismo, marketing, pessoas e inovação.\n\nCada pós-graduação possui requisitos e processo seletivo próprios."
         },
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Informação incompleta",
-          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
+          "conteudo": "Informação incompleta"
         }
       ],
       "aliases": [
@@ -1409,13 +1307,6 @@
       "modalidade": "Presencial",
       "status": "em_validacao",
       "publicacao_autorizada": true,
-      "revisao_coordenacao": true,
-      "pendencias": [
-        "Confirmar se a matriz com 9 semestres e 4.007h vigora para 2027",
-        "Conferir horas e regras de estágio, TCC e extensão",
-        "Validar ambientes usados em aulas práticas e imagens autorizadas",
-        "Obter e-mail funcional da coordenação e vagas atualizadas"
-      ],
       "blocos": [
         {
           "tipo": "dados-basicos",
@@ -1434,8 +1325,7 @@
             },
             {
               "rotulo": "Duração",
-              "valor": "9 semestres",
-              "validacao": "Confirmar duração na matriz aplicável a ingressantes de 2027."
+              "valor": "9 semestres"
             },
             {
               "rotulo": "Turno",
@@ -1447,23 +1337,19 @@
             },
             {
               "rotulo": "Carga horária total",
-              "valor": "Informação incompleta",
-              "validacao": "A matriz consultada anteriormente registra 4.007 horas. Confirmar a vigente para ingressantes de 2027."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta",
-              "validacao": "Selecionar o PPC e a matriz curricular vigentes para ingressantes de 2027."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta",
-              "validacao": "Obter uma caixa funcional do curso; não reproduzir e-mail nominal de docente."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Vagas",
-              "valor": "Informação incompleta",
-              "validacao": "Confirmar quantidade por forma de seleção em edital 2027."
+              "valor": "Informação incompleta"
             }
           ]
         },
@@ -1555,8 +1441,7 @@
               "Manhã e tarde",
               "Informação incompleta"
             ]
-          ],
-          "validacao": "Confirmar o e-mail funcional da coordenação do curso; não usar endereço nominal do docente."
+          ]
         },
         {
           "tipo": "texto",
@@ -1608,32 +1493,27 @@
         },
         {
           "tipo": "galeria",
-          "itens": [],
-          "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+          "itens": []
         },
         {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
-          "conteudo": "Informação incompleta",
-          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Informação incompleta",
-          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
-          "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
+          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta."
         },
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Informação incompleta",
-          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
+          "conteudo": "Informação incompleta"
         }
       ]
     },
@@ -1648,13 +1528,6 @@
       "modalidade": "Presencial",
       "status": "em_validacao",
       "publicacao_autorizada": true,
-      "revisao_coordenacao": true,
-      "pendencias": [
-        "Confirmar PPC/matriz de 2027 depois da consulta pública de 2026",
-        "Definir carga horária total, estágio, extensão e TCC na versão vigente",
-        "Obter e-mail funcional da coordenação e vagas por edital",
-        "Confirmar ambientes de prática efetivamente associados ao curso e fotografias autorizadas"
-      ],
       "blocos": [
         {
           "tipo": "dados-basicos",
@@ -1673,8 +1546,7 @@
             },
             {
               "rotulo": "Duração",
-              "valor": "5 anos",
-              "validacao": "Verificar se a reestruturação curricular mantém essa duração para 2027."
+              "valor": "5 anos"
             },
             {
               "rotulo": "Turno",
@@ -1686,23 +1558,19 @@
             },
             {
               "rotulo": "Carga horária total",
-              "valor": "Informação incompleta",
-              "validacao": "Confirmar carga horária total no PPC e matriz resultantes da revisão curricular."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta",
-              "validacao": "Em 2026 o campus abriu consulta para reestruturação do curso. Confirmar versão vigente na turma 2027."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta",
-              "validacao": "Obter caixa funcional da coordenação; não usar automaticamente endereço nominal."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Vagas",
-              "valor": "Informação incompleta",
-              "validacao": "Consultar os editais 2027 por forma de seleção."
+              "valor": "Informação incompleta"
             }
           ]
         },
@@ -1794,8 +1662,7 @@
               "Manhã e tarde",
               "Informação incompleta"
             ]
-          ],
-          "validacao": "Confirmar o e-mail funcional da coordenação do curso; não usar endereço nominal do docente."
+          ]
         },
         {
           "tipo": "texto",
@@ -1847,32 +1714,27 @@
         },
         {
           "tipo": "galeria",
-          "itens": [],
-          "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+          "itens": []
         },
         {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
-          "conteudo": "Informação incompleta",
-          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Informação incompleta",
-          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
-          "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
+          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta."
         },
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Informação incompleta",
-          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
+          "conteudo": "Informação incompleta"
         }
       ]
     },
@@ -1894,14 +1756,6 @@
       "modalidade": "Presencial, com carga EaD variável por campus",
       "status": "em_validacao",
       "publicacao_autorizada": true,
-      "revisao_coordenacao": true,
-      "pendencias": [
-        "Confirmar PPC, matriz curricular e carga horária do integrado em cada campus",
-        "Conferir e-mails funcionais de Ouro Preto e Ribeirão das Neves",
-        "Confirmar componente EaD e cronogramas específicos de Arcos e Sabará",
-        "Identificar projetos, bolsas e resultados documentados por campus",
-        "Fotografias, autorizações e reconhecimentos do próprio curso"
-      ],
       "blocos": [
         {
           "tipo": "dados-basicos",
@@ -1924,8 +1778,7 @@
             },
             {
               "rotulo": "Duração",
-              "valor": "3 anos",
-              "validacao": "Confirmar o PPC vigente de cada campus, sem generalizar cargas horárias."
+              "valor": "3 anos"
             },
             {
               "rotulo": "Turno",
@@ -1933,23 +1786,19 @@
             },
             {
               "rotulo": "Modalidade",
-              "valor": "Presencial, com carga EaD variável por campus",
-              "validacao": "Arcos: 16% EaD; Sabará: 16,67% EaD. Os demais campi exigem leitura do PPC vigente."
+              "valor": "Presencial, com carga EaD variável por campus"
             },
             {
               "rotulo": "Carga horária",
-              "valor": "Informação incompleta",
-              "validacao": "Preencher carga horária total de ensino médio + técnico para cada campus, sem confundir com a parte profissionalizante."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta",
-              "validacao": "Incluir documentos vigentes específicos de cada campus."
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Contatos",
-              "valor": "Informação incompleta",
-              "validacao": "Usar os e-mails funcionais disponíveis por campus na tabela; Ouro Preto e Ribeirão das Neves pendentes."
+              "valor": "Informação incompleta"
             }
           ]
         },
@@ -2085,8 +1934,7 @@
               "Presencial (16,67% EaD)",
               "coordadm.sabara@ifmg.edu.br"
             ]
-          ],
-          "validacao": "Informação incompleta: confirmar os e-mails funcionais das coordenações de Ouro Preto e Ribeirão das Neves; evitar endereços nominais de docentes."
+          ]
         },
         {
           "tipo": "texto",
@@ -2146,20 +1994,17 @@
         },
         {
           "tipo": "galeria",
-          "itens": [],
-          "validacao": "Selecionar fotografias autorizadas das atividades e laboratórios efetivamente ligados ao curso, por campus."
+          "itens": []
         },
         {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
-          "conteudo": "Informação incompleta",
-          "validacao": "Localizar concursos, avaliações e premiações especificamente associados ao curso e aos campi, com ano e fonte. Não confundir homenagem individual com prêmio institucional do curso."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e bolsas",
-          "conteudo": "Informação incompleta",
-          "validacao": "Relacionar projetos e oportunidades de bolsas do Técnico em Administração em cada campus, indicando vínculo e período."
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
@@ -2169,8 +2014,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Informação incompleta",
-          "validacao": "Identificar o projeto de pesquisa e o resultado concreto dos estudantes de Sabará citados em homenagem de 2025: nome, problema investigado, atividades, produto, reconhecimento, fonte e autorização; sem isso não publicar a frase genérica."
+          "conteudo": "Informação incompleta"
         }
       ]
     }

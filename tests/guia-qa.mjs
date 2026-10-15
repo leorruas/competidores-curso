@@ -52,15 +52,36 @@ test("a home é o catálogo e não uma página de apresentação", () => {
   assert.doesNotMatch(html,/Encontre o curso, escolha o bloco/);
 });
 
-test("o catálogo inclui somente roteiros autorizados com pendências explícitas", () => {
+test("o catálogo inclui somente roteiros autorizados sem controles privados", () => {
   assert.equal(json.schemaVersion,1);
   assert.ok(json.courses.length >= 8,"O catálogo não pode perder os oito roteiros já publicados");
-  assert.ok(json.courses.every(c=>c.publicacao_autorizada===true && ["em_validacao","aprovado_para_divulgacao"].includes(c.status) && (c.status!=="em_validacao" || (c.revisao_coordenacao===true && c.pendencias.length>0))));
+  assert.ok(json.courses.every(c=>c.publicacao_autorizada===true && ["em_validacao","aprovado_para_divulgacao"].includes(c.status) && !("pendencias" in c) && !("revisao_coordenacao" in c)));
   const h=testContext();
   assert.ok(json.courses.every(c=>h.isApprovedCourse(c)));
   assert.equal(h.isApprovedCourse({...json.courses[0],publicacao_autorizada:false}),false);
-  assert.equal(h.isApprovedCourse({...json.courses[0],pendencias:[]}),false);
+  assert.equal(h.isApprovedCourse({...json.courses[0],blocos:[]}),false);
   assert.equal(h.isApprovedCourse({...json.courses[0],status:"pendente"}),false);
+});
+
+test("metadados de pesquisa não vazam e placeholders não são copiáveis", () => {
+  const forbidden=new Set(["validacao","pendencias","revisao_coordenacao","instrucao"]);
+  function walk(v) {
+    if (Array.isArray(v)) return v.forEach(walk);
+    if (v&&typeof v==="object") for (const [k,x]of Object.entries(v)) {
+      assert.ok(!forbidden.has(k),"chave privada "+k);
+      walk(x);
+    }
+  }
+  walk(json);
+  const h=testContext();
+  for (const c of json.courses) {
+    for (const b of c.blocos.filter(x=>x.tipo==="texto"&&x.conteudo==="Informação incompleta")) {
+      assert.equal(h.editorFields(b)[0].label,"Título da seção");
+      assert.equal((h.editorBlock(b,0).match(/data-copy-field=/g)||[]).length,1);
+    }
+    const gallery=c.blocos.find(x=>x.tipo==="galeria"&&!x.itens.length);
+    if(gallery)assert.equal((h.editorBlock(gallery,0).match(/data-copy-field=/g)||[]).length,0);
+  }
 });
 
 test("a demonstração fictícia não se mistura aos cursos reais", () => {
@@ -131,7 +152,7 @@ test("fase 1: galeria acompanha projetos e Administração não tem link ou dest
   const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
   const achievement=tec.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes");
   assert.equal(achievement.conteudo,"Informação incompleta");
-  assert.ok(achievement.validacao);
+  assert.ok(!Object.hasOwn(achievement,"validacao"));
 });
 
 test("bacharelados essenciais mantêm dados, FAQ, destaques e campos de validação", () => {
@@ -142,14 +163,14 @@ test("bacharelados essenciais mantêm dados, FAQ, destaques e campos de validaç
     const curso=json.courses.find(c=>c.id===id);
     assert.ok(curso,id);
     assert.ok(curso.blocos.length>=12,"O roteiro precisa ter os componentes editoriais essenciais");
-    assert.ok(curso.pendencias.length>=3);
+    assert.ok(!Object.hasOwn(curso,"pendencias"));
     assert.ok(h.isApprovedCourse(curso));
     const intro=curso.blocos.filter(b=>b.tipo==="introducao");
     assert.ok(intro.length>=1,"A formação precisa ter destaques editoriais");
     assert.ok(intro.every(b=>b.conteudo.length<=280));
     const faq=curso.blocos.find(b=>b.tipo==="faq");
     assert.ok(faq.itens.length>=3,"FAQ precisa cobrir dúvidas substantivas");
-    assert.ok(curso.blocos.some(b=>b.tipo==="galeria"&&b.validacao));
+    assert.ok(curso.blocos.some(b=>b.tipo==="galeria"&&!b.itens.length));
     assert.ok(curso.blocos.some(b=>b.tipo==="links"&&b.itens.some(x=>x.url.startsWith("https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"))));
   }
 });

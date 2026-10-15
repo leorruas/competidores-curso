@@ -47,21 +47,20 @@
     if (!Array.isArray(c.campi) || !c.campi.every(v => checkedText(v, 150))) return false;
     if (!Array.isArray(c.blocos) || c.blocos.length === 0) return false;
     if (!c.blocos.every(b => validateBlock(b))) return false;
-    if (c.status === "em_validacao" && (c.revisao_coordenacao !== true || !Array.isArray(c.pendencias) || !c.pendencias.length)) return false;
+    if ("pendencias" in c || "revisao_coordenacao" in c || "validacao" in c) return false;
     return true;
   }
   function validateBlock(b) {
     if (!b || !ALLOWED_TYPES.has(b.tipo)) return false;
-    if (b.instrucao !== undefined && !checkedText(b.instrucao, 3500)) return false;
+    if ("instrucao" in b || "validacao" in b) return false;
     if (b.titulo !== undefined && !checkedText(b.titulo, 200)) return false;
-    if (b.validacao !== undefined && !checkedText(b.validacao, 1000)) return false;
     if (["texto", "introducao"].includes(b.tipo) && !checkedText(b.conteudo || "", b.tipo === "introducao" ? 280 : 12000)) return false;
-    if (b.tipo === "dados-basicos") return Array.isArray(b.campos) && b.campos.every(x => checkedText(x.rotulo, 160) && checkedText(x.valor, 500) && (x.validacao === undefined || checkedText(x.validacao, 600)));
+    if (b.tipo === "dados-basicos") return Array.isArray(b.campos) && b.campos.every(x => checkedText(x.rotulo, 160) && checkedText(x.valor, 500) && !("validacao" in x));
     if (b.tipo === "tabela") return Array.isArray(b.colunas) && b.colunas.length > 0 && b.colunas.every(x => checkedText(x, 160)) && Array.isArray(b.linhas) && b.linhas.every(x => Array.isArray(x) && x.length === b.colunas.length && x.every(v => checkedText(v, 1200)));
     if (b.tipo === "faq") return Array.isArray(b.itens) && b.itens.length > 0 && b.itens.every(x => checkedText(x.pergunta, 300) && checkedText(x.resposta, 2000));
-    if (b.tipo === "links") return Array.isArray(b.itens) && (!!b.itens.length || !!b.validacao) && b.itens.every(x => checkedText(x.rotulo, 160) && isValidURL(x.url));
+    if (b.tipo === "links") return Array.isArray(b.itens) && true && b.itens.every(x => checkedText(x.rotulo, 160) && isValidURL(x.url));
     if (b.tipo === "link-unico") return b.link && checkedText(b.link.rotulo, 160) && isValidURL(b.link.url);
-    if (b.tipo === "galeria") return Array.isArray(b.itens) && (!!b.itens.length || !!b.validacao) && b.itens.every(x => checkedText(x.legenda, 300) && checkedText(x.alt, 300) && typeof x.url === "string" && x.url.startsWith("https:"));
+    if (b.tipo === "galeria") return Array.isArray(b.itens) && true && b.itens.every(x => checkedText(x.legenda, 300) && checkedText(x.alt, 300) && typeof x.url === "string" && x.url.startsWith("https:"));
     return true;
   }
 
@@ -120,15 +119,15 @@
       "</tr></thead><tbody>" + b.linhas.map(row => "<tr>" + row.map(x => "<td>" + renderInline(x).replace(/<mark>/g,"<strong>").replace(/<\/mark>/g,"</strong>") + "</td>").join("") + "</tr>").join("") + "</tbody></table>";
   }
   function editorFields(b) {
-    const raw = (label, value, setting = false, validacao = "") => ({label, value: String(value ?? ""), rich: false, html: "", setting, validacao});
+    const raw = (label, value, setting = false) => ({label, value: String(value ?? ""), rich: false, html: "", setting});
     const rich = (label, value) => ({label, value: String(value ?? ""), rich: true, html: richHTML(value)});
-    if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor, false, x.validacao || ""));
+    if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor));
     if (b.tipo === "texto") {
       // Um bloco Texto do Wagtail corresponde a um único campo Rich Text.
       // O título, quando existe, vai no mesmo conteúdo que os parágrafos.
       // Quando ainda não há conteúdo, manter o título da seção visível,
       // mas não oferecer cópia de um placeholder para o Wagtail.
-      if ((!b.conteudo || /^informação incompleta$/i.test(b.conteudo.trim())) && b.validacao) {
+      if (/^informação incompleta$/i.test((b.conteudo || "").trim())) {
         // O título é parte da instrução de preenchimento e deve ser copiável,
         // mesmo quando o corpo da seção ainda não foi produzido.
         return [
@@ -152,6 +151,7 @@
       raw("Descrição", b.link.descricao || ""),
       raw("URL", b.link.url)
     ];
+    if (b.tipo === "links" && !b.itens.length) return [raw("Links", "Informação incompleta")];
     if (b.tipo === "links") return [
       raw("Estilo", b.estilo || "Padrão", true),
       ...b.itens.flatMap((x,i) => [
@@ -159,8 +159,7 @@
         raw("Link " + (i+1) + " · URL", x.url)
       ])
     ];
-    if (b.tipo === "galeria" && !b.itens.length) return [raw("Imagens", "Informação incompleta", false, b.validacao || "Fotografias pendentes de validação")];
-    if (b.tipo === "links" && !b.itens.length) return [raw("Links", "Informação incompleta", false, b.validacao || "Endereços pendentes de validação")];
+    if (b.tipo === "galeria" && !b.itens.length) return [raw("Imagens", "Informação incompleta")];
     if (b.tipo === "galeria") return b.itens.flatMap((x,i) => [
       raw("Imagem " + (i+1) + " · Legenda", x.legenda),
       raw("Imagem " + (i+1) + " · Texto alternativo", x.alt),

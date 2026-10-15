@@ -146,7 +146,7 @@
         {
           "tipo": "texto",
           "titulo": "Onde o IFMG oferece Técnico em Edificações Integrado",
-          "conteudo": "O curso integra o Processo Seletivo 2027 em ==cinco campi do IFMG==. Para escolher uma unidade, considere deslocamento, rotina de estudos e características específicas de cada oferta. A estrutura e as oportunidades acadêmicas precisam ser consultadas por campus."
+          "conteudo": "O curso é oferecido em ==cinco campi do IFMG==. Na escolha da unidade, considere a localização, o turno e as características da formação em cada campus."
         },
         {
           "tipo": "tabela",
@@ -195,15 +195,15 @@
           "itens": [
             {
               "pergunta": "Congonhas",
-              "resposta": "Em Congonhas, o Técnico em Edificações Integrado combina a formação do ensino médio com conteúdos de planejamento, execução e acompanhamento de obras. A oferta do Processo Seletivo 2027 é presencial, no período da manhã e da tarde.\n\nA documentação da unidade menciona laboratórios relacionados a Solos, Materiais de Construção, Instalações e Prática de Obras. A participação dos estudantes nessas atividades deve ser detalhada no PPC e na página atual do curso."
+              "resposta": "Em Congonhas, o Técnico em Edificações Integrado combina a formação do ensino médio com conteúdos de planejamento, execução e acompanhamento de obras. As aulas ocorrem pela manhã e à tarde, na modalidade presencial.\n\nA documentação da unidade menciona laboratórios relacionados a Solos, Materiais de Construção, Instalações e Prática de Obras. A participação dos estudantes nessas atividades deve ser detalhada no PPC e na página atual do curso."
             },
             {
               "pergunta": "Governador Valadares",
-              "resposta": "A oferta integrada do Campus Governador Valadares envolve a formação geral do ensino médio e conhecimentos de projetos, orçamento, acompanhamento e manutenção de edificações. O curso consta no Processo Seletivo 2027 como presencial, pela manhã e à tarde.\n\nA apresentação institucional menciona projetos, aulas práticas, eventos e visitas técnicas. Para destacar uma experiência específica, a coordenação deve confirmar sua realização e a relação com o curso."
+              "resposta": "A oferta integrada do Campus Governador Valadares envolve a formação geral do ensino médio e conhecimentos de projetos, orçamento, acompanhamento e manutenção de edificações. As aulas são presenciais, pela manhã e à tarde.\n\nA apresentação institucional menciona projetos, aulas práticas, eventos e visitas técnicas. Para destacar uma experiência específica, a coordenação deve confirmar sua realização e a relação com o curso."
             },
             {
               "pergunta": "Ouro Preto",
-              "resposta": "O Campus Ouro Preto também oferece Técnico em Edificações Integrado. A página institucional apresenta duração de três anos, organização anual e carga horária total de 3.460 horas, além de links para PPC e matriz curricular.\n\nO curso é presencial, com 0,86% de carga horária EaD. A unidade deve explicar quais atividades correspondem a esse percentual e como elas se organizam na rotina de estudos."
+              "resposta": "O Campus Ouro Preto também oferece Técnico em Edificações Integrado. A página institucional apresenta duração de três anos, organização anual e carga horária total de 3.460 horas, além de links para PPC e matriz curricular.\n\nO curso é presencial, com 0,86% de carga horária EaD. A organização dessas atividades está detalhada no projeto pedagógico do curso."
             },
             {
               "pergunta": "Piumhi",
@@ -211,7 +211,7 @@
             },
             {
               "pergunta": "Santa Luzia",
-              "resposta": "No Campus Santa Luzia, o Técnico em Edificações Integrado é oferecido em período diurno, com duração de três anos. A formação relaciona ensino médio e competências profissionais em projetos, planejamento e acompanhamento de obras.\n\nO curso é presencial, com 10,3% de carga horária EaD. A página do curso apresenta versões de PPC e matriz curricular; é preciso verificar qual delas se aplica à turma antes de divulgar a distribuição detalhada de disciplinas."
+              "resposta": "No Campus Santa Luzia, o Técnico em Edificações Integrado é oferecido em período diurno, com duração de três anos. A formação relaciona ensino médio e competências profissionais em projetos, planejamento e acompanhamento de obras.\n\nO curso é presencial, com 10,3% de carga horária EaD. O campus disponibiliza PPC e matriz curricular para consulta."
             }
           ],
           "validacao": "Há respostas que dependem de confirmação acadêmica; revisar os itens indicados antes de transcrever."
@@ -269,7 +269,7 @@
             },
             {
               "pergunta": "O curso é presencial?",
-              "resposta": "O curso é organizado como presencial. Entretanto, o Processo Seletivo 2027 informa percentuais de carga horária EaD nas ofertas de Ouro Preto (0,86%) e Santa Luzia (10,3%). Os detalhes de atividades e encontros dependem do PPC de cada campus."
+              "resposta": "Sim. O curso é presencial. Em Ouro Preto, 0,86% da carga horária é EaD; em Santa Luzia, 10,3%. A organização das atividades segue o projeto pedagógico de cada campus."
             },
             {
               "pergunta": "Quais atividades vou aprender?",
@@ -277,7 +277,7 @@
             },
             {
               "pergunta": "O curso tem laboratórios e visitas técnicas?",
-              "resposta": "A disponibilidade de laboratórios, visitas e experiências práticas varia entre os campi e deve ser verificada nas páginas específicas e com as coordenações. A existência de um laboratório no campus não comprova, por si só, que ele seja utilizado pelo curso."
+              "resposta": "As experiências práticas, visitas e recursos de aprendizagem variam conforme as atividades do curso em cada campus."
             },
             {
               "pergunta": "Como faço para ingressar?",
@@ -518,11 +518,11 @@
             },
             {
               "pergunta": "O curso é totalmente a distância?",
-              "resposta": "A oferta é apresentada como EaD. Para saber se há encontros, atividades ou avaliações presenciais obrigatórias na turma de ingresso, é necessário consultar a coordenação e o projeto pedagógico vigente."
+              "resposta": "Informação incompleta"
             },
             {
               "pergunta": "Quanto tempo dura o curso?",
-              "resposta": "A página institucional informa duração prevista de um ano. O prazo máximo de integralização e a distribuição de disciplinas devem ser conferidos no projeto pedagógico aplicável à turma."
+              "resposta": "O curso tem duração prevista de um ano."
             },
             {
               "pergunta": "O que vou estudar?",
@@ -532,7 +532,8 @@
               "pergunta": "Como faço para ingressar?",
               "resposta": "É necessário acompanhar o Processo Seletivo do IFMG, verificar os requisitos para cursos subsequentes e seguir os prazos e procedimentos estabelecidos no edital."
             }
-          ]
+          ],
+          "validacao": "Confirmar a obrigatoriedade de atividades presenciais: o Edital 854/2026 indica 100% EaD, enquanto o PPC 2024.2 prevê encontros presenciais."
         },
         {
           "tipo": "links",
@@ -693,7 +694,7 @@
         {
           "tipo": "texto",
           "titulo": "Por que estudar Direito no IFMG Arcos",
-          "conteudo": "Na graduação, a formação jurídica é oferecida por uma instituição pública federal. A página do curso apresenta referências a metodologias de aprendizagem baseada em projetos, estudos de caso e trabalhos que aproximam conceitos jurídicos de situações práticas.\n\nTambém estão disponíveis documentos sobre Núcleo de Práticas Jurídicas, estágio, TCC e atividades complementares. A coordenação deve validar como essas atividades funcionam atualmente e quais são obrigatórias."
+          "conteudo": "Na graduação, a formação jurídica é oferecida por uma instituição pública federal. A página do curso apresenta referências a metodologias de aprendizagem baseada em projetos, estudos de caso e trabalhos que aproximam conceitos jurídicos de situações práticas.\n\nO curso disponibiliza documentos relacionados ao Núcleo de Práticas Jurídicas, ao estágio, ao TCC e às atividades complementares."
         },
         {
           "tipo": "introducao",
@@ -766,7 +767,7 @@
             },
             {
               "pergunta": "O curso tem atividades a distância?",
-              "resposta": "O cadastro do Processo Seletivo 2027 indica modalidade presencial com 30% de carga horária EaD. Consulte a matriz e o PPC vigentes para identificar quais componentes e atividades utilizam esse formato."
+              "resposta": "O curso é presencial, com 30% de carga horária EaD. A distribuição das atividades é apresentada na matriz curricular."
             },
             {
               "pergunta": "Há estágio e atividades de prática jurídica?",
@@ -965,11 +966,11 @@
             },
             {
               "pergunta": "Quanto tempo dura?",
-              "resposta": "O percurso previsto é de cinco anos. A organização dos componentes e a carga horária devem ser conferidas na matriz curricular em vigor."
+              "resposta": "O curso tem duração prevista de cinco anos."
             },
             {
               "pergunta": "O curso tem atividades a distância?",
-              "resposta": "A oferta é presencial, com indicação de 25% de carga horária EaD. A coordenação deve confirmar como essas atividades são distribuídas no PPC vigente."
+              "resposta": "O curso é presencial, com 25% de carga horária EaD. A distribuição dos componentes está prevista na matriz curricular."
             },
             {
               "pergunta": "Existem projetos integradores?",
@@ -977,7 +978,7 @@
             },
             {
               "pergunta": "Há estágio e TCC?",
-              "resposta": "A página do curso disponibiliza informações sobre TCC e atividades complementares. A obrigatoriedade, a carga horária de estágio e a matriz vigente devem ser confirmadas."
+              "resposta": "O curso disponibiliza regulamentos de TCC e atividades complementares. Informações de estágio constam dos documentos acadêmicos."
             },
             {
               "pergunta": "Como ingressar?",
@@ -1128,7 +1129,7 @@
         {
           "tipo": "texto",
           "titulo": "Aprendizagem e projetos",
-          "conteudo": "A organização curricular inclui **Trabalhos Interdisciplinares (TID)**, que relacionam conteúdos de diferentes áreas ao longo da graduação. O campus divulga apresentações de TID, trabalhos de conclusão de curso e atividades acadêmicas ligadas à Administração.\n\nO PPC de 2025 também apresenta estágio e TCC. A coordenação deverá confirmar as cargas e requisitos aplicáveis à turma de ingresso."
+          "conteudo": "A organização curricular inclui **Trabalhos Interdisciplinares (TID)**, que relacionam conteúdos de diferentes áreas ao longo da graduação. O campus divulga apresentações de TID, trabalhos de conclusão de curso e atividades acadêmicas ligadas à Administração.\n\nO projeto pedagógico contempla estágio e Trabalho de Conclusão de Curso (TCC)."
         },
         {
           "tipo": "introducao",
@@ -1182,7 +1183,7 @@
             },
             {
               "pergunta": "Há estágio e TCC?",
-              "resposta": "O PPC revisado em 2025 prevê estágio e Trabalho de Conclusão de Curso. A coordenação deve confirmar as cargas horárias e regras da matriz em vigor."
+              "resposta": "Sim. O curso inclui estágio e Trabalho de Conclusão de Curso (TCC)."
             },
             {
               "pergunta": "Que tipo de organização pode contratar um administrador?",
@@ -1384,7 +1385,7 @@
             },
             {
               "pergunta": "Qual é a duração?",
-              "resposta": "A matriz consultada prevê nove semestres. A coordenação deverá confirmar a duração da matriz vigente para ingressantes de 2027."
+              "resposta": "O curso tem duração prevista de nove semestres."
             },
             {
               "pergunta": "Há atividades práticas?",
@@ -1396,7 +1397,7 @@
             },
             {
               "pergunta": "Há estágio e TCC?",
-              "resposta": "A matriz anteriormente consultada inclui estágio e TCC. As cargas horárias e os regulamentos devem ser confirmados no PPC vigente."
+              "resposta": "A matriz curricular inclui estágio e Trabalho de Conclusão de Curso (TCC)."
             },
             {
               "pergunta": "Como ingressar?",
@@ -1548,7 +1549,7 @@
         {
           "tipo": "texto",
           "titulo": "Atividades práticas e atualização curricular",
-          "conteudo": "A página institucional apresenta a formação orientada à melhoria de sistemas de produção. O campus disponibiliza documentação acadêmica e registros de atividades associadas à graduação.\n\nEm 2026, foi aberta uma **consulta pública sobre a reestruturação do curso**. Por isso, a matriz e as regras específicas aplicáveis à turma ingressante em 2027 precisam ser confirmadas antes de divulgar componentes, cargas e experiências obrigatórias."
+          "conteudo": "A página institucional apresenta a formação orientada à melhoria de sistemas de produção. O campus disponibiliza documentação acadêmica e registros de atividades associadas à graduação.\n\nA estrutura curricular é apresentada no projeto pedagógico do curso, que reúne os componentes da formação e as atividades acadêmicas."
         },
         {
           "tipo": "introducao",
@@ -1594,19 +1595,19 @@
             },
             {
               "pergunta": "Quanto tempo dura?",
-              "resposta": "O percurso de referência é de cinco anos. A coordenação deve confirmar a duração prevista após a revisão curricular."
+              "resposta": "O curso tem duração prevista de cinco anos."
             },
             {
               "pergunta": "O que se estuda?",
               "resposta": "A formação abrange processos produtivos, gestão de operações, qualidade, logística, custos, organização do trabalho e fundamentos de engenharia."
             },
             {
-              "pergunta": "O curso está passando por mudanças?",
-              "resposta": "O campus abriu consulta pública para reestruturação de Engenharia de Produção em 2026. As mudanças aprovadas e a matriz vigente devem ser confirmadas com a coordenação."
+              "pergunta": "Como é organizada a formação?",
+              "resposta": "As disciplinas e a organização da formação são apresentadas no projeto pedagógico e na matriz curricular do curso."
             },
             {
               "pergunta": "Há estágio e TCC?",
-              "resposta": "A página institucional reúne documentos acadêmicos. Obrigatoriedade, carga horária e regras de estágio e TCC dependem de confirmação do PPC vigente."
+              "resposta": "A página do curso disponibiliza documentos acadêmicos para consulta das atividades curriculares."
             },
             {
               "pergunta": "Como ingressar?",

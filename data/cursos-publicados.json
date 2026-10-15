@@ -751,7 +751,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências de aprendizagem em Direito",
-          "conteudo": "A graduação em **Direito** combina estudos das leis, análise de casos, atividades integradoras e reflexão sobre situações jurídicas concretas.\n\nA formação reúne diferentes áreas do conhecimento jurídico, com atividades de argumentação, pesquisa e aplicação prática dos conteúdos estudados."
+          "conteudo": "A graduação em **Direito** combina interpretação jurídica, análise de casos e atividades práticas orientadas por professores.\n\nOs estudantes desenvolvem atividades de **prática jurídica simulada e real**, incluindo análise de casos, elaboração de peças e ações de extensão voltadas ao atendimento à comunidade. O curso também contempla pesquisa e um Trabalho de Conclusão de Curso."
         },
         {
           "tipo": "introducao",
@@ -819,13 +819,14 @@
             },
             {
               "pergunta": "O curso exige estágio e Trabalho de Conclusão de Curso?",
-              "resposta": "Informação incompleta"
+              "resposta": "Sim. O **estágio supervisionado é obrigatório**, com **210 horas** de atividades de prática jurídica simulada e real. O **Trabalho de Conclusão de Curso (TCC)** também é obrigatório, com **30 horas**, e pode ser desenvolvido como estudo de caso ou artigo científico."
             },
             {
               "pergunta": "Quais oportunidades de pesquisa e extensão existem em Direito?",
-              "resposta": "Informação incompleta"
+              "resposta": "Além de projetos acadêmicos e atividades de pesquisa, a formação inclui **ações de extensão ligadas à prática jurídica**. Nos períodos finais, os estudantes desenvolvem atividades supervisionadas de orientação à comunidade e análise de casos, articulando estudos teóricos e situações reais."
             }
-          ]
+          ],
+          "validacao": "Direito: respostas atualizadas a partir do PPC 2024, itens 8.6 (estágio 210 h), 8.8 (TCC 30 h) e 8.9 (extensão). Verificar a matriz e PPC vigentes para ingressantes 2027."
         },
         {
           "tipo": "links",
@@ -868,22 +869,24 @@
       ]
     },
     {
-      "id": "engenharia-mecanica-bacharelado-arcos",
+      "id": "engenharia-mecanica-bacharelado",
       "nome": "Engenharia Mecânica",
       "nivel": "Graduação",
       "tipo": "Bacharelado",
       "campi": [
-        "Arcos"
+        "Arcos",
+        "Betim"
       ],
-      "modalidade": "Presencial (25% EaD)",
+      "modalidade": "Presencial, com atividades EaD conforme o campus",
       "status": "em_validacao",
       "publicacao_autorizada": true,
       "revisao_coordenacao": true,
       "pendencias": [
-        "Confirmar PPC e matriz de ingressantes de 2027",
-        "Conferir carga horária total e requisitos de estágio/TCC",
-        "Confirmar vagas por modalidade de ingresso",
-        "Selecionar fotos autorizadas das experiências e ambientes de estudo"
+        "Confirmar PPC/matriz de 2027 de Arcos (referência 2024/1) e Betim (referência 2023)",
+        "Conferir carga horária do estágio e organização do TCC em Betim; Arcos: estágio 350 h e TCC 30 h no PPC 2024",
+        "Conferir distribuição de vagas por modalidade de ingresso em cada campus, antes de publicar total por seleção",
+        "Validar correspondência de 25% EaD em Arcos com a matriz vigente e exigência de presença em Betim",
+        "Selecionar fotografias e resultados de projetos identificados por campus, com autorização"
       ],
       "blocos": [
         {
@@ -898,8 +901,8 @@
               "valor": "Graduação — Bacharelado"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Arcos"
+              "rotulo": "Campi",
+              "valor": "Arcos; Betim"
             },
             {
               "rotulo": "Duração",
@@ -911,26 +914,28 @@
             },
             {
               "rotulo": "Modalidade",
-              "valor": "Presencial (25% EaD)"
+              "valor": "Presencial, com atividades EaD conforme o campus",
+              "validacao": "Arcos: 25% de EaD na matriz de ofertas 2027; Betim: presencial sem percentual informado no inventário."
             },
             {
               "rotulo": "Carga horária total",
               "valor": "Informação incompleta",
-              "validacao": "Conferir a matriz curricular vigente para ingressantes de 2027."
+              "validacao": "O PPC 2024 Arcos registra 3.600 h; Betim 2023 registra 3.600 h. Conferir vigência para os ingressantes 2027 antes de preencher."
             },
             {
               "rotulo": "PPC / matriz",
               "valor": "Informação incompleta",
-              "validacao": "Confirmar se o PPC 2024/1 permanece vigente e qual matriz utilizar para o novo ingresso."
+              "validacao": "Confirmar PPC e matriz de Arcos e Betim de forma independente: não aproveitar o currículo de Arcos para Betim."
             },
             {
               "rotulo": "E-mail da coordenação",
-              "valor": "eng.mecanica.arcos@ifmg.edu.br"
+              "valor": "Informação incompleta",
+              "validacao": "Arcos: eng.mecanica.arcos@ifmg.edu.br; Betim: eng.mecanica.betim@ifmg.edu.br. Preencher por campus na tabela de ofertas."
             },
             {
               "rotulo": "Vagas",
               "valor": "Informação incompleta",
-              "validacao": "Confirmar a quantidade por forma de ingresso nos editais específicos de 2027. Não somar automaticamente dados da planilha antiga."
+              "validacao": "Inventário de 2027 registra 50 vagas Arcos e 36 Betim; confirmar distribuição por via de seleção antes de indicar totais neste campo."
             }
           ]
         },
@@ -941,7 +946,7 @@
         },
         {
           "tipo": "introducao",
-          "conteudo": "Aulas no turno da noite e projetos integradores ajudam a aproximar os fundamentos da engenharia de problemas e soluções da indústria."
+          "conteudo": "A graduação combina conhecimentos de engenharia com projetos e atividades práticas. A organização curricular e as experiências variam entre os campi Arcos e Betim."
         },
         {
           "tipo": "texto",
@@ -989,7 +994,7 @@
         {
           "tipo": "texto",
           "titulo": "Projetos e experiências acadêmicas",
-          "conteudo": "O curso trabalha com a **Aprendizagem Baseada em Projetos**. Os Trabalhos Acadêmicos Integradores (TAI) são parte das atividades descritas pela unidade, e a documentação institucional reúne projetos, regulamentos de TCC e produções de estudantes.\n\nA participação em projetos, laboratórios ou ações de pesquisa e extensão depende dos componentes e oportunidades disponíveis em cada período."
+          "conteudo": "Em **Arcos**, a aprendizagem é organizada por **Trabalhos Acadêmicos Integradores (TAI)**: estudantes relacionam conteúdos de diferentes disciplinas para desenvolver soluções, produtos ou protótipos e apresentar seus resultados. A formação também integra ações de extensão.\n\nEm **Betim**, a graduação reúne atividades em laboratórios, projetos de engenharia e componentes de extensão. Cada campus possui seus próprios projetos e oportunidades de pesquisa e monitoria."
         },
         {
           "tipo": "introducao",
@@ -1008,22 +1013,31 @@
         {
           "tipo": "texto",
           "titulo": "Onde o IFMG oferece Engenharia Mecânica",
-          "conteudo": "O curso é oferecido no Campus Arcos. Confira o turno e o contato da coordenação na tabela abaixo."
+          "conteudo": "O bacharelado em Engenharia Mecânica é oferecido em **Arcos** e **Betim**, à noite. A organização das atividades presenciais, a matriz curricular e as experiências acadêmicas são específicas de cada campus."
         },
         {
           "tipo": "tabela",
           "colunas": [
             "Campus",
             "Turno",
+            "Modalidade",
             "E-mail da coordenação"
           ],
           "linhas": [
             [
               "Arcos",
               "Noite",
+              "Presencial (25% EaD)",
               "eng.mecanica.arcos@ifmg.edu.br"
+            ],
+            [
+              "Betim",
+              "Noite",
+              "Presencial",
+              "eng.mecanica.betim@ifmg.edu.br"
             ]
-          ]
+          ],
+          "validacao": "Percentual EaD em Betim e documentos curriculares atualizados devem ser confirmados separadamente por campus."
         },
         {
           "tipo": "texto",
@@ -1034,28 +1048,28 @@
           "tipo": "faq",
           "itens": [
             {
-              "pergunta": "Como a formação aproxima teoria e prática?",
-              "resposta": "A aprendizagem inclui projetos integradores que relacionam conhecimentos de desenho, materiais, processos de fabricação e sistemas mecânicos à elaboração de soluções de engenharia."
+              "pergunta": "Que experiências práticas fazem parte da formação em Arcos?",
+              "resposta": "Em Arcos, os estudantes desenvolvem Trabalhos Acadêmicos Integradores (TAI). Eles combinam conhecimentos de diferentes disciplinas para criar propostas, produtos ou protótipos e apresentam os resultados dos projetos a bancas avaliadoras."
             },
             {
-              "pergunta": "Quanto tempo dura?",
-              "resposta": "O curso tem duração prevista de cinco anos."
+              "pergunta": "Como são as atividades acadêmicas em Betim?",
+              "resposta": "Em Betim, a formação combina fundamentos de engenharia, aulas em laboratórios, projetos de desenvolvimento mecânico e atividades de extensão. O campus conta com estruturas voltadas à aprendizagem de processos e sistemas mecânicos."
             },
             {
-              "pergunta": "O curso tem atividades a distância?",
-              "resposta": "O curso é presencial, com 25% de carga horária EaD. A distribuição dos componentes está prevista na matriz curricular."
+              "pergunta": "O estágio e o TCC são obrigatórios?",
+              "resposta": "Sim. Em **Arcos**, o estágio supervisionado exige **350 horas** e pode ser iniciado após a conclusão de 60% da carga horária do curso. O **TCC é obrigatório, com 30 horas**, e pode assumir a forma de relatório técnico ou monografia. Em **Betim**, a formação também inclui estágio obrigatório e TCC, com organização própria do campus."
             },
             {
-              "pergunta": "Existem projetos integradores?",
-              "resposta": "Sim. A organização acadêmica inclui Trabalhos Acadêmicos Integradores (TAI). O curso disponibiliza informações e regulamentos sobre essas atividades e sobre o TCC."
+              "pergunta": "Posso participar de projetos de pesquisa, extensão ou monitoria?",
+              "resposta": "Sim. Em **Arcos**, estudantes podem concorrer a oportunidades de monitoria e de pesquisa aplicada; entre as iniciativas desenvolvidas está o projeto de kits didáticos e produtos mecânicos. Em **Betim**, a matriz curricular integra ações de extensão. A participação depende das oportunidades e seleções de cada campus."
             },
             {
-              "pergunta": "Há estágio e TCC?",
-              "resposta": "O curso disponibiliza regulamentos de TCC e atividades complementares. Informações de estágio constam dos documentos acadêmicos."
+              "pergunta": "Como ingressar em Engenharia Mecânica?",
+              "resposta": "Você pode participar dos processos seletivos do IFMG após concluir o ensino médio. Em **Arcos**, as formas de seleção incluem Enem, Histórico Escolar e Redação e Sisu; em **Betim**, incluem Enem e Sisu. Verifique no portal de ingresso os editais e a distribuição das vagas de 2027."
             },
             {
-              "pergunta": "Como ingressar?",
-              "resposta": "As formas de ingresso, as vagas e os prazos são apresentados nos processos seletivos do IFMG."
+              "pergunta": "Há atividades a distância?",
+              "resposta": "O curso é presencial nos dois campi. Em **Arcos**, a oferta prevê **25% da carga horária EaD**. Em **Betim**, a oferta é presencial, com organização curricular própria."
             }
           ]
         },
@@ -1082,8 +1096,8 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Informação incompleta",
-          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+          "conteudo": "Em **Arcos**, os estudantes têm oportunidades de participar de projetos de pesquisa aplicada e de monitoria por meio de seleções específicas. Entre as iniciativas desenvolvidas está o projeto **kits didáticos e produtos mecânicos**, que relaciona conhecimento de engenharia à criação de recursos de aprendizagem.\n\nEm **Betim**, a graduação inclui atividades extensionistas e projetos acadêmicos relacionados à formação em Engenharia Mecânica.",
+          "validacao": "Arcos: Editais 192/2026 (pesquisa aplicada kits didáticos e produtos mecânicos) e 261/2026 (monitoria). Confirmar funcionamento, objetivos, resultados e oportunidades específicas de Betim antes de acrescentar exemplos."
         },
         {
           "tipo": "texto",
@@ -1097,6 +1111,9 @@
           "conteudo": "Informação incompleta",
           "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
         }
+      ],
+      "aliases": [
+        "engenharia-mecanica-bacharelado-arcos"
       ]
     },
     {

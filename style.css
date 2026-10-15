@@ -444,3 +444,61 @@ h1 em{color:var(--accent);font-style:normal}
   .block-card .editor-setting{font-size:10px;white-space:normal;text-align:right}
   .block-card .copy-button{font-size:11px}
 }
+
+
+/* Ritmo enxuto: a busca é o conteúdo da página, não um discurso introdutório. */
+.catalog-home{padding-top:56px}
+.catalog-masthead{
+  grid-template-columns:minmax(0,1fr) 80px;
+  align-items:start;
+  gap:20px;
+  padding-bottom:38px;
+}
+.catalog-masthead h1{
+  font-size:clamp(65px,8.5vw,106px);
+  font-weight:700;
+  letter-spacing:-.055em;
+  line-height:.94;
+  margin:0;
+}
+.catalog-masthead-logo{width:76px;margin:0;max-height:95px}
+.catalog-home .filters{
+  margin:0;
+  padding:10px 0 24px;
+  border-top:1px solid var(--line);
+  border-bottom:0;
+}
+.catalog-meta{display:flex;justify-content:flex-end;padding:0 0 8px}
+.catalog-meta .count:empty{display:none}
+.empty-state{
+  min-height:0;
+  display:block;
+  padding:24px 0 14px;
+  margin:0;
+  border:0;
+  background:none;
+  font:400 14px/1.5 var(--mono);
+  color:var(--muted);
+}
+.demo-course-row .card-arrow{grid-column:4}
+.help-view{padding-top:64px}
+.help-view h1{font-size:clamp(48px,7vw,92px);margin:0 0 42px}
+.help-main{max-width:740px}
+.help-step{padding:20px 0 24px}
+.help-step h2{font-size:clamp(22px,2.7vw,31px);margin-bottom:4px}
+.help-step p{margin:0;font-size:15px}
+.help-manual{display:inline-block;margin-top:32px}
+@media(max-width:730px){
+  .catalog-home{padding-top:35px}
+  .catalog-masthead{grid-template-columns:1fr 65px;padding-bottom:30px}
+  .catalog-masthead h1{font-size:clamp(58px,11vw,84px);margin:0}
+  .catalog-masthead-logo{width:58px}
+  .demo-course-row .card-arrow{grid-column:3;grid-row:1}
+}
+@media(max-width:540px){
+  .catalog-home{padding-top:29px}
+  .catalog-masthead{grid-template-columns:1fr 48px;padding-bottom:23px}
+  .catalog-masthead h1{font-size:clamp(55px,12vw,72px);margin:0}
+  .catalog-masthead-logo{width:44px}
+  .empty-state{padding:20px 0 12px;font-size:13px}
+}

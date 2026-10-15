@@ -13,13 +13,12 @@
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="#inicio" aria-label="Guia de páginas de cursos, início">
+      <a class="brand" href="#catalogo" aria-label="Guia de páginas de cursos, catálogo">
         <img class="brand-logo" src="./assets/ifmg-logo.svg" alt="" width="32" height="39">
         <span class="brand-copy">guia de cursos<small>IFMG / conteúdo para o Wagtail</small></span>
       </a>
       <nav class="site-nav" aria-label="Navegação principal">
-        <a href="#inicio" data-nav="inicio">Início</a>
-        <a href="#catalogo" data-nav="catalogo">Catálogo</a>
+        <a href="#catalogo" data-nav="catalogo">Cursos</a>
         <a href="#orientacoes" data-nav="orientacoes">Como usar</a>
       </nav>
       <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Alternar entre tema claro e escuro" title="Alternar tema">
@@ -29,52 +28,27 @@
   </header>
 
   <main id="conteudo" tabindex="-1">
-    <section id="home-view" class="view shell">
-      <div class="eyebrow"><span class="eyebrow-dot"></span> IFMG <span class="eyebrow-slash">/</span> GUIA EDITORIAL <span class="eyebrow-slash">/</span> WAGTAIL</div>
-      <div class="hero-grid">
-        <div class="hero-copy">
+    <section id="home-view" class="view shell catalog-home">
+      <div class="catalog-masthead">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> IFMG <span class="eyebrow-slash">/</span> ROTEIROS PARA O WAGTAIL</div>
           <h1>guia de<br><em>cursos</em><span class="title-dot" aria-hidden="true">.</span></h1>
-          <p class="hero-lead">Manual de trabalho para estruturar e preencher as páginas dos cursos do IFMG.</p>
-          <p class="hero-description">O conteúdo que importa para o estudante, na ordem certa para quem edita o Wagtail.</p>
+          <p class="catalog-intro">Encontre o curso, escolha o bloco e copie o conteúdo para preencher a página no Wagtail.</p>
         </div>
-        <div class="hero-aside">
-          <img src="./assets/ifmg-logo.svg" class="hero-logo" alt="Instituto Federal de Minas Gerais" width="142" height="173">
-          <form id="home-search-form" class="home-search-form" role="search">
-            <label for="home-search-input">Pesquisar no guia</label>
-            <div class="home-search-line">
-              <input id="home-search-input" type="search" placeholder="Qual curso você procura?" autocomplete="off">
-              <button type="submit" aria-label="Pesquisar curso">↗</button>
-            </div>
-          </form>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#catalogo">explorar cursos <span aria-hidden="true">↗</span></a>
-            <button type="button" class="button button-outline" id="demo-from-home">ver demonstração <span aria-hidden="true">↗</span></button>
-          </div>
-        </div>
+        <img src="./assets/ifmg-logo.svg" class="catalog-masthead-logo" alt="Instituto Federal de Minas Gerais" width="110" height="134">
       </div>
-      <div class="line-heading"><h2>do conteúdo à página</h2><span>três etapas</span></div>
-      <div class="process-grid">
-        <article class="process-card"><span>01</span><div><h3>apurar</h3><p>Identificar as informações que orientam a escolha do estudante, com evidências do curso e análise das alternativas.</p></div><span class="process-arrow" aria-hidden="true">↗</span></article>
-        <article class="process-card"><span>02</span><div><h3>estruturar</h3><p>Construir ritmo e hierarquia com blocos de Texto, Introdução, Tabela, FAQ e Galeria.</p></div><span class="process-arrow" aria-hidden="true">↗</span></article>
-        <article class="process-card"><span>03</span><div><h3>preencher</h3><p>Seguir o roteiro no Wagtail, conferir as fontes e encaminhar a página para revisão.</p></div><span class="process-arrow" aria-hidden="true">↗</span></article>
+      <div class="catalog-heading">
+        <h2>cursos disponíveis<span class="period">.</span></h2>
+        <span class="count" id="catalog-count" aria-live="polite"></span>
       </div>
-      <div class="home-bottom">
-        <div><span class="eyebrow simple">PRIMEIRO ACESSO</span><h2>editar com clareza.<br>publicar com evidências.</h2></div>
-        <div><p>Este guia não substitui o Wagtail nem os documentos oficiais. Só serão exibidos cursos cujo conteúdo tenha sido revisado e autorizado para divulgação.</p><a class="text-link" href="#orientacoes">Entenda os critérios <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </section>
-
-    <section id="catalog-view" class="view shell" hidden>
-      <div class="eyebrow"><span class="eyebrow-dot"></span> Explorar <span class="eyebrow-slash">/</span> Cursos</div>
-      <div class="section-top"><div><h1>encontre o curso<span class="period">.</span></h1><p>Pesquise os roteiros editoriais liberados para consulta e preenchimento.</p></div><span class="count" id="catalog-count" aria-live="polite"></span></div>
       <form id="catalog-filters" class="filters" role="search">
-        <label class="search-control"><span>Buscar curso</span><input type="search" id="filter-search" placeholder="Nome do curso ou assunto" autocomplete="off"></label>
+        <label class="search-control"><span>Pesquisar curso</span><input type="search" id="filter-search" placeholder="Nome do curso" autocomplete="off"></label>
         <label><span>Nível</span><select id="filter-level"><option value="">Todos os níveis</option></select></label>
         <label><span>Campus</span><select id="filter-campus"><option value="">Todos os campi</option></select></label>
-        <button type="reset" class="reset-filters">Limpar</button>
+        <button type="reset" class="reset-filters">limpar</button>
       </form>
       <div class="catalog-grid" id="catalog-results" aria-live="polite"></div>
-      <div class="catalog-footer">A ausência de um curso neste catálogo não significa que ele não seja oferecido pelo IFMG. Significa apenas que não existe um roteiro aprovado disponível aqui.</div>
+      <div class="catalog-footer">Somente roteiros aprovados aparecem neste catálogo. A ausência de um curso não significa que ele não é oferecido pelo IFMG. <a href="#orientacoes">Como utilizar o guia ↗</a></div>
     </section>
 
     <section id="help-view" class="view shell help-view" hidden>
@@ -93,7 +67,7 @@
     </section>
 
     <section id="course-view" class="view shell course-view" hidden>
-      <nav class="breadcrumb" aria-label="Caminho"><a href="#catalogo">Catálogo</a><span aria-hidden="true">/</span><span id="course-breadcrumb">Curso</span></nav>
+      <nav class="breadcrumb" aria-label="Caminho"><a href="#catalogo">Cursos</a><span aria-hidden="true">/</span><span id="course-breadcrumb">Curso</span></nav>
       <div id="course-content"></div>
     </section>
   </main>

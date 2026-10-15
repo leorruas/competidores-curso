@@ -190,11 +190,11 @@
             },
             {
               "pergunta": "Governador Valadares",
-              "resposta": "A oferta integrada do Campus Governador Valadares envolve a formação geral do ensino médio e conhecimentos de projetos, orçamento, acompanhamento e manutenção de edificações. As aulas são presenciais, pela manhã e à tarde.\n\nA apresentação institucional menciona projetos, aulas práticas, eventos e visitas técnicas. Para destacar uma experiência específica, a coordenação deve confirmar sua realização e a relação com o curso."
+              "resposta": "A oferta integrada do Campus Governador Valadares envolve a formação geral do ensino médio e conhecimentos de projetos, orçamento, acompanhamento e manutenção de edificações. As aulas são presenciais, pela manhã e à tarde.\n\nA formação inclui projetos, aulas práticas, eventos e visitas técnicas. Para destacar uma experiência específica, a coordenação deve confirmar sua realização e a relação com o curso."
             },
             {
               "pergunta": "Ouro Preto",
-              "resposta": "O Campus Ouro Preto também oferece Técnico em Edificações Integrado. A página institucional apresenta duração de três anos, organização anual e carga horária total de 3.460 horas, além de links para PPC e matriz curricular.\n\nO curso é presencial, com 0,86% de carga horária EaD. A organização dessas atividades está detalhada no projeto pedagógico do curso."
+              "resposta": "O Campus Ouro Preto também oferece Técnico em Edificações Integrado. O curso tem duração prevista de três anos, organização anual e carga horária total de 3.460 horas.\n\nO curso é presencial, com 0,86% de carga horária EaD. A organização dessas atividades está detalhada no projeto pedagógico do curso."
             },
             {
               "pergunta": "Piumhi",
@@ -467,7 +467,7 @@
         },
         {
           "tipo": "introducao",
-          "conteudo": "A modalidade EaD influencia a rotina de quem estuda e trabalha. Antes de planejar os deslocamentos, confirme as atividades presenciais: o PPC de 2024 prevê tutorias no campus, enquanto o quadro de 2027 indica 100% EaD."
+          "conteudo": "A modalidade EaD permite acompanhar conteúdos e atividades a distância. A organização dos encontros e das atividades presenciais varia conforme o campus e a turma."
         },
         {
           "tipo": "texto",
@@ -1509,7 +1509,7 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e aprendizagem prática",
-          "conteudo": "A apresentação institucional de Agronomia destaca **atividades práticas**, participação em **pesquisa e extensão** e a atuação de grupos de estudos. Essa combinação aproxima os temas da sala de aula dos desafios da produção, da assistência técnica e da sustentabilidade ambiental.\n\nExperiências específicas, locais das práticas e oportunidades de bolsas precisam ser confirmados antes da divulgação de exemplos de cada turma."
+          "conteudo": "A graduação em Agronomia inclui **atividades práticas**, oportunidades de **pesquisa e extensão** e grupos de estudo. Essa combinação aproxima os temas da sala de aula dos desafios da produção, da assistência técnica e da sustentabilidade ambiental.\n\nExperiências específicas, locais das práticas e oportunidades de bolsas precisam ser confirmados antes da divulgação de exemplos de cada turma."
         },
         {
           "tipo": "introducao",
@@ -1748,7 +1748,7 @@
         {
           "tipo": "texto",
           "titulo": "Atividades práticas e atualização curricular",
-          "conteudo": "A página institucional apresenta a formação orientada à melhoria de sistemas de produção. O campus disponibiliza documentação acadêmica e registros de atividades associadas à graduação.\n\nA estrutura curricular é apresentada no projeto pedagógico do curso, que reúne os componentes da formação e as atividades acadêmicas."
+          "conteudo": "A formação relaciona conhecimentos de engenharia e gestão à análise e à melhoria de sistemas de produção de bens e serviços.\n\nA estrutura curricular é apresentada no projeto pedagógico do curso, que reúne os componentes da formação e as atividades acadêmicas."
         },
         {
           "tipo": "introducao",
@@ -1806,7 +1806,7 @@
             },
             {
               "pergunta": "Há estágio e TCC?",
-              "resposta": "A página do curso disponibiliza documentos acadêmicos para consulta das atividades curriculares."
+              "resposta": "Informação incompleta"
             },
             {
               "pergunta": "Como ingressar?",

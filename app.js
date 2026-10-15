@@ -222,10 +222,10 @@
     const title = escapeHTML(course.nome), kind = escapeHTML([course.nivel, course.tipo].filter(Boolean).join(" / "));
     $("course-breadcrumb").textContent = course.nome;
     const flags = course.demo ? "" : [...(course.campi || []), ...(course.modalidade ? [course.modalidade] : [])].map(x => '<span class="tag">' + escapeHTML(x) + '</span>').join("");
-    const review = course.status === "em_validacao" ? '<p class="course-review-note"><strong>Em validação pela coordenação.</strong> Campos incompletos estão identificados abaixo.</p>' : "";
+
     const headings = course.blocos.map((b,i) => ({ title: b.titulo || blockName[b.tipo], index: i }));
     root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Exemplo fictício" : kind) + '</div><h1>' + title + '</h1>' + (course.descricao ? '<p>' + escapeHTML(course.descricao) + '</p>' : '') + (flags ? '<div class="course-flags">' + flags + '</div>' : '') + '</div></div>' +
-      review + '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar</button></div>' +
+      '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +
       (!activePreview ? '' : '') +
       (activePreview ? course.blocos.map(blockPreview).join("") : course.blocos.map(editorBlock).join("")) +

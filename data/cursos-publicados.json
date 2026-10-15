@@ -334,6 +334,39 @@
           "estilo": "Padrão",
           "itens": [],
           "validacao": "Links específicos desta modalidade ainda não foram confirmados. Informação incompleta."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Reconhecimentos e premiações",
+          "conteudo": "Informação incompleta",
+          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Informação incompleta",
+          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": "Ao concluir o curso técnico, você pode continuar estudando em cursos de graduação, conforme os requisitos e processos seletivos. O IFMG oferece diferentes formações que permitem ampliar os estudos, inclusive em outros campi.",
+          "validacao": "Informação incompleta: pesquisar graduação relacionada e, quando houver continuidade após ela, pós-graduação pertinente no IFMG. Indicar campus, curso e regras de ingresso sem prometer acesso automático."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Padrão",
+          "link": {
+            "rotulo": "Cursos do IFMG",
+            "descricao": "Conheça outras formações",
+            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta",
+          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
         }
       ]
     },
@@ -548,6 +581,45 @@
               "url": "https://www.ifmg.edu.br/ribeiraodasneves/cursos-1/tecnico/tecnico-em-logistica-subsequente-ead"
             }
           ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Reconhecimentos e premiações",
+          "conteudo": "Informação incompleta",
+          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Informação incompleta",
+          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": "Ao concluir o curso técnico, você pode continuar estudando em cursos de graduação, conforme os requisitos e processos seletivos. O IFMG oferece diferentes formações que permitem ampliar os estudos, inclusive em outros campi.",
+          "validacao": "Informação incompleta: pesquisar graduação relacionada e, quando houver continuidade após ela, pós-graduação pertinente no IFMG. Indicar campus, curso e regras de ingresso sem prometer acesso automático."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Padrão",
+          "link": {
+            "rotulo": "Cursos do IFMG",
+            "descricao": "Conheça outras formações",
+            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras ofertas de Técnico em Logística",
+          "conteudo": "Informação incompleta",
+          "validacao": "O catálogo institucional de EaD também cita o Técnico em Logística Subsequente em Governador Valadares, mas o quadro de ingresso 2027 disponível lista apenas Ribeirão das Neves. Confirmar se Governador Valadares segue com oferta ativa e para qual ingresso antes de incluir esse campus na tabela."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta",
+          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
         }
       ]
     },
@@ -796,6 +868,39 @@
               "url": "https://www.ifmg.edu.br/arcos/cursos-1/direito"
             }
           ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Reconhecimentos e premiações",
+          "conteudo": "Informação incompleta",
+          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Informação incompleta",
+          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
+          "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Padrão",
+          "link": {
+            "rotulo": "Pós-graduação no IFMG",
+            "descricao": "Conheça os cursos e oportunidades",
+            "url": "https://www.ifmg.edu.br/portal/pesquisa-e-pos-graduacao/lato-sensu"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta",
+          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
         }
       ]
     },
@@ -999,6 +1104,39 @@
           "tipo": "galeria",
           "itens": [],
           "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Reconhecimentos e premiações",
+          "conteudo": "Informação incompleta",
+          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Informação incompleta",
+          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
+          "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Padrão",
+          "link": {
+            "rotulo": "Pós-graduação no IFMG",
+            "descricao": "Conheça os cursos e oportunidades",
+            "url": "https://www.ifmg.edu.br/portal/pesquisa-e-pos-graduacao/lato-sensu"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta",
+          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
         }
       ]
     },
@@ -1249,6 +1387,39 @@
           "tipo": "galeria",
           "itens": [],
           "validacao": "Selecionar fotografias autorizadas das atividades de Administração em cada um dos seis campi, com legenda, crédito e texto alternativo."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Reconhecimentos e avaliações",
+          "conteudo": "No Campus Formiga, o curso de Administração obteve **conceito 4 em avaliação in loco do MEC**. Em Ouro Branco, recebeu **quatro estrelas no Guia da Faculdade de 2025**.",
+          "validacao": "Confirmar o ano de referência do conceito do MEC em Formiga e verificar avaliações, reconhecimentos e prêmios específicos dos outros quatro campi. Não atribuir o resultado de um campus aos demais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Informação incompleta",
+          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": "Depois do bacharelado, é possível concorrer a cursos de pós-graduação do IFMG conforme os requisitos e editais de cada seleção.\n\nEntre as opções da instituição está a **Especialização em Gestão**, oferecida a distância em uma iniciativa multicampi de **Bambuí e São João Evangelista**, com ênfases em Empreendedorismo e Negócios, Marketing Digital, Gestão de Pessoas e Tecnologia e Inovação. A seleção e a disponibilidade de turmas seguem os editais do curso.",
+          "validacao": "Verificar abertura de turma e edital vigentes antes de apresentar a especialização como inscrição aberta; mapear outras formações relacionadas nos demais campi."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Especialização em Gestão",
+            "descricao": "Conheça o curso de pós-graduação do IFMG",
+            "url": "https://www.bambui.ifmg.edu.br/portal/especializacao-gestao1"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta",
+          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
         }
       ],
       "aliases": [
@@ -1462,6 +1633,39 @@
           "tipo": "galeria",
           "itens": [],
           "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Reconhecimentos e premiações",
+          "conteudo": "Informação incompleta",
+          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Informação incompleta",
+          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
+          "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Padrão",
+          "link": {
+            "rotulo": "Pós-graduação no IFMG",
+            "descricao": "Conheça os cursos e oportunidades",
+            "url": "https://www.ifmg.edu.br/portal/pesquisa-e-pos-graduacao/lato-sensu"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta",
+          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
         }
       ]
     },
@@ -1672,6 +1876,39 @@
           "tipo": "galeria",
           "itens": [],
           "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Reconhecimentos e premiações",
+          "conteudo": "Informação incompleta",
+          "validacao": "Levantar avaliações oficiais, prêmios e reconhecimentos do curso, com ano, entidade responsável, nome e campus. Não usar resultados de outros cursos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Informação incompleta",
+          "validacao": "Listar projetos efetivamente vinculados ao curso, grupos de estudo, oportunidades de bolsas, extensão, eventos e resultados de estudantes. Confirmar participação e disponibilidade por campus, com fontes e datas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
+          "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Padrão",
+          "link": {
+            "rotulo": "Pós-graduação no IFMG",
+            "descricao": "Conheça os cursos e oportunidades",
+            "url": "https://www.ifmg.edu.br/portal/pesquisa-e-pos-graduacao/lato-sensu"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta",
+          "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
         }
       ]
     }

@@ -52,8 +52,7 @@
             },
             {
               "rotulo": "Modalidade",
-              "valor": "Presencial",
-              "validacao": "As ofertas de Ouro Preto e Santa Luzia têm percentuais EaD próprios; verificar os detalhes por campus."
+              "valor": "Presencial, com cerca de 10% EaD, a depender do campus escolhido"
             },
             {
               "rotulo": "Campi",
@@ -153,8 +152,8 @@
           "tipo": "tabela",
           "colunas": [
             "Campus",
-            "Turno 2027",
-            "Modalidade 2027",
+            "Turno",
+            "Modalidade",
             "E-mail da coordenação do curso"
           ],
           "linhas": [
@@ -173,7 +172,7 @@
             [
               "Ouro Preto",
               "Manhã e tarde",
-              "Presencial (0,86% EaD)",
+              "Presencial",
               "Informação incompleta"
             ],
             [
@@ -185,7 +184,7 @@
             [
               "Santa Luzia",
               "Manhã e tarde",
-              "Presencial (10,3% EaD)",
+              "Presencial",
               "edificacoes.santaluzia@ifmg.edu.br"
             ]
           ],
@@ -204,7 +203,7 @@
             },
             {
               "pergunta": "Ouro Preto",
-              "resposta": "O Campus Ouro Preto também oferece Técnico em Edificações Integrado. A página institucional apresenta duração de três anos, organização anual e carga horária total de 3.460 horas, além de links para PPC e matriz curricular.\n\nNo Processo Seletivo 2027, a oferta consta como presencial, com 0,86% de carga horária EaD. A unidade deve explicar quais atividades correspondem a esse percentual e como elas se organizam na rotina de estudos."
+              "resposta": "O Campus Ouro Preto também oferece Técnico em Edificações Integrado. A página institucional apresenta duração de três anos, organização anual e carga horária total de 3.460 horas, além de links para PPC e matriz curricular.\n\nO curso é presencial, com 0,86% de carga horária EaD. A unidade deve explicar quais atividades correspondem a esse percentual e como elas se organizam na rotina de estudos."
             },
             {
               "pergunta": "Piumhi",
@@ -212,7 +211,7 @@
             },
             {
               "pergunta": "Santa Luzia",
-              "resposta": "No Campus Santa Luzia, o Técnico em Edificações Integrado é oferecido em período diurno, com duração de três anos. A formação relaciona ensino médio e competências profissionais em projetos, planejamento e acompanhamento de obras.\n\nA oferta de 2027 informa 10,3% de carga horária a distância. A página do curso apresenta versões de PPC e matriz curricular; é preciso verificar qual delas se aplica à turma antes de divulgar a distribuição detalhada de disciplinas."
+              "resposta": "No Campus Santa Luzia, o Técnico em Edificações Integrado é oferecido em período diurno, com duração de três anos. A formação relaciona ensino médio e competências profissionais em projetos, planejamento e acompanhamento de obras.\n\nO curso é presencial, com 10,3% de carga horária EaD. A página do curso apresenta versões de PPC e matriz curricular; é preciso verificar qual delas se aplica à turma antes de divulgar a distribuição detalhada de disciplinas."
             }
           ],
           "validacao": "Há respostas que dependem de confirmação acadêmica; revisar os itens indicados antes de transcrever."

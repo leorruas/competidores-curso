@@ -128,9 +128,15 @@
       // O título, quando existe, vai no mesmo conteúdo que os parágrafos.
       // Quando ainda não há conteúdo, manter o título da seção visível,
       // mas não oferecer cópia de um placeholder para o Wagtail.
-      if ((!b.conteudo || /^informação incompleta$/i.test(b.conteudo.trim())) && b.validacao)
-        return [{label:"Conteúdo",value:"Informação incompleta",rich:true,
-          html:"<span class=\"review-value\">Informação incompleta</span>"}];
+      if ((!b.conteudo || /^informação incompleta$/i.test(b.conteudo.trim())) && b.validacao) {
+        // O título é parte da instrução de preenchimento e deve ser copiável,
+        // mesmo quando o corpo da seção ainda não foi produzido.
+        return [
+          ...(b.titulo ? [{label:"Título da seção",value:b.titulo,rich:true,
+            html:richHTML("",b.titulo)}] : []),
+          {label:"Conteúdo",value:"Informação incompleta",rich:false,html:""}
+        ];
+      }
       const value = [b.titulo || "", b.conteudo || ""].filter(Boolean).join("\n\n");
       return value ? [{label:"Conteúdo", value, rich:true,
         html:richHTML(b.conteudo || "", b.titulo || "")}] : [];
@@ -176,12 +182,12 @@
     const incomplete = !field.value.trim() || /^informação incompleta$/i.test(field.value.trim());
     const action = field.setting
       ? '<span class="editor-setting" aria-label="Selecionar esta opção no Wagtail">selecionar no Wagtail</span>'
-      : incomplete ? '<span class="editor-setting">Precisa de validação</span>'
+      : incomplete ? '<span class="editor-setting">Informação incompleta</span>'
       : '<button type="button" class="copy-button" data-copy-field="' + fieldIndex +
           '" data-copy-block="' + blockIndex + '">' + (field.table ? "Copiar tabela" : "Copiar") + ' <span aria-hidden="true">↗</span></button>';
     return '<div class="editor-field"><div class="editor-field-top"><span class="editor-field-label">' +
       escapeHTML(field.label) + '</span><div class="editor-field-actions">' + action +
-      '</div></div>' + content + (field.validacao ? '<p class="field-review"><strong>Precisa de validação</strong> — ' + escapeHTML(field.validacao) + '</p>' : '') + '</div>';
+      '</div></div>' + content + '</div>';
   }
   function editorBlock(b, i) {
     const fields = editorFields(b);
@@ -189,7 +195,6 @@
       '<span class="block-badge" aria-hidden="true">' + String(i+1).padStart(2,"0") + '</span>' +
       '<header class="block-card-header"><h2 class="block-card-title" id="block-heading-' + i +
       '">' + escapeHTML(blockName[b.tipo]) + '</h2></header>' +
-      (b.validacao ? '<p class="field-review"><strong>Precisa de validação</strong> — ' + escapeHTML(b.validacao) + '</p>' : '') +
       '<div class="editor-fields">' + fields.map((field,j) => fieldHTML(field,i,j)).join("") + '</div>' +
       '</section>';
   }

@@ -169,29 +169,26 @@ test("Administração reúne seis campi e não repete FAQ de turno", () => {
   assert.ok(course.aliases.includes("administracao-bacharelado-bambui"));
 });
 
-test("reconhecimentos, pesquisa e continuidade aparecem após galeria", () => {
+test("as seções editoriais existem, independentemente da posição contextual da galeria", () => {
   const h=testContext();
-  for(const c of json.courses) {
-    const g=c.blocos.findIndex(x=>x.tipo==="galeria");
-    assert.ok(g>=0,c.nome);
-    const titles=c.blocos.slice(g+1).filter(b=>b.tipo==="texto").map(b=>b.titulo);
-    assert.ok(titles.some(x=>/Reconhecimentos/i.test(x)),c.nome);
-    assert.ok(titles.some(x=>/Pesquisa/i.test(x)),c.nome);
-    assert.ok(titles.some(x=>/Continue seus estudos/i.test(x)),c.nome);
-    assert.ok(titles.some(x=>/Experiências/i.test(x)),c.nome);
-    const pending=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Experiências e conquistas dos estudantes");
-    const fields=h.editorFields(pending);
-    if (pending.conteudo === "Informação incompleta") {
+  for (const c of json.courses) {
+    const gallery=c.blocos.find(b=>b.tipo==="galeria");
+    assert.ok(gallery,c.nome);
+    const texts=c.blocos.filter(b=>b.tipo==="texto");
+    const titles=texts.map(b=>b.titulo || "");
+    assert.ok(titles.some(t=>/Reconhecimentos/i.test(t)),c.nome);
+    assert.ok(titles.some(t=>/Pesquisa/i.test(t)),c.nome);
+    assert.ok(titles.some(t=>/Continue seus estudos/i.test(t)),c.nome);
+    assert.ok(titles.some(t=>/Experiências/i.test(t)),c.nome);
+    for (const b of texts.filter(b=>b.conteudo==="Informação incompleta")) {
+      assert.ok(b.titulo,c.nome+": seção incompleta precisa de título");
+      const fields=h.editorFields(b);
       assert.equal(fields[0].label,"Título da seção");
-      assert.equal(fields[0].value,pending.titulo);
+      assert.equal(fields[0].value,b.titulo);
       assert.equal(fields[1].value,"Informação incompleta");
-      const markup=h.editorBlock(pending,23);
+      const markup=h.editorBlock(b,2);
       assert.equal((markup.match(/data-copy-field=/g)||[]).length,1);
       assert.doesNotMatch(markup,/Precisa de validação|confirmar com a coordenação/i);
-    } else {
-      assert.ok(fields[0].value.includes(pending.titulo));
-      assert.match(h.editorBlock(pending,23),/data-copy-field=/);
-      assert.ok(pending.validacao,"Conteúdo parcialmente confirmado deve manter controle interno");
     }
   }
 });

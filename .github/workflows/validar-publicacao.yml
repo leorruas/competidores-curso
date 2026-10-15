@@ -1,0 +1,33 @@
+name: Validar publicação de cursos
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/validar-publicacao.mjs'
+      - '.github/workflows/validar-publicacao.yml'
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'scripts/validar-publicacao.mjs'
+      - '.github/workflows/validar-publicacao.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar-conteudo-publico:
+    name: Validar conteúdo público e fronteira editorial
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obter repositório
+        uses: actions/checkout@v4
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verificar catálogo aprovado
+        run: node scripts/validar-publicacao.mjs
+      - name: Verificar sintaxe da aplicação
+        run: node --check app.js

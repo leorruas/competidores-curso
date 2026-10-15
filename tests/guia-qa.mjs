@@ -103,7 +103,7 @@ test("Link único: selecionar estilo; copiar título, descrição e URL", () => 
   const h=testContext();
   const b=h.demo.blocos.find(x=>x.tipo==="link-unico");
   const fields=h.editorFields(b);
-  assert.deepEqual(fields.map(x=>x.label),["Estilo","Título / texto do link","Descrição","URL"]);
+  assert.deepEqual(Array.from(fields,x=>x.label),["Estilo","Título / texto do link","Descrição","URL"]);
   assert.equal(fields[0].setting,true);
   assert.ok(fields.slice(1).every(x=>!x.setting));
   const rendered=h.editorBlock(b,6);

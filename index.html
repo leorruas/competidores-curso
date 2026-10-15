@@ -30,16 +30,8 @@
   <main id="conteudo" tabindex="-1">
     <section id="home-view" class="view shell catalog-home">
       <div class="catalog-masthead">
-        <div>
-          <div class="eyebrow"><span class="eyebrow-dot"></span> IFMG <span class="eyebrow-slash">/</span> ROTEIROS PARA O WAGTAIL</div>
-          <h1>guia de<br><em>cursos</em><span class="title-dot" aria-hidden="true">.</span></h1>
-          <p class="catalog-intro">Encontre o curso, escolha o bloco e copie o conteúdo para preencher a página no Wagtail.</p>
-        </div>
-        <img src="./assets/ifmg-logo.svg" class="catalog-masthead-logo" alt="Instituto Federal de Minas Gerais" width="110" height="134">
-      </div>
-      <div class="catalog-heading">
-        <h2>cursos disponíveis<span class="period">.</span></h2>
-        <span class="count" id="catalog-count" aria-live="polite"></span>
+        <h1>cursos<span class="period">.</span></h1>
+        <img src="./assets/ifmg-logo.svg" class="catalog-masthead-logo" alt="Instituto Federal de Minas Gerais" width="86" height="104">
       </div>
       <form id="catalog-filters" class="filters" role="search">
         <label class="search-control"><span>Pesquisar curso</span><input type="search" id="filter-search" placeholder="Nome do curso" autocomplete="off"></label>
@@ -47,23 +39,19 @@
         <label><span>Campus</span><select id="filter-campus"><option value="">Todos os campi</option></select></label>
         <button type="reset" class="reset-filters">limpar</button>
       </form>
+      <div class="catalog-meta"><span class="count" id="catalog-count" aria-live="polite"></span></div>
       <div class="catalog-grid" id="catalog-results" aria-live="polite"></div>
-      <div class="catalog-footer">Somente roteiros aprovados aparecem neste catálogo. A ausência de um curso não significa que ele não é oferecido pelo IFMG. <a href="#orientacoes">Como utilizar o guia ↗</a></div>
+
     </section>
 
     <section id="help-view" class="view shell help-view" hidden>
-      <div class="eyebrow"><span class="eyebrow-dot"></span> Orientações <span class="eyebrow-slash">/</span> Editores</div>
-      <h1>como usar<br><em>este guia.</em></h1>
-      <p class="hero-lead">O roteiro mostra os blocos na sequência de preenchimento do Wagtail.</p>
-      <div class="help-columns">
-        <div class="help-main">
-          <article class="help-step"><span class="step-no">01</span><div><h2>Escolha um curso</h2><p>O catálogo é a própria página inicial. Busque por nome, nível ou campus. Apenas cursos com conteúdo autorizado são listados; um exemplo fictício fica disponível para experimentar os campos de preenchimento.</p></div></article>
-          <article class="help-step"><span class="step-no">02</span><div><h2>Leia antes de preencher</h2><p>Os blocos aparecem em ordem, com números grandes na margem. O nome do componente indica o que criar no Wagtail. Use <strong>Visualizar página</strong> para conferir a composição.</p></div></article>
-          <article class="help-step"><span class="step-no">03</span><div><h2>Monte os blocos no Wagtail</h2><p>Clique em <strong>Copiar</strong> no campo desejado. No bloco <strong>Texto</strong>, título e parágrafos são copiados juntos. Em <strong>Tabela</strong>, copie a tabela inteira de uma vez. Em <strong>Link único</strong>, selecione o estilo e copie título, descrição e URL.</p></div></article>
-          <article class="help-step"><span class="step-no">04</span><div><h2>Confira e encaminhe</h2><p>O botão de cópia tenta preservar a formatação em textos e tabelas. Confira o resultado no Wagtail, especialmente títulos, negrito e estrutura da tabela. Revise links e dados acadêmicos antes de publicar.</p></div></article>
-        </div>
-        <aside class="help-aside"><span class="micro-label">MANUAL ORIGINAL</span><h3>Precisando de ajuda com o Wagtail?</h3><p>Para permissões, criação de páginas, pré-visualização e moderação, consulte o manual geral do editor.</p><a class="button button-outline" href="https://leorruas.github.io/guiaportalifmg/" target="_blank" rel="noopener noreferrer">Abrir Guia do Portal <span aria-hidden="true">↗</span></a><hr><span class="micro-label">SOBRE ESTA FERRAMENTA</span><p>Este é um catálogo de roteiros revisados. Pesquisa, fichas brutas e comentários internos não são disponibilizados aqui.</p></aside>
+      <h1>como usar<span class="period">.</span></h1>
+      <div class="help-main">
+        <article class="help-step"><span class="step-no">01</span><div><h2>Escolha o curso.</h2><p>Use a busca ou os filtros.</p></div></article>
+        <article class="help-step"><span class="step-no">02</span><div><h2>Copie.</h2><p>Um botão por campo. A tabela é copiada inteira.</p></div></article>
+        <article class="help-step"><span class="step-no">03</span><div><h2>Cole no Wagtail.</h2><p>Confira a formatação antes de publicar.</p></div></article>
       </div>
+      <a class="text-link help-manual" href="https://leorruas.github.io/guiaportalifmg/" target="_blank" rel="noopener noreferrer">Guia do Portal IFMG ↗</a>
     </section>
 
     <section id="course-view" class="view shell course-view" hidden>
@@ -72,7 +60,7 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-inner"><span>IFMG <span class="dim">/</span> páginas de cursos</span><span>Guia editorial não oficial de apoio ao preenchimento</span><a href="https://github.com/leorruas/competidores-curso" target="_blank" rel="noopener noreferrer">Repositório ↗</a></div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><span>IFMG / guia de cursos</span><a href="https://leorruas.github.io/guiaportalifmg/" target="_blank" rel="noopener noreferrer">Guia do Portal ↗</a></div></footer>
   <div id="live-notice" class="visually-hidden" role="status" aria-live="polite"></div>
 </body>
 </html>

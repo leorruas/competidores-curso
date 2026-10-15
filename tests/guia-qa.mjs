@@ -180,14 +180,18 @@ test("reconhecimentos, pesquisa e continuidade aparecem após galeria", () => {
     assert.ok(titles.some(x=>/Continue seus estudos/i.test(x)),c.nome);
     assert.ok(titles.some(x=>/Experiências/i.test(x)),c.nome);
     const pending=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Experiências e conquistas dos estudantes");
-    const field=h.editorFields(pending)[0];
+    const fields=h.editorFields(pending);
     if (pending.conteudo === "Informação incompleta") {
-      assert.equal(field.value,"Informação incompleta");
-      assert.doesNotMatch(h.editorBlock(pending,23),/data-copy-field=/);
+      assert.equal(fields[0].label,"Título da seção");
+      assert.equal(fields[0].value,pending.titulo);
+      assert.equal(fields[1].value,"Informação incompleta");
+      const markup=h.editorBlock(pending,23);
+      assert.equal((markup.match(/data-copy-field=/g)||[]).length,1);
+      assert.doesNotMatch(markup,/Precisa de validação|confirmar com a coordenação/i);
     } else {
-      assert.ok(field.value.includes(pending.titulo));
+      assert.ok(fields[0].value.includes(pending.titulo));
       assert.match(h.editorBlock(pending,23),/data-copy-field=/);
-      assert.ok(pending.validacao,"Conteúdo parcialmente confirmado deve manter pendência separada");
+      assert.ok(pending.validacao,"Conteúdo parcialmente confirmado deve manter controle interno");
     }
   }
 });

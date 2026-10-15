@@ -150,7 +150,10 @@
     const actions = field.rich
       ? '<button type="button" class="copy-button" data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '" data-copy-format="rich">copiar formatado</button>' +
         '<button type="button" class="copy-button copy-secondary" data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '" data-copy-format="plain">copiar texto</button>'
-      : '<button type="button" class="copy-button" data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '" data-copy-format="plain">copiar</button>';
+      : '<button type="button" class="copy-button" data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '" data-copy-format="plain">' +
+          (field.label.includes("URL") || field.label.includes("Endereço") ? "copiar link" :
+           field.label.includes("Título") || field.label.includes("Texto") ? "copiar texto" :
+           field.label.includes("Descrição") ? "copiar descrição" : "copiar") + '</button>';
     return '<div class="editor-field"><div class="editor-field-top"><span class="editor-field-label">' + info +
       '</span><div class="editor-field-actions">' + actions + '</div></div>' + content + '</div>';
   }

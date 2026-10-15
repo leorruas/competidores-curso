@@ -120,15 +120,6 @@
           "conteudo": "A escolha do campus faz diferença: as cinco ofertas de Edificações compartilham a formação integrada, mas apresentam condições próprias de presencialidade, estrutura e oportunidades acadêmicas."
         },
         {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Saiba mais",
-            "descricao": "Como ingressar no IFMG",
-            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
-          }
-        },
-        {
           "tipo": "texto",
           "titulo": "Laboratórios & experiências",
           "conteudo": ""
@@ -231,15 +222,6 @@
           ]
         },
         {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Saiba mais",
-            "descricao": "Conheça os campi do IFMG",
-            "url": "https://www.ifmg.edu.br/portal/campi"
-          }
-        },
-        {
           "tipo": "texto",
           "titulo": "Continuidade dos estudos",
           "conteudo": "Depois do técnico integrado, o estudante pode concorrer a cursos superiores em áreas relacionadas à construção civil, engenharia, arquitetura, tecnologia e gestão, observando os critérios de ingresso de cada graduação."
@@ -304,10 +286,6 @@
           "estilo": "Padrão",
           "itens": [
             {
-              "rotulo": "Processo Seletivo do IFMG",
-              "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
-            },
-            {
               "rotulo": "Assistência estudantil",
               "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
@@ -360,15 +338,6 @@
           "titulo": "Continue seus estudos no IFMG",
           "conteudo": "Ao concluir o curso técnico, você pode continuar estudando em cursos de graduação, conforme os requisitos e processos seletivos. O IFMG oferece diferentes formações que permitem ampliar os estudos, inclusive em outros campi.",
           "validacao": "Informação incompleta: pesquisar graduação relacionada e, quando houver continuidade após ela, pós-graduação pertinente no IFMG. Indicar campus, curso e regras de ingresso sem prometer acesso automático."
-        },
-        {
-          "tipo": "link-unico",
-          "estilo": "Padrão",
-          "link": {
-            "rotulo": "Cursos do IFMG",
-            "descricao": "Conheça outras formações",
-            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
-          }
         },
         {
           "tipo": "texto",
@@ -501,15 +470,6 @@
           "conteudo": "A modalidade EaD influencia a rotina de quem estuda e trabalha. Antes de planejar os deslocamentos, confirme as atividades presenciais: o PPC de 2024 prevê tutorias no campus, enquanto o quadro de 2027 indica 100% EaD."
         },
         {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Saiba mais",
-            "descricao": "Conheça o curso de Logística no Campus Ribeirão das Neves",
-            "url": "https://www.ifmg.edu.br/ribeiraodasneves/cursos-1/tecnico/tecnico-em-logistica-subsequente-ead"
-          }
-        },
-        {
           "tipo": "texto",
           "titulo": "Conteúdos e experiências de aprendizagem",
           "conteudo": ""
@@ -623,25 +583,6 @@
           ]
         },
         {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Processo Seletivo do IFMG",
-              "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
-            },
-            {
-              "rotulo": "PPC do curso e informações de funcionamento",
-              "url": "https://www.ifmg.edu.br/ribeiraodasneves/cursos-1/tecnico/tecnico-em-logistica-subsequente-ead"
-            },
-            {
-              "rotulo": "Técnico em Logística — Governador Valadares",
-              "url": "https://www.ifmg.edu.br/governadorvaladares/noticias/aberto-processo-seletivo-para-o-curso-tecnico-em-logistica-na-modalidade-ead/"
-            }
-          ],
-          "validacao": "Governador Valadares: link é de seleção de 2026. Substituir por página institucional do curso e edital vigente quando disponível."
-        },
-        {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
           "conteudo": "Informação incompleta",
@@ -658,15 +599,6 @@
           "titulo": "Continue seus estudos no IFMG",
           "conteudo": "Ao concluir o curso técnico, você pode continuar estudando em cursos de graduação, conforme os requisitos e processos seletivos. O IFMG oferece diferentes formações que permitem ampliar os estudos, inclusive em outros campi.",
           "validacao": "Informação incompleta: pesquisar graduação relacionada e, quando houver continuidade após ela, pós-graduação pertinente no IFMG. Indicar campus, curso e regras de ingresso sem prometer acesso automático."
-        },
-        {
-          "tipo": "link-unico",
-          "estilo": "Padrão",
-          "link": {
-            "rotulo": "Cursos do IFMG",
-            "descricao": "Conheça outras formações",
-            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
-          }
         },
         {
           "tipo": "texto",
@@ -812,15 +744,6 @@
           ]
         },
         {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Saiba mais",
-            "descricao": "Matriz curricular e projeto pedagógico de Direito",
-            "url": "https://www.ifmg.edu.br/arcos/cursos-1/direito"
-          }
-        },
-        {
           "tipo": "texto",
           "titulo": "Onde o bacharel em Direito pode atuar",
           "conteudo": "A formação jurídica abre possibilidades de atuação em diferentes ambientes, incluindo:\n\n- advocacia e consultoria, observados os requisitos do exercício profissional;\n- organizações públicas e privadas que demandam análise jurídica;\n- órgãos públicos e carreiras jurídicas acessíveis por processos seletivos próprios;\n- pesquisa, docência e outras atividades acadêmicas, com formação complementar quando exigida;\n- organizações da sociedade civil e projetos relacionados a direitos.\n\nO bacharelado não substitui exame da OAB, concurso público ou outras condições legais para exercer funções específicas."
@@ -875,15 +798,6 @@
           "validacao": "Um ou mais valores da tabela ainda estão incompletos ou exigem confirmação da coordenação."
         },
         {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Saiba mais",
-            "descricao": "Como ingressar no curso de Direito",
-            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
-          }
-        },
-        {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
           "conteudo": ""
@@ -928,20 +842,6 @@
           ]
         },
         {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Processo Seletivo do IFMG",
-              "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
-            },
-            {
-              "rotulo": "Projeto pedagógico e documentos de Direito",
-              "url": "https://www.ifmg.edu.br/arcos/cursos-1/direito"
-            }
-          ]
-        },
-        {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
           "conteudo": "Informação incompleta",
@@ -958,15 +858,6 @@
           "titulo": "Continue seus estudos no IFMG",
           "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
           "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
-        },
-        {
-          "tipo": "link-unico",
-          "estilo": "Padrão",
-          "link": {
-            "rotulo": "Pós-graduação no IFMG",
-            "descricao": "Conheça os cursos e oportunidades",
-            "url": "https://www.ifmg.edu.br/portal/pesquisa-e-pos-graduacao/lato-sensu"
-          }
         },
         {
           "tipo": "texto",
@@ -1183,15 +1074,6 @@
           ]
         },
         {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Página do curso",
-            "descricao": "Informações e documentos sobre Engenharia Mecânica",
-            "url": "https://www.ifmg.edu.br/arcos/cursos-1/engenharia-mecanica"
-          }
-        },
-        {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
           "conteudo": "Informação incompleta",
@@ -1208,15 +1090,6 @@
           "titulo": "Continue seus estudos no IFMG",
           "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
           "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
-        },
-        {
-          "tipo": "link-unico",
-          "estilo": "Padrão",
-          "link": {
-            "rotulo": "Pós-graduação no IFMG",
-            "descricao": "Conheça os cursos e oportunidades",
-            "url": "https://www.ifmg.edu.br/portal/pesquisa-e-pos-graduacao/lato-sensu"
-          }
         },
         {
           "tipo": "texto",
@@ -1498,15 +1371,6 @@
           "validacao": "Verificar abertura de turma e edital vigentes antes de apresentar a especialização como inscrição aberta; mapear outras formações relacionadas nos demais campi."
         },
         {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Especialização em Gestão",
-            "descricao": "Conheça o curso de pós-graduação do IFMG",
-            "url": "https://www.bambui.ifmg.edu.br/portal/especializacao-gestao1"
-          }
-        },
-        {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta",
@@ -1726,15 +1590,6 @@
           ]
         },
         {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Página do curso",
-            "descricao": "Informações e documentos sobre Agronomia",
-            "url": "https://www.bambui.ifmg.edu.br/portal/bacharelado-em-agronomia"
-          }
-        },
-        {
           "tipo": "galeria",
           "itens": [],
           "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
@@ -1756,15 +1611,6 @@
           "titulo": "Continue seus estudos no IFMG",
           "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
           "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
-        },
-        {
-          "tipo": "link-unico",
-          "estilo": "Padrão",
-          "link": {
-            "rotulo": "Pós-graduação no IFMG",
-            "descricao": "Conheça os cursos e oportunidades",
-            "url": "https://www.ifmg.edu.br/portal/pesquisa-e-pos-graduacao/lato-sensu"
-          }
         },
         {
           "tipo": "texto",
@@ -1983,15 +1829,6 @@
           ]
         },
         {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Página do curso",
-            "descricao": "Informações e documentos sobre Engenharia de Produção",
-            "url": "https://www.bambui.ifmg.edu.br/portal/bacharelado-em-engenharia-de-producao"
-          }
-        },
-        {
           "tipo": "galeria",
           "itens": [],
           "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
@@ -2013,15 +1850,6 @@
           "titulo": "Continue seus estudos no IFMG",
           "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta.",
           "validacao": "Informação incompleta: identificar pelo menos uma especialização ou mestrado relacionado ao curso, com campus, modalidade, regras de elegibilidade e link oficial. Não pressupor matrícula garantida."
-        },
-        {
-          "tipo": "link-unico",
-          "estilo": "Padrão",
-          "link": {
-            "rotulo": "Pós-graduação no IFMG",
-            "descricao": "Conheça os cursos e oportunidades",
-            "url": "https://www.ifmg.edu.br/portal/pesquisa-e-pos-graduacao/lato-sensu"
-          }
         },
         {
           "tipo": "texto",
@@ -2300,15 +2128,6 @@
           ]
         },
         {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Cursos técnicos do IFMG",
-            "descricao": "Conheça as ofertas e formas de ingresso",
-            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
-          }
-        },
-        {
           "tipo": "galeria",
           "itens": [],
           "validacao": "Selecionar fotografias autorizadas das atividades e laboratórios efetivamente ligados ao curso, por campus."
@@ -2329,15 +2148,6 @@
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
           "conteudo": "Depois de concluir o curso integrado, você pode participar de processos seletivos de graduação. O IFMG oferece o **Bacharelado em Administração** em diferentes campi e também outras formações de nível superior.\n\nApós a graduação, é possível concorrer a cursos de pós-graduação, de acordo com os editais e requisitos de cada formação."
-        },
-        {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Graduação em Administração no IFMG",
-            "descricao": "Conheça as possibilidades de formação superior",
-            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
-          }
         },
         {
           "tipo": "texto",

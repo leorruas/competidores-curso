@@ -166,8 +166,8 @@
   }
   function fieldHTML(field, blockIndex, fieldIndex) {
     const content = field.rich
-      ? '<div class="field-example rich-example' + (field.table ? ' table-wrap editor-table' : '') + '">' + field.html + '</div>'
-      : '<div class="field-example text-example">' + escapeHTML(field.value || "—") + '</div>';
+      ? '<div class="field-example rich-example' + (field.table ? ' table-wrap editor-table' : '') + '">' + (field.html || '<span class="review-value">Informação incompleta</span>') + '</div>'
+      : '<div class="field-example text-example">' + escapeHTML(field.value || "Informação incompleta") + '</div>';
     const incomplete = !field.value.trim() || /^informação incompleta$/i.test(field.value.trim());
     const action = field.setting
       ? '<span class="editor-setting" aria-label="Selecionar esta opção no Wagtail">selecionar no Wagtail</span>'

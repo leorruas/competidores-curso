@@ -4,7 +4,7 @@
   "courses": [
     {
       "id": "tecnico-em-edificacoes-integrado",
-      "nome": "Técnico em Edificações Integrado",
+      "nome": "Técnico em Edificações",
       "nivel": "Técnico",
       "tipo": "Integrado",
       "campi": [
@@ -71,7 +71,7 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Técnico em Edificações Integrado",
+          "titulo": "Técnico em Edificações",
           "conteudo": "Estude construção civil em uma ==instituição pública federal==, cursando o ensino médio junto com uma formação técnica em Edificações.\n\nDurante a formação, o estudante desenvolve conhecimentos sobre desenho técnico, projetos, materiais, orçamento e acompanhamento de obras, além das disciplinas da formação geral. É um percurso para quem deseja conhecer a área e manter abertas as possibilidades de continuar estudando."
         },
         {
@@ -145,7 +145,7 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Onde o IFMG oferece Técnico em Edificações Integrado",
+          "titulo": "Onde o IFMG oferece Técnico em Edificações",
           "conteudo": "O curso é oferecido em ==cinco campi do IFMG==. Na escolha da unidade, considere a localização, o turno e as características da formação em cada campus."
         },
         {
@@ -1073,6 +1073,11 @@
           "conteudo": "Projetos integradores permitem exercitar decisões de engenharia ao relacionar cálculos, desenho, desenvolvimento e avaliação de soluções."
         },
         {
+          "tipo": "galeria",
+          "itens": [],
+          "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+        },
+        {
           "tipo": "texto",
           "titulo": "Onde um engenheiro mecânico pode atuar",
           "conteudo": "O bacharel pode trabalhar com projetos industriais, operação e manutenção de equipamentos, sistemas térmicos, processos de fabricação, inspeção, qualidade e desenvolvimento de produtos. Também pode seguir para pesquisa e pós-graduação."
@@ -1139,11 +1144,6 @@
             "descricao": "Informações e documentos sobre Engenharia Mecânica",
             "url": "https://www.ifmg.edu.br/arcos/cursos-1/engenharia-mecanica"
           }
-        },
-        {
-          "tipo": "galeria",
-          "itens": [],
-          "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
         },
         {
           "tipo": "texto",
@@ -1260,11 +1260,11 @@
         {
           "tipo": "texto",
           "titulo": "Administração",
-          "conteudo": "O bacharelado em **Administração** forma profissionais para planejar, organizar e melhorar atividades de organizações públicas, privadas e do terceiro setor.\n\nA formação reúne finanças, marketing, gestão de pessoas, logística, estratégias e empreendedorismo. O curso é oferecido em diferentes campi do IFMG, com projetos e experiências próprios de cada unidade."
+          "conteudo": "O bacharelado em **Administração** forma profissionais para planejar, organizar e melhorar atividades de organizações públicas, privadas e do terceiro setor.\n\nA formação reúne finanças, marketing, gestão de pessoas, logística, estratégias e empreendedorismo. Cada campus tem sua própria organização curricular e experiências acadêmicas."
         },
         {
           "tipo": "introducao",
-          "conteudo": "O curso reúne seis campi, com aulas à noite e diferentes oportunidades de formação e experiências práticas."
+          "conteudo": "Na escolha do campus, a organização das aulas faz diferença: Formiga tem 20% da carga horária EaD e Sabará, 23,67%. Cada unidade possui seu próprio percurso formativo."
         },
         {
           "tipo": "texto",
@@ -1320,7 +1320,7 @@
         },
         {
           "tipo": "introducao",
-          "conteudo": "Os campi desenvolvem diferentes projetos e experiências para aproximar os conteúdos de Administração do cotidiano das organizações."
+          "conteudo": "Em Bambuí, os Trabalhos Interdisciplinares articulam conteúdos de diferentes áreas. Em São João Evangelista, a empresa júnior Destaque Jr. amplia as experiências dos estudantes."
         },
         {
           "tipo": "texto",
@@ -1413,15 +1413,6 @@
               "resposta": "Em São João Evangelista, o curso é presencial e noturno. A formação abrange gestão de pessoas, marketing, finanças, processos, logística e administração rural. Os estudantes podem participar das atividades da **empresa júnior Destaque Jr.**"
             }
           ]
-        },
-        {
-          "tipo": "link-unico",
-          "estilo": "Cartão",
-          "link": {
-            "rotulo": "Administração no IFMG",
-            "descricao": "Cursos de Administração e informações por campus",
-            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
-          }
         },
         {
           "tipo": "galeria",
@@ -2249,8 +2240,8 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **Sabará**, estudantes de Técnico em Administração receberam homenagens institucionais por destaque em **projetos de pesquisa** e **desempenho acadêmico** em 2025.",
-          "validacao": "Completar exemplos de resultados de outros campi, com fontes e autorização de uso de imagens/depoimentos."
+          "conteudo": "Informação incompleta",
+          "validacao": "Identificar o projeto de pesquisa e o resultado concreto dos estudantes de Sabará citados em homenagem de 2025: nome, problema investigado, atividades, produto, reconhecimento, fonte e autorização; sem isso não publicar a frase genérica."
         }
       ]
     }

@@ -5,6 +5,7 @@ on:
     paths:
       - 'data/**'
       - 'scripts/validar-publicacao.mjs'
+      - 'tests/**'
       - 'app.js'
       - 'index.html'
       - 'style.css'
@@ -14,6 +15,7 @@ on:
     paths:
       - 'data/**'
       - 'scripts/validar-publicacao.mjs'
+      - 'tests/**'
       - 'app.js'
       - 'index.html'
       - 'style.css'
@@ -39,3 +41,5 @@ jobs:
         run: node scripts/validar-publicacao.mjs
       - name: Verificar sintaxe da aplicação
         run: node --check app.js
+      - name: Executar testes de comportamento do guia
+        run: node --test tests/guia-qa.mjs

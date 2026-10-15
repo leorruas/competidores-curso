@@ -2,7 +2,7 @@
 
 Ferramenta estática de apoio à preparação das páginas dos cursos do IFMG no Wagtail. A interface permite localizar roteiros **aprovados para divulgação**, comparar uma prévia do conteúdo e ver o preenchimento bloco por bloco. O projeto é inspirado na experiência editorial do [Guia do Portal IFMG](https://leorruas.github.io/guiaportalifmg/).
 
-**Estado atual:** infraestrutura do piloto construída; **nenhum curso real está aprovado/publicado neste repositório**. A função **Ver demonstração** usa conteúdo totalmente fictício.
+**Estado atual (15/10/2026):** publicados três roteiros de cursos reais **para revisão pela coordenação**, não como conteúdo acadêmico homologado: Edificações Integrado, Logística Subsequente e Direito Bacharelado. Campos incompletos ou divergentes são sinalizados no próprio roteiro. A demonstração fictícia continua disponível por URL.
 
 ## Abrir e publicar o site
 
@@ -12,16 +12,22 @@ Para publicar no **GitHub Pages**, abra **Settings → Pages**, selecione **Depl
 
 ## Direção visual: Guia do Portal IFMG
 
-A interface acompanha a linguagem do [Guia do Portal IFMG](https://leorruas.github.io/guiaportalifmg/) e sua referência de **Swiss design editorial**: fundo contínuo, tipografia **Archivo** com grandes títulos em minúsculas, notas em **IBM Plex Mono**, ritmo definido por espaçamentos e filetes, listagens numeradas no lugar de cards, verde institucional como acento e navegação compacta. A abertura prioriza o nome do guia, a **marca SVG real do IFMG** e uma busca sem caixa. A leitura do curso adota colunas simples, destaques tipográficos sem callouts decorativos e instruções de blocos por ordem.
+A interface acompanha a linguagem do [Guia do Portal IFMG](https://leorruas.github.io/guiaportalifmg/) e sua referência de **Swiss design editorial**: fundo contínuo, tipografia **Archivo em todos os elementos**, com títulos sem pontuação decorativa, ritmo definido por espaçamentos e filetes, listagens numeradas no lugar de cards, verde institucional como acento e navegação compacta. A abertura prioriza o nome do guia, a **marca SVG real do IFMG** e uma busca sem caixa. A leitura do curso adota colunas simples, destaques tipográficos sem callouts decorativos e instruções de blocos por ordem.
 
 O arquivo `assets/ifmg-logo.svg` foi extraído do símbolo da marca já presente no HTML do Guia do Portal; não é um logo redesenhado. Atribuição e uso devem seguir a identidade visual institucional aplicável.
 
 Paleta alinhada ao guia: no tema escuro, fundo `#050505` e acento `#78c981`; no tema claro, fundo `#f4f8f2` e acento `#216b35`. A preferência de tema é persistida localmente no navegador.
 
+## Revisão acadêmica e documentação dos blocos
+
+É permitido divulgar o roteiro **antes** da revisão final do coordenador de curso, desde que valores ainda não comprovados apareçam como **Informação incompleta** ou **Precisa de validação**, diretamente no campo ou bloco correspondente. Um dado confirmado em edital por modalidade de ingresso **não** autoriza tratá-lo como total de vagas. Um PPC antigo **não** deve ser apresentado como vigente sem confirmação. Os avisos de revisão são mostrados na ferramenta e não devem virar conteúdo definitivo na página institucional.
+
+O procedimento detalhado sobre **Texto, Introdução, Tabela, FAQ, Link único e demais blocos** está em [Sou editor e quero montar conteúdo com blocos — Guia do Portal IFMG](https://leorruas.github.io/guiaportalifmg/#/04%20-%20Sou%20editor/15%20-%20Sou%20editor%20e%20quero%20montar%20conte%C3%BAdo%20com%20blocos).
+
 ## Como funciona
 
-- **Página inicial = catálogo:** busca por curso, filtros de nível e campus, com resultados em lista. Não há introdução intermediária antes dos cursos.
-- **Curso demonstrativo:** exemplo inteiramente fictício acessível no catálogo vazio, sem confusão com ofertas reais do IFMG.
+- **Página inicial = catálogo:** busca, filtros de nível e campus e lista de cursos, incluindo os roteiros com revisão acadêmica pendente.
+- **Curso demonstrativo:** exemplo inteiramente fictício disponível em `#curso/demonstracao`, separado das ofertas reais.
 - **Copiar para o Wagtail (padrão):** roteiro numerado com cada número destacado na margem, nome do bloco e apenas os campos relevantes. Não repetir título, subtítulo e orientação que apenas descrevem o óbvio.
 - **Link único:** informar o **estilo** como configuração a selecionar no Wagtail; botões **Copiar** individuais para **título/texto do link**, **descrição** e **URL**, sem simulação de como o link aparece no portal.
 - **Texto e Introdução:** um único botão **Copiar** por campo, tentando preservar automaticamente negrito, parágrafos, listas e título quando suportado pelo Wagtail. O título e os parágrafos do bloco Texto vão juntos no mesmo campo Rich Text.
@@ -42,7 +48,7 @@ O bloco `Introdução` **não é uma síntese obrigatória** do parágrafo anter
 ## Fronteira entre os dois repositórios
 
 - **Privado: `leorruas/competidores-cursos` (plural).** Contém pesquisa competitiva, fichas acadêmicas, notas de auditoria, versões, PPCs, diferenças entre fontes, rascunhos e decisões pendentes.
-- **Público: `leorruas/competidores-curso` (singular).** Contém **somente o código do site, documentação geral e dados explicitamente aprovados**.
+- **Público: `leorruas/competidores-curso` (singular).** Contém apenas código, documentação e **roteiros com divulgação autorizada pelo usuário**; a confirmação acadêmica da coordenação é um estado de revisão próprio, não uma condição para aparecer no guia.
 
 **Nunca sincronize, clone para cá, exponha por importação remota nem coloque dentro deste repositório** pastas da vault privada. Qualquer arquivo versionado em repositório público pode ser acessado diretamente, mesmo que não apareça no menu do site. **A interface não é um filtro de segurança.**
 
@@ -76,7 +82,7 @@ O arquivo `data/cursos-publicados.json` usa `schemaVersion: 1` e contém `course
 
 O trecho acima **ilustra o formato**, não autoriza a inclusão de um curso nem constitui dado aprovado. Os tipos válidos de bloco são `dados-basicos`, `texto`, `introducao`, `tabela`, `faq`, `galeria`, `links` e `link-unico`. Os tipos `Introdução` aceitam até 280 caracteres. `dados-basicos` possui `campos: [{rotulo, valor}]`; `tabela` tem `colunas` e `linhas`; `faq`, `itens: [{pergunta, resposta}]`; `links`, `itens: [{rotulo, url}]`; `link-unico`, `link: {rotulo, descricao, url}`; `galeria`, `itens: [{url, legenda, alt}]`.
 
-A aplicação recusa registros sem `publicacao_autorizada: true` e `status: aprovado_para_divulgacao`, e também verifica estrutura dos blocos. **Isso não substitui a revisão de segurança do conteúdo.** O validador `scripts/validar-publicacao.mjs` tem checagens adicionais para prevenir inserção de conteúdos internos e é executado em GitHub Actions.
+A aplicação recusa registros sem `publicacao_autorizada: true`. Aceita `status: aprovado_para_divulgacao` e também `status: em_validacao`, desde que este último tenha `revisao_coordenacao: true` e uma lista `pendencias` explícita. Campos sem valor apresentam **Informação incompleta** e a razão da validação; esses campos não oferecem cópia. **Isso não substitui a revisão de segurança do conteúdo.** O validador `scripts/validar-publicacao.mjs` tem checagens adicionais para prevenir inserção de conteúdos internos e é executado em GitHub Actions.
 
 ## Critérios antes de adicionar uma oferta
 
@@ -88,7 +94,7 @@ A aplicação recusa registros sem `publicacao_autorizada: true` e `status: apro
 6. Conferir textos, FAQ, destinos de links, imagens com legenda/alternativa e permissão de uso.
 7. Obter a aprovação humana do conteúdo que será colocado no JSON público; verificar novamente a diferença entre roteiro aprovado e publicação efetiva no Wagtail.
 
-Os três primeiros pilotos da **vault privada** (Edificações Integrado multicampi, Logística Subsequente Ribeirão das Neves e Direito Bacharelado Arcos) **não** foram exportados. Possuem verificações acadêmicas e de oferta ainda pendentes.
+Os três primeiros pilotos foram **convertidos seletivamente para roteiros públicos de revisão**, sem publicar o Markdown bruto, pesquisas de concorrentes ou notas internas da vault. As pendências acadêmicas continuam abertas e não devem ser tratadas como dados homologados pelo IFMG.
 
 ## Manutenção
 

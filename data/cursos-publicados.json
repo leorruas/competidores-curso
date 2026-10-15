@@ -797,6 +797,838 @@
           ]
         }
       ]
+    },
+    {
+      "id": "engenharia-mecanica-bacharelado-arcos",
+      "nome": "Engenharia Mecânica",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Arcos"
+      ],
+      "modalidade": "Presencial (25% EaD)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "revisao_coordenacao": true,
+      "pendencias": [
+        "Confirmar PPC e matriz de ingressantes de 2027",
+        "Conferir carga horária total e requisitos de estágio/TCC",
+        "Confirmar vagas por modalidade de ingresso",
+        "Selecionar fotos autorizadas das experiências e ambientes de estudo"
+      ],
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Engenharia Mecânica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Arcos"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "5 anos"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (25% EaD)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta",
+              "validacao": "Conferir a matriz curricular vigente para ingressantes de 2027."
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta",
+              "validacao": "Confirmar se o PPC 2024/1 permanece vigente e qual matriz utilizar para o novo ingresso."
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "eng.mecanica.arcos@ifmg.edu.br"
+            },
+            {
+              "rotulo": "Vagas",
+              "valor": "Informação incompleta",
+              "validacao": "Confirmar a quantidade por forma de ingresso nos editais específicos de 2027. Não somar automaticamente dados da planilha antiga."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Engenharia Mecânica no IFMG Campus Arcos",
+          "conteudo": "Estude **Engenharia Mecânica** em uma instituição pública federal, com aulas no turno da noite e formação para projetar, analisar e acompanhar o funcionamento de máquinas, equipamentos e sistemas industriais.\n\nA graduação reúne conhecimentos de materiais, processos de fabricação, sistemas térmicos, mecanismos e projetos de engenharia, com atenção à segurança e aos efeitos sociais e ambientais das soluções técnicas."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aulas no turno da noite e projetos integradores ajudam a aproximar os fundamentos da engenharia de problemas e soluções da indústria."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "É uma graduação para quem concluiu o ensino médio e deseja trabalhar com tecnologias, sistemas mecânicos, desenvolvimento de produtos e resolução de problemas de engenharia. A formação exige estudo de matemática, física e outras bases científicas."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Do desenho e da simulação à fabricação e à manutenção: a formação acompanha diferentes etapas da vida de um sistema mecânico."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Conheça os principais assuntos da formação. Os componentes, suas cargas horárias e a ordem das disciplinas são definidos na matriz curricular vigente."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Projetos e desenho",
+              "Desenho técnico, modelagem e dimensionamento de componentes."
+            ],
+            [
+              "Materiais e fabricação",
+              "Seleção de materiais e compreensão de processos de fabricação."
+            ],
+            [
+              "Sistemas térmicos e fluidos",
+              "Estudo de fenômenos térmicos, fluidomecânicos e aplicações industriais."
+            ],
+            [
+              "Máquinas e mecanismos",
+              "Análise de elementos de máquinas e sistemas eletromecânicos."
+            ],
+            [
+              "Gestão técnica",
+              "Manutenção, segurança, controle e acompanhamento de projetos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Projetos e experiências acadêmicas",
+          "conteudo": "O curso trabalha com a **Aprendizagem Baseada em Projetos**. Os Trabalhos Acadêmicos Integradores (TAI) são parte das atividades descritas pela unidade, e a documentação institucional reúne projetos, regulamentos de TCC e produções de estudantes.\n\nA participação em projetos, laboratórios ou ações de pesquisa e extensão depende dos componentes e oportunidades disponíveis em cada período."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Projetos integradores permitem exercitar decisões de engenharia ao relacionar cálculos, desenho, desenvolvimento e avaliação de soluções."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde um engenheiro mecânico pode atuar",
+          "conteudo": "O bacharel pode trabalhar com projetos industriais, operação e manutenção de equipamentos, sistemas térmicos, processos de fabricação, inspeção, qualidade e desenvolvimento de produtos. Também pode seguir para pesquisa e pós-graduação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Engenharia Mecânica",
+          "conteudo": "O curso é oferecido no Campus Arcos. Confira o turno e o contato da coordenação na tabela abaixo."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Arcos",
+              "Noite",
+              "eng.mecanica.arcos@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O curso é noturno?",
+              "resposta": "Sim. Engenharia Mecânica é oferecida no Campus Arcos no turno da noite."
+            },
+            {
+              "pergunta": "Quanto tempo dura?",
+              "resposta": "O percurso previsto é de cinco anos. A organização dos componentes e a carga horária devem ser conferidas na matriz curricular em vigor."
+            },
+            {
+              "pergunta": "O curso tem atividades a distância?",
+              "resposta": "A oferta é presencial, com indicação de 25% de carga horária EaD. A coordenação deve confirmar como essas atividades são distribuídas no PPC vigente."
+            },
+            {
+              "pergunta": "Existem projetos integradores?",
+              "resposta": "Sim. A organização acadêmica inclui Trabalhos Acadêmicos Integradores (TAI). O curso disponibiliza informações e regulamentos sobre essas atividades e sobre o TCC."
+            },
+            {
+              "pergunta": "Há estágio e TCC?",
+              "resposta": "A página do curso disponibiliza informações sobre TCC e atividades complementares. A obrigatoriedade, a carga horária de estágio e a matriz vigente devem ser confirmadas."
+            },
+            {
+              "pergunta": "Como ingressar?",
+              "resposta": "As formas de ingresso, as vagas e os prazos são apresentados nos processos seletivos do IFMG."
+            }
+          ]
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Página do curso",
+            "descricao": "Informações e documentos sobre Engenharia Mecânica",
+            "url": "https://www.ifmg.edu.br/arcos/cursos-1/engenharia-mecanica"
+          }
+        },
+        {
+          "tipo": "galeria",
+          "itens": [],
+          "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+        }
+      ]
+    },
+    {
+      "id": "administracao-bacharelado-bambui",
+      "nome": "Administração",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "revisao_coordenacao": true,
+      "pendencias": [
+        "Confirmar PPC 2025 e carga horária de 3.000 horas para 2027",
+        "Verificar cargas atuais de estágio, extensão e TCC",
+        "Obter o e-mail funcional da coordenação",
+        "Confirmar total de vagas por ingresso e selecionar fotografias autorizadas"
+      ],
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Administração"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "4 anos"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta",
+              "validacao": "O PPC revisado em 2025 informa 3.000 horas; confirmar sua aplicação a ingressantes de 2027."
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "PPC de 2025",
+              "validacao": "Verificar se a versão para ingressantes a partir de 2026 continua vigente."
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta",
+              "validacao": "Conseguir endereço funcional da coordenação. Não substituir pelo e-mail nominal do docente informado em bases antigas."
+            },
+            {
+              "rotulo": "Vagas",
+              "valor": "Informação incompleta",
+              "validacao": "Conferir edital de graduação 2027 e vagas das modalidades de seleção."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Administração no IFMG Campus Bambuí",
+          "conteudo": "Estude **Administração** em uma instituição pública federal, com aulas noturnas e uma formação voltada à gestão de organizações públicas, privadas e do terceiro setor.\n\nO curso reúne planejamento, finanças, marketing, gestão de pessoas, operações e estratégia para compreender como as organizações funcionam e tomar decisões em diferentes contextos."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Com aulas à noite, a graduação integra gestão, planejamento, pessoas e negócios em uma formação pública e presencial."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Administração é indicada para quem concluiu o ensino médio e deseja conhecer como organizações funcionam, planejar projetos, analisar recursos e desenvolver soluções para problemas de gestão."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Finanças, marketing, gestão de pessoas e operações são estudados de maneira integrada para compreender decisões e desafios reais de organizações."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Conheça os principais assuntos da formação. Os componentes, suas cargas horárias e a ordem das disciplinas são definidos na matriz curricular vigente."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Organização e estratégia",
+              "Planejamento, processos administrativos e tomada de decisão."
+            ],
+            [
+              "Pessoas e trabalho",
+              "Gestão de equipes, relações de trabalho e desenvolvimento organizacional."
+            ],
+            [
+              "Finanças e contabilidade",
+              "Custos, orçamento, análise financeira e fundamentos contábeis."
+            ],
+            [
+              "Marketing e mercado",
+              "Pesquisa, posicionamento, consumo e relacionamento com públicos."
+            ],
+            [
+              "Operações e logística",
+              "Processos produtivos, cadeias de suprimentos e qualidade."
+            ],
+            [
+              "Empreendedorismo",
+              "Gestão de projetos, criação de iniciativas e inovação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem e projetos",
+          "conteudo": "A organização curricular inclui **Trabalhos Interdisciplinares (TID)**, que relacionam conteúdos de diferentes áreas ao longo da graduação. O campus divulga apresentações de TID, trabalhos de conclusão de curso e atividades acadêmicas ligadas à Administração.\n\nO PPC de 2025 também apresenta estágio e TCC. A coordenação deverá confirmar as cargas e requisitos aplicáveis à turma de ingresso."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Nos Trabalhos Interdisciplinares, conhecimentos de diferentes disciplinas se encontram para analisar situações e construir propostas de gestão."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde um administrador pode atuar",
+          "conteudo": "O bacharel pode trabalhar em planejamento, finanças, recursos humanos, marketing, operações, logística, consultoria e gestão de projetos. A formação também oferece base para empreender ou continuar os estudos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Administração",
+          "conteudo": "O curso é oferecido no Campus Bambuí. Confira o turno e o contato da coordenação na tabela abaixo."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Noite",
+              "Informação incompleta"
+            ]
+          ],
+          "validacao": "Confirmar o e-mail funcional da coordenação do curso; não usar endereço nominal do docente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O curso é noturno?",
+              "resposta": "Sim. O bacharelado em Administração do Campus Bambuí é oferecido à noite."
+            },
+            {
+              "pergunta": "Quanto tempo dura?",
+              "resposta": "O curso tem duração prevista de quatro anos."
+            },
+            {
+              "pergunta": "O que são os Trabalhos Interdisciplinares?",
+              "resposta": "São atividades que integram conhecimentos de diferentes componentes curriculares. O campus divulga apresentações e experiências acadêmicas relacionadas aos TID."
+            },
+            {
+              "pergunta": "Há estágio e TCC?",
+              "resposta": "O PPC revisado em 2025 prevê estágio e Trabalho de Conclusão de Curso. A coordenação deve confirmar as cargas horárias e regras da matriz em vigor."
+            },
+            {
+              "pergunta": "Que tipo de organização pode contratar um administrador?",
+              "resposta": "Empresas, órgãos públicos, organizações sociais e empreendimentos de diferentes setores podem contar com profissionais de Administração."
+            },
+            {
+              "pergunta": "Como ingressar?",
+              "resposta": "As formas de seleção e os prazos são informados nos processos seletivos do IFMG."
+            }
+          ]
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Página do curso",
+            "descricao": "Informações e documentos sobre Administração",
+            "url": "https://www.bambui.ifmg.edu.br/portal/bacharelado-em-administracao"
+          }
+        },
+        {
+          "tipo": "galeria",
+          "itens": [],
+          "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+        }
+      ]
+    },
+    {
+      "id": "agronomia-bacharelado-bambui",
+      "nome": "Agronomia",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "revisao_coordenacao": true,
+      "pendencias": [
+        "Confirmar se a matriz com 9 semestres e 4.007h vigora para 2027",
+        "Conferir horas e regras de estágio, TCC e extensão",
+        "Validar ambientes usados em aulas práticas e imagens autorizadas",
+        "Obter e-mail funcional da coordenação e vagas atualizadas"
+      ],
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Agronomia"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "9 semestres",
+              "validacao": "Confirmar duração na matriz aplicável a ingressantes de 2027."
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta",
+              "validacao": "A matriz consultada anteriormente registra 4.007 horas. Confirmar a vigente para ingressantes de 2027."
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta",
+              "validacao": "Selecionar o PPC e a matriz curricular vigentes para ingressantes de 2027."
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta",
+              "validacao": "Obter uma caixa funcional do curso; não reproduzir e-mail nominal de docente."
+            },
+            {
+              "rotulo": "Vagas",
+              "valor": "Informação incompleta",
+              "validacao": "Confirmar quantidade por forma de seleção em edital 2027."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Agronomia no IFMG Campus Bambuí",
+          "conteudo": "Estude **Agronomia** em uma instituição pública federal e prepare-se para trabalhar com produção agrícola, manejo de recursos naturais e desenvolvimento de tecnologias para o campo.\n\nA formação reúne conhecimentos sobre solos, cultivos, mecanização, irrigação, fitossanidade e gestão rural, com atenção à sustentabilidade dos sistemas produtivos."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "A graduação combina ciências agrárias, produção de alimentos e sustentabilidade, com atividades práticas, pesquisa e extensão."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Agronomia é uma opção para quem concluiu o ensino médio e se interessa por agricultura, meio ambiente, tecnologias de produção e soluções para desafios do meio rural. A rotina de estudos é diurna, de manhã e à tarde."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Solos, plantas, água, máquinas e gestão se conectam na formação para planejar e acompanhar sistemas de produção agrícola."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Conheça os principais assuntos da formação. Os componentes, suas cargas horárias e a ordem das disciplinas são definidos na matriz curricular vigente."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Solos e fertilidade",
+              "Manejo, conservação, preparo do solo e fertilidade."
+            ],
+            [
+              "Cultivos e sementes",
+              "Fitotecnia, sementes, produção de culturas e desenvolvimento vegetal."
+            ],
+            [
+              "Saúde vegetal",
+              "Fitossanidade, prevenção e manejo de problemas em cultivos."
+            ],
+            [
+              "Água e irrigação",
+              "Irrigação, drenagem e uso de recursos hídricos na produção."
+            ],
+            [
+              "Mecanização e tecnologias",
+              "Máquinas agrícolas, geoprocessamento e técnicas de manejo."
+            ],
+            [
+              "Gestão rural",
+              "Planejamento, economia e organização de atividades agropecuárias."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e aprendizagem prática",
+          "conteudo": "A apresentação institucional de Agronomia destaca **atividades práticas**, participação em **pesquisa e extensão** e a atuação de grupos de estudos. Essa combinação aproxima os temas da sala de aula dos desafios da produção, da assistência técnica e da sustentabilidade ambiental.\n\nExperiências específicas, locais das práticas e oportunidades de bolsas precisam ser confirmados antes da divulgação de exemplos de cada turma."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Pesquisa e extensão podem aproximar o estudante de problemas do campo, do desenvolvimento de tecnologias e da produção agrícola responsável."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde um profissional de Agronomia pode atuar",
+          "conteudo": "O bacharel pode trabalhar em assistência técnica, produção vegetal, planejamento agropecuário, empresas de sementes e insumos, gestão rural, órgãos públicos, pesquisa e desenvolvimento de tecnologias, conforme as atribuições profissionais aplicáveis."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Agronomia",
+          "conteudo": "O curso é oferecido no Campus Bambuí. Confira o turno e o contato da coordenação na tabela abaixo."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Manhã e tarde",
+              "Informação incompleta"
+            ]
+          ],
+          "validacao": "Confirmar o e-mail funcional da coordenação do curso; não usar endereço nominal do docente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O curso é integral?",
+              "resposta": "As aulas ocorrem de manhã e à tarde no Campus Bambuí."
+            },
+            {
+              "pergunta": "Qual é a duração?",
+              "resposta": "A matriz consultada prevê nove semestres. A coordenação deverá confirmar a duração da matriz vigente para ingressantes de 2027."
+            },
+            {
+              "pergunta": "Há atividades práticas?",
+              "resposta": "Sim. A apresentação oficial destaca atividades práticas, projetos de pesquisa e extensão. A disponibilidade de ambientes e projetos específicos varia."
+            },
+            {
+              "pergunta": "O que se estuda?",
+              "resposta": "O curso aborda solos, plantas, irrigação, mecanização, produção agrícola, fitossanidade, gestão e temas ambientais."
+            },
+            {
+              "pergunta": "Há estágio e TCC?",
+              "resposta": "A matriz anteriormente consultada inclui estágio e TCC. As cargas horárias e os regulamentos devem ser confirmados no PPC vigente."
+            },
+            {
+              "pergunta": "Como ingressar?",
+              "resposta": "Consulte os processos seletivos do IFMG para verificar formas de seleção, prazos e distribuição de vagas."
+            }
+          ]
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Página do curso",
+            "descricao": "Informações e documentos sobre Agronomia",
+            "url": "https://www.bambui.ifmg.edu.br/portal/bacharelado-em-agronomia"
+          }
+        },
+        {
+          "tipo": "galeria",
+          "itens": [],
+          "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+        }
+      ]
+    },
+    {
+      "id": "engenharia-de-producao-bacharelado-bambui",
+      "nome": "Engenharia de Produção",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "revisao_coordenacao": true,
+      "pendencias": [
+        "Confirmar PPC/matriz de 2027 depois da consulta pública de 2026",
+        "Definir carga horária total, estágio, extensão e TCC na versão vigente",
+        "Obter e-mail funcional da coordenação e vagas por edital",
+        "Confirmar ambientes de prática efetivamente associados ao curso e fotografias autorizadas"
+      ],
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Engenharia de Produção"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "5 anos",
+              "validacao": "Verificar se a reestruturação curricular mantém essa duração para 2027."
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta",
+              "validacao": "Confirmar carga horária total no PPC e matriz resultantes da revisão curricular."
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta",
+              "validacao": "Em 2026 o campus abriu consulta para reestruturação do curso. Confirmar versão vigente na turma 2027."
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta",
+              "validacao": "Obter caixa funcional da coordenação; não usar automaticamente endereço nominal."
+            },
+            {
+              "rotulo": "Vagas",
+              "valor": "Informação incompleta",
+              "validacao": "Consultar os editais 2027 por forma de seleção."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Engenharia de Produção no IFMG Campus Bambuí",
+          "conteudo": "Estude **Engenharia de Produção** em uma instituição pública federal e desenvolva conhecimentos para planejar, gerenciar e melhorar sistemas de produção de bens e serviços.\n\nO curso reúne fundamentos de engenharia com gestão de operações, qualidade, logística, custos e organização do trabalho, considerando aspectos humanos, econômicos e ambientais."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Engenharia e gestão se encontram para analisar processos, utilizar recursos com responsabilidade e melhorar a produção de bens e serviços."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A graduação é voltada a quem concluiu o ensino médio e tem interesse por processos, tecnologia, planejamento, organização e análise de sistemas. As aulas ocorrem de manhã e à tarde."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "A formação integra processos, custos, qualidade e pessoas para compreender como produtos e serviços são planejados e realizados."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Conheça os principais assuntos da formação. Os componentes, suas cargas horárias e a ordem das disciplinas são definidos na matriz curricular vigente."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Sistemas produtivos",
+              "Planejamento, processos e operação de sistemas de produção."
+            ],
+            [
+              "Qualidade",
+              "Avaliação e melhoria de processos, produtos e serviços."
+            ],
+            [
+              "Custos e gestão",
+              "Análise de recursos, desempenho e decisões de operação."
+            ],
+            [
+              "Logística",
+              "Materiais, estoques e movimentação nas operações."
+            ],
+            [
+              "Organização do trabalho",
+              "Fatores humanos, segurança e relações nos processos produtivos."
+            ],
+            [
+              "Projetos e inovação",
+              "Desenvolvimento de soluções e organização de projetos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Atividades práticas e atualização curricular",
+          "conteudo": "A página institucional apresenta a formação orientada à melhoria de sistemas de produção. O campus disponibiliza documentação acadêmica e registros de atividades associadas à graduação.\n\nEm 2026, foi aberta uma **consulta pública sobre a reestruturação do curso**. Por isso, a matriz e as regras específicas aplicáveis à turma ingressante em 2027 precisam ser confirmadas antes de divulgar componentes, cargas e experiências obrigatórias."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "O estudo de sistemas produtivos aproxima conhecimentos de engenharia, qualidade, logística e organização do trabalho."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde um engenheiro de produção pode atuar",
+          "conteudo": "O bacharel pode trabalhar em indústrias, serviços, logística, planejamento, qualidade, gestão de processos, operações e melhoria de sistemas produtivos, conforme as atribuições profissionais aplicáveis."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Engenharia de Produção",
+          "conteudo": "O curso é oferecido no Campus Bambuí. Confira o turno e o contato da coordenação na tabela abaixo."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Manhã e tarde",
+              "Informação incompleta"
+            ]
+          ],
+          "validacao": "Confirmar o e-mail funcional da coordenação do curso; não usar endereço nominal do docente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O curso é integral?",
+              "resposta": "As aulas são oferecidas de manhã e à tarde no Campus Bambuí."
+            },
+            {
+              "pergunta": "Quanto tempo dura?",
+              "resposta": "O percurso de referência é de cinco anos. A coordenação deve confirmar a duração prevista após a revisão curricular."
+            },
+            {
+              "pergunta": "O que se estuda?",
+              "resposta": "A formação abrange processos produtivos, gestão de operações, qualidade, logística, custos, organização do trabalho e fundamentos de engenharia."
+            },
+            {
+              "pergunta": "O curso está passando por mudanças?",
+              "resposta": "O campus abriu consulta pública para reestruturação de Engenharia de Produção em 2026. As mudanças aprovadas e a matriz vigente devem ser confirmadas com a coordenação."
+            },
+            {
+              "pergunta": "Há estágio e TCC?",
+              "resposta": "A página institucional reúne documentos acadêmicos. Obrigatoriedade, carga horária e regras de estágio e TCC dependem de confirmação do PPC vigente."
+            },
+            {
+              "pergunta": "Como ingressar?",
+              "resposta": "Acompanhe os processos seletivos do IFMG para verificar formas de ingresso, vagas e cronogramas."
+            }
+          ]
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Página do curso",
+            "descricao": "Informações e documentos sobre Engenharia de Produção",
+            "url": "https://www.bambui.ifmg.edu.br/portal/bacharelado-em-engenharia-de-producao"
+          }
+        },
+        {
+          "tipo": "galeria",
+          "itens": [],
+          "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+        }
+      ]
     }
   ]
 }

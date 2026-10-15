@@ -71,7 +71,7 @@
         },
         {
           "tipo": "texto",
-          "titulo": "IFMG",
+          "titulo": "Técnico em Edificações Integrado",
           "conteudo": "Estude construção civil em uma ==instituição pública federal==, cursando o ensino médio junto com uma formação técnica em Edificações.\n\nDurante a formação, o estudante desenvolve conhecimentos sobre desenho técnico, projetos, materiais, orçamento e acompanhamento de obras, além das disciplinas da formação geral. É um percurso para quem deseja conhecer a área e manter abertas as possibilidades de continuar estudando."
         },
         {
@@ -442,7 +442,7 @@
         },
         {
           "tipo": "texto",
-          "titulo": "IFMG",
+          "titulo": "Técnico em Logística",
           "conteudo": "Aprenda sobre organização de transporte, controle de estoques, armazenagem e distribuição de produtos em uma ==instituição pública federal==.\n\nA formação é oferecida pelo IFMG Campus Ribeirão das Neves, na modalidade a distância, e se destina a quem já concluiu o ensino médio. O curso reúne conhecimentos técnicos sobre operações logísticas em empresas e organizações de diferentes áreas."
         },
         {
@@ -694,7 +694,7 @@
         },
         {
           "tipo": "texto",
-          "titulo": "IFMG",
+          "titulo": "Direito",
           "conteudo": "Estude Direito em uma ==instituição pública federal==, com formação voltada à compreensão das leis, dos direitos e das relações entre pessoas, organizações e instituições.\n\nO bacharelado em Direito do IFMG Campus Arcos aborda diferentes áreas jurídicas e propõe uma aprendizagem que relaciona fundamentos teóricos à análise de situações concretas, argumentação e responsabilidade social."
         },
         {
@@ -834,8 +834,8 @@
               "resposta": "Para ingressar em uma graduação, é necessário ter concluído o ensino médio ou cumprir as condições previstas no edital e na matrícula. Verifique o prazo de comprovação no processo seletivo."
             },
             {
-              "pergunta": "O curso é noturno?",
-              "resposta": "Sim. O bacharelado em Direito do Campus Arcos é apresentado na página institucional e no quadro de 2027 como um curso noturno. Os horários efetivos das atividades dependem do calendário acadêmico."
+              "pergunta": "Qual é o papel do Núcleo de Práticas Jurídicas?",
+              "resposta": "O Núcleo de Práticas Jurídicas integra as atividades acadêmicas ligadas à formação prática em Direito. As atividades oferecidas e sua organização são definidas nos documentos do curso."
             },
             {
               "pergunta": "O curso tem atividades a distância?",
@@ -973,7 +973,7 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Engenharia Mecânica no IFMG Campus Arcos",
+          "titulo": "Engenharia Mecânica",
           "conteudo": "Estude **Engenharia Mecânica** em uma instituição pública federal, com aulas no turno da noite e formação para projetar, analisar e acompanhar o funcionamento de máquinas, equipamentos e sistemas industriais.\n\nA graduação reúne conhecimentos de materiais, processos de fabricação, sistemas térmicos, mecanismos e projetos de engenharia, com atenção à segurança e aos efeitos sociais e ambientais das soluções técnicas."
         },
         {
@@ -1066,8 +1066,8 @@
           "tipo": "faq",
           "itens": [
             {
-              "pergunta": "O curso é noturno?",
-              "resposta": "Sim. Engenharia Mecânica é oferecida no Campus Arcos no turno da noite."
+              "pergunta": "Como a formação aproxima teoria e prática?",
+              "resposta": "A aprendizagem inclui projetos integradores que relacionam conhecimentos de desenho, materiais, processos de fabricação e sistemas mecânicos à elaboração de soluções de engenharia."
             },
             {
               "pergunta": "Quanto tempo dura?",
@@ -1358,7 +1358,7 @@
             },
             {
               "pergunta": "Ouro Branco",
-              "resposta": "No Campus Ouro Branco, Administração é oferecido à noite, na modalidade presencial, com 8% de carga horária EaD. O curso recebeu **quatro estrelas no Guia da Faculdade de 2025**, em avaliação divulgada pelo IFMG."
+              "resposta": "No Campus Ouro Branco, Administração é oferecido à noite, na modalidade presencial, com 8% de carga horária EaD. O curso recebeu **quatro estrelas no Guia da Faculdade de 2025**,."
             },
             {
               "pergunta": "Ribeirão das Neves",
@@ -1497,7 +1497,7 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Agronomia no IFMG Campus Bambuí",
+          "titulo": "Agronomia",
           "conteudo": "Estude **Agronomia** em uma instituição pública federal e prepare-se para trabalhar com produção agrícola, manejo de recursos naturais e desenvolvimento de tecnologias para o campo.\n\nA formação reúne conhecimentos sobre solos, cultivos, mecanização, irrigação, fitossanidade e gestão rural, com atenção à sustentabilidade dos sistemas produtivos."
         },
         {
@@ -1595,8 +1595,8 @@
           "tipo": "faq",
           "itens": [
             {
-              "pergunta": "O curso é integral?",
-              "resposta": "As aulas ocorrem de manhã e à tarde no Campus Bambuí."
+              "pergunta": "Como o curso aborda a sustentabilidade?",
+              "resposta": "A formação relaciona o estudo de solos, plantas, recursos hídricos e tecnologias agrícolas à conservação ambiental e à melhoria dos sistemas de produção."
             },
             {
               "pergunta": "Qual é a duração?",
@@ -1740,7 +1740,7 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Engenharia de Produção no IFMG Campus Bambuí",
+          "titulo": "Engenharia de Produção",
           "conteudo": "Estude **Engenharia de Produção** em uma instituição pública federal e desenvolva conhecimentos para planejar, gerenciar e melhorar sistemas de produção de bens e serviços.\n\nO curso reúne fundamentos de engenharia com gestão de operações, qualidade, logística, custos e organização do trabalho, considerando aspectos humanos, econômicos e ambientais."
         },
         {
@@ -1838,8 +1838,8 @@
           "tipo": "faq",
           "itens": [
             {
-              "pergunta": "O curso é integral?",
-              "resposta": "As aulas são oferecidas de manhã e à tarde no Campus Bambuí."
+              "pergunta": "Como o curso integra engenharia e gestão?",
+              "resposta": "O curso combina fundamentos de engenharia com planejamento, processos produtivos, qualidade, logística, custos e organização do trabalho para analisar e melhorar sistemas de produção."
             },
             {
               "pergunta": "Quanto tempo dura?",

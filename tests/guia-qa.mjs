@@ -105,7 +105,7 @@ test("catálogo com oito cursos reais inclui todos e possui filtros", () => {
   h.state.courses=json.courses;
   h.renderCatalog();
   const text=h.elements.get("catalog-results").innerHTML;
-  assert.match(text,/Técnico em Edificações Integrado/);
+  assert.match(text,/<h2>Técnico em Edificações<\/h2>/);
   assert.match(text,/Técnico em Logística/);
   assert.match(text,/Direito/);
   assert.doesNotMatch(text,/Exemplo fictício/);
@@ -114,6 +114,23 @@ test("catálogo com oito cursos reais inclui todos e possui filtros", () => {
   const onlyArcos=h.elements.get("catalog-results").innerHTML;
   assert.match(onlyArcos,/Direito/);
   assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
+});
+
+test("fase 1: galeria acompanha projetos e Administração não tem link ou destaque genérico", () => {
+  const eng=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado-arcos");
+  const p=eng.blocos.findIndex(b=>b.tipo==="texto"&&b.titulo==="Projetos e experiências acadêmicas");
+  assert.equal(eng.blocos[p+1].tipo,"introducao");
+  assert.equal(eng.blocos[p+2].tipo,"galeria");
+  const a=json.courses.find(c=>c.id==="administracao-bacharelado");
+  assert.ok(!a.blocos.some(b=>b.tipo==="link-unico"&&b.link.rotulo==="Administração no IFMG"));
+  assert.ok(!a.blocos.some(b=>b.tipo==="introducao"&&b.conteudo.startsWith("O curso reúne seis campi")));
+  const e=json.courses.find(c=>c.id==="tecnico-em-edificacoes-integrado");
+  assert.equal(e.nome,"Técnico em Edificações");
+  assert.equal(e.blocos.find(b=>b.tipo==="texto").titulo,"Técnico em Edificações");
+  const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
+  const achievement=tec.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes");
+  assert.equal(achievement.conteudo,"Informação incompleta");
+  assert.ok(achievement.validacao);
 });
 
 test("quatro bacharelados novos incluem blocos, fontes e pendências", () => {

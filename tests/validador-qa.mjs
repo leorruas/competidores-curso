@@ -73,6 +73,15 @@ test("detecta tabela com linhas de tamanhos diferentes", () => {
   assert.match(result.output, /número de colunas divergente/);
 });
 
+test("não deixa texto copiável falar como um relatório de pesquisa", () => {
+  const result=runValidation(data => {
+    const text=data.courses[0].blocos.find(b=>b.tipo==="texto");
+    text.conteudo="A página do curso apresenta referências acadêmicas.";
+  });
+  assert.notEqual(result.status, 0);
+  assert.match(result.output, /texto copiável contém frase de apuração/);
+});
+
 test("identificador duplicado impede publicação", () => {
   const result=runValidation(data => {data.courses[1].id=data.courses[0].id;});
   assert.notEqual(result.status, 0);

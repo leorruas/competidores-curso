@@ -163,8 +163,14 @@ test("reconhecimentos, pesquisa e continuidade aparecem após galeria", () => {
     assert.ok(titles.some(x=>/Experiências/i.test(x)),c.nome);
     const pending=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Experiências e conquistas dos estudantes");
     const field=h.editorFields(pending)[0];
-    assert.equal(field.value,"Informação incompleta");
-    assert.doesNotMatch(h.editorBlock(pending,23),/data-copy-field=/);
+    if (pending.conteudo === "Informação incompleta") {
+      assert.equal(field.value,"Informação incompleta");
+      assert.doesNotMatch(h.editorBlock(pending,23),/data-copy-field=/);
+    } else {
+      assert.ok(field.value.includes(pending.titulo));
+      assert.match(h.editorBlock(pending,23),/data-copy-field=/);
+      assert.ok(pending.validacao,"Conteúdo parcialmente confirmado deve manter pendência separada");
+    }
   }
 });
 

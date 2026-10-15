@@ -140,7 +140,7 @@ test("quatro bacharelados novos incluem blocos, fontes e pendências", () => {
   for (const id of ids) {
     const curso=json.courses.find(c=>c.id===id);
     assert.ok(curso,id);
-    assert.ok(curso.blocos.length>=21);
+    assert.ok(curso.blocos.length>=20); // Administração perde corretamente o Link único que simulava sua própria página
     assert.ok(curso.pendencias.length>=3);
     assert.ok(h.isApprovedCourse(curso));
     const intro=curso.blocos.filter(b=>b.tipo==="introducao");

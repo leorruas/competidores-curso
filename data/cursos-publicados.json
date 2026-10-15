@@ -1,5 +1,799 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-10-15",
-  "courses": []
+  "courses": [
+    {
+      "id": "tecnico-em-edificacoes-integrado",
+      "nome": "Técnico em Edificações Integrado",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Congonhas",
+        "Governador Valadares",
+        "Ouro Preto",
+        "Piumhi",
+        "Santa Luzia"
+      ],
+      "modalidade": "Presencial (varia por campus)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "revisao_coordenacao": true,
+      "pendencias": [
+        "PPC e carga horária total variam por campus",
+        "Contato funcional da coordenação de Ouro Preto",
+        "Fotografias e experiências práticas por campus",
+        "Confirmar matriz e presencialidade de cada unidade"
+      ],
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Edificações"
+            },
+            {
+              "rotulo": "Categoria / tipo",
+              "valor": "Técnico / Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Infraestrutura"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos nas ofertas pesquisadas; conferir PPC vigente por campus",
+              "validacao": "Verificar a validade desta informação antes de usá-la no Wagtail."
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta",
+              "validacao": "Confirmar carga horária total e técnica para cada campus; não atribuir um único número às cinco ofertas."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial; PS 2027 indica 0,86% EaD em Ouro Preto e 10,3% EaD em Santa Luzia",
+              "validacao": "Verificar os percentuais e regras por campus; não generalizar um só percentual."
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Congonhas; Governador Valadares; Ouro Preto; Piumhi; Santa Luzia"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde, conforme PS 2027"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Vincular versão específica vigente de cada campus; pendências ao final"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "IFMG",
+          "conteudo": "Estude construção civil em uma ==instituição pública federal==, cursando o ensino médio junto com uma formação técnica em Edificações.\n\nDurante a formação, o estudante desenvolve conhecimentos sobre desenho técnico, projetos, materiais, orçamento e acompanhamento de obras, além das disciplinas da formação geral. É um percurso para quem deseja conhecer a área e manter abertas as possibilidades de continuar estudando."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "No IFMG, o estudante cursa o ensino médio junto com uma formação técnica em Edificações. É uma opção para conhecer projetos e obras sem deixar de construir uma base para continuar os estudos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é este curso",
+          "conteudo": ""
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Na escolha do ensino médio, também importam a rotina do campus, a formação geral, o contato com projetos e a possibilidade de seguir para a graduação. Compare esses aspectos em cada unidade do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Este curso pode fazer sentido para você se:\n\n- quer cursar ==o ensino médio junto com uma formação técnica==;\n- se interessa por obras, projetos, desenho, materiais e tecnologia;\n- deseja aprender sobre planejamento e execução na construção civil;\n- pretende conhecer possibilidades de trabalho técnico e de continuidade dos estudos;\n- valoriza a experiência de estudar em um campus do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que faz o Técnico em Edificações",
+          "conteudo": ""
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Além de conhecer a execução de obras, o futuro técnico estuda desenho e interpretação de projetos, materiais, planejamento e orçamento. São diferentes etapas do trabalho com edificações."
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Durante a formação, o estudante desenvolve conhecimentos para:\n\n- ler, interpretar e elaborar desenhos e projetos de edificações;\n- apoiar levantamentos, orçamentos e o planejamento de obras;\n- acompanhar materiais, etapas construtivas e controles de qualidade;\n- conhecer processos de manutenção e instalações em edificações;\n- aplicar normas de segurança e considerar impactos ambientais e sociais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde este profissional pode trabalhar",
+          "conteudo": "A formação se relaciona com atividades técnicas em:\n\n- construtoras e empresas de construção civil;\n- escritórios de engenharia, arquitetura e projetos;\n- planejamento, orçamento e acompanhamento de obras;\n- assistência técnica e manutenção de edificações;\n- órgãos públicos e empresas que trabalham com infraestrutura.\n\nO exercício de atividades profissionais segue os limites legais e as atribuições da formação técnica."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Por que escolher Técnico em Edificações no IFMG",
+          "conteudo": "No integrado, o estudante faz o ==ensino médio e a formação técnica num mesmo percurso==. Além de estudar componentes da educação básica, entra em contato com a construção civil e com áreas relacionadas a projetos, planejamento e infraestrutura.\n\nA experiência pode incluir aulas práticas, uso de espaços de ensino e participação em projetos, conforme as oportunidades efetivamente disponíveis em cada campus. A continuidade dos estudos em cursos superiores também é uma possibilidade após a conclusão do ensino médio.",
+          "validacao": "Verificar condições e experiências descritas com a coordenação antes de copiar para a página oficial."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "A escolha do campus faz diferença: as cinco ofertas de Edificações compartilham a formação integrada, mas apresentam condições próprias de presencialidade, estrutura e oportunidades acadêmicas."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Saiba mais",
+            "descricao": "Como ingressar no IFMG",
+            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Laboratórios & experiências",
+          "conteudo": ""
+        },
+        {
+          "tipo": "galeria",
+          "itens": [],
+          "validacao": "Informação incompleta — selecionar fotografias reais do curso, legendas, créditos e autorizações."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "",
+          "validacao": "Destaque ainda sem projeto ou resultado comprovado; confirmar com a coordenação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Edificações Integrado",
+          "conteudo": "O curso integra o Processo Seletivo 2027 em ==cinco campi do IFMG==. Para escolher uma unidade, considere deslocamento, rotina de estudos e características específicas de cada oferta. A estrutura e as oportunidades acadêmicas precisam ser consultadas por campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno 2027",
+            "Modalidade 2027",
+            "E-mail da coordenação do curso"
+          ],
+          "linhas": [
+            [
+              "Congonhas",
+              "Manhã e tarde",
+              "Presencial",
+              "coordtecedif.congonhas@ifmg.edu.br"
+            ],
+            [
+              "Governador Valadares",
+              "Manhã e tarde",
+              "Presencial",
+              "coordenacao.ted.gv@ifmg.edu.br"
+            ],
+            [
+              "Ouro Preto",
+              "Manhã e tarde",
+              "Presencial (0,86% EaD)",
+              "Informação incompleta"
+            ],
+            [
+              "Piumhi",
+              "Manhã e tarde",
+              "Presencial",
+              "coordmediointegrado.piumhi@ifmg.edu.br"
+            ],
+            [
+              "Santa Luzia",
+              "Manhã e tarde",
+              "Presencial (10,3% EaD)",
+              "edificacoes.santaluzia@ifmg.edu.br"
+            ]
+          ],
+          "validacao": "Um ou mais valores da tabela ainda estão incompletos ou exigem confirmação da coordenação."
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Congonhas",
+              "resposta": "Em Congonhas, o Técnico em Edificações Integrado combina a formação do ensino médio com conteúdos de planejamento, execução e acompanhamento de obras. A oferta do Processo Seletivo 2027 é presencial, no período da manhã e da tarde.\n\nA documentação da unidade menciona laboratórios relacionados a Solos, Materiais de Construção, Instalações e Prática de Obras. A participação dos estudantes nessas atividades deve ser detalhada no PPC e na página atual do curso."
+            },
+            {
+              "pergunta": "Governador Valadares",
+              "resposta": "A oferta integrada do Campus Governador Valadares envolve a formação geral do ensino médio e conhecimentos de projetos, orçamento, acompanhamento e manutenção de edificações. O curso consta no Processo Seletivo 2027 como presencial, pela manhã e à tarde.\n\nA apresentação institucional menciona projetos, aulas práticas, eventos e visitas técnicas. Para destacar uma experiência específica, a coordenação deve confirmar sua realização e a relação com o curso."
+            },
+            {
+              "pergunta": "Ouro Preto",
+              "resposta": "O Campus Ouro Preto também oferece Técnico em Edificações Integrado. A página institucional apresenta duração de três anos, organização anual e carga horária total de 3.460 horas, além de links para PPC e matriz curricular.\n\nNo Processo Seletivo 2027, a oferta consta como presencial, com 0,86% de carga horária EaD. A unidade deve explicar quais atividades correspondem a esse percentual e como elas se organizam na rotina de estudos."
+            },
+            {
+              "pergunta": "Piumhi",
+              "resposta": "No Campus Piumhi, a formação integrada em Edificações relaciona conteúdos da construção civil ao ensino médio. A apresentação do curso destaca abordagens interdisciplinares e o contato com temas de projetos, planejamento, tecnologia e infraestrutura.\n\nA oferta de 2027 é presencial, de manhã e à tarde. Projetos de pesquisa, extensão e inovação mencionados na apresentação institucional precisam ser identificados antes de serem anunciados como oportunidades concretas."
+            },
+            {
+              "pergunta": "Santa Luzia",
+              "resposta": "No Campus Santa Luzia, o Técnico em Edificações Integrado é oferecido em período diurno, com duração de três anos. A formação relaciona ensino médio e competências profissionais em projetos, planejamento e acompanhamento de obras.\n\nA oferta de 2027 informa 10,3% de carga horária a distância. A página do curso apresenta versões de PPC e matriz curricular; é preciso verificar qual delas se aplica à turma antes de divulgar a distribuição detalhada de disciplinas."
+            }
+          ],
+          "validacao": "Há respostas que dependem de confirmação acadêmica; revisar os itens indicados antes de transcrever."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Saiba mais",
+            "descricao": "Conheça os campi do IFMG",
+            "url": "https://www.ifmg.edu.br/portal/campi"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continuidade dos estudos",
+          "conteudo": "Depois do técnico integrado, o estudante pode concorrer a cursos superiores em áreas relacionadas à construção civil, engenharia, arquitetura, tecnologia e gestão, observando os critérios de ingresso de cada graduação."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área",
+            "Exemplos de graduação",
+            "Relação com Edificações"
+          ],
+          "linhas": [
+            [
+              "Construção civil",
+              "Engenharia Civil",
+              "Projetos, estruturas e obras"
+            ],
+            [
+              "Projeto e ambiente construído",
+              "Arquitetura e Urbanismo",
+              "Espaços, edificações e planejamento"
+            ],
+            [
+              "Gestão e tecnologia",
+              "Cursos superiores relacionados a infraestrutura e tecnologia",
+              "Planejamento, materiais, processos e inovação"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O que é um curso integrado?",
+              "resposta": "O integrado reúne, num mesmo curso, as disciplinas do ensino médio e a formação técnica. É destinado a estudantes que concluíram o ensino fundamental e querem realizar essas duas formações juntas."
+            },
+            {
+              "pergunta": "O curso é presencial?",
+              "resposta": "O curso é organizado como presencial. Entretanto, o Processo Seletivo 2027 informa percentuais de carga horária EaD nas ofertas de Ouro Preto (0,86%) e Santa Luzia (10,3%). Os detalhes de atividades e encontros dependem do PPC de cada campus."
+            },
+            {
+              "pergunta": "Quais atividades vou aprender?",
+              "resposta": "A formação aborda desenhos e projetos de edificações, materiais, orçamento e acompanhamento de obras, além das disciplinas do ensino médio. Consulte a matriz curricular do campus para conhecer as disciplinas específicas."
+            },
+            {
+              "pergunta": "O curso tem laboratórios e visitas técnicas?",
+              "resposta": "A disponibilidade de laboratórios, visitas e experiências práticas varia entre os campi e deve ser verificada nas páginas específicas e com as coordenações. A existência de um laboratório no campus não comprova, por si só, que ele seja utilizado pelo curso."
+            },
+            {
+              "pergunta": "Como faço para ingressar?",
+              "resposta": "O ingresso depende do Processo Seletivo do IFMG e das condições do edital do ano correspondente. Veja as informações oficiais de inscrição, documentação e matrícula no portal do processo seletivo."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Processo Seletivo do IFMG",
+              "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "E se eu já estiver cursando ou tiver concluído o ensino médio?",
+          "conteudo": "O **integrado** reúne o ensino médio e a formação técnica. Se você já concluiu o ensino médio, pode procurar uma oferta **subsequente**. Quem já cursa o ensino médio em outra escola deve verificar se existe oferta **concomitante**, observando editais, campus e compatibilidade de horários."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que verificar"
+          ],
+          "linhas": [
+            [
+              "Vai começar o ensino médio",
+              "Integrado",
+              "Campus, turno, rotina e deslocamento"
+            ],
+            [
+              "Já concluiu o ensino médio",
+              "Subsequente",
+              "Campus, turno, modalidade, carga e requisitos"
+            ],
+            [
+              "Faz ensino médio em outra escola",
+              "Concomitante, quando disponível",
+              "Vagas, deslocamento e horários"
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [],
+          "validacao": "Links específicos desta modalidade ainda não foram confirmados. Informação incompleta."
+        }
+      ]
+    },
+    {
+      "id": "tecnico-em-logistica-subsequente-ribeirao-das-neves",
+      "nome": "Técnico em Logística",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Ribeirão das Neves"
+      ],
+      "modalidade": "EaD (organização presencial a validar)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "revisao_coordenacao": true,
+      "pendencias": [
+        "Edital 854/2026 diz 100% EaD e PPC 2024.2 prevê 20% presencial",
+        "PPC e horários aplicáveis em 2027",
+        "E-mail funcional da coordenação em 2027",
+        "Imagens e atividades do curso"
+      ],
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Logística"
+            },
+            {
+              "rotulo": "Categoria / tipo",
+              "valor": "Técnico / Subsequente"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ribeirão das Neves"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios, conforme enquadramento do curso; conferir PPC vigente",
+              "validacao": "Verificar a validade desta informação antes de usá-la no Wagtail."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "EaD",
+              "validacao": "Edital 854/2026 indica 100% EaD; PPC 2024.2 prevê 20% presencial. Confirmar como funcionará a turma de 2027."
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "1 ano na página específica; PPC 2024 prevê mínimo 1 e máximo 2 anos"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta",
+              "validacao": "Confirmar PPC, distribuição presencial, calendário e carga horária vigentes para 2027."
+            },
+            {
+              "rotulo": "Turno / encontros",
+              "valor": "Informação incompleta",
+              "validacao": "Confirmar PPC, distribuição presencial, calendário e carga horária vigentes para 2027."
+            },
+            {
+              "rotulo": "Vagas",
+              "valor": "**120 confirmadas no Anexo II do Edital 854/2026**, oferta subsequente de Logística em Ribeirão das Neves"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Confrontar a versão 2024.2 publicada com documentação atual"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "IFMG",
+          "conteudo": "Aprenda sobre organização de transporte, controle de estoques, armazenagem e distribuição de produtos em uma ==instituição pública federal==.\n\nA formação é oferecida pelo IFMG Campus Ribeirão das Neves, na modalidade a distância, e se destina a quem já concluiu o ensino médio. O curso reúne conhecimentos técnicos sobre operações logísticas em empresas e organizações de diferentes áreas."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Uma formação técnica pública para quem já concluiu o ensino médio: no IFMG Ribeirão das Neves, Logística tem duração prevista de um ano e aborda transporte, estoques, compras e distribuição."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é este curso",
+          "conteudo": ""
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Quem já concluiu o ensino médio pode buscar uma qualificação técnica sem refazer essa etapa escolar. Antes de escolher, vale comparar duração, exigências presenciais e organização dos estudos."
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "O curso pode fazer sentido para você se:\n\n- já concluiu o ==ensino médio==;\n- tem interesse por transporte, distribuição, compras e organização de materiais;\n- deseja compreender como funcionam centros de distribuição e estoques;\n- quer desenvolver conhecimentos técnicos para trabalhar com processos logísticos;\n- procura uma oferta pública federal na modalidade a distância, conferindo previamente a possibilidade de atividades presenciais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que faz o Técnico em Logística",
+          "conteudo": ""
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Transportes, controle de estoques e distribuição: o curso aproxima esses processos das rotinas de indústrias, comércio, centros de armazenagem e empresas de entrega."
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Ao longo da formação, o estudante aprende a:\n\n- apoiar o planejamento de transportes e distribuição;\n- organizar processos de recebimento, armazenamento e movimentação;\n- acompanhar estoques e fluxos de materiais;\n- conhecer operações de compras e relações com fornecedores;\n- utilizar informações e tecnologias de apoio ao controle logístico;\n- considerar custos, prazos, qualidade e procedimentos de trabalho."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde este profissional pode trabalhar",
+          "conteudo": "As atividades de logística são importantes para o funcionamento de organizações que recebem, armazenam, transportam e distribuem materiais e produtos.\n\nPossíveis ambientes de atuação:\n\n- transportadoras e empresas de distribuição;\n- indústrias e comércios;\n- centros de armazenamento e controle de estoque;\n- setores de compras e almoxarifados;\n- empresas de serviços e operações de comércio eletrônico.\n\nO curso não garante contratação, e a atuação depende dos requisitos de cada função."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Como funciona o curso no Campus Ribeirão das Neves",
+          "conteudo": "O curso é **subsequente**, voltado a pessoas que já concluíram o ensino médio. A página institucional informa duração de um ano e utiliza a modalidade **EaD**.\n\nA oferta a distância utiliza recursos de aprendizagem e acompanhamento acadêmico. A definição de encontros presenciais, horários e atividades obrigatórias deve ser consultada na versão do PPC e no edital aplicáveis à turma. A informação ainda precisa ser esclarecida para 2027."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "A modalidade EaD influencia a rotina de quem estuda e trabalha. Antes de planejar os deslocamentos, confirme as atividades presenciais: o PPC de 2024 prevê tutorias no campus, enquanto o quadro de 2027 indica 100% EaD."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Saiba mais",
+            "descricao": "Conheça o curso de Logística no Campus Ribeirão das Neves",
+            "url": "https://www.ifmg.edu.br/ribeiraodasneves/cursos-1/tecnico/tecnico-em-logistica-subsequente-ead"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Conteúdos e experiências de aprendizagem",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Transporte e distribuição",
+              "Organização de fluxos de entrega e circulação de produtos"
+            ],
+            [
+              "Estoques e armazenagem",
+              "Controle, movimentação e organização de materiais"
+            ],
+            [
+              "Compras e suprimentos",
+              "Processos ligados a fornecedores e abastecimento"
+            ],
+            [
+              "Gestão de operações",
+              "Planejamento de atividades, custos e qualidade"
+            ],
+            [
+              "Informação aplicada à logística",
+              "Uso de sistemas e dados para apoiar decisões"
+            ]
+          ]
+        },
+        {
+          "tipo": "galeria",
+          "itens": [],
+          "validacao": "Informação incompleta — selecionar fotografias reais do curso, legendas, créditos e autorizações."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode fazer este curso?",
+              "resposta": "O curso subsequente é destinado a quem já concluiu o ensino médio. Os demais requisitos de inscrição e matrícula constam no edital do Processo Seletivo do IFMG."
+            },
+            {
+              "pergunta": "O curso é totalmente a distância?",
+              "resposta": "A oferta é apresentada como EaD. Para saber se há encontros, atividades ou avaliações presenciais obrigatórias na turma de ingresso, é necessário consultar a coordenação e o projeto pedagógico vigente."
+            },
+            {
+              "pergunta": "Quanto tempo dura o curso?",
+              "resposta": "A página institucional informa duração prevista de um ano. O prazo máximo de integralização e a distribuição de disciplinas devem ser conferidos no projeto pedagógico aplicável à turma."
+            },
+            {
+              "pergunta": "O que vou estudar?",
+              "resposta": "O curso aborda processos de transportes, armazenagem, estoques, compras, distribuição e uso de ferramentas de apoio à gestão logística. A relação completa de disciplinas está na matriz curricular vigente."
+            },
+            {
+              "pergunta": "Como faço para ingressar?",
+              "resposta": "É necessário acompanhar o Processo Seletivo do IFMG, verificar os requisitos para cursos subsequentes e seguir os prazos e procedimentos estabelecidos no edital."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Processo Seletivo do IFMG",
+              "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
+            },
+            {
+              "rotulo": "PPC do curso e informações de funcionamento",
+              "url": "https://www.ifmg.edu.br/ribeiraodasneves/cursos-1/tecnico/tecnico-em-logistica-subsequente-ead"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "direito-bacharelado-arcos",
+      "nome": "Direito",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Arcos"
+      ],
+      "modalidade": "Presencial (30% EaD no edital)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "revisao_coordenacao": true,
+      "pendencias": [
+        "PPC e matriz vigentes para 2027",
+        "Total de vagas somadas as formas de ingresso incluindo Sisu",
+        "Atividades práticas e regras de estágio e TCC",
+        "Imagens autorizadas do curso"
+      ],
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Direito"
+            },
+            {
+              "rotulo": "Categoria / tipo",
+              "valor": "Graduação / Bacharelado"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Arcos"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "5 anos, conforme página específica atualizada em 2026"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta",
+              "validacao": "PPC disponível traz 3.750 h com capa de setembro de 2024. Confirmar PPC vigente para 2027."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (30% EaD), conforme cadastro PS 2027; distribuição por componentes a confirmar",
+              "validacao": "Verificar a validade desta informação antes de usá-la no Wagtail."
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noturno"
+            },
+            {
+              "rotulo": "Vagas do PS 2027",
+              "valor": "15 vagas — Histórico Escolar e Redação",
+              "validacao": "Edital 855/2026 confirma 15 nessa forma de seleção; total incluindo Sisu ainda não confirmado."
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "A página específica anuncia documentos de 2025, mas o PDF `ppc_direito_ifmg-25-09.pdf` traz **capa datada de setembro/2024**, incluindo matriz com 3.750 horas. Esclarecer versão/atualizações antes de publicar como PPC 2025"
+            },
+            {
+              "rotulo": "Coordenação/contato",
+              "valor": "Niltom Vieira Junior / `direito.arcos@ifmg.edu.br`, conforme página atualizada em 2026; confirmar vigência",
+              "validacao": "Verificar a validade desta informação antes de usá-la no Wagtail."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "IFMG",
+          "conteudo": "Estude Direito em uma ==instituição pública federal==, com formação voltada à compreensão das leis, dos direitos e das relações entre pessoas, organizações e instituições.\n\nO bacharelado em Direito do IFMG Campus Arcos aborda diferentes áreas jurídicas e propõe uma aprendizagem que relaciona fundamentos teóricos à análise de situações concretas, argumentação e responsabilidade social."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "O IFMG Arcos oferece Direito em turno noturno, numa instituição pública federal. A formação jurídica aproxima a análise de leis, direitos e instituições de problemas e situações concretas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é este curso",
+          "conteudo": ""
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "",
+          "validacao": "Destaque ainda sem projeto ou resultado comprovado; confirmar com a coordenação."
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Este curso pode fazer sentido para você se:\n\n- quer estudar ==leis, direitos e instituições==;\n- se interessa por interpretação de textos, escrita e argumentação;\n- deseja compreender como conflitos podem ser discutidos e resolvidos;\n- tem interesse por questões sociais, políticas públicas e justiça;\n- considera seguir carreira jurídica, atuação na área pública ou estudos acadêmicos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A graduação desenvolve conhecimentos de diferentes campos do Direito e de suas aplicações. O percurso também envolve análise de normas, argumentação, discussão de casos e reflexão ética sobre problemas jurídicos e sociais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Dimensão da formação",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Fundamentos do Direito",
+              "Compreensão das normas, instituições jurídicas e princípios"
+            ],
+            [
+              "Interpretação e argumentação",
+              "Leitura crítica, elaboração de argumentos e análise de casos"
+            ],
+            [
+              "Conflitos e soluções",
+              "Estudo de alternativas de resolução de problemas jurídicos"
+            ],
+            [
+              "Sociedade e direitos",
+              "Relações entre Direito, direitos fundamentais e questões sociais"
+            ],
+            [
+              "Formação prática",
+              "Atividades previstas no PPC e regulamentos próprios"
+            ]
+          ]
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Saiba mais",
+            "descricao": "Matriz curricular e projeto pedagógico de Direito",
+            "url": "https://www.ifmg.edu.br/arcos/cursos-1/direito"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o bacharel em Direito pode atuar",
+          "conteudo": "A formação jurídica abre possibilidades de atuação em diferentes ambientes, incluindo:\n\n- advocacia e consultoria, observados os requisitos do exercício profissional;\n- organizações públicas e privadas que demandam análise jurídica;\n- órgãos públicos e carreiras jurídicas acessíveis por processos seletivos próprios;\n- pesquisa, docência e outras atividades acadêmicas, com formação complementar quando exigida;\n- organizações da sociedade civil e projetos relacionados a direitos.\n\nO bacharelado não substitui exame da OAB, concurso público ou outras condições legais para exercer funções específicas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Por que estudar Direito no IFMG Arcos",
+          "conteudo": "Na graduação, a formação jurídica é oferecida por uma instituição pública federal. A página do curso apresenta referências a metodologias de aprendizagem baseada em projetos, estudos de caso e trabalhos que aproximam conceitos jurídicos de situações práticas.\n\nTambém estão disponíveis documentos sobre Núcleo de Práticas Jurídicas, estágio, TCC e atividades complementares. A coordenação deve validar como essas atividades funcionam atualmente e quais são obrigatórias."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "A Aprendizagem Baseada em Projetos aparece na apresentação institucional do Direito em Arcos como forma de aproximar teoria e situações concretas. As experiências de cada turma devem ser conferidas com a coordenação."
+        },
+        {
+          "tipo": "galeria",
+          "itens": [],
+          "validacao": "Informação incompleta — selecionar fotografias reais do curso, legendas, créditos e autorizações."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Como funciona o curso",
+          "conteudo": "A graduação em Direito é oferecida no **Campus Arcos**, em turno **noturno**, com duração prevista de **cinco anos**. O PPC disponível registra **3.750 horas totais** e prazo mínimo de 10 semestres, mas sua capa é datada de **setembro de 2024**. O cadastro do Processo Seletivo 2027 descreve a modalidade como presencial com **30% de atividades EaD**, condição não presumida como idêntica à distribuição curricular descrita no PDF antigo.\n\nA organização concreta da carga horária a distância depende do projeto pedagógico vigente. Antes de escolher a oferta, consulte a matriz curricular e verifique junto ao campus horários, calendário, componentes e atividades que exigem presença."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Informação",
+            "Referência"
+          ],
+          "linhas": [
+            [
+              "Campus",
+              "Arcos"
+            ],
+            [
+              "Turno",
+              "Noturno"
+            ],
+            [
+              "Duração",
+              "5 anos"
+            ],
+            [
+              "Modalidade",
+              "Presencial (30% EaD segundo PS 2027)"
+            ],
+            [
+              "Projeto pedagógico",
+              "PDF divulgado no site, capa setembro/2024; confirmar vigência e atualização 2025/2027"
+            ]
+          ],
+          "validacao": "Um ou mais valores da tabela ainda estão incompletos ou exigem confirmação da coordenação."
+        },
+        {
+          "tipo": "link-unico",
+          "estilo": "Cartão",
+          "link": {
+            "rotulo": "Saiba mais",
+            "descricao": "Como ingressar no curso de Direito",
+            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
+          }
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Preciso ter concluído o ensino médio?",
+              "resposta": "Para ingressar em uma graduação, é necessário ter concluído o ensino médio ou cumprir as condições previstas no edital e na matrícula. Verifique o prazo de comprovação no processo seletivo."
+            },
+            {
+              "pergunta": "O curso é noturno?",
+              "resposta": "Sim. O bacharelado em Direito do Campus Arcos é apresentado na página institucional e no quadro de 2027 como um curso noturno. Os horários efetivos das atividades dependem do calendário acadêmico."
+            },
+            {
+              "pergunta": "O curso tem atividades a distância?",
+              "resposta": "O cadastro do Processo Seletivo 2027 indica modalidade presencial com 30% de carga horária EaD. Consulte a matriz e o PPC vigentes para identificar quais componentes e atividades utilizam esse formato."
+            },
+            {
+              "pergunta": "Há estágio e atividades de prática jurídica?",
+              "resposta": "A página do curso reúne documentos relacionados ao Núcleo de Práticas Jurídicas, ao estágio e a atividades integradoras. As regras para participação e conclusão estão nos regulamentos e no projeto pedagógico vigente."
+            },
+            {
+              "pergunta": "Como faço para ingressar?",
+              "resposta": "O quadro de ofertas de 2027 menciona Histórico Escolar e Redação e Sisu como formas de seleção. Consulte o edital correspondente para saber prazos, requisitos e vagas de cada modalidade."
+            },
+            {
+              "pergunta": "O diploma permite advogar automaticamente?",
+              "resposta": "Não. O bacharelado é uma etapa de formação jurídica. Para exercer a advocacia, é necessário cumprir também os requisitos legais de inscrição na Ordem dos Advogados do Brasil, incluindo o Exame de Ordem quando aplicável."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Processo Seletivo do IFMG",
+              "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
+            },
+            {
+              "rotulo": "Projeto pedagógico e documentos de Direito",
+              "url": "https://www.ifmg.edu.br/arcos/cursos-1/direito"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

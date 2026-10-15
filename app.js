@@ -111,74 +111,71 @@
       "</tr></thead><tbody>" + b.linhas.map(row => "<tr>" + row.map(x => "<td>" + renderInline(x).replace(/<mark>/g,"<strong>").replace(/<\/mark>/g,"</strong>") + "</td>").join("") + "</tr>").join("") + "</tbody></table>";
   }
   function editorFields(b) {
-    const raw = (label, value) => ({ label, value: String(value || ""), rich: false, html: "" });
-    const rich = (label, value, heading = "") => ({label, value: String(value || ""), rich: true, html: richHTML(value, heading)});
+    const raw = (label, value, setting = false) => ({label, value: String(value ?? ""), rich: false, html: "", setting});
+    const rich = (label, value) => ({label, value: String(value ?? ""), rich: true, html: richHTML(value)});
     if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor));
     if (b.tipo === "texto") {
       const parts = [];
-      if (b.titulo) parts.push({label:"Título da seção",value:b.titulo,rich:true,html:"<h2>" + escapeHTML(b.titulo) + "</h2>"}); 
-      if (b.conteudo) parts.push(rich("Texto do bloco", b.conteudo));
+      if (b.titulo) parts.push({label:"Título da seção",value:b.titulo,rich:true,html:"<h2>" + escapeHTML(b.titulo) + "</h2>"});
+      if (b.conteudo) parts.push(rich("Conteúdo", b.conteudo));
       return parts;
     }
-    if (b.tipo === "introducao") return [rich("Texto em destaque (Introdução)", b.conteudo)];
-    if (b.tipo === "faq") return b.itens.flatMap((x,i) => [raw("Item " + (i+1) + " · Pergunta", x.pergunta),rich("Item " + (i+1) + " · Resposta", x.resposta)]);
-    if (b.tipo === "link-unico") return [
-      raw("Estilo do bloco", b.estilo || "Padrão"),
-      raw("Título / texto do link", b.link.rotulo),
-      raw("Descrição / texto de apoio", b.link.descricao || ""),
-      raw("Link / URL de destino", b.link.url)
-    ];
-    if (b.tipo === "links") return b.itens.flatMap((x,i) => [
-      raw("Link " + (i+1) + " · Texto", x.rotulo),
-      raw("Link " + (i+1) + " · Endereço", x.url)
+    if (b.tipo === "introducao") return [rich("Conteúdo em destaque", b.conteudo)];
+    if (b.tipo === "faq") return b.itens.flatMap((x,i) => [
+      raw("Pergunta " + (i+1), x.pergunta),
+      rich("Resposta " + (i+1), x.resposta)
     ]);
+    if (b.tipo === "link-unico") return [
+      raw("Estilo", b.estilo || "Padrão", true),
+      raw("Título / texto do link", b.link.rotulo),
+      raw("Descrição", b.link.descricao || ""),
+      raw("URL", b.link.url)
+    ];
+    if (b.tipo === "links") return [
+      raw("Estilo", b.estilo || "Padrão", true),
+      ...b.itens.flatMap((x,i) => [
+        raw("Link " + (i+1) + " · Título", x.rotulo),
+        raw("Link " + (i+1) + " · URL", x.url)
+      ])
+    ];
     if (b.tipo === "galeria") return b.itens.flatMap((x,i) => [
       raw("Imagem " + (i+1) + " · Legenda", x.legenda),
       raw("Imagem " + (i+1) + " · Texto alternativo", x.alt),
-      raw("Imagem " + (i+1) + " · URL", x.url)
+      raw("Imagem " + (i+1) + " · URL de referência", x.url, true)
     ]);
     if (b.tipo === "tabela") return [
-      {label:"Tabela completa (colunas e linhas)",value:blockCopy(b),rich:true,html:tableHTML(b)}
+      ...b.colunas.map((col,j) => raw("Cabeçalho · Coluna " + (j+1), col)),
+      ...b.linhas.flatMap((row,i) => row.map((cell,j) => raw(
+        "Linha " + (i+1) + " · " + b.colunas[j],cell)))
     ];
     return [];
   }
   function fieldHTML(field, blockIndex, fieldIndex) {
-    const info = escapeHTML(field.label);
     const content = field.rich
-      ? '<div class="field-example rich-example">' + (field.label === "Título da seção" ? "<strong>" + escapeHTML(field.value) + "</strong>" : field.html) + '</div>'
+      ? '<div class="field-example rich-example">' + (field.label === "Título da seção" ? field.html : field.html) + '</div>'
       : '<div class="field-example text-example">' + escapeHTML(field.value || "—") + '</div>';
-    const actions = field.rich
-      ? '<button type="button" class="copy-button" data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '" data-copy-format="rich">copiar formatado</button>' +
-        '<button type="button" class="copy-button copy-secondary" data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '" data-copy-format="plain">copiar texto</button>'
-      : '<button type="button" class="copy-button" data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '" data-copy-format="plain">' +
-          (field.label.includes("URL") || field.label.includes("Endereço") ? "copiar link" :
-           field.label.includes("Título") || field.label.includes("Texto") ? "copiar texto" :
-           field.label.includes("Descrição") ? "copiar descrição" : "copiar") + '</button>';
-    return '<div class="editor-field"><div class="editor-field-top"><span class="editor-field-label">' + info +
-      '</span><div class="editor-field-actions">' + actions + '</div></div>' + content + '</div>';
-  }
-  function linkExample(b) {
-    const link = b.link;
-    if (!isValidURL(link.url)) return "";
-    return '<div class="block-link-example"><div class="example-overline">Exemplo de como o Link único aparece na página</div>' +
-      '<a class="link-example" href="' + escapeHTML(link.url) + '" target="_blank" rel="noopener noreferrer">' +
-      '<strong>' + escapeHTML(link.rotulo) + '</strong>' +
-      (link.descricao ? '<span>' + escapeHTML(link.descricao) + '</span>' : "") +
-      '<span aria-hidden="true">↗</span></a></div>';
+    const action = field.setting
+      ? '<span class="editor-setting" aria-label="Selecionar esta opção no Wagtail">selecionar no Wagtail</span>'
+      : '<button type="button" class="copy-button" data-copy-field="' + fieldIndex +
+          '" data-copy-block="' + blockIndex + '">Copiar <span aria-hidden="true">↗</span></button>';
+    return '<div class="editor-field"><div class="editor-field-top"><span class="editor-field-label">' +
+      escapeHTML(field.label) + '</span><div class="editor-field-actions">' + action +
+      '</div></div>' + content + '</div>';
   }
   function editorBlock(b, i) {
-    const info = b.instrucao || ("Preencha o bloco " + blockName[b.tipo] + " com os campos indicados.");
+    const info = b.instrucao || "";
     const fields = editorFields(b);
-    const example = b.tipo === "link-unico" ? linkExample(b) : "";
-    const whole = b.tipo === "texto" || b.tipo === "faq" || b.tipo === "tabela" || b.tipo === "links";
-    return '<article class="block-card" id="bloco-' + i + '"><div class="block-card-top"><span class="block-index">' + String(i + 1).padStart(2, "0") +
-      '</span><span class="block-type">Bloco Wagtail / ' + escapeHTML(blockName[b.tipo]) + '</span></div>' +
-      '<div class="block-instructions"><strong>Como preencher</strong><p>' + escapeHTML(info) + '</p></div>' +
-      example +
+    const title = b.titulo || (b.tipo === "faq" ? "Perguntas e respostas" : "");
+    return '<section class="block-card" id="bloco-' + i + '" aria-labelledby="block-heading-' + i + '">' +
+      '<span class="block-badge" aria-hidden="true">' + String(i + 1).padStart(2,"0") + '</span>' +
+      '<header class="block-card-header">' +
+        '<div class="block-kicker">BLOCO WAGTAIL <span aria-hidden="true">/</span> ' + String(i+1).padStart(2,"0") + '</div>' +
+        '<h2 class="block-card-title" id="block-heading-' + i + '">' + escapeHTML(blockName[b.tipo]) + '</h2>' +
+        (title ? '<p class="block-section-name">' + escapeHTML(title) + '</p>' : '') +
+      '</header>' +
+      (info ? '<div class="block-instructions"><p>' + escapeHTML(info) + '</p></div>' : '') +
       '<div class="editor-fields">' + fields.map((field,j) => fieldHTML(field,i,j)).join("") + '</div>' +
-      (whole ? '<div class="block-actions"><button class="copy-button copy-whole" type="button" data-copy-whole="' + i +
-      '">copiar bloco completo' + (b.tipo === "texto" || b.tipo === "tabela" ? " com formatação" : "") + '</button></div>' : "") +
-      '</article>';
+      '</section>';
   }
   async function copyValue(plain, html = "") {
     const text = asPlain(plain);
@@ -199,14 +196,13 @@
   async function performCopy(button, plain, html = "") {
     try {
       const result = await copyValue(plain, html);
-      const message = result === "rich" ? "Copiado com formatação HTML e texto simples." :
-        html ? "Este navegador copiou o texto sem formatação." : "Campo copiado.";
-      notify(message);
-      const previous = button.textContent;
-      button.textContent = result === "rich" ? "formatado ✓" : "copiado ✓";
-      setTimeout(() => { if (button.isConnected) button.textContent = previous; }, 1700);
+      notify(result === "rich" ? "Campo copiado com formatação." :
+        html ? "Campo copiado como texto simples; confira a formatação no Wagtail." : "Campo copiado.");
+      const previous = button.innerHTML;
+      button.textContent = "Copiado ✓";
+      setTimeout(() => { if (button.isConnected) button.innerHTML = previous; }, 1700);
     } catch {
-      notify("Não foi possível copiar. Selecione o valor visível para copiar manualmente.");
+      notify("Não foi possível copiar. Selecione o texto visível para copiar manualmente.");
     }
   }
   function renderCourse(course) {
@@ -219,11 +215,11 @@
     root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Demonstração fictícia" : "Conteúdo revisado") + ' / ' + kind + '</div><h1>' + title + '</h1><p>' + escapeHTML(course.descricao || "") + '</p><div class="course-flags">' + (course.demo ? '<span class="tag demo-tag">Exemplo sem dados reais</span>' : "") + flags + '</div></div><a class="button button-outline" href="#catalogo">Voltar ao catálogo <span aria-hidden="true">↗</span></a></div>' +
       '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar para o Wagtail</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar página</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +
-      (!activePreview ? '<p class="copy-note">Cada campo tem seu botão de cópia. Nos campos de texto, “copiar formatado” envia negrito, listas e parágrafos em HTML, quando o navegador e o Wagtail aceitarem.</p>' : '') +
+      (!activePreview ? '<p class="copy-note">Siga os blocos na ordem e use <strong>Copiar</strong> em cada campo. Em textos, a formatação é incluída automaticamente quando possível.</p>' : '') +
       (activePreview ? course.blocos.map(blockPreview).join("") : course.blocos.map(editorBlock).join("")) +
       (course.demo ? '<div class="course-warning">Este é um exemplo fictício. Não representa curso, campus ou oferta do IFMG.</div>' : "") +
       '</div><aside class="course-side"><div class="side-label">NESTA PÁGINA</div><nav aria-label="Índice dos blocos">' +
-      headings.map(x => '<a href="#bloco-' + x.index + '" data-anchor="' + x.index + '">' + escapeHTML(x.title) + '</a>').join("") +
+      headings.map(x => '<a href="#bloco-' + x.index + '" data-anchor="' + x.index + '"><span class="side-number">' + String(x.index+1).padStart(2,"0") + '</span>' + escapeHTML(blockName[course.blocos[x.index].tipo]) + '</a>').join("") +
       '</nav><p>' + (activePreview ? "Prévia visual dos blocos aprovados." : "Siga a ordem e copie o conteúdo de cada bloco para o Wagtail.") + '</p></aside></div>';
   }
 
@@ -302,19 +298,13 @@
         if (c) { renderCourse(c); $("tab-" + selected).focus(); }
         return;
       }
-      const button = e.target.closest("[data-copy-field], [data-copy-whole]");
+      const button = e.target.closest("[data-copy-field]");
       if (button) {
         const c = state.current === "demonstracao" ? demo : state.courses.find(x => x.id === state.current);
-        const index = Number(button.dataset.copyBlock ?? button.dataset.copyWhole);
-        const b = c?.blocos[index];
-        if (!b) return;
-        if (button.hasAttribute("data-copy-field")) {
-          const field = editorFields(b)[Number(button.dataset.copyField)];
-          if (field) await performCopy(button, field.value, button.dataset.copyFormat === "rich" ? field.html : "");
-        } else {
-          const html = b.tipo === "texto" ? richHTML(b.conteudo,b.titulo) :
-            b.tipo === "tabela" ? tableHTML(b) : "";
-          await performCopy(button, blockCopy(b), html);
+        const b = c?.blocos[Number(button.dataset.copyBlock)];
+        const field = b ? editorFields(b)[Number(button.dataset.copyField)] : null;
+        if (field && !field.setting) {
+          await performCopy(button, field.value, field.rich ? field.html : "");
         }
       }
     });

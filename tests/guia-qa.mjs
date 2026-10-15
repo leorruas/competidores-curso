@@ -117,13 +117,13 @@ test("catálogo com sete cursos reais inclui todos e possui filtros", () => {
 });
 
 test("quatro bacharelados novos incluem blocos, fontes e pendências", () => {
-  const ids=["engenharia-mecanica-bacharelado-arcos","administracao-bacharelado-bambui",
+  const ids=["engenharia-mecanica-bacharelado-arcos","administracao-bacharelado",
     "agronomia-bacharelado-bambui","engenharia-de-producao-bacharelado-bambui"];
   const h=testContext();
   for (const id of ids) {
     const curso=json.courses.find(c=>c.id===id);
     assert.ok(curso,id);
-    assert.equal(curso.blocos.length,16);
+    assert.ok(curso.blocos.length>=21);
     assert.ok(curso.pendencias.length>=3);
     assert.ok(h.isApprovedCourse(curso));
     const intro=curso.blocos.filter(b=>b.tipo==="introducao");
@@ -133,6 +133,38 @@ test("quatro bacharelados novos incluem blocos, fontes e pendências", () => {
     assert.equal(faq.itens.length,6);
     assert.ok(curso.blocos.some(b=>b.tipo==="galeria"&&b.validacao));
     assert.ok(curso.blocos.some(b=>b.tipo==="link-unico"&&b.link.url.startsWith("https://")));
+  }
+});
+
+test("Administração reúne seis campi e não repete FAQ de turno", () => {
+  const course=json.courses.find(c=>c.id==="administracao-bacharelado");
+  const h=testContext();
+  const campi=["Bambuí","Formiga","Ouro Branco","Ribeirão das Neves","Sabará","São João Evangelista"];
+  assert.deepEqual(course.campi,campi);
+  const offer=course.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
+  assert.equal(offer.linhas.length,6);
+  assert.ok(offer.linhas.every(row=>row.length===offer.colunas.length));
+  const faq=course.blocos.find(b=>b.tipo==="faq");
+  assert.deepEqual(faq.itens.map(x=>x.pergunta),campi);
+  assert.equal(course.blocos.filter(b=>b.tipo==="texto")[0].titulo,"Administração");
+  assert.ok(h.isApprovedCourse(course));
+  assert.ok(course.aliases.includes("administracao-bacharelado-bambui"));
+});
+
+test("reconhecimentos, pesquisa e continuidade aparecem após galeria", () => {
+  const h=testContext();
+  for(const c of json.courses) {
+    const g=c.blocos.findIndex(x=>x.tipo==="galeria");
+    assert.ok(g>=0,c.nome);
+    const titles=c.blocos.slice(g+1).filter(b=>b.tipo==="texto").map(b=>b.titulo);
+    assert.ok(titles.some(x=>/Reconhecimentos/i.test(x)),c.nome);
+    assert.ok(titles.some(x=>/Pesquisa/i.test(x)),c.nome);
+    assert.ok(titles.some(x=>/Continue seus estudos/i.test(x)),c.nome);
+    assert.ok(titles.some(x=>/Experiências/i.test(x)),c.nome);
+    const pending=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Experiências e conquistas dos estudantes");
+    const field=h.editorFields(pending)[0];
+    assert.equal(field.value,"Informação incompleta");
+    assert.doesNotMatch(h.editorBlock(pending,23),/data-copy-field=/);
   }
 });
 

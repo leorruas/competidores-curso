@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap');
 
 /* Guia de cursos — linguagem editorial alinhada ao Guia do Portal IFMG.
    A hierarquia é construída com tipografia, ritmo, numeração e filetes.
@@ -16,7 +16,7 @@
   --line-soft:rgba(245,245,247,.13);
   --contrast:var(--bg);
   --on-contrast:var(--ink);
-  --mono:'IBM Plex Mono',monospace;
+  --mono:'Archivo',Arial,sans-serif;
   --sans:'Archivo',Arial,sans-serif;
 }
 :root[data-theme="light"] {
@@ -502,3 +502,17 @@ h1 em{color:var(--accent);font-style:normal}
   .catalog-masthead-logo{width:44px}
   .empty-state{padding:20px 0 12px;font-size:13px}
 }
+
+/* Todo o guia utiliza Archivo, inclusive labels, números e controles. */
+:root{--mono:'Archivo',Arial,sans-serif}
+.brand-copy,.block-card-title,.course-head h1,.catalog-masthead h1,.help-view h1{letter-spacing:-.035em}
+.block-badge{font-weight:600;letter-spacing:-.035em}
+.site-nav a,.breadcrumb,.editor-field-label,.block-type,.block-index,.copy-button,.count,.course-type{letter-spacing:0}
+.help-context{font-size:15px;line-height:1.55;color:var(--muted);max-width:580px;margin:26px 0 0}
+.field-review{font-size:13px;line-height:1.45;color:var(--muted);border-left:2px solid var(--accent);padding:8px 0 8px 12px;margin:14px 0 0}
+.field-review strong{color:var(--accent)}
+.review-indicator{font-size:12px;color:var(--accent);font-weight:600;margin:9px 0 15px}
+.review-value{font-style:italic;color:var(--muted)}
+.review-button{display:none}
+.course-review-note{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding:15px 0 5px;max-width:720px}
+.course-review-note strong{color:var(--accent)}

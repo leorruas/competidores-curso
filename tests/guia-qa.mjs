@@ -54,7 +54,7 @@ test("a home é o catálogo e não uma página de apresentação", () => {
 
 test("o catálogo inclui somente roteiros autorizados com pendências explícitas", () => {
   assert.equal(json.schemaVersion,1);
-  assert.equal(json.courses.length,3);
+  assert.equal(json.courses.length,7);
   assert.ok(json.courses.every(c=>c.publicacao_autorizada===true && c.status==="em_validacao" && c.revisao_coordenacao===true && c.pendencias.length>0));
   const h=testContext();
   assert.ok(json.courses.every(c=>h.isApprovedCourse(c)));
@@ -100,7 +100,7 @@ test("campos incompletos aparecem identificados sem botão de copiar", () => {
   assert.match(h.editorBlock(gallery,3),/Informação incompleta/);
 });
 
-test("catálogo com três cursos reais inclui todos e possui filtros", () => {
+test("catálogo com sete cursos reais inclui todos e possui filtros", () => {
   const h=testContext();
   h.state.courses=json.courses;
   h.renderCatalog();
@@ -114,6 +114,26 @@ test("catálogo com três cursos reais inclui todos e possui filtros", () => {
   const onlyArcos=h.elements.get("catalog-results").innerHTML;
   assert.match(onlyArcos,/Direito/);
   assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
+});
+
+test("quatro bacharelados novos incluem blocos, fontes e pendências", () => {
+  const ids=["engenharia-mecanica-bacharelado-arcos","administracao-bacharelado-bambui",
+    "agronomia-bacharelado-bambui","engenharia-de-producao-bacharelado-bambui"];
+  const h=testContext();
+  for (const id of ids) {
+    const curso=json.courses.find(c=>c.id===id);
+    assert.ok(curso,id);
+    assert.equal(curso.blocos.length,16);
+    assert.ok(curso.pendencias.length>=3);
+    assert.ok(h.isApprovedCourse(curso));
+    const intro=curso.blocos.filter(b=>b.tipo==="introducao");
+    assert.equal(intro.length,3);
+    assert.ok(intro.every(b=>b.conteudo.length<=280));
+    const faq=curso.blocos.find(b=>b.tipo==="faq");
+    assert.equal(faq.itens.length,6);
+    assert.ok(curso.blocos.some(b=>b.tipo==="galeria"&&b.validacao));
+    assert.ok(curso.blocos.some(b=>b.tipo==="link-unico"&&b.link.url.startsWith("https://")));
+  }
 });
 
 test("Texto é um único campo: título e parágrafos com negrito", () => {

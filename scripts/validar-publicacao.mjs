@@ -30,6 +30,12 @@ const urlSegura = (url) => {
   } catch { return false; }
 };
 const denuncia = (path, msg) => erros.push(path + ": " + msg);
+const linguagemDeApuracao = /\b(?:a página (?:do curso|institucional|do campus) (?:apresenta|informa|disponibiliza|menciona)|o quadro de ofertas (?:informa|menciona|indica)|o PPC (?:disponível|revisado|de 20\d{2}) (?:prevê|informa|indica)|a coordenação deve confirmar|antes de planejar os deslocamentos, confirme)\b/i;
+function validarVozInstitucional(value, path) {
+  if (typeof value === "string" && linguagemDeApuracao.test(value))
+    denuncia(path, "texto copiável contém frase de apuração em vez de informação institucional");
+}
+
 const saneamento = /(?:competidores-cursos(?:\.git)?|(?:^|\/)Benchmark\/|(?:^|\/)páginas de cursos\/|c:\\users\\|file:\/\/|\[!CAUTION\]|\[!NOTE\]|\[!TIP\]|informação faltante|a confirmar com a coordena[cç][aã]o|pend[eê]ncia de fonte|\bconflitante\b|\bnda\b)/i;
 function checaVazamento(value, path) {
   if (typeof value === "string" && saneamento.test(value)) denuncia(path, "possível referência à vault privada ou texto não homologado");
@@ -41,11 +47,17 @@ function validarBloco(b, p) {
   if (!vazioOuString(b.titulo, 200)) denuncia(p+".titulo", "título inválido");
   if (!vazioOuString(b.instrucao, 3500)) denuncia(p+".instrucao", "instrução inválida");
   if (!vazioOuString(b.validacao, 1000)) denuncia(p+".validacao", "observação de validação inválida");
-  if (b.tipo === "texto" && !vazioOuString(b.conteudo, 12000)) denuncia(p+".conteudo", "texto inválido");
+  if (b.tipo === "texto") {
+    if (!vazioOuString(b.conteudo, 12000)) denuncia(p+".conteudo", "texto inválido");
+    validarVozInstitucional(b.conteudo, p+".conteudo");
+  }
   if (b.tipo === "introducao" && (!vazioOuString(b.conteudo, 280) || (!string(b.conteudo,280) && !string(b.validacao,1000)))) denuncia(p+".conteudo", "Introdução deve ter de 1 a 280 caracteres");
+  if (b.tipo === "introducao") validarVozInstitucional(b.conteudo,p+".conteudo");
   if (b.tipo === "dados-basicos" && (!Array.isArray(b.campos) || !b.campos.length || !b.campos.every(x => objeto(x) && string(x.rotulo,160) && string(x.valor,500) && vazioOuString(x.validacao,600)))) denuncia(p+".campos","campos inválidos");
   if (b.tipo === "tabela" && (!Array.isArray(b.colunas) || !b.colunas.length || !b.colunas.every(x => string(x,160)) || !Array.isArray(b.linhas) || !b.linhas.every(row => Array.isArray(row) && row.length === b.colunas.length && row.every(x => string(x,1200))))) denuncia(p, "tabela inválida ou número de colunas divergente");
   if (b.tipo === "faq" && (!Array.isArray(b.itens) || !b.itens.length || !b.itens.every(x => objeto(x) && string(x.pergunta,300) && string(x.resposta,2000)))) denuncia(p,"FAQ precisa de perguntas e respostas");
+  if (b.tipo === "faq" && Array.isArray(b.itens))
+    b.itens.forEach((x,i)=>validarVozInstitucional(x?.resposta,p+".itens["+i+"].resposta"));
   if (b.tipo === "links" && (!Array.isArray(b.itens) || (!b.itens.length && !string(b.validacao,1000)) || !b.itens.every(x => objeto(x) && string(x.rotulo,160) && urlSegura(x.url)))) denuncia(p,"links inválidos");
   if (b.tipo === "link-unico" && (!objeto(b.link) || !string(b.link.rotulo,160) || !urlSegura(b.link.url) || !vazioOuString(b.link.descricao,250))) denuncia(p,"link único inválido");
   if (b.tipo === "galeria" && (!Array.isArray(b.itens) || (!b.itens.length && !string(b.validacao,1000)) || !b.itens.every(x => objeto(x) && string(x.url,500) && x.url.startsWith("https:") && string(x.legenda,300) && string(x.alt,300)))) denuncia(p,"galeria exige imagens autorizadas, legendas e textos alternativos");

@@ -20,11 +20,21 @@ Paleta alinhada ao guia: no tema escuro, fundo `#050505` e acento `#78c981`; no 
 
 ## Como funciona
 
-- **Início:** contexto e processo de apuração, estruturação e preenchimento.
-- **Catálogo:** busca por curso ou assunto, filtros por nível e campus; lista somente cursos aprovados.
-- **Visualização:** ordenação editorial de `Texto`, `Introdução`, `Tabela`, `FAQ`, `Links`, `Link único` e `Galeria`.
-- **Como preencher no Wagtail:** orientação por bloco, conteúdo a copiar, configurações e itens específicos.
-- **Como usar:** passos para a equipe e link para o manual principal do Wagtail.
+- **Página inicial = catálogo:** busca por curso, filtros de nível e campus, com resultados em lista. Não há introdução intermediária antes dos cursos.
+- **Curso demonstrativo:** exemplo inteiramente fictício acessível no catálogo vazio, sem confusão com ofertas reais do IFMG.
+- **Copiar para o Wagtail (padrão):** campos separados por tipo de bloco, orientação ao lado do conteúdo, prévia e botão de cópia por campo.
+- **Link único:** prévia do resultado e campos independentes para **estilo**, **título/texto do link**, **descrição/texto de apoio** e **URL**, com ações de cópia individuais.
+- **Texto e Introdução:** cópia com formatação HTML (negrito, parágrafos, listas; título em `<h2>` quando apropriado), além de cópia sem formatação.
+- **Visualizar página:** permite conferir hierarquia, ritmo e ordem de `Texto`, `Introdução`, `Tabela`, `FAQ`, `Links`, `Link único` e `Galeria`.
+- **Como usar:** instruções para os editores e link para o manual principal do Wagtail.
+
+### Cópia com formatação
+
+Os valores de campos Rich Text são construídos a partir do texto aprovado, com notação **`**negrito**`** e **`==destaque==`**, convertidas em HTML seguro; na área de transferência os destaques também são tratados como negrito. O botão **copiar formatado** utiliza a API `ClipboardItem` para enviar simultaneamente `text/html` e `text/plain`. Quando o navegador não permite copiar HTML, o sistema tenta copiar somente o texto simples e anuncia essa limitação. O botão **copiar texto** não aplica formatação. Os títulos de seção e textos podem ser copiados individualmente; quando fizer sentido, há ação para o bloco inteiro.
+
+**Importante:** a cópia HTML não altera o Wagtail e **não garante** que todos os estilos sobreviverão à colagem. O comportamento depende da configuração do campo Rich Text, do navegador e das regras do editor. O editor deve conferir o resultado e aplicar no Wagtail os estilos que não forem aceitos. O recurso não produz HTML bruto para ser colado no campo de URL.
+
+Para **Link único**, há um exemplo visual clicável e ações individuais para título/texto do link, descrição e URL. Cada botão copia **o valor do campo**, e não um texto explicativo contendo vários valores juntos.
 
 O bloco `Introdução` **não é uma síntese obrigatória** do parágrafo anterior: ele destaca atributos relevantes à decisão do estudante, selecionados à luz da pesquisa comparativa e sustentados por evidências. A alternância entre blocos organiza o ritmo visual. Título e parágrafos pertencem ao **mesmo** bloco `Texto` quando são do mesmo tipo; o `Texto` isolado como título cabe quando o próximo componente é uma tabela, FAQ, galeria ou destaque.
 

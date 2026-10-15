@@ -7,7 +7,7 @@
   const ALLOWED_TYPES = new Set(["dados-basicos", "texto", "introducao", "tabela", "faq", "galeria", "links", "link-unico"]);
   const STATUS_PUBLICO = "aprovado_para_divulgacao";
   const BASE = "./";
-  const state = { courses: [], failed: false, query: "", level: "", campus: "", tab: "preview", current: "" };
+  const state = { courses: [], failed: false, query: "", level: "", campus: "", tab: "editor", current: "" };
   const $ = (id) => document.getElementById(id);
   const escapeHTML = (text = "") => String(text).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const normalize = (text = "") => String(text).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
@@ -23,7 +23,7 @@
     status: "demonstracao", publicacao_autorizada: false, demo: true,
     blocos: [
       { tipo: "dados-basicos", titulo: "Dados básicos", instrucao: "Preencha os campos próprios da página Curso antes dos blocos de conteúdo. Não duplique a área de processos seletivos.", campos: [{ rotulo: "Nome do curso", valor: "Curso demonstrativo (fictício)" }, { rotulo: "Modalidade", valor: "Apenas um exemplo de preenchimento" }, { rotulo: "Campus", valor: "Unidade ilustrativa" }] },
-      { tipo: "texto", titulo: "Para quem é este curso?", instrucao: "Insira um único bloco Texto com título e parágrafos abaixo.", conteudo: "Esta é uma seção de exemplo. Em um roteiro aprovado, ela explicará para quem o curso se destina e qual decisão o estudante precisa tomar." },
+      { tipo: "texto", titulo: "Para quem é este curso?", instrucao: "Insira um único bloco Texto com título e parágrafos abaixo.", conteudo: "Esta é uma seção de exemplo com **palavras em negrito** para testar a cópia com formatação. Em um roteiro aprovado, ela explicará para quem o curso se destina e o que o estudante precisa conhecer." },
       { tipo: "introducao", instrucao: "Adicione um bloco Introdução. Ele deve destacar uma razão de escolha comprovada, não apenas repetir o parágrafo anterior. Limite: 280 caracteres.", conteudo: "Este é um destaque demonstrativo: nos documentos reais, ele deve evidenciar uma informação útil para a escolha do estudante." },
       { tipo: "texto", titulo: "Como comparar opções", instrucao: "Insira título e texto em um único bloco Texto.", conteudo: "O conteúdo público deve ajudar a comparar condições de estudo, formação, experiências e campus. Cada informação precisa de fonte e aprovação editorial." },
       { tipo: "tabela", titulo: "Comparação ilustrativa", instrucao: "Adicione um bloco Tabela com os cabeçalhos e linhas de demonstração.", colunas: ["Informação", "Exemplo de preenchimento"], linhas: [["Campus", "Unidade ilustrativa"], ["Contato", "Preencher somente com caixa funcional confirmada"]] },
@@ -96,13 +96,115 @@
     if (b.tipo === "galeria") return '<section class="content-section" id="' + id + '">' + label + head + '<div class="link-list">' + b.itens.map(x => '<figure><img loading="lazy" src="' + escapeHTML(x.url) + '" alt="' + escapeHTML(x.alt) + '"><figcaption>' + escapeHTML(x.legenda) + '</figcaption></figure>').join("") + '</div></section>';
     return "";
   }
+
+  // Os campos Wagtail são copiáveis um a um. Nos campos de texto, o clipboard
+  // recebe text/html e text/plain; o CMS decide quais marcas são permitidas.
+  function asPlain(value) {
+    return String(value || "").replace(/==([^=\n]+)==/g,"$1").replace(/\*\*([^*\n]+)\*\*/g,"$1");
+  }
+  function richHTML(value, title = "") {
+    const heading = title ? "<h2>" + escapeHTML(title) + "</h2>" : "";
+    return heading + textContentToHTML(value).replace(/<mark>/g, "<strong>").replace(/<\/mark>/g, "</strong>");
+  }
+  function tableHTML(b) {
+    return "<table><thead><tr>" + b.colunas.map(x => "<th>" + escapeHTML(x) + "</th>").join("") +
+      "</tr></thead><tbody>" + b.linhas.map(row => "<tr>" + row.map(x => "<td>" + renderInline(x).replace(/<mark>/g,"<strong>").replace(/<\/mark>/g,"</strong>") + "</td>").join("") + "</tr>").join("") + "</tbody></table>";
+  }
+  function editorFields(b) {
+    const raw = (label, value) => ({ label, value: String(value || ""), rich: false, html: "" });
+    const rich = (label, value, heading = "") => ({label, value: String(value || ""), rich: true, html: richHTML(value, heading)});
+    if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor));
+    if (b.tipo === "texto") {
+      const parts = [];
+      if (b.titulo) parts.push(rich("Título da seção", b.titulo, "")); 
+      if (b.conteudo) parts.push(rich("Texto do bloco", b.conteudo));
+      return parts;
+    }
+    if (b.tipo === "introducao") return [rich("Texto em destaque (Introdução)", b.conteudo)];
+    if (b.tipo === "faq") return b.itens.flatMap((x,i) => [raw("Item " + (i+1) + " · Pergunta", x.pergunta),rich("Item " + (i+1) + " · Resposta", x.resposta)]);
+    if (b.tipo === "link-unico") return [
+      raw("Estilo do bloco", b.estilo || "Padrão"),
+      raw("Título / texto do link", b.link.rotulo),
+      raw("Descrição / texto de apoio", b.link.descricao || ""),
+      raw("Link / URL de destino", b.link.url)
+    ];
+    if (b.tipo === "links") return b.itens.flatMap((x,i) => [
+      raw("Link " + (i+1) + " · Texto", x.rotulo),
+      raw("Link " + (i+1) + " · Endereço", x.url)
+    ]);
+    if (b.tipo === "galeria") return b.itens.flatMap((x,i) => [
+      raw("Imagem " + (i+1) + " · Legenda", x.legenda),
+      raw("Imagem " + (i+1) + " · Texto alternativo", x.alt),
+      raw("Imagem " + (i+1) + " · URL", x.url)
+    ]);
+    if (b.tipo === "tabela") return [
+      {label:"Tabela completa (colunas e linhas)",value:blockCopy(b),rich:true,html:tableHTML(b)}
+    ];
+    return [];
+  }
+  function fieldHTML(field, blockIndex, fieldIndex) {
+    const info = escapeHTML(field.label);
+    const content = field.rich
+      ? '<div class="field-example rich-example">' + (field.label === "Título da seção" ? "<strong>" + escapeHTML(field.value) + "</strong>" : field.html) + '</div>'
+      : '<div class="field-example text-example">' + escapeHTML(field.value || "—") + '</div>';
+    const actions = field.rich
+      ? '<button type="button" class="copy-button" data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '" data-copy-format="rich">copiar formatado</button>' +
+        '<button type="button" class="copy-button copy-secondary" data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '" data-copy-format="plain">copiar texto</button>'
+      : '<button type="button" class="copy-button" data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '" data-copy-format="plain">copiar</button>';
+    return '<div class="editor-field"><div class="editor-field-top"><span class="editor-field-label">' + info +
+      '</span><div class="editor-field-actions">' + actions + '</div></div>' + content + '</div>';
+  }
+  function linkExample(b) {
+    const link = b.link;
+    if (!isValidURL(link.url)) return "";
+    return '<div class="block-link-example"><div class="example-overline">Exemplo de como o Link único aparece na página</div>' +
+      '<a class="link-example" href="' + escapeHTML(link.url) + '" target="_blank" rel="noopener noreferrer">' +
+      '<strong>' + escapeHTML(link.rotulo) + '</strong>' +
+      (link.descricao ? '<span>' + escapeHTML(link.descricao) + '</span>' : "") +
+      '<span aria-hidden="true">↗</span></a></div>';
+  }
   function editorBlock(b, i) {
-    const raw = blockCopy(b);
-    const info = b.instrucao || ("Preencha um bloco " + blockName[b.tipo] + " com as informações indicadas.");
-    return '<article class="block-card" id="bloco-' + i + '"><div class="block-card-top"><span class="block-index">' + String(i + 1).padStart(2, "0") + '</span><span class="block-type">Bloco Wagtail / ' + escapeHTML(blockName[b.tipo]) + '</span></div>' +
-      (b.titulo ? "<h2>" + escapeHTML(b.titulo) + "</h2>" : "") +
+    const info = b.instrucao || ("Preencha o bloco " + blockName[b.tipo] + " com os campos indicados.");
+    const fields = editorFields(b);
+    const example = b.tipo === "link-unico" ? linkExample(b) : "";
+    const whole = b.tipo === "texto" || b.tipo === "faq" || b.tipo === "tabela" || b.tipo === "links";
+    return '<article class="block-card" id="bloco-' + i + '"><div class="block-card-top"><span class="block-index">' + String(i + 1).padStart(2, "0") +
+      '</span><span class="block-type">Bloco Wagtail / ' + escapeHTML(blockName[b.tipo]) + '</span></div>' +
       '<div class="block-instructions"><strong>Como preencher</strong><p>' + escapeHTML(info) + '</p></div>' +
-      '<pre class="block-value">' + escapeHTML(raw) + '</pre><div class="block-actions"><button class="copy-button" type="button" data-copy="' + i + '">Copiar conteúdo</button></div></article>';
+      example +
+      '<div class="editor-fields">' + fields.map((field,j) => fieldHTML(field,i,j)).join("") + '</div>' +
+      (whole ? '<div class="block-actions"><button class="copy-button copy-whole" type="button" data-copy-whole="' + i +
+      '">copiar bloco completo' + (b.tipo === "texto" || b.tipo === "tabela" ? " com formatação" : "") + '</button></div>' : "") +
+      '</article>';
+  }
+  async function copyValue(plain, html = "") {
+    const text = asPlain(plain);
+    if (html && navigator.clipboard?.write && typeof ClipboardItem !== "undefined") {
+      try {
+        const item = new ClipboardItem({
+          "text/html": new Blob([html],{type:"text/html"}),
+          "text/plain": new Blob([text],{type:"text/plain"})
+        });
+        await navigator.clipboard.write([item]);
+        return "rich";
+      } catch (e) { /* O navegador ou o editor pode não aceitar HTML. */ }
+    }
+    if (!navigator.clipboard?.writeText) throw Error("Área de transferência indisponível");
+    await navigator.clipboard.writeText(text);
+    return "plain";
+  }
+  async function performCopy(button, plain, html = "") {
+    try {
+      const result = await copyValue(plain, html);
+      const message = result === "rich" ? "Copiado com formatação HTML e texto simples." :
+        html ? "Este navegador copiou o texto sem formatação." : "Campo copiado.";
+      notify(message);
+      const previous = button.textContent;
+      button.textContent = result === "rich" ? "formatado ✓" : "copiado ✓";
+      setTimeout(() => { if (button.isConnected) button.textContent = previous; }, 1700);
+    } catch {
+      notify("Não foi possível copiar. Selecione o valor visível para copiar manualmente.");
+    }
   }
   function renderCourse(course) {
     const root = $("course-content");
@@ -144,22 +246,28 @@
     if (demoButton) demoButton.addEventListener("click", () => { location.hash = "#curso/demonstracao"; });
   }
   function route() {
-    const hash = decodeURIComponent(location.hash.slice(1) || "inicio");
+    const hash = decodeURIComponent(location.hash.slice(1) || "catalogo");
     const courseID = hash.startsWith("curso/") ? hash.slice(6).split("#")[0] : "";
-    const selectedView = courseID ? "course" : hash.startsWith("catalogo") ? "catalog" : hash.startsWith("orientacoes") ? "help" : "home";
-    ["home","catalog","help","course"].forEach(view => $(view + "-view").hidden = view !== selectedView);
+    const selectedView = courseID ? "course" : hash.startsWith("orientacoes") ? "help" : "home";
+    ["home","help","course"].forEach(view => $(view + "-view").hidden = view !== selectedView);
     document.querySelectorAll("[data-nav]").forEach(a => {
-      const nav = a.getAttribute("data-nav"), selected = (selectedView === "catalog" && nav === "catalogo") ||
-        (selectedView === "help" && nav === "orientacoes") || (selectedView === "home" && nav === "inicio");
+      const nav = a.getAttribute("data-nav"), selected =
+        (selectedView === "home" && nav === "catalogo") ||
+        (selectedView === "help" && nav === "orientacoes");
       if (selected) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current");
     });
-    if (selectedView === "catalog") renderCatalog();
+    if (selectedView === "home") renderCatalog();
     if (selectedView === "course") {
       const c = courseID === "demonstracao" ? demo : state.courses.find(x => x.id === courseID);
-      if (c) { if (state.current !== c.id) state.tab = "preview"; state.current = c.id; renderCourse(c); document.title = c.nome + " · Guia de cursos IFMG"; }
-      else { location.replace("#catalogo"); return; }
+      if (c) {
+        if (state.current !== c.id) state.tab = "editor";
+        state.current = c.id;
+        renderCourse(c);
+        document.title = c.nome + " · Guia de cursos IFMG";
+      } else { location.replace("#catalogo"); return; }
     } else {
-      state.current = ""; document.title = "Guia de páginas de cursos · IFMG";
+      state.current = "";
+      document.title = "Guia de páginas de cursos · IFMG";
     }
     window.scrollTo({top:0,behavior:"instant"});
   }
@@ -170,15 +278,6 @@
       document.documentElement.dataset.theme = next;
       try { localStorage.setItem("tema-cursos-ifmg", next); } catch {}
     });
-    $("home-search-form").addEventListener("submit", (event) => {
-      event.preventDefault();
-      const query = $("home-search-input").value.trim();
-      state.query = query;
-      $("filter-search").value = query;
-      location.hash = "#catalogo";
-      if (location.hash === "#catalogo") renderCatalog();
-    });
-    $("demo-from-home").addEventListener("click", () => location.hash = "#curso/demonstracao");
     $("filter-search").addEventListener("input", e => { state.query = e.target.value; renderCatalog(); });
     $("filter-level").addEventListener("change", e => { state.level = e.target.value; renderCatalog(); });
     $("filter-campus").addEventListener("change", e => { state.campus = e.target.value; renderCatalog(); });
@@ -193,13 +292,20 @@
         if (c) { renderCourse(c); $("tab-" + selected).focus(); }
         return;
       }
-      const copy = e.target.closest("[data-copy]");
-      if (copy) {
+      const button = e.target.closest("[data-copy-field], [data-copy-whole]");
+      if (button) {
         const c = state.current === "demonstracao" ? demo : state.courses.find(x => x.id === state.current);
-        const b = c?.blocos[Number(copy.dataset.copy)];
+        const index = Number(button.dataset.copyBlock ?? button.dataset.copyWhole);
+        const b = c?.blocos[index];
         if (!b) return;
-        try { await navigator.clipboard.writeText(blockCopy(b)); notify("Conteúdo copiado."); copy.textContent = "Copiado ✓"; setTimeout(() => { if (copy.isConnected) copy.textContent = "Copiar conteúdo"; }, 1700); }
-        catch { notify("Não foi possível copiar automaticamente. Selecione o texto no campo para copiar."); }
+        if (button.hasAttribute("data-copy-field")) {
+          const field = editorFields(b)[Number(button.dataset.copyField)];
+          if (field) await performCopy(button, field.value, button.dataset.copyFormat === "rich" ? field.html : "");
+        } else {
+          const html = b.tipo === "texto" ? richHTML(b.conteudo,b.titulo) :
+            b.tipo === "tabela" ? tableHTML(b) : "";
+          await performCopy(button, blockCopy(b), html);
+        }
       }
     });
     document.addEventListener("click", (e) => {

@@ -5,11 +5,19 @@ on:
     paths:
       - 'data/**'
       - 'scripts/validar-publicacao.mjs'
+      - 'app.js'
+      - 'index.html'
+      - 'style.css'
+      - 'assets/**'
       - '.github/workflows/validar-publicacao.yml'
   pull_request:
     paths:
       - 'data/**'
       - 'scripts/validar-publicacao.mjs'
+      - 'app.js'
+      - 'index.html'
+      - 'style.css'
+      - 'assets/**'
       - '.github/workflows/validar-publicacao.yml'
   workflow_dispatch:
 

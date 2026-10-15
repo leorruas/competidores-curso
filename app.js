@@ -160,7 +160,7 @@
     const action = field.setting
       ? '<span class="editor-setting" aria-label="Selecionar esta opção no Wagtail">selecionar no Wagtail</span>'
       : '<button type="button" class="copy-button" data-copy-field="' + fieldIndex +
-          '" data-copy-block="' + blockIndex + '">Copiar <span aria-hidden="true">↗</span></button>';
+          '" data-copy-block="' + blockIndex + '">' + (field.table ? "Copiar tabela" : "Copiar") + ' <span aria-hidden="true">↗</span></button>';
     return '<div class="editor-field"><div class="editor-field-top"><span class="editor-field-label">' +
       escapeHTML(field.label) + '</span><div class="editor-field-actions">' + action +
       '</div></div>' + content + '</div>';

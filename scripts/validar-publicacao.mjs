@@ -36,7 +36,7 @@ function validarVozInstitucional(value, path) {
     denuncia(path, "texto copiável contém frase de apuração em vez de informação institucional");
 }
 
-const saneamento = /(?:competidores-cursos(?:\.git)?|(?:^|\/)Benchmark\/|(?:^|\/)páginas de cursos\/|c:\\users\\|file:\/\/|\[!CAUTION\]|\[!NOTE\]|\[!TIP\]|informação faltante|a confirmar com a coordena[cç][aã]o|pend[eê]ncia de fonte|\bconflitante\b|\bnda\b)/i;
+const saneamento = /(?:competidores-cursos(?:\.git)?|(?:^|[\s\/])Benchmark\/|(?:^|[\s\/])páginas de cursos\/|c:\\users\\|file:\/\/|\[!CAUTION\]|\[!NOTE\]|\[!TIP\]|informação faltante|a confirmar com a coordena[cç][aã]o|pend[eê]ncia de fonte|\bconflitante\b|\bnda\b)/i;
 function checaVazamento(value, path) {
   if (typeof value === "string" && saneamento.test(value)) denuncia(path, "possível referência à vault privada ou texto não homologado");
   else if (Array.isArray(value)) value.forEach((x,i) => checaVazamento(x,path+"["+i+"]"));

@@ -135,7 +135,7 @@
   function renderCatalog() {
     const list = filterCourses();
     $("catalog-count").textContent = list.length + (list.length === 1 ? " roteiro" : " roteiros") + " disponíveis";
-    $("catalog-results").innerHTML = list.length ? list.map(c => '<a class="course-card" href="#curso/' + encodeURIComponent(c.id) + '"><span class="label">' + escapeHTML(c.nivel) + (c.tipo ? " / " + escapeHTML(c.tipo) : "") + '</span><h2>' + escapeHTML(c.nome) + '</h2><span class="course-meta">' + escapeHTML(c.campi.join(" · ")) + '</span><span class="card-arrow" aria-hidden="true">↗</span></a>').join("") :
+    $("catalog-results").innerHTML = list.length ? list.map((c,i) => '<a class="course-card" href="#curso/' + encodeURIComponent(c.id) + '"><span class="label"><span class="course-number">' + String(i + 1).padStart(2, '0') + '</span><span class="sr-course-type">' + escapeHTML(c.nivel) + (c.tipo ? " / " + escapeHTML(c.tipo) : "") + '</span></span><h2>' + escapeHTML(c.nome) + '</h2><span class="course-meta">' + escapeHTML(c.campi.join(" · ")) + '</span><span class="card-arrow" aria-hidden="true">↗</span></a>').join("") :
       '<div class="empty-state"><span class="empty-icon">' + (state.failed ? "ERRO DE CARREGAMENTO" : (state.courses.length ? "NENHUM RESULTADO" : "AGUARDANDO CONTEÚDOS APROVADOS")) + '</span><h2>' +
       (state.failed ? "O catálogo não pôde ser carregado." : (state.courses.length ? "Nenhum curso corresponde à busca." : "O catálogo começa pela revisão.")) +
       '</h2><p>' + (state.failed ? "Não foi possível acessar o índice de cursos. Confira a conexão ou a configuração dos arquivos públicos." : (state.courses.length ? "Experimente outros termos ou limpe os filtros." : "Os primeiros roteiros ainda estão em validação editorial. Você pode conhecer a estrutura do guia usando um exemplo inteiramente fictício.")) +
@@ -169,6 +169,14 @@
       const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
       document.documentElement.dataset.theme = next;
       try { localStorage.setItem("tema-cursos-ifmg", next); } catch {}
+    });
+    $("home-search-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const query = $("home-search-input").value.trim();
+      state.query = query;
+      $("filter-search").value = query;
+      location.hash = "#catalogo";
+      if (location.hash === "#catalogo") renderCatalog();
     });
     $("demo-from-home").addEventListener("click", () => location.hash = "#curso/demonstracao");
     $("filter-search").addEventListener("input", e => { state.query = e.target.value; renderCatalog(); });

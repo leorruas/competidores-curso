@@ -4,7 +4,7 @@ on:
     branches: [main]
     paths:
       - 'data/**'
-      - 'scripts/validar-publicacao.mjs'
+      - 'scripts/**'
       - 'tests/**'
       - 'app.js'
       - 'index.html'
@@ -14,7 +14,7 @@ on:
   pull_request:
     paths:
       - 'data/**'
-      - 'scripts/validar-publicacao.mjs'
+      - 'scripts/**'
       - 'tests/**'
       - 'app.js'
       - 'index.html'
@@ -39,7 +39,9 @@ jobs:
           node-version: '22'
       - name: Verificar catálogo aprovado
         run: node scripts/validar-publicacao.mjs
-      - name: Verificar sintaxe da aplicação
-        run: node --check app.js
-      - name: Executar testes de comportamento do guia
-        run: node --test tests/guia-qa.mjs
+      - name: Verificar sintaxe da aplicação e do validador
+        run: |
+          node --check app.js
+          node --check scripts/validar-publicacao.mjs
+      - name: Executar todos os testes do guia e do validador
+        run: node --test tests/*.mjs

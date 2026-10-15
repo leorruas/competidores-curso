@@ -371,22 +371,23 @@
       ]
     },
     {
-      "id": "tecnico-em-logistica-subsequente-ribeirao-das-neves",
+      "id": "tecnico-em-logistica-subsequente",
       "nome": "Técnico em Logística",
       "nivel": "Técnico",
       "tipo": "Subsequente",
       "campi": [
+        "Governador Valadares",
         "Ribeirão das Neves"
       ],
-      "modalidade": "EaD (organização presencial a validar)",
+      "modalidade": "EaD, com organização presencial específica de cada campus",
       "status": "em_validacao",
       "publicacao_autorizada": true,
       "revisao_coordenacao": true,
       "pendencias": [
-        "Edital 854/2026 diz 100% EaD e PPC 2024.2 prevê 20% presencial",
-        "PPC e horários aplicáveis em 2027",
-        "E-mail funcional da coordenação em 2027",
-        "Imagens e atividades do curso"
+        "Confirmar se Governador Valadares terá nova seleção para ingresso 2027; curso ativo em 2026 pelo Edital 459/2026",
+        "Ribeirão das Neves: esclarecer conflito entre Edital 854/2026 (100% EaD) e PPC 2024.2 (20% presencial)",
+        "Confirmar contatos funcionais das coordenações e encontros obrigatórios em cada campus",
+        "Confirmar PPC/matriz e cargas vigentes, turnos e imagens de cada oferta"
       ],
       "blocos": [
         {
@@ -401,8 +402,8 @@
               "valor": "Técnico / Subsequente"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Ribeirão das Neves"
+              "rotulo": "Campi",
+              "valor": "Governador Valadares; Ribeirão das Neves"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -411,8 +412,8 @@
             },
             {
               "rotulo": "Modalidade",
-              "valor": "EaD",
-              "validacao": "Edital 854/2026 indica 100% EaD; PPC 2024.2 prevê 20% presencial. Confirmar como funcionará a turma de 2027."
+              "valor": "EaD, com atividades presenciais conforme o campus",
+              "validacao": "Governador Valadares: há encontros presenciais ao final de cada módulo no processo seletivo de 2026; Ribeirão das Neves: divergência entre edital 2027 e PPC 2024.2."
             },
             {
               "rotulo": "Duração",
@@ -427,23 +428,24 @@
             {
               "rotulo": "Turno / encontros",
               "valor": "Informação incompleta",
-              "validacao": "Confirmar PPC, distribuição presencial, calendário e carga horária vigentes para 2027."
+              "validacao": "Confirmar horários e atividades obrigatórias por campus. Governador Valadares: PPC anterior prevê funcionamento noturno e edital 2026 informa dois encontros ao final de módulos."
             },
             {
               "rotulo": "Vagas",
-              "valor": "120 vagas"
+              "valor": "Informação incompleta",
+              "validacao": "120 vagas para Ribeirão das Neves no edital 2027; Governador Valadares teve 60 vagas no edital independente de 2026. Não somar as duas seleções."
             },
             {
               "rotulo": "PPC / matriz",
               "valor": "Informação incompleta",
-              "validacao": "Confirmar PPC 2027 e alteração formal na presencialidade antes de selecionar documento."
+              "validacao": "Cada campus tem seu PPC. Governador Valadares: PPC 2024; Ribeirão das Neves: PPC 2024.2, cuja presencialidade conflita com o edital 2027."
             }
           ]
         },
         {
           "tipo": "texto",
           "titulo": "Técnico em Logística",
-          "conteudo": "Aprenda sobre organização de transporte, controle de estoques, armazenagem e distribuição de produtos em uma ==instituição pública federal==.\n\nA formação é oferecida pelo IFMG Campus Ribeirão das Neves, na modalidade a distância, e se destina a quem já concluiu o ensino médio. O curso reúne conhecimentos técnicos sobre operações logísticas em empresas e organizações de diferentes áreas."
+          "conteudo": "O **Técnico em Logística Subsequente** é destinado a quem concluiu o ensino médio e deseja trabalhar com transporte, armazenagem, estoques, compras e distribuição de produtos.\n\nO IFMG oferece a formação na modalidade a distância, com organização de atividades e encontros que varia conforme o campus. O curso prepara para apoiar processos logísticos em diferentes tipos de organização."
         },
         {
           "tipo": "introducao",
@@ -482,8 +484,9 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Como funciona o curso no Campus Ribeirão das Neves",
-          "conteudo": "O curso é **subsequente**, voltado a pessoas que já concluíram o ensino médio. A página institucional informa duração de um ano e utiliza a modalidade **EaD**.\n\nA oferta a distância utiliza recursos de aprendizagem e acompanhamento acadêmico. A definição de encontros presenciais, horários e atividades obrigatórias deve ser consultada na versão do PPC e no edital aplicáveis à turma. A informação ainda precisa ser esclarecida para 2027."
+          "titulo": "Como funciona o curso",
+          "conteudo": "A formação é organizada na modalidade **EaD**, com materiais, atividades e acompanhamento acadêmico. A obrigatoriedade e o calendário de encontros presenciais dependem do projeto pedagógico de cada campus.",
+          "validacao": "Ribeirão das Neves: conciliar a modalidade anunciada no Edital 854/2026 com o PPC 2024.2; Governador Valadares: confirmar a organização dos encontros para a próxima turma."
         },
         {
           "tipo": "introducao",
@@ -543,30 +546,59 @@
           "conteudo": ""
         },
         {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Logística",
+          "conteudo": "O Técnico em Logística Subsequente é oferecido nos campi Governador Valadares e Ribeirão das Neves, na modalidade EaD. As condições de ingresso, os encontros e as vagas são definidos por campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Vagas / ingresso 2027",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Governador Valadares",
+              "EaD",
+              "Informação incompleta",
+              "Informação incompleta"
+            ],
+            [
+              "Ribeirão das Neves",
+              "EaD",
+              "120 vagas",
+              "Informação incompleta"
+            ]
+          ],
+          "validacao": "Governador Valadares: oferta ativa em 2026, mas seleção 2027 não localizada no inventário principal. Confirmar vaga e e-mail funcional de ambos os campi; em Ribeirão das Neves, edital 2027 informa 120 vagas."
+        },
+        {
           "tipo": "faq",
           "itens": [
             {
-              "pergunta": "Quem pode fazer este curso?",
-              "resposta": "O curso subsequente é destinado a quem já concluiu o ensino médio. Os demais requisitos de inscrição e matrícula constam no edital do Processo Seletivo do IFMG."
+              "pergunta": "Quem pode fazer o curso?",
+              "resposta": "O Técnico em Logística Subsequente é destinado a pessoas que já concluíram o ensino médio. O ingresso ocorre por processos seletivos do IFMG."
             },
             {
-              "pergunta": "O curso é totalmente a distância?",
-              "resposta": "Informação incompleta"
+              "pergunta": "Governador Valadares",
+              "resposta": "Em Governador Valadares, o curso é EaD, organizado em dois módulos. O primeiro permite a certificação intermediária de Assistente em Logística; após a conclusão do percurso, o estudante pode obter o diploma de Técnico em Logística. A organização do curso inclui encontros presenciais ao final dos módulos."
             },
             {
-              "pergunta": "Quanto tempo dura o curso?",
-              "resposta": "O curso tem duração prevista de um ano."
+              "pergunta": "Ribeirão das Neves",
+              "resposta": "Em Ribeirão das Neves, o curso é oferecido a distância e tem duração prevista de um ano. Os estudos incluem transportes, armazenagem, controle de estoques, compras, distribuição e logística reversa."
             },
             {
-              "pergunta": "O que vou estudar?",
-              "resposta": "O curso aborda processos de transportes, armazenagem, estoques, compras, distribuição e uso de ferramentas de apoio à gestão logística. A relação completa de disciplinas está na matriz curricular vigente."
+              "pergunta": "Que atividades a formação abrange?",
+              "resposta": "O curso aborda transportes, armazenagem, estoques, compras, distribuição e uso de sistemas de apoio às operações logísticas."
             },
             {
-              "pergunta": "Como faço para ingressar?",
-              "resposta": "É necessário acompanhar o Processo Seletivo do IFMG, verificar os requisitos para cursos subsequentes e seguir os prazos e procedimentos estabelecidos no edital."
+              "pergunta": "Onde um técnico em Logística pode trabalhar?",
+              "resposta": "O profissional pode atuar em transportadoras, centros de distribuição, indústrias, comércios e organizações que precisam movimentar, armazenar e distribuir materiais."
             }
           ],
-          "validacao": "Confirmar a obrigatoriedade de atividades presenciais: o Edital 854/2026 indica 100% EaD, enquanto o PPC 2024.2 prevê encontros presenciais."
+          "validacao": "Confirmar se Governador Valadares continua oferecendo a mesma organização em eventual turma 2027. Ribeirão das Neves: frequência de encontros presenciais depende de validação do PPC vigente."
         },
         {
           "tipo": "links",
@@ -579,8 +611,13 @@
             {
               "rotulo": "PPC do curso e informações de funcionamento",
               "url": "https://www.ifmg.edu.br/ribeiraodasneves/cursos-1/tecnico/tecnico-em-logistica-subsequente-ead"
+            },
+            {
+              "rotulo": "Técnico em Logística — Governador Valadares",
+              "url": "https://www.ifmg.edu.br/governadorvaladares/noticias/aberto-processo-seletivo-para-o-curso-tecnico-em-logistica-na-modalidade-ead/"
             }
-          ]
+          ],
+          "validacao": "Governador Valadares: link é de seleção de 2026. Substituir por página institucional do curso e edital vigente quando disponível."
         },
         {
           "tipo": "texto",
@@ -611,9 +648,9 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Outras ofertas de Técnico em Logística",
+          "titulo": "Ingresso e vagas por campus",
           "conteudo": "Informação incompleta",
-          "validacao": "O catálogo institucional de EaD também cita o Técnico em Logística Subsequente em Governador Valadares, mas o quadro de ingresso 2027 disponível lista apenas Ribeirão das Neves. Confirmar se Governador Valadares segue com oferta ativa e para qual ingresso antes de incluir esse campus na tabela."
+          "validacao": "Governador Valadares realizou processo seletivo próprio em 2026; verificar edital para ingresso 2027 antes de informar quantidade de vagas. Ribeirão das Neves: 120 vagas em 2027."
         },
         {
           "tipo": "texto",
@@ -621,6 +658,9 @@
           "conteudo": "Informação incompleta",
           "validacao": "Reservar espaço para relatos de egressos, resultados de projetos e conquistas documentadas do próprio curso, com autorização de imagem e identificação de campus e período."
         }
+      ],
+      "aliases": [
+        "tecnico-em-logistica-subsequente-ribeirao-das-neves"
       ]
     },
     {

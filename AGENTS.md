@@ -28,6 +28,14 @@ Os comentários do usuário são registrados em [Backlog editorial em fases - pa
 - Reconhecimento ou homenagem exige **tema do projeto, atividade, resultado, ano e campus**; sem isso, `Informação incompleta` e `validacao` fora do texto copiável.
 - Para continuidade de Administração, verificar **Mestrado em Administração (Formiga)**, **ProfEPT (Ouro Branco)** e **Especialização em Gestão de Negócios (Ouro Branco)**. Diferenciar áreas, públicos e requisitos; não presumir matrícula automática.
 
+### Interface de cópia limpa e links canônicos (15/10/2026)
+
+**Leitor = editor do Wagtail que só copia os campos.** Não mostrar instruções internas de verificação, notas de coordenadores, fontes da vault, decisões editoriais ou mensagens como `Há respostas que dependem de confirmação acadêmica`. `validacao` pode existir nos dados de trabalho apenas para automações/controle de QA, mas a interface pública nunca renderiza seu texto. Preferir excluir `validacao` da exportação pública; conservar a auditoria no repositório privado. Dado incompleto aparece só como **`Informação incompleta`**, sem botão de cópia; **um `Texto` incompleto precisa exibir título da seção**, por exemplo `Pesquisa, extensão e oportunidades`, para a pessoa saber o que criar.
+
+Não inserir links para o **portal legado** `www.ifmg.edu.br` ou `*.ifmg.edu.br` como página de curso substituída. Ingresso: https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/ ; reserva de vagas: https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/ . Um botão deve apontar para um **destino atual e com finalidade compatível**; se o novo destino do PPC, projeto ou curso ainda não existe, não simular nem desviar para catálogo genérico.
+
+Conteúdo copiável deve falar **diretamente com o estudante e como IFMG** (`Você pode ingressar pelo Histórico Escolar e Redação ou pelo Sisu`), nunca citar a própria página em construção (`a página do curso apresenta`) ou dados do levantamento (`o quadro de ofertas menciona`). FAQ não inclui perguntas tecnicistas/senso comum: prática, estágio, TCC, bolsas, experiências e formas reais de ingresso têm prioridade. Checklist privado F1B.1–F1B.7 é a referência de execução por fases.
+
 ## Interface e QA
 - A página inicial é o catálogo direto e conciso; fonte **Archivo**, títulos sem pontos decorativos, números grandes na margem, um único botão **Copiar** por campo. A seção **Como usar** aponta à página específica do Guia do Portal sobre blocos Wagtail.
 - Não inserir blocos de explicação redundantes, cards decorativos ou textos institucionais justificados por fonte dentro do conteúdo copiável.

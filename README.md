@@ -10,6 +10,14 @@ O site é composto por `index.html`, `style.css`, `app.js` e `data/cursos-public
 
 Para publicar no **GitHub Pages**, abra **Settings → Pages**, selecione **Deploy from a branch → main → /(root)** e salve. O endereço esperado, **somente depois de Pages estar habilitado e a publicação concluída**, é `https://leorruas.github.io/competidores-curso/`. O repositório já contém os arquivos necessários, mas o envio de arquivos por si só **não comprova** que Pages esteja habilitado.
 
+## Direção visual: Guia do Portal IFMG
+
+A interface acompanha a linguagem do [Guia do Portal IFMG](https://leorruas.github.io/guiaportalifmg/) e sua referência de **Swiss design editorial**: fundo contínuo, tipografia **Archivo** com grandes títulos em minúsculas, notas em **IBM Plex Mono**, ritmo definido por espaçamentos e filetes, listagens numeradas no lugar de cards, verde institucional como acento e navegação compacta. A abertura prioriza o nome do guia, a **marca SVG real do IFMG** e uma busca sem caixa. A leitura do curso adota colunas simples, destaques tipográficos sem callouts decorativos e instruções de blocos por ordem.
+
+O arquivo `assets/ifmg-logo.svg` foi extraído do símbolo da marca já presente no HTML do Guia do Portal; não é um logo redesenhado. Atribuição e uso devem seguir a identidade visual institucional aplicável.
+
+Paleta alinhada ao guia: no tema escuro, fundo `#050505` e acento `#78c981`; no tema claro, fundo `#f4f8f2` e acento `#216b35`. A preferência de tema é persistida localmente no navegador.
+
 ## Como funciona
 
 - **Início:** contexto e processo de apuração, estruturação e preenchimento.

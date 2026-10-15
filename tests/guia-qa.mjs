@@ -118,7 +118,7 @@ test("catálogo mantém ofertas reais e filtros multicampi", () => {
 });
 
 test("fase 1: galeria acompanha projetos e Administração não tem link ou destaque genérico", () => {
-  const eng=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado-arcos");
+  const eng=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
   const p=eng.blocos.findIndex(b=>b.tipo==="texto"&&b.titulo==="Projetos e experiências acadêmicas");
   assert.equal(eng.blocos[p+1].tipo,"introducao");
   assert.equal(eng.blocos[p+2].tipo,"galeria");
@@ -135,7 +135,7 @@ test("fase 1: galeria acompanha projetos e Administração não tem link ou dest
 });
 
 test("bacharelados essenciais mantêm dados, FAQ, destaques e campos de validação", () => {
-  const ids=["engenharia-mecanica-bacharelado-arcos","administracao-bacharelado",
+  const ids=["engenharia-mecanica-bacharelado","administracao-bacharelado",
     "agronomia-bacharelado-bambui","engenharia-de-producao-bacharelado-bambui"];
   const h=testContext();
   for (const id of ids) {
@@ -152,6 +152,33 @@ test("bacharelados essenciais mantêm dados, FAQ, destaques e campos de validaç
     assert.ok(curso.blocos.some(b=>b.tipo==="galeria"&&b.validacao));
     assert.ok(curso.blocos.some(b=>b.tipo==="links"&&b.itens.some(x=>x.url.startsWith("https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"))));
   }
+});
+
+test("Engenharia Mecânica agrupa Arcos e Betim e mantém exigências acadêmicas por campus", () => {
+  const course=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
+  assert.ok(course);
+  assert.deepEqual(course.campi,["Arcos","Betim"]);
+  assert.ok(course.aliases.includes("engenharia-mecanica-bacharelado-arcos"));
+  const offer=course.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
+  assert.equal(offer.linhas.length,2);
+  assert.ok(offer.linhas.some(row=>row[0]==="Betim"&&row.some(x=>x.includes("eng.mecanica.betim@"))));
+  const faq=course.blocos.find(b=>b.tipo==="faq");
+  const internship=faq.itens.find(x=>x.pergunta.includes("estágio e o TCC"));
+  assert.match(internship.resposta,/Arcos.*350 horas/);
+  assert.match(internship.resposta,/TCC.*30 horas/);
+  assert.match(internship.resposta,/Betim/);
+  assert.doesNotMatch(internship.resposta,/Betim[^.]*350 horas/);
+});
+
+test("Direito explica estágio e TCC com exigências concretas", () => {
+  const c=json.courses.find(x=>x.id==="direito-bacharelado-arcos");
+  const faq=c.blocos.find(x=>x.tipo==="faq");
+  const estagio=faq.itens.find(x=>x.pergunta.includes("estágio e Trabalho"));
+  assert.match(estagio.resposta,/210 horas/);
+  assert.match(estagio.resposta,/30 horas/);
+  const ext=faq.itens.find(x=>x.pergunta.includes("pesquisa e extensão"));
+  assert.match(ext.resposta,/orientação à comunidade/);
+  assert.doesNotMatch(estagio.resposta,/Informação incompleta|regulamentos|coordenação deve/);
 });
 
 test("Administração reúne seis campi e não repete FAQ de turno", () => {

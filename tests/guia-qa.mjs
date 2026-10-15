@@ -94,7 +94,8 @@ test("campos incompletos aparecem identificados sem botão de copiar", () => {
   assert.ok(idx>=0);
   assert.match(h.fieldHTML ? h.fieldHTML(fields[idx],0,idx) : h.editorBlock(dados,0),/Informação incompleta/);
   const displayed=h.editorBlock(dados,0);
-  assert.match(displayed,/Precisa de validação/);
+  assert.doesNotMatch(displayed,/Precisa de validação|Confirmar|Levantar avaliações|Listar projetos efetivamente/);
+  assert.match(displayed,/Informação incompleta/);
   const gallery=course.blocos.find(b=>b.tipo==="galeria");
   assert.equal(gallery.itens.length,0);
   assert.match(h.editorBlock(gallery,3),/Informação incompleta/);
@@ -149,7 +150,7 @@ test("quatro bacharelados novos incluem blocos, fontes e pendências", () => {
     const faq=curso.blocos.find(b=>b.tipo==="faq");
     assert.equal(faq.itens.length,6);
     assert.ok(curso.blocos.some(b=>b.tipo==="galeria"&&b.validacao));
-    assert.ok(curso.blocos.some(b=>b.tipo==="link-unico"&&b.link.url.startsWith("https://")));
+    assert.ok(curso.blocos.some(b=>b.tipo==="links"&&b.itens.some(x=>x.url.startsWith("https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"))));
   }
 });
 
@@ -205,6 +206,43 @@ test("Técnico em Administração Integrado agrupa 8 campi sem misturar o bachar
   const table=tec.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.equal(table.linhas.length,8);
   assert.ok(tec.blocos.find(b=>b.tipo==="faq").itens.some(x=>x.pergunta==="Sabará"&&x.resposta.includes("16,67%")));
+});
+
+test("título permanece copiável quando Texto tem conteúdo incompleto", () => {
+  const h=testContext();
+  const c=json.courses.find(x=>x.id==="administracao-bacharelado");
+  const b=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Pesquisa, extensão e oportunidades");
+  assert.ok(b);
+  const fields=h.editorFields(b);
+  assert.equal(fields.length,2);
+  assert.equal(fields[0].label,"Título da seção");
+  assert.equal(fields[0].value,"Pesquisa, extensão e oportunidades");
+  assert.match(fields[0].html,/<h2>Pesquisa, extensão e oportunidades<\/h2>/);
+  assert.equal(fields[1].value,"Informação incompleta");
+  const html=h.editorBlock(b,5);
+  assert.equal((html.match(/data-copy-field=/g)||[]).length,1);
+  assert.doesNotMatch(html,/Levantar|Listar projetos|Confirmar|Precisa de validação/);
+});
+
+test("nenhum roteiro oferece links para sites antigos do IFMG", () => {
+  for(const course of json.courses) {
+    const items=course.blocos.flatMap(b=>b.tipo==="links"?b.itens:b.tipo==="link-unico"?[b.link]:[]);
+    assert.ok(items.some(x=>x.url==="https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"),course.id);
+    assert.ok(items.some(x=>x.url==="https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"),course.id);
+    for(const x of items)assert.doesNotMatch(x.url,/^https?:\/\/(?!portal\.ifmg\.edu\.br)[^/]*\.ifmg\.edu\.br\//);
+  }
+});
+
+test("Direito tem FAQ orientado a escolha e não duplica a própria página", () => {
+  const c=json.courses.find(x=>x.id==="direito-bacharelado-arcos");
+  const faq=c.blocos.find(x=>x.tipo==="faq");
+  const qs=faq.itens.map(x=>x.pergunta);
+  assert.ok(qs.some(x=>x.includes("ingressar")));
+  assert.ok(qs.some(x=>x.includes("experiências práticas")));
+  assert.ok(!qs.some(x=>/Núcleo de Práticas Jurídicas|diploma permite advogar/i.test(x)));
+  assert.match(faq.itens[0].resposta,/Histórico Escolar e Redação/);
+  assert.match(faq.itens[0].resposta,/Sisu/);
+  assert.ok(!c.blocos.some(b=>b.tipo==="texto"&&/A página do curso apresenta referências/.test(b.conteudo)));
 });
 
 test("Texto é um único campo: título e parágrafos com negrito", () => {

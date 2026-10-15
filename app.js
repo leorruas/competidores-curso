@@ -126,6 +126,11 @@
     if (b.tipo === "texto") {
       // Um bloco Texto do Wagtail corresponde a um único campo Rich Text.
       // O título, quando existe, vai no mesmo conteúdo que os parágrafos.
+      // Quando ainda não há conteúdo, manter o título da seção visível,
+      // mas não oferecer cópia de um placeholder para o Wagtail.
+      if ((!b.conteudo || /^informação incompleta$/i.test(b.conteudo.trim())) && b.validacao)
+        return [{label:"Conteúdo",value:"Informação incompleta",rich:true,
+          html:"<span class=\"review-value\">Informação incompleta</span>"}];
       const value = [b.titulo || "", b.conteudo || ""].filter(Boolean).join("\n\n");
       return value ? [{label:"Conteúdo", value, rich:true,
         html:richHTML(b.conteudo || "", b.titulo || "")}] : [];
@@ -282,7 +287,7 @@
     });
     if (selectedView === "home") renderCatalog();
     if (selectedView === "course") {
-      const c = courseID === "demonstracao" ? demo : state.courses.find(x => x.id === courseID);
+      const c = courseID === "demonstracao" ? demo : state.courses.find(x => x.id === courseID || x.aliases?.includes(courseID));
       if (c) {
         if (state.current !== c.id) state.tab = "editor";
         state.current = c.id;
@@ -312,13 +317,13 @@
         const selected = tab.dataset.tab;
         if (!["preview","editor"].includes(selected)) return;
         state.tab = selected;
-        const c = state.current === "demonstracao" ? demo : state.courses.find(x => x.id === state.current);
+        const c = state.current === "demonstracao" ? demo : state.courses.find(x => x.id === state.current || x.aliases?.includes(state.current));
         if (c) { renderCourse(c); $("tab-" + selected).focus(); }
         return;
       }
       const button = e.target.closest("[data-copy-field]");
       if (button) {
-        const c = state.current === "demonstracao" ? demo : state.courses.find(x => x.id === state.current);
+        const c = state.current === "demonstracao" ? demo : state.courses.find(x => x.id === state.current || x.aliases?.includes(state.current));
         const b = c?.blocos[Number(button.dataset.copyBlock)];
         const field = b ? editorFields(b)[Number(button.dataset.copyField)] : null;
         if (field && !field.setting) {

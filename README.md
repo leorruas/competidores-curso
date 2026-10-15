@@ -2,7 +2,7 @@
 
 Ferramenta estática de apoio à preparação das páginas dos cursos do IFMG no Wagtail. A interface permite localizar roteiros **aprovados para divulgação**, comparar uma prévia do conteúdo e ver o preenchimento bloco por bloco. O projeto é inspirado na experiência editorial do [Guia do Portal IFMG](https://leorruas.github.io/guiaportalifmg/).
 
-**Estado atual (15/10/2026):** publicados três roteiros de cursos reais **para revisão pela coordenação**, não como conteúdo acadêmico homologado: Edificações Integrado, Logística Subsequente e Direito Bacharelado. Campos incompletos ou divergentes são sinalizados no próprio roteiro. A demonstração fictícia continua disponível por URL.
+**Estado atual (15/10/2026):** publicados **sete roteiros de cursos reais para revisão pela coordenação**, não como conteúdo acadêmico homologado: Edificações Integrado, Logística Subsequente, Direito, Engenharia Mecânica, Administração, Agronomia e Engenharia de Produção. Campos incompletos ou divergentes são sinalizados no próprio roteiro. A demonstração fictícia continua disponível por URL.
 
 ## Abrir e publicar o site
 

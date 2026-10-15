@@ -42,8 +42,8 @@
             },
             {
               "rotulo": "Duração",
-              "valor": "3 anos nas ofertas pesquisadas; conferir PPC vigente por campus",
-              "validacao": "Verificar a validade desta informação antes de usá-la no Wagtail."
+              "valor": "3 anos",
+              "validacao": "Confirmar o PPC e a duração de cada campus para 2027."
             },
             {
               "rotulo": "Carga horária",
@@ -52,8 +52,8 @@
             },
             {
               "rotulo": "Modalidade",
-              "valor": "Presencial; PS 2027 indica 0,86% EaD em Ouro Preto e 10,3% EaD em Santa Luzia",
-              "validacao": "Verificar os percentuais e regras por campus; não generalizar um só percentual."
+              "valor": "Presencial",
+              "validacao": "As ofertas de Ouro Preto e Santa Luzia têm percentuais EaD próprios; verificar os detalhes por campus."
             },
             {
               "rotulo": "Campi",
@@ -61,11 +61,12 @@
             },
             {
               "rotulo": "Turno",
-              "valor": "Manhã e tarde, conforme PS 2027"
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "Vincular versão específica vigente de cada campus; pendências ao final"
+              "valor": "Informação incompleta",
+              "validacao": "Selecionar o PPC vigente de cada campus; não anexar um PPC único para os cinco."
             }
           ]
         },
@@ -373,8 +374,8 @@
             },
             {
               "rotulo": "Eixo tecnológico",
-              "valor": "Gestão e Negócios, conforme enquadramento do curso; conferir PPC vigente",
-              "validacao": "Verificar a validade desta informação antes de usá-la no Wagtail."
+              "valor": "Gestão e Negócios",
+              "validacao": "Conferir enquadramento no PPC vigente."
             },
             {
               "rotulo": "Modalidade",
@@ -383,7 +384,8 @@
             },
             {
               "rotulo": "Duração",
-              "valor": "1 ano na página específica; PPC 2024 prevê mínimo 1 e máximo 2 anos"
+              "valor": "1 ano",
+              "validacao": "Confirmar prazo mínimo e máximo no PPC vigente; o PPC 2024.2 previa até dois anos."
             },
             {
               "rotulo": "Carga horária",
@@ -397,11 +399,12 @@
             },
             {
               "rotulo": "Vagas",
-              "valor": "**120 confirmadas no Anexo II do Edital 854/2026**, oferta subsequente de Logística em Ribeirão das Neves"
+              "valor": "120 vagas"
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "Confrontar a versão 2024.2 publicada com documentação atual"
+              "valor": "Informação incompleta",
+              "validacao": "Confirmar PPC 2027 e alteração formal na presencialidade antes de selecionar documento."
             }
           ]
         },
@@ -584,7 +587,7 @@
             },
             {
               "rotulo": "Duração",
-              "valor": "5 anos, conforme página específica atualizada em 2026"
+              "valor": "5 anos"
             },
             {
               "rotulo": "Carga horária total",
@@ -593,8 +596,8 @@
             },
             {
               "rotulo": "Modalidade",
-              "valor": "Presencial (30% EaD), conforme cadastro PS 2027; distribuição por componentes a confirmar",
-              "validacao": "Verificar a validade desta informação antes de usá-la no Wagtail."
+              "valor": "Presencial (30% EaD)",
+              "validacao": "Confirmar a distribuição das atividades no PPC vigente."
             },
             {
               "rotulo": "Turno",
@@ -607,12 +610,13 @@
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "A página específica anuncia documentos de 2025, mas o PDF `ppc_direito_ifmg-25-09.pdf` traz **capa datada de setembro/2024**, incluindo matriz com 3.750 horas. Esclarecer versão/atualizações antes de publicar como PPC 2025"
+              "valor": "Informação incompleta",
+              "validacao": "A página do campus aponta PPC 2025, mas o PDF disponível tem capa de setembro de 2024. Confirmar versão vigente."
             },
             {
               "rotulo": "Coordenação/contato",
-              "valor": "Niltom Vieira Junior / `direito.arcos@ifmg.edu.br`, conforme página atualizada em 2026; confirmar vigência",
-              "validacao": "Verificar a validade desta informação antes de usá-la no Wagtail."
+              "valor": "direito.arcos@ifmg.edu.br",
+              "validacao": "Confirmar atualidade do e-mail funcional da coordenação, sem usar endereço nominal de coordenador."
             }
           ]
         },

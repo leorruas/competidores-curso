@@ -115,10 +115,11 @@
     const rich = (label, value) => ({label, value: String(value ?? ""), rich: true, html: richHTML(value)});
     if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor));
     if (b.tipo === "texto") {
-      const parts = [];
-      if (b.titulo) parts.push({label:"Título da seção",value:b.titulo,rich:true,html:"<h2>" + escapeHTML(b.titulo) + "</h2>"});
-      if (b.conteudo) parts.push(rich("Conteúdo", b.conteudo));
-      return parts;
+      // Um bloco Texto do Wagtail corresponde a um único campo Rich Text.
+      // O título, quando existe, vai no mesmo conteúdo que os parágrafos.
+      const value = [b.titulo || "", b.conteudo || ""].filter(Boolean).join("\n\n");
+      return value ? [{label:"Conteúdo", value, rich:true,
+        html:richHTML(b.conteudo || "", b.titulo || "")}] : [];
     }
     if (b.tipo === "introducao") return [rich("Conteúdo em destaque", b.conteudo)];
     if (b.tipo === "faq") return b.itens.flatMap((x,i) => [
@@ -163,17 +164,11 @@
       '</div></div>' + content + '</div>';
   }
   function editorBlock(b, i) {
-    const info = b.instrucao || "";
     const fields = editorFields(b);
-    const title = b.titulo || (b.tipo === "faq" ? "Perguntas e respostas" : "");
     return '<section class="block-card" id="bloco-' + i + '" aria-labelledby="block-heading-' + i + '">' +
-      '<span class="block-badge" aria-hidden="true">' + String(i + 1).padStart(2,"0") + '</span>' +
-      '<header class="block-card-header">' +
-        '<div class="block-kicker">BLOCO WAGTAIL <span aria-hidden="true">/</span> ' + String(i+1).padStart(2,"0") + '</div>' +
-        '<h2 class="block-card-title" id="block-heading-' + i + '">' + escapeHTML(blockName[b.tipo]) + '</h2>' +
-        (title ? '<p class="block-section-name">' + escapeHTML(title) + '</p>' : '') +
-      '</header>' +
-      (info ? '<div class="block-instructions"><p>' + escapeHTML(info) + '</p></div>' : '') +
+      '<span class="block-badge" aria-hidden="true">' + String(i+1).padStart(2,"0") + '</span>' +
+      '<header class="block-card-header"><h2 class="block-card-title" id="block-heading-' + i +
+      '">' + escapeHTML(blockName[b.tipo]) + '</h2></header>' +
       '<div class="editor-fields">' + fields.map((field,j) => fieldHTML(field,i,j)).join("") + '</div>' +
       '</section>';
   }
@@ -215,7 +210,7 @@
     root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Demonstração fictícia" : "Conteúdo revisado") + ' / ' + kind + '</div><h1>' + title + '</h1><p>' + escapeHTML(course.descricao || "") + '</p><div class="course-flags">' + (course.demo ? '<span class="tag demo-tag">Exemplo sem dados reais</span>' : "") + flags + '</div></div><a class="button button-outline" href="#catalogo">Voltar ao catálogo <span aria-hidden="true">↗</span></a></div>' +
       '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar para o Wagtail</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar página</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +
-      (!activePreview ? '<p class="copy-note">Siga os blocos na ordem e use <strong>Copiar</strong> em cada campo. Em textos, a formatação é incluída automaticamente quando possível.</p>' : '') +
+      (!activePreview ? '' : '') +
       (activePreview ? course.blocos.map(blockPreview).join("") : course.blocos.map(editorBlock).join("")) +
       (course.demo ? '<div class="course-warning">Este é um exemplo fictício. Não representa curso, campus ou oferta do IFMG.</div>' : "") +
       '</div><aside class="course-side"><div class="side-label">NESTA PÁGINA</div><nav aria-label="Índice dos blocos">' +

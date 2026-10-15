@@ -1003,22 +1003,29 @@
       ]
     },
     {
-      "id": "administracao-bacharelado-bambui",
+      "id": "administracao-bacharelado",
       "nome": "Administração",
       "nivel": "Graduação",
       "tipo": "Bacharelado",
       "campi": [
-        "Bambuí"
+        "Bambuí",
+        "Formiga",
+        "Ouro Branco",
+        "Ribeirão das Neves",
+        "Sabará",
+        "São João Evangelista"
       ],
-      "modalidade": "Presencial",
+      "modalidade": "Presencial, com carga EaD variável por campus",
       "status": "em_validacao",
       "publicacao_autorizada": true,
       "revisao_coordenacao": true,
       "pendencias": [
-        "Confirmar PPC 2025 e carga horária de 3.000 horas para 2027",
-        "Verificar cargas atuais de estágio, extensão e TCC",
-        "Obter o e-mail funcional da coordenação",
-        "Confirmar total de vagas por ingresso e selecionar fotografias autorizadas"
+        "Confirmar PPC, matriz e carga horária específicos em cada um dos seis campi",
+        "Confirmar os endereços funcionais das coordenações de Bambuí e Ribeirão das Neves",
+        "Verificar percentual EaD e atividades no PPC vigente de Formiga, Ouro Branco e Sabará",
+        "Confirmar critérios e resultados de reconhecimento dos demais campi",
+        "Selecionar projetos, bolsas e fotografias autorizadas por campus",
+        "Relacionar programas de pós-graduação do IFMG e suas regras de ingresso"
       ],
       "blocos": [
         {
@@ -1033,12 +1040,13 @@
               "valor": "Graduação — Bacharelado"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Bambuí"
+              "rotulo": "Campi",
+              "valor": "Bambuí; Formiga; Ouro Branco; Ribeirão das Neves; Sabará; São João Evangelista"
             },
             {
               "rotulo": "Duração",
-              "valor": "4 anos"
+              "valor": "4 anos",
+              "validacao": "Confirmar a duração nos PPCs de cada campus."
             },
             {
               "rotulo": "Turno",
@@ -1046,38 +1054,39 @@
             },
             {
               "rotulo": "Modalidade",
-              "valor": "Presencial"
+              "valor": "Presencial, com carga EaD variável por campus",
+              "validacao": "Confirmar a distribuição dos componentes presenciais e a distância em cada PPC. Formiga 20%, Ouro Branco 8%, Sabará 23,67% EaD."
             },
             {
               "rotulo": "Carga horária total",
               "valor": "Informação incompleta",
-              "validacao": "O PPC revisado em 2025 informa 3.000 horas; confirmar sua aplicação a ingressantes de 2027."
+              "validacao": "Verificar o PPC de cada um dos seis campi; não generalizar as 3.000 horas de Bambuí."
             },
             {
               "rotulo": "PPC / matriz",
-              "valor": "PPC de 2025",
-              "validacao": "Verificar se a versão para ingressantes a partir de 2026 continua vigente."
+              "valor": "Informação incompleta",
+              "validacao": "PPC e matriz curricular são específicos de cada campus; não utilizar o PPC Bambuí como matriz multicampi."
             },
             {
               "rotulo": "E-mail da coordenação",
               "valor": "Informação incompleta",
-              "validacao": "Conseguir endereço funcional da coordenação. Não substituir pelo e-mail nominal do docente informado em bases antigas."
+              "validacao": "Os contatos são específicos de cada campus e estão na tabela de ofertas; Bambuí e Ribeirão das Neves precisam de caixa funcional confirmada."
             },
             {
               "rotulo": "Vagas",
               "valor": "Informação incompleta",
-              "validacao": "Conferir edital de graduação 2027 e vagas das modalidades de seleção."
+              "validacao": "As vagas dependem da unidade e da forma de ingresso; conferir editais de 2027 de cada campus."
             }
           ]
         },
         {
           "tipo": "texto",
-          "titulo": "Administração no IFMG Campus Bambuí",
-          "conteudo": "Estude **Administração** em uma instituição pública federal, com aulas noturnas e uma formação voltada à gestão de organizações públicas, privadas e do terceiro setor.\n\nO curso reúne planejamento, finanças, marketing, gestão de pessoas, operações e estratégia para compreender como as organizações funcionam e tomar decisões em diferentes contextos."
+          "titulo": "Administração",
+          "conteudo": "O bacharelado em **Administração** forma profissionais para planejar, organizar e melhorar atividades de organizações públicas, privadas e do terceiro setor.\n\nA formação reúne finanças, marketing, gestão de pessoas, logística, estratégias e empreendedorismo. O curso é oferecido em diferentes campi do IFMG, com projetos e experiências próprios de cada unidade."
         },
         {
           "tipo": "introducao",
-          "conteudo": "Com aulas à noite, a graduação integra gestão, planejamento, pessoas e negócios em uma formação pública e presencial."
+          "conteudo": "O curso reúne seis campi, com aulas à noite e diferentes oportunidades de formação e experiências práticas."
         },
         {
           "tipo": "texto",
@@ -1128,12 +1137,12 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Aprendizagem e projetos",
-          "conteudo": "A organização curricular inclui **Trabalhos Interdisciplinares (TID)**, que relacionam conteúdos de diferentes áreas ao longo da graduação. O campus divulga apresentações de TID, trabalhos de conclusão de curso e atividades acadêmicas ligadas à Administração.\n\nO projeto pedagógico contempla estágio e Trabalho de Conclusão de Curso (TCC)."
+          "titulo": "Práticas e experiências",
+          "conteudo": "Os cursos de Administração articulam fundamentos de gestão com atividades aplicadas. Em Bambuí, os **Trabalhos Interdisciplinares (TID)** integram conteúdos de diferentes disciplinas; em Ribeirão das Neves, a proposta inclui estudos de caso, consultorias e planos de negócio; em São João Evangelista, a **Destaque Jr.** aproxima estudantes de atividades de gestão.\n\nAs experiências e os projetos disponíveis variam de acordo com o campus."
         },
         {
           "tipo": "introducao",
-          "conteudo": "Nos Trabalhos Interdisciplinares, conhecimentos de diferentes disciplinas se encontram para analisar situações e construir propostas de gestão."
+          "conteudo": "Os campi desenvolvem diferentes projetos e experiências para aproximar os conteúdos de Administração do cotidiano das organizações."
         },
         {
           "tipo": "texto",
@@ -1143,23 +1152,55 @@
         {
           "tipo": "texto",
           "titulo": "Onde o IFMG oferece Administração",
-          "conteudo": "O curso é oferecido no Campus Bambuí. Confira o turno e o contato da coordenação na tabela abaixo."
+          "conteudo": "O bacharelado em Administração é oferecido em seis campi, com aulas no período noturno. Os percentuais de carga horária a distância e as experiências acadêmicas variam conforme a unidade escolhida."
         },
         {
           "tipo": "tabela",
           "colunas": [
             "Campus",
             "Turno",
+            "Modalidade",
             "E-mail da coordenação"
           ],
           "linhas": [
             [
               "Bambuí",
               "Noite",
+              "Presencial",
               "Informação incompleta"
+            ],
+            [
+              "Formiga",
+              "Noite",
+              "Presencial (20% EaD)",
+              "coord_adm_fga@ifmg.edu.br"
+            ],
+            [
+              "Ouro Branco",
+              "Noite",
+              "Presencial (8% EaD)",
+              "coord.graduacaoadministracao.obr@ifmg.edu.br"
+            ],
+            [
+              "Ribeirão das Neves",
+              "Noite",
+              "Presencial",
+              "Informação incompleta"
+            ],
+            [
+              "Sabará",
+              "Noite",
+              "Presencial (23,67% EaD)",
+              "administracao.sabara@ifmg.edu.br"
+            ],
+            [
+              "São João Evangelista",
+              "Noite",
+              "Presencial",
+              "adm.sje@ifmg.edu.br"
             ]
           ],
-          "validacao": "Confirmar o e-mail funcional da coordenação do curso; não usar endereço nominal do docente."
+          "validacao": "Bambuí e Ribeirão das Neves: confirmar e-mail funcional da coordenação. Em todos os campi, conferir PPC e regras de presencialidade vigentes."
         },
         {
           "tipo": "texto",
@@ -1170,28 +1211,28 @@
           "tipo": "faq",
           "itens": [
             {
-              "pergunta": "O curso é noturno?",
-              "resposta": "Sim. O bacharelado em Administração do Campus Bambuí é oferecido à noite."
+              "pergunta": "Bambuí",
+              "resposta": "Em Bambuí, o bacharelado é presencial e noturno. Os **Trabalhos Interdisciplinares (TID)** integram diferentes áreas da gestão ao longo da graduação, articulando conteúdos e problemas organizacionais."
             },
             {
-              "pergunta": "Quanto tempo dura?",
-              "resposta": "O curso tem duração prevista de quatro anos."
+              "pergunta": "Formiga",
+              "resposta": "Em Formiga, o curso é noturno e presencial, com 20% da carga horária EaD. A formação desenvolve planejamento, finanças, marketing, gestão de pessoas e tomada de decisões. O curso obteve **conceito 4** em avaliação in loco do MEC."
             },
             {
-              "pergunta": "O que são os Trabalhos Interdisciplinares?",
-              "resposta": "São atividades que integram conhecimentos de diferentes componentes curriculares. O campus divulga apresentações e experiências acadêmicas relacionadas aos TID."
+              "pergunta": "Ouro Branco",
+              "resposta": "No Campus Ouro Branco, Administração é oferecido à noite, na modalidade presencial, com 8% de carga horária EaD. O curso recebeu **quatro estrelas no Guia da Faculdade de 2025**, em avaliação divulgada pelo IFMG."
             },
             {
-              "pergunta": "Há estágio e TCC?",
-              "resposta": "Sim. O curso inclui estágio e Trabalho de Conclusão de Curso (TCC)."
+              "pergunta": "Ribeirão das Neves",
+              "resposta": "Em Ribeirão das Neves, o bacharelado é presencial e noturno. A formação trabalha planejamento estratégico, inovação e decisões apoiadas em dados, com estudos de caso, consultorias e planos de negócio."
             },
             {
-              "pergunta": "Que tipo de organização pode contratar um administrador?",
-              "resposta": "Empresas, órgãos públicos, organizações sociais e empreendimentos de diferentes setores podem contar com profissionais de Administração."
+              "pergunta": "Sabará",
+              "resposta": "No Campus Sabará, o curso é noturno e presencial, com 23,67% de carga horária EaD. A formação reúne atividades interdisciplinares, conhecimentos de gestão e desenvolvimento de competências para organizações e empreendedorismo."
             },
             {
-              "pergunta": "Como ingressar?",
-              "resposta": "As formas de seleção e os prazos são informados nos processos seletivos do IFMG."
+              "pergunta": "São João Evangelista",
+              "resposta": "Em São João Evangelista, o curso é presencial e noturno. A formação abrange gestão de pessoas, marketing, finanças, processos, logística e administração rural. Os estudantes podem participar das atividades da **empresa júnior Destaque Jr.**"
             }
           ]
         },
@@ -1199,16 +1240,19 @@
           "tipo": "link-unico",
           "estilo": "Cartão",
           "link": {
-            "rotulo": "Página do curso",
-            "descricao": "Informações e documentos sobre Administração",
-            "url": "https://www.bambui.ifmg.edu.br/portal/bacharelado-em-administracao"
+            "rotulo": "Administração no IFMG",
+            "descricao": "Cursos de Administração e informações por campus",
+            "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
           }
         },
         {
           "tipo": "galeria",
           "itens": [],
-          "validacao": "Informação incompleta: selecionar fotografias reais do curso com autorização, créditos, legendas e textos alternativos."
+          "validacao": "Selecionar fotografias autorizadas das atividades de Administração em cada um dos seis campi, com legenda, crédito e texto alternativo."
         }
+      ],
+      "aliases": [
+        "administracao-bacharelado-bambui"
       ]
     },
     {

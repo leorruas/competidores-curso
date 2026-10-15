@@ -2,7 +2,7 @@
 
 Ferramenta estática de apoio à preparação das páginas dos cursos do IFMG no Wagtail. A interface permite localizar roteiros **aprovados para divulgação**, comparar uma prévia do conteúdo e ver o preenchimento bloco por bloco. O projeto é inspirado na experiência editorial do [Guia do Portal IFMG](https://leorruas.github.io/guiaportalifmg/).
 
-**Estado atual (15/10/2026):** publicados **oito roteiros multicampi e individuais para revisão pela coordenação**, incluindo Administração bacharelado em seis campi e Técnico em Administração Integrado em oito campi. O catálogo não equivale à publicação ou homologação do conteúdo no Wagtail. Campos incompletos ou divergentes são sinalizados no próprio roteiro. A demonstração fictícia continua disponível por URL.
+**Estado atual (15/10/2026):** publicados **oito roteiros multicampi e individuais para revisão pela coordenação**, representando **25 ofertas/campi do inventário 2027**, incluindo Administração Bacharelado em seis campi, Técnico em Administração Integrado em oito e **Engenharia Mecânica em Arcos e Betim**. O catálogo não equivale à publicação ou homologação do conteúdo no Wagtail. Campos incompletos ou divergentes são sinalizados no próprio roteiro. A demonstração fictícia continua disponível por URL.
 
 ## Abrir e publicar o site
 
@@ -20,7 +20,7 @@ Paleta alinhada ao guia: no tema escuro, fundo `#050505` e acento `#78c981`; no 
 
 ## Agrupamento de ofertas e seções incompletas
 
-O roteiro editorial é **um curso normalizado por tipo/grau**, e não uma página por campus. **Administração Bacharelado** reúne Bambuí, Formiga, Ouro Branco, Ribeirão das Neves, Sabará e São João Evangelista. **Técnico em Administração Integrado** reúne oito campi, em página separada. **Técnico em Logística Subsequente** aparece somente em Ribeirão das Neves no inventário 2027. O curso **Tecnologia em Logística** em Sabará é uma graduação distinta; Governador Valadares aparece como referência histórica no catálogo EaD e aguarda confirmação de oferta atual.
+O roteiro editorial é **um curso normalizado por tipo/grau**, e não uma página por campus. **Administração Bacharelado** reúne Bambuí, Formiga, Ouro Branco, Ribeirão das Neves, Sabará e São João Evangelista. **Técnico em Administração Integrado** reúne oito campi, em página separada. **Técnico em Logística Subsequente** aparece somente em Ribeirão das Neves no inventário 2027, embora o curso também tenha seleção própria em Governador Valadares em 2026. O curso **Tecnologia em Logística** em Sabará é uma graduação distinta; Governador Valadares aparece como referência histórica no catálogo EaD e aguarda confirmação de oferta atual.
 
 Os títulos são apenas o nome do curso, sem campus no nome principal. O FAQ prioriza dúvidas que acrescentam informações, sobretudo diferenças relevantes entre campi. Todo roteiro mantém, depois da galeria, blocos para **reconhecimentos, pesquisa/extensão/bolsas, continuidade dos estudos e conquistas dos estudantes**. Onde não houver evidências, a interface mostra **Informação incompleta** e a razão da validação, sem oferecer botão para copiar o placeholder. O texto copiável é redigido como a própria instituição, sem frases de atribuição à planilha ou ao PPC.
 

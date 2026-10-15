@@ -5,7 +5,7 @@
 (() => {
   "use strict";
   const ALLOWED_TYPES = new Set(["dados-basicos", "texto", "introducao", "tabela", "faq", "galeria", "links", "link-unico"]);
-  const STATUS_PUBLICO = "aprovado_para_divulgacao";
+  const STATUS_PUBLICO = new Set(["aprovado_para_divulgacao", "em_validacao"]);
   const BASE = "./";
   const state = { courses: [], failed: false, query: "", level: "", campus: "", tab: "editor", current: "" };
   const $ = (id) => document.getElementById(id);
@@ -41,25 +41,27 @@
   };
 
   function isApprovedCourse(c) {
-    if (!c || typeof c !== "object" || c.demo || c.publicacao_autorizada !== true || c.status !== STATUS_PUBLICO) return false;
+    if (!c || typeof c !== "object" || c.demo || c.publicacao_autorizada !== true || !STATUS_PUBLICO.has(c.status)) return false;
     if (!checkedText(c.id, 140) || !/^[a-z0-9][a-z0-9-]*$/.test(c.id)) return false;
     if (!checkedText(c.nome, 200) || !c.nome.trim() || !checkedText(c.nivel, 100)) return false;
     if (!Array.isArray(c.campi) || !c.campi.every(v => checkedText(v, 150))) return false;
     if (!Array.isArray(c.blocos) || c.blocos.length === 0) return false;
     if (!c.blocos.every(b => validateBlock(b))) return false;
+    if (c.status === "em_validacao" && (c.revisao_coordenacao !== true || !Array.isArray(c.pendencias) || !c.pendencias.length)) return false;
     return true;
   }
   function validateBlock(b) {
     if (!b || !ALLOWED_TYPES.has(b.tipo)) return false;
     if (b.instrucao !== undefined && !checkedText(b.instrucao, 3500)) return false;
     if (b.titulo !== undefined && !checkedText(b.titulo, 200)) return false;
+    if (b.validacao !== undefined && !checkedText(b.validacao, 1000)) return false;
     if (["texto", "introducao"].includes(b.tipo) && !checkedText(b.conteudo || "", b.tipo === "introducao" ? 280 : 12000)) return false;
-    if (b.tipo === "dados-basicos") return Array.isArray(b.campos) && b.campos.every(x => checkedText(x.rotulo, 160) && checkedText(x.valor, 500));
+    if (b.tipo === "dados-basicos") return Array.isArray(b.campos) && b.campos.every(x => checkedText(x.rotulo, 160) && checkedText(x.valor, 500) && (x.validacao === undefined || checkedText(x.validacao, 600)));
     if (b.tipo === "tabela") return Array.isArray(b.colunas) && b.colunas.length > 0 && b.colunas.every(x => checkedText(x, 160)) && Array.isArray(b.linhas) && b.linhas.every(x => Array.isArray(x) && x.length === b.colunas.length && x.every(v => checkedText(v, 1200)));
     if (b.tipo === "faq") return Array.isArray(b.itens) && b.itens.length > 0 && b.itens.every(x => checkedText(x.pergunta, 300) && checkedText(x.resposta, 2000));
-    if (b.tipo === "links") return Array.isArray(b.itens) && b.itens.every(x => checkedText(x.rotulo, 160) && isValidURL(x.url));
+    if (b.tipo === "links") return Array.isArray(b.itens) && (!!b.itens.length || !!b.validacao) && b.itens.every(x => checkedText(x.rotulo, 160) && isValidURL(x.url));
     if (b.tipo === "link-unico") return b.link && checkedText(b.link.rotulo, 160) && isValidURL(b.link.url);
-    if (b.tipo === "galeria") return Array.isArray(b.itens) && b.itens.every(x => checkedText(x.legenda, 300) && checkedText(x.alt, 300) && typeof x.url === "string" && x.url.startsWith("https:"));
+    if (b.tipo === "galeria") return Array.isArray(b.itens) && (!!b.itens.length || !!b.validacao) && b.itens.every(x => checkedText(x.legenda, 300) && checkedText(x.alt, 300) && typeof x.url === "string" && x.url.startsWith("https:"));
     return true;
   }
 
@@ -118,9 +120,9 @@
       "</tr></thead><tbody>" + b.linhas.map(row => "<tr>" + row.map(x => "<td>" + renderInline(x).replace(/<mark>/g,"<strong>").replace(/<\/mark>/g,"</strong>") + "</td>").join("") + "</tr>").join("") + "</tbody></table>";
   }
   function editorFields(b) {
-    const raw = (label, value, setting = false) => ({label, value: String(value ?? ""), rich: false, html: "", setting});
+    const raw = (label, value, setting = false, validacao = "") => ({label, value: String(value ?? ""), rich: false, html: "", setting, validacao});
     const rich = (label, value) => ({label, value: String(value ?? ""), rich: true, html: richHTML(value)});
-    if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor));
+    if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor, false, x.validacao || ""));
     if (b.tipo === "texto") {
       // Um bloco Texto do Wagtail corresponde a um único campo Rich Text.
       // O título, quando existe, vai no mesmo conteúdo que os parágrafos.
@@ -146,6 +148,8 @@
         raw("Link " + (i+1) + " · URL", x.url)
       ])
     ];
+    if (b.tipo === "galeria" && !b.itens.length) return [raw("Imagens", "Informação incompleta", false, b.validacao || "Fotografias pendentes de validação")];
+    if (b.tipo === "links" && !b.itens.length) return [raw("Links", "Informação incompleta", false, b.validacao || "Endereços pendentes de validação")];
     if (b.tipo === "galeria") return b.itens.flatMap((x,i) => [
       raw("Imagem " + (i+1) + " · Legenda", x.legenda),
       raw("Imagem " + (i+1) + " · Texto alternativo", x.alt),
@@ -164,13 +168,15 @@
     const content = field.rich
       ? '<div class="field-example rich-example' + (field.table ? ' table-wrap editor-table' : '') + '">' + field.html + '</div>'
       : '<div class="field-example text-example">' + escapeHTML(field.value || "—") + '</div>';
+    const incomplete = !field.value.trim() || /^informação incompleta$/i.test(field.value.trim());
     const action = field.setting
       ? '<span class="editor-setting" aria-label="Selecionar esta opção no Wagtail">selecionar no Wagtail</span>'
+      : incomplete ? '<span class="editor-setting">Precisa de validação</span>'
       : '<button type="button" class="copy-button" data-copy-field="' + fieldIndex +
           '" data-copy-block="' + blockIndex + '">' + (field.table ? "Copiar tabela" : "Copiar") + ' <span aria-hidden="true">↗</span></button>';
     return '<div class="editor-field"><div class="editor-field-top"><span class="editor-field-label">' +
       escapeHTML(field.label) + '</span><div class="editor-field-actions">' + action +
-      '</div></div>' + content + '</div>';
+      '</div></div>' + content + (field.validacao ? '<p class="field-review"><strong>Precisa de validação</strong> — ' + escapeHTML(field.validacao) + '</p>' : '') + '</div>';
   }
   function editorBlock(b, i) {
     const fields = editorFields(b);
@@ -178,6 +184,7 @@
       '<span class="block-badge" aria-hidden="true">' + String(i+1).padStart(2,"0") + '</span>' +
       '<header class="block-card-header"><h2 class="block-card-title" id="block-heading-' + i +
       '">' + escapeHTML(blockName[b.tipo]) + '</h2></header>' +
+      (b.validacao ? '<p class="field-review"><strong>Precisa de validação</strong> — ' + escapeHTML(b.validacao) + '</p>' : '') +
       '<div class="editor-fields">' + fields.map((field,j) => fieldHTML(field,i,j)).join("") + '</div>' +
       '</section>';
   }
@@ -215,9 +222,10 @@
     const title = escapeHTML(course.nome), kind = escapeHTML([course.nivel, course.tipo].filter(Boolean).join(" / "));
     $("course-breadcrumb").textContent = course.nome;
     const flags = course.demo ? "" : [...(course.campi || []), ...(course.modalidade ? [course.modalidade] : [])].map(x => '<span class="tag">' + escapeHTML(x) + '</span>').join("");
+    const review = course.status === "em_validacao" ? '<p class="course-review-note"><strong>Em validação pela coordenação.</strong> Campos incompletos estão identificados abaixo.</p>' : "";
     const headings = course.blocos.map((b,i) => ({ title: b.titulo || blockName[b.tipo], index: i }));
     root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Exemplo fictício" : kind) + '</div><h1>' + title + '</h1>' + (course.descricao ? '<p>' + escapeHTML(course.descricao) + '</p>' : '') + (flags ? '<div class="course-flags">' + flags + '</div>' : '') + '</div></div>' +
-      '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar</button></div>' +
+      review + '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +
       (!activePreview ? '' : '') +
       (activePreview ? course.blocos.map(blockPreview).join("") : course.blocos.map(editorBlock).join("")) +

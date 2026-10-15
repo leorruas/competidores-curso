@@ -12,6 +12,22 @@ Esta aplicação é uma ferramenta de **copiar campos e blocos para o Wagtail**,
 - Preferir **e-mail funcional da coordenação**, nunca e-mail nominal de docente. Uma oferta de 2027 não é comprovada por referência histórica de campus.
 - Roteiros podem estar `status: em_validacao` quando exibidos no guia, com `publicacao_autorizada: true`, `revisao_coordenacao: true` e `pendencias` não vazias. Esses metadados **não** representam homologação da página no CMS.
 
+## Revisão editorial em fases (obrigatória)
+
+Os comentários do usuário são registrados em [Backlog editorial em fases - paginas dos cursos IFMG.md](https://github.com/leorruas/competidores-cursos/blob/main/Benchmark/Analises/Backlog%20editorial%20em%20fases%20-%20paginas%20dos%20cursos%20IFMG.md), no repositório **privado**. Não copiar o backlog nem fontes da vault para o JSON público.
+
+**Modo de trabalho:** receber correção → criar/atualizar `F#.#` no checklist privado → corrigir **um problema/curso por vez** → alterar roteiro privado canônico e JSON público coerentemente → testar → marcar item com commit/evidência e registrar em log. **Não iniciar grandes lotes antes de corrigir o padrão editorial pendente.** Divulgar apenas o que está confirmado; campos incompletos usam `conteudo: "Informação incompleta"` + `validacao`, sem botão de cópia desse placeholder.
+
+**Critérios prioritários de escrita e UI:**
+- A página **aglutina ofertas acadêmicas locais distintas** por nome e tipo. **Não** tratá-las como um curso homogêneo existente em vários campi. Diferenciais, projetos, PPC, estágio, TCC, prêmios e vagas são específicos do campus.
+- Nome público **`Técnico em Edificações`**; integrado/subsequente aparece em metadados, não no título. Não embutir `no Campus...` no título geral.
+- Bloco `Galeria` deve acompanhar o texto `Projetos e experiências`, e não aparecer arbitrariamente depois de links e FAQ. Sem fotos autorizadas: mostrar a pendência.
+- Destacar **informações concretas**, não frases intercambiáveis como `O curso reúne seis campi...`.
+- `Link único` **nunca** aponta para uma página futura do próprio curso simulada por link para listagem geral. Usar apenas destinos reais e pertinentes.
+- FAQ deve trazer fatos que o candidato usará para decidir: **ingresso concreto**, estágio/TCC obrigatórios ou não e condições por PPC, pesquisa, ensino e extensão, bolsas, experiências práticas e exemplos. Não responder apenas `consulte o PPC` ou `as formas de ingresso estão no processo seletivo`.
+- Reconhecimento ou homenagem exige **tema do projeto, atividade, resultado, ano e campus**; sem isso, `Informação incompleta` e `validacao` fora do texto copiável.
+- Para continuidade de Administração, verificar **Mestrado em Administração (Formiga)**, **ProfEPT (Ouro Branco)** e **Especialização em Gestão de Negócios (Ouro Branco)**. Diferenciar áreas, públicos e requisitos; não presumir matrícula automática.
+
 ## Interface e QA
 - A página inicial é o catálogo direto e conciso; fonte **Archivo**, títulos sem pontos decorativos, números grandes na margem, um único botão **Copiar** por campo. A seção **Como usar** aponta à página específica do Guia do Portal sobre blocos Wagtail.
 - Não inserir blocos de explicação redundantes, cards decorativos ou textos institucionais justificados por fonte dentro do conteúdo copiável.

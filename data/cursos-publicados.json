@@ -217,6 +217,20 @@
           "validacao": "Há respostas que dependem de confirmação acadêmica; revisar os itens indicados antes de transcrever."
         },
         {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
           "tipo": "link-unico",
           "estilo": "Cartão",
           "link": {
@@ -328,12 +342,6 @@
               "Vagas, deslocamento e horários"
             ]
           ]
-        },
-        {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [],
-          "validacao": "Links específicos desta modalidade ainda não foram confirmados. Informação incompleta."
         },
         {
           "tipo": "texto",
@@ -605,6 +613,20 @@
           "estilo": "Padrão",
           "itens": [
             {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
               "rotulo": "Processo Seletivo do IFMG",
               "url": "https://www.ifmg.edu.br/portal/processo-seletivo/cursos"
             },
@@ -805,12 +827,12 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Por que estudar Direito no IFMG Arcos",
-          "conteudo": "Na graduação, a formação jurídica é oferecida por uma instituição pública federal. A página do curso apresenta referências a metodologias de aprendizagem baseada em projetos, estudos de caso e trabalhos que aproximam conceitos jurídicos de situações práticas.\n\nO curso disponibiliza documentos relacionados ao Núcleo de Práticas Jurídicas, ao estágio, ao TCC e às atividades complementares."
+          "titulo": "Experiências de aprendizagem em Direito",
+          "conteudo": "A graduação em **Direito** combina estudos das leis, análise de casos, atividades integradoras e reflexão sobre situações jurídicas concretas.\n\nA formação reúne diferentes áreas do conhecimento jurídico, com atividades de argumentação, pesquisa e aplicação prática dos conteúdos estudados."
         },
         {
           "tipo": "introducao",
-          "conteudo": "A Aprendizagem Baseada em Projetos aparece na apresentação institucional do Direito em Arcos como forma de aproximar teoria e situações concretas. As experiências de cada turma devem ser conferidas com a coordenação."
+          "conteudo": "O estudo de casos e a aprendizagem por projetos aproximam os conceitos jurídicos de situações concretas e incentivam a argumentação e a análise de diferentes soluções."
         },
         {
           "tipo": "galeria",
@@ -820,7 +842,7 @@
         {
           "tipo": "texto",
           "titulo": "Como funciona o curso",
-          "conteudo": "A graduação em Direito é oferecida no **Campus Arcos**, em turno **noturno**, com duração prevista de **cinco anos**. O PPC disponível registra **3.750 horas totais** e prazo mínimo de 10 semestres, mas sua capa é datada de **setembro de 2024**. O cadastro do Processo Seletivo 2027 descreve a modalidade como presencial com **30% de atividades EaD**, condição não presumida como idêntica à distribuição curricular descrita no PDF antigo.\n\nA organização concreta da carga horária a distância depende do projeto pedagógico vigente. Antes de escolher a oferta, consulte a matriz curricular e verifique junto ao campus horários, calendário, componentes e atividades que exigem presença."
+          "conteudo": "O bacharelado em **Direito** é oferecido no **Campus Arcos**, à noite, com duração prevista de **cinco anos**. O curso é presencial, com **30% da carga horária EaD**.\n\nAo longo da formação, o estudante desenvolve conhecimentos em diferentes campos do Direito e participa de atividades acadêmicas voltadas à interpretação de normas, à discussão de casos e à prática jurídica."
         },
         {
           "tipo": "tabela",
@@ -843,11 +865,11 @@
             ],
             [
               "Modalidade",
-              "Presencial (30% EaD segundo PS 2027)"
+              "Presencial (30% EaD)"
             ],
             [
               "Projeto pedagógico",
-              "PDF divulgado no site, capa setembro/2024; confirmar vigência e atualização 2025/2027"
+              "Informação incompleta"
             ]
           ],
           "validacao": "Um ou mais valores da tabela ainda estão incompletos ou exigem confirmação da coordenação."
@@ -870,28 +892,38 @@
           "tipo": "faq",
           "itens": [
             {
-              "pergunta": "Preciso ter concluído o ensino médio?",
-              "resposta": "Para ingressar em uma graduação, é necessário ter concluído o ensino médio ou cumprir as condições previstas no edital e na matrícula. Verifique o prazo de comprovação no processo seletivo."
+              "pergunta": "Como posso ingressar no curso de Direito?",
+              "resposta": "Você pode ingressar pelo **Histórico Escolar e Redação** ou pelo **Sisu**. Para ingresso em 2027, são oferecidas **15 vagas** na seleção por Histórico Escolar e Redação. As vagas do Sisu são definidas em seleção própria."
             },
             {
-              "pergunta": "Qual é o papel do Núcleo de Práticas Jurídicas?",
-              "resposta": "O Núcleo de Práticas Jurídicas integra as atividades acadêmicas ligadas à formação prática em Direito. As atividades oferecidas e sua organização são definidas nos documentos do curso."
+              "pergunta": "Que experiências práticas fazem parte da formação?",
+              "resposta": "Você participa de atividades de análise de casos, projetos acadêmicos e estudos que relacionam os conteúdos jurídicos a situações concretas. O curso também contempla atividades voltadas à prática jurídica."
             },
             {
-              "pergunta": "O curso tem atividades a distância?",
-              "resposta": "O curso é presencial, com 30% de carga horária EaD. A distribuição das atividades é apresentada na matriz curricular."
+              "pergunta": "Como funciona a parte da graduação a distância?",
+              "resposta": "O curso é presencial, com **30% da carga horária EaD**. As atividades são organizadas de acordo com os componentes curriculares e o planejamento acadêmico."
             },
             {
-              "pergunta": "Há estágio e atividades de prática jurídica?",
-              "resposta": "A página do curso reúne documentos relacionados ao Núcleo de Práticas Jurídicas, ao estágio e a atividades integradoras. As regras para participação e conclusão estão nos regulamentos e no projeto pedagógico vigente."
+              "pergunta": "O curso exige estágio e Trabalho de Conclusão de Curso?",
+              "resposta": "Informação incompleta"
             },
             {
-              "pergunta": "Como faço para ingressar?",
-              "resposta": "O quadro de ofertas de 2027 menciona Histórico Escolar e Redação e Sisu como formas de seleção. Consulte o edital correspondente para saber prazos, requisitos e vagas de cada modalidade."
+              "pergunta": "Quais oportunidades de pesquisa e extensão existem em Direito?",
+              "resposta": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
             },
             {
-              "pergunta": "O diploma permite advogar automaticamente?",
-              "resposta": "Não. O bacharelado é uma etapa de formação jurídica. Para exercer a advocacia, é necessário cumprir também os requisitos legais de inscrição na Ordem dos Advogados do Brasil, incluindo o Exame de Ordem quando aplicável."
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
             }
           ]
         },
@@ -1133,6 +1165,20 @@
             {
               "pergunta": "Como ingressar?",
               "resposta": "As formas de ingresso, as vagas e os prazos são apresentados nos processos seletivos do IFMG."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
             }
           ]
         },
@@ -1415,6 +1461,20 @@
           ]
         },
         {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
           "tipo": "galeria",
           "itens": [],
           "validacao": "Selecionar fotografias autorizadas das atividades de Administração em cada um dos seis campi, com legenda, crédito e texto alternativo."
@@ -1648,6 +1708,20 @@
             {
               "pergunta": "Como ingressar?",
               "resposta": "Consulte os processos seletivos do IFMG para verificar formas de seleção, prazos e distribuição de vagas."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
             }
           ]
         },
@@ -1891,6 +1965,20 @@
             {
               "pergunta": "Como ingressar?",
               "resposta": "Acompanhe os processos seletivos do IFMG para verificar formas de ingresso, vagas e cronogramas."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
             }
           ]
         },
@@ -2194,6 +2282,20 @@
             {
               "pergunta": "Sabará",
               "resposta": "Em Sabará, o curso desenvolve conhecimentos de gestão e empreendedorismo. A oferta é presencial, com **16,67% da carga horária EaD**. Estudantes do curso participaram de visita técnica à **Expo Favela Minas 2026**, conhecendo iniciativas de empreendedorismo e inovação."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
             }
           ]
         },

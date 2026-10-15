@@ -116,7 +116,7 @@
     if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor));
     if (b.tipo === "texto") {
       const parts = [];
-      if (b.titulo) parts.push(rich("Título da seção", b.titulo, "")); 
+      if (b.titulo) parts.push({label:"Título da seção",value:b.titulo,rich:true,html:"<h2>" + escapeHTML(b.titulo) + "</h2>"}); 
       if (b.conteudo) parts.push(rich("Texto do bloco", b.conteudo));
       return parts;
     }
@@ -214,8 +214,9 @@
     const flags = [...(course.campi || []), ...(course.modalidade ? [course.modalidade] : [])].map(x => '<span class="tag">' + escapeHTML(x) + '</span>').join("");
     const headings = course.blocos.map((b,i) => ({ title: b.titulo || blockName[b.tipo], index: i }));
     root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Demonstração fictícia" : "Conteúdo revisado") + ' / ' + kind + '</div><h1>' + title + '</h1><p>' + escapeHTML(course.descricao || "") + '</p><div class="course-flags">' + (course.demo ? '<span class="tag demo-tag">Exemplo sem dados reais</span>' : "") + flags + '</div></div><a class="button button-outline" href="#catalogo">Voltar ao catálogo <span aria-hidden="true">↗</span></a></div>' +
-      '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualização</button><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Como preencher no Wagtail</button></div>' +
+      '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar para o Wagtail</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar página</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +
+      (!activePreview ? '<p class="copy-note">Cada campo tem seu botão de cópia. Nos campos de texto, “copiar formatado” envia negrito, listas e parágrafos em HTML, quando o navegador e o Wagtail aceitarem.</p>' : '') +
       (activePreview ? course.blocos.map(blockPreview).join("") : course.blocos.map(editorBlock).join("")) +
       (course.demo ? '<div class="course-warning">Este é um exemplo fictício. Não representa curso, campus ou oferta do IFMG.</div>' : "") +
       '</div><aside class="course-side"><div class="side-label">NESTA PÁGINA</div><nav aria-label="Índice dos blocos">' +
@@ -242,6 +243,12 @@
       (state.failed ? "O catálogo não pôde ser carregado." : (state.courses.length ? "Nenhum curso corresponde à busca." : "O catálogo começa pela revisão.")) +
       '</h2><p>' + (state.failed ? "Não foi possível acessar o índice de cursos. Confira a conexão ou a configuração dos arquivos públicos." : (state.courses.length ? "Experimente outros termos ou limpe os filtros." : "Os primeiros roteiros ainda estão em validação editorial. Você pode conhecer a estrutura do guia usando um exemplo inteiramente fictício.")) +
       '</p><button class="button button-outline" type="button" id="demo-from-catalog">Abrir demonstração <span aria-hidden="true">↗</span></button></div>';
+    if (!state.failed && !list.length && !state.courses.length) {
+      $("catalog-results").insertAdjacentHTML("beforeend",
+        '<a class="course-card demo-course-row" href="#curso/demonstracao"><span class="label">ex.</span><div class="course-card-main">' +
+        '<span class="course-type">Exemplo fictício · não representa uma oferta</span><h2>curso demonstrativo</h2></div>' +
+        '<span class="course-meta">Treine a cópia dos campos</span><span class="card-arrow" aria-hidden="true">↗</span></a>');
+    }
     const demoButton = $("demo-from-catalog");
     if (demoButton) demoButton.addEventListener("click", () => { location.hash = "#curso/demonstracao"; });
   }

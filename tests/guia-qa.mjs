@@ -230,7 +230,9 @@ test("continuidade de Administração distingue mestrado e especializações por
   assert.match(text.conteudo,/Educação Profissional e Tecnológica/);
   assert.match(text.conteudo,/Ouro Branco/);
   assert.match(text.conteudo,/Especialização em Gestão de Negócios/);
-  assert.doesNotMatch(text.conteudo,/Mestrado (Profissional em )?Administração.*Ouro Branco/);
+  assert.match(text.conteudo,/Em \*\*Formiga\*\*, o \*\*Mestrado Profissional em Administração\*\*/);
+  assert.match(text.conteudo,/Em \*\*Ouro Branco\*\*, a \*\*Especialização em Gestão de Negócios\*\*/);
+  assert.doesNotMatch(text.conteudo,/Em \*\*Ouro Branco\*\*, o \*\*Mestrado Profissional em Administração\*\*/);
 });
 
 test("Técnico em Administração Integrado agrupa 8 campi sem misturar o bacharelado", () => {

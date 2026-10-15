@@ -220,6 +220,19 @@ test("as seções editoriais existem, independentemente da posição contextual 
   }
 });
 
+test("continuidade de Administração distingue mestrado e especializações por campus", () => {
+  const c=json.courses.find(x=>x.id==="administracao-bacharelado");
+  const text=c.blocos.find(x=>x.titulo==="Continue seus estudos no IFMG");
+  assert.ok(text);
+  assert.match(text.conteudo,/Mestrado Profissional em Administração/);
+  assert.match(text.conteudo,/Formiga/);
+  assert.match(text.conteudo,/ProfEPT/);
+  assert.match(text.conteudo,/Educação Profissional e Tecnológica/);
+  assert.match(text.conteudo,/Ouro Branco/);
+  assert.match(text.conteudo,/Especialização em Gestão de Negócios/);
+  assert.doesNotMatch(text.conteudo,/Mestrado (Profissional em )?Administração.*Ouro Branco/);
+});
+
 test("Técnico em Administração Integrado agrupa 8 campi sem misturar o bacharelado", () => {
   const h=testContext();
   const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");

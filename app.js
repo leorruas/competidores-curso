@@ -17,19 +17,26 @@
 
   // O demonstrativo usa um curso fictício, sem atribuir dados a campi ou ofertas reais.
   const demo = {
-    id: "demonstracao", nome: "Curso demonstrativo", nivel: "Exemplo", tipo: "Fictício",
-    campi: ["Unidade ilustrativa"], modalidade: "Exemplo — não é uma oferta real",
-    descricao: "Este material é uma demonstração do fluxo de leitura e preenchimento. Todos os dados são fictícios.",
-    status: "demonstracao", publicacao_autorizada: false, demo: true,
-    blocos: [
-      { tipo: "dados-basicos", titulo: "Dados básicos", instrucao: "Preencha os campos próprios da página Curso antes dos blocos de conteúdo. Não duplique a área de processos seletivos.", campos: [{ rotulo: "Nome do curso", valor: "Curso demonstrativo (fictício)" }, { rotulo: "Modalidade", valor: "Apenas um exemplo de preenchimento" }, { rotulo: "Campus", valor: "Unidade ilustrativa" }] },
-      { tipo: "texto", titulo: "Para quem é este curso?", instrucao: "Insira um único bloco Texto com título e parágrafos abaixo.", conteudo: "Esta é uma seção de exemplo com **palavras em negrito** para testar a cópia com formatação. Em um roteiro aprovado, ela explicará para quem o curso se destina e o que o estudante precisa conhecer." },
-      { tipo: "introducao", instrucao: "Adicione um bloco Introdução. Ele deve destacar uma razão de escolha comprovada, não apenas repetir o parágrafo anterior. Limite: 280 caracteres.", conteudo: "Este é um destaque demonstrativo: nos documentos reais, ele deve evidenciar uma informação útil para a escolha do estudante." },
-      { tipo: "texto", titulo: "Como comparar opções", instrucao: "Insira título e texto em um único bloco Texto.", conteudo: "O conteúdo público deve ajudar a comparar condições de estudo, formação, experiências e campus. Cada informação precisa de fonte e aprovação editorial." },
-      { tipo: "tabela", titulo: "Comparação ilustrativa", instrucao: "Adicione um bloco Tabela com os cabeçalhos e linhas de demonstração.", colunas: ["Informação", "Exemplo de preenchimento"], linhas: [["Campus", "Unidade ilustrativa"], ["Contato", "Preencher somente com caixa funcional confirmada"]] },
-      { tipo: "texto", titulo: "Perguntas frequentes", instrucao: "Use um bloco Texto só para o título, porque a próxima informação estará em um bloco FAQ.", conteudo: "" },
-      { tipo: "faq", instrucao: "Crie um único bloco FAQ, contendo cada pergunta e resposta abaixo.", itens: [{ pergunta: "Este curso existe?", resposta: "Não. Esta página é fictícia e mostra somente a estrutura de um roteiro para o Wagtail." }, { pergunta: "Quando um curso pode aparecer no catálogo?", resposta: "Depois da revisão das fontes e da aprovação explícita de seu conteúdo para divulgação." }] },
-      { tipo: "link-unico", instrucao: "Configure estilo Cartão, título, descrição e destino.", estilo: "Cartão", link: { rotulo: "Consultar o Guia do Portal", descricao: "Instruções gerais do Wagtail", url: "https://leorruas.github.io/guiaportalifmg/" } }
+    id:"demonstracao", nome:"Demonstração", nivel:"Exemplo", tipo:"Fictício",
+    campi:["Campus fictício"], modalidade:"Exemplo",
+    descricao:"", status:"demonstracao", publicacao_autorizada:false, demo:true,
+    blocos:[
+      {tipo:"dados-basicos",titulo:"Dados básicos",campos:[
+        {rotulo:"Curso",valor:"Curso demonstrativo"},
+        {rotulo:"Campus",valor:"Campus fictício"}
+      ]},
+      {tipo:"texto",titulo:"Sobre o curso",conteudo:"Texto de exemplo com **negrito**.\n\nOutro parágrafo para testar a cópia."},
+      {tipo:"introducao",conteudo:"Destaque de exemplo para esta página."},
+      {tipo:"tabela",colunas:["Campus","Turno"],linhas:[["Campus fictício","Diurno"],["Outra unidade fictícia","Noturno"]]},
+      {tipo:"texto",titulo:"Perguntas frequentes",conteudo:""},
+      {tipo:"faq",itens:[
+        {pergunta:"Este curso existe?",resposta:"Não. É uma demonstração."},
+        {pergunta:"Como preencher?",resposta:"Use o botão Copiar ao lado de cada campo."}
+      ]},
+      {tipo:"link-unico",estilo:"Cartão",link:{
+        rotulo:"Guia do Portal",descricao:"Instruções do Wagtail",
+        url:"https://leorruas.github.io/guiaportalifmg/"
+      }}
     ]
   };
 
@@ -207,17 +214,17 @@
     const activePreview = state.tab === "preview";
     const title = escapeHTML(course.nome), kind = escapeHTML([course.nivel, course.tipo].filter(Boolean).join(" / "));
     $("course-breadcrumb").textContent = course.nome;
-    const flags = [...(course.campi || []), ...(course.modalidade ? [course.modalidade] : [])].map(x => '<span class="tag">' + escapeHTML(x) + '</span>').join("");
+    const flags = course.demo ? "" : [...(course.campi || []), ...(course.modalidade ? [course.modalidade] : [])].map(x => '<span class="tag">' + escapeHTML(x) + '</span>').join("");
     const headings = course.blocos.map((b,i) => ({ title: b.titulo || blockName[b.tipo], index: i }));
-    root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Demonstração fictícia" : "Conteúdo revisado") + ' / ' + kind + '</div><h1>' + title + '</h1><p>' + escapeHTML(course.descricao || "") + '</p><div class="course-flags">' + (course.demo ? '<span class="tag demo-tag">Exemplo sem dados reais</span>' : "") + flags + '</div></div><a class="button button-outline" href="#catalogo">Voltar ao catálogo <span aria-hidden="true">↗</span></a></div>' +
-      '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar para o Wagtail</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar página</button></div>' +
+    root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Exemplo fictício" : kind) + '</div><h1>' + title + '</h1>' + (course.descricao ? '<p>' + escapeHTML(course.descricao) + '</p>' : '') + (flags ? '<div class="course-flags">' + flags + '</div>' : '') + '</div></div>' +
+      '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +
       (!activePreview ? '' : '') +
       (activePreview ? course.blocos.map(blockPreview).join("") : course.blocos.map(editorBlock).join("")) +
-      (course.demo ? '<div class="course-warning">Este é um exemplo fictício. Não representa curso, campus ou oferta do IFMG.</div>' : "") +
+      '' +
       '</div><aside class="course-side"><div class="side-label">NESTA PÁGINA</div><nav aria-label="Índice dos blocos">' +
       headings.map(x => '<a href="#bloco-' + x.index + '" data-anchor="' + x.index + '"><span class="side-number">' + String(x.index+1).padStart(2,"0") + '</span>' + escapeHTML(blockName[course.blocos[x.index].tipo]) + '</a>').join("") +
-      '</nav><p>' + (activePreview ? "Prévia visual dos blocos aprovados." : "Siga a ordem e copie o conteúdo de cada bloco para o Wagtail.") + '</p></aside></div>';
+      '</nav></aside></div>';
   }
 
   function filterCourses() {
@@ -233,20 +240,26 @@
   }
   function renderCatalog() {
     const list = filterCourses();
-    $("catalog-count").textContent = list.length + (list.length === 1 ? " roteiro" : " roteiros") + " disponíveis";
-    $("catalog-results").innerHTML = list.length ? list.map((c,i) => '<a class="course-card" href="#curso/' + encodeURIComponent(c.id) + '"><span class="label">' + String(i + 1).padStart(2, "0") + '</span><div class="course-card-main"><span class="course-type">' + escapeHTML(c.nivel) + (c.tipo ? " / " + escapeHTML(c.tipo) : "") + '</span><h2>' + escapeHTML(c.nome) + '</h2></div><span class="course-meta">' + escapeHTML(c.campi.join(" · ")) + '</span><span class="card-arrow" aria-hidden="true">↗</span></a>').join("") :
-      '<div class="empty-state"><span class="empty-icon">' + (state.failed ? "ERRO DE CARREGAMENTO" : (state.courses.length ? "NENHUM RESULTADO" : "AGUARDANDO CONTEÚDOS APROVADOS")) + '</span><h2>' +
-      (state.failed ? "O catálogo não pôde ser carregado." : (state.courses.length ? "Nenhum curso corresponde à busca." : "O catálogo começa pela revisão.")) +
-      '</h2><p>' + (state.failed ? "Não foi possível acessar o índice de cursos. Confira a conexão ou a configuração dos arquivos públicos." : (state.courses.length ? "Experimente outros termos ou limpe os filtros." : "Os primeiros roteiros ainda estão em validação editorial. Você pode conhecer a estrutura do guia usando um exemplo inteiramente fictício.")) +
-      '</p><button class="button button-outline" type="button" id="demo-from-catalog">Abrir demonstração <span aria-hidden="true">↗</span></button></div>';
-    if (!state.failed && !list.length && !state.courses.length) {
-      $("catalog-results").insertAdjacentHTML("beforeend",
-        '<a class="course-card demo-course-row" href="#curso/demonstracao"><span class="label">ex.</span><div class="course-card-main">' +
-        '<span class="course-type">Exemplo fictício · não representa uma oferta</span><h2>curso demonstrativo</h2></div>' +
-        '<span class="course-meta">Treine a cópia dos campos</span><span class="card-arrow" aria-hidden="true">↗</span></a>');
-    }
-    const demoButton = $("demo-from-catalog");
-    if (demoButton) demoButton.addEventListener("click", () => { location.hash = "#curso/demonstracao"; });
+    $("catalog-count").textContent = list.length ? list.length + (list.length===1?" curso":" cursos") : "";
+    const rows = list.map((c,i) =>
+      '<a class="course-card" href="#curso/' + encodeURIComponent(c.id) +
+      '"><span class="label">' + String(i+1).padStart(2,"0") +
+      '</span><div class="course-card-main"><span class="course-type">' +
+      escapeHTML(c.nivel) + (c.tipo ? " / " + escapeHTML(c.tipo) : "") +
+      '</span><h2>' + escapeHTML(c.nome) + '</h2></div><span class="course-meta">' +
+      escapeHTML(c.campi.join(" · ")) +
+      '</span><span class="card-arrow" aria-hidden="true">↗</span></a>').join("");
+    const hasFilter = Boolean(state.query || state.level || state.campus);
+    const noCourses = !state.courses.length;
+    const emptyLabel = state.failed ? "Catálogo indisponível." :
+      hasFilter || !noCourses ? "Nenhum resultado." : "Nenhum curso publicado.";
+    const demoRow = !state.failed && noCourses && !hasFilter
+      ? '<a class="course-card demo-course-row" href="#curso/demonstracao">' +
+        '<span class="label">ex.</span><div class="course-card-main">' +
+        '<span class="course-type">Exemplo fictício</span><h2>Demonstração</h2></div>' +
+        '<span class="card-arrow" aria-hidden="true">↗</span></a>' : "";
+    $("catalog-results").innerHTML = list.length ? rows :
+      '<p class="empty-state">' + emptyLabel + '</p>' + demoRow;
   }
   function route() {
     const hash = decodeURIComponent(location.hash.slice(1) || "catalogo");

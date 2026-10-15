@@ -54,7 +54,7 @@ test("a home é o catálogo e não uma página de apresentação", () => {
 
 test("o catálogo inclui somente roteiros autorizados com pendências explícitas", () => {
   assert.equal(json.schemaVersion,1);
-  assert.equal(json.courses.length,7);
+  assert.equal(json.courses.length,8);
   assert.ok(json.courses.every(c=>c.publicacao_autorizada===true && c.status==="em_validacao" && c.revisao_coordenacao===true && c.pendencias.length>0));
   const h=testContext();
   assert.ok(json.courses.every(c=>h.isApprovedCourse(c)));
@@ -100,7 +100,7 @@ test("campos incompletos aparecem identificados sem botão de copiar", () => {
   assert.match(h.editorBlock(gallery,3),/Informação incompleta/);
 });
 
-test("catálogo com sete cursos reais inclui todos e possui filtros", () => {
+test("catálogo com oito cursos reais inclui todos e possui filtros", () => {
   const h=testContext();
   h.state.courses=json.courses;
   h.renderCatalog();
@@ -166,6 +166,22 @@ test("reconhecimentos, pesquisa e continuidade aparecem após galeria", () => {
     assert.equal(field.value,"Informação incompleta");
     assert.doesNotMatch(h.editorBlock(pending,23),/data-copy-field=/);
   }
+});
+
+test("Técnico em Administração Integrado agrupa 8 campi sem misturar o bacharelado", () => {
+  const h=testContext();
+  const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
+  const bach=json.courses.find(c=>c.id==="administracao-bacharelado");
+  assert.ok(tec && bach);
+  assert.equal(tec.campi.length,8);
+  assert.equal(bach.campi.length,6);
+  assert.equal(tec.nivel,"Técnico");
+  assert.equal(tec.tipo,"Integrado");
+  assert.equal(bach.tipo,"Bacharelado");
+  assert.ok(h.isApprovedCourse(tec));
+  const table=tec.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
+  assert.equal(table.linhas.length,8);
+  assert.ok(tec.blocos.find(b=>b.tipo==="faq").itens.some(x=>x.pergunta==="Sabará"&&x.resposta.includes("16,67%")));
 });
 
 test("Texto é um único campo: título e parágrafos com negrito", () => {

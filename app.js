@@ -144,16 +144,18 @@
       raw("Imagem " + (i+1) + " · Texto alternativo", x.alt),
       raw("Imagem " + (i+1) + " · URL de referência", x.url, true)
     ]);
-    if (b.tipo === "tabela") return [
-      ...b.colunas.map((col,j) => raw("Cabeçalho · Coluna " + (j+1), col)),
-      ...b.linhas.flatMap((row,i) => row.map((cell,j) => raw(
-        "Linha " + (i+1) + " · " + b.colunas[j],cell)))
-    ];
+    if (b.tipo === "tabela") return [{
+      label:"Tabela",
+      value:blockCopy(b),
+      rich:true,
+      html:tableHTML(b),
+      table:true
+    }];
     return [];
   }
   function fieldHTML(field, blockIndex, fieldIndex) {
     const content = field.rich
-      ? '<div class="field-example rich-example">' + (field.label === "Título da seção" ? field.html : field.html) + '</div>'
+      ? '<div class="field-example rich-example' + (field.table ? ' table-wrap editor-table' : '') + '">' + field.html + '</div>'
       : '<div class="field-example text-example">' + escapeHTML(field.value || "—") + '</div>';
     const action = field.setting
       ? '<span class="editor-setting" aria-label="Selecionar esta opção no Wagtail">selecionar no Wagtail</span>'
@@ -191,8 +193,8 @@
   async function performCopy(button, plain, html = "") {
     try {
       const result = await copyValue(plain, html);
-      notify(result === "rich" ? "Campo copiado com formatação." :
-        html ? "Campo copiado como texto simples; confira a formatação no Wagtail." : "Campo copiado.");
+      notify(result === "rich" ? "Copiado com formatação." :
+        html ? "Copiado como texto simples; confira o resultado no Wagtail." : "Copiado.");
       const previous = button.innerHTML;
       button.textContent = "Copiado ✓";
       setTimeout(() => { if (button.isConnected) button.innerHTML = previous; }, 1700);

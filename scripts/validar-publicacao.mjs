@@ -20,7 +20,13 @@ const vazioOuString = (x, max) => x === undefined || (typeof x === "string" && x
 const urlSegura = (url) => {
   try {
     const u = new URL(url);
-    return u.protocol === "https:" || (u.protocol === "mailto:" && u.pathname.includes("@"));
+    if (u.protocol === "mailto:") return u.pathname.includes("@");
+    if (u.protocol !== "https:") return false;
+    const host = u.hostname.toLowerCase();
+    // Não publicar links antigos para o portal IFMG; usar portal.ifmg.edu.br.
+    if ((host === "ifmg.edu.br" || host.endsWith(".ifmg.edu.br")) &&
+        host !== "portal.ifmg.edu.br") return false;
+    return true;
   } catch { return false; }
 };
 const denuncia = (path, msg) => erros.push(path + ": " + msg);

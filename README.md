@@ -22,19 +22,20 @@ Paleta alinhada ao guia: no tema escuro, fundo `#050505` e acento `#78c981`; no 
 
 - **Página inicial = catálogo:** busca por curso, filtros de nível e campus, com resultados em lista. Não há introdução intermediária antes dos cursos.
 - **Curso demonstrativo:** exemplo inteiramente fictício acessível no catálogo vazio, sem confusão com ofertas reais do IFMG.
-- **Copiar para o Wagtail (padrão):** campos separados por tipo de bloco, orientação ao lado do conteúdo, prévia e botão de cópia por campo.
-- **Link único:** prévia do resultado e campos independentes para **estilo**, **título/texto do link**, **descrição/texto de apoio** e **URL**, com ações de cópia individuais.
-- **Texto e Introdução:** cópia com formatação HTML (negrito, parágrafos, listas; título em `<h2>` quando apropriado), além de cópia sem formatação.
+- **Copiar para o Wagtail (padrão):** roteiro numerado com cada número destacado na margem, nome do bloco e apenas os campos relevantes. Não repetir título, subtítulo e orientação que apenas descrevem o óbvio.
+- **Link único:** informar o **estilo** como configuração a selecionar no Wagtail; botões **Copiar** individuais para **título/texto do link**, **descrição** e **URL**, sem simulação de como o link aparece no portal.
+- **Texto e Introdução:** um único botão **Copiar** por campo, tentando preservar automaticamente negrito, parágrafos, listas e título quando suportado pelo Wagtail. O título e os parágrafos do bloco Texto vão juntos no mesmo campo Rich Text.
+- **Tabela:** mostrar a tabela inteira e um único botão **Copiar tabela**. O clipboard inclui `text/html` com marcação `<table>` e `text/plain` tabulado (TSV), para colar direto no componente Tabela do Wagtail. **Não** decompor a tabela em cabeçalhos e células individuais. Confirmar o comportamento no CMS real.
 - **Visualizar página:** permite conferir hierarquia, ritmo e ordem de `Texto`, `Introdução`, `Tabela`, `FAQ`, `Links`, `Link único` e `Galeria`.
 - **Como usar:** instruções para os editores e link para o manual principal do Wagtail.
 
 ### Cópia com formatação
 
-Os valores de campos Rich Text são construídos a partir do texto aprovado, com notação **`**negrito**`** e **`==destaque==`**, convertidas em HTML seguro; na área de transferência os destaques também são tratados como negrito. O botão **copiar formatado** utiliza a API `ClipboardItem` para enviar simultaneamente `text/html` e `text/plain`. Quando o navegador não permite copiar HTML, o sistema tenta copiar somente o texto simples e anuncia essa limitação. O botão **copiar texto** não aplica formatação. Os títulos de seção e textos podem ser copiados individualmente; quando fizer sentido, há ação para o bloco inteiro.
+O botão **Copiar** utiliza a API `ClipboardItem` para enviar `text/html` e `text/plain` simultaneamente quando o campo admite formatação. Os valores Rich Text usam a notação `**negrito**` e `==destaque==`, convertidas em HTML seguro; os destaques são copiados como negrito. Se a API não permitir HTML, a aplicação tenta copiar texto simples. No bloco `Texto`, título e parágrafos são enviados **juntos** para o mesmo campo Rich Text, incluindo `<h2>` quando houver título.
 
 **Importante:** a cópia HTML não altera o Wagtail e **não garante** que todos os estilos sobreviverão à colagem. O comportamento depende da configuração do campo Rich Text, do navegador e das regras do editor. O editor deve conferir o resultado e aplicar no Wagtail os estilos que não forem aceitos. O recurso não produz HTML bruto para ser colado no campo de URL.
 
-Para **Link único**, há um exemplo visual clicável e ações individuais para título/texto do link, descrição e URL. Cada botão copia **o valor do campo**, e não um texto explicativo contendo vários valores juntos.
+Para **Link único**, não há prévia decorativa: o estilo aparece como valor a selecionar e título, descrição e URL aparecem como campos independentes para cópia.
 
 O bloco `Introdução` **não é uma síntese obrigatória** do parágrafo anterior: ele destaca atributos relevantes à decisão do estudante, selecionados à luz da pesquisa comparativa e sustentados por evidências. A alternância entre blocos organiza o ritmo visual. Título e parágrafos pertencem ao **mesmo** bloco `Texto` quando são do mesmo tipo; o `Texto` isolado como título cabe quando o próximo componente é uma tabela, FAQ, galeria ou destaque.
 

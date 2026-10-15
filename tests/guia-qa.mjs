@@ -46,13 +46,25 @@ test("a home é o catálogo e não uma página de apresentação", () => {
   assert.match(html,/id="home-view"/);
   assert.doesNotMatch(html,/id="catalog-view"/);
   assert.match(html,/id="catalog-filters"/);
-  assert.match(html,/>cursos<span class="period">\.<\/span>/);
+  assert.match(html,/<h1>cursos<\/h1>/);
+  assert.match(html,/<h1>como usar<\/h1>/);
+  assert.match(html,/guiaportalifmg\/#\/04%20-%20Sou%20editor\/15%20-%20Sou%20editor/);
   assert.doesNotMatch(html,/Encontre o curso, escolha o bloco/);
 });
 
-test("o catálogo público começa vazio e mantém fronteira de publicação", () => {
+test("o catálogo inclui somente roteiros autorizados com pendências explícitas", () => {
   assert.equal(json.schemaVersion,1);
-  assert.deepEqual(json.courses,[]);
+  assert.equal(json.courses.length,3);
+  assert.ok(json.courses.every(c=>c.publicacao_autorizada===true && c.status==="em_validacao" && c.revisao_coordenacao===true && c.pendencias.length>0));
+  const h=testContext();
+  assert.ok(json.courses.every(c=>h.isApprovedCourse(c)));
+  assert.equal(h.isApprovedCourse({...json.courses[0],publicacao_autorizada:false}),false);
+  assert.equal(h.isApprovedCourse({...json.courses[0],pendencias:[]}),false);
+  assert.equal(h.isApprovedCourse({...json.courses[0],status:"pendente"}),false);
+});
+
+test("a demonstração fictícia não se mistura aos cursos reais", () => {
+  assert.equal(json.schemaVersion,1);
   const h=testContext();
   assert.equal(h.isApprovedCourse(h.demo),false);
 });
@@ -71,6 +83,37 @@ test("a tela vazia é breve e a demonstração é explicitamente fictícia", () 
   const filtered=h.elements.get("catalog-results").innerHTML;
   assert.match(filtered,/Nenhum resultado\./);
   assert.doesNotMatch(filtered,/href="#curso\/demonstracao"/);
+});
+
+test("campos incompletos aparecem identificados sem botão de copiar", () => {
+  const h=testContext();
+  const course=json.courses.find(c=>c.id==="direito-bacharelado-arcos");
+  const dados=course.blocos.find(b=>b.tipo==="dados-basicos");
+  const fields=h.editorFields(dados);
+  const idx=fields.findIndex(x=>x.value==="Informação incompleta");
+  assert.ok(idx>=0);
+  assert.match(h.fieldHTML ? h.fieldHTML(fields[idx],0,idx) : h.editorBlock(dados,0),/Informação incompleta/);
+  const displayed=h.editorBlock(dados,0);
+  assert.match(displayed,/Precisa de validação/);
+  const gallery=course.blocos.find(b=>b.tipo==="galeria");
+  assert.equal(gallery.itens.length,0);
+  assert.match(h.editorBlock(gallery,3),/Informação incompleta/);
+});
+
+test("catálogo com três cursos reais inclui todos e possui filtros", () => {
+  const h=testContext();
+  h.state.courses=json.courses;
+  h.renderCatalog();
+  const text=h.elements.get("catalog-results").innerHTML;
+  assert.match(text,/Técnico em Edificações Integrado/);
+  assert.match(text,/Técnico em Logística/);
+  assert.match(text,/Direito/);
+  assert.doesNotMatch(text,/Exemplo fictício/);
+  h.state.campus="Arcos";
+  h.renderCatalog();
+  const onlyArcos=h.elements.get("catalog-results").innerHTML;
+  assert.match(onlyArcos,/Direito/);
+  assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
 });
 
 test("Texto é um único campo: título e parágrafos com negrito", () => {

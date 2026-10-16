@@ -147,6 +147,9 @@
         html:richHTML(b.conteudo || "", b.titulo || "")}] : [];
     }
     if (b.tipo === "introducao") return [rich("Conteúdo em destaque", b.conteudo)];
+    // Mesmo componente Wagtail para dois usos editoriais distintos:
+    // "Informações dos campi" tem rótulos "Campus ..." em Pergunta;
+    // o FAQ de candidatos contém perguntas reais. Não criar um bloco Texto.
     if (b.tipo === "faq") return b.itens
       .filter(x => x.pergunta?.trim() && x.resposta?.trim() &&
         !/^informação incompleta$/i.test(x.pergunta.trim()) &&
@@ -203,7 +206,7 @@
     return '<section class="block-card" id="bloco-' + i + '" aria-labelledby="block-heading-' + i + '">' +
       '<span class="block-badge" aria-hidden="true">' + String(i+1).padStart(2,"0") + '</span>' +
       '<header class="block-card-header"><h2 class="block-card-title" id="block-heading-' + i +
-      '">' + escapeHTML(blockName[b.tipo]) + '</h2></header>' +
+      '">' + escapeHTML(b.tipo === "faq" && b.titulo === "Informações dos campi" ? "FAQ · Informações dos campi" : blockName[b.tipo]) + '</h2></header>' +
       '<div class="editor-fields">' + fields.map((field,j) => fieldHTML(field,i,j)).join("") + '</div>' +
       '</section>';
   }

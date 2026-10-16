@@ -877,7 +877,7 @@ test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar prem
   const c=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
   const research=sectionText(c,"Pesquisa, extensão e oportunidades");
   const works=sectionText(c,"Experiências e conquistas dos estudantes");
-  assert.ok(research.startsWith("Em **Arcos**"));
+  assert.ok(research.startsWith("Em **2026**, o **Campus Arcos**"));
   assert.ok(works.startsWith("Em **Betim**"));
   assert.match(research,/Em \*\*Betim\*\*[\s\S]*impressão 3D/);
   assert.match(research,/nos cursos de Engenharia Mecânica e Controle e Automação/);
@@ -888,8 +888,8 @@ test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar prem
   assert.equal(gallery.itens.length,0);
   const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens;
   const researchAnswer=faq.find(x=>x.pergunta.includes("projetos de pesquisa")).resposta;
-  assert.match(researchAnswer,/Em \*\*Betim\*\*[\s\S]*pesquisas/);
-  assert.match(researchAnswer,/seleções de cada período/);
+  assert.match(researchAnswer,/Em \*\*Betim\*\*[\s\S]*360 horas de extensão/);
+  assert.match(researchAnswer,/A participação em pesquisas e bolsas é organizada por campus/);
 });
 
 test("FAQ não repete duração e matérias que já aparecem nos dados básicos", () => {

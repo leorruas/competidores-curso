@@ -1423,7 +1423,8 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "tecnico-em-biotecnologia-integrado":2,
     "tecnico-em-eletromecanica-integrado":2,
     "tecnico-em-quimica-integrado":5,
-    "tecnico-em-mecatronica-integrado":4
+    "tecnico-em-mecatronica-integrado":4,
+    "tecnico-em-automacao-industrial-integrado":9
   };
   for(const c of json.courses){
     const galleries=c.blocos.filter(b=>b.tipo==="galeria");
@@ -1830,7 +1831,7 @@ test("F7.2: Técnico em Química de Betim tem pesquisas comprovadas e estágio n
 });
 
 test("F7.2: Mecatrônica Ibirité mantém curso integrado e três experiências comprovadas", () => {
-  assert.equal(json.courses.length,18);
+  assert.ok(json.courses.length>=18,"Mecatrônica e cursos anteriores preservados");
   const c=json.courses.find(x=>x.id==="tecnico-em-mecatronica-integrado");
   assert.ok(c);
   assert.equal(c.nome,"Técnico em Mecatrônica");
@@ -1874,6 +1875,56 @@ test("F7.2: Mecatrônica Ibirité mantém curso integrado e três experiências 
   for(const field of ["validacao","pendencias","instrucao"])assert.ok(!Object.hasOwn(c,field));
 });
 
+test("F7.2: Automação Industrial integrado consolida cinco campi e experiências 2025-26", () => {
+  assert.equal(json.courses.length,19);
+  const c=json.courses.find(x=>x.id==="tecnico-em-automacao-industrial-integrado");
+  assert.ok(c);
+  assert.deepEqual(c.campi,["Betim","Ibirité","Ipatinga","Itabirito","Ouro Preto"]);
+  assert.equal(c.tipo,"Integrado ao Ensino Médio");
+  assert.equal(c.status,"em_validacao");
+  assert.equal(c.publicacao_autorizada,true);
+  const basic=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
+  assert.equal(basic["Duração"],"3 anos");
+  assert.equal(basic["Carga horária total"],"Informação incompleta");
+  assert.equal(basic["Modalidade"],"Presencial (Ibirité: 8,3% EaD)");
+  const camp=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
+  assert.deepEqual(camp.linhas.map(x=>x[0]),c.campi);
+  assert.equal(camp.linhas.find(x=>x[0]==="Betim")[3],"coord.tec.automacao@ifmg.edu.br");
+  assert.equal(camp.linhas.find(x=>x[0]==="Ibirité")[2],"Presencial (8,3% EaD)");
+  assert.equal(camp.linhas.find(x=>x[0]==="Ipatinga")[3],"Informação incompleta");
+  assert.equal(camp.linhas.find(x=>x[0]==="Itabirito")[3],"aut.itabirito@ifmg.edu.br");
+  assert.equal(camp.linhas.find(x=>x[0]==="Ouro Preto")[3],"Informação incompleta");
+  const local=c.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
+  assert.deepEqual(local.itens.map(x=>x.pergunta),c.campi.map(x=>"Campus "+x));
+  assert.ok(local.itens.find(x=>x.pergunta==="Campus Betim").resposta.includes("não obrigatórios"));
+  const cont=c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG");
+  assert.deepEqual(c.blocos.slice(cont+1,cont+5).map(x=>x.titulo||x.tipo),["Graduação","tabela","Pós-graduação","tabela"]);
+  assert.deepEqual(c.blocos[cont+2].linhas.map(x=>x[0]),["Engenharia de Controle e Automação","Engenharia Elétrica","Engenharia Mecânica"]);
+  const j=c.blocos.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
+  const events=c.blocos.slice(j,j+16);
+  assert.equal(events.length,16);
+  const evidence=["Tiberina Automotive","68ª Jornada de Foguetes","educação antirracista","88ª Jornada de Foguetes","Menção Oral","exposição de robótica","OBMEP","Bolsas de Excelência Usiminas"];
+  evidence.forEach((term,i)=>{
+    assert.equal(events[2*i].tipo,"texto");
+    assert.ok(events[2*i].conteudo.includes(term),term);
+    assert.equal(events[2*i+1].tipo,"galeria",term+" precisa de galeria própria");
+  });
+  assert.match(events[0].conteudo,/Betim/);
+  assert.match(events[10].conteudo,/Ouro Preto/);
+  assert.match(events[12].conteudo,/Ipatinga/);
+  assert.equal(c.blocos.filter(x=>x.tipo==="galeria").length,9);
+  const faq=c.blocos.find(x=>x.tipo==="faq"&&!x.titulo);
+  const stage=faq.itens.find(x=>x.pergunta.includes("estágio"));
+  assert.match(stage.resposta,/No \*\*Campus Betim\*\*/);
+  assert.match(stage.resposta,/132 horas/);
+  assert.match(stage.resposta,/demais campi/);
+  assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+  assert.match(c.blocos.at(-2).conteudo,/ensino fundamental/);
+  assert.doesNotMatch(c.blocos.at(-2).conteudo,/2026|2027|inscrições abertas/i);
+  assert.doesNotMatch(JSON.stringify(c),/PPCAutomacaoAprovadopelocolegiado|isabela\.fioravante|relatorio_perfil_estudantes/i);
+  for(const key of ["validacao","pendencias","instrucao","revisao_coordenacao"])assert.ok(!Object.hasOwn(c,key));
+});
+
 test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {
   const relevantTitles=new Set(["Projetos e experiências acadêmicas","Projetos e experiências","Práticas e experiências","Pesquisa, extensão e oportunidades","Pesquisa, extensão e aprendizagem prática","Experiências e conquistas dos estudantes","Experiências de aprendizagem em Direito"]);
   const oldDate=/\b20(?:0\d|1\d|2[0-4])\b/;
@@ -1886,5 +1937,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),57);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),66);
 });

@@ -16,7 +16,7 @@ const origins = [
 const existing = [...new Set(data.courses.flatMap(c => c.blocos.flatMap(b =>
   b.tipo === "links" ? b.itens.map(i => i.url) : b.tipo === "link-unico" ? [b.link.url] : []
 )).filter(u => new URL(u).hostname === host))];
-const targets = [...new Set([...origins,...existing])];
+const targets = [...new Set([...origins,...existing,"https://www.ifmg.edu.br/portal/cursos/pos-graduacao-1/"])];
 const result = {date:new Date().toISOString(),host,context:"Verificação técnica F4.4; URLs candidatas do sitemap não estão aprovadas para publicação",dns:null,urls:[],candidateUrls:[]};
 try { result.dns = {ok:true,ipv4:await resolve4(host)}; }
 catch(e) { result.dns = {ok:false,reason:e.code || e.message}; }

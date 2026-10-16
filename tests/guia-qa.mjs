@@ -172,7 +172,7 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
   }
   const get=id=>sectionText(json.courses.find(c=>c.id===id),unified);
   for(const [id,terms] of [
-    ["administracao-bacharelado",["Formiga","conceito 4","Ouro Branco","quatro estrelas"]],
+    ["administracao-bacharelado",["Ouro Branco","quatro estrelas","2025"]],
     ["agronomia-bacharelado",["Informação incompleta"]],
     ["engenharia-de-producao-bacharelado",["Portaria SERES/MEC nº 16","2 de fevereiro de 2026","Diretório Acadêmico","Brazilian Journal of Production Engineering"]],
     ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]

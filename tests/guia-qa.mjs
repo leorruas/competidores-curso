@@ -160,6 +160,51 @@ test("F4.4: Técnico Administração diferencia diploma técnico, graduação e 
   assert.doesNotMatch(text,/2025|2026|2027/);
 });
 
+test("F4.5: Edificações tem continuidade tabular verificável e copiável", () => {
+  const c=json.courses.find(x=>x.id==="tecnico-em-edificacoes-integrado");
+  assert.ok(c);
+  assert.equal(c.blocos.filter(b=>b.titulo==="Continue seus estudos no IFMG").length,1);
+  assert.ok(!c.blocos.some(b=>b.titulo==="Continuidade dos estudos"),"Não duplicar a seção antiga");
+  const idx=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+  assert.deepEqual(c.blocos.slice(idx,idx+5).map(b=>[b.tipo,b.titulo || ""]),[
+    ["texto","Continue seus estudos no IFMG"],["texto","Graduação"],["tabela",""],
+    ["texto","Pós-graduação"],["tabela",""]
+  ]);
+  const intro=c.blocos[idx].conteudo;
+  assert.ok(intro.indexOf("ensino médio")<intro.indexOf("graduação"));
+  assert.ok(intro.indexOf("graduação")<intro.indexOf("pós-graduação"));
+  assert.match(intro,/diploma técnico, sozinho, não permite ingresso direto/);
+  assert.doesNotMatch(intro,/2025|2026|2027|inscrições abertas|vagas abertas|bolsa garantida/);
+
+  const grad=c.blocos[idx+2],pos=c.blocos[idx+4];
+  const cols=["Curso","Campus","Relação com Edificações"];
+  assert.deepEqual(grad.colunas,cols);
+  assert.deepEqual(pos.colunas,cols);
+  assert.equal(grad.linhas.length,4);
+  assert.equal(pos.linhas.length,5);
+  assert.ok(grad.linhas.some(row=>row[0]==="Bacharelado em Arquitetura e Urbanismo"&&row[1]==="Santa Luzia"));
+  assert.deepEqual(grad.linhas.filter(row=>row[0]==="Bacharelado em Engenharia Civil").map(row=>row[1]).sort(),
+    ["Governador Valadares","Piumhi","Santa Luzia"]);
+  const seg=pos.linhas.find(row=>row[0]==="Especialização em Engenharia de Segurança do Trabalho");
+  assert.equal(seg[1],"Governador Valadares");
+  assert.match(seg[2],/graduação em Engenharia, Arquitetura ou Agronomia/);
+  const patrimonio=pos.linhas.find(row=>row[0]==="Especialização em Gestão e Conservação do Patrimônio Cultural");
+  assert.equal(patrimonio[1],"Ouro Preto");
+  assert.match(patrimonio[2],/graduação compatível/);
+  for(const [name,campus] of [
+    ["Especialização em BIM: Projetos Aplicados às Edificações","Piumhi (EaD)"],
+    ["Especialização em Proteção e Defesa Civil","Santa Luzia (EaD)"],
+    ["Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental","Bambuí"]
+  ])assert.ok(pos.linhas.some(row=>row[0]===name&&row[1]===campus),name);
+  assert.ok([...grad.linhas,...pos.linhas].every(row=>row.length===3&&row.every(Boolean)));
+  const h=testContext();
+  assert.ok(h.isApprovedCourse(c));
+  assert.match(h.editorBlock(grad,idx+2),/Copiar tabela/);
+  assert.match(h.editorBlock(pos,idx+4),/Copiar tabela/);
+  assert.match(h.blockCopy(grad),/Curso\\tCampus\\tRelação com Edificações/);
+  assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+});
+
 test("F3.6: todos os oito cursos descrevem tarefas reais no Mundo do Trabalho", () => {
   assert.equal(json.courses.length,8);
   const expected=new Map([

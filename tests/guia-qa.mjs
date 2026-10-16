@@ -254,6 +254,57 @@ test("F4.5: Edificações tem continuidade tabular verificável e copiável", ()
   assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 
+test("F1B.9: áreas locais aparecem imediatamente após as tabelas de ofertas, separadas do FAQ", () => {
+  const h=testContext();
+  const specs=[
+    {id:"tecnico-em-edificacoes-integrado",tableTitle:"Onde o IFMG oferece Técnico em Edificações",
+     campi:["Congonhas","Governador Valadares","Ouro Preto","Piumhi","Santa Luzia"]},
+    {id:"tecnico-em-logistica-subsequente",tableTitle:"Onde o IFMG oferece Técnico em Logística",
+     campi:["Governador Valadares","Ribeirão das Neves"]}
+  ];
+  for(const {id,tableTitle,campi} of specs){
+    const c=json.courses.find(x=>x.id===id);
+    const i=c.blocos.findIndex(x=>x.titulo===tableTitle);
+    assert.ok(i>=0,id+": seção de ofertas");
+    const table=c.blocos[i+1];
+    assert.equal(table.tipo,"tabela",id+": ofertas seguidas por tabela");
+    assert.deepEqual(table.linhas.map(x=>x[0]),campi,id+": lista de campi");
+    const locals=c.blocos.slice(i+2,i+2+campi.length);
+    assert.deepEqual(locals.map(x=>x.titulo),campi.map(x=>"Campus "+x),id);
+    assert.ok(locals.every(x=>x.tipo==="texto"&&x.conteudo.length>100),id);
+    assert.ok(locals.every(x=>h.editorFields(x).length===2),id+": título e corpo copiáveis");
+    assert.ok(locals.every(x=>!/(informação incompleta|precisa de validação|confirmar com a coordenação)/i.test(x.conteudo)),id);
+    const nextFaq=c.blocos.findIndex((x,j)=>j>i+1+campi.length&&x.tipo==="faq");
+    assert.ok(nextFaq>i+1+campi.length,id+": FAQ deve vir depois dos blocos locais");
+    assert.ok(c.blocos.slice(i+2,i+2+campi.length).every(x=>x.tipo!=="faq"),id);
+    assert.ok(c.blocos[nextFaq].itens.every(x=>!campi.includes(x.pergunta)),id+": campus não é pergunta");
+    const header=c.blocos.findIndex((x,j)=>j>i+campi.length&&x.titulo==="Perguntas frequentes");
+    assert.ok(header>i+campi.length&&header<nextFaq,id+": FAQ independente");
+    assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+    assert.ok(h.isApprovedCourse(c),id);
+  }
+});
+
+test("F1B.9: informações locais verificadas continuam atribuídas ao campus certo", () => {
+  const ed=json.courses.find(x=>x.id==="tecnico-em-edificacoes-integrado");
+  const get=(c,campus)=>c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Campus "+campus)?.conteudo||"";
+  assert.match(get(ed,"Congonhas"),/solos, materiais de construção/);
+  assert.match(get(ed,"Governador Valadares"),/visitas técnicas/);
+  assert.match(get(ed,"Ouro Preto"),/3\\.460 horas/);
+  assert.match(get(ed,"Ouro Preto"),/0,86%/);
+  assert.match(get(ed,"Piumhi"),/componentes obrigatórios e optativos/);
+  assert.match(get(ed,"Santa Luzia"),/10,3%/);
+  const lg=json.courses.find(x=>x.id==="tecnico-em-logistica-subsequente");
+  assert.match(get(lg,"Governador Valadares"),/dois módulos/);
+  assert.match(get(lg,"Governador Valadares"),/encontro presencial/);
+  assert.match(get(lg,"Ribeirão das Neves"),/logística reversa/);
+  const table=lg.blocos.find((x,i)=>x.tipo==="tabela"&&lg.blocos[i-1]?.titulo==="Onde o IFMG oferece Técnico em Logística");
+  assert.ok(table);
+  assert.equal(table.linhas.find(x=>x[0]==="Governador Valadares").at(-1),"coordenacao.tslog.gv@ifmg.edu.br");
+  assert.equal(table.linhas.find(x=>x[0]==="Ribeirão das Neves").at(-1),"Informação incompleta");
+  assert.doesNotMatch(JSON.stringify(lg.blocos.filter(x=>x.tipo==="texto"&&x.titulo?.startsWith("Campus "))),/certificado de Assistente/);
+});
+
 test("F3.6: todos os oito cursos descrevem tarefas reais no Mundo do Trabalho", () => {
   assert.equal(json.courses.length,8);
   const expected=new Map([

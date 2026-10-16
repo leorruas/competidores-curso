@@ -1416,7 +1416,8 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "tecnico-em-administracao-integrado":3,
     "zootecnia-bacharelado":2,
     "medicina-veterinaria-bacharelado":2,
-    "arquitetura-e-urbanismo-bacharelado":3
+    "arquitetura-e-urbanismo-bacharelado":3,
+    "engenharia-metalurgica-bacharelado":3
   };
   for(const c of json.courses){
     const galleries=c.blocos.filter(b=>b.tipo==="galeria");
@@ -1550,7 +1551,7 @@ test("F7.2: Medicina Veterinária Bambuí tem dados, projetos comprovados e dois
 });
 
 test("F7.2: Arquitetura e Urbanismo Santa Luzia combina informações oficiais e três galerias", () => {
-  assert.equal(json.courses.length,11);
+  assert.ok(json.courses.length>=11,"Arquitetura e Urbanismo e seus predecessores preservados");
   const c=json.courses.find(x=>x.id==="arquitetura-e-urbanismo-bacharelado");
   assert.ok(c);
   assert.deepEqual(Array.from(c.campi),["Santa Luzia"]);
@@ -1583,6 +1584,43 @@ test("F7.2: Arquitetura e Urbanismo Santa Luzia combina informações oficiais e
   assert.ok(!Object.hasOwn(c,"validacao")&&!Object.hasOwn(c,"pendencias"));
 });
 
+test("F7.2: Engenharia Metalúrgica Ouro Branco tem oferta, laboratórios e três galerias contextualizadas", () => {
+  assert.equal(json.courses.length,12);
+  const c=json.courses.find(x=>x.id==="engenharia-metalurgica-bacharelado");
+  assert.ok(c);
+  assert.deepEqual(Array.from(c.campi),["Ouro Branco"]);
+  assert.equal(c.nivel,"Graduação");
+  assert.equal(c.status,"em_validacao");
+  const data=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
+  assert.equal(data["Turno"],"Noite");
+  assert.equal(data["Duração prevista"],"5 anos");
+  assert.equal(data["Carga horária total"],"3.612 horas");
+  assert.equal(data["PPC / matriz"],"Informação incompleta");
+  assert.equal(data["E-mail da coordenação"],"coord.graduacaoengenhariametalurgica.obr@ifmg.edu.br");
+  const campi=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
+  assert.deepEqual(Array.from(campi.linhas[0]),["Ouro Branco","Noite","Presencial","coord.graduacaoengenhariametalurgica.obr@ifmg.edu.br"]);
+  const labs=c.blocos.findIndex(b=>b.titulo==="Práticas e laboratórios");
+  assert.match(c.blocos[labs].conteudo,/três laboratórios de Metalurgia/);
+  assert.equal(c.blocos[labs+1].tipo,"galeria");
+  const research=c.blocos.findIndex(b=>b.titulo==="Pesquisa, extensão e oportunidades");
+  assert.match(c.blocos[research].conteudo,/parceria com a Gerdau/);
+  assert.match(c.blocos[research].conteudo,/sete projetos/);
+  assert.equal(c.blocos[research+1].tipo,"galeria");
+  assert.match(c.blocos[research+2].conteudo,/Office Jr/);
+  assert.equal(c.blocos[research+3].tipo,"galeria");
+  assert.equal(c.blocos.filter(b=>b.tipo==="galeria").length,3);
+  const achievements=c.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes");
+  assert.equal(achievements.conteudo,"Informação incompleta","não inventar prêmio nem concluir projetos anunciados");
+  assert.doesNotMatch(c.blocos[research].conteudo,/sete projetos (?:concluídos|executados)/i);
+  const continuation=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+  assert.deepEqual(c.blocos.slice(continuation+1,continuation+3).map(b=>b.titulo||b.tipo),["Pós-graduação","tabela"]);
+  assert.equal(c.blocos[continuation+2].linhas[0][0],"Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental");
+  assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+  assert.match(c.blocos.at(-1).conteudo,/Crea/);
+  assert.doesNotMatch(c.blocos.at(-2).conteudo,/2026|2027|inscrições abertas/i);
+  for(const k of ["validacao","pendencias","instrucao","revisao_coordenacao"]) assert.ok(!Object.hasOwn(c,k));
+});
+
 test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {
   const relevantTitles=new Set(["Projetos e experiências acadêmicas","Projetos e experiências","Práticas e experiências","Pesquisa, extensão e oportunidades","Pesquisa, extensão e aprendizagem prática","Experiências e conquistas dos estudantes","Experiências de aprendizagem em Direito"]);
   const oldDate=/\b20(?:0\d|1\d|2[0-4])\b/;
@@ -1595,5 +1633,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),35);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),38);
 });

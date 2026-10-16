@@ -4731,6 +4731,320 @@
           "conteudo": "O técnico em Eletromecânica pode **auxiliar na montagem, instalação, inspeção e manutenção de sistemas que combinam peças mecânicas e componentes elétricos**, acompanhando o funcionamento de motores, equipamentos e máquinas. Pode utilizar instrumentos de medição, interpretar desenhos e esquemas técnicos, registrar condições de funcionamento e apoiar a identificação de defeitos.\n\nEm uma indústria, por exemplo, pode acompanhar rotinas de manutenção de motores e sistemas de acionamento, apoiar a troca de componentes, verificar parâmetros e colaborar em atividades de prevenção de falhas. Na manutenção de máquinas agrícolas, pode apoiar análises de sistemas mecânicos, elétricos e de comando, conforme sua habilitação.\n\nEssas atividades podem ocorrer em indústrias, oficinas, empresas de manutenção, serviços técnicos e unidades de produção, respeitando as **normas de segurança**, os limites das atribuições profissionais e a supervisão exigida para cada procedimento."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-quimica-integrado",
+      "nome": "Técnico em Química",
+      "nivel": "Técnico",
+      "tipo": "Integrado ao Ensino Médio",
+      "campi": [
+        "Betim"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Química"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Betim"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.210 horas"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "coord.tec.quimica.betim@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Química",
+          "conteudo": "O **Técnico em Química** reúne o ensino médio e a formação profissional em um mesmo percurso. No **Campus Betim**, os estudantes aprendem a realizar análises, interpretar resultados, compreender processos químicos industriais e trabalhar com qualidade e segurança no laboratório.\n\nA formação é presencial, em período integral, com duração de **três anos**."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Da coleta de amostras à análise de materiais: conheça experimentos, técnicas químicas e processos usados para verificar a qualidade de produtos e do ambiente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A formação é destinada a quem **concluiu o ensino fundamental** e quer cursar o ensino médio junto com uma habilitação técnica. O curso é uma opção para quem se interessa por **Química, Matemática, experimentos, investigação científica e processos industriais**."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação integra as disciplinas do ensino médio às técnicas usadas para compreender substâncias, medir propriedades químicas, executar análises e acompanhar processos industriais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Formação geral",
+              "Língua Portuguesa, Matemática, Física, Biologia, História, Geografia e outros componentes do ensino médio."
+            ],
+            [
+              "Química geral e inorgânica",
+              "Substâncias, reações químicas, cálculos e experimentos com materiais."
+            ],
+            [
+              "Química orgânica e físico-química",
+              "Estrutura e propriedades de compostos e fenômenos físico-químicos."
+            ],
+            [
+              "Química analítica",
+              "Preparação e análise de amostras, medições, interpretação e registro dos resultados."
+            ],
+            [
+              "Química ambiental e microbiologia",
+              "Análises relacionadas à água, ao solo, a materiais e ao ambiente."
+            ],
+            [
+              "Processos industriais e qualidade",
+              "Controle de matérias-primas, etapas de produção, boas práticas e registros técnicos."
+            ],
+            [
+              "Segurança e gestão",
+              "Biossegurança, prevenção de riscos, organização do laboratório e empreendedorismo."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O curso reúne **experimentos e análises laboratoriais** de Química, com atividades sobre propriedades de materiais, preparo de soluções, medições e técnicas de controle de qualidade. O **Campus Betim** dispõe de infraestrutura para aulas práticas em laboratórios e para projetos de pesquisa, segundo a organização curricular."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Aulas práticas e laboratórios do Técnico em Química · Betim",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Química",
+          "conteudo": "O **Campus Betim** oferece o **Técnico em Química** integrado ao ensino médio, de forma presencial, com aulas pela manhã e à tarde. A formação é organizada em **três anos**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Betim",
+              "Manhã e tarde",
+              "Presencial",
+              "coord.tec.quimica.betim@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Betim",
+              "resposta": "A formação combina disciplinas do ensino médio com estudos técnicos de análises e processos químicos. As atividades ocorrem em período integral, ao longo de **três anos**, com componentes práticos em laboratório e oportunidades de pesquisa e extensão."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e bolsas",
+          "conteudo": "O **Campus Betim** desenvolve projetos de **iniciação científica, extensão e divulgação de conhecimentos**. Estudantes do Técnico em Química já participaram de pesquisa em eletroquímica, estudos sobre educação antirracista e apresentação de trabalhos científicos em universidades e encontros acadêmicos. A participação em novos projetos depende da organização de cada equipe."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Química"
+          ],
+          "linhas": [
+            [
+              "Licenciatura em Química",
+              "Betim",
+              "Aprofundamento em conhecimentos químicos e formação para o ensino de Química."
+            ],
+            [
+              "Engenharia de Controle e Automação",
+              "Betim",
+              "Tecnologias de controle, instrumentação e automação de sistemas industriais."
+            ],
+            [
+              "Engenharia Metalúrgica",
+              "Ouro Branco",
+              "Materiais, transformações físico-químicas, processos industriais e análises."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Química"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisas em gestão ambiental, tecnologias sustentáveis e processos industriais, como continuidade possível após uma graduação compatível."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **outubro de 2025**, uma estudante do **terceiro ano do Técnico em Química do Campus Betim** teve seu trabalho reconhecido entre as melhores apresentações orais na área de **Eletroquímica e Eletroanalítica** do **37º Encontro Regional da Sociedade Brasileira de Química**, realizado em Ouro Preto. A pesquisa utilizou o software **Scilab** para simular o mecanismo de reações EQEQ e estudar métodos de otimização."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa em eletroquímica premiada na SBQ-MG · Betim · outubro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **setembro de 2025**, duas estudantes do **terceiro ano do Técnico em Química** participaram do **Congresso Brasileiro de Pesquisadores/as Negros/as**, em Ouro Preto, apresentando pesquisa sobre **ações afirmativas e educação antirracista** nos currículos dos cursos técnicos do Campus Betim. O estudo envolveu também uma estudante de Automação Industrial."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa em educação antirracista apresentada em congresso · Betim · setembro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **agosto de 2026**, uma estudante do **Técnico Integrado em Química** e um estudante de Automação Industrial representaram o **Campus Betim** na **88ª Jornada de Foguetes**. A dupla conquistou o **vice-campeonato** na turma em que competiu; ambos receberam **medalhas de ouro na Olimpíada Brasileira de Foguetes de 2026**. A participação reuniu atividades de construção e lançamento de foguetes e troca de experiências com estudantes de outras instituições."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Vice-campeonato na Jornada de Foguetes · Betim · agosto de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **junho de 2026**, uma estudante do **Técnico em Química** apoiou as atividades do projeto de extensão **IF Sempre Aberto**, durante a visita de **32 estudantes do nono ano** de uma escola municipal ao Campus Betim. A programação apresentou espaços, laboratórios, cursos e experiências da formação técnica aos visitantes."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto de extensão IF Sempre Aberto · Betim · junho de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Como funciona o curso integrado ao ensino médio?",
+              "resposta": "Você cursa as disciplinas do ensino médio e os componentes técnicos de Química no mesmo percurso, durante **três anos**, em período integral."
+            },
+            {
+              "pergunta": "Que atividades são realizadas no laboratório?",
+              "resposta": "A formação inclui experimentos, preparo de soluções, análises químicas, medidas de propriedades, interpretação de resultados e cuidados de segurança em laboratório."
+            },
+            {
+              "pergunta": "O estágio e o TCC são obrigatórios?",
+              "resposta": "**Não. O estágio supervisionado e o TCC são não obrigatórios** na organização curricular do curso. Quem optar pelo estágio deve realizá-lo enquanto estiver matriculado, com aprovação e acompanhamento institucional. O estágio não substitui a carga horária regular do curso; a proposta precisa ter **pelo menos 132 horas** para reconhecimento."
+            },
+            {
+              "pergunta": "Posso participar de pesquisa e extensão?",
+              "resposta": "Sim. Estudantes de Química do campus já participaram de iniciação científica e de projetos de divulgação de conhecimento. A participação depende dos projetos, das orientações docentes e das oportunidades existentes."
+            },
+            {
+              "pergunta": "Que graduações do IFMG se relacionam com Química?",
+              "resposta": "Você pode concorrer a cursos superiores como **Licenciatura em Química, Engenharia de Controle e Automação e Engenharia Metalúrgica**. Cada graduação tem processo próprio de ingresso."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil?",
+              "resposta": "O IFMG mantém programas de assistência estudantil, com auxílios e critérios definidos nos editais correspondentes."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Química Integrado ao Ensino Médio**, você precisa ter **concluído o ensino fundamental** ou concluí-lo até a matrícula. O ingresso ocorre por **processo seletivo público do IFMG**, conforme as regras do edital vigente.\n\nConsulte o edital para conhecer os critérios de seleção, as vagas, as cotas, a documentação exigida e os procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Química pode **preparar amostras, soluções e reagentes, realizar análises químicas e registrar resultados**, seguindo métodos e procedimentos de segurança. Pode verificar características de matérias-primas, água, produtos intermediários e finais, colaborando em rotinas de **controle de qualidade** e acompanhamento de processos industriais.\n\nEm um laboratório industrial, por exemplo, pode realizar medições de propriedades, conferir registros e auxiliar a identificar diferenças entre resultados e padrões de qualidade. Em atividades ambientais, pode apoiar a coleta e análise de amostras de água e materiais, contribuindo para o monitoramento de condições de produção e controle ambiental.\n\nA formação permite atuar, dentro das competências técnicas, em indústrias químicas, petroquímicas, alimentícias, siderúrgicas e metalúrgicas, além de laboratórios de análise, pesquisa e serviços de controle da qualidade. O exercício de atividades regulamentadas deve observar **as atribuições profissionais, a legislação e as exigências de registro no Conselho Regional de Química (CRQ)**."
+        }
+      ]
     }
   ]
 }

@@ -92,6 +92,11 @@
     return [b.titulo || "",b.conteudo || ""].filter(Boolean).join("\n\n");
   }
   function blockPreview(b, i) {
+    // A prévia do conteúdo publicado não exibe blocos vazios ou pendências editoriais.
+    // O modo Copiar continua exibindo todos os campos para preenchimento no CMS.
+    if (b.tipo === "introducao" && !(b.conteudo || "").trim()) return "";
+    if (b.tipo === "galeria" && !(b.itens || []).length) return "";
+    if (b.tipo === "texto" && (b.conteudo || "").trim() === "Informação incompleta") return "";
     const id = "bloco-" + i, label = '<span class="block-overline">' + escapeHTML(blockName[b.tipo]) + "</span>";
     const head = b.titulo ? "<h2>" + escapeHTML(b.titulo) + "</h2>" : "";
     if (b.tipo === "introducao") return '<section class="content-section intro-section" id="' + id + '">' + label + (b.conteudo ? "<p>" + renderInline(b.conteudo) + "</p>" : "") + "</section>";
@@ -250,7 +255,7 @@
       const suffix = previousTitle ? " · " + previousTitle : "";
       const label = b.titulo || ((b.tipo === "tabela" || b.tipo === "faq") ? blockName[b.tipo] + suffix : blockName[b.tipo]);
       return { title: label, index: i };
-    });
+    }).filter(x => !activePreview || blockPreview(course.blocos[x.index], x.index));
     root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Exemplo fictício" : kind) + '</div><h1>' + title + '</h1>' + (course.descricao ? '<p>' + escapeHTML(course.descricao) + '</p>' : '') + (flags ? '<div class="course-flags">' + flags + '</div>' : '') + '</div></div>' +
       '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +

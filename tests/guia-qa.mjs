@@ -403,6 +403,24 @@ test("F2.12: FAQs de ingresso não reciclam calendário, notas ou vagas de ediç
   assert.match(agrLocal.itens.find(x=>x.pergunta==="Campus Bambuí").resposta,/Em \*\*2022\*\*/);
 });
 
+test("F2.12: campos estruturados não exibem vagas de seleções anteriores como permanentes", () => {
+  for(const c of json.courses) {
+    const basic=c.blocos.find(b=>b.tipo==="dados-basicos");
+    assert.ok(basic,c.id);
+    assert.ok(basic.campos.every(x=>!/^Vagas(?: do PS 2027)?$/.test(x.rotulo)),c.id+": sem vagas de edição passada nos dados básicos");
+    const tables=c.blocos.filter(b=>b.tipo==="tabela");
+    assert.ok(tables.every(b=>!b.colunas.some(col=>/Vagas \/ ingresso 2027/i.test(col))),c.id+": tabelas sem ano passado");
+  }
+  const logistics=json.courses.find(c=>c.id==="tecnico-em-logistica-subsequente");
+  const where=logistics.blocos.findIndex(b=>b.titulo==="Onde o IFMG oferece Técnico em Logística");
+  const table=logistics.blocos[where+1];
+  assert.deepEqual(table.colunas,["Campus","Modalidade","E-mail da coordenação"]);
+  assert.deepEqual(table.linhas.map(row=>row[0]),["Governador Valadares","Ribeirão das Neves"]);
+  assert.equal(table.linhas[0][2],"coordenacao.tslog.gv@ifmg.edu.br");
+  assert.equal(table.linhas[1][2],"Informação incompleta");
+  assert.deepEqual(logistics.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+});
+
 test("F1B.10: os oito cursos encerram com Forma de ingresso e Mundo do Trabalho", () => {
   const h=testContext();
   const graduationIds=[
@@ -760,10 +778,10 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
   assert.doesNotMatch(answer,/,\./);
 });
 
-test("Agronomia e Engenharia de Produção agrupam as cinco ofertas 2027 sem perder URLs antigas", () => {
+test("Agronomia e Engenharia de Produção preservam campi sem reciclar vagas do PS anterior", () => {
   const checks=[
-    {id:"agronomia-bacharelado",old:"agronomia-bacharelado-bambui",campi:["Bambuí","São João Evangelista"],vagas:[/30 Enem/,/15 Enem.*15 Histórico Escolar e Redação/],turnos:["Manhã e tarde","Manhã e tarde"]},
-    {id:"engenharia-de-producao-bacharelado",old:"engenharia-de-producao-bacharelado-bambui",campi:["Bambuí","Congonhas","Governador Valadares"],vagas:[/20 Enem.*5 Histórico/,/20 Enem/,/17 Enem.*17 Histórico/],turnos:["Manhã e tarde","Noite","Noite"]}
+    {id:"agronomia-bacharelado",old:"agronomia-bacharelado-bambui",campi:["Bambuí","São João Evangelista"],turnos:["Manhã e tarde","Manhã e tarde"]},
+    {id:"engenharia-de-producao-bacharelado",old:"engenharia-de-producao-bacharelado-bambui",campi:["Bambuí","Congonhas","Governador Valadares"],turnos:["Manhã e tarde","Noite","Noite"]}
   ];
   for(const spec of checks) {
     const c=json.courses.find(x=>x.id===spec.id);
@@ -771,8 +789,7 @@ test("Agronomia e Engenharia de Produção agrupam as cinco ofertas 2027 sem per
     assert.ok(c.aliases.includes(spec.old));
     assert.equal(c.publicacao_autorizada,true);
     const basic=c.blocos.find(b=>b.tipo==="dados-basicos").campos;
-    const vacancy=basic.find(x=>x.rotulo==="Vagas").valor;
-    for(const regex of spec.vagas)assert.match(vacancy,regex);
+    assert.ok(!basic.some(x=>/^Vagas(?: do PS 2027)?$/.test(x.rotulo)),spec.id+": vagas dependem de edital novo");
     const table=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
     assert.deepEqual(table.colunas,["Campus","Turno","Modalidade","E-mail da coordenação"]);
     assert.deepEqual(table.linhas.map(r=>r[0]),spec.campi);

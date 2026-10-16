@@ -310,7 +310,7 @@ test("F1B.11: FAQs técnicos orientam escolhas, cotas, assistência e ficam ao f
 
 test("F1B.11: diferenças institucionais não migram entre modalidades e campi", () => {
   const get=id=>json.courses.find(c=>c.id===id);
-  const ed=get("tecnico-em-edificacoes-integrado"),edfaq=ed.blocos.find(b=>b.tipo==="faq").itens;
+  const ed=get("tecnico-em-edificacoes-integrado"),edfaq=ed.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
   const prat=edfaq.find(x=>x.pergunta.includes("laboratório"));
   assert.ok(prat);
   assert.match(prat.resposta,/Congonhas/);
@@ -321,7 +321,7 @@ test("F1B.11: diferenças institucionais não migram entre modalidades e campi",
   assert.match(edsec.conteudo,/Congonhas.*concomitante/is);
   assert.doesNotMatch(edsec.conteudo,/subsequente.*Piumhi/is);
   const lg=get("tecnico-em-logistica-subsequente");
-  const lgfaq=lg.blocos.find(b=>b.tipo==="faq").itens;
+  const lgfaq=lg.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
   const ead=lgfaq.find(x=>x.pergunta.includes("a distância"));
   assert.match(ead.resposta,/Governador Valadares/);
   assert.match(ead.resposta,/Ribeirão das Neves/);
@@ -337,11 +337,11 @@ test("F1B.11: diferenças institucionais não migram entre modalidades e campi",
   const tab=adm.blocos.find((b,i)=>b.tipo==="tabela"&&adm.blocos[i-1]?.titulo===admsec.titulo);
   assert.ok(tab);
   assert.ok(!tab.linhas.some(row=>row[1]==="Concomitante"));
-  const admfaq=adm.blocos.find(b=>b.tipo==="faq").itens;
+  const admfaq=adm.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
   assert.ok(admfaq.some(x=>x.pergunta.includes("atividades práticas")&&x.resposta.includes("Expo Favela Minas em 2026")));
   assert.ok(admfaq.some(x=>x.pergunta.includes("a distância")&&x.resposta.includes("16,67%")));
   for(const c of [ed,lg,adm]){
-    assert.ok(c.blocos.filter(x=>x.tipo==="faq").every(b=>b.itens.length>=6));
+    assert.ok(c.blocos.filter(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").every(b=>b.itens.length>=6));
     assert.ok(c.blocos.findIndex(x=>x.titulo==="Perguntas frequentes")>c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG"));
     assert.ok(c.blocos.every(x=>!x.titulo?.startsWith("E se eu já estiver cursando ou tiver concluído o ensino médio?")));
   }
@@ -393,7 +393,7 @@ test("F1B.10: os oito cursos encerram com Forma de ingresso e Mundo do Trabalho"
   }
 });
 
-test("F1B.9: áreas locais aparecem imediatamente após as tabelas de ofertas, separadas do FAQ", () => {
+test("F1B.12: informações dos campi usam FAQ do Wagtail separado das perguntas frequentes", () => {
   const h=testContext();
   const specs=[
     {id:"tecnico-em-edificacoes-integrado",tableTitle:"Onde o IFMG oferece Técnico em Edificações",
@@ -413,27 +413,42 @@ test("F1B.9: áreas locais aparecem imediatamente após as tabelas de ofertas, s
     const i=c.blocos.findIndex(x=>x.titulo===tableTitle);
     assert.ok(i>=0,id+": seção de ofertas");
     const table=c.blocos[i+1];
-    assert.equal(table.tipo,"tabela",id+": ofertas seguidas por tabela");
-    assert.deepEqual(table.linhas.map(x=>x[0]),campi,id+": lista de campi");
-    const locals=c.blocos.slice(i+2,i+2+campi.length);
-    assert.deepEqual(locals.map(x=>x.titulo),campi.map(x=>"Campus "+x),id);
-    assert.ok(locals.every(x=>x.tipo==="texto"&&x.conteudo.length>100),id);
-    assert.ok(locals.every(x=>h.editorFields(x).length===1 && h.editorFields(x)[0].rich && h.editorFields(x)[0].value.startsWith(x.titulo+"\n\n")),id+": título e corpo no mesmo Rich Text copiável");
-    assert.ok(locals.every(x=>!/(informação incompleta|precisa de validação|confirmar com a coordenação)/i.test(x.conteudo)),id);
-    const nextFaq=c.blocos.findIndex((x,j)=>j>i+1+campi.length&&x.tipo==="faq");
-    assert.ok(nextFaq>i+1+campi.length,id+": FAQ deve vir depois dos blocos locais");
-    assert.ok(c.blocos.slice(i+2,i+2+campi.length).every(x=>x.tipo!=="faq"),id);
-    assert.ok(c.blocos[nextFaq].itens.every(x=>!campi.includes(x.pergunta)),id+": campus não é pergunta");
-    const header=c.blocos.findIndex((x,j)=>j>i+campi.length&&x.titulo==="Perguntas frequentes");
-    assert.ok(header>i+campi.length&&header<nextFaq,id+": FAQ independente");
-    assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+    assert.equal(table.tipo,"tabela",id);
+    assert.deepEqual(table.linhas.map(x=>x[0]),campi,id+": ordem da tabela");
+    const local=c.blocos[i+2];
+    assert.equal(local.tipo,"faq",id+": bloco FAQ de campi depois da tabela");
+    assert.equal(local.titulo,"Informações dos campi",id);
+    assert.deepEqual(local.itens.map(x=>x.pergunta),campi.map(x=>"Campus "+x),id);
+    assert.ok(local.itens.every(x=>x.resposta.length>100),id);
+    assert.ok(local.itens.every(x=>!/(informação incompleta|precisa de validação|confirmar com a coordenação|a apresentação institucional registra)/i.test(x.resposta)),id);
+    const fields=h.editorFields(local);
+    assert.equal(fields.length,2*campi.length,id+": Pergunta e Resposta de cada campus");
+    for(let k=0;k<campi.length;k++){
+      assert.equal(fields[k*2].value,"Campus "+campi[k],id);
+      assert.equal(fields[k*2].rich,false,id+": Pergunta como rótulo");
+      assert.equal(fields[k*2+1].value,local.itens[k].resposta,id+": preservar descrição");
+      assert.equal(fields[k*2+1].rich,true,id+": Resposta rica");
+      assert.ok(fields[k*2+1].html.includes("<p>"),id+": parágrafos em HTML");
+    }
+    assert.equal((h.editorBlock(local,10).match(/data-copy-field=/g)||[]).length,2*campi.length,id);
+    assert.match(h.editorBlock(local,10),/FAQ · Informações dos campi/);
+    const header=c.blocos.findIndex((x,j)=>j>i+2&&x.titulo==="Perguntas frequentes");
+    assert.ok(header>i+2,id+": FAQ dos candidatos independente");
+    const candidate=c.blocos[header+1];
+    assert.equal(candidate.tipo,"faq",id);
+    assert.notEqual(candidate,local,id);
+    assert.ok(candidate.itens.every(x=>x.pergunta.endsWith("?")),id+": perguntas genuínas");
+    assert.ok(candidate.itens.every(x=>!x.pergunta.startsWith("Campus ")),id);
+    assert.equal(c.blocos.filter(x=>x.tipo==="faq").length,2,id+": dois FAQs de funções diferentes");
+    assert.ok(!c.blocos.some(x=>x.tipo==="texto"&&x.titulo?.startsWith("Campus ")),id+": não duplicar Texto local");
+    assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"],id);
     assert.ok(h.isApprovedCourse(c),id);
   }
 });
 
 test("F1B.9: informações locais verificadas continuam atribuídas ao campus certo", () => {
   const ed=json.courses.find(x=>x.id==="tecnico-em-edificacoes-integrado");
-  const get=(c,campus)=>c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Campus "+campus)?.conteudo||"";
+  const get=(c,campus)=>c.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi")?.itens.find(x=>x.pergunta==="Campus "+campus)?.resposta||"";
   assert.match(get(ed,"Congonhas"),/solos, materiais de construção/);
   assert.match(get(ed,"Governador Valadares"),/visitas técnicas/);
   assert.match(get(ed,"Ouro Preto"),/3\.460 horas/);
@@ -448,12 +463,12 @@ test("F1B.9: informações locais verificadas continuam atribuídas ao campus ce
   assert.ok(table);
   assert.equal(table.linhas.find(x=>x[0]==="Governador Valadares").at(-1),"coordenacao.tslog.gv@ifmg.edu.br");
   assert.equal(table.linhas.find(x=>x[0]==="Ribeirão das Neves").at(-1),"Informação incompleta");
-  assert.doesNotMatch(JSON.stringify(lg.blocos.filter(x=>x.tipo==="texto"&&x.titulo?.startsWith("Campus "))),/certificado de Assistente/);
+  assert.doesNotMatch(JSON.stringify(lg.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens),/certificado de Assistente/);
 });
 
 test("F1B.9: oito campi de Administração têm informações próprias e FAQ de dúvidas reais", () => {
   const c=json.courses.find(x=>x.id==="tecnico-em-administracao-integrado");
-  const content=campus=>c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Campus "+campus)?.conteudo||"";
+  const content=campus=>c.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi")?.itens.find(x=>x.pergunta==="Campus "+campus)?.resposta||"";
   const expectations=[
     ["Arcos",/Trabalho Acadêmico Integrador.*TAI/],
     ["Bambuí",/tecnologia e relações humanas/],
@@ -471,18 +486,18 @@ test("F1B.9: oito campi de Administração têm informações próprias e FAQ de
   }
   assert.match(content("Sabará"),/Em \*\*2026\*\*/);
   assert.match(content("Sabará"),/16,67%/);
-  const faq=c.blocos.find(x=>x.tipo==="faq");
+  const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi");
   assert.equal(faq.itens.length,7);
   assert.ok(faq.itens.every(x=>x.pergunta.includes("?")&&x.resposta.length>70));
   assert.ok(faq.itens.every(x=>!c.campi.includes(x.pergunta)));
   assert.ok(faq.itens.some(x=>x.pergunta.includes("distância")&&x.resposta.includes("16%")));
-  const joined=JSON.stringify(c.blocos.filter(x=>x.titulo?.startsWith("Campus ")));
+  const joined=JSON.stringify(c.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens);
   assert.doesNotMatch(joined,/Informação incompleta|referência sem validação|Hackathon Social|Mais informações no campus/);
   assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 
 test("F1B.9: cursos superiores distinguem atividades e fontes de cada campus", () => {
-  const get=(id,campus)=>json.courses.find(c=>c.id===id).blocos.find(b=>b.tipo==="texto"&&b.titulo==="Campus "+campus)?.conteudo||"";
+  const get=(id,campus)=>json.courses.find(c=>c.id===id).blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi")?.itens.find(x=>x.pergunta==="Campus "+campus)?.resposta||"";
   const cases=[
     ["engenharia-mecanica-bacharelado","Arcos",/Trabalhos Acadêmicos Integradores/],
     ["engenharia-mecanica-bacharelado","Betim",/Pollyrubber/],
@@ -506,13 +521,13 @@ test("F1B.9: cursos superiores distinguem atividades e fontes de cada campus", (
   assert.deepEqual(direito.blocos[at+1].linhas,[["Arcos","Noite","Presencial (30% EaD)","direito.arcos@ifmg.edu.br"]]);
   assert.ok(!direito.blocos[at+1].linhas.some(x=>x.includes("Informação incompleta")));
   const admin=json.courses.find(x=>x.id==="administracao-bacharelado");
-  assert.ok(admin.blocos.find(x=>x.tipo==="faq").itens.every(x=>!admin.campi.includes(x.pergunta)));
+  assert.ok(admin.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens.every(x=>x.pergunta.includes("?")&&!admin.campi.includes(x.pergunta)));
   const agr=json.courses.find(x=>x.id==="agronomia-bacharelado");
-  assert.ok(!agr.blocos.find(x=>x.tipo==="faq").itens.some(x=>x.pergunta==="Qual a duração de Agronomia em Bambuí?"));
+  assert.ok(!agr.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens.some(x=>x.pergunta==="Qual a duração de Agronomia em Bambuí?"));
   const prod=json.courses.find(x=>x.id==="engenharia-de-producao-bacharelado");
-  assert.ok(!prod.blocos.find(x=>x.tipo==="faq").itens.some(x=>x.pergunta==="O que diferencia a formação em Congonhas?"));
+  assert.ok(!prod.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens.some(x=>x.pergunta==="O que diferencia a formação em Congonhas?"));
   const mec=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
-  assert.ok(!mec.blocos.find(x=>x.tipo==="faq").itens.some(x=>/experiências práticas fazem parte da formação em Arcos|atividades acadêmicas em Betim/.test(x.pergunta)));
+  assert.ok(!mec.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens.some(x=>/experiências práticas fazem parte da formação em Arcos|atividades acadêmicas em Betim/.test(x.pergunta)));
 });
 
 test("F3.6: todos os oito cursos descrevem tarefas reais no Mundo do Trabalho", () => {
@@ -605,7 +620,7 @@ test("bacharelados essenciais mantêm dados, FAQ, destaques e campos de validaç
     const intro=curso.blocos.filter(b=>b.tipo==="introducao");
     assert.ok(intro.length>=1,"A formação precisa ter destaques editoriais");
     assert.ok(intro.every(b=>b.conteudo.length<=280));
-    const faq=curso.blocos.find(b=>b.tipo==="faq");
+    const faq=curso.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi");
     assert.ok(faq.itens.length>=3,"FAQ precisa cobrir dúvidas substantivas");
     assert.ok(curso.blocos.some(b=>b.tipo==="galeria"&&!b.itens.length));
     assert.ok(curso.blocos.some(b=>b.tipo==="links"&&b.itens.some(x=>x.url.startsWith("https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"))));
@@ -620,7 +635,7 @@ test("Engenharia Mecânica agrupa Arcos e Betim e mantém exigências acadêmica
   const offer=course.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.equal(offer.linhas.length,2);
   assert.ok(offer.linhas.some(row=>row[0]==="Betim"&&row.some(x=>x.includes("eng.mecanica.betim@"))));
-  const faq=course.blocos.find(b=>b.tipo==="faq");
+  const faq=course.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi");
   const internship=faq.itens.find(x=>x.pergunta.includes("estágio e o TCC"));
   assert.match(internship.resposta,/Arcos.*350 horas/);
   assert.match(internship.resposta,/TCC.*30 horas/);
@@ -630,7 +645,7 @@ test("Engenharia Mecânica agrupa Arcos e Betim e mantém exigências acadêmica
 
 test("Betim: estágio, PFC, extensão e ingresso 2027 não herdam números de Arcos", () => {
   const c=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
-  const faq=c.blocos.find(b=>b.tipo==="faq").itens;
+  const faq=c.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
   const intern=faq.find(x=>x.pergunta.includes("estágio e o TCC")).resposta;
   assert.match(intern,/Arcos[\s\S]*350 horas/);
   assert.match(intern,/Betim[\s\S]*360 horas/);
@@ -661,7 +676,7 @@ test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar prem
   assert.doesNotMatch(works,/receberam prêmio|foram premiados|conquistaram/i);
   const gallery=c.blocos.find(x=>x.tipo==="galeria");
   assert.equal(gallery.itens.length,0);
-  const faq=c.blocos.find(x=>x.tipo==="faq").itens;
+  const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens;
   const researchAnswer=faq.find(x=>x.pergunta.includes("projetos de pesquisa")).resposta;
   assert.match(researchAnswer,/Em \*\*Betim\*\*[\s\S]*pesquisas/);
   assert.match(researchAnswer,/seleções de cada período/);
@@ -674,13 +689,13 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
   ]);
   for(const [id,questions] of banned) {
     const c=json.courses.find(x=>x.id===id);
-    const faq=c.blocos.find(x=>x.tipo==="faq").itens;
+    const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens;
     assert.ok(faq.length>=3,id);
     assert.ok(c.blocos.find(x=>x.tipo==="dados-basicos").campos.some(x=>x.rotulo==="Duração"));
     for(const q of questions)assert.ok(!faq.some(x=>x.pergunta===q),id+": "+q);
   }
   const c=json.courses.find(x=>x.id==="administracao-bacharelado");
-  const answer=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Campus Ouro Branco").conteudo;
+  const answer=c.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Ouro Branco").resposta;
   assert.match(answer,/quatro estrelas no Guia da Faculdade de 2025/);
   assert.doesNotMatch(answer,/,\./);
 });
@@ -703,10 +718,10 @@ test("Agronomia e Engenharia de Produção agrupam as cinco ofertas 2027 sem per
     assert.deepEqual(table.linhas.map(r=>r[0]),spec.campi);
     assert.deepEqual(table.linhas.map(r=>r[1]),spec.turnos);
     assert.ok(table.linhas.every(r=>r[2]==="Presencial"));
-    const faq=c.blocos.find(b=>b.tipo==="faq").itens;
+    const faq=c.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
     assert.ok(spec.campi.every(campus=>faq.some(x=>x.pergunta.includes(campus)&&x.pergunta.startsWith("Como ingressar"))));
     assert.ok(c.blocos.some(b=>b.tipo==="texto"&&b.titulo==="Onde o IFMG oferece "+c.nome));
-    assert.ok(c.blocos.findIndex(b=>b.tipo==="galeria")<c.blocos.findIndex(b=>b.tipo==="faq"));
+    assert.ok(c.blocos.findIndex(b=>b.tipo==="galeria")<c.blocos.findIndex(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi"));
   }
   const agr=json.courses.find(x=>x.id==="agronomia-bacharelado");
   assert.match(agr.blocos.find(b=>b.titulo==="Continue seus estudos no IFMG").conteudo,/Especialização em Meio Ambiente/);
@@ -720,7 +735,7 @@ test("Agronomia e Engenharia de Produção agrupam as cinco ofertas 2027 sem per
 
 test("Direito explica estágio e TCC com exigências concretas", () => {
   const c=json.courses.find(x=>x.id==="direito-bacharelado-arcos");
-  const faq=c.blocos.find(x=>x.tipo==="faq");
+  const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi");
   const estagio=faq.itens.find(x=>x.pergunta.includes("estágio e Trabalho"));
   assert.match(estagio.resposta,/210 horas/);
   assert.match(estagio.resposta,/30 horas/);
@@ -737,7 +752,7 @@ test("Administração reúne seis campi e não repete FAQ de turno", () => {
   const offer=course.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.equal(offer.linhas.length,6);
   assert.ok(offer.linhas.every(row=>row.length===offer.colunas.length));
-  const faq=course.blocos.find(b=>b.tipo==="faq");
+  const faq=course.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi");
   assert.equal(faq.itens.length,4);
   assert.ok(faq.itens.every(x=>x.pergunta.includes("?")&&!campi.includes(x.pergunta)));
   assert.equal(course.blocos.filter(b=>b.tipo==="texto")[0].titulo,"Administração");
@@ -800,7 +815,7 @@ test("Técnico em Administração Integrado agrupa 8 campi sem misturar o bachar
   const sabara=tec.blocos.find(b=>b.tipo==="texto"&&b.titulo==="Campus Sabará");
   assert.ok(sabara);
   assert.match(sabara.conteudo,/16,67%/);
-  assert.ok(!tec.blocos.find(b=>b.tipo==="faq").itens.some(x=>tec.campi.includes(x.pergunta)));
+  assert.ok(!tec.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens.some(x=>tec.campi.includes(x.pergunta)));
 });
 
 test("título permanece copiável quando Texto tem conteúdo incompleto", () => {
@@ -830,7 +845,7 @@ test("nenhum roteiro oferece links para sites antigos do IFMG", () => {
 
 test("Direito tem FAQ orientado a escolha e não duplica a própria página", () => {
   const c=json.courses.find(x=>x.id==="direito-bacharelado-arcos");
-  const faq=c.blocos.find(x=>x.tipo==="faq");
+  const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi");
   const qs=faq.itens.map(x=>x.pergunta);
   assert.ok(qs.some(x=>x.includes("ingressar")));
   assert.ok(qs.some(x=>x.includes("experiências práticas")));
@@ -955,7 +970,7 @@ test("F2.2: Bambuí descreve estágio e TCC sem inventar cargas curriculares de 
   ];
   for(const spec of items) {
     const c=json.courses.find(x=>x.id===spec.id);
-    const faq=c.blocos.find(b=>b.tipo==="faq").itens;
+    const faq=c.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
     const answer=faq.find(x=>x.pergunta===spec.q)?.resposta;
     assert.ok(answer,spec.id);
     for(const term of spec.tokens)assert.ok(answer.includes(term),spec.id+": "+term);
@@ -966,7 +981,7 @@ test("F2.2: Bambuí descreve estágio e TCC sem inventar cargas curriculares de 
 
 test("F2.2: estágio e TCC específicos em SJE e Governador Valadares, sem herdar regras", () => {
   const ag=json.courses.find(c=>c.id==="agronomia-bacharelado");
-  const af=ag.blocos.find(b=>b.tipo==="faq").itens;
+  const af=ag.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
   const sje=af.find(q=>q.pergunta==="Como funcionam estágio e TCC em Agronomia em São João Evangelista?");
   assert.ok(sje);
   assert.match(sje.resposta,/240 horas/);
@@ -978,7 +993,7 @@ test("F2.2: estágio e TCC específicos em SJE e Governador Valadares, sem herda
   assert.ok(!sje.resposta.includes("320 horas"),"Carga de Bambuí não pode migrar para SJE");
 
   const prod=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
-  const pf=prod.blocos.find(b=>b.tipo==="faq").itens;
+  const pf=prod.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
   const congonhas=pf.find(q=>q.pergunta==="Como funcionam estágio e TCC em Engenharia de Produção em Congonhas?");
   assert.ok(congonhas);
   assert.match(congonhas.resposta,/450 horas/);
@@ -1011,7 +1026,7 @@ test("F1B.8: cabeçalhos FAQ não exibem conteúdo fictício e perguntas pendent
     const html=h.editorBlock(header,13);
     assert.equal((html.match(/data-copy-field=/g)||[]).length,1);
     assert.doesNotMatch(html,/Informação incompleta/);
-    const faq=c.blocos.find(x=>x.tipo==="faq");
+    const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi");
     assert.ok(faq.itens.every(q=>q.pergunta.trim() && q.resposta.trim()!=="Informação incompleta"));
   }
   const h=testContext();
@@ -1033,7 +1048,7 @@ test("F1B.8: cabeçalhos FAQ não exibem conteúdo fictício e perguntas pendent
 
 test("FAQ copia cada pergunta e resposta sem copiar o bloco inteiro", () => {
   const h=testContext();
-  const b=h.demo.blocos.find(x=>x.tipo==="faq");
+  const b=h.demo.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi");
   assert.equal(h.editorFields(b).length,b.itens.length*2);
   assert.doesNotMatch(h.editorBlock(b,5),/Copiar bloco completo/);
 });

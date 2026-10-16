@@ -497,6 +497,33 @@ test("Link único: selecionar estilo; copiar título, descrição e URL", () => 
   assert.doesNotMatch(rendered,/Exemplo de como o Link único aparece|block-link-example/);
 });
 
+test("F2.2: estágio e TCC específicos em SJE e Governador Valadares, sem herdar regras", () => {
+  const ag=json.courses.find(c=>c.id==="agronomia-bacharelado");
+  const af=ag.blocos.find(b=>b.tipo==="faq").itens;
+  const sje=af.find(q=>q.pergunta==="Como funcionam estágio e TCC em Agronomia em São João Evangelista?");
+  assert.ok(sje);
+  assert.match(sje.resposta,/240 horas/);
+  assert.match(sje.resposta,/5º período/);
+  assert.match(sje.resposta,/2\.445 horas/);
+  assert.match(sje.resposta,/TCC também é obrigatório/);
+  assert.match(sje.resposta,/60 horas/);
+  assert.ok(!af.some(q=>q.pergunta==="Como funcionam estágio e TCC em Agronomia?"));
+  assert.ok(!sje.resposta.includes("320 horas"),"Carga de Bambuí não pode migrar para SJE");
+
+  const prod=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
+  const pf=prod.blocos.find(b=>b.tipo==="faq").itens;
+  const gv=pf.find(q=>q.pergunta==="Como funcionam estágio e TCC em Engenharia de Produção em Governador Valadares?");
+  assert.ok(gv);
+  assert.match(gv.resposta,/160 horas/);
+  assert.match(gv.resposta,/7º período/);
+  assert.match(gv.resposta,/relatório final/);
+  assert.match(gv.resposta,/Projeto em Engenharia I e II/);
+  assert.match(gv.resposta,/9º e o 10º períodos/);
+  assert.doesNotMatch(gv.resposta,/450 horas|Congonhas/,"450h é somente do PPC histórico de Congonhas");
+  assert.ok(!pf.some(q=>q.pergunta==="Como são o estágio e o TCC em Bambuí?"));
+  for(const c of [ag,prod]) assert.ok(c.blocos.filter(b=>b.tipo==="faq").flatMap(b=>b.itens).every(q=>q.resposta!=="Informação incompleta"));
+});
+
 test("F1B.8: cabeçalhos FAQ não exibem conteúdo fictício e perguntas pendentes não são copiáveis", () => {
   for(const id of ["agronomia-bacharelado","engenharia-de-producao-bacharelado"]) {
     const c=json.courses.find(x=>x.id===id);

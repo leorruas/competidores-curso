@@ -308,7 +308,7 @@ test("F4.5: Edificações tem continuidade tabular verificável e copiável", ()
 test("F1B.11: FAQs técnicos orientam escolhas, cotas, assistência e ficam ao fim da parte informativa", () => {
   const h=testContext();
   const configs=[
-    {id:"tecnico-em-edificacoes-integrado",n:6,modality:"Existe Técnico em Edificações para quem já concluiu ou está cursando o ensino médio?",rows:3},
+    {id:"tecnico-em-edificacoes-integrado",n:5,modality:"Existe Técnico em Edificações para quem já concluiu ou está cursando o ensino médio?",rows:3},
     {id:"tecnico-em-logistica-subsequente",n:6,modality:null,rows:0},
     {id:"tecnico-em-administracao-integrado",n:6,modality:"Existe Técnico em Administração para quem já concluiu o ensino médio?",rows:2}
   ];
@@ -362,11 +362,11 @@ test("F1B.11: FAQs técnicos orientam escolhas, cotas, assistência e ficam ao f
 test("F1B.11: diferenças institucionais não migram entre modalidades e campi", () => {
   const get=id=>json.courses.find(c=>c.id===id);
   const ed=get("tecnico-em-edificacoes-integrado"),edfaq=ed.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
-  const prat=edfaq.find(x=>x.pergunta.includes("laboratório"));
-  assert.ok(prat);
-  assert.match(prat.resposta,/Congonhas/);
-  assert.match(prat.resposta,/Governador Valadares/);
-  assert.doesNotMatch(prat.resposta,/todos os campi possuem/i);
+  assert.ok(!edfaq.some(x=>/laboratório|visitas técnicas/i.test(x.pergunta)),"não repetir práticas e visitas no FAQ dos candidatos");
+  const edLocais=ed.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens;
+  const desc=campus=>edLocais.find(x=>x.pergunta==="Campus "+campus).resposta;
+  assert.match(desc("Congonhas"),/solos, materiais de construção/);
+  assert.match(desc("Governador Valadares"),/aulas práticas, visitas técnicas/);
   const edsec=ed.blocos.find(b=>b.titulo?.startsWith("Existe Técnico em Edificações"));
   assert.match(edsec.conteudo,/subsequente.*Congonhas.*Ouro Preto/is);
   assert.match(edsec.conteudo,/Congonhas.*concomitante/is);
@@ -395,7 +395,7 @@ test("F1B.11: diferenças institucionais não migram entre modalidades e campi",
   assert.doesNotMatch(projetoAdmin.conteudo,/Hackathon Social/);
   assert.ok(admfaq.some(x=>x.pergunta.includes("a distância")&&x.resposta.includes("16,67%")));
   for(const c of [ed,lg,adm]){
-    assert.ok(c.blocos.filter(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").every(b=>b.itens.length>=6));
+    assert.ok(c.blocos.filter(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").every(b=>b.itens.length >= (c.id==="tecnico-em-edificacoes-integrado" ? 5 : 6)));
     assert.ok(c.blocos.findIndex(x=>x.titulo==="Perguntas frequentes")>c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG"));
     assert.ok(c.blocos.every(x=>!x.titulo?.startsWith("E se eu já estiver cursando ou tiver concluído o ensino médio?")));
   }

@@ -310,7 +310,7 @@ test("F1B.11: FAQs técnicos orientam escolhas, cotas, assistência e ficam ao f
   const configs=[
     {id:"tecnico-em-edificacoes-integrado",n:6,modality:"Existe Técnico em Edificações para quem já concluiu ou está cursando o ensino médio?",rows:3},
     {id:"tecnico-em-logistica-subsequente",n:6,modality:null,rows:0},
-    {id:"tecnico-em-administracao-integrado",n:7,modality:"Existe Técnico em Administração para quem já concluiu o ensino médio?",rows:2}
+{id:"tecnico-em-administracao-integrado",n:6,modality:
   ];
   for(const {id,n,modality,rows} of configs) {
     const c=json.courses.find(x=>x.id===id),blocos=c.blocos;
@@ -389,7 +389,10 @@ test("F1B.11: diferenças institucionais não migram entre modalidades e campi",
   assert.ok(tab);
   assert.ok(!tab.linhas.some(row=>row[1]==="Concomitante"));
   const admfaq=adm.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
-  assert.ok(admfaq.some(x=>x.pergunta.includes("atividades práticas")&&x.resposta.includes("Expo Favela Minas em 2026")));
+assert.ok(!admfaq.some(x=>x.pergunta==="Há atividades práticas e projetos?"));
+  const projetoAdmin=adm.blocos.find(b=>b.titulo==="Projetos e experiências");
+  assert.match(projetoAdmin.conteudo,/Expo Favela Minas/);
+  assert.doesNotMatch(projetoAdmin.conteudo,/Hackathon Social/);
   assert.ok(admfaq.some(x=>x.pergunta.includes("a distância")&&x.resposta.includes("16,67%")));
   for(const c of [ed,lg,adm]){
     assert.ok(c.blocos.filter(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").every(b=>b.itens.length>=6));
@@ -447,7 +450,7 @@ test("F2.12: FAQs de ingresso não reciclam calendário, notas ou vagas de ediç
   }
   // Datas históricas de projetos são fatos editoriais, não prazos de matrícula.
   const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
-  assert.match(tec.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens.find(x=>x.pergunta.includes("atividades práticas")).resposta,/Expo Favela Minas em 2026/);
+assert.match(tec.blocos.find(x=>x.titulo==="Projetos e experiências").conteudo,/Expo Favela Minas/);
   const eng=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
   assert.match(eng.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Betim").resposta,/Pollyrubber/);
   const agrLocal=agr.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
@@ -655,22 +658,25 @@ test("F1B.9: oito campi de Administração têm informações próprias e FAQ de
     ["Ouro Preto",/3\.180 horas/],
     ["Ponte Nova",/empreendedorismo, inovação/],
     ["Ribeirão das Neves",/recrutamento e treinamento/],
-    ["Sabará",/Expo Favela Minas/]
+["Sabará",/16,67%/]
   ];
   for(const [campus,rx] of expectations){
     const body=content(campus);
     assert.ok(body.length>200,campus);
     assert.match(body,rx,campus);
   }
-  assert.match(content("Sabará"),/Em \*\*2026\*\*/);
+assert.doesNotMatch(content("Sabará"),/Expo Favela Minas/);
   assert.match(content("Sabará"),/16,67%/);
   const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi");
-  assert.equal(faq.itens.length,7);
+assert.equal(faq.itens.length,6);
   assert.ok(faq.itens.every(x=>x.pergunta.includes("?")&&x.resposta.length>70));
   assert.ok(faq.itens.every(x=>!c.campi.includes(x.pergunta)));
   assert.ok(faq.itens.some(x=>x.pergunta.includes("distância")&&x.resposta.includes("16%")));
   const joined=JSON.stringify(c.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens);
   assert.doesNotMatch(joined,/Informação incompleta|referência sem validação|Hackathon Social|Mais informações no campus/);
+  const camposDeTexto=c.blocos.flatMap(b=>b.tipo==="texto"?[b.conteudo||""]:b.tipo==="faq"?(b.itens||[]).map(item=>item.resposta||""):[]);
+  assert.equal(camposDeTexto.filter(v=>v.includes("Expo Favela Minas")).length,1,"visita comprovada citada apenas em Projetos e experiências");
+  assert.doesNotMatch(JSON.stringify(c.blocos),/Hackathon Social/,"não publicar projeto sem prova de vinculação ao curso");
   assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 

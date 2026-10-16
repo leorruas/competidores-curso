@@ -1391,6 +1391,24 @@ test("F1.6: a prévia omite somente blocos vazios, sem suprimir os campos do edi
   assert.match(h.blockPreview({tipo:"texto",titulo:"Mundo do Trabalho",conteudo:"Atuação profissional."},3),/Mundo do Trabalho/);
 });
 
+test("F2.5/F3.1: Agronomia informa contato SJE e empresa júnior Safra em Bambuí", () => {
+  const c=json.courses.find(x=>x.id==="agronomia-bacharelado");
+  const tb=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
+  assert.equal(tb.linhas.find(l=>l[0]==="São João Evangelista")[3],"agronomia.sje@ifmg.edu.br");
+  assert.equal(tb.linhas.find(l=>l[0]==="Bambuí")[3],"Informação incompleta","não inventar contato de Bambuí");
+  const texto=sectionText(c,"Pesquisa, extensão e oportunidades");
+  assert.match(texto,/Bambuí[\\s\\S]*Safra Júnior[\\s\\S]*Bacharelado em Agronomia/);
+  assert.match(texto,/presta serviços na área agronômica/);
+  assert.doesNotMatch(texto,/Safra Júnior.{0,90}(?:projeto concluído|prêmio|bolsa garantida)/i);
+  const matched=c.blocos.findIndex(b=>b.tipo==="galeria"&&b.referencia==="Empresa júnior Safra Júnior · Bambuí");
+  assert.ok(matched>0,"galeria da Safra Jr. deve existir");
+  assert.equal(c.blocos[matched-1].tipo,"texto");
+  assert.match(c.blocos[matched-1].conteudo,/Safra Júnior/);
+  assert.equal(c.blocos[matched].itens.length,0,"foto provisória deve ser fornecida pelo editor");
+  const mentions=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]);
+  assert.equal(mentions.filter(t=>t.includes("Safra Júnior")).length,1,"não repetir a oportunidade no FAQ");
+});
+
 test("F3.7: cada experiência estruturada possui galeria própria e aviso no editor", () => {
   const h=testContext();
   const expected={
@@ -1399,7 +1417,7 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "direito-bacharelado-arcos":1,
     "engenharia-mecanica-bacharelado":6,
     "administracao-bacharelado":3,
-    "agronomia-bacharelado":4,
+    "agronomia-bacharelado":5,
     "engenharia-de-producao-bacharelado":10,
     "tecnico-em-administracao-integrado":1
   };

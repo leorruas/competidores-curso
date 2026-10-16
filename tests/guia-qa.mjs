@@ -452,7 +452,7 @@ test("F2.12: FAQs de ingresso não reciclam calendário, notas ou vagas de ediç
   const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
   assert.match(tec.blocos.find(x=>x.titulo==="Projetos e experiências").conteudo,/Expo Favela Minas/);
   const eng=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
-  assert.match(eng.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Betim").resposta,/Pollyrubber/);
+  assert.match(eng.blocos.find(x=>x.titulo==="Projetos e experiências acadêmicas").conteudo,/Pollyrubber/);
   const agrLocal=agr.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
   assert.match(agrLocal.itens.find(x=>x.pergunta==="Campus Bambuí").resposta,/Em \*\*2022\*\*/);
 });
@@ -684,7 +684,7 @@ test("F1B.9: cursos superiores distinguem atividades e fontes de cada campus", (
   const get=(id,campus)=>json.courses.find(c=>c.id===id).blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi")?.itens.find(x=>x.pergunta==="Campus "+campus)?.resposta||"";
   const cases=[
     ["engenharia-mecanica-bacharelado","Arcos",/Trabalhos Acadêmicos Integradores/],
-    ["engenharia-mecanica-bacharelado","Betim",/Pollyrubber/],
+    ["engenharia-mecanica-bacharelado","Betim",/360 horas de extensão.*180 horas de atividades complementares/],
     ["administracao-bacharelado","Bambuí",/Trabalhos Interdisciplinares/],
     ["administracao-bacharelado","Formiga",/conceito 4/],
     ["administracao-bacharelado","Ouro Branco",/quatro estrelas no Guia da Faculdade de 2025/],
@@ -845,6 +845,12 @@ test("Betim: estágio e PFC específicos; ingresso sem números da edição ante
   assert.match(ingress,/edital vigente/);
   assert.doesNotMatch(ingress,/2027|20 vagas|18 vagas|15 por Histórico/);
   assert.match(c.blocos.find(b=>b.titulo==="Projetos e experiências acadêmicas").conteudo,/Betim[\s\S]*Pollyrubber[\s\S]*Contagem/);
+  const localBetim=c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Betim").resposta;
+  assert.doesNotMatch(localBetim,/Pollyrubber|visita técnica/i,"descrição local sem repetir evento");
+  assert.match(localBetim,/360 horas de extensão/);
+  assert.match(localBetim,/180 horas de atividades complementares/);
+  const ocorrenciasPollyrubber=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]).filter(t=>t.includes("Pollyrubber")).length;
+  assert.equal(ocorrenciasPollyrubber,1,"a visita à Pollyrubber aparece uma única vez no conteúdo copiável");
   assert.match(c.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo,/225[\s\S]*135[\s\S]*180 horas/);
   const intro=c.blocos.find(b=>b.tipo==="introducao").conteudo;
   assert.ok(intro.length<=280);

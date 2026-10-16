@@ -3617,6 +3617,276 @@
           "conteudo": "O engenheiro metalurgista pode **planejar e acompanhar a transformação de minérios em metais e ligas metálicas**, estudar as propriedades desses materiais e indicar processos adequados para que atendam às exigências de cada aplicação. Em siderúrgicas e fundições, pode acompanhar operações de obtenção de metais, solidificação, tratamento térmico, conformação e controle de qualidade.\n\nTambém pode **investigar falhas em componentes, realizar análises de materiais e propor melhorias de processos**, considerando resistência, durabilidade, consumo de energia e aproveitamento de matérias-primas. Atua em setores como mineração e beneficiamento mineral, siderurgia, indústria automobilística, fabricação de máquinas, construção naval, petróleo e gás, tratamento de superfícies e centros de pesquisa.\n\nPara exercer atividades profissionais regulamentadas, é necessário **registro no Conselho Regional de Engenharia e Agronomia (Crea)** e observar as atribuições profissionais aplicáveis."
         }
       ]
+    },
+    {
+      "id": "engenharia-florestal-bacharelado",
+      "nome": "Engenharia Florestal",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "São João Evangelista"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Engenharia Florestal"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "São João Evangelista"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Duração prevista",
+              "valor": "10 semestres"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "eng.florestal.sje@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Engenharia Florestal",
+          "conteudo": "O **Bacharelado em Engenharia Florestal** prepara profissionais para atuar na produção e no manejo de florestas, na restauração de áreas degradadas e na conservação de recursos naturais.\n\nNo **Campus São João Evangelista**, a formação combina estudos de solos, árvores, ecossistemas, tecnologias da madeira e planejamento florestal, com atividades práticas e pesquisa de campo."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Da produção de madeira à recuperação de nascentes: a formação reúne tecnologia, manejo de florestas e conservação ambiental."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A graduação é destinada a quem concluiu o ensino médio e se interessa por natureza, ciências agrárias, produção florestal e preservação do meio ambiente. As aulas ocorrem pela **manhã e à tarde**, com atividades presenciais no campus e em espaços de campo."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O curso relaciona conhecimentos de biologia, química, física e matemática com a formação e o manejo de florestas, a análise de ecossistemas e o aproveitamento responsável de produtos florestais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Silvicultura e produção florestal",
+              "Produção de mudas, escolha de espécies, plantio, crescimento e manejo de florestas."
+            ],
+            [
+              "Inventário e mensuração",
+              "Medição de árvores e povoamentos, análise de dados e estimativas de volume e produção."
+            ],
+            [
+              "Solos, água e recuperação ambiental",
+              "Conservação de recursos naturais, restauração ecológica e recuperação de áreas degradadas."
+            ],
+            [
+              "Geoprocessamento e planejamento",
+              "Cartografia, imagens de satélite, análise territorial e organização de projetos florestais."
+            ],
+            [
+              "Proteção e conservação",
+              "Ecologia, biodiversidade, manejo de unidades de conservação e prevenção de incêndios florestais."
+            ],
+            [
+              "Tecnologia e produtos florestais",
+              "Propriedades da madeira, processamento, produção de carvão vegetal e outros produtos de origem florestal."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Práticas de campo e infraestrutura",
+          "conteudo": "O **Campus São João Evangelista** conta com **viveiro florestal, herbário, laboratórios de solos e cultura de tecidos vegetais**, além de áreas de vegetação natural e plantios florestais. Esses espaços contribuem para aulas práticas, atividades de campo e projetos acadêmicos vinculados à formação."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Viveiro e atividades práticas de Engenharia Florestal · São João Evangelista",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Engenharia Florestal",
+          "conteudo": "O bacharelado em **Engenharia Florestal** é oferecido no **Campus São João Evangelista**, com aulas presenciais pela manhã e à tarde. A duração mínima prevista é de **dez semestres**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "São João Evangelista",
+              "Manhã e tarde",
+              "Presencial",
+              "eng.florestal.sje@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus São João Evangelista",
+              "resposta": "O curso tem duração mínima prevista de **dez semestres** e realiza atividades em laboratórios, viveiro florestal, herbário, áreas de plantio e espaços de vegetação natural. A formação inclui **estágio supervisionado obrigatório** e **Trabalho de Conclusão de Curso (TCC)**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A **Florest Jr.**, empresa júnior vinculada ao Bacharelado em Engenharia Florestal do **Campus São João Evangelista**, aproxima estudantes de iniciativas de empreendedorismo e da gestão de serviços da área florestal. Desde a inauguração do Centro de Vivência, em **abril de 2025**, a empresa conta com uma sala compartilhada com a Agricampo, empresa júnior de Agronomia. As atividades e formas de participação seguem a organização da equipe."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Empresa júnior Florest Jr. · São João Evangelista · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Engenharia Florestal"
+          ],
+          "linhas": [
+            [
+              "Especialização em Meio Ambiente",
+              "São João Evangelista (EaD)",
+              "Inventário e mensuração florestal, geoprocessamento, licenciamento, gestão ambiental e recuperação ecológica."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Ecologia aplicada, planejamento ambiental, recuperação de áreas degradadas e sustentabilidade de sistemas produtivos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **2025**, um Trabalho de Conclusão de Curso em Engenharia Florestal do **Campus São João Evangelista** documentou o planejamento e a implantação de um **sistema agroflorestal sintrópico para recuperação de uma nascente** localizada no campus. O projeto envolveu a recuperação de uma Área de Preservação Permanente (APP), o trabalho com colaboradores do Viveiro Florestal e a integração de pesquisa, ensino e extensão em uma unidade demonstrativa."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Sistema agroflorestal para recuperação de nascente · TCC · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **2025**, outro Trabalho de Conclusão de Curso de Engenharia Florestal do **Campus São João Evangelista** investigou a qualidade do **carvão vegetal de eucalipto produzido em três tipos de fornos**, utilizando análises físicas, químicas e energéticas. A pesquisa identificou diferenças de carbono fixo, cinzas e poder calorífico, relacionando as características do material às aplicações industriais, especialmente na siderurgia."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa sobre carvão vegetal em diferentes fornos · TCC · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre produzir florestas e recuperar áreas degradadas?",
+              "resposta": "Na **produção florestal**, o profissional planeja o cultivo e o manejo de árvores para diferentes usos. Na **restauração ecológica**, o objetivo é recuperar funções ambientais, solo, água e vegetação de áreas que sofreram degradação. O curso aborda os dois campos."
+            },
+            {
+              "pergunta": "Há atividades práticas de campo?",
+              "resposta": "Sim. A formação utiliza **viveiro florestal, herbário, laboratórios e áreas de vegetação e plantio** do campus, com atividades práticas relacionadas às disciplinas e aos projetos em desenvolvimento."
+            },
+            {
+              "pergunta": "O estágio supervisionado e o TCC são obrigatórios?",
+              "resposta": "Sim. O curso inclui **estágio supervisionado obrigatório** e **Trabalho de Conclusão de Curso (TCC)**. As regras de realização e as cargas horárias seguem a matriz curricular aplicável à turma."
+            },
+            {
+              "pergunta": "Que projetos posso desenvolver durante a graduação?",
+              "resposta": "Os trabalhos podem abordar produção de mudas, florestas plantadas, recuperação de nascentes, geoprocessamento e tecnologia da madeira. Pesquisas desenvolvidas por estudantes do curso incluem experiências com sistemas agroflorestais e análise da qualidade de carvão vegetal."
+            },
+            {
+              "pergunta": "Posso participar da empresa júnior?",
+              "resposta": "A **Florest Jr.** é uma oportunidade de aproximação com atividades profissionais e gestão de iniciativas na área florestal. A participação depende das formas de ingresso e das atividades organizadas pela própria equipe."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil?",
+              "resposta": "O IFMG mantém programas de assistência estudantil com regras e auxílios definidos em editais. A participação nas seleções depende dos critérios e da documentação exigida em cada processo."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Engenharia Florestal**, é necessário ter concluído o **ensino médio** ou concluí-lo até a matrícula. O IFMG realiza processos seletivos próprios de graduação e pode disponibilizar vagas pelo **Sisu**, de acordo com os editais vigentes.\n\nNas seleções próprias, podem ser utilizadas **notas do Enem** ou a modalidade de **Histórico Escolar e Redação**, conforme a edição. Consulte os editais em vigor para conhecer as formas de seleção, as vagas, as cotas e a documentação para matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O engenheiro florestal pode **planejar a produção e o manejo de florestas plantadas**, escolher espécies, organizar o plantio, acompanhar o desenvolvimento das árvores e avaliar formas de colheita e aproveitamento da madeira. Em cadeias como papel e celulose, madeira serrada e carvão vegetal, pode analisar a produtividade, as características da matéria-prima e os impactos dos processos.\n\nNa área ambiental, pode **elaborar projetos de restauração florestal, recuperação de áreas degradadas e proteção de nascentes**, utilizando inventários, medições em campo, dados geográficos e técnicas de conservação. Pode participar do manejo de unidades de conservação, do planejamento de paisagens, da prevenção e do controle de incêndios e da gestão de recursos florestais não madeireiros.\n\nEssas atividades podem ocorrer em propriedades rurais, empresas florestais, cooperativas, consultorias, órgãos ambientais, unidades de conservação e instituições de pesquisa. O exercício profissional nas atividades regulamentadas depende do **registro no Conselho Regional de Engenharia e Agronomia (Crea)** e das atribuições reconhecidas para o profissional."
+        }
+      ]
     }
   ]
 }

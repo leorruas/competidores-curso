@@ -1509,7 +1509,7 @@ test("F7.1: Zootecnia Bambuí integra catálogo com conteúdos e duas galerias",
   assert.equal(campiTable.linhas[0][3],"Informação incompleta","sem publicar e-mail pessoal");
   assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   assert.match(c.blocos.at(-1).conteudo,/CRMV/);
-  assert.ok(!JSON.stringify(c).includes("validacao"));
+  assert.ok(!Object.hasOwn(c,"validacao") && !Object.hasOwn(c,"pendencias") && !Object.hasOwn(c,"revisao_coordenacao"));
 });
 
 test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {

@@ -260,7 +260,9 @@ test("F1B.9: áreas locais aparecem imediatamente após as tabelas de ofertas, s
     {id:"tecnico-em-edificacoes-integrado",tableTitle:"Onde o IFMG oferece Técnico em Edificações",
      campi:["Congonhas","Governador Valadares","Ouro Preto","Piumhi","Santa Luzia"]},
     {id:"tecnico-em-logistica-subsequente",tableTitle:"Onde o IFMG oferece Técnico em Logística",
-     campi:["Governador Valadares","Ribeirão das Neves"]}
+     campi:["Governador Valadares","Ribeirão das Neves"]},
+    {id:"tecnico-em-administracao-integrado",tableTitle:"Onde o IFMG oferece Técnico em Administração Integrado",
+     campi:["Arcos","Bambuí","Formiga","Ouro Branco","Ouro Preto","Ponte Nova","Ribeirão das Neves","Sabará"]}
   ];
   for(const {id,tableTitle,campi} of specs){
     const c=json.courses.find(x=>x.id===id);
@@ -303,6 +305,36 @@ test("F1B.9: informações locais verificadas continuam atribuídas ao campus ce
   assert.equal(table.linhas.find(x=>x[0]==="Governador Valadares").at(-1),"coordenacao.tslog.gv@ifmg.edu.br");
   assert.equal(table.linhas.find(x=>x[0]==="Ribeirão das Neves").at(-1),"Informação incompleta");
   assert.doesNotMatch(JSON.stringify(lg.blocos.filter(x=>x.tipo==="texto"&&x.titulo?.startsWith("Campus "))),/certificado de Assistente/);
+});
+
+test("F1B.9: oito campi de Administração têm informações próprias e FAQ de dúvidas reais", () => {
+  const c=json.courses.find(x=>x.id==="tecnico-em-administracao-integrado");
+  const content=campus=>c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Campus "+campus)?.conteudo||"";
+  const expectations=[
+    ["Arcos",/Trabalho Acadêmico Integrador.*TAI/],
+    ["Bambuí",/tecnologia e relações humanas/],
+    ["Formiga",/três anos, em séries anuais/],
+    ["Ouro Branco",/3\\.442 horas/],
+    ["Ouro Preto",/3\\.180 horas/],
+    ["Ponte Nova",/empreendedorismo, inovação/],
+    ["Ribeirão das Neves",/recrutamento e treinamento/],
+    ["Sabará",/Expo Favela Minas/]
+  ];
+  for(const [campus,rx] of expectations){
+    const body=content(campus);
+    assert.ok(body.length>200,campus);
+    assert.match(body,rx,campus);
+  }
+  assert.match(content("Sabará"),/Em \\*\\*2026\\*\\*/);
+  assert.match(content("Sabará"),/16,67%/);
+  const faq=c.blocos.find(x=>x.tipo==="faq");
+  assert.equal(faq.itens.length,4);
+  assert.ok(faq.itens.every(x=>x.pergunta.includes("?")&&x.resposta.length>70));
+  assert.ok(faq.itens.every(x=>!c.campi.includes(x.pergunta)));
+  assert.ok(faq.itens.some(x=>x.pergunta.includes("distância")&&x.resposta.includes("16%")));
+  const joined=JSON.stringify(c.blocos.filter(x=>x.titulo?.startsWith("Campus ")));
+  assert.doesNotMatch(joined,/Informação incompleta|referência sem validação|Hackathon Social|Mais informações no campus/);
+  assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 
 test("F3.6: todos os oito cursos descrevem tarefas reais no Mundo do Trabalho", () => {
@@ -586,7 +618,10 @@ test("Técnico em Administração Integrado agrupa 8 campi sem misturar o bachar
   assert.ok(h.isApprovedCourse(tec));
   const table=tec.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.equal(table.linhas.length,8);
-  assert.ok(tec.blocos.find(b=>b.tipo==="faq").itens.some(x=>x.pergunta==="Sabará"&&x.resposta.includes("16,67%")));
+  const sabara=tec.blocos.find(b=>b.tipo==="texto"&&b.titulo==="Campus Sabará");
+  assert.ok(sabara);
+  assert.match(sabara.conteudo,/16,67%/);
+  assert.ok(!tec.blocos.find(b=>b.tipo==="faq").itens.some(x=>tec.campi.includes(x.pergunta)));
 });
 
 test("título permanece copiável quando Texto tem conteúdo incompleto", () => {

@@ -201,7 +201,7 @@ test("F4.5: Edificações tem continuidade tabular verificável e copiável", ()
   assert.ok(h.isApprovedCourse(c));
   assert.match(h.editorBlock(grad,idx+2),/Copiar tabela/);
   assert.match(h.editorBlock(pos,idx+4),/Copiar tabela/);
-  assert.match(h.blockCopy(grad),/Curso\\tCampus\\tRelação com Edificações/);
+  assert.match(h.blockCopy(grad),/Curso\tCampus\tRelação com Edificações/);
   assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 

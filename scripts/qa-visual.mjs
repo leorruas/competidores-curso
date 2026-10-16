@@ -40,6 +40,7 @@ try {
       await page.locator("#filter-search").fill("Direito");
       assert.equal(await page.locator(".catalog-grid .course-card").count(), 1, "busca");
       await page.locator("#catalog-filters button[type=reset]").click();
+      await page.waitForFunction(expected => document.querySelectorAll(".catalog-grid .course-card").length === expected, data.courses.length);
       assert.equal(await page.locator(".catalog-grid .course-card").count(), data.courses.length, "limpar filtros");
     }
     for (const course of data.courses) {

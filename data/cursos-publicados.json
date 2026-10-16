@@ -3361,6 +3361,262 @@
           "conteudo": "O arquiteto e urbanista pode **analisar as necessidades de uma edificação, elaborar projetos arquitetônicos e acompanhar sua execução**, considerando acessibilidade, conforto ambiental, segurança, técnicas construtivas e uso do espaço. Pode planejar reformas, adaptações e intervenções em edifícios residenciais, comerciais e institucionais, além de desenvolver projetos de interiores e paisagismo dentro das atribuições da profissão.\n\nNa escala urbana, pode **participar da elaboração de planos e projetos de bairros, espaços públicos, sistemas de circulação e habitação**, utilizando levantamentos, diagnósticos territoriais, representação técnica e ferramentas digitais. Patrimônio cultural, conservação de edificações, mobilidade, sustentabilidade e planejamento urbano e regional também fazem parte dos campos de atuação.\n\nO trabalho pode ocorrer em escritórios de arquitetura, construtoras, órgãos públicos, organizações sociais, instituições de pesquisa e equipes multidisciplinares. O exercício profissional requer registro no **Conselho de Arquitetura e Urbanismo (CAU)**, com observância das atribuições profissionais e normas aplicáveis."
         }
       ]
+    },
+    {
+      "id": "engenharia-metalurgica-bacharelado",
+      "nome": "Engenharia Metalúrgica",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Ouro Branco"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Engenharia Metalúrgica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ouro Branco"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Duração prevista",
+              "valor": "5 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.612 horas"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "coord.graduacaoengenhariametalurgica.obr@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Engenharia Metalúrgica",
+          "conteudo": "A graduação em **Engenharia Metalúrgica** do IFMG forma profissionais para estudar, obter, transformar e aplicar metais e ligas metálicas. A formação reúne mineração, siderurgia, fundição, processos industriais e engenharia de materiais.\n\nNo **Campus Ouro Branco**, o bacharelado é presencial e noturno, com disciplinas teóricas e práticas que relacionam o comportamento dos materiais às tecnologias usadas na indústria."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Da matéria-prima ao produto industrial: aprenda a transformar minérios em metais, entender suas propriedades e acompanhar processos de fabricação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem concluiu o ensino médio e se interessa por química, física, matemática, materiais e funcionamento da indústria. As aulas são realizadas à noite, o que permite organizar o estudo em outro período do dia, considerando as atividades acadêmicas exigidas ao longo do curso."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O bacharelado combina fundamentos de ciências exatas com o estudo de metais e de processos de transformação industrial. O percurso articula análise, projeto, produção e controle de materiais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Ciências básicas e fundamentos de engenharia",
+              "Cálculo, física, química e interpretação de fenômenos relacionados aos materiais."
+            ],
+            [
+              "Minerais e matérias-primas",
+              "Preparação e beneficiamento de minérios e matérias-primas para processos metalúrgicos."
+            ],
+            [
+              "Metalurgia extrativa e siderurgia",
+              "Obtenção e refino de metais, fabricação de aço e transformação de insumos."
+            ],
+            [
+              "Fundição e conformação",
+              "Solidificação, processos de fundição, laminação, forjamento e obtenção de peças."
+            ],
+            [
+              "Tratamentos e propriedades dos materiais",
+              "Tratamentos térmicos, estrutura dos metais, resistência e comportamento em serviço."
+            ],
+            [
+              "Análise e controle de qualidade",
+              "Caracterização, ensaios, identificação de falhas e melhoria de processos produtivos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Práticas e laboratórios",
+          "conteudo": "O **Campus Ouro Branco** conta com **três laboratórios de Metalurgia** utilizados no ensino e em projetos de pesquisa. Neles, os estudantes relacionam conceitos de materiais e processos metalúrgicos a atividades práticas previstas nas disciplinas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios de Metalurgia · Ouro Branco",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Engenharia Metalúrgica",
+          "conteudo": "O bacharelado em **Engenharia Metalúrgica** é oferecido no **Campus Ouro Branco**, no turno da noite, com duração prevista de **cinco anos**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Branco",
+              "Noite",
+              "Presencial",
+              "coord.graduacaoengenhariametalurgica.obr@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Branco",
+              "resposta": "A graduação tem aulas **à noite**, duração prevista de **cinco anos** e utiliza **três laboratórios de Metalurgia**. O curso inclui atividades de estudo de materiais, processos industriais, estágio supervisionado e Trabalho de Conclusão de Curso (TCC)."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Em **2025**, o IFMG Campus Ouro Branco estabeleceu uma **parceria com a Gerdau** para realizar pesquisa aplicada em Engenharia Metalúrgica. O programa anunciou **sete projetos** ligados a desafios da indústria, com orientação conjunta de professores e profissionais da empresa. Também foi aberto processo seletivo de bolsas de iniciação científica para estudantes do bacharelado. A participação ocorre conforme as condições do programa e dos projetos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Parceria IFMG e Gerdau: pesquisa aplicada em Metalurgia · Ouro Branco · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "A **Office Jr. Consultoria**, empresa júnior do Campus Ouro Branco, desenvolve projetos nas áreas de Administração, Engenharia Metalúrgica, Pedagogia e Sistemas de Informação. Em **março de 2026**, a empresa abriu processo seletivo para estudantes das graduações do campus, com atuação nas áreas de projetos, finanças, marketing e recursos humanos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Office Jr. Consultoria · Ouro Branco · seleção 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Engenharia Metalúrgica"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa sobre tecnologias ambientais, resíduos, materiais e energia, com possibilidades de estudo relacionadas aos impactos de processos industriais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a relação entre Metalurgia e Engenharia de Materiais?",
+              "resposta": "A **Metalurgia** concentra-se na obtenção, transformação, estrutura, propriedades e aplicação de metais e ligas. A formação também utiliza fundamentos da ciência e engenharia de materiais para selecionar processos e avaliar o comportamento de produtos industriais."
+            },
+            {
+              "pergunta": "O curso tem laboratórios próprios?",
+              "resposta": "Sim. O Campus Ouro Branco dispõe de **três laboratórios de Metalurgia** usados em aulas práticas e projetos de pesquisa. As atividades realizadas pelos estudantes dependem das disciplinas e dos projetos em desenvolvimento."
+            },
+            {
+              "pergunta": "O estágio e o TCC fazem parte da formação?",
+              "resposta": "Sim. A graduação prevê **estágio supervisionado obrigatório** e **Trabalho de Conclusão de Curso (TCC)**, com acompanhamento acadêmico. As regras e cargas horárias específicas seguem a organização curricular aplicável à turma."
+            },
+            {
+              "pergunta": "Existe oportunidade de participar de pesquisa com empresas?",
+              "resposta": "Sim. A parceria estabelecida em **2025** entre o IFMG e a **Gerdau** incluiu uma seleção de bolsas de iniciação científica e projetos ligados a desafios industriais. A disponibilidade de novas oportunidades depende de programas e seleções em andamento."
+            },
+            {
+              "pergunta": "Como concorrer a auxílios estudantis?",
+              "resposta": "O IFMG mantém programas de assistência estudantil com critérios, documentação e condições de concessão definidos em editais. O estudante deve acompanhar a seleção vigente para verificar os auxílios disponíveis e os requisitos."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Engenharia Metalúrgica**, é necessário ter concluído o **ensino médio** ou concluí-lo até a matrícula. O IFMG realiza processos seletivos de graduação e pode oferecer vagas por meio do **Sisu**, conforme os editais vigentes.\n\nNa seleção própria, podem existir modalidades que aproveitam **notas do Enem** ou utilizam **Histórico Escolar e Redação**. Consulte os editais da edição em andamento para verificar as formas de ingresso, as vagas, as cotas e a documentação necessária."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O engenheiro metalurgista pode **planejar e acompanhar a transformação de minérios em metais e ligas metálicas**, estudar as propriedades desses materiais e indicar processos adequados para que atendam às exigências de cada aplicação. Em siderúrgicas e fundições, pode acompanhar operações de obtenção de metais, solidificação, tratamento térmico, conformação e controle de qualidade.\n\nTambém pode **investigar falhas em componentes, realizar análises de materiais e propor melhorias de processos**, considerando resistência, durabilidade, consumo de energia e aproveitamento de matérias-primas. Atua em setores como mineração e beneficiamento mineral, siderurgia, indústria automobilística, fabricação de máquinas, construção naval, petróleo e gás, tratamento de superfícies e centros de pesquisa.\n\nPara exercer atividades profissionais regulamentadas, é necessário **registro no Conselho Regional de Engenharia e Agronomia (Crea)** e observar as atribuições profissionais aplicáveis."
+        }
+      ]
     }
   ]
 }

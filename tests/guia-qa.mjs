@@ -215,6 +215,8 @@ test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar prem
   const c=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
   const research=c.blocos.find(x=>x.titulo==="Pesquisa, extensão e oportunidades").conteudo;
   const works=c.blocos.find(x=>x.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  assert.ok(research.startsWith("Em **Arcos**"));
+  assert.ok(works.startsWith("Em **Betim**"));
   assert.match(research,/Em \*\*Betim\*\*[\s\S]*impressão 3D/);
   assert.match(research,/graduações em Engenharia Mecânica e Controle e Automação/);
   assert.match(works,/Em \*\*Betim\*\*[\s\S]*baterias de veículos elétricos/);

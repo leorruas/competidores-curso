@@ -113,7 +113,7 @@ F2.13 revisada em 16/10/2026: a primeira Introdução deve ser geral, sem favore
 
 **Checkpoint F4.4 — 16/10/2026:** os oito cursos não repetem avisos genéricos na continuidade dos estudos. Os três técnicos preservam suas duas tabelas, sem texto de ressalvas introdutórias. A validação pública bloqueou links de pós-graduação no portal legado; por isso, os cinco blocos de URLs provisórias foram retirados dos bacharelados, preservando as tabelas. Os links específicos atualizados permanecem pendentes de conferência; não enfraquecer a política de URL para contornar essa validação. [CI 66/66](https://github.com/leorruas/competidores-curso/actions/runs/38894324852). QA visual e teste Wagtail real permanecem pendentes.
 
-## F5.4 — Reconhecimentos e experiências sem duplicidade (16/10/2026)
+## F5.6 — Reconhecimentos e experiências sem duplicidade (16/10/2026)
 
 - **Decisão do usuário:** `Reconhecimentos e premiações` (ou `Reconhecimentos e avaliações`) e `Experiências e conquistas dos estudantes` são uma só área editorial. Em cada um dos **oito cursos**, apresentar **apenas** `Experiências e conquistas dos estudantes` como bloco `Texto`, sem repetir seções ou parágrafos equivalentes.
 - Quando existir **reconhecimento/avaliação do curso**, conservar o fato no bloco unificado, **identificando curso, campus, responsável e período**; não reescrever conceito do MEC como se fosse uma premiação de estudante. Registrar conquistas, projetos, publicações e experiências com a mesma precisão, sem duplicar os detalhes que aparecem em outro lugar.

@@ -1,0 +1,42 @@
+name: QA visual de páginas de cursos
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app.js'
+      - 'index.html'
+      - 'style.css'
+      - 'data/cursos-publicados.json'
+      - 'scripts/qa-visual.mjs'
+      - '.github/workflows/qa-visual.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  navegador:
+    name: Visualizar oito cursos em três larguras
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Obter repositório
+        uses: actions/checkout@v5
+      - name: Instalar Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Instalar Playwright
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install chromium
+      - name: Conferir navegador, catálogo, cópia e responsividade
+        run: node scripts/qa-visual.mjs
+      - name: Guardar capturas e métricas da revisão
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: f1-6-capturas-e-metricas
+          path: visual-qa-results/
+          if-no-files-found: warn
+          retention-days: 14

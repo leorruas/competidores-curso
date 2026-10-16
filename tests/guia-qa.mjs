@@ -318,7 +318,7 @@ test("F1B.11: diferenças institucionais não migram entre modalidades e campi",
   assert.doesNotMatch(prat.resposta,/todos os campi possuem/i);
   const edsec=ed.blocos.find(b=>b.titulo?.startsWith("Existe Técnico em Edificações"));
   assert.match(edsec.conteudo,/subsequente.*Congonhas.*Ouro Preto/is);
-  assert.match(edsec.conteudo,/concomitante.*Congonhas/is);
+  assert.match(edsec.conteudo,/Congonhas.*concomitante/is);
   assert.doesNotMatch(edsec.conteudo,/subsequente.*Piumhi/is);
   const lg=get("tecnico-em-logistica-subsequente");
   const lgfaq=lg.blocos.find(b=>b.tipo==="faq").itens;

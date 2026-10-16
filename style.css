@@ -233,9 +233,9 @@ h1 em{color:var(--accent);font-style:normal}
  .course-card .card-arrow{grid-column:3;grid-row:1/span 2}
  .help-columns{grid-template-columns:1fr}
  .help-aside{position:static}
- .course-layout{grid-template-columns:1fr}
- .course-side{order:-1;position:static;max-height:none;overflow:visible}
- .course-side nav{display:flex;flex-direction:row;gap:8px;overflow-x:auto;border-left:0;border-bottom:1px solid var(--line)}
+ .course-layout{grid-template-columns:minmax(0,1fr)}
+ .course-side{order:-1;position:static;min-width:0;max-width:100%;max-height:none;overflow:visible}
+ .course-side nav{display:flex;flex-direction:row;gap:8px;min-width:0;max-width:100%;overflow-x:auto;border-left:0;border-bottom:1px solid var(--line)}
  .course-side a{padding:9px 6px;white-space:nowrap}
  .course-head{flex-direction:column;align-items:start}
 }

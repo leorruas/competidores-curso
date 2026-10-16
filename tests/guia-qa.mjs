@@ -154,7 +154,7 @@ function sectionText(course, title) {
 
 test("F5: reconhecimentos e experiências formam uma seção única em todos os cursos", () => {
   const h=testContext();
-  assert.equal(json.courses.length,8);
+  assert.ok(json.courses.length>=8,"os oito pilotos originais devem continuar no guia");
   const unified="Experiências e conquistas dos estudantes";
   for(const c of json.courses){
     const relevant=c.blocos.filter(b=>b.titulo===unified);
@@ -187,7 +187,7 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
 
 test("F4.4: os oito cursos apresentam continuidade sem avisos genéricos", () => {
   const h=testContext();
-  assert.equal(json.courses.length,8);
+  assert.ok(json.courses.length>=8,"os oito pilotos originais devem continuar no guia");
   for(const c of json.courses) {
     const i=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
     assert.ok(i>=0,c.id);
@@ -551,7 +551,7 @@ test("F1B.10: os oito cursos encerram com Forma de ingresso e Mundo do Trabalho"
     "direito-bacharelado-arcos","engenharia-mecanica-bacharelado",
     "administracao-bacharelado","agronomia-bacharelado","engenharia-de-producao-bacharelado"
   ];
-  assert.equal(json.courses.length,8);
+  assert.ok(json.courses.length>=8,"os oito pilotos originais devem continuar no guia");
   for(const c of json.courses){
     const form=c.blocos.filter(b=>b.tipo==="texto"&&b.titulo==="Forma de ingresso");
     const work=c.blocos.filter(b=>b.tipo==="texto"&&b.titulo==="Mundo do Trabalho");
@@ -732,7 +732,7 @@ test("F1B.9: cursos superiores distinguem atividades e fontes de cada campus", (
 });
 
 test("F3.6: todos os oito cursos descrevem tarefas reais no Mundo do Trabalho", () => {
-  assert.equal(json.courses.length,8);
+  assert.ok(json.courses.length>=8,"os oito pilotos originais devem continuar no guia");
   const expected=new Map([
     ["tecnico-em-edificacoes-integrado",["desenhos técnicos","orçamentos"]],
     ["tecnico-em-logistica-subsequente",["controle de estoques","planejamento de rotas"]],
@@ -1413,7 +1413,8 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "administracao-bacharelado":3,
     "agronomia-bacharelado":4,
     "engenharia-de-producao-bacharelado":6,
-    "tecnico-em-administracao-integrado":3
+    "tecnico-em-administracao-integrado":3,
+    "zootecnia-bacharelado":2
   };
   for(const c of json.courses){
     const galleries=c.blocos.filter(b=>b.tipo==="galeria");
@@ -1489,6 +1490,28 @@ test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promess
   }
 });
 
+test("F7.1: Zootecnia Bambuí integra catálogo com conteúdos e duas galerias", () => {
+  assert.equal(json.courses.length,9,"primeiro grupo adicional entregue");
+  const c=json.courses.find(x=>x.id==="zootecnia-bacharelado");
+  assert.ok(c,"Zootecnia publicada como roteiro em validação");
+  assert.deepEqual(Array.from(c.campi),["Bambuí"]);
+  assert.equal(c.publicacao_autorizada,true);
+  assert.equal(c.status,"em_validacao");
+  const texts=c.blocos.filter(x=>x.tipo==="texto");
+  assert.ok(texts.some(x=>x.titulo==="Pesquisa, extensão e oportunidades"&&x.conteudo.includes("GEAS")));
+  const xp=texts.find(x=>x.titulo==="Experiências e conquistas dos estudantes");
+  assert.ok(xp&&xp.conteudo.includes("maio de 2025")&&xp.conteudo.includes("sexto período"));
+  const gal=c.blocos.filter(x=>x.tipo==="galeria");
+  assert.equal(gal.length,2);
+  for(const g of gal) assert.deepEqual(Array.from(g.itens),[]);
+  for(const b of texts) assert.doesNotMatch(b.conteudo||"",/Segundo o site|a apresentação institucional registra|a coordenação deve confirmar/i);
+  const campiTable=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
+  assert.equal(campiTable.linhas[0][3],"Informação incompleta","sem publicar e-mail pessoal");
+  assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+  assert.match(c.blocos.at(-1).conteudo,/CRMV/);
+  assert.ok(!JSON.stringify(c).includes("validacao"));
+});
+
 test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {
   const relevantTitles=new Set(["Projetos e experiências acadêmicas","Projetos e experiências","Práticas e experiências","Pesquisa, extensão e oportunidades","Pesquisa, extensão e aprendizagem prática","Experiências e conquistas dos estudantes","Experiências de aprendizagem em Direito"]);
   const oldDate=/\b20(?:0\d|1\d|2[0-4])\b/;
@@ -1501,5 +1524,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),28);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),30);
 });

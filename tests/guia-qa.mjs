@@ -468,7 +468,7 @@ test("F1B.8: cabeçalhos FAQ não exibem conteúdo fictício e perguntas pendent
     const fields=h.editorFields(header);
     assert.equal(fields.length,1);
     assert.equal(fields[0].value,"Perguntas frequentes");
-    assert.match(fields[0].html,/<h2>Perguntas frequentes<\\/h2>/);
+    assert.ok(fields[0].html.includes("<h2>Perguntas frequentes</h2>"));
     const html=h.editorBlock(header,13);
     assert.equal((html.match(/data-copy-field=/g)||[]).length,1);
     assert.doesNotMatch(html,/Informação incompleta/);

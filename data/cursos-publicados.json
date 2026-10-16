@@ -811,37 +811,30 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Como funciona o curso",
+          "titulo": "Onde o IFMG oferece Direito",
           "conteudo": "O bacharelado em **Direito** é oferecido no **Campus Arcos**, à noite, com duração prevista de **cinco anos**. O curso é presencial, com **30% da carga horária EaD**.\n\nAo longo da formação, o estudante desenvolve conhecimentos em diferentes campos do Direito e participa de atividades acadêmicas voltadas à interpretação de normas, à discussão de casos e à prática jurídica."
         },
         {
           "tipo": "tabela",
           "colunas": [
-            "Informação",
-            "Referência"
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
           ],
           "linhas": [
             [
-              "Campus",
-              "Arcos"
-            ],
-            [
-              "Turno",
-              "Noturno"
-            ],
-            [
-              "Duração",
-              "5 anos"
-            ],
-            [
-              "Modalidade",
-              "Presencial (30% EaD)"
-            ],
-            [
-              "Projeto pedagógico",
-              "Informação incompleta"
+              "Arcos",
+              "Noite",
+              "Presencial (30% EaD)",
+              "direito.arcos@ifmg.edu.br"
             ]
           ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Arcos",
+          "conteudo": "A graduação funciona no **período noturno**, com atividades presenciais e componentes a distância conforme o projeto pedagógico. A proposta acadêmica inclui **análise de casos, projetos integradores e prática jurídica simulada e real**. O curso dispõe de percurso de **estágio supervisionado** e **Trabalho de Conclusão de Curso**, com atividades orientadas por docentes. Os critérios e as cargas específicas seguem a matriz curricular aplicável à turma."
         },
         {
           "tipo": "texto",

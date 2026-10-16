@@ -5,6 +5,7 @@
  * Executar: node scripts/validar-publicacao.mjs
  */
 import { readFileSync } from "node:fs";
+import { validarEstruturaCurso } from "./validar-estrutura.mjs";
 
 const arquivo = "data/cursos-publicados.json";
 const erros = [];
@@ -76,6 +77,7 @@ else base.courses.forEach((curso,i) => {
   if (!Array.isArray(curso.campi) || !curso.campi.length || !curso.campi.every(x => string(x,150))) denuncia(p+".campi", "campus precisa ser informado");
   if (!Array.isArray(curso.blocos) || !curso.blocos.length) denuncia(p+".blocos", "blocos obrigatórios");
   else curso.blocos.forEach((b,j) => validarBloco(b,p+".blocos["+j+"]"));
+  validarEstruturaCurso(curso).forEach(m => denuncia(p+".blocos",m));
   checaVazamento(curso,p);
 });
 if (erros.length) { console.error("ERROS DE PUBLICAÇÃO ("+erros.length+"):\n" + erros.map(x=>" - "+x).join("\n")); process.exit(1); }

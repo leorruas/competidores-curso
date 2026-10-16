@@ -11,6 +11,7 @@ on:
       - 'style.css'
       - 'assets/**'
       - '.github/workflows/validar-publicacao.yml'
+      - '.github/workflows/qa-visual.yml'
   pull_request:
     paths:
       - 'data/**'
@@ -43,5 +44,13 @@ jobs:
         run: |
           node --check app.js
           node --check scripts/validar-publicacao.mjs
+          node --check scripts/validar-estrutura.mjs
       - name: Executar todos os testes do guia e do validador
         run: node --test tests/*.mjs
+
+  qa-visual:
+    name: Conferir todos os cursos em três larguras
+    needs: validar-conteudo-publico
+    uses: ./.github/workflows/qa-visual.yml
+    permissions:
+      contents: read

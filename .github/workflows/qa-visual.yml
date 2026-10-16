@@ -1,14 +1,6 @@
 name: QA visual de páginas de cursos
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'app.js'
-      - 'index.html'
-      - 'style.css'
-      - 'data/cursos-publicados.json'
-      - 'scripts/qa-visual.mjs'
-      - '.github/workflows/qa-visual.yml'
+  workflow_call:
   workflow_dispatch:
 
 permissions:
@@ -16,7 +8,7 @@ permissions:
 
 jobs:
   navegador:
-    name: Visualizar oito cursos em três larguras
+    name: Visualizar todos os cursos em três larguras
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

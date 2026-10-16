@@ -6424,6 +6424,404 @@
           "conteudo": "O técnico em Mineração pode atuar em atividades de **pesquisa mineral, lavra e tratamento de minérios**, com atenção à segurança das operações e às exigências ambientais. Entre as tarefas estão apoiar levantamentos geológicos e topográficos, coletar amostras, registrar dados, acompanhar equipamentos de extração e transporte e participar de etapas de análise e separação mineral.\n\nEm operações de mineração, o técnico pode acompanhar planos de lavra, medições, inspeções e procedimentos de controle. No beneficiamento, pode colaborar com a operação e o monitoramento de equipamentos de fragmentação e separação, além de registros de qualidade. A formação também permite atuação em laboratórios, empresas de serviços técnicos e instituições de pesquisa, respeitando as atribuições profissionais, a supervisão exigida e as normas de segurança."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-eletrotecnica-integrado",
+      "nome": "Técnico em Eletrotécnica",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Conselheiro Lafaiete",
+        "Formiga",
+        "Ipatinga"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Eletrotécnica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Conselheiro Lafaiete; Formiga; Ipatinga"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Varia conforme o campus: Conselheiro Lafaiete, 3.238 horas; Ipatinga, 3.205 horas; Formiga, Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz para ingressantes de 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Consultar contatos por campus na tabela"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Eletrotécnica",
+          "conteudo": "Estude o ensino médio junto com uma formação técnica voltada à **energia elétrica**, aos **circuitos**, às **instalações** e à manutenção de equipamentos. No IFMG, você aprende a interpretar projetos, fazer medições e compreender o funcionamento de sistemas elétricos, relacionando esses conhecimentos à formação geral."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude eletricidade, comandos, máquinas e instalações elétricas enquanto conclui o ensino médio. A formação reúne conhecimentos técnicos, práticas e segurança."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem concluiu o ensino fundamental e quer fazer o ensino médio junto com a formação técnica. É uma opção para quem se interessa por circuitos, sistemas de energia, instrumentos de medição, equipamentos industriais e formas seguras de utilizar a eletricidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação articula matemática, física e outras áreas do ensino médio com circuitos, máquinas, comandos e sistemas elétricos. A distribuição das disciplinas e as atividades práticas são definidas pela matriz curricular de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Eletricidade e circuitos",
+              "Compreender grandezas elétricas, analisar circuitos e interpretar esquemas e diagramas."
+            ],
+            [
+              "Instalações elétricas",
+              "Estudar componentes, dimensionamento, proteção e organização de instalações residenciais, comerciais e industriais."
+            ],
+            [
+              "Comandos, automação e máquinas",
+              "Conhecer motores elétricos, acionamentos, comandos e princípios de automação."
+            ],
+            [
+              "Medições e manutenção",
+              "Utilizar instrumentos, reconhecer falhas e compreender ensaios, inspeções e procedimentos de manutenção."
+            ],
+            [
+              "Energia e segurança",
+              "Estudar geração e distribuição de energia, eficiência energética e medidas de prevenção de riscos elétricos."
+            ],
+            [
+              "Formação geral",
+              "Relacionar os conhecimentos técnicos com matemática, linguagens, ciências da natureza e ciências humanas."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação envolve interpretação de diagramas, montagens, medições, testes de componentes e atividades sobre instalações, acionamentos e segurança elétrica, conforme a etapa curricular e as condições de cada campus. As práticas ajudam a relacionar os conceitos de eletricidade a equipamentos e situações encontrados em residências, serviços e indústrias."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades práticas, circuitos e equipamentos de Eletrotécnica · três campi",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Eletrotécnica",
+          "conteudo": "O IFMG oferece o **Técnico em Eletrotécnica Integrado ao Ensino Médio** nos campi **Conselheiro Lafaiete, Formiga e Ipatinga**. As três ofertas são presenciais, com aulas de manhã e à tarde e duração de três anos. As matrizes, cargas horárias e experiências acadêmicas são específicas de cada unidade."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Conselheiro Lafaiete",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "Informação incompleta"
+            ],
+            [
+              "Formiga",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "eletrotecnica.formiga@ifmg.edu.br"
+            ],
+            [
+              "Ipatinga",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "eletrotecnica.ipatinga@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Conselheiro Lafaiete",
+              "resposta": "O curso integrado tem três anos e 3.238 horas na documentação institucional. A formação abrange instalações elétricas, manutenção preventiva, instrumentação, comandos e segurança. O campus também oferta Eletrotécnica Subsequente, uma modalidade distinta para quem já concluiu o ensino médio."
+            },
+            {
+              "pergunta": "Campus Formiga",
+              "resposta": "A formação presencial integrada tem três anos e aborda sistemas de potência, instalações, acionamentos, manutenção, automação e uso eficiente da energia elétrica. O campus disponibiliza matrizes e projetos pedagógicos por turma, incluindo documento para 2026."
+            },
+            {
+              "pergunta": "Campus Ipatinga",
+              "resposta": "O curso integrado presencial tem duração de três anos e carga horária total de 3.205 horas na documentação institucional. A formação reúne eletricidade, automação e manutenção de sistemas elétricos. O curso subsequente noturno do campus possui duração e carga horária próprias."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os estudantes podem participar de projetos de ensino, pesquisa, extensão, visitas técnicas, monitorias e eventos científicos, conforme as atividades e seleções disponíveis em cada campus. Essas experiências podem relacionar os estudos de eletricidade a temas como energia, automação, sustentabilidade e preparação para novos estudos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": "Depois de concluir o ensino médio integrado, você pode concorrer a cursos superiores do IFMG relacionados a sistemas elétricos, eletrônica e automação."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Eletrotécnica"
+          ],
+          "linhas": [
+            [
+              "Engenharia Elétrica",
+              "Formiga, Ipatinga e Itabirito",
+              "Estudo de energia elétrica, circuitos, máquinas, sistemas e instalações."
+            ],
+            [
+              "Engenharia de Controle e Automação",
+              "Betim, Ibirité e Sabará",
+              "Controle de processos, comandos, sensores e integração de equipamentos."
+            ],
+            [
+              "Engenharia Mecânica",
+              "Arcos e Betim",
+              "Máquinas, processos industriais e integração de sistemas mecânicos e elétricos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": "Após concluir uma graduação compatível, você também pode buscar especializações e mestrados relacionados à área de energia e tecnologia."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Eletrotécnica"
+          ],
+          "linhas": [
+            [
+              "Especialização em Sistemas de Energia Renovável: Geração, Distribuição e Eficiência Energética",
+              "Formiga (EaD)",
+              "Sistemas fotovoltaicos, energia eólica, armazenamento, distribuição e eficiência energética."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa aplicada em tecnologias ambientais e sustentabilidade, conforme as linhas de pesquisa e os requisitos do programa."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "No **Campus Conselheiro Lafaiete**, estudantes concluintes dos cursos técnicos **integrados e subsequentes de Eletrotécnica e Mecânica** participaram da formatura realizada em **27 de fevereiro de 2026**, no Centro Cultural da Escola Estadual Narciso de Queirós. A cerimônia reuniu formandos, professores e familiares."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Formatura dos técnicos de Eletrotécnica e Mecânica · Conselheiro Lafaiete · fevereiro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **24 de maio de 2025**, estudantes do terceiro ano dos técnicos integrados em **Eletrotécnica, Administração e Informática do Campus Formiga** participaram da **Mostra de Profissões da UFMG**, em Belo Horizonte. Eles conheceram cursos de graduação, laboratórios e espaços acadêmicos para ampliar as possibilidades de escolha após o ensino médio."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Mostra de Profissões UFMG · Eletrotécnica e outros integrados · Formiga · maio de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Na **Jornada Nacional de Foguetes de agosto de 2025**, **Júlia Bispo Silva**, estudante do primeiro ano de Eletrotécnica do **Campus Formiga**, integrou uma equipe com estudantes de Administração e Informática que conquistou o **vice-campeonato nacional**. A competição incluiu oficinas e atividades de construção e lançamento de foguetes."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Vice-campeonato Jornada Nacional de Foguetes · equipe mista com Eletrotécnica · Formiga · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **novembro de 2025**, **Paola Arantes Lopes**, do Técnico Integrado em Eletrotécnica do **Campus Formiga**, representou o IFMG na etapa nacional da **Olimpíada de Matemática das Instituições Federais (OMIF)**, no Paraná. A classificação veio após conquistar o **primeiro lugar na etapa local**, realizada em maio daquele ano."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Participação na OMIF nacional · Paola Arantes Lopes · Eletrotécnica Formiga · novembro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **maio de 2025**, estudantes dos técnicos em **Eletrotécnica e Automação Industrial do Campus Ipatinga** participaram de visitas técnicas ao aterro sanitário do Vale do Aço. A atividade integrou um projeto interdisciplinar sobre consumo consciente e meio ambiente, com observação de etapas de gestão dos resíduos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita a aterro sanitário · Eletrotécnica e Automação · Ipatinga · maio de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **junho de 2025**, estudantes dos técnicos integrados em **Eletrotécnica e Automação Industrial do Campus Ipatinga** receberam as **Bolsas de Excelência Usiminas**. Ao todo, **50 estudantes dos dois cursos** foram contemplados na edição, após processo de seleção que considerou desempenho acadêmico e outros critérios. O total se refere aos dois cursos juntos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Bolsas de Excelência Usiminas · Eletrotécnica e Automação · Ipatinga · junho de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "No **Campus Ipatinga**, o projeto de ensino **Suporte** concluiu sua edição de **2026** com atividades de reforço em Matemática para estudantes dos primeiros anos dos cursos técnicos integrados. **Daniel Victor**, da turma de **Eletrotécnica**, foi homenageado pelo empenho e pela evolução ao longo das atividades."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto Suporte e homenagem a Daniel Victor · Eletrotécnica Ipatinga · 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "No primeiro semestre de **2025**, o **Campus Ipatinga** concluiu o projeto de ensino **Preparação para o Mundo do Trabalho**, que envolveu estudantes dos cursos integrados em **Eletrotécnica e Automação Industrial** e da graduação em Engenharia Elétrica. As atividades incluíram conversas sobre carreira, processos seletivos, comunicação e trabalho em equipe."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto Preparação para o Mundo do Trabalho · Eletrotécnica e outros cursos · Ipatinga · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode ingressar no Técnico em Eletrotécnica Integrado?",
+              "resposta": "O curso é destinado a quem concluiu o ensino fundamental ou vai concluí-lo até a matrícula. O estudante faz o ensino médio e a formação técnica no mesmo percurso, conforme as regras do processo seletivo vigente."
+            },
+            {
+              "pergunta": "Qual é a diferença entre o integrado e o subsequente?",
+              "resposta": "No integrado, você faz o ensino médio junto com a formação técnica. O subsequente é destinado a quem já concluiu o ensino médio e tem organização, duração e carga horária próprias. Em Conselheiro Lafaiete e Ipatinga, existem ofertas subsequentes de Eletrotécnica."
+            },
+            {
+              "pergunta": "Os três campi têm a mesma carga horária?",
+              "resposta": "As cargas horárias seguem os projetos pedagógicos locais. Conselheiro Lafaiete informa 3.238 horas e Ipatinga, 3.205 horas. Em Formiga, a matriz aplicável a cada turma define a carga horária."
+            },
+            {
+              "pergunta": "Que tipo de atividades práticas são desenvolvidas?",
+              "resposta": "A formação trabalha leitura de diagramas, instalações, circuitos, medições, acionamentos e manutenção de equipamentos, conforme a matriz e a infraestrutura de cada campus. As atividades seguem regras de segurança para trabalho com eletricidade."
+            },
+            {
+              "pergunta": "É possível continuar os estudos depois do curso?",
+              "resposta": "Sim. Com o ensino médio concluído, você pode participar de processos seletivos de graduação, como Engenharia Elétrica e Engenharia de Controle e Automação. Depois de concluir a graduação, também existem opções de especialização e mestrado."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras modalidades relacionadas",
+          "conteudo": "O **Técnico em Eletrotécnica Integrado** reúne o ensino médio e a formação técnica. Para quem já concluiu o ensino médio, o IFMG também oferece a modalidade **subsequente** em Conselheiro Lafaiete e Ipatinga. A escolha depende da escolaridade e da oferta de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Concluiu o ensino fundamental e vai cursar o ensino médio",
+              "Técnico em Eletrotécnica Integrado",
+              "Formação geral e técnica em três anos, turno e campus."
+            ],
+            [
+              "Já concluiu o ensino médio",
+              "Técnico em Eletrotécnica Subsequente",
+              "Oferta disponível, duração e organização das aulas."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Eletrotécnica Integrado ao Ensino Médio**, é necessário concluir o ensino fundamental até a matrícula. O IFMG realiza processo seletivo público para ingresso nos cursos técnicos integrados.\n\nConsulte o edital vigente para verificar os campi participantes, os critérios de seleção, a reserva de vagas, os documentos exigidos e os procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Eletrotécnica pode atuar em **instalações e sistemas elétricos**, apoiando projetos, montagens, inspeções, medições e manutenção de equipamentos. Entre as atividades estão interpretar diagramas, acompanhar a instalação de dispositivos de proteção, testar circuitos, registrar grandezas elétricas e colaborar na identificação de falhas.\n\nEm ambientes industriais, pode participar da manutenção de máquinas, comandos e motores elétricos, além do acompanhamento de sistemas de distribuição e eficiência energética. Na construção e nos serviços técnicos, pode atuar em atividades ligadas a instalações elétricas, iluminação e dispositivos de segurança. O exercício profissional depende das atribuições reconhecidas pelo **Sistema CFT/CRTs**, do registro exigido e do cumprimento das normas técnicas e de segurança."
+        }
+      ]
     }
   ]
 }

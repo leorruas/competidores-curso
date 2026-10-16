@@ -497,6 +497,22 @@ test("Link único: selecionar estilo; copiar título, descrição e URL", () => 
   assert.doesNotMatch(rendered,/Exemplo de como o Link único aparece|block-link-example/);
 });
 
+test("F2.2: Bambuí descreve estágio e TCC sem inventar cargas curriculares de 2027", () => {
+  const items=[
+    {id:"agronomia-bacharelado",q:"Como funcionam estágio e TCC em Agronomia em Bambuí?",tokens:["estágio supervisionado obrigatório","TCC também integra a formação","orientação docente"],proibidos:/240 horas|320 horas|450 horas|160 horas/},
+    {id:"engenharia-de-producao-bacharelado",q:"Como funcionam estágio e TCC em Engenharia de Produção em Bambuí?",tokens:["estágio supervisionado é","relatórios","TCC é individual","banca examinadora"],proibidos:/160 horas|360 horas|450 horas|320 horas/}
+  ];
+  for(const spec of items) {
+    const c=json.courses.find(x=>x.id===spec.id);
+    const faq=c.blocos.find(b=>b.tipo==="faq").itens;
+    const answer=faq.find(x=>x.pergunta===spec.q)?.resposta;
+    assert.ok(answer,spec.id);
+    for(const term of spec.tokens)assert.ok(answer.includes(term),spec.id+": "+term);
+    assert.doesNotMatch(answer,spec.proibidos);
+    assert.doesNotMatch(answer,/2027|informação incompleta|conforme o PPC/i);
+  }
+});
+
 test("F2.2: estágio e TCC específicos em SJE e Governador Valadares, sem herdar regras", () => {
   const ag=json.courses.find(c=>c.id==="agronomia-bacharelado");
   const af=ag.blocos.find(b=>b.tipo==="faq").itens;

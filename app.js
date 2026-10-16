@@ -212,6 +212,7 @@
       '<span class="block-badge" aria-hidden="true">' + String(i+1).padStart(2,"0") + '</span>' +
       '<header class="block-card-header"><h2 class="block-card-title" id="block-heading-' + i +
       '">' + escapeHTML(b.tipo === "faq" && b.titulo === "Informações dos campi" ? "FAQ · Informações dos campi" : blockName[b.tipo]) + '</h2></header>' +
+      (b.tipo === "galeria" ? '<div class="gallery-guidance" role="note"><strong>Galeria da experiência: ' + escapeHTML(b.referencia || "Experiência do curso") + '</strong><p>Insira qualquer imagem provisória para preencher esta galeria. A coordenação do curso deverá substituí-la pela imagem definitiva correspondente à experiência.</p></div>' : "") +
       '<div class="editor-fields">' + fields.map((field,j) => fieldHTML(field,i,j)).join("") + '</div>' +
       '</section>';
   }
@@ -253,7 +254,7 @@
     const headings = course.blocos.map((b,i) => {
       const previousTitle = course.blocos.slice(0,i).reverse().find(x => x.titulo)?.titulo;
       const suffix = previousTitle ? " · " + previousTitle : "";
-      const label = b.titulo || ((b.tipo === "tabela" || b.tipo === "faq") ? blockName[b.tipo] + suffix : blockName[b.tipo]);
+      const label = b.tipo === "galeria" && b.referencia ? "Galeria · " + b.referencia : b.titulo || ((b.tipo === "tabela" || b.tipo === "faq") ? blockName[b.tipo] + suffix : blockName[b.tipo]);
       return { title: label, index: i };
     }).filter(x => !activePreview || blockPreview(course.blocos[x.index], x.index));
     root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Exemplo fictício" : kind) + '</div><h1>' + title + '</h1>' + (course.descricao ? '<p>' + escapeHTML(course.descricao) + '</p>' : '') + (flags ? '<div class="course-flags">' + flags + '</div>' : '') + '</div></div>' +

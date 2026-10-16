@@ -163,29 +163,30 @@
           ]
         },
         {
-          "tipo": "texto",
-          "titulo": "Campus Congonhas",
-          "conteudo": "O curso inclui formação técnica em construção civil e atividades em espaços dedicados a **solos, materiais de construção, instalações elétricas e hidráulicas e prática de obras**. O campus também dispõe de sala de desenho e laboratórios de informática, utilizados para apoiar o aprendizado sobre projetos, materiais e execução."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Governador Valadares",
-          "conteudo": "A formação combina ensino médio e estudos sobre **projetos, orçamento, ensaios, manutenção e acompanhamento de edificações**. A organização acadêmica do campus inclui **aulas práticas, visitas técnicas, eventos e projetos de ensino, pesquisa e extensão**, relacionando os conteúdos estudados a situações da construção civil."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Ouro Preto",
-          "conteudo": "O curso tem **organização anual e duração de três anos**, com **3.460 horas** de formação. Uma parte da disciplina de **Desenho Técnico** do primeiro ano é desenvolvida a distância, correspondente a **0,86% da carga horária total**. As demais atividades seguem a organização presencial da unidade."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Piumhi",
-          "conteudo": "O curso funciona em **regime anual**, com atividades pela manhã e à tarde. A formação articula disciplinas gerais do ensino médio com conteúdos de Edificações, incluindo **componentes obrigatórios e optativos**. Sua proposta pedagógica prevê relações entre áreas de conhecimento para estudar questões de infraestrutura e construção civil."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Santa Luzia",
-          "conteudo": "A formação é realizada em **três anos**, em período diurno, com disciplinas do ensino médio e da área de Edificações. A organização curricular é **presencial, com 10,3% da carga horária a distância**, conforme a matriz do curso. O campus disponibiliza o projeto pedagógico e a matriz curricular para consulta."
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Congonhas",
+              "resposta": "O curso inclui formação técnica em construção civil e atividades em espaços dedicados a **solos, materiais de construção, instalações elétricas e hidráulicas e prática de obras**. O campus também dispõe de sala de desenho e laboratórios de informática, utilizados para apoiar o aprendizado sobre projetos, materiais e execução."
+            },
+            {
+              "pergunta": "Campus Governador Valadares",
+              "resposta": "A formação combina ensino médio e estudos sobre **projetos, orçamento, ensaios, manutenção e acompanhamento de edificações**. A organização acadêmica do campus inclui **aulas práticas, visitas técnicas, eventos e projetos de ensino, pesquisa e extensão**, relacionando os conteúdos estudados a situações da construção civil."
+            },
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "O curso tem **organização anual e duração de três anos**, com **3.460 horas** de formação. Uma parte da disciplina de **Desenho Técnico** do primeiro ano é desenvolvida a distância, correspondente a **0,86% da carga horária total**. As demais atividades seguem a organização presencial da unidade."
+            },
+            {
+              "pergunta": "Campus Piumhi",
+              "resposta": "O curso funciona em **regime anual**, com atividades pela manhã e à tarde. A formação articula disciplinas gerais do ensino médio com conteúdos de Edificações, incluindo **componentes obrigatórios e optativos**. Sua proposta pedagógica prevê relações entre áreas de conhecimento para estudar questões de infraestrutura e construção civil."
+            },
+            {
+              "pergunta": "Campus Santa Luzia",
+              "resposta": "A formação é realizada em **três anos**, em período diurno, com disciplinas do ensino médio e da área de Edificações. A organização curricular é **presencial, com 10,3% da carga horária a distância**, conforme a matriz do curso. O campus disponibiliza o projeto pedagógico e a matriz curricular para consulta."
+            }
+          ]
         },
         {
           "tipo": "links",
@@ -559,14 +560,18 @@
           ]
         },
         {
-          "tipo": "texto",
-          "titulo": "Campus Governador Valadares",
-          "conteudo": "A formação é oferecida a distância, com **800 horas distribuídas em dois módulos**. Ao final de cada módulo, está previsto **um encontro presencial para a avaliação final no campus**. As aulas são organizadas principalmente a distância, permitindo estudar transporte, armazenagem e gestão de estoques, com avaliações presenciais previstas para a oferta."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Ribeirão das Neves",
-          "conteudo": "O curso tem **duração prevista de um ano** e é desenvolvido na modalidade a distância. A formação aborda **planejamento de rotas, armazenagem, controle de estoques, compras, distribuição e logística reversa**, incluindo o uso de ferramentas digitais aplicadas às operações. A oferta dispõe de ambiente virtual de aprendizagem para apoiar o acompanhamento das disciplinas."
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Governador Valadares",
+              "resposta": "A formação é oferecida a distância, com **800 horas distribuídas em dois módulos**. Ao final de cada módulo, está previsto **um encontro presencial para a avaliação final no campus**. As aulas são organizadas principalmente a distância, permitindo estudar transporte, armazenagem e gestão de estoques, com avaliações presenciais previstas para a oferta."
+            },
+            {
+              "pergunta": "Campus Ribeirão das Neves",
+              "resposta": "O curso tem **duração prevista de um ano** e é desenvolvido na modalidade a distância. A formação aborda **planejamento de rotas, armazenagem, controle de estoques, compras, distribuição e logística reversa**, incluindo o uso de ferramentas digitais aplicadas às operações. A oferta dispõe de ambiente virtual de aprendizagem para apoiar o acompanhamento das disciplinas."
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -859,9 +864,14 @@
           ]
         },
         {
-          "tipo": "texto",
-          "titulo": "Campus Arcos",
-          "conteudo": "A graduação funciona no **período noturno**, com atividades presenciais e componentes a distância conforme o projeto pedagógico. A proposta acadêmica inclui **análise de casos, projetos integradores e prática jurídica simulada e real**. O curso dispõe de percurso de **estágio supervisionado** e **Trabalho de Conclusão de Curso**, com atividades orientadas por docentes. Os critérios e as cargas específicas seguem a matriz curricular aplicável à turma."
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Arcos",
+              "resposta": "A graduação funciona no **período noturno**, com atividades presenciais e componentes a distância conforme o projeto pedagógico. A proposta acadêmica inclui **análise de casos, projetos integradores e prática jurídica simulada e real**. O curso dispõe de percurso de **estágio supervisionado** e **Trabalho de Conclusão de Curso**, com atividades orientadas por docentes. Os critérios e as cargas específicas seguem a matriz curricular aplicável à turma."
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -1091,14 +1101,18 @@
           ]
         },
         {
-          "tipo": "texto",
-          "titulo": "Campus Arcos",
-          "conteudo": "A formação utiliza **Trabalhos Acadêmicos Integradores (TAI)** ao longo dos períodos. Os estudantes relacionam disciplinas para desenvolver projetos, produtos e protótipos apresentados a bancas. O campus mantém um **laboratório de ensaios mecânicos**, utilizado em disciplinas como Ciência e Resistência dos Materiais e também em projetos integradores."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Betim",
-          "conteudo": "O curso reúne atividades práticas em laboratórios e uma estrutura curricular com **360 horas de extensão** e **180 horas de atividades complementares**, segundo o PPC de 2023. Em **2026**, estudantes da disciplina de Injeção de Termoplásticos visitaram a **Pollyrubber, em Contagem**, para conhecer moldagem, seleção de materiais e controle de qualidade. A participação em visitas e projetos depende das atividades de cada período."
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Arcos",
+              "resposta": "A formação utiliza **Trabalhos Acadêmicos Integradores (TAI)** ao longo dos períodos. Os estudantes relacionam disciplinas para desenvolver projetos, produtos e protótipos apresentados a bancas. O campus mantém um **laboratório de ensaios mecânicos**, utilizado em disciplinas como Ciência e Resistência dos Materiais e também em projetos integradores."
+            },
+            {
+              "pergunta": "Campus Betim",
+              "resposta": "O curso reúne atividades práticas em laboratórios e uma estrutura curricular com **360 horas de extensão** e **180 horas de atividades complementares**, segundo o PPC de 2023. Em **2026**, estudantes da disciplina de Injeção de Termoplásticos visitaram a **Pollyrubber, em Contagem**, para conhecer moldagem, seleção de materiais e controle de qualidade. A participação em visitas e projetos depende das atividades de cada período."
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -1355,34 +1369,34 @@
           ]
         },
         {
-          "tipo": "texto",
-          "titulo": "Campus Bambuí",
-          "conteudo": "O bacharelado é noturno e desenvolve **Trabalhos Interdisciplinares (TID)**, que aproximam diferentes áreas da Administração para estudar problemas organizacionais. A formação articula planejamento, finanças, marketing e gestão de pessoas com experiências de análise e tomada de decisões."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Formiga",
-          "conteudo": "O curso é noturno e presencial, com **20% da carga horária a distância** na oferta verificada. A formação trabalha planejamento, finanças, marketing, gestão de pessoas e decisões organizacionais. O bacharelado recebeu **conceito 4 em avaliação presencial do MEC**, conforme a página institucional do campus."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Ouro Branco",
-          "conteudo": "A formação é oferecida à noite, na modalidade presencial, com **8% da carga horária a distância** na oferta verificada. O curso recebeu **quatro estrelas no Guia da Faculdade de 2025**, reconhecimento divulgado pelo IFMG. Os conteúdos incluem gestão de negócios, processos e atividades organizacionais."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Ribeirão das Neves",
-          "conteudo": "No campus, a formação noturna aborda **planejamento estratégico, inovação e decisões apoiadas em dados**. As atividades acadêmicas incluem estudos de caso, elaboração de planos de negócios e exercícios de análise de situações organizacionais."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Sabará",
-          "conteudo": "O bacharelado é noturno e presencial, com **23,67% da carga horária a distância** na oferta verificada. As atividades acadêmicas articulam temas de gestão, empreendedorismo, planejamento e áreas funcionais da Administração em estudos interdisciplinares."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus São João Evangelista",
-          "conteudo": "A graduação é noturna e aborda **gestão de pessoas, marketing, finanças, processos, logística e administração rural**. Entre as experiências vinculadas ao campus está a **empresa júnior Destaque Jr.**, que permite aproximar conteúdos acadêmicos de atividades de gestão."
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "O bacharelado é noturno e desenvolve **Trabalhos Interdisciplinares (TID)**, que aproximam diferentes áreas da Administração para estudar problemas organizacionais. A formação articula planejamento, finanças, marketing e gestão de pessoas com experiências de análise e tomada de decisões."
+            },
+            {
+              "pergunta": "Campus Formiga",
+              "resposta": "O curso é noturno e presencial, com **20% da carga horária a distância** na oferta verificada. A formação trabalha planejamento, finanças, marketing, gestão de pessoas e decisões organizacionais. O bacharelado recebeu **conceito 4 em avaliação presencial do MEC**, conforme a página institucional do campus."
+            },
+            {
+              "pergunta": "Campus Ouro Branco",
+              "resposta": "A formação é oferecida à noite, na modalidade presencial, com **8% da carga horária a distância** na oferta verificada. O curso recebeu **quatro estrelas no Guia da Faculdade de 2025**, reconhecimento divulgado pelo IFMG. Os conteúdos incluem gestão de negócios, processos e atividades organizacionais."
+            },
+            {
+              "pergunta": "Campus Ribeirão das Neves",
+              "resposta": "No campus, a formação noturna aborda **planejamento estratégico, inovação e decisões apoiadas em dados**. As atividades acadêmicas incluem estudos de caso, elaboração de planos de negócios e exercícios de análise de situações organizacionais."
+            },
+            {
+              "pergunta": "Campus Sabará",
+              "resposta": "O bacharelado é noturno e presencial, com **23,67% da carga horária a distância** na oferta verificada. As atividades acadêmicas articulam temas de gestão, empreendedorismo, planejamento e áreas funcionais da Administração em estudos interdisciplinares."
+            },
+            {
+              "pergunta": "Campus São João Evangelista",
+              "resposta": "A graduação é noturna e aborda **gestão de pessoas, marketing, finanças, processos, logística e administração rural**. Entre as experiências vinculadas ao campus está a **empresa júnior Destaque Jr.**, que permite aproximar conteúdos acadêmicos de atividades de gestão."
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -1619,14 +1633,18 @@
           ]
         },
         {
-          "tipo": "texto",
-          "titulo": "Campus Bambuí",
-          "conteudo": "A graduação tem **duração prevista de nove semestres** e reúne atividades de campo, estudo da produção agrícola e práticas relacionadas à conservação de recursos naturais. O campus desenvolve grupos de estudo e ações de pesquisa e extensão. Em **2022**, estudantes participaram do projeto **Olericultura – Seleção e Implantação de forma sustentável**, que realizou oficinas e implantou uma horta escolar em uma instituição da comunidade."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus São João Evangelista",
-          "conteudo": "O campus reúne formação em cultivo, conservação dos solos, manejo de plantas e tecnologias agrícolas. A **empresa júnior Agricampo**, vinculada a Agronomia, desenvolve oportunidades de aprendizagem em cultivos, pastagens, hortaliças e planejamento de irrigação. Em **2025**, o campus inaugurou um Centro de Vivência com espaço destinado à Agricampo e a outra empresa júnior da instituição."
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A graduação tem **duração prevista de nove semestres** e reúne atividades de campo, estudo da produção agrícola e práticas relacionadas à conservação de recursos naturais. O campus desenvolve grupos de estudo e ações de pesquisa e extensão. Em **2022**, estudantes participaram do projeto **Olericultura – Seleção e Implantação de forma sustentável**, que realizou oficinas e implantou uma horta escolar em uma instituição da comunidade."
+            },
+            {
+              "pergunta": "Campus São João Evangelista",
+              "resposta": "O campus reúne formação em cultivo, conservação dos solos, manejo de plantas e tecnologias agrícolas. A **empresa júnior Agricampo**, vinculada a Agronomia, desenvolve oportunidades de aprendizagem em cultivos, pastagens, hortaliças e planejamento de irrigação. Em **2025**, o campus inaugurou um Centro de Vivência com espaço destinado à Agricampo e a outra empresa júnior da instituição."
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -1873,19 +1891,22 @@
           ]
         },
         {
-          "tipo": "texto",
-          "titulo": "Campus Bambuí",
-          "conteudo": "A formação combina conhecimentos de engenharia e gestão para estudar processos produtivos, custos, qualidade e organização de operações. Além das disciplinas, o campus reúne projetos acadêmicos e atividades de extensão. Em **2021**, estudantes de Engenharia de Produção participaram de uma iniciativa que produziu **kits experimentais e um e-book de química para crianças**, aproximando a graduação de atividades educativas."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Congonhas",
-          "conteudo": "O curso é oferecido à noite e aborda planejamento da produção, logística e melhoria de processos industriais. No campus, o grupo de pesquisa **Gestão de Operações, Logística e Pesquisa Operacional** investiga problemas relacionados a **simulação, otimização e logística** com atenção à região do Alto Paraopeba. A participação em atividades de pesquisa depende dos projetos e das seleções disponíveis."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Governador Valadares",
-          "conteudo": "A formação é noturna e relaciona planejamento, qualidade, logística e gestão de projetos. Em **2026**, estudantes realizaram visitas técnicas a empresas dos setores de **borracha e pneus** e de **alimentos**, conhecendo processos e rotinas industriais. Em **2022**, uma equipe da disciplina Gestão de Projetos produziu uma campanha de conscientização sobre descarte correto de absorventes no campus."
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A formação combina conhecimentos de engenharia e gestão para estudar processos produtivos, custos, qualidade e organização de operações. Além das disciplinas, o campus reúne projetos acadêmicos e atividades de extensão. Em **2021**, estudantes de Engenharia de Produção participaram de uma iniciativa que produziu **kits experimentais e um e-book de química para crianças**, aproximando a graduação de atividades educativas."
+            },
+            {
+              "pergunta": "Campus Congonhas",
+              "resposta": "O curso é oferecido à noite e aborda planejamento da produção, logística e melhoria de processos industriais. No campus, o grupo de pesquisa **Gestão de Operações, Logística e Pesquisa Operacional** investiga problemas relacionados a **simulação, otimização e logística** com atenção à região do Alto Paraopeba. A participação em atividades de pesquisa depende dos projetos e das seleções disponíveis."
+            },
+            {
+              "pergunta": "Campus Governador Valadares",
+              "resposta": "A formação é noturna e relaciona planejamento, qualidade, logística e gestão de projetos. Em **2026**, estudantes realizaram visitas técnicas a empresas dos setores de **borracha e pneus** e de **alimentos**, conhecendo processos e rotinas industriais. Em **2022**, uma equipe da disciplina Gestão de Projetos produziu uma campanha de conscientização sobre descarte correto de absorventes no campus."
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -2167,44 +2188,42 @@
           ]
         },
         {
-          "tipo": "texto",
-          "titulo": "Campus Arcos",
-          "conteudo": "O curso utiliza o **Trabalho Acadêmico Integrador (TAI)**, uma metodologia baseada em projetos que relaciona disciplinas do ensino médio e conhecimentos de Administração. Entre as experiências previstas está a **empresa simulada**, que aproxima os estudantes de situações de gestão e organização de negócios. A formação tem duração de três anos, com aulas em período integral."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Bambuí",
-          "conteudo": "Ao longo de **três anos**, os estudantes relacionam ensino médio e formação técnica em **gestão de pessoas, produção, marketing, finanças e logística**. A proposta do curso incentiva atitudes empreendedoras e aproxima conhecimentos de tecnologia e relações humanas. O campus também apresenta possibilidades de participação em projetos acadêmicos."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Formiga",
-          "conteudo": "A formação está organizada em **três anos, em séries anuais e período integral**. A proposta do curso relaciona as atividades administrativas das organizações da região de Formiga aos conteúdos escolares, alternando **teoria e prática**. Os estudantes desenvolvem atividades de planejamento e análise de processos administrativos."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Ouro Branco",
-          "conteudo": "O curso dura **três anos** e inclui **3.442 horas** de formação geral e profissional. Além das rotinas de apoio administrativo, a proposta acadêmica aborda **liderança, empreendedorismo e responsabilidade socioambiental**, relacionando a organização de negócios ao contexto social. As aulas são realizadas pela manhã e à tarde."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Ouro Preto",
-          "conteudo": "Com **3.180 horas** distribuídas em **três anos**, o curso é presencial e tem organização anual. A formação prepara para apoiar atividades administrativas, financeiras, de produção, recursos humanos, marketing e logística, incluindo o uso de informações e **indicadores de desempenho** para melhorar processos nas organizações."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Ponte Nova",
-          "conteudo": "O curso é **presencial, em período integral e com duração de três anos**. A formação combina Administração e ensino médio, com ênfase em **empreendedorismo, inovação, liderança e participação cidadã**. Os estudos preparam para apoiar a organização de documentos, estoques, rotinas administrativas e sistemas de informação."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Ribeirão das Neves",
-          "conteudo": "O Técnico em Administração Integrado aborda situações do cotidiano das organizações, como **fluxo de caixa, planejamento financeiro, marketing, recrutamento e treinamento de equipes**. A formação também trabalha logística e controle de estoques, permitindo relacionar essas áreas às disciplinas do ensino médio."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Campus Sabará",
-          "conteudo": "A formação acontece em **três anos, em período integral diurno**, com conteúdos de gestão, planejamento e empreendedorismo. Em **2026**, estudantes do Técnico em Administração participaram de uma **visita técnica à Expo Favela Minas**, onde conheceram iniciativas de negócios e inovação. Da carga horária prevista, **16,67% corresponde a atividades a distância**."
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Arcos",
+              "resposta": "O curso utiliza o **Trabalho Acadêmico Integrador (TAI)**, uma metodologia baseada em projetos que relaciona disciplinas do ensino médio e conhecimentos de Administração. Entre as experiências previstas está a **empresa simulada**, que aproxima os estudantes de situações de gestão e organização de negócios. A formação tem duração de três anos, com aulas em período integral."
+            },
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "Ao longo de **três anos**, os estudantes relacionam ensino médio e formação técnica em **gestão de pessoas, produção, marketing, finanças e logística**. A proposta do curso incentiva atitudes empreendedoras e aproxima conhecimentos de tecnologia e relações humanas. O campus também apresenta possibilidades de participação em projetos acadêmicos."
+            },
+            {
+              "pergunta": "Campus Formiga",
+              "resposta": "A formação está organizada em **três anos, em séries anuais e período integral**. A proposta do curso relaciona as atividades administrativas das organizações da região de Formiga aos conteúdos escolares, alternando **teoria e prática**. Os estudantes desenvolvem atividades de planejamento e análise de processos administrativos."
+            },
+            {
+              "pergunta": "Campus Ouro Branco",
+              "resposta": "O curso dura **três anos** e inclui **3.442 horas** de formação geral e profissional. Além das rotinas de apoio administrativo, a proposta acadêmica aborda **liderança, empreendedorismo e responsabilidade socioambiental**, relacionando a organização de negócios ao contexto social. As aulas são realizadas pela manhã e à tarde."
+            },
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "Com **3.180 horas** distribuídas em **três anos**, o curso é presencial e tem organização anual. A formação prepara para apoiar atividades administrativas, financeiras, de produção, recursos humanos, marketing e logística, incluindo o uso de informações e **indicadores de desempenho** para melhorar processos nas organizações."
+            },
+            {
+              "pergunta": "Campus Ponte Nova",
+              "resposta": "O curso é **presencial, em período integral e com duração de três anos**. A formação combina Administração e ensino médio, com ênfase em **empreendedorismo, inovação, liderança e participação cidadã**. Os estudos preparam para apoiar a organização de documentos, estoques, rotinas administrativas e sistemas de informação."
+            },
+            {
+              "pergunta": "Campus Ribeirão das Neves",
+              "resposta": "O Técnico em Administração Integrado aborda situações do cotidiano das organizações, como **fluxo de caixa, planejamento financeiro, marketing, recrutamento e treinamento de equipes**. A formação também trabalha logística e controle de estoques, permitindo relacionar essas áreas às disciplinas do ensino médio."
+            },
+            {
+              "pergunta": "Campus Sabará",
+              "resposta": "A formação acontece em **três anos, em período integral diurno**, com conteúdos de gestão, planejamento e empreendedorismo. Em **2026**, estudantes do Técnico em Administração participaram de uma **visita técnica à Expo Favela Minas**, onde conheceram iniciativas de negócios e inovação. Da carga horária prevista, **16,67% corresponde a atividades a distância**."
+            }
+          ]
         },
         {
           "tipo": "galeria",

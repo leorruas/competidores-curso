@@ -469,11 +469,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Mundo do Trabalho",
-          "conteudo": "No recebimento de mercadorias, o técnico em Logística pode **conferir pedidos, registrar entradas e saídas e acompanhar o armazenamento** para facilitar a localização e a movimentação dos produtos. Também auxilia no **controle de estoques**, na separação de pedidos e na organização da distribuição.\n\nNas operações de transporte, participa do **planejamento de rotas, prazos e entregas**, acompanha movimentações e organiza informações para identificar atrasos, perdas e oportunidades de melhoria. Pode utilizar planilhas e sistemas de gestão para acompanhar indicadores e **produzir relatórios que apoiam decisões** sobre custos e fluxo de materiais.\n\nEssas atividades acontecem em **centros de distribuição, transportadoras, armazéns, indústrias, comércios e operações de comércio eletrônico**. A atuação depende das atribuições de cada função e dos requisitos de contratação; a conclusão do curso não garante emprego."
-        },
-        {
-          "tipo": "texto",
           "titulo": "Como funciona o curso",
           "conteudo": "A formação é organizada na modalidade **EaD**, com materiais, atividades e acompanhamento acadêmico. A obrigatoriedade e o calendário de encontros presenciais dependem do projeto pedagógico de cada campus."
         },
@@ -604,17 +599,77 @@
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Ao concluir o curso técnico, você pode continuar estudando em cursos de graduação, conforme os requisitos e processos seletivos. O IFMG oferece diferentes formações que permitem ampliar os estudos, inclusive em outros campi."
+          "conteudo": "Depois de concluir o **Técnico em Logística Subsequente**, você pode participar de processos seletivos de **graduação** para aprofundar conhecimentos em transporte, estoques, operações e gestão. Com uma **graduação concluída**, pode se candidatar à **pós-graduação**, conforme os requisitos de cada formação e edital. O diploma técnico não dá acesso direto à especialização ou ao mestrado."
         },
         {
           "tipo": "texto",
-          "titulo": "Ingresso e vagas por campus",
-          "conteudo": "Informação incompleta"
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Logística"
+          ],
+          "linhas": [
+            [
+              "Curso Superior de Tecnologia em Logística",
+              "Sabará",
+              "Transportes, armazenagem, suprimentos e gestão da cadeia de distribuição"
+            ],
+            [
+              "Bacharelado em Administração",
+              "Sabará",
+              "Gestão de compras, recursos, custos e processos organizacionais"
+            ],
+            [
+              "Bacharelado em Engenharia de Produção",
+              "Congonhas",
+              "Planejamento da produção, operações, processos e melhoria de fluxos de trabalho"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Logística"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão",
+              "Bambuí e São João Evangelista (EaD)",
+              "Gestão de negócios, pessoas, inovação e organização de processos"
+            ],
+            [
+              "Especialização em Gestão de Negócios",
+              "Ouro Branco",
+              "Planejamento empresarial, administração de recursos e melhoria da gestão"
+            ]
+          ]
         },
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "O **Técnico em Logística Subsequente** é destinado a quem **já concluiu o ensino médio**. Para ingressar, é necessário participar do processo seletivo do IFMG correspondente à oferta do campus. Consulte o edital vigente para conhecer os critérios, os documentos e as condições de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "No recebimento de mercadorias, o técnico em Logística pode **conferir pedidos, registrar entradas e saídas e acompanhar o armazenamento** para facilitar a localização e a movimentação dos produtos. Também auxilia no **controle de estoques**, na separação de pedidos e na organização da distribuição.\n\nNas operações de transporte, participa do **planejamento de rotas, prazos e entregas**, acompanha movimentações e organiza informações para identificar atrasos, perdas e oportunidades de melhoria. Pode utilizar planilhas e sistemas de gestão para acompanhar indicadores e **produzir relatórios que apoiam decisões** sobre custos e fluxo de materiais.\n\nEssas atividades acontecem em **centros de distribuição, transportadoras, armazéns, indústrias, comércios e operações de comércio eletrônico**. A atuação depende das atribuições de cada função e dos requisitos de contratação; a conclusão do curso não garante emprego."
         }
       ],
       "aliases": [

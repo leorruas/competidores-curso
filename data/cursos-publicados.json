@@ -5751,6 +5751,352 @@
           "conteudo": "O técnico em Automação Industrial pode **auxiliar na instalação, programação, operação e manutenção de sistemas automatizados**, integrando conhecimentos de eletricidade, eletrônica, programação e controle de processos. Pode interpretar diagramas, testar sensores, configurar componentes e acompanhar o funcionamento de controladores lógicos programáveis (CLPs), interfaces homem-máquina e equipamentos industriais.\n\nEm uma linha de produção, por exemplo, pode **monitorar equipamentos, registrar falhas e apoiar a identificação de suas causas**, além de participar de ajustes em sistemas de acionamento e controle. Em atividades de manutenção, pode acompanhar medições, inspeções, testes de dispositivos e substituições de componentes, respeitando procedimentos de segurança e as condições de cada equipamento.\n\nEsses profissionais podem atuar em indústrias automobilísticas, siderúrgicas, alimentícias, metalúrgicas, de energia e de outros setores, além de empresas integradoras de sistemas e prestadoras de manutenção. As atividades dependem das competências da habilitação, das normas técnicas e das exigências de supervisão e segurança."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-mecanica-integrado",
+      "nome": "Técnico em Mecânica",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Arcos",
+        "Betim",
+        "Congonhas",
+        "Conselheiro Lafaiete"
+      ],
+      "modalidade": "Presencial (Arcos: 6% EaD)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Mecânica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Arcos; Betim; Congonhas; Conselheiro Lafaiete"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial; Arcos: 6% EaD no quadro de ofertas de 2027"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz para ingressantes",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Contatos por campus na tabela de ofertas"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Mecânica",
+          "conteudo": "Estude o ensino médio junto com uma formação técnica voltada ao funcionamento, à fabricação e à manutenção de máquinas e equipamentos. Ao longo do curso, você relaciona desenho técnico, materiais e processos mecânicos com matemática, física e outras áreas da formação geral."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Conheça máquinas, materiais e processos de fabricação enquanto conclui o ensino médio. A formação técnica em Mecânica reúne projeto, manutenção e atividades práticas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem concluiu o ensino fundamental e quer cursar o ensino médio com uma formação técnica. É uma opção para quem gosta de investigar como funcionam máquinas, interpretar desenhos, medir peças e compreender processos de produção e manutenção."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "No percurso integrado, os conteúdos da formação geral dialogam com o estudo de sistemas mecânicos, materiais e processos industriais. As disciplinas e a distribuição das atividades seguem a matriz específica de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Desenho técnico e metrologia",
+              "Ler representações técnicas, utilizar instrumentos de medição e verificar dimensões de peças."
+            ],
+            [
+              "Materiais e processos de fabricação",
+              "Identificar propriedades dos materiais e compreender usinagem, soldagem e fabricação de componentes."
+            ],
+            [
+              "Máquinas e manutenção",
+              "Compreender mecanismos, falhas, inspeções e procedimentos de manutenção de equipamentos."
+            ],
+            [
+              "Projetos e controle de qualidade",
+              "Interpretar requisitos, organizar documentação técnica e avaliar produtos e processos."
+            ],
+            [
+              "Formação geral",
+              "Estudar linguagens, ciências da natureza, matemática, ciências humanas e suas relações com a técnica."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação envolve medições, interpretação de desenhos e atividades relacionadas à fabricação e à manutenção mecânica. Em Betim, a estrutura do curso inclui oficina de práticas de fabricação, medições e ensaios mecânicos. Arcos apresenta oficinas e laboratórios de fabricação, materiais, soldagem e ensaios; os espaços e as atividades utilizados variam conforme cada campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Oficinas, instrumentos e práticas de Mecânica · Arcos, Betim e demais campi",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Mecânica",
+          "conteudo": "O IFMG oferece o Técnico em Mecânica Integrado ao Ensino Médio nos campi **Arcos, Betim, Congonhas e Conselheiro Lafaiete**. As quatro ofertas têm duração de três anos e atividades pela manhã e à tarde. Em Arcos, a matriz da seleção 2027 indica **6% de EaD**; a organização dessa parte do curso segue o planejamento do campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Arcos",
+              "Presencial (6% EaD no quadro de 2027)",
+              "Manhã e tarde / 3 anos",
+              "tec.mecanica.arcos@ifmg.edu.br"
+            ],
+            [
+              "Betim",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "coord.tec.mecanica@ifmg.edu.br"
+            ],
+            [
+              "Congonhas",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "coordtecmec.congonhas@ifmg.edu.br"
+            ],
+            [
+              "Conselheiro Lafaiete",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "coord.meccl@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Arcos",
+              "resposta": "O curso integrado articula formação geral e processos de produção mecânica. O campus apresenta oficina, laboratório de fabricação, ensaios mecânicos, materiais, soldagem e termofluidos. A organização curricular inclui 6% EaD no quadro de ofertas de 2027."
+            },
+            {
+              "pergunta": "Campus Betim",
+              "resposta": "A formação organiza os estudos técnicos em projeto de máquinas e equipamentos, manutenção e processos de fabricação. O campus conta com oficina de fabricação e espaços para medições e ensaios mecânicos."
+            },
+            {
+              "pergunta": "Campus Congonhas",
+              "resposta": "O curso integrado prepara para atuar com desenho técnico, usinagem, soldagem, controle de processos, manutenção de máquinas e medições. O campus também oferece a modalidade subsequente, que tem público e organização próprios."
+            },
+            {
+              "pergunta": "Campus Conselheiro Lafaiete",
+              "resposta": "A formação relaciona componentes e sistemas mecânicos com processos industriais, instalação e manutenção, documentação técnica e segurança. O campus também oferece o curso na modalidade subsequente, destinada a quem já concluiu o ensino médio."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os estudantes podem acompanhar projetos, eventos e oportunidades de iniciação científica, extensão e monitoria oferecidos pelo IFMG, de acordo com o público de cada edital. Essas atividades permitem aprofundar temas como manutenção, fabricação, materiais, energia e processos industriais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": "A formação técnica integrada permite concluir o ensino médio e seguir para processos seletivos de graduação. Após concluir uma graduação, também é possível buscar programas de pós-graduação relacionados à área, de acordo com os requisitos de cada curso."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": "O IFMG oferece graduações que permitem continuar estudos em projetos, máquinas, produção industrial e automação."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Mecânica"
+          ],
+          "linhas": [
+            [
+              "Engenharia Mecânica",
+              "Arcos e Betim",
+              "Projetos de máquinas, materiais, fabricação, energia e manutenção."
+            ],
+            [
+              "Engenharia de Produção",
+              "Bambuí e Congonhas",
+              "Processos produtivos, qualidade, organização industrial e sistemas de produção."
+            ],
+            [
+              "Engenharia de Controle e Automação",
+              "Betim, Ibirité e Sabará",
+              "Sistemas de controle, automação de máquinas e integração de processos industriais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": "Após concluir uma graduação compatível, é possível concorrer a programas de pós-graduação do IFMG que abordam aplicações de materiais, energia e tecnologia."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Mecânica"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa em tecnologias ambientais, sistemas energéticos e materiais; exige graduação e seleção própria."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "No **Enem 2025**, estudantes do Técnico em Mecânica dos campi **Arcos e Betim** apareceram entre os destaques do IFMG. **Stéfany Eduarda Oliveira Miranda**, de Arcos, alcançou **960 pontos na redação**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Enem 2025 · redação com 960 pontos · Técnico em Mecânica · Arcos",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **Betim**, **João Lucas Vieira Campos**, estudante do Técnico em Mecânica, alcançou **803,4 pontos de média geral** no Enem 2025 e **960 na redação**. **Nicolas Lopes Ferreira**, também do curso, alcançou **960 na redação**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Enem 2025 · notas de estudantes do Técnico em Mecânica · Betim",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **27 de fevereiro de 2026**, o Campus **Conselheiro Lafaiete** realizou a formatura de estudantes dos cursos técnicos integrados e subsequentes em Mecânica e Eletrotécnica. A solenidade reuniu concluintes, docentes e familiares no Centro Cultural da Escola Estadual Narciso de Queirós."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Formatura de Mecânica e Eletrotécnica · Conselheiro Lafaiete · fevereiro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode se candidatar ao Técnico em Mecânica Integrado?",
+              "resposta": "Quem concluiu o ensino fundamental ou vai concluí-lo até a matrícula pode participar do processo seletivo para o ensino médio integrado, conforme os requisitos do edital vigente."
+            },
+            {
+              "pergunta": "O curso é igual nos quatro campi?",
+              "resposta": "A formação aborda temas comuns de Mecânica, mas a matriz curricular, os espaços de prática, a organização das atividades e as oportunidades acadêmicas são específicos de cada campus. Em Arcos, o quadro de ofertas de 2027 registra 6% EaD."
+            },
+            {
+              "pergunta": "Qual é a diferença entre integrado e subsequente?",
+              "resposta": "No **integrado**, você cursa o ensino médio e a formação técnica no mesmo percurso, com duração de três anos. No **subsequente**, é necessário já ter concluído o ensino médio; a oferta e a organização dessa modalidade são próprias."
+            },
+            {
+              "pergunta": "O que se faz nas atividades práticas?",
+              "resposta": "Entre as atividades de formação estão interpretar desenhos, medir componentes, compreender materiais, conhecer processos de fabricação e estudar inspeção e manutenção de máquinas. Os equipamentos utilizados dependem da estrutura do campus e da etapa curricular."
+            },
+            {
+              "pergunta": "Posso cursar uma graduação depois do técnico?",
+              "resposta": "Sim. Com o ensino médio concluído, você pode participar de processos seletivos de graduação, como Engenharia Mecânica e Engenharia de Produção. A seleção e a matrícula seguem as regras de cada curso."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras modalidades relacionadas",
+          "conteudo": "O Técnico em Mecânica **Integrado** reúne ensino médio e formação técnica. Para quem já concluiu o ensino médio, o IFMG também apresenta oferta **subsequente** em Congonhas e Conselheiro Lafaiete, com proposta e duração diferentes. Compare a modalidade exigida para sua situação antes de escolher."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Está concluindo o ensino fundamental",
+              "Técnico em Mecânica Integrado",
+              "Ensino médio junto com a formação técnica, período de aulas e campus."
+            ],
+            [
+              "Já concluiu o ensino médio",
+              "Técnico em Mecânica Subsequente",
+              "Oferta disponível, duração e organização das aulas."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Mecânica Integrado ao Ensino Médio**, é necessário concluir o ensino fundamental até a matrícula. O ingresso ocorre por **processo seletivo público do IFMG**, de acordo com o edital vigente.\n\nConsulte o edital para verificar as etapas, as vagas por campus, as modalidades de reserva de vagas, os documentos e as regras de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Mecânica pode atuar no **planejamento e acompanhamento de processos de fabricação**, na **inspeção e manutenção de máquinas e equipamentos** e no apoio a projetos de componentes e sistemas mecânicos. Entre suas atividades estão interpretar desenhos técnicos, selecionar materiais, realizar medições, acompanhar usinagem e soldagem, identificar desgastes e registrar dados de operação e qualidade.\n\nEm uma fábrica, pode auxiliar na organização de etapas produtivas e no controle dimensional de peças. Na manutenção, pode acompanhar inspeções, testes, trocas de componentes e análises de falhas. Essas atividades são encontradas em indústrias metalmecânicas, automobilísticas, siderúrgicas, de mineração e em empresas de serviços técnicos, respeitando as atribuições da habilitação e os procedimentos de segurança."
+        }
+      ]
     }
   ]
 }

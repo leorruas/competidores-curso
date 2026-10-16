@@ -96,8 +96,13 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Onde este profissional pode trabalhar",
-          "conteudo": "A formação se relaciona com atividades técnicas em:\n\n- construtoras e empresas de construção civil;\n- escritórios de engenharia, arquitetura e projetos;\n- planejamento, orçamento e acompanhamento de obras;\n- assistência técnica e manutenção de edificações;\n- órgãos públicos e empresas que trabalham com infraestrutura.\n\nO exercício de atividades profissionais segue os limites legais e as atribuições da formação técnica."
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para entrar no **Técnico em Edificações Integrado ao Ensino Médio**, você precisa ter concluído o **ensino fundamental** ou concluí-lo até a matrícula. O ingresso ocorre por processo seletivo público do IFMG.\n\nPara a edição de **2027**, a seleção acontece por **prova objetiva presencial**, com **48 questões** de Linguagens, Matemática, Ciências da Natureza e Ciências Humanas. As inscrições ocorreram de **3 de agosto a 14 de setembro de 2026**, e a prova está prevista para **1º de novembro de 2026, às 13h**.\n\nOs editais publicados a cada edição trazem as vagas de cada campus, as regras de inscrição, a documentação, o local de prova e as orientações de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "Em uma obra ou reforma, o técnico em Edificações pode atuar desde a preparação do projeto até o acompanhamento da execução. Uma parte do trabalho envolve **elaborar e detalhar desenhos técnicos**, inclusive em ferramentas digitais, e ajudar a transformar medidas e especificações em documentos que orientam a construção.\n\nNa etapa de planejamento, pode **levantar quantidades de materiais, preparar orçamentos e organizar etapas e prazos**. Durante os serviços, pode acompanhar a execução, verificar medidas e materiais e colaborar com o **controle de qualidade e a segurança**. Também pode realizar **ensaios de solos e materiais** e participar de atividades de conservação e manutenção predial.\n\nEssas atividades acontecem em **construtoras, escritórios de projetos, canteiros de obras, empresas de manutenção e órgãos públicos**. O profissional atua conforme as atribuições previstas na legislação e os requisitos de responsabilidade técnica de cada atividade; a formação não garante emprego nem autoriza, por si só, qualquer tipo de projeto ou obra."
         },
         {
           "tipo": "texto",
@@ -261,8 +266,8 @@
               "resposta": "As experiências práticas, visitas e recursos de aprendizagem variam conforme as atividades do curso em cada campus."
             },
             {
-              "pergunta": "Como faço para ingressar?",
-              "resposta": "O ingresso depende do Processo Seletivo do IFMG e das condições do edital do ano correspondente. Veja as informações oficiais de inscrição, documentação e matrícula no portal do processo seletivo."
+              "pergunta": "Posso escolher mais de um curso na inscrição?",
+              "resposta": "Na seleção de 2027, você pode indicar até **três opções de curso no mesmo campus**, em ordem de preferência. Se obtiver classificação suficiente para uma das opções, a convocação segue essa ordem, sem possibilidade de escolher posteriormente outra opção na qual também tenha sido classificado."
             }
           ]
         },

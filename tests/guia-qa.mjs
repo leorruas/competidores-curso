@@ -138,6 +138,20 @@ test("catálogo mantém ofertas reais e filtros multicampi", () => {
   assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
 });
 
+// As experiências aparecem em blocos Texto individuais, cada um seguido de sua Galeria.
+function sectionText(course, title) {
+  const start=course.blocos.findIndex(b=>b.tipo==="texto"&&b.titulo===title);
+  assert.ok(start>=0,"Seção ausente: "+course.id+" / "+title);
+  const paragraphs=[];
+  for(let i=start;i<course.blocos.length;i++){
+    const b=course.blocos[i];
+    if(i>start && b.titulo)break;
+    if(i>start && !["texto","galeria"].includes(b.tipo))break;
+    if(b.tipo==="texto" && b.conteudo)paragraphs.push(b.conteudo);
+  }
+  return paragraphs.join("\n\n");
+}
+
 test("F5: reconhecimentos e experiências formam uma seção única em todos os cursos", () => {
   const h=testContext();
   assert.equal(json.courses.length,8);
@@ -156,7 +170,7 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
     if(c.id.startsWith("tecnico-"))assert.ok(faq>experiences,c.id+": FAQ técnico no fim da seção informativa");
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
   }
-  const get=id=>json.courses.find(c=>c.id===id).blocos.find(b=>b.titulo===unified).conteudo;
+  const get=id=>sectionText(json.courses.find(c=>c.id===id),unified);
   for(const [id,terms] of [
     ["administracao-bacharelado",["Formiga","conceito 4","Ouro Branco","quatro estrelas"]],
     ["agronomia-bacharelado",["conceito 4","2023","Olericultura","horta escolar"]],
@@ -450,9 +464,9 @@ test("F2.12: FAQs de ingresso não reciclam calendário, notas ou vagas de ediç
   }
   // Datas históricas de projetos são fatos editoriais, não prazos de matrícula.
   const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
-  assert.match(tec.blocos.find(x=>x.titulo==="Projetos e experiências").conteudo,/Expo Favela Minas/);
+  assert.match(sectionText(tec,"Projetos e experiências"),/Expo Favela Minas/);
   const eng=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
-  assert.match(eng.blocos.find(x=>x.titulo==="Projetos e experiências acadêmicas").conteudo,/Pollyrubber/);
+  assert.match(sectionText(eng,"Projetos e experiências acadêmicas"),/Pollyrubber/);
   const agrLocal=agr.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
   assert.match(agrLocal.itens.find(x=>x.pergunta==="Campus Bambuí").resposta,/nove semestres/);
 });
@@ -777,8 +791,9 @@ test("Destaque de Logística descreve a formação sem privilegiar campus", () =
 test("fase 1: galeria acompanha projetos e Administração não tem link ou destaque genérico", () => {
   const eng=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
   const p=eng.blocos.findIndex(b=>b.tipo==="texto"&&b.titulo==="Projetos e experiências acadêmicas");
-  assert.equal(eng.blocos[p+1].tipo,"introducao");
-  assert.equal(eng.blocos[p+2].tipo,"galeria");
+  assert.equal(eng.blocos[p+1].tipo,"galeria");
+  assert.match(eng.blocos[p+1].referencia,/Trabalhos Acadêmicos/);
+  assert.equal(eng.blocos[p+2].tipo,"texto");
   const a=json.courses.find(c=>c.id==="administracao-bacharelado");
   assert.ok(!a.blocos.some(b=>b.tipo==="link-unico"&&b.link.rotulo==="Administração no IFMG"));
   assert.ok(!a.blocos.some(b=>b.tipo==="introducao"&&b.conteudo.startsWith("O curso reúne seis campi")));
@@ -844,14 +859,14 @@ test("Betim: estágio e PFC específicos; ingresso sem números da edição ante
   assert.match(ingress,/Sisu/);
   assert.match(ingress,/edital vigente/);
   assert.doesNotMatch(ingress,/2027|20 vagas|18 vagas|15 por Histórico/);
-  assert.match(c.blocos.find(b=>b.titulo==="Projetos e experiências acadêmicas").conteudo,/Betim[\s\S]*Pollyrubber[\s\S]*Contagem/);
+  assert.match(sectionText(c,"Projetos e experiências acadêmicas"),/Betim[\s\S]*Pollyrubber[\s\S]*Contagem/);
   const localBetim=c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Betim").resposta;
   assert.doesNotMatch(localBetim,/Pollyrubber|visita técnica/i,"descrição local sem repetir evento");
   assert.match(localBetim,/360 horas de extensão/);
   assert.match(localBetim,/180 horas de atividades complementares/);
   const ocorrenciasPollyrubber=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]).filter(t=>t.includes("Pollyrubber")).length;
   assert.equal(ocorrenciasPollyrubber,1,"a visita à Pollyrubber aparece uma única vez no conteúdo copiável");
-  assert.match(c.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo,/225[\s\S]*135[\s\S]*180 horas/);
+  assert.match(sectionText(c,"Pesquisa, extensão e oportunidades"),/225[\s\S]*135[\s\S]*180 horas/);
   const intro=c.blocos.find(b=>b.tipo==="introducao").conteudo;
   assert.ok(intro.length<=280);
   assert.match(intro,/materiais, fabricação, energia e projetos/);
@@ -860,8 +875,8 @@ test("Betim: estágio e PFC específicos; ingresso sem números da edição ante
 
 test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar premiações", () => {
   const c=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
-  const research=c.blocos.find(x=>x.titulo==="Pesquisa, extensão e oportunidades").conteudo;
-  const works=c.blocos.find(x=>x.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  const research=sectionText(c,"Pesquisa, extensão e oportunidades");
+  const works=sectionText(c,"Experiências e conquistas dos estudantes");
   assert.ok(research.startsWith("Em **Arcos**"));
   assert.ok(works.startsWith("Em **Betim**"));
   assert.match(research,/Em \*\*Betim\*\*[\s\S]*impressão 3D/);
@@ -895,7 +910,7 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
   assert.doesNotMatch(answer,/Guia da Faculdade|quatro estrelas/);
   const local=c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi");
   assert.doesNotMatch(local.itens.find(x=>x.pergunta==="Campus Formiga").resposta,/conceito 4|MEC/);
-  const experiences=c.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  const experiences=sectionText(c,"Experiências e conquistas dos estudantes");
   assert.match(experiences,/Formiga.*conceito 4.*Ouro Branco.*quatro estrelas/);
   const copies=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]).join("\n");
   for(const term of ["conceito 4","quatro estrelas"])assert.equal(copies.split(term).length-1,1,term+" citado somente na seção de conquistas");
@@ -1080,7 +1095,7 @@ test("F5.3: Logística e Direito mantêm perguntas únicas e evidências por blo
   const lawFAQ=faq(law);
   assert.equal(lawFAQ.length,3);
   assert.ok(!lawFAQ.some(x=>/Que experiências práticas|graduação a distância/.test(x.pergunta)));
-  assert.match(law.blocos.find(b=>b.titulo==="Experiências de aprendizagem em Direito").conteudo,/prática jurídica simulada e real/);
+  assert.match(sectionText(law,"Experiências de aprendizagem em Direito"),/prática jurídica simulada e real/);
   assert.match(law.blocos.find(b=>b.titulo==="Onde o IFMG oferece Direito").conteudo,/30% da carga horária EaD/);
   assert.doesNotMatch(law.blocos.find(b=>b.titulo==="Onde o IFMG oferece Direito").conteudo,/Ao longo da formação/);
   const estagio=lawFAQ.find(x=>x.pergunta.includes("estágio e Trabalho")).resposta;
@@ -1131,7 +1146,7 @@ test("Link único: selecionar estilo; copiar título, descrição e URL", () => 
 
 test("F3.1: Congonhas e GV apresentam projeto, resultado e campus; SJE empresa júnior sem projeto presumido", () => {
   const ag=json.courses.find(c=>c.id==="agronomia-bacharelado");
-  const opportunity=ag.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo;
+  const opportunity=sectionText(ag,"Pesquisa, extensão e oportunidades");
   for(const term of ["São João Evangelista","Agricampo","Bacharelado em Agronomia","manejo de pastagens","Centro de Vivência","2025"]) {
     assert.ok(opportunity.includes(term),"Agronomia SJE: "+term);
   }
@@ -1144,18 +1159,18 @@ test("F3.1: Congonhas e GV apresentam projeto, resultado e campus; SJE empresa j
   assert.ok(localSje.includes("organização curricular de **2023**"));
   const copias=ag.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]);
   for(const termo of ["Olericultura","Agricampo"])assert.equal(copias.filter(t=>t.includes(termo)).length,1,termo+" só na seção temática");
-  const agAchievements=ag.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  const agAchievements=sectionText(ag,"Experiências e conquistas dos estudantes");
   assert.ok(agAchievements.includes("Olericultura"),"Preservar projeto de Bambuí");
   const pro=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
-  const practice=pro.blocos.find(b=>b.titulo==="Projetos e experiências acadêmicas").conteudo;
+  const practice=sectionText(pro,"Projetos e experiências acadêmicas");
   for(const term of ["Congonhas","Ambiente de Inovação e Maker","Governador Valadares","2026","ABC Borracha","Batatas Magu"]) {
     assert.ok(practice.includes(term),"Produção prática: "+term);
   }
-  const research=pro.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo;
+  const research=sectionText(pro,"Pesquisa, extensão e oportunidades");
   for(const term of ["Congonhas","Bambuí","Renata Aparecida Pereira","Governador Valadares","2022","Gestão de Projetos","cartazes e adesivos"]) {
     assert.ok(research.includes(term),"Produção pesquisa: "+term);
   }
-  const achievements=pro.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  const achievements=sectionText(pro,"Experiências e conquistas dos estudantes");
   for(const term of ["Othmer Fellowship","Bambuí","Congonhas","2025","Brazilian Journal of Production Engineering","Governador Valadares","Luisa Nery","Mauri Nunes","2019","Victor Rasquinho Ho Te Chang","Dominycke Guasti de Melo","impressão 3D"]) {
     assert.ok(achievements.includes(term),"Produção conquista: "+term);
   }
@@ -1165,7 +1180,7 @@ test("F3.1: Congonhas e GV apresentam projeto, resultado e campus; SJE empresa j
 
 test("F5.3: Engenharia de Produção apresenta cada atividade uma vez no bloco adequado", () => {
   const c=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
-  const section=title=>c.blocos.find(b=>b.titulo===title).conteudo;
+  const section=title=>sectionText(c,title);
   const project=section("Projetos e experiências acadêmicas");
   const research=section("Pesquisa, extensão e oportunidades");
   const experiences=section("Experiências e conquistas dos estudantes");
@@ -1186,26 +1201,26 @@ test("F5.3: Engenharia de Produção apresenta cada atividade uma vez no bloco a
 
 test("F3.1/F3.4: projetos documentados de Bambuí e avaliação MEC não migram entre campi", () => {
   const agr=json.courses.find(c=>c.id==="agronomia-bacharelado");
-  const agexp=agr.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  const agexp=sectionText(agr,"Experiências e conquistas dos estudantes");
   for(const term of ["Bambuí","Olericultura","2022","horta escolar","Associação Olga Chaves"]) {
     assert.ok(agexp.includes(term),"Agronomia: "+term);
   }
-  const agrecognition=agr.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  const agrecognition=sectionText(agr,"Experiências e conquistas dos estudantes");
   for(const term of ["Bambuí","conceito 4","1 a 5","2023","MEC"]) {
     assert.ok(agrecognition.includes(term),"reconhecimento Agronomia: "+term);
   }
   assert.ok(!agrecognition.includes("São João Evangelista"),"nota de Bambuí não é nota de SJE");
-  const opportunities=agr.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo;
+  const opportunities=sectionText(agr,"Pesquisa, extensão e oportunidades");
   assert.ok(opportunities.includes("2026"));
   assert.ok(opportunities.includes("uma vaga compartilhada"));
   assert.ok(opportunities.includes("não uma oferta permanente"));
   const pro=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
-  const research=pro.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo;
+  const research=sectionText(pro,"Pesquisa, extensão e oportunidades");
   for(const term of ["Bambuí","Renata Aparecida Pereira","Roberta Lacorte de Araújo","kits experimentais","e-book","2021"]) {
     assert.ok(research.includes(term),"Produção projeto: "+term);
   }
   assert.ok(research.includes("Congonhas"),"manter pesquisa distinta em Congonhas");
-  const achievements=pro.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  const achievements=sectionText(pro,"Experiências e conquistas dos estudantes");
   assert.ok(achievements.includes("2025"));
   assert.ok(achievements.includes("Diretório Acadêmico"));
   assert.ok(achievements.includes("Othmer Fellowship"),"manter exemplo de egresso");
@@ -1217,7 +1232,7 @@ function objWithPrivateControls(obj) {
 
 test("F3.1: reconhecimento de egresso de Produção pertence apenas a Bambuí", () => {
   const c=json.courses.find(x=>x.id==="engenharia-de-producao-bacharelado");
-  const b=c.blocos.find(x=>x.titulo==="Experiências e conquistas dos estudantes");
+  const b={conteudo:sectionText(c,"Experiências e conquistas dos estudantes")};
   assert.match(b.conteudo,/Em \*\*Bambuí\*\*/);
   assert.match(b.conteudo,/Euclides Brandão Maluf/);
   assert.match(b.conteudo,/2024/);
@@ -1374,4 +1389,37 @@ test("F1.6: a prévia omite somente blocos vazios, sem suprimir os campos do edi
   assert.match(h.editorBlock(emptyGallery,0),/Informação incompleta/);
   assert.match(h.editorBlock(pending,2),/Pesquisa, extensão e oportunidades/);
   assert.match(h.blockPreview({tipo:"texto",titulo:"Mundo do Trabalho",conteudo:"Atuação profissional."},3),/Mundo do Trabalho/);
+});
+
+test("F3.7: cada experiência estruturada possui galeria própria e aviso no editor", () => {
+  const h=testContext();
+  const expected={
+    "tecnico-em-edificacoes-integrado":1,
+    "tecnico-em-logistica-subsequente":1,
+    "direito-bacharelado-arcos":1,
+    "engenharia-mecanica-bacharelado":6,
+    "administracao-bacharelado":3,
+    "agronomia-bacharelado":4,
+    "engenharia-de-producao-bacharelado":10,
+    "tecnico-em-administracao-integrado":1
+  };
+  for(const c of json.courses){
+    const galleries=c.blocos.filter(b=>b.tipo==="galeria");
+    assert.equal(galleries.length,expected[c.id],c.id+": quantidade de galerias da experiência");
+    for(const [i,b] of c.blocos.entries()){
+      if(b.tipo!=="galeria")continue;
+      assert.ok(b.referencia&&b.referencia.length>10,c.id+": galeria identificada");
+      assert.equal(b.itens.length,0,c.id+": não reutilizar foto sem autorização");
+      assert.equal(b.tipo,"galeria");
+      const previous=c.blocos[i-1];
+      assert.equal(previous.tipo,"texto",c.id+": galeria deve acompanhar texto da experiência");
+      const html=h.editorBlock(b,i);
+      assert.match(html,/Insira qualquer imagem provisória/);
+      assert.match(html,/A coordenação do curso deverá substituí-la/);
+      assert.ok(html.includes(b.referencia.replaceAll("&","&amp;")),c.id+": identificação visível");
+      assert.doesNotMatch(html,/data-copy-field=/,c.id+": nunca copiar placeholder");
+      assert.equal(h.blockPreview(b,i),"",c.id+": galeria não preenchida oculta na prévia");
+    }
+    assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
+  }
 });

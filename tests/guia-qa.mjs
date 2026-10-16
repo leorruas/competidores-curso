@@ -327,7 +327,7 @@ test("F1B.11: diferenças institucionais não migram entre modalidades e campi",
   assert.match(ead.resposta,/Ribeirão das Neves/);
   const presencial=lgfaq.find(x=>x.pergunta.includes("comparecer"));
   assert.match(presencial.resposta,/Em Governador Valadares, sim/);
-  assert.match(presencial.resposta,/informações diferentes/);
+  assert.match(presencial.resposta,/confirme as atividades presenciais exigidas/);
   assert.doesNotMatch(presencial.resposta,/Ribeirão das Neves.{0,80}100%/);
   const adm=get("tecnico-em-administracao-integrado");
   const admsec=adm.blocos.find(b=>b.titulo?.startsWith("Existe Técnico em Administração"));
@@ -345,6 +345,18 @@ test("F1B.11: diferenças institucionais não migram entre modalidades e campi",
     assert.ok(c.blocos.findIndex(x=>x.titulo==="Perguntas frequentes")>c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG"));
     assert.ok(c.blocos.every(x=>!x.titulo?.startsWith("E se eu já estiver cursando ou tiver concluído o ensino médio?")));
   }
+});
+
+test("F1B.13: conteúdos públicos falam na voz do IFMG, sem narrar a própria fonte", () => {
+  const forbidden=/a apresentação institucional registra|(?:a página|o portal|o site) (?:institucional )?(?:registra|informa|divulga)|segundo (?:a página|o site|o portal)|o campus registra pesquisas|conforme a página institucional|reconhecimento divulgado pelo IFMG|documentos institucionais consultados/iu;
+  for(const c of json.courses)for(const b of c.blocos){
+    const paragraphs=b.tipo==="texto"?[b.conteudo]:b.tipo==="faq"?b.itens.map(x=>x.resposta):[];
+    for(const value of paragraphs)assert.doesNotMatch(value||"",forbidden,c.id+" · "+(b.titulo||b.tipo));
+  }
+  const log=json.courses.find(x=>x.id==="tecnico-em-logistica-subsequente").blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi");
+  assert.match(log.itens.find(x=>x.pergunta.includes("comparecer")).resposta,/Em \*\*Ribeirão das Neves\*\*/);
+  const mec=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
+  assert.match(mec.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Betim").resposta,/organização curricular de \*\*2023\*\*/);
 });
 
 test("F1B.10: os oito cursos encerram com Forma de ingresso e Mundo do Trabalho", () => {

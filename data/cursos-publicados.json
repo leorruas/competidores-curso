@@ -516,11 +516,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Perguntas frequentes",
-          "conteudo": ""
-        },
-        {
-          "tipo": "texto",
           "titulo": "Onde o IFMG oferece Técnico em Logística",
           "conteudo": "O Técnico em Logística Subsequente é oferecido nos campi Governador Valadares e Ribeirão das Neves, na modalidade EaD. As condições de ingresso, os encontros e as vagas são definidos por campus."
         },
@@ -537,7 +532,7 @@
               "Governador Valadares",
               "EaD",
               "Informação incompleta",
-              "Informação incompleta"
+              "coordenacao.tslog.gv@ifmg.edu.br"
             ],
             [
               "Ribeirão das Neves",
@@ -548,19 +543,26 @@
           ]
         },
         {
+          "tipo": "texto",
+          "titulo": "Campus Governador Valadares",
+          "conteudo": "A formação é oferecida a distância, com **800 horas distribuídas em dois módulos**. Ao final de cada módulo, está previsto **um encontro presencial para a avaliação final no campus**. As aulas são organizadas principalmente a distância, permitindo estudar transporte, armazenagem e gestão de estoques, com avaliações presenciais previstas para a oferta."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Ribeirão das Neves",
+          "conteudo": "O curso tem **duração prevista de um ano** e é desenvolvido na modalidade a distância. A formação aborda **planejamento de rotas, armazenagem, controle de estoques, compras, distribuição e logística reversa**, incluindo o uso de ferramentas digitais aplicadas às operações. A oferta dispõe de ambiente virtual de aprendizagem para apoiar o acompanhamento das disciplinas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
           "tipo": "faq",
           "itens": [
             {
               "pergunta": "Quem pode fazer o curso?",
               "resposta": "O Técnico em Logística Subsequente é destinado a pessoas que já concluíram o ensino médio. O ingresso ocorre por processos seletivos do IFMG."
-            },
-            {
-              "pergunta": "Governador Valadares",
-              "resposta": "Em Governador Valadares, o curso é EaD, organizado em dois módulos. O primeiro permite a certificação intermediária de Assistente em Logística; após a conclusão do percurso, o estudante pode obter o diploma de Técnico em Logística. A organização do curso inclui encontros presenciais ao final dos módulos."
-            },
-            {
-              "pergunta": "Ribeirão das Neves",
-              "resposta": "Em Ribeirão das Neves, o curso é oferecido a distância e tem duração prevista de um ano. Os estudos incluem transportes, armazenagem, controle de estoques, compras, distribuição e logística reversa."
             },
             {
               "pergunta": "Que atividades a formação abrange?",

@@ -1834,6 +1834,21 @@
         },
         {
           "tipo": "texto",
+          "titulo": "Campus Bambuí",
+          "conteudo": "A formação combina conhecimentos de engenharia e gestão para estudar processos produtivos, custos, qualidade e organização de operações. Além das disciplinas, o campus reúne projetos acadêmicos e atividades de extensão. Em **2021**, estudantes de Engenharia de Produção participaram de uma iniciativa que produziu **kits experimentais e um e-book de química para crianças**, aproximando a graduação de atividades educativas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Congonhas",
+          "conteudo": "O curso é oferecido à noite e aborda planejamento da produção, logística e melhoria de processos industriais. No campus, o grupo de pesquisa **Gestão de Operações, Logística e Pesquisa Operacional** investiga problemas relacionados a **simulação, otimização e logística** com atenção à região do Alto Paraopeba. A participação em atividades de pesquisa depende dos projetos e das seleções disponíveis."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Governador Valadares",
+          "conteudo": "A formação é noturna e relaciona planejamento, qualidade, logística e gestão de projetos. Em **2026**, estudantes realizaram visitas técnicas a empresas dos setores de **borracha e pneus** e de **alimentos**, conhecendo processos e rotinas industriais. Em **2022**, uma equipe da disciplina Gestão de Projetos produziu uma campanha de conscientização sobre descarte correto de absorventes no campus."
+        },
+        {
+          "tipo": "texto",
           "titulo": "Perguntas frequentes",
           "conteudo": ""
         },
@@ -1855,10 +1870,6 @@
             {
               "pergunta": "Como ingressar em Engenharia de Produção em Governador Valadares?",
               "resposta": "Em **Governador Valadares**, o processo seletivo próprio de 2027 oferece **17 vagas pelo Enem** e **17 por Histórico Escolar e Redação online**. É necessário concluir o ensino médio até a matrícula. As inscrições ocorreram de **3 de agosto a 14 de setembro de 2026**; a redação da segunda modalidade está prevista para **1º de novembro de 2026**. O Sisu tem seleção própria."
-            },
-            {
-              "pergunta": "O que diferencia a formação em Congonhas?",
-              "resposta": "Em **Congonhas**, os estudantes podem conhecer áreas como **pesquisa operacional, otimização de sistemas e logística** por meio dos trabalhos do grupo de pesquisa em Gestão de Operações, Logística e Pesquisa Operacional. A participação depende dos projetos e das seleções de cada período."
             },
             {
               "pergunta": "Como funcionam estágio e TCC em Engenharia de Produção em Bambuí?",

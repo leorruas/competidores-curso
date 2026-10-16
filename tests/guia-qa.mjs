@@ -1418,7 +1418,8 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "medicina-veterinaria-bacharelado":2,
     "arquitetura-e-urbanismo-bacharelado":3,
     "engenharia-metalurgica-bacharelado":3,
-    "engenharia-florestal-bacharelado":4
+    "engenharia-florestal-bacharelado":4,
+    "tecnico-em-agroindustria-integrado":2
   };
   for(const c of json.courses){
     const galleries=c.blocos.filter(b=>b.tipo==="galeria");
@@ -1623,7 +1624,7 @@ test("F7.2: Engenharia Metalúrgica Ouro Branco tem oferta, laboratórios e trê
 });
 
 test("F7.2: Engenharia Florestal de São João Evangelista inclui TCCs de 2025 e quatro galerias", () => {
-  assert.equal(json.courses.length,13);
+  assert.ok(json.courses.length>=13,"Engenharia Florestal e cursos anteriores preservados");
   const c=json.courses.find(x=>x.id==="engenharia-florestal-bacharelado");
   assert.ok(c);
   assert.deepEqual(Array.from(c.campi),["São João Evangelista"]);
@@ -1664,6 +1665,47 @@ test("F7.2: Engenharia Florestal de São João Evangelista inclui TCCs de 2025 e
   for(const forbidden of ["validacao","pendencias","instrucao","revisao_coordenacao"])assert.ok(!Object.hasOwn(c,forbidden));
 });
 
+test("F7.2: Técnico em Agroindústria integrado estreia com currículo e sem conquistas inventadas", () => {
+  assert.equal(json.courses.length,14);
+  const c=json.courses.find(x=>x.id==="tecnico-em-agroindustria-integrado");
+  assert.ok(c);
+  assert.deepEqual(Array.from(c.campi),["Bambuí"]);
+  assert.equal(c.nome,"Técnico em Agroindústria");
+  assert.equal(c.nivel,"Técnico");
+  assert.equal(c.tipo,"Integrado ao Ensino Médio");
+  assert.equal(c.status,"em_validacao");
+  const dados=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
+  assert.equal(dados["Duração"],"3 anos");
+  assert.equal(dados["Turno"],"Manhã e tarde");
+  assert.equal(dados["E-mail da coordenação"],"Informação incompleta");
+  assert.equal(dados["PPC / matriz"],"Informação incompleta");
+  const campi=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
+  assert.deepEqual(Array.from(campi.linhas[0]),["Bambuí","Manhã e tarde","Presencial","Informação incompleta"]);
+  const practice=c.blocos.findIndex(b=>b.titulo==="Aprendizagem prática");
+  assert.match(c.blocos[practice].conteudo,/matérias-primas de origem animal e vegetal/);
+  assert.equal(c.blocos[practice+1].tipo,"galeria");
+  const research=c.blocos.findIndex(b=>b.titulo==="Pesquisa, extensão e bolsas");
+  assert.match(c.blocos[research].conteudo,/Um mais um é mais que dois/);
+  assert.equal(c.blocos[research+1].tipo,"galeria");
+  assert.doesNotMatch(c.blocos[research].conteudo,/bolsa garantida|bolsistas selecionados|projetos concluídos/);
+  const cont=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+  assert.deepEqual(c.blocos.slice(cont+1,cont+5).map(b=>b.titulo||b.tipo),["Graduação","tabela","Pós-graduação","tabela"]);
+  assert.ok(c.blocos[cont+2].linhas.some(row=>row[0]==="Agronomia"));
+  assert.ok(c.blocos[cont+2].linhas.some(row=>row[0]==="Zootecnia"));
+  assert.ok(c.blocos[cont+4].linhas.some(row=>row[0].includes("Sustentabilidade e Tecnologia Ambiental")));
+  const achievements=c.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes");
+  assert.equal(achievements.conteudo,"Informação incompleta");
+  assert.equal(c.blocos.filter(b=>b.tipo==="galeria").length,2);
+  const faqBlock=c.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi");
+  assert.ok(faqBlock.itens.some(item=>item.pergunta==="O estágio é obrigatório?"&&/Não\. O estágio supervisionado é não obrigatório/.test(item.resposta)));
+  assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+  assert.match(c.blocos.at(-2).conteudo,/ensino fundamental/);
+  assert.doesNotMatch(c.blocos.at(-2).conteudo,/2026|2027|inscrições abertas/i);
+  assert.ok(c.blocos.at(-1).conteudo.length>600);
+  assert.doesNotMatch(JSON.stringify(c),/thais\.oliveira@ifmg\.edu\.br|bambui\.ifmg\.edu\.br/);
+  for(const key of ["validacao","pendencias","instrucao","revisao_coordenacao"]) assert.ok(!Object.hasOwn(c,key));
+});
+
 test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {
   const relevantTitles=new Set(["Projetos e experiências acadêmicas","Projetos e experiências","Práticas e experiências","Pesquisa, extensão e oportunidades","Pesquisa, extensão e aprendizagem prática","Experiências e conquistas dos estudantes","Experiências de aprendizagem em Direito"]);
   const oldDate=/\b20(?:0\d|1\d|2[0-4])\b/;
@@ -1676,5 +1718,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),42);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),44);
 });

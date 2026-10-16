@@ -693,9 +693,9 @@ test("F1B.9: cursos superiores distinguem atividades e fontes de cada campus", (
     ["administracao-bacharelado","São João Evangelista",/Destaque Jr/],
     ["agronomia-bacharelado","Bambuí",/duração prevista de nove semestres/],
     ["agronomia-bacharelado","São João Evangelista",/estágio supervisionado obrigatório.*Trabalho de Conclusão de Curso/],
-    ["engenharia-de-producao-bacharelado","Bambuí",/kits experimentais/],
-    ["engenharia-de-producao-bacharelado","Congonhas",/Pesquisa Operacional/],
-    ["engenharia-de-producao-bacharelado","Governador Valadares",/borracha e pneus/],
+    ["engenharia-de-producao-bacharelado","Bambuí",/processos produtivos, custos, qualidade/],
+    ["engenharia-de-producao-bacharelado","Congonhas",/planejamento da produção, logística/],
+    ["engenharia-de-producao-bacharelado","Governador Valadares",/planejamento, qualidade, logística/],
     ["direito-bacharelado-arcos","Arcos",/prática jurídica simulada e real/]
   ];
   for(const [id,campus,pattern] of cases) assert.match(get(id,campus),pattern,id+" — "+campus);
@@ -1119,7 +1119,7 @@ test("F3.1: Congonhas e GV apresentam projeto, resultado e campus; SJE empresa j
   assert.ok(agAchievements.includes("Olericultura"),"Preservar projeto de Bambuí");
   const pro=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
   const practice=pro.blocos.find(b=>b.titulo==="Projetos e experiências acadêmicas").conteudo;
-  for(const term of ["Congonhas","Victor Rasquinho Ho Te Chang","impressão 3D","Governador Valadares","2026","ABC Borracha","Batatas Magu"]) {
+  for(const term of ["Congonhas","Ambiente de Inovação e Maker","Governador Valadares","2026","ABC Borracha","Batatas Magu"]) {
     assert.ok(practice.includes(term),"Produção prática: "+term);
   }
   const research=pro.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo;
@@ -1127,11 +1127,32 @@ test("F3.1: Congonhas e GV apresentam projeto, resultado e campus; SJE empresa j
     assert.ok(research.includes(term),"Produção pesquisa: "+term);
   }
   const achievements=pro.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
-  for(const term of ["Othmer Fellowship","Bambuí","Congonhas","2025","Brazilian Journal of Production Engineering","Governador Valadares","Luisa Nery","Mauri Nunes","2019"]) {
+  for(const term of ["Othmer Fellowship","Bambuí","Congonhas","2025","Brazilian Journal of Production Engineering","Governador Valadares","Luisa Nery","Mauri Nunes","2019","Victor Rasquinho Ho Te Chang","Dominycke Guasti de Melo","impressão 3D"]) {
     assert.ok(achievements.includes(term),"Produção conquista: "+term);
   }
   assert.ok(pro.blocos.filter(b=>b.tipo==="galeria").every(b=>b.itens.length===0));
   assert.doesNotMatch(achievements,/premiados em 2026|vaga garantida/);
+});
+
+test("F5.3: Engenharia de Produção apresenta cada atividade uma vez no bloco adequado", () => {
+  const c=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
+  const section=title=>c.blocos.find(b=>b.titulo===title).conteudo;
+  const project=section("Projetos e experiências acadêmicas");
+  const research=section("Pesquisa, extensão e oportunidades");
+  const experiences=section("Experiências e conquistas dos estudantes");
+  const local=c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens;
+  const texts=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]);
+  for(const term of ["ABC Borracha","Batatas Magu","Victor Rasquinho","Renata Aparecida","Gestão de Operações, Logística e Pesquisa Operacional","kits experimentais","descarte correto de absorventes"]) {
+    assert.equal(texts.filter(t=>t.includes(term)).length,1,"não repetir: "+term);
+  }
+  for(const term of ["ABC Borracha","Batatas Magu","2026","Governador Valadares"])
+    assert.ok(project.includes(term),"visita em projetos: "+term);
+  for(const term of ["Renata Aparecida Pereira","2021","e-book","cartazes e adesivos","2022","Pesquisa Operacional"])
+    assert.ok(research.includes(term),"pesquisa e extensão: "+term);
+  for(const term of ["Victor Rasquinho Ho Te Chang","Dominycke Guasti de Melo","modelagem e impressão 3D","artigo publicado em 2025"])
+    assert.ok(experiences.includes(term),"pesquisa publicada em conquistas: "+term);
+  for(const item of local)assert.doesNotMatch(item.resposta,/ABC Borracha|Batatas Magu|kits experimentais|Pesquisa Operacional|descarte correto de absorventes|Victor Rasquinho/,item.pergunta);
+  assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 
 test("F3.1/F3.4: projetos documentados de Bambuí e avaliação MEC não migram entre campi", () => {

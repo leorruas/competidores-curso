@@ -138,6 +138,28 @@ test("catálogo mantém ofertas reais e filtros multicampi", () => {
   assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
 });
 
+test("F4.4: Técnico Administração diferencia diploma técnico, graduação e pós com cursos reais", () => {
+  const c=json.courses.find(x=>x.id==="tecnico-em-administracao-integrado");
+  const block=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Continue seus estudos no IFMG");
+  assert.ok(block);
+  const text=block.conteudo;
+  const courses=[
+    ["Especialização em Gestão de Negócios","Ouro Branco"],
+    ["Especialização em Gestão Pública e Desenvolvimento Regional","Ribeirão das Neves"],
+    ["Mestrado Profissional em Administração","Formiga"]
+  ];
+  assert.ok(text.indexOf("Técnico em Administração")<text.indexOf("Bacharelado em Administração"));
+  assert.ok(text.indexOf("Bacharelado em Administração")<text.indexOf("graduação concluída"));
+  for(const [name,campus] of courses) {
+    assert.ok(text.includes(name),"Falta pós-graduação: "+name);
+    assert.ok(text.includes(campus),"Falta campus: "+campus);
+  }
+  assert.match(text,/graduação concluída/);
+  assert.match(text,/não dá acesso direto à pós-graduação/);
+  assert.doesNotMatch(text,/vagas abertas|inscrições abertas|bolsa garantida|pós-graduação automaticamente/i);
+  assert.doesNotMatch(text,/2025|2026|2027/);
+});
+
 test("F3.6: todos os oito cursos descrevem tarefas reais no Mundo do Trabalho", () => {
   assert.equal(json.courses.length,8);
   const expected=new Map([

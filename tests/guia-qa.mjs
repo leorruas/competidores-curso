@@ -157,7 +157,7 @@ test("fase 1: galeria acompanha projetos e Administração não tem link ou dest
 
 test("bacharelados essenciais mantêm dados, FAQ, destaques e campos de validação", () => {
   const ids=["engenharia-mecanica-bacharelado","administracao-bacharelado",
-    "agronomia-bacharelado-bambui","engenharia-de-producao-bacharelado-bambui"];
+    "agronomia-bacharelado","engenharia-de-producao-bacharelado"];
   const h=testContext();
   for (const id of ids) {
     const curso=json.courses.find(c=>c.id===id);
@@ -232,8 +232,8 @@ test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar prem
 
 test("FAQ não repete duração e matérias que já aparecem nos dados básicos", () => {
   const banned=new Map([
-    ["agronomia-bacharelado-bambui",["Qual é a duração?","O que se estuda?"]],
-    ["engenharia-de-producao-bacharelado-bambui",["Quanto tempo dura?","O que se estuda?","Como é organizada a formação?"]]
+    ["agronomia-bacharelado",["Qual é a duração?","O que se estuda?"]],
+    ["engenharia-de-producao-bacharelado",["Quanto tempo dura?","O que se estuda?","Como é organizada a formação?"]]
   ]);
   for(const [id,questions] of banned) {
     const c=json.courses.find(x=>x.id===id);
@@ -248,30 +248,36 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
   assert.doesNotMatch(answer,/,\./);
 });
 
-test("ingresso 2027 em Bambuí distingue vagas Enem, Histórico e Sisu", () => {
-  const items=[
-    {id:"agronomia-bacharelado-bambui",vacancy:/30 vagas pelo Enem/,way:/30 vagas pela nota do Enem/,noHistory:true},
-    {id:"engenharia-de-producao-bacharelado-bambui",vacancy:/20 vagas pelo Enem e 5 por Histórico Escolar e Redação/,way:/20 vagas pelo Enem.*5 vagas por Histórico Escolar e Redação online/s}
+test("Agronomia e Engenharia de Produção agrupam as cinco ofertas 2027 sem perder URLs antigas", () => {
+  const checks=[
+    {id:"agronomia-bacharelado",old:"agronomia-bacharelado-bambui",campi:["Bambuí","São João Evangelista"],vagas:[/30 Enem/,/15 Enem.*15 Histórico Escolar e Redação/],turnos:["Manhã e tarde","Manhã e tarde"]},
+    {id:"engenharia-de-producao-bacharelado",old:"engenharia-de-producao-bacharelado-bambui",campi:["Bambuí","Congonhas","Governador Valadares"],vagas:[/20 Enem.*5 Histórico/,/20 Enem/,/17 Enem.*17 Histórico/],turnos:["Manhã e tarde","Noite","Noite"]}
   ];
-  for(const entry of items) {
-    const c=json.courses.find(x=>x.id===entry.id);
-    const basic=c.blocos.find(x=>x.tipo==="dados-basicos");
-    const values=basic.campos.find(x=>x.rotulo==="Vagas").valor;
-    assert.match(values,entry.vacancy);
-    const faq=c.blocos.find(x=>x.tipo==="faq").itens;
-    const ingresso=faq.find(x=>x.pergunta.startsWith("Como ingressar"));
-    assert.ok(ingresso.pergunta.endsWith("em Bambuí?"));
-    assert.match(ingresso.resposta,entry.way);
-    assert.match(ingresso.resposta,/2027/);
-    assert.match(ingresso.resposta,/ensino médio até a matrícula/);
-    assert.match(ingresso.resposta,/3 de agosto a 14 de setembro de 2026/);
-    assert.match(ingresso.resposta,/Sisu tem seleção e vagas próprias/);
-    if(entry.noHistory)assert.doesNotMatch(ingresso.resposta,/Histórico Escolar e Redação/);
-    assert.equal(c.status,"em_validacao");
-    const title=c.blocos.find(b=>b.titulo===`Oferta de ${c.nome} no Campus Bambuí`);
-    assert.ok(title,"Deve indicar que a seção descreve o recorte de Bambuí");
-    assert.doesNotMatch(title.conteudo,/O curso é oferecido no Campus Bambuí/);
+  for(const spec of checks) {
+    const c=json.courses.find(x=>x.id===spec.id);
+    assert.deepEqual(c.campi,spec.campi);
+    assert.ok(c.aliases.includes(spec.old));
+    assert.equal(c.publicacao_autorizada,true);
+    const basic=c.blocos.find(b=>b.tipo==="dados-basicos").campos;
+    const vacancy=basic.find(x=>x.rotulo==="Vagas").valor;
+    for(const regex of spec.vagas)assert.match(vacancy,regex);
+    const table=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
+    assert.deepEqual(table.colunas,["Campus","Turno","Modalidade","E-mail da coordenação"]);
+    assert.deepEqual(table.linhas.map(r=>r[0]),spec.campi);
+    assert.deepEqual(table.linhas.map(r=>r[1]),spec.turnos);
+    assert.ok(table.linhas.every(r=>r[2]==="Presencial"));
+    const faq=c.blocos.find(b=>b.tipo==="faq").itens;
+    assert.ok(spec.campi.every(campus=>faq.some(x=>x.pergunta.includes(campus)&&x.pergunta.startsWith("Como ingressar"))));
+    assert.ok(c.blocos.some(b=>b.tipo==="texto"&&b.titulo==="Onde o IFMG oferece "+c.nome));
+    assert.ok(c.blocos.findIndex(b=>b.tipo==="galeria")<c.blocos.findIndex(b=>b.tipo==="faq"));
   }
+  const agr=json.courses.find(x=>x.id==="agronomia-bacharelado");
+  assert.match(agr.blocos.find(b=>b.titulo==="Continue seus estudos no IFMG").conteudo,/Especialização em Meio Ambiente/);
+  const prod=json.courses.find(x=>x.id==="engenharia-de-producao-bacharelado");
+  const pTable=prod.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
+  assert.equal(pTable.linhas[1][3],"coordenacao.producao.congonhas@ifmg.edu.br");
+  assert.equal(pTable.linhas[2][3],"coenp.gv@ifmg.edu.br");
+  assert.match(prod.blocos.find(b=>b.titulo==="Reconhecimentos e premiações").conteudo,/Governador Valadares[\\s\\S]*2026/);
 });
 
 test("Direito explica estágio e TCC com exigências concretas", () => {

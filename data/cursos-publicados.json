@@ -1297,12 +1297,13 @@
       ]
     },
     {
-      "id": "agronomia-bacharelado-bambui",
+      "id": "agronomia-bacharelado",
       "nome": "Agronomia",
       "nivel": "Graduação",
       "tipo": "Bacharelado",
       "campi": [
-        "Bambuí"
+        "Bambuí",
+        "São João Evangelista"
       ],
       "modalidade": "Presencial",
       "status": "em_validacao",
@@ -1321,11 +1322,11 @@
             },
             {
               "rotulo": "Campus",
-              "valor": "Bambuí"
+              "valor": "Bambuí e São João Evangelista"
             },
             {
               "rotulo": "Duração",
-              "valor": "9 semestres"
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Turno",
@@ -1349,7 +1350,7 @@
             },
             {
               "rotulo": "Vagas",
-              "valor": "30 vagas pelo Enem (Processo Seletivo 2027)"
+              "valor": "Bambuí: 30 Enem; São João Evangelista: 15 Enem + 15 Histórico Escolar e Redação (Processo Seletivo 2027)"
             }
           ]
         },
@@ -1365,7 +1366,7 @@
         {
           "tipo": "texto",
           "titulo": "Para quem é o curso",
-          "conteudo": "Agronomia é uma opção para quem concluiu o ensino médio e se interessa por agricultura, meio ambiente, tecnologias de produção e soluções para desafios do meio rural. A rotina de estudos é diurna, de manhã e à tarde."
+          "conteudo": "Agronomia é uma opção para quem concluiu o ensino médio e se interessa por agricultura, meio ambiente, tecnologias de produção e soluções para desafios do meio rural. As ofertas dos campi Bambuí e São João Evangelista têm aulas de manhã e à tarde."
         },
         {
           "tipo": "introducao",
@@ -1412,11 +1413,15 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e aprendizagem prática",
-          "conteudo": "A graduação em Agronomia inclui **atividades práticas**, oportunidades de **pesquisa e extensão** e grupos de estudo. Essa combinação aproxima os temas da sala de aula dos desafios da produção, da assistência técnica e da sustentabilidade ambiental.\n\nExperiências específicas, locais das práticas e oportunidades de bolsas precisam ser confirmados antes da divulgação de exemplos de cada turma."
+          "conteudo": "Em **Bambuí**, a formação inclui atividades práticas, ensino, pesquisa e extensão relacionados à produção agrícola, ao manejo de recursos naturais e à sustentabilidade.\n\nEm **São João Evangelista**, os estudos articulam conservação de solos, cultivo, mecanização agrícola e desafios da produção rural. Cada campus organiza as experiências conforme seus componentes curriculares e projetos acadêmicos."
         },
         {
           "tipo": "introducao",
           "conteudo": "Pesquisa e extensão podem aproximar o estudante de problemas do campo, do desenvolvimento de tecnologias e da produção agrícola responsável."
+        },
+        {
+          "tipo": "galeria",
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -1425,20 +1430,28 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Oferta de Agronomia no Campus Bambuí",
-          "conteudo": "Em Bambuí, o curso funciona de manhã e à tarde. Confira o contato da coordenação na tabela abaixo."
+          "titulo": "Onde o IFMG oferece Agronomia",
+          "conteudo": "O bacharelado em Agronomia é oferecido em **Bambuí** e **São João Evangelista**, com aulas presenciais de manhã e à tarde. Cada campus tem organização curricular e atividades acadêmicas próprias."
         },
         {
           "tipo": "tabela",
           "colunas": [
             "Campus",
             "Turno",
+            "Modalidade",
             "E-mail da coordenação"
           ],
           "linhas": [
             [
               "Bambuí",
               "Manhã e tarde",
+              "Presencial",
+              "Informação incompleta"
+            ],
+            [
+              "São João Evangelista",
+              "Manhã e tarde",
+              "Presencial",
               "Informação incompleta"
             ]
           ]
@@ -1446,7 +1459,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "faq",
@@ -1457,21 +1470,28 @@
             },
             {
               "pergunta": "Há atividades práticas?",
-              "resposta": "Sim. A apresentação oficial destaca atividades práticas, projetos de pesquisa e extensão. A disponibilidade de ambientes e projetos específicos varia."
+              "resposta": "Em **Bambuí**, há atividades práticas e oportunidades de pesquisa e extensão relacionadas à produção agrícola. Em **São João Evangelista**, a formação abrange tecnologias de cultivo, conservação de solos e atividades ligadas ao campo."
             },
             {
-              "pergunta": "Há estágio e TCC?",
-              "resposta": "A matriz curricular inclui estágio e Trabalho de Conclusão de Curso (TCC)."
+              "pergunta": "Como funcionam estágio e TCC em Agronomia?",
+              "resposta": "Informação incompleta"
             },
             {
               "pergunta": "Como ingressar em Agronomia em Bambuí?",
               "resposta": "Para ingresso em 2027 no Campus Bambuí, é necessário concluir o ensino médio até a matrícula. O processo seletivo próprio oferece **30 vagas pela nota do Enem**, considerando edições de **2017 a 2026** sem nota zero nas provas ou na redação. As inscrições desta edição ocorreram de **3 de agosto a 14 de setembro de 2026**. O Sisu tem seleção e vagas próprias."
+            },
+            {
+              "pergunta": "Como ingressar em Agronomia em São João Evangelista?",
+              "resposta": "Em **São João Evangelista**, o processo seletivo próprio de 2027 oferece **15 vagas pelo Enem** e **15 por Histórico Escolar e Redação online**. É necessário concluir o ensino médio até a matrícula. As inscrições ocorreram de **3 de agosto a 14 de setembro de 2026**; a redação da segunda modalidade está prevista para **1º de novembro de 2026**. O Sisu tem vagas e seleção próprias."
+            },
+            {
+              "pergunta": "Qual a duração de Agronomia em Bambuí?",
+              "resposta": "Em **Bambuí**, a duração prevista é de **nove semestres**. O calendário acadêmico e a matriz curricular pertencem à oferta local."
             }
           ]
         },
         {
           "tipo": "links",
-          "estilo": "Padrão",
           "itens": [
             {
               "rotulo": "Como ingressar no IFMG",
@@ -1482,10 +1502,6 @@
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
             }
           ]
-        },
-        {
-          "tipo": "galeria",
-          "itens": []
         },
         {
           "tipo": "texto",
@@ -1500,22 +1516,27 @@
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta."
+          "conteudo": "Depois da graduação em Agronomia, você pode participar de seleções de pós-graduação do IFMG, observando os requisitos e editais de cada curso.\n\nEm **São João Evangelista**, a **Especialização em Meio Ambiente**, ofertada a distância, incluiu graduados em Agronomia entre os públicos elegíveis na seleção para ingresso no primeiro semestre de **2026**. O curso aborda temas como agroecologia, sustentabilidade e gestão ambiental. A abertura de novas turmas e as condições de ingresso dependem de novos editais."
         },
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
         }
+      ],
+      "aliases": [
+        "agronomia-bacharelado-bambui"
       ]
     },
     {
-      "id": "engenharia-de-producao-bacharelado-bambui",
+      "id": "engenharia-de-producao-bacharelado",
       "nome": "Engenharia de Produção",
       "nivel": "Graduação",
       "tipo": "Bacharelado",
       "campi": [
-        "Bambuí"
+        "Bambuí",
+        "Congonhas",
+        "Governador Valadares"
       ],
       "modalidade": "Presencial",
       "status": "em_validacao",
@@ -1534,15 +1555,15 @@
             },
             {
               "rotulo": "Campus",
-              "valor": "Bambuí"
+              "valor": "Bambuí, Congonhas e Governador Valadares"
             },
             {
               "rotulo": "Duração",
-              "valor": "5 anos"
+              "valor": "5 anos (referência das três ofertas; conferir a matriz de cada campus)"
             },
             {
               "rotulo": "Turno",
-              "valor": "Manhã e tarde"
+              "valor": "Manhã e tarde (Bambuí); noite (Congonhas e Governador Valadares)"
             },
             {
               "rotulo": "Modalidade",
@@ -1562,7 +1583,7 @@
             },
             {
               "rotulo": "Vagas",
-              "valor": "20 vagas pelo Enem e 5 por Histórico Escolar e Redação (Processo Seletivo 2027)"
+              "valor": "Bambuí: 20 Enem + 5 Histórico e Redação; Congonhas: 20 Enem; Governador Valadares: 17 Enem + 17 Histórico e Redação (PS 2027)"
             }
           ]
         },
@@ -1578,7 +1599,7 @@
         {
           "tipo": "texto",
           "titulo": "Para quem é o curso",
-          "conteudo": "A graduação é voltada a quem concluiu o ensino médio e tem interesse por processos, tecnologia, planejamento, organização e análise de sistemas. As aulas ocorrem de manhã e à tarde."
+          "conteudo": "A graduação é voltada a quem concluiu o ensino médio e tem interesse por processos, tecnologia, planejamento, organização e análise de sistemas. Em **Bambuí**, as aulas ocorrem de manhã e à tarde; em **Congonhas** e **Governador Valadares**, à noite."
         },
         {
           "tipo": "introducao",
@@ -1624,12 +1645,16 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Atividades práticas e atualização curricular",
-          "conteudo": "A formação relaciona conhecimentos de engenharia e gestão à análise e à melhoria de sistemas de produção de bens e serviços.\n\nA estrutura curricular é apresentada no projeto pedagógico do curso, que reúne os componentes da formação e as atividades acadêmicas."
+          "titulo": "Projetos e experiências acadêmicas",
+          "conteudo": "Em **Congonhas**, a área de Engenharia de Produção conta com um grupo de pesquisa em **Gestão de Operações, Logística e Pesquisa Operacional**, dedicado a temas como logística, simulação e otimização de sistemas e planejamento e controle da produção. A participação dos estudantes depende de projetos e seleções específicos.\n\nEm **Governador Valadares**, o trabalho de conclusão de curso é obrigatório e desenvolvido em duas disciplinas, **Projeto em Engenharia I e II**, previstas para o nono e o décimo períodos. Em **Bambuí**, a formação articula fundamentos de engenharia, qualidade, logística e organização de sistemas de produção."
         },
         {
           "tipo": "introducao",
           "conteudo": "O estudo de sistemas produtivos aproxima conhecimentos de engenharia, qualidade, logística e organização do trabalho."
+        },
+        {
+          "tipo": "galeria",
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -1638,28 +1663,42 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Oferta de Engenharia de Produção no Campus Bambuí",
-          "conteudo": "Em Bambuí, o curso funciona de manhã e à tarde. Confira o contato da coordenação na tabela abaixo."
+          "titulo": "Onde o IFMG oferece Engenharia de Produção",
+          "conteudo": "O bacharelado é oferecido em **Bambuí**, **Congonhas** e **Governador Valadares**. O turno, os projetos acadêmicos, a matriz curricular e as regras de estágio e TCC são específicos de cada campus."
         },
         {
           "tipo": "tabela",
           "colunas": [
             "Campus",
             "Turno",
+            "Modalidade",
             "E-mail da coordenação"
           ],
           "linhas": [
             [
               "Bambuí",
               "Manhã e tarde",
+              "Presencial",
               "Informação incompleta"
+            ],
+            [
+              "Congonhas",
+              "Noite",
+              "Presencial",
+              "coordenacao.producao.congonhas@ifmg.edu.br"
+            ],
+            [
+              "Governador Valadares",
+              "Noite",
+              "Presencial",
+              "coenp.gv@ifmg.edu.br"
             ]
           ]
         },
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "faq",
@@ -1669,18 +1708,33 @@
               "resposta": "O curso combina fundamentos de engenharia com planejamento, processos produtivos, qualidade, logística, custos e organização do trabalho para analisar e melhorar sistemas de produção."
             },
             {
-              "pergunta": "Há estágio e TCC?",
+              "pergunta": "Como são o estágio e o TCC em Bambuí?",
               "resposta": "Informação incompleta"
             },
             {
               "pergunta": "Como ingressar em Engenharia de Produção em Bambuí?",
               "resposta": "Para ingresso em 2027 no Campus Bambuí, é necessário concluir o ensino médio até a matrícula. O processo seletivo próprio oferece **20 vagas pelo Enem** (edições de 2017 a 2026, sem nota zero) e **5 vagas por Histórico Escolar e Redação online**. As inscrições ocorreram de **3 de agosto a 14 de setembro de 2026**; a redação está prevista para **1º de novembro de 2026**. O Sisu tem seleção e vagas próprias."
+            },
+            {
+              "pergunta": "Como ingressar em Engenharia de Produção em Congonhas?",
+              "resposta": "Em **Congonhas**, o processo seletivo próprio de 2027 oferece **20 vagas pelo Enem**, com aproveitamento de resultados das edições de **2017 a 2026**, sem nota zero. É necessário concluir o ensino médio até a matrícula. O Sisu tem seleção própria."
+            },
+            {
+              "pergunta": "Como ingressar em Engenharia de Produção em Governador Valadares?",
+              "resposta": "Em **Governador Valadares**, o processo seletivo próprio de 2027 oferece **17 vagas pelo Enem** e **17 por Histórico Escolar e Redação online**. É necessário concluir o ensino médio até a matrícula. As inscrições ocorreram de **3 de agosto a 14 de setembro de 2026**; a redação da segunda modalidade está prevista para **1º de novembro de 2026**. O Sisu tem seleção própria."
+            },
+            {
+              "pergunta": "O que diferencia a formação em Congonhas?",
+              "resposta": "Em **Congonhas**, os estudantes podem conhecer áreas como **pesquisa operacional, otimização de sistemas e logística** por meio dos trabalhos do grupo de pesquisa em Gestão de Operações, Logística e Pesquisa Operacional. A participação depende dos projetos e das seleções de cada período."
+            },
+            {
+              "pergunta": "O TCC é obrigatório em Governador Valadares?",
+              "resposta": "Sim. Em **Governador Valadares**, o TCC é obrigatório e se desenvolve nas disciplinas **Projeto em Engenharia I** e **Projeto em Engenharia II**, previstas para o nono e o décimo períodos. As demais condições acadêmicas seguem a regulamentação local."
             }
           ]
         },
         {
           "tipo": "links",
-          "estilo": "Padrão",
           "itens": [
             {
               "rotulo": "Como ingressar no IFMG",
@@ -1693,18 +1747,14 @@
           ]
         },
         {
-          "tipo": "galeria",
-          "itens": []
-        },
-        {
           "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
-          "conteudo": "Informação incompleta"
+          "conteudo": "Em **Governador Valadares**, o bacharelado em Engenharia de Produção teve seu **reconhecimento renovado pela Portaria SERES/MEC nº 16, de 2 de fevereiro de 2026**."
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Informação incompleta"
+          "conteudo": "Em **Congonhas**, o grupo de pesquisa **Gestão de Operações, Logística e Pesquisa Operacional** desenvolve atividades relacionadas à solução de problemas produtivos, simulação e otimização de sistemas, com foco na região do Alto Paraopeba. A participação de estudantes depende da oferta e das seleções de projetos."
         },
         {
           "tipo": "texto",
@@ -1716,6 +1766,9 @@
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
         }
+      ],
+      "aliases": [
+        "engenharia-de-producao-bacharelado-bambui"
       ]
     },
     {

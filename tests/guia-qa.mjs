@@ -178,6 +178,7 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
     ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]
   ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
   assert.match(get("tecnico-em-edificacoes-integrado"),/Usina Hidrelétrica de Baguari/);
+  assert.match(get("tecnico-em-edificacoes-integrado"),/instalações da Vale/);
   for(const id of ["tecnico-em-logistica-subsequente","tecnico-em-administracao-integrado","direito-bacharelado-arcos"]){
     assert.equal(get(id),"Informação incompleta",id+": uma única pendência, sem inventar conquista");
   }
@@ -1404,7 +1405,7 @@ test("F2.5/F3.1: Agronomia informa contato SJE e empresa júnior Safra em Bambu�
 test("F3.7: cada experiência estruturada possui galeria própria e aviso no editor", () => {
   const h=testContext();
   const expected={
-    "tecnico-em-edificacoes-integrado":2,
+    "tecnico-em-edificacoes-integrado":3,
     "tecnico-em-logistica-subsequente":1,
     "direito-bacharelado-arcos":1,
     "engenharia-mecanica-bacharelado":6,
@@ -1432,6 +1433,20 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
   }
+});
+
+test("F3.8: Edificações reúne visitas de 2025 e 2026 com uma galeria por experiência", () => {
+  const c=json.courses.find(c=>c.id==="tecnico-em-edificacoes-integrado");
+  const i=c.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
+  assert.ok(i>=0);
+  const sequence=c.blocos.slice(i,i+6);
+  assert.deepEqual(sequence.map(b=>b.tipo),["texto","galeria","texto","galeria","texto","galeria"]);
+  assert.match(sequence[0].conteudo,/8 de outubro de 2026.*Governador Valadares/);
+  assert.match(sequence[2].conteudo,/Usina Hidrelétrica de Baguari/);
+  assert.match(sequence[4].conteudo,/junho de 2025.*Ouro Preto/);
+  assert.ok(sequence[1].referencia.includes("Vale"));
+  assert.ok(sequence[3].referencia.includes("Baguari"));
+  assert.ok(sequence[5].referencia.includes("Bauxita"));
 });
 
 test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promessa de vaga", () => {
@@ -1470,5 +1485,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),24);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),26);
 });

@@ -1186,15 +1186,6 @@
         },
         {
           "tipo": "texto",
-          "conteudo": "Outro projeto tratou do **ensino de química aplicado a questões de energia e materiais** nos cursos de Engenharia Mecânica e Controle e Automação. A participação dos estudantes em pesquisa depende dos projetos e das seleções de cada período."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Projeto de ensino de química · Betim",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
           "conteudo": ""
         },
@@ -5696,10 +5687,6 @@
             {
               "pergunta": "Como é estudar o ensino médio junto com Automação Industrial?",
               "resposta": "Você cursa a **formação geral do ensino médio e os conhecimentos técnicos em um mesmo percurso** de três anos. A organização das aulas, dos laboratórios e das práticas segue a matriz curricular do campus."
-            },
-            {
-              "pergunta": "O que são CLPs e sistemas supervisórios?",
-              "resposta": "Os **controladores lógicos programáveis (CLPs)** executam instruções para acompanhar e comandar máquinas e processos. Os **sistemas supervisórios** permitem visualizar informações de equipamentos e acompanhar o funcionamento de sistemas automatizados."
             },
             {
               "pergunta": "Há projetos práticos e atividades de robótica?",

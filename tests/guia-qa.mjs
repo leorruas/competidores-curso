@@ -138,6 +138,21 @@ test("catálogo mantém ofertas reais e filtros multicampi", () => {
   assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
 });
 
+test("F3.6: Logística e Administração técnica descrevem tarefas concretas em Mundo do Trabalho", () => {
+  const cases=[
+    ["tecnico-em-logistica-subsequente",["controle de estoques","planejamento de rotas","relatórios","transportadoras"]],
+    ["tecnico-em-administracao-integrado",["atualizar cadastros","orçamentos","sistemas de informação","organizações sociais"]]
+  ];
+  for(const [id,terms] of cases) {
+    const c=json.courses.find(x=>x.id===id);
+    const work=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Mundo do Trabalho");
+    assert.ok(work,id);
+    for(const term of terms)assert.ok(work.conteudo.includes(term),id+": "+term);
+    assert.ok(work.conteudo.length>600,id);
+    assert.ok(!c.blocos.some(x=>x.tipo==="texto"&&["Onde você pode atuar","Onde este profissional pode trabalhar"].includes(x.titulo)),id);
+  }
+});
+
 test("Edificações apresenta ingresso antes de Mundo do Trabalho com atividades reais", () => {
   const c=json.courses.find(x=>x.id==="tecnico-em-edificacoes-integrado");
   const ingresso=c.blocos.findIndex(b=>b.tipo==="texto"&&b.titulo==="Forma de ingresso");

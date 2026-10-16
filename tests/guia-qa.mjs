@@ -686,8 +686,8 @@ test("F1B.9: cursos superiores distinguem atividades e fontes de cada campus", (
     ["engenharia-mecanica-bacharelado","Arcos",/Trabalhos Acadêmicos Integradores/],
     ["engenharia-mecanica-bacharelado","Betim",/360 horas de extensão.*180 horas de atividades complementares/],
     ["administracao-bacharelado","Bambuí",/Trabalhos Interdisciplinares/],
-    ["administracao-bacharelado","Formiga",/conceito 4/],
-    ["administracao-bacharelado","Ouro Branco",/quatro estrelas no Guia da Faculdade de 2025/],
+    ["administracao-bacharelado","Formiga",/20% da carga horária a distância/],
+    ["administracao-bacharelado","Ouro Branco",/8% da carga horária a distância/],
     ["administracao-bacharelado","Ribeirão das Neves",/planos de negócios/],
     ["administracao-bacharelado","Sabará",/23,67%/],
     ["administracao-bacharelado","São João Evangelista",/Destaque Jr/],
@@ -891,7 +891,14 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
   }
   const c=json.courses.find(x=>x.id==="administracao-bacharelado");
   const answer=c.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Ouro Branco").resposta;
-  assert.match(answer,/quatro estrelas no Guia da Faculdade de 2025/);
+  assert.match(answer,/8% da carga horária a distância/);
+  assert.doesNotMatch(answer,/Guia da Faculdade|quatro estrelas/);
+  const local=c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi");
+  assert.doesNotMatch(local.itens.find(x=>x.pergunta==="Campus Formiga").resposta,/conceito 4|MEC/);
+  const experiences=c.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  assert.match(experiences,/Formiga.*conceito 4.*Ouro Branco.*quatro estrelas/);
+  const copies=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]).join("\n");
+  for(const term of ["conceito 4","quatro estrelas"])assert.equal(copies.split(term).length-1,1,term+" citado somente na seção de conquistas");
   assert.doesNotMatch(answer,/,\./);
 });
 

@@ -179,7 +179,8 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
   ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
   assert.match(get("tecnico-em-edificacoes-integrado"),/Usina Hidrelétrica de Baguari/);
   assert.match(get("tecnico-em-edificacoes-integrado"),/instalações da Vale/);
-  for(const id of ["tecnico-em-logistica-subsequente","tecnico-em-administracao-integrado","direito-bacharelado-arcos"]){
+  assert.match(get("tecnico-em-administracao-integrado"),/Mostra Sua UFMG/);
+  for(const id of ["tecnico-em-logistica-subsequente","direito-bacharelado-arcos"]){
     assert.equal(get(id),"Informação incompleta",id+": uma única pendência, sem inventar conquista");
   }
 });
@@ -1412,7 +1413,7 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "administracao-bacharelado":3,
     "agronomia-bacharelado":4,
     "engenharia-de-producao-bacharelado":6,
-    "tecnico-em-administracao-integrado":1
+    "tecnico-em-administracao-integrado":3
   };
   for(const c of json.courses){
     const galleries=c.blocos.filter(b=>b.tipo==="galeria");
@@ -1447,6 +1448,21 @@ test("F3.8: Edificações reúne visitas de 2025 e 2026 com uma galeria por expe
   assert.ok(sequence[1].referencia.includes("Vale"));
   assert.ok(sequence[3].referencia.includes("Baguari"));
   assert.ok(sequence[5].referencia.includes("Bauxita"));
+});
+
+test("F3.8: Administração Integrado traz NEPSO e Mostra UFMG com galerias por experiência", () => {
+  const c=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
+  const proj=c.blocos.findIndex(b=>b.titulo==="Projetos e experiências");
+  assert.equal(c.blocos[proj+1].referencia,"Visita à Expo Favela Minas · Sabará");
+  assert.match(c.blocos[proj+2].conteudo,/programa Nossa Escola Pesquisa Sua Opinião \(NEPSO\)/);
+  assert.equal(c.blocos[proj+3].tipo,"galeria");
+  assert.match(c.blocos[proj+3].referencia,/NEPSO/);
+  const i=c.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
+  assert.match(c.blocos[i].conteudo,/30 de maio de 2026.*Campus Ponte Nova/);
+  assert.match(c.blocos[i].conteudo,/Mostra Sua UFMG/);
+  assert.match(c.blocos[i+1].referencia,/Mostra Sua UFMG/);
+  assert.equal(c.blocos[i+1].tipo,"galeria");
+  assert.doesNotMatch(c.blocos[proj+2].conteudo,/resultados publicados|pesquisa concluída|questionários aplicados/);
 });
 
 test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promessa de vaga", () => {
@@ -1485,5 +1501,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),26);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),28);
 });

@@ -96,16 +96,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Forma de ingresso",
-          "conteudo": "Para entrar no **Técnico em Edificações Integrado ao Ensino Médio**, você precisa ter concluído o **ensino fundamental** ou concluí-lo até a matrícula. O ingresso ocorre por processo seletivo público do IFMG.\n\nPara a edição de **2027**, a seleção acontece por **prova objetiva presencial**, com **48 questões** de Linguagens, Matemática, Ciências da Natureza e Ciências Humanas. As inscrições ocorreram de **3 de agosto a 14 de setembro de 2026**, e a prova está prevista para **1º de novembro de 2026, às 13h**.\n\nOs editais publicados a cada edição trazem as vagas de cada campus, as regras de inscrição, a documentação, o local de prova e as orientações de matrícula."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Mundo do Trabalho",
-          "conteudo": "Em uma obra ou reforma, o técnico em Edificações pode atuar desde a preparação do projeto até o acompanhamento da execução. Uma parte do trabalho envolve **elaborar e detalhar desenhos técnicos**, inclusive em ferramentas digitais, e ajudar a transformar medidas e especificações em documentos que orientam a construção.\n\nNa etapa de planejamento, pode **levantar quantidades de materiais, preparar orçamentos e organizar etapas e prazos**. Durante os serviços, pode acompanhar a execução, verificar medidas e materiais e colaborar com o **controle de qualidade e a segurança**. Também pode realizar **ensaios de solos e materiais** e participar de atividades de conservação e manutenção predial.\n\nEssas atividades acontecem em **construtoras, escritórios de projetos, canteiros de obras, empresas de manutenção e órgãos públicos**. O profissional atua conforme as atribuições previstas na legislação e os requisitos de responsabilidade técnica de cada atividade; a formação não garante emprego nem autoriza, por si só, qualquer tipo de projeto ou obra."
-        },
-        {
-          "tipo": "texto",
           "titulo": "Por que escolher Técnico em Edificações no IFMG",
           "conteudo": "No integrado, o estudante faz o ==ensino médio e a formação técnica num mesmo percurso==. Além de estudar componentes da educação básica, entra em contato com a construção civil e com áreas relacionadas a projetos, planejamento e infraestrutura.\n\nA experiência pode incluir aulas práticas, uso de espaços de ensino e participação em projetos, conforme as oportunidades efetivamente disponíveis em cada campus. A continuidade dos estudos em cursos superiores também é uma possibilidade após a conclusão do ensino médio."
         },
@@ -264,10 +254,6 @@
             {
               "pergunta": "O curso tem laboratórios e visitas técnicas?",
               "resposta": "As experiências práticas, visitas e recursos de aprendizagem variam conforme as atividades do curso em cada campus."
-            },
-            {
-              "pergunta": "Posso escolher mais de um curso na inscrição?",
-              "resposta": "Na seleção de 2027, você pode indicar até **três opções de curso no mesmo campus**, em ordem de preferência. Se obtiver classificação suficiente para uma das opções, a convocação segue essa ordem, sem possibilidade de escolher posteriormente outra opção na qual também tenha sido classificado."
             }
           ]
         },
@@ -330,6 +316,16 @@
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para entrar no **Técnico em Edificações Integrado ao Ensino Médio**, você precisa ter concluído o **ensino fundamental** ou concluí-lo até a matrícula. O ingresso ocorre por processo seletivo público do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "Em uma obra ou reforma, o técnico em Edificações pode atuar desde a preparação do projeto até o acompanhamento da execução. Uma parte do trabalho envolve **elaborar e detalhar desenhos técnicos**, inclusive em ferramentas digitais, e ajudar a transformar medidas e especificações em documentos que orientam a construção.\n\nNa etapa de planejamento, pode **levantar quantidades de materiais, preparar orçamentos e organizar etapas e prazos**. Durante os serviços, pode acompanhar a execução, verificar medidas e materiais e colaborar com o **controle de qualidade e a segurança**. Também pode realizar **ensaios de solos e materiais** e participar de atividades de conservação e manutenção predial.\n\nEssas atividades acontecem em **construtoras, escritórios de projetos, canteiros de obras, empresas de manutenção e órgãos públicos**. O profissional atua conforme as atribuições previstas na legislação e os requisitos de responsabilidade técnica de cada atividade; a formação não garante emprego nem autoriza, por si só, qualquer tipo de projeto ou obra."
         }
       ]
     },
@@ -398,7 +394,7 @@
         },
         {
           "tipo": "introducao",
-          "conteudo": "Uma formação técnica pública para quem já concluiu o ensino médio: no IFMG Ribeirão das Neves, Logística tem duração prevista de um ano e aborda transporte, estoques, compras e distribuição."
+          "conteudo": "Uma formação técnica pública para quem concluiu o ensino médio e quer aprender sobre transporte, armazenagem, estoques, compras e distribuição de materiais e produtos."
         },
         {
           "tipo": "texto",

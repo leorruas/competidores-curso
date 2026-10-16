@@ -497,6 +497,32 @@ test("Link único: selecionar estilo; copiar título, descrição e URL", () => 
   assert.doesNotMatch(rendered,/Exemplo de como o Link único aparece|block-link-example/);
 });
 
+test("F3.1: Congonhas e GV apresentam projeto, resultado e campus; SJE empresa júnior sem projeto presumido", () => {
+  const ag=json.courses.find(c=>c.id==="agronomia-bacharelado");
+  const opportunity=ag.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo;
+  for(const term of ["São João Evangelista","Agricampo","Bacharelado em Agronomia","manejo de pastagens","Centro de Vivência","2025"]) {
+    assert.ok(opportunity.includes(term),"Agronomia SJE: "+term);
+  }
+  assert.doesNotMatch(opportunity,/agricampo.*projeto concluído/i);
+  const agAchievements=ag.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  assert.ok(agAchievements.includes("Olericultura"),"Preservar projeto de Bambuí");
+  const pro=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
+  const practice=pro.blocos.find(b=>b.titulo==="Projetos e experiências acadêmicas").conteudo;
+  for(const term of ["Congonhas","Victor Rasquinho Ho Te Chang","impressão 3D","Governador Valadares","2026","ABC Borracha","Batatas Magu"]) {
+    assert.ok(practice.includes(term),"Produção prática: "+term);
+  }
+  const research=pro.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo;
+  for(const term of ["Congonhas","Bambuí","Renata Aparecida Pereira","Governador Valadares","2022","Gestão de Projetos","cartazes e adesivos"]) {
+    assert.ok(research.includes(term),"Produção pesquisa: "+term);
+  }
+  const achievements=pro.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  for(const term of ["Othmer Fellowship","Bambuí","Congonhas","2025","Brazilian Journal of Production Engineering","Governador Valadares","Luisa Nery","Mauri Nunes","2019"]) {
+    assert.ok(achievements.includes(term),"Produção conquista: "+term);
+  }
+  assert.ok(pro.blocos.filter(b=>b.tipo==="galeria").every(b=>b.itens.length===0));
+  assert.doesNotMatch(achievements,/premiados em 2026|vaga garantida/);
+});
+
 test("F3.1/F3.4: projetos documentados de Bambuí e avaliação MEC não migram entre campi", () => {
   const agr=json.courses.find(c=>c.id==="agronomia-bacharelado");
   const agexp=agr.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;

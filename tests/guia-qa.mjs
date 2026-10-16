@@ -218,7 +218,7 @@ test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar prem
   assert.ok(research.startsWith("Em **Arcos**"));
   assert.ok(works.startsWith("Em **Betim**"));
   assert.match(research,/Em \*\*Betim\*\*[\s\S]*impressão 3D/);
-  assert.match(research,/graduações em Engenharia Mecânica e Controle e Automação/);
+  assert.match(research,/nos cursos de Engenharia Mecânica e Controle e Automação/);
   assert.match(works,/Em \*\*Betim\*\*[\s\S]*baterias de veículos elétricos/);
   assert.match(works,/usinagem CNC/);
   assert.doesNotMatch(works,/receberam prêmio|foram premiados|conquistaram/i);

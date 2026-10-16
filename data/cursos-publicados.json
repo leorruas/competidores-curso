@@ -2011,11 +2011,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Mundo do Trabalho",
-          "conteudo": "Em setores administrativos, o técnico em Administração pode **organizar documentos, atualizar cadastros e elaborar relatórios** para acompanhar o funcionamento de serviços e processos. Também pode apoiar o atendimento, a comunicação entre equipes e o controle de compras, materiais e prazos.\n\nNa rotina financeira, pode auxiliar na **preparação de orçamentos e controles de entradas e saídas de recursos**, com uso de planilhas e sistemas de informação. Na gestão de pessoas e na organização do trabalho, participa de registros, rotinas de pessoal e **levantamento de dados** que ajudam as equipes a planejar suas atividades e tomar decisões.\n\nO profissional pode exercer essas funções em **empresas, instituições públicas, organizações sociais, comércios e prestadores de serviços**, respeitando os limites das atribuições técnicas e os requisitos de cada função. A formação não assegura contratação nem equivale automaticamente às atribuições privativas de outras profissões."
-        },
-        {
-          "tipo": "texto",
           "titulo": "Onde o IFMG oferece Técnico em Administração Integrado",
           "conteudo": "O curso é oferecido em oito campi, com aulas pela manhã e à tarde. A carga horária EaD e as experiências práticas variam conforme o campus escolhido."
         },
@@ -2151,12 +2146,87 @@
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois de concluir o Técnico em Administração Integrado ao Ensino Médio, você pode participar de processos seletivos de graduação do IFMG, como o **Bacharelado em Administração**, oferecido em diferentes campi.\n\nCom uma **graduação concluída**, você também pode buscar pós-graduações do IFMG relacionadas à área: a **Especialização em Gestão de Negócios**, em **Ouro Branco**, voltada à gestão empresarial; a **Especialização em Gestão Pública e Desenvolvimento Regional**, em **Ribeirão das Neves**, para aprofundar conhecimentos sobre gestão e políticas públicas; e o **Mestrado Profissional em Administração**, em **Formiga**, com área de concentração em Finanças.\n\nO ingresso depende das exigências e dos processos seletivos de cada formação. A conclusão do curso técnico não dá acesso direto à pós-graduação."
+          "conteudo": "Ao concluir o **Técnico em Administração Integrado**, você também conclui o ensino médio e pode participar de processos seletivos de **graduação**. Depois de concluir uma graduação, poderá se candidatar à **pós-graduação** no IFMG, desde que atenda aos requisitos de cada curso e edital. A formação técnica não permite ingresso direto em especializações ou mestrados."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Administração"
+          ],
+          "linhas": [
+            [
+              "Bacharelado em Administração",
+              "Bambuí, Formiga, Ouro Branco, Ribeirão das Neves, Sabará e São João Evangelista",
+              "Aprofundamento em gestão de pessoas, finanças, marketing, estratégia e funcionamento de organizações"
+            ],
+            [
+              "Curso Superior de Tecnologia em Logística",
+              "Sabará",
+              "Gestão de transportes, compras, estoques e distribuição de materiais"
+            ],
+            [
+              "Bacharelado em Engenharia de Produção",
+              "Congonhas",
+              "Planejamento e melhoria de processos produtivos, organização de operações e análise de custos"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Administração"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão",
+              "Bambuí e São João Evangelista (EaD)",
+              "Empreendedorismo e negócios, gestão de pessoas, marketing digital, tecnologia e inovação"
+            ],
+            [
+              "Especialização em Gestão de Negócios",
+              "Ouro Branco",
+              "Administração e planejamento de empresas, empreendedorismo e decisões de gestão"
+            ],
+            [
+              "Especialização em Gestão Pública e Desenvolvimento Regional",
+              "Ribeirão das Neves",
+              "Gestão de serviços públicos, políticas públicas e desenvolvimento regional"
+            ],
+            [
+              "Mestrado Profissional em Administração",
+              "Formiga",
+              "Pesquisa aplicada em finanças e tomada de decisões financeiras nas organizações"
+            ]
+          ]
         },
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "O **Técnico em Administração Integrado ao Ensino Médio** é destinado a estudantes que **concluíram o ensino fundamental** ou irão concluí-lo até a matrícula. O ingresso ocorre por meio de processo seletivo público do IFMG. Consulte o edital vigente para verificar os critérios e os documentos exigidos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "Em setores administrativos, o técnico em Administração pode **organizar documentos, atualizar cadastros e elaborar relatórios** para acompanhar o funcionamento de serviços e processos. Também pode apoiar o atendimento, a comunicação entre equipes e o controle de compras, materiais e prazos.\n\nNa rotina financeira, pode auxiliar na **preparação de orçamentos e controles de entradas e saídas de recursos**, com uso de planilhas e sistemas de informação. Na gestão de pessoas e na organização do trabalho, participa de registros, rotinas de pessoal e **levantamento de dados** que ajudam as equipes a planejar suas atividades e tomar decisões.\n\nO profissional pode exercer essas funções em **empresas, instituições públicas, organizações sociais, comércios e prestadores de serviços**, respeitando os limites das atribuições técnicas e os requisitos de cada função. A formação não assegura contratação nem equivale automaticamente às atribuições privativas de outras profissões."
         }
       ]
     }

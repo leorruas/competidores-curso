@@ -251,7 +251,7 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
 test("ingresso 2027 em Bambuí distingue vagas Enem, Histórico e Sisu", () => {
   const items=[
     {id:"agronomia-bacharelado-bambui",vacancy:/30 vagas pelo Enem/,way:/30 vagas pela nota do Enem/,noHistory:true},
-    {id:"engenharia-de-producao-bacharelado-bambui",vacancy:/20 vagas pelo Enem e 5 por Histórico Escolar e Redação/,way:/20 vagas pelo Enem[\\s\\S]*5 vagas por Histórico Escolar e Redação online/}
+    {id:"engenharia-de-producao-bacharelado-bambui",vacancy:/20 vagas pelo Enem e 5 por Histórico Escolar e Redação/,way:/20 vagas pelo Enem.*5 vagas por Histórico Escolar e Redação online/s}
   ];
   for(const entry of items) {
     const c=json.courses.find(x=>x.id===entry.id);
@@ -260,7 +260,7 @@ test("ingresso 2027 em Bambuí distingue vagas Enem, Histórico e Sisu", () => {
     assert.match(values,entry.vacancy);
     const faq=c.blocos.find(x=>x.tipo==="faq").itens;
     const ingresso=faq.find(x=>x.pergunta.startsWith("Como ingressar"));
-    assert.match(ingresso.pergunta,/em Bambuí\\?/);
+    assert.ok(ingresso.pergunta.endsWith("em Bambuí?"));
     assert.match(ingresso.resposta,entry.way);
     assert.match(ingresso.resposta,/2027/);
     assert.match(ingresso.resposta,/ensino médio até a matrícula/);

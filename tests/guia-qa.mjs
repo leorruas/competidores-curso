@@ -37,7 +37,7 @@ function testContext(clipboard = {}) {
   const ending = "  init();\n})();";
   assert.ok(source.includes(ending),"Não foi possível isolar a aplicação para testes");
   const instrumented = source.replace(ending,
-    "  return {demo,state,editorFields,editorBlock,blockCopy,tableHTML,richHTML,copyValue,renderCatalog,isApprovedCourse};\n})();");
+    "  return {demo,state,editorFields,editorBlock,blockPreview,blockCopy,tableHTML,richHTML,copyValue,renderCatalog,isApprovedCourse};\n})();");
   const hooks = vm.runInNewContext(instrumented, vm.createContext(sandbox), {timeout:2500});
   return { ...hooks, elements, clipboardState };
 }
@@ -1361,4 +1361,17 @@ test("identificadores estáticos não estão duplicados", () => {
   assert.equal(ids.length,new Set(ids).size);
   const balance=[...css].reduce((sum,char)=>sum+(char==="{")-(char==="}"),0);
   assert.equal(balance,0);
+});
+
+test("F1.6: a prévia omite somente blocos vazios, sem suprimir os campos do editor", () => {
+  const h=testContext();
+  const emptyGallery={tipo:"galeria",itens:[]};
+  const emptyIntro={tipo:"introducao",conteudo:""};
+  const pending={tipo:"texto",titulo:"Pesquisa, extensão e oportunidades",conteudo:"Informação incompleta"};
+  assert.equal(h.blockPreview(emptyGallery,0),"");
+  assert.equal(h.blockPreview(emptyIntro,1),"");
+  assert.equal(h.blockPreview(pending,2),"");
+  assert.match(h.editorBlock(emptyGallery,0),/Informação incompleta/);
+  assert.match(h.editorBlock(pending,2),/Pesquisa, extensão e oportunidades/);
+  assert.match(h.blockPreview({tipo:"texto",titulo:"Mundo do Trabalho",conteudo:"Atuação profissional."},3),/Mundo do Trabalho/);
 });

@@ -3105,6 +3105,262 @@
           "conteudo": "Na **clínica de pequenos e grandes animais**, o médico-veterinário pode realizar consultas, investigar sintomas, solicitar e interpretar exames, definir tratamentos e acompanhar a recuperação de pacientes. Pode atuar em ambulatórios, clínicas, hospitais veterinários, propriedades rurais e serviços de atendimento a animais de produção e de companhia.\n\nNa **medicina veterinária preventiva e na saúde pública**, pode participar do controle de zoonoses, da vigilância sanitária, da prevenção de doenças e de programas de vacinação e educação em saúde. Na **produção animal e na segurança dos alimentos**, pode trabalhar com sanidade dos rebanhos, reprodução, inspeção de produtos de origem animal e procedimentos de qualidade em agroindústrias, dentro das atribuições legais de cada função. Pesquisa, diagnóstico laboratorial, conservação de animais e responsabilidade técnica também integram seus campos de atuação.\n\nO exercício da profissão requer **registro ativo no Conselho Regional de Medicina Veterinária (CRMV)** competente, nos termos da legislação profissional."
         }
       ]
+    },
+    {
+      "id": "arquitetura-e-urbanismo-bacharelado",
+      "nome": "Arquitetura e Urbanismo",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Santa Luzia"
+      ],
+      "modalidade": "Presencial (4,58% EaD)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Arquitetura e Urbanismo"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Santa Luzia"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (4,58% EaD)"
+            },
+            {
+              "rotulo": "Duração prevista",
+              "valor": "10 semestres"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "arquitetura.santaluzia@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Arquitetura e Urbanismo",
+          "conteudo": "O **Bacharelado em Arquitetura e Urbanismo** reúne projeto de edificações, desenho de espaços públicos, planejamento urbano, paisagismo, tecnologia da construção e patrimônio cultural.\n\nNo **Campus Santa Luzia**, a formação relaciona o estudo da arquitetura e da cidade com necessidades das pessoas, conforto ambiental, sustentabilidade e condições de uso dos espaços."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Projetar edifícios, espaços públicos e paisagens exige unir desenho, tecnologia, história e a compreensão de como as pessoas vivem e usam a cidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A graduação é destinada a quem concluiu o ensino médio e se interessa por desenho, projeto, construção, paisagem, cultura e transformação das cidades. As aulas acontecem à tarde; parte da carga horária é desenvolvida a distância, conforme a organização curricular do campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O curso combina estudos e oficinas de projeto, representação técnica, história, construção e planejamento da cidade. O desenvolvimento de propostas considera o território, os usuários e as condições técnicas e ambientais de cada intervenção."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Projeto arquitetônico",
+              "Concepção e desenvolvimento de edifícios, espaços de uso coletivo, habitação e reformas."
+            ],
+            [
+              "Desenho e representação",
+              "Desenho técnico, geometria, modelagem, maquetes e comunicação de projetos."
+            ],
+            [
+              "Tecnologia das construções",
+              "Materiais, estruturas, sistemas construtivos, instalações e acompanhamento de obras."
+            ],
+            [
+              "Conforto ambiental",
+              "Luz, ventilação, acústica, desempenho de edificações e sustentabilidade."
+            ],
+            [
+              "Urbanismo e planejamento",
+              "Análise de territórios, mobilidade, usos do solo e desenho de espaços públicos."
+            ],
+            [
+              "Paisagismo e patrimônio",
+              "Projeto de áreas livres, leitura de paisagens, história, preservação e intervenções em bens culturais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Projetos e experiências acadêmicas",
+          "conteudo": "Em **2025 e 2026**, estudantes de Arquitetura e Urbanismo participaram, junto a estudantes de Design, Edificações e Paisagismo, das etapas de um projeto coletivo de **intervenções paisagísticas no Campus Santa Luzia**. A equipe contribuiu com estudos e revisões da proposta para os jardins próximos à portaria e para a entrada do campus, articulando desenho de espaços, vegetação e uso coletivo."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Intervenções paisagísticas coletivas · Santa Luzia · 2025–2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Arquitetura e Urbanismo",
+          "conteudo": "O **Campus Santa Luzia** oferece o bacharelado de forma presencial, com aulas à tarde e atividades a distância previstas na organização curricular. A duração prevista é de **dez semestres**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Santa Luzia",
+              "Tarde",
+              "Presencial (4,58% EaD)",
+              "arquitetura.santaluzia@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Santa Luzia",
+              "resposta": "O curso é organizado em **dez semestres**, com aulas à tarde, estudos de projeto arquitetônico e urbanístico, tecnologia da construção, história e paisagismo. A formação prevê **estágio supervisionado obrigatório** e envolve atividades de projeto relacionadas a edifícios e espaços urbanos."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A **Desenharqui Jr.** é uma empresa júnior do **Campus Santa Luzia** que reúne estudantes de Arquitetura e Urbanismo, Design de Interiores e Engenharia Civil. Os integrantes desenvolvem projetos arquitetônicos, de interiores, reformas, paisagismo, consultorias e orçamentos sob orientação de professores, incluindo o atendimento a demandas de clientes."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Empresa júnior Desenharqui Jr. · Santa Luzia",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Arquitetura e Urbanismo"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão e Conservação do Patrimônio Cultural",
+              "Ouro Preto",
+              "Preservação de bens culturais, diagnóstico, intervenções e restauro de edificações históricas; a formação em Arquitetura e Urbanismo é compatível com as linhas do curso."
+            ],
+            [
+              "Especialização em Proteção e Defesa Civil",
+              "Santa Luzia (EaD)",
+              "Prevenção e gestão de riscos e desastres associados à ocupação do território, às edificações e ao planejamento urbano."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Entre **29 de março e 10 de abril de 2026**, dois estudantes de Arquitetura e Urbanismo do **Campus Santa Luzia** participaram de uma mobilidade acadêmica na **França**, com atividades em Lomme, na região de Lille, e no Seminário Internacional sobre Agroecologia, em La Roche-sur-Yon. A experiência relacionou paisagismo, planejamento territorial, revitalização de espaços urbanos, agroecologia e sustentabilidade."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Mobilidade acadêmica na França · Arquitetura e Urbanismo · 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O que diferencia Arquitetura e Urbanismo de um curso apenas voltado à construção?",
+              "resposta": "A formação articula **projetos de edifícios com a cidade, a paisagem, a história, o conforto ambiental e o uso dos espaços**. Os estudantes também desenvolvem propostas para planejamento urbano, patrimônio cultural e áreas públicas."
+            },
+            {
+              "pergunta": "Há atividades práticas de projeto?",
+              "resposta": "Sim. O curso trabalha com elaboração e representação de projetos e com análises do espaço construído e urbano. As intervenções paisagísticas no campus e os trabalhos da empresa júnior são exemplos de atividades que aproximam os estudantes de situações concretas."
+            },
+            {
+              "pergunta": "O estágio é obrigatório?",
+              "resposta": "Sim. O **estágio supervisionado** integra a formação, com atividades em contextos profissionais relacionadas ao campo da Arquitetura e Urbanismo. A carga horária e as regras para realização seguem a matriz curricular aplicável à turma."
+            },
+            {
+              "pergunta": "É possível participar de projetos de extensão e da empresa júnior?",
+              "resposta": "Sim. A **Desenharqui Jr.** desenvolve projetos e consultorias com estudantes de diferentes cursos e orientação docente. As condições de participação são definidas pela empresa júnior e pelos processos seletivos que ela organiza."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil?",
+              "resposta": "O IFMG mantém programas de assistência estudantil, com critérios de inscrição e concessão definidos em editais. Os auxílios disponíveis e as condições de acesso devem ser consultados no processo vigente."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Arquitetura e Urbanismo**, é necessário ter concluído o **ensino médio** ou concluí-lo até a matrícula. O IFMG realiza processos seletivos próprios de graduação e pode disponibilizar vagas por meio do **Sisu**, de acordo com os editais vigentes.\n\nNas seleções próprias, podem existir modalidades que utilizam **notas do Enem** ou **Histórico Escolar e Redação**. Consulte os editais em vigor para verificar as opções de seleção, as vagas, as cotas, os documentos e os procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O arquiteto e urbanista pode **analisar as necessidades de uma edificação, elaborar projetos arquitetônicos e acompanhar sua execução**, considerando acessibilidade, conforto ambiental, segurança, técnicas construtivas e uso do espaço. Pode planejar reformas, adaptações e intervenções em edifícios residenciais, comerciais e institucionais, além de desenvolver projetos de interiores e paisagismo dentro das atribuições da profissão.\n\nNa escala urbana, pode **participar da elaboração de planos e projetos de bairros, espaços públicos, sistemas de circulação e habitação**, utilizando levantamentos, diagnósticos territoriais, representação técnica e ferramentas digitais. Patrimônio cultural, conservação de edificações, mobilidade, sustentabilidade e planejamento urbano e regional também fazem parte dos campos de atuação.\n\nO trabalho pode ocorrer em escritórios de arquitetura, construtoras, órgãos públicos, organizações sociais, instituições de pesquisa e equipes multidisciplinares. O exercício profissional requer registro no **Conselho de Arquitetura e Urbanismo (CAU)**, com observância das atribuições profissionais e normas aplicáveis."
+        }
+      ]
     }
   ]
 }

@@ -245,7 +245,12 @@
     $("course-breadcrumb").textContent = course.nome;
     const flags = course.demo ? "" : [...(course.campi || []), ...(course.modalidade ? [course.modalidade] : [])].map(x => '<span class="tag">' + escapeHTML(x) + '</span>').join("");
 
-    const headings = course.blocos.map((b,i) => ({ title: b.titulo || blockName[b.tipo], index: i }));
+    const headings = course.blocos.map((b,i) => {
+      const previousTitle = course.blocos.slice(0,i).reverse().find(x => x.titulo)?.titulo;
+      const suffix = previousTitle ? " · " + previousTitle : "";
+      const label = b.titulo || ((b.tipo === "tabela" || b.tipo === "faq") ? blockName[b.tipo] + suffix : blockName[b.tipo]);
+      return { title: label, index: i };
+    });
     root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Exemplo fictício" : kind) + '</div><h1>' + title + '</h1>' + (course.descricao ? '<p>' + escapeHTML(course.descricao) + '</p>' : '') + (flags ? '<div class="course-flags">' + flags + '</div>' : '') + '</div></div>' +
       '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +
@@ -253,7 +258,7 @@
       (activePreview ? course.blocos.map(blockPreview).join("") : course.blocos.map(editorBlock).join("")) +
       '' +
       '</div><aside class="course-side"><div class="side-label">NESTA PÁGINA</div><nav aria-label="Índice dos blocos">' +
-      headings.map(x => '<a href="#bloco-' + x.index + '" data-anchor="' + x.index + '"><span class="side-number">' + String(x.index+1).padStart(2,"0") + '</span>' + escapeHTML(blockName[course.blocos[x.index].tipo]) + '</a>').join("") +
+      headings.map(x => '<a href="#bloco-' + x.index + '" data-anchor="' + x.index + '"><span class="side-number">' + String(x.index+1).padStart(2,"0") + '</span>' + escapeHTML(x.title) + '</a>').join("") +
       '</nav></aside></div>';
   }
 

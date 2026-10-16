@@ -984,7 +984,7 @@
             },
             {
               "pergunta": "Posso participar de projetos de pesquisa, extensão ou monitoria?",
-              "resposta": "Em **Arcos**, estudantes podem concorrer a seleções de monitoria e pesquisa aplicada, como as relacionadas à produção de kits didáticos e produtos mecânicos. Em **Betim**, a graduação inclui **360 horas de extensão**: 225 horas em disciplinas e 135 horas em projetos com a comunidade. Bolsas e vagas de pesquisa ou monitoria dependem das seleções e dos requisitos de cada campus."
+              "resposta": "Em **Arcos**, você pode concorrer a seleções de monitoria e pesquisa aplicada, inclusive em projetos de kits didáticos e produtos mecânicos. Em **Betim**, a graduação inclui **360 horas de extensão**, com atividades em disciplinas e projetos com a comunidade. O campus desenvolve pesquisas relacionadas à engenharia, como estudos de 2025 sobre impressão 3D e ensino de química aplicado às engenharias. A participação em pesquisa ou monitoria depende dos projetos e das seleções de cada período."
             },
             {
               "pergunta": "Como ingressar em Engenharia Mecânica?",
@@ -1018,7 +1018,7 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Em **Arcos**, os estudantes têm oportunidades de participar de projetos de pesquisa aplicada e de monitoria por meio de seleções específicas. Entre as iniciativas desenvolvidas está o projeto **kits didáticos e produtos mecânicos**, que relaciona conhecimento de engenharia à criação de recursos de aprendizagem.\n\nEm **Betim**, você participa de atividades de extensão ao longo da graduação: são **360 horas**, das quais 225 integram disciplinas e 135 são desenvolvidas em projetos com a comunidade. O curso também exige **180 horas de atividades complementares**. Em maio de 2026, estudantes participaram de uma visita à Pollyrubber, em Contagem, e conheceram processos industriais de moldagem e controle de qualidade."
+          "conteudo": "m **Arcos**, os estudantes têm oportunidades de participar de projetos de pesquisa aplicada e de monitoria por meio de seleções específicas. Entre as iniciativas desenvolvidas está o projeto **kits didáticos e produtos mecânicos**, que relaciona conhecimento de engenharia à criação de recursos de aprendizagem.\n\nEm **Betim**, você participa de atividades de extensão ao longo da graduação: são **360 horas**, das quais 225 integram disciplinas e 135 são desenvolvidas em projetos com a comunidade. O curso também exige **180 horas de atividades complementares**. Em maio de 2026, estudantes participaram de uma visita à Pollyrubber, em Contagem, e conheceram processos industriais de moldagem e controle de qualidade.\n\nEm **Betim**, a pesquisa do campus também aborda temas ligados à Engenharia Mecânica. Em 2025, um projeto investigou **como otimizar estruturas para impressão 3D**, por meio de simulações voltadas à redução de material e à resistência das peças. Outro estudo buscou aproximar o **ensino de química dos problemas de energia e materiais** encontrados nas graduações em Engenharia Mecânica e Controle e Automação. A participação de estudantes nesses projetos depende das equipes e seleções de cada edição."
         },
         {
           "tipo": "texto",
@@ -1028,7 +1028,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Informação incompleta"
+          "conteudo": "m **Betim**, trabalhos finais de estudantes de Engenharia Mecânica divulgados para bancas em janeiro e fevereiro de 2026 abordaram o **ciclo de vida de baterias de veículos elétricos**, a **manutenção preditiva de equipamentos** e a **otimização de processos de usinagem CNC**. Esses são exemplos de temas desenvolvidos na conclusão da graduação."
         }
       ],
       "aliases": [

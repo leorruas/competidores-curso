@@ -211,6 +211,23 @@ test("Betim: estágio, PFC, extensão e ingresso 2027 não herdam números de Ar
   assert.match(intro,/Betim[\s\S]*360 horas de extensão/);
 });
 
+test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar premiações", () => {
+  const c=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
+  const research=c.blocos.find(x=>x.titulo==="Pesquisa, extensão e oportunidades").conteudo;
+  const works=c.blocos.find(x=>x.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  assert.match(research,/Em \*\*Betim\*\*[\s\S]*impressão 3D/);
+  assert.match(research,/engenharias em Engenharia Mecânica e Controle e Automação/);
+  assert.match(works,/Em \*\*Betim\*\*[\s\S]*baterias de veículos elétricos/);
+  assert.match(works,/usinagem CNC/);
+  assert.doesNotMatch(works,/receberam prêmio|foram premiados|conquistaram/i);
+  const gallery=c.blocos.find(x=>x.tipo==="galeria");
+  assert.equal(gallery.itens.length,0);
+  const faq=c.blocos.find(x=>x.tipo==="faq").itens;
+  const researchAnswer=faq.find(x=>x.pergunta.includes("projetos de pesquisa")).resposta;
+  assert.match(researchAnswer,/Em \*\*Betim\*\*[\s\S]*pesquisas/);
+  assert.match(researchAnswer,/seleções de cada período/);
+});
+
 test("Direito explica estágio e TCC com exigências concretas", () => {
   const c=json.courses.find(x=>x.id==="direito-bacharelado-arcos");
   const faq=c.blocos.find(x=>x.tipo==="faq");

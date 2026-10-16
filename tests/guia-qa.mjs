@@ -812,9 +812,9 @@ test("Técnico em Administração Integrado agrupa 8 campi sem misturar o bachar
   assert.ok(h.isApprovedCourse(tec));
   const table=tec.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.equal(table.linhas.length,8);
-  const sabara=tec.blocos.find(b=>b.tipo==="texto"&&b.titulo==="Campus Sabará");
+  const sabara=tec.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Sabará");
   assert.ok(sabara);
-  assert.match(sabara.conteudo,/16,67%/);
+  assert.match(sabara.resposta,/16,67%/);
   assert.ok(!tec.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens.some(x=>tec.campi.includes(x.pergunta)));
 });
 

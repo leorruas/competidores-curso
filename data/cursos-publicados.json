@@ -287,11 +287,29 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em 8 de outubro de 2026, estudantes do segundo ano do Técnico Integrado em Edificações do Campus Governador Valadares visitaram instalações da Vale. A atividade, vinculada à disciplina Segurança do Trabalho, abordou normas de segurança, prevenção de riscos, áreas de solda e treinamento de equipes e uso de equipamentos de proteção individual."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita técnica às instalações da Vale · Governador Valadares · outubro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
           "conteudo": "Em outubro de 2025, estudantes do Técnico Integrado em Edificações do Campus Governador Valadares participaram de uma visita técnica à Usina Hidrelétrica de Baguari. Durante a atividade, conheceram aspectos de segurança, instalação e funcionamento da usina, além de ações de monitoramento e educação ambiental."
         },
         {
           "tipo": "galeria",
           "referencia": "Visita técnica à Usina Hidrelétrica de Baguari · Governador Valadares · outubro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em junho de 2025, estudantes da terceira série do Técnico Integrado em Edificações do Campus Ouro Preto visitaram a obra de construção de um shopping no bairro Bauxita. Na atividade, vinculada às disciplinas Tecnologia das Construções II e Estruturas, observaram a execução de estruturas de concreto armado, incluindo formas, armações e concretagem, e conheceram a dinâmica de um canteiro de obras."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita à obra de shopping no bairro Bauxita · Ouro Preto · junho de 2025",
           "itens": []
         },
         {

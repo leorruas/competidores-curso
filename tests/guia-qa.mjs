@@ -314,8 +314,8 @@ test("F1B.9: oito campi de Administração têm informações próprias e FAQ de
     ["Arcos",/Trabalho Acadêmico Integrador.*TAI/],
     ["Bambuí",/tecnologia e relações humanas/],
     ["Formiga",/três anos, em séries anuais/],
-    ["Ouro Branco",/3\\.442 horas/],
-    ["Ouro Preto",/3\\.180 horas/],
+    ["Ouro Branco",/3\.442 horas/],
+    ["Ouro Preto",/3\.180 horas/],
     ["Ponte Nova",/empreendedorismo, inovação/],
     ["Ribeirão das Neves",/recrutamento e treinamento/],
     ["Sabará",/Expo Favela Minas/]
@@ -325,7 +325,7 @@ test("F1B.9: oito campi de Administração têm informações próprias e FAQ de
     assert.ok(body.length>200,campus);
     assert.match(body,rx,campus);
   }
-  assert.match(content("Sabará"),/Em \\*\\*2026\\*\\*/);
+  assert.match(content("Sabará"),/Em \*\*2026\*\*/);
   assert.match(content("Sabará"),/16,67%/);
   const faq=c.blocos.find(x=>x.tipo==="faq");
   assert.equal(faq.itens.length,4);

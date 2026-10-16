@@ -497,6 +497,37 @@ test("Link único: selecionar estilo; copiar título, descrição e URL", () => 
   assert.doesNotMatch(rendered,/Exemplo de como o Link único aparece|block-link-example/);
 });
 
+test("F3.1/F3.4: projetos documentados de Bambuí e avaliação MEC não migram entre campi", () => {
+  const agr=json.courses.find(c=>c.id==="agronomia-bacharelado");
+  const agexp=agr.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  for(const term of ["Bambuí","Olericultura","2022","horta escolar","Associação Olga Chaves"]) {
+    assert.ok(agexp.includes(term),"Agronomia: "+term);
+  }
+  const agrecognition=agr.blocos.find(b=>b.titulo==="Reconhecimentos e premiações").conteudo;
+  for(const term of ["Bambuí","conceito 4","1 a 5","2023","MEC"]) {
+    assert.ok(agrecognition.includes(term),"reconhecimento Agronomia: "+term);
+  }
+  assert.ok(!agrecognition.includes("São João Evangelista"),"nota de Bambuí não é nota de SJE");
+  const opportunities=agr.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo;
+  assert.ok(opportunities.includes("2026"));
+  assert.ok(opportunities.includes("uma vaga compartilhada"));
+  assert.ok(opportunities.includes("não uma oferta permanente"));
+  const pro=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
+  const research=pro.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo;
+  for(const term of ["Bambuí","Renata Aparecida Pereira","Roberta Lacorte de Araújo","kits experimentais","e-book","2021"]) {
+    assert.ok(research.includes(term),"Produção projeto: "+term);
+  }
+  assert.ok(research.includes("Congonhas"),"manter pesquisa distinta em Congonhas");
+  const achievements=pro.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
+  assert.ok(achievements.includes("2025"));
+  assert.ok(achievements.includes("Diretório Acadêmico"));
+  assert.ok(achievements.includes("Othmer Fellowship"),"manter exemplo de egresso");
+  assert.ok(!objWithPrivateControls(agr)&&!objWithPrivateControls(pro));
+});
+function objWithPrivateControls(obj) {
+  return /"(?:validacao|pendencias|revisao_coordenacao|instrucao)"\s*:/.test(JSON.stringify(obj));
+}
+
 test("F3.1: reconhecimento de egresso de Produção pertence apenas a Bambuí", () => {
   const c=json.courses.find(x=>x.id==="engenharia-de-producao-bacharelado");
   const b=c.blocos.find(x=>x.titulo==="Experiências e conquistas dos estudantes");

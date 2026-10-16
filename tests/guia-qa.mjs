@@ -1415,7 +1415,8 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "engenharia-de-producao-bacharelado":6,
     "tecnico-em-administracao-integrado":3,
     "zootecnia-bacharelado":2,
-    "medicina-veterinaria-bacharelado":2
+    "medicina-veterinaria-bacharelado":2,
+    "arquitetura-e-urbanismo-bacharelado":3
   };
   for(const c of json.courses){
     const galleries=c.blocos.filter(b=>b.tipo==="galeria");
@@ -1514,7 +1515,7 @@ test("F7.1: Zootecnia Bambuí integra catálogo com conteúdos e duas galerias",
 });
 
 test("F7.2: Medicina Veterinária Bambuí tem dados, projetos comprovados e dois blocos de galeria", () => {
-  assert.equal(json.courses.length,10);
+  assert.ok(json.courses.length>=10,"Medicina Veterinária e predecessores preservados");
   const c=json.courses.find(x=>x.id==="medicina-veterinaria-bacharelado");
   assert.ok(c);
   assert.deepEqual(Array.from(c.campi),["Bambuí"]);
@@ -1548,6 +1549,40 @@ test("F7.2: Medicina Veterinária Bambuí tem dados, projetos comprovados e dois
   assert.doesNotMatch(raw,/bambui\.ifmg\.edu\.br|thais\.cruz/,"dados de apuração não aparecem no JSON público");
 });
 
+test("F7.2: Arquitetura e Urbanismo Santa Luzia combina informações oficiais e três galerias", () => {
+  assert.equal(json.courses.length,11);
+  const c=json.courses.find(x=>x.id==="arquitetura-e-urbanismo-bacharelado");
+  assert.ok(c);
+  assert.deepEqual(Array.from(c.campi),["Santa Luzia"]);
+  assert.equal(c.status,"em_validacao");
+  const basics=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
+  assert.equal(basics["E-mail da coordenação"],"arquitetura.santaluzia@ifmg.edu.br");
+  assert.equal(basics["Modalidade"],"Presencial (4,58% EaD)");
+  assert.equal(basics["Duração prevista"],"10 semestres");
+  assert.equal(basics["Carga horária total"],"Informação incompleta");
+  const campusTable=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
+  assert.deepEqual(Array.from(campusTable.linhas[0]),["Santa Luzia","Tarde","Presencial (4,58% EaD)","arquitetura.santaluzia@ifmg.edu.br"]);
+  const project=c.blocos.findIndex(b=>b.titulo==="Projetos e experiências acadêmicas");
+  assert.match(c.blocos[project].conteudo,/2025 e 2026/);
+  assert.match(c.blocos[project].conteudo,/intervenções paisagísticas/);
+  assert.equal(c.blocos[project+1].tipo,"galeria");
+  const ext=c.blocos.findIndex(b=>b.titulo==="Pesquisa, extensão e oportunidades");
+  assert.match(c.blocos[ext].conteudo,/Desenharqui Jr/);
+  assert.equal(c.blocos[ext+1].tipo,"galeria");
+  const achievement=c.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
+  assert.match(c.blocos[achievement].conteudo,/29 de março e 10 de abril de 2026/);
+  assert.match(c.blocos[achievement].conteudo,/França/);
+  assert.equal(c.blocos[achievement+1].tipo,"galeria");
+  assert.equal(c.blocos.filter(b=>b.tipo==="galeria").length,3);
+  const pos=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("Relação com Arquitetura e Urbanismo"));
+  assert.equal(pos.linhas.length,2);
+  assert.ok(pos.linhas.some(row=>row[0]==="Especialização em Gestão e Conservação do Patrimônio Cultural"));
+  assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+  assert.match(c.blocos.at(-1).conteudo,/CAU/);
+  assert.doesNotMatch(c.blocos.at(-2).conteudo,/2027|2026|inscrições abertas/i);
+  assert.ok(!Object.hasOwn(c,"validacao")&&!Object.hasOwn(c,"pendencias"));
+});
+
 test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {
   const relevantTitles=new Set(["Projetos e experiências acadêmicas","Projetos e experiências","Práticas e experiências","Pesquisa, extensão e oportunidades","Pesquisa, extensão e aprendizagem prática","Experiências e conquistas dos estudantes","Experiências de aprendizagem em Direito"]);
   const oldDate=/\b20(?:0\d|1\d|2[0-4])\b/;
@@ -1560,5 +1595,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),32);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),35);
 });

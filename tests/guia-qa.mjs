@@ -154,9 +154,11 @@ test("F4.4: os oito cursos apresentam continuidade sem avisos genéricos", () =>
         ["Graduação","tabela","Pós-graduação","tabela"],c.id);
       assert.ok(c.blocos[i+2].linhas.length>0&&c.blocos[i+4].linhas.length>0,c.id);
     }else{
-      assert.deepEqual(c.blocos.slice(i+1,i+4).map(b=>b.titulo||b.tipo),
-        ["Pós-graduação","tabela","links"],c.id);
-      assert.ok(c.blocos[i+2].linhas.length>0&&c.blocos[i+3].itens.length>0,c.id);
+      assert.deepEqual(c.blocos.slice(i+1,i+3).map(b=>b.titulo||b.tipo),
+        ["Pós-graduação","tabela"],c.id);
+      assert.ok(c.blocos[i+2].linhas.length>0,c.id);
+      assert.equal(c.blocos[i+3].titulo,"Experiências e conquistas dos estudantes",c.id);
+      assert.ok(!c.blocos.slice(i+2,i+4).some(b=>b.tipo==="links"),c.id+": sem links de cursos legados");
     }
     assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),
       ["Forma de ingresso","Mundo do Trabalho"],c.id);
@@ -878,7 +880,8 @@ test("Agronomia e Engenharia de Produção preservam campi sem reciclar vagas do
     assert.ok(c.blocos.findIndex(b=>b.tipo==="galeria")<c.blocos.findIndex(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi"));
   }
   const agr=json.courses.find(x=>x.id==="agronomia-bacharelado");
-  assert.match(agr.blocos.find(b=>b.titulo==="Continue seus estudos no IFMG").conteudo,/Especialização em Meio Ambiente/);
+  const agriIdx=agr.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+  assert.ok(agr.blocos[agriIdx+2].linhas.some(row=>row[0]==="Especialização em Meio Ambiente"));
   const prod=json.courses.find(x=>x.id==="engenharia-de-producao-bacharelado");
   const pTable=prod.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.equal(pTable.linhas[1][3],"coordenacao.producao.congonhas@ifmg.edu.br");

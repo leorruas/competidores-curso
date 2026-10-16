@@ -138,6 +138,28 @@ test("catálogo mantém ofertas reais e filtros multicampi", () => {
   assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
 });
 
+test("Edificações apresenta ingresso antes de Mundo do Trabalho com atividades reais", () => {
+  const c=json.courses.find(x=>x.id==="tecnico-em-edificacoes-integrado");
+  const ingresso=c.blocos.findIndex(b=>b.tipo==="texto"&&b.titulo==="Forma de ingresso");
+  const mundo=c.blocos.findIndex(b=>b.tipo==="texto"&&b.titulo==="Mundo do Trabalho");
+  assert.ok(ingresso>=0&&mundo===ingresso+1);
+  const intro=c.blocos[ingresso].conteudo;
+  assert.match(intro,/concluí-lo até a matrícula/);
+  assert.match(intro,/prova objetiva presencial/);
+  assert.match(intro,/48 questões/);
+  assert.match(intro,/1º de novembro de 2026, às 13h/);
+  assert.match(intro,/3 de agosto a 14 de setembro de 2026/);
+  assert.doesNotMatch(intro,/vestibular próprio.*todo final de ano|Quer ser lembrado|cadastre-se para receber/i);
+  const work=c.blocos[mundo].conteudo;
+  for(const theme of ["desenhos técnicos","orçamentos","controle de qualidade","ensaios de solos e materiais","manutenção predial","atribuições"]) {
+    assert.ok(work.includes(theme),theme);
+  }
+  assert.doesNotMatch(work,/vaga garantida|emprego garantido|qualquer projeto/i);
+  const faq=c.blocos.filter(b=>b.tipo==="faq").flatMap(b=>b.itens);
+  assert.ok(faq.some(x=>x.pergunta==="Posso escolher mais de um curso na inscrição?"&&x.resposta.includes("três opções de curso no mesmo campus")));
+  assert.ok(!faq.some(x=>x.pergunta==="Como faço para ingressar?"));
+});
+
 test("fase 1: galeria acompanha projetos e Administração não tem link ou destaque genérico", () => {
   const eng=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
   const p=eng.blocos.findIndex(b=>b.tipo==="texto"&&b.titulo==="Projetos e experiências acadêmicas");

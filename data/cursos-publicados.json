@@ -1788,6 +1788,15 @@
         },
         {
           "tipo": "texto",
+          "conteudo": "No **Campus Bambuí**, a **Safra Júnior** é uma empresa júnior vinculada ao **Bacharelado em Agronomia**. A iniciativa presta serviços na área agronômica e aproxima os estudantes de demandas de produtores rurais. A participação ocorre conforme os processos seletivos e a organização da equipe."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Empresa júnior Safra Júnior · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
           "conteudo": "Em **2026**, um edital de mobilidade internacional do campus incluiu estudantes de Agronomia na seleção de **uma vaga compartilhada com outros três cursos** para uma missão acadêmica na França, com atividades sobre agroecologia e produção de queijo artesanal. Essa foi uma oportunidade daquela edição, não uma oferta permanente."
         },
         {

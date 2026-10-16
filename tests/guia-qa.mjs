@@ -1420,7 +1420,8 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "engenharia-metalurgica-bacharelado":3,
     "engenharia-florestal-bacharelado":4,
     "tecnico-em-agroindustria-integrado":2,
-    "tecnico-em-biotecnologia-integrado":2
+    "tecnico-em-biotecnologia-integrado":2,
+    "tecnico-em-eletromecanica-integrado":2
   };
   for(const c of json.courses){
     const galleries=c.blocos.filter(b=>b.tipo==="galeria");
@@ -1708,7 +1709,7 @@ test("F7.2: Técnico em Agroindústria integrado estreia com currículo e sem co
 });
 
 test("F7.2: Biotecnologia integrado tem estágio distinto de Agroindústria e jogos de 2025", () => {
-  assert.equal(json.courses.length,15);
+  assert.ok(json.courses.length>=15,"Biotecnologia e seus predecessores preservados");
   const c=json.courses.find(x=>x.id==="tecnico-em-biotecnologia-integrado");
   assert.ok(c);
   assert.equal(c.nome,"Técnico em Biotecnologia");
@@ -1744,6 +1745,46 @@ test("F7.2: Biotecnologia integrado tem estágio distinto de Agroindústria e jo
   for(const key of ["validacao","pendencias","instrucao","revisao_coordenacao"])assert.ok(!Object.hasOwn(c,key));
 });
 
+test("F7.2: Eletromecânica integrada Bambuí mantém PPC, oportunidades e conquistas sem invenções", () => {
+  assert.equal(json.courses.length,16);
+  const c=json.courses.find(x=>x.id==="tecnico-em-eletromecanica-integrado");
+  assert.ok(c);
+  assert.equal(c.nome,"Técnico em Eletromecânica");
+  assert.deepEqual(Array.from(c.campi),["Bambuí"]);
+  assert.equal(c.tipo,"Integrado ao Ensino Médio");
+  assert.equal(c.status,"em_validacao");
+  const dados=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
+  assert.equal(dados["Duração"],"3 anos");
+  assert.equal(dados["E-mail da coordenação"],"Informação incompleta");
+  assert.equal(dados["Carga horária total"],"Informação incompleta");
+  assert.equal(dados["PPC / matriz"],"Informação incompleta");
+  const campus=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
+  assert.deepEqual(Array.from(campus.linhas[0]),["Bambuí","Manhã e tarde","Presencial","Informação incompleta"]);
+  const practice=c.blocos.findIndex(x=>x.titulo==="Aprendizagem prática");
+  assert.match(c.blocos[practice].conteudo,/fabricação mecânica/);
+  assert.equal(c.blocos[practice+1].tipo,"galeria");
+  const opportunity=c.blocos.findIndex(x=>x.titulo==="Pesquisa, extensão e bolsas");
+  assert.match(c.blocos[opportunity].conteudo,/Electrohm/);
+  assert.equal(c.blocos[opportunity+1].tipo,"galeria");
+  const xp=c.blocos.find(x=>x.titulo==="Experiências e conquistas dos estudantes");
+  assert.equal(xp.conteudo,"Informação incompleta","não transferir prêmios de Engenharia de Computação nem atividades apenas previstas");
+  const faq=c.blocos.find(x=>x.tipo==="faq"&&!x.titulo);
+  const stage=faq.itens.find(x=>x.pergunta==="Como funciona o estágio?");
+  assert.ok(stage);
+  assert.match(stage.resposta,/120 horas/);
+  assert.match(stage.resposta,/60 horas/);
+  assert.match(stage.resposta,/16 anos/);
+  const continuation=c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG");
+  assert.deepEqual(c.blocos.slice(continuation+1,continuation+5).map(x=>x.titulo||x.tipo),["Graduação","tabela","Pós-graduação","tabela"]);
+  assert.deepEqual(c.blocos[continuation+2].linhas.map(x=>x[0]),["Engenharia de Produção","Engenharia Mecânica","Engenharia Metalúrgica"]);
+  assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+  assert.match(c.blocos.at(-2).conteudo,/ensino fundamental/);
+  assert.doesNotMatch(c.blocos.at(-2).conteudo,/2026|2027|inscrições abertas/i);
+  assert.equal(c.blocos.filter(x=>x.tipo==="galeria").length,2);
+  assert.doesNotMatch(JSON.stringify(c),/renato\.nolli|PPC_ELETROMECANICA|bambui\.ifmg\.edu\.br/);
+  for(const key of ["validacao","pendencias","instrucao","revisao_coordenacao"])assert.ok(!Object.hasOwn(c,key));
+});
+
 test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {
   const relevantTitles=new Set(["Projetos e experiências acadêmicas","Projetos e experiências","Práticas e experiências","Pesquisa, extensão e oportunidades","Pesquisa, extensão e aprendizagem prática","Experiências e conquistas dos estudantes","Experiências de aprendizagem em Direito"]);
   const oldDate=/\b20(?:0\d|1\d|2[0-4])\b/;
@@ -1756,5 +1797,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),46);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),48);
 });

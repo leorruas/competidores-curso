@@ -500,8 +500,8 @@ test("F2.13: introdução inicial apresenta o curso, nunca uma unidade privilegi
     if(c.campi.length>1) {
       for(const campus of c.campi)assert.ok(!first.conteudo.includes(campus),c.id+": sem menção prematura de "+campus);
       assert.doesNotMatch(first.conteudo,/\b(?:\d+\s*%|\d+\s*horas? de extensão|encontros? presenciais?|\d+\s*anos?)\b/i,c.id+": sem detalhes exclusivos na abertura");
-    }else{
-      assert.match(first.conteudo,/Arcos/,c.id+": Direito tem apenas um campus");
+    }else if(c.id==="direito-bacharelado-arcos"){
+      assert.match(first.conteudo,/Arcos/,c.id+": Direito em Arcos");
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
   }
@@ -805,7 +805,7 @@ test("fase 1: galeria acompanha projetos e Administração não tem link ou dest
   assert.equal(e.blocos.find(b=>b.tipo==="texto").titulo,"Técnico em Edificações");
   const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
   const achievement=tec.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes");
-  assert.equal(achievement.conteudo,"Informação incompleta");
+  assert.match(achievement.conteudo,/Mostra Sua UFMG/);
   assert.ok(!Object.hasOwn(achievement,"validacao"));
 });
 

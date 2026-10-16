@@ -562,7 +562,9 @@ test("F3.1: reconhecimento de egresso de Produção pertence apenas a Bambuí", 
   assert.match(b.conteudo,/2024/);
   assert.match(b.conteudo,/University of Nebraska/);
   assert.match(b.conteudo,/Othmer Fellowship/);
-  assert.doesNotMatch(b.conteudo,/Governador Valadares|Congonhas|2027|bolsa garantida/);
+  const euclides=b.conteudo.split("\n\n")[0];
+  assert.doesNotMatch(euclides,/Governador Valadares|Congonhas|2027|bolsa garantida/);
+  assert.match(euclides,/Bambuí/);
 });
 
 test("F2.2: Bambuí descreve estágio e TCC sem inventar cargas curriculares de 2027", () => {

@@ -1063,6 +1063,34 @@ test("Direito tem FAQ orientado a escolha e não duplica a própria página", ()
   assert.ok(!c.blocos.some(b=>b.tipo==="texto"&&/A página do curso apresenta referências/.test(b.conteudo)));
 });
 
+test("F5.3: Logística e Direito mantêm perguntas únicas e evidências por bloco", () => {
+  const get=id=>json.courses.find(c=>c.id===id);
+  const faq=c=>c.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
+  const log=get("tecnico-em-logistica-subsequente");
+  const logFAQ=faq(log);
+  assert.equal(logFAQ.length,4);
+  assert.ok(!logFAQ.some(x=>/Quem pode fazer|O que vou aprender no curso/.test(x.pergunta)));
+  for(const termo of ["Moodle","comparecer","assistência estudantil","cotas"])
+    assert.ok(logFAQ.some(x=>(x.pergunta+" "+x.resposta).includes(termo)),termo);
+  const logLocal=log.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens;
+  assert.match(logLocal[0].resposta,/800 horas distribuídas em dois módulos/);
+  assert.match(logLocal[1].resposta,/duração prevista de um ano/);
+
+  const law=get("direito-bacharelado-arcos");
+  const lawFAQ=faq(law);
+  assert.equal(lawFAQ.length,3);
+  assert.ok(!lawFAQ.some(x=>/Que experiências práticas|graduação a distância/.test(x.pergunta)));
+  assert.match(law.blocos.find(b=>b.titulo==="Experiências de aprendizagem em Direito").conteudo,/prática jurídica simulada e real/);
+  assert.match(law.blocos.find(b=>b.titulo==="Onde o IFMG oferece Direito").conteudo,/30% da carga horária EaD/);
+  assert.doesNotMatch(law.blocos.find(b=>b.titulo==="Onde o IFMG oferece Direito").conteudo,/Ao longo da formação/);
+  const estagio=lawFAQ.find(x=>x.pergunta.includes("estágio e Trabalho")).resposta;
+  assert.match(estagio,/210 horas/);
+  assert.match(estagio,/30 horas/);
+  assert.ok(lawFAQ.some(x=>x.pergunta.includes("pesquisa e extensão")&&x.resposta.includes("orientação à comunidade")));
+  for(const c of [log,law])
+    assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+});
+
 test("Texto é um único campo: título e parágrafos com negrito", () => {
   const h=testContext();
   const b=h.demo.blocos.find(x=>x.tipo==="texto"&&x.conteudo);

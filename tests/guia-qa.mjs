@@ -254,6 +254,52 @@ test("F4.5: Edificações tem continuidade tabular verificável e copiável", ()
   assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 
+test("F1B.10: os oito cursos encerram com Forma de ingresso e Mundo do Trabalho", () => {
+  const h=testContext();
+  const graduationIds=[
+    "direito-bacharelado-arcos","engenharia-mecanica-bacharelado",
+    "administracao-bacharelado","agronomia-bacharelado","engenharia-de-producao-bacharelado"
+  ];
+  assert.equal(json.courses.length,8);
+  for(const c of json.courses){
+    const form=c.blocos.filter(b=>b.tipo==="texto"&&b.titulo==="Forma de ingresso");
+    const work=c.blocos.filter(b=>b.tipo==="texto"&&b.titulo==="Mundo do Trabalho");
+    assert.equal(form.length,1,c.id+": uma seção de ingresso");
+    assert.equal(work.length,1,c.id+": um mundo do trabalho");
+    assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
+    assert.equal(form[0].tipo,"texto");
+    assert.ok(h.editorFields(form[0]).length===1,c.id+": Rich Text único com título");
+    assert.ok(h.editorFields(form[0])[0].rich,c.id);
+    assert.ok(work[0].conteudo.length>250,c.id+": atividades profissionais concretas");
+    assert.doesNotMatch(form[0].conteudo,/2026|2027|novembro|setembro|inscriç(?:ões|ão) (?:aberta|encerrada)|Quer ser lembrado/i,c.id);
+    assert.doesNotMatch(form[0].conteudo,/informação incompleta|precisa de validação|pendente|controle privado/i,c.id);
+    if(graduationIds.includes(c.id)){
+      const intro=form[0].conteudo;
+      assert.match(intro,/ensino médio/i,c.id);
+      assert.match(intro,/matrícula/i,c.id);
+      assert.match(intro,/edita(?:l|is)/i,c.id);
+      assert.match(intro,/Sisu/i,c.id);
+      assert.ok(c.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes")<
+        c.blocos.findIndex(b=>b.titulo==="Forma de ingresso"),c.id+": experiências antes do ingresso");
+      assert.ok(c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG")<
+        c.blocos.findIndex(b=>b.titulo==="Forma de ingresso"),c.id+": continuidade antes do ingresso");
+    }
+  }
+  const law=json.courses.find(c=>c.id==="direito-bacharelado-arcos").blocos.at(-2).conteudo;
+  assert.match(law,/Campus Arcos/);
+  assert.match(law,/Histórico Escolar e Redação/);
+  assert.doesNotMatch(law,/notas do Enem|Enem direto/i);
+  for(const [id,campi] of [
+    ["engenharia-mecanica-bacharelado",["Arcos","Betim"]],
+    ["administracao-bacharelado",["campi"]],
+    ["agronomia-bacharelado",["Bambuí","São João Evangelista"]],
+    ["engenharia-de-producao-bacharelado",["Bambuí","Congonhas","Governador Valadares"]]
+  ]){
+    const form=json.courses.find(c=>c.id===id).blocos.at(-2).conteudo;
+    for(const campus of campi)assert.ok(form.includes(campus),id+": "+campus);
+  }
+});
+
 test("F1B.9: áreas locais aparecem imediatamente após as tabelas de ofertas, separadas do FAQ", () => {
   const h=testContext();
   const specs=[
@@ -287,7 +333,7 @@ test("F1B.9: áreas locais aparecem imediatamente após as tabelas de ofertas, s
     assert.ok(c.blocos[nextFaq].itens.every(x=>!campi.includes(x.pergunta)),id+": campus não é pergunta");
     const header=c.blocos.findIndex((x,j)=>j>i+campi.length&&x.titulo==="Perguntas frequentes");
     assert.ok(header>i+campi.length&&header<nextFaq,id+": FAQ independente");
-    if(c.nivel==="Técnico") assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+    assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
     assert.ok(h.isApprovedCourse(c),id);
   }
 });

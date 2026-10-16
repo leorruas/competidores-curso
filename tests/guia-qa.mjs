@@ -1397,7 +1397,7 @@ test("F2.5/F3.1: Agronomia informa contato SJE e empresa júnior Safra em Bambu�
   assert.equal(tb.linhas.find(l=>l[0]==="São João Evangelista")[3],"agronomia.sje@ifmg.edu.br");
   assert.equal(tb.linhas.find(l=>l[0]==="Bambuí")[3],"Informação incompleta","não inventar contato de Bambuí");
   const texto=sectionText(c,"Pesquisa, extensão e oportunidades");
-  assert.match(texto,/Bambuí[\\s\\S]*Safra Júnior[\\s\\S]*Bacharelado em Agronomia/);
+  assert.match(texto,/Bambuí[\s\S]*Safra Júnior[\s\S]*Bacharelado em Agronomia/);
   assert.match(texto,/presta serviços na área agronômica/);
   assert.doesNotMatch(texto,/Safra Júnior.{0,90}(?:projeto concluído|prêmio|bolsa garantida)/i);
   const matched=c.blocos.findIndex(b=>b.tipo==="galeria"&&b.referencia==="Empresa júnior Safra Júnior · Bambuí");

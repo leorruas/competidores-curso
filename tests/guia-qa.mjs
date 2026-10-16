@@ -454,7 +454,7 @@ test("F2.12: FAQs de ingresso não reciclam calendário, notas ou vagas de ediç
   const eng=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
   assert.match(eng.blocos.find(x=>x.titulo==="Projetos e experiências acadêmicas").conteudo,/Pollyrubber/);
   const agrLocal=agr.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
-  assert.match(agrLocal.itens.find(x=>x.pergunta==="Campus Bambuí").resposta,/Em \*\*2022\*\*/);
+  assert.match(agrLocal.itens.find(x=>x.pergunta==="Campus Bambuí").resposta,/nove semestres/);
 });
 
 test("F2.12: campos estruturados não exibem vagas de seleções anteriores como permanentes", () => {
@@ -691,8 +691,8 @@ test("F1B.9: cursos superiores distinguem atividades e fontes de cada campus", (
     ["administracao-bacharelado","Ribeirão das Neves",/planos de negócios/],
     ["administracao-bacharelado","Sabará",/23,67%/],
     ["administracao-bacharelado","São João Evangelista",/Destaque Jr/],
-    ["agronomia-bacharelado","Bambuí",/Olericultura/],
-    ["agronomia-bacharelado","São João Evangelista",/Agricampo/],
+    ["agronomia-bacharelado","Bambuí",/duração prevista de nove semestres/],
+    ["agronomia-bacharelado","São João Evangelista",/estágio supervisionado obrigatório.*Trabalho de Conclusão de Curso/],
     ["engenharia-de-producao-bacharelado","Bambuí",/kits experimentais/],
     ["engenharia-de-producao-bacharelado","Congonhas",/Pesquisa Operacional/],
     ["engenharia-de-producao-bacharelado","Governador Valadares",/borracha e pneus/],
@@ -1107,6 +1107,14 @@ test("F3.1: Congonhas e GV apresentam projeto, resultado e campus; SJE empresa j
     assert.ok(opportunity.includes(term),"Agronomia SJE: "+term);
   }
   assert.doesNotMatch(opportunity,/agricampo.*projeto concluído/i);
+  const localAgronomia=ag.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens;
+  const localBambui=localAgronomia.find(i=>i.pergunta==="Campus Bambuí").resposta;
+  const localSje=localAgronomia.find(i=>i.pergunta==="Campus São João Evangelista").resposta;
+  assert.doesNotMatch(localBambui,/Olericultura|horta escolar/);
+  assert.doesNotMatch(localSje,/Agricampo|Centro de Vivência/);
+  assert.match(localSje,/organização curricular de \\*\\*2023\\*\\*/);
+  const copias=ag.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]);
+  for(const termo of ["Olericultura","Agricampo"])assert.equal(copias.filter(t=>t.includes(termo)).length,1,termo+" só na seção temática");
   const agAchievements=ag.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
   assert.ok(agAchievements.includes("Olericultura"),"Preservar projeto de Bambuí");
   const pro=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");

@@ -272,7 +272,7 @@ test("F1B.9: áreas locais aparecem imediatamente após as tabelas de ofertas, s
     const locals=c.blocos.slice(i+2,i+2+campi.length);
     assert.deepEqual(locals.map(x=>x.titulo),campi.map(x=>"Campus "+x),id);
     assert.ok(locals.every(x=>x.tipo==="texto"&&x.conteudo.length>100),id);
-    assert.ok(locals.every(x=>h.editorFields(x).length===2),id+": título e corpo copiáveis");
+    assert.ok(locals.every(x=>h.editorFields(x).length===1 && h.editorFields(x)[0].rich && h.editorFields(x)[0].value.startsWith(x.titulo+"\n\n")),id+": título e corpo no mesmo Rich Text copiável");
     assert.ok(locals.every(x=>!/(informação incompleta|precisa de validação|confirmar com a coordenação)/i.test(x.conteudo)),id);
     const nextFaq=c.blocos.findIndex((x,j)=>j>i+1+campi.length&&x.tipo==="faq");
     assert.ok(nextFaq>i+1+campi.length,id+": FAQ deve vir depois dos blocos locais");

@@ -911,7 +911,46 @@
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta."
+          "conteudo": "Depois de concluir o **Bacharelado em Direito**, você pode participar de processos seletivos de **pós-graduação no IFMG**, inclusive em outros campi. As opções abaixo são formações existentes e relacionadas a diferentes possibilidades de aprofundamento profissional ou pesquisa.\n\nA candidatura depende de **graduação concluída**, dos requisitos e do edital de cada curso. A relação entre as áreas não garante matrícula, nova turma ou vaga disponível."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Direito"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão Pública e Desenvolvimento Regional",
+              "Ribeirão das Neves (presencial)",
+              "Direito Administrativo, governança pública, políticas públicas e desenvolvimento regional."
+            ],
+            [
+              "Especialização em Gestão de Negócios",
+              "Ouro Branco (presencial)",
+              "Gestão de organizações, decisões empresariais e processos associados à atuação jurídica em negócios."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Especialização em Gestão Pública e Desenvolvimento Regional — Ribeirão das Neves",
+              "url": "https://www.ifmg.edu.br/ribeiraodasneves/cursos-1/pos-graduacao/pos-gestao"
+            },
+            {
+              "rotulo": "Especialização em Gestão de Negócios — Ouro Branco",
+              "url": "https://www.ifmg.edu.br/ourobranco/nossos-cursos/especializacao-em-gestao-de-negocios-1/especializacao-em-gestao-de-negocios"
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -1144,7 +1183,55 @@
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta."
+          "conteudo": "Depois de concluir o **Bacharelado em Engenharia Mecânica**, você pode participar de processos seletivos de **pós-graduação no IFMG**, inclusive em outros campi. As opções abaixo são formações existentes e relacionadas a diferentes possibilidades de aprofundamento profissional ou pesquisa.\n\nA candidatura depende de **graduação concluída**, dos requisitos e do edital de cada curso. A relação entre as áreas não garante matrícula, nova turma ou vaga disponível."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Engenharia Mecânica"
+          ],
+          "linhas": [
+            [
+              "Especialização em Engenharia de Segurança do Trabalho",
+              "Governador Valadares (presencial)",
+              "Saúde e segurança em ambientes industriais, máquinas e processos; graduação em Engenharia é requisito de acesso."
+            ],
+            [
+              "Especialização em Gestão de Negócios",
+              "Ouro Branco (presencial)",
+              "Planejamento e gestão de operações, recursos e negócios ligados à indústria."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Tecnologias sustentáveis, controle de impactos ambientais e aplicação de soluções técnicas."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Especialização em Engenharia de Segurança do Trabalho — Governador Valadares",
+              "url": "https://www.ifmg.edu.br/governadorvaladares/cursos/pos-graduacao/pos-graduacao-em-engenharia-de-seguranca-do-trabalho"
+            },
+            {
+              "rotulo": "Especialização em Gestão de Negócios — Ouro Branco",
+              "url": "https://www.ifmg.edu.br/ourobranco/nossos-cursos/especializacao-em-gestao-de-negocios-1/especializacao-em-gestao-de-negocios"
+            },
+            {
+              "rotulo": "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental — Bambuí",
+              "url": "https://www.bambui.ifmg.edu.br/portal/mestrado-profissional-em-sustentabilidade-e-tecnologia-ambiental"
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -1424,7 +1511,64 @@
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois do bacharelado em Administração, você pode continuar seus estudos em diferentes cursos de pós-graduação do IFMG, inclusive em outros campi.\n\nEm **Formiga**, o **Mestrado Profissional em Administração** desenvolve pesquisas aplicadas na área de Finanças. Em **Ouro Branco**, a **Especialização em Gestão de Negócios** aprofunda práticas de gestão empresarial, e o **Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)** é uma opção para quem deseja pesquisar educação profissional.\n\nO IFMG também oferece a **Especialização em Gestão**, na modalidade a distância, em iniciativa de **Bambuí e São João Evangelista**, com áreas de estudo relacionadas a empreendedorismo, marketing, pessoas e inovação.\n\nCada pós-graduação possui requisitos e processo seletivo próprios."
+          "conteudo": "Depois de concluir o **Bacharelado em Administração**, você pode participar de processos seletivos de **pós-graduação no IFMG**, inclusive em outros campi. As opções abaixo são formações existentes e relacionadas a diferentes possibilidades de aprofundamento profissional ou pesquisa.\n\nA candidatura depende de **graduação concluída**, dos requisitos e do edital de cada curso. A relação entre as áreas não garante matrícula, nova turma ou vaga disponível."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Administração"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão",
+              "Bambuí e São João Evangelista (EaD)",
+              "Empreendedorismo, marketing digital, gestão de pessoas, tecnologia e inovação."
+            ],
+            [
+              "Especialização em Gestão de Negócios",
+              "Ouro Branco (presencial)",
+              "Planejamento empresarial, estratégia, inovação e decisões gerenciais."
+            ],
+            [
+              "Especialização em Gestão Pública e Desenvolvimento Regional",
+              "Ribeirão das Neves (presencial)",
+              "Políticas públicas, governança, gestão de serviços públicos e desenvolvimento regional."
+            ],
+            [
+              "Mestrado Profissional em Administração",
+              "Formiga",
+              "Pesquisa aplicada em Finanças, investimentos e decisões nas organizações."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Especialização em Gestão — Bambuí e São João Evangelista",
+              "url": "https://bambui.ifmg.edu.br/portal/especializacao-gestao1"
+            },
+            {
+              "rotulo": "Especialização em Gestão de Negócios — Ouro Branco",
+              "url": "https://www.ifmg.edu.br/ourobranco/nossos-cursos/especializacao-em-gestao-de-negocios-1/especializacao-em-gestao-de-negocios"
+            },
+            {
+              "rotulo": "Especialização em Gestão Pública e Desenvolvimento Regional — Ribeirão das Neves",
+              "url": "https://www.ifmg.edu.br/ribeiraodasneves/cursos-1/pos-graduacao/pos-gestao"
+            },
+            {
+              "rotulo": "Mestrado Profissional em Administração — Formiga",
+              "url": "https://formiga.ifmg.edu.br/mestrado"
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -1663,7 +1807,55 @@
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois da graduação em Agronomia, você pode participar de seleções de pós-graduação do IFMG, observando os requisitos e editais de cada curso.\n\nEm **São João Evangelista**, a **Especialização em Meio Ambiente**, ofertada a distância, incluiu graduados em Agronomia entre os públicos elegíveis na seleção para ingresso no primeiro semestre de **2026**. O curso aborda temas como agroecologia, sustentabilidade e gestão ambiental. A abertura de novas turmas e as condições de ingresso dependem de novos editais."
+          "conteudo": "Depois de concluir o **Bacharelado em Agronomia**, você pode participar de processos seletivos de **pós-graduação no IFMG**, inclusive em outros campi. As opções abaixo são formações existentes e relacionadas a diferentes possibilidades de aprofundamento profissional ou pesquisa.\n\nA candidatura depende de **graduação concluída**, dos requisitos e do edital de cada curso. A relação entre as áreas não garante matrícula, nova turma ou vaga disponível."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Agronomia"
+          ],
+          "linhas": [
+            [
+              "Especialização em Meio Ambiente",
+              "São João Evangelista (EaD)",
+              "Agroecologia, sustentabilidade rural, licenciamento e impactos ambientais; Agronomia entre as formações elegíveis."
+            ],
+            [
+              "Especialização em Engenharia de Segurança do Trabalho",
+              "Governador Valadares (presencial)",
+              "Prevenção de riscos e proteção à saúde no trabalho agrícola; edital admite graduação em Agronomia."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Tecnologias ambientais, produção sustentável e gestão dos impactos sobre recursos naturais."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Especialização em Meio Ambiente — São João Evangelista",
+              "url": "https://www.ifmg.edu.br/portal/cursos/pos-graduacao/especializacao-em-meio-ambiente"
+            },
+            {
+              "rotulo": "Especialização em Engenharia de Segurança do Trabalho — Governador Valadares",
+              "url": "https://www.ifmg.edu.br/governadorvaladares/cursos/pos-graduacao/pos-graduacao-em-engenharia-de-seguranca-do-trabalho"
+            },
+            {
+              "rotulo": "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental — Bambuí",
+              "url": "https://www.bambui.ifmg.edu.br/portal/mestrado-profissional-em-sustentabilidade-e-tecnologia-ambiental"
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -1917,7 +2109,64 @@
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Depois da graduação, você pode participar dos processos seletivos de pós-graduação do IFMG, inclusive em outros campi. Os cursos, requisitos e formas de ingresso variam conforme cada oferta."
+          "conteudo": "Depois de concluir o **Bacharelado em Engenharia de Produção**, você pode participar de processos seletivos de **pós-graduação no IFMG**, inclusive em outros campi. As opções abaixo são formações existentes e relacionadas a diferentes possibilidades de aprofundamento profissional ou pesquisa.\n\nA candidatura depende de **graduação concluída**, dos requisitos e do edital de cada curso. A relação entre as áreas não garante matrícula, nova turma ou vaga disponível."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Engenharia de Produção"
+          ],
+          "linhas": [
+            [
+              "Especialização em Engenharia de Segurança do Trabalho",
+              "Governador Valadares (presencial)",
+              "Riscos ocupacionais e prevenção de acidentes em operações e processos produtivos."
+            ],
+            [
+              "Especialização em Gestão de Negócios",
+              "Ouro Branco (presencial)",
+              "Gestão de processos, planejamento de negócios e melhoria de resultados."
+            ],
+            [
+              "Mestrado Profissional em Administração",
+              "Formiga",
+              "Finanças, decisões organizacionais e pesquisa aplicada em problemas de gestão."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Sustentabilidade dos processos, gestão ambiental e soluções técnicas para a produção."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Especialização em Engenharia de Segurança do Trabalho — Governador Valadares",
+              "url": "https://www.ifmg.edu.br/governadorvaladares/cursos/pos-graduacao/pos-graduacao-em-engenharia-de-seguranca-do-trabalho"
+            },
+            {
+              "rotulo": "Especialização em Gestão de Negócios — Ouro Branco",
+              "url": "https://www.ifmg.edu.br/ourobranco/nossos-cursos/especializacao-em-gestao-de-negocios-1/especializacao-em-gestao-de-negocios"
+            },
+            {
+              "rotulo": "Mestrado Profissional em Administração — Formiga",
+              "url": "https://formiga.ifmg.edu.br/mestrado"
+            },
+            {
+              "rotulo": "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental — Bambuí",
+              "url": "https://www.bambui.ifmg.edu.br/portal/mestrado-profissional-em-sustentabilidade-e-tecnologia-ambiental"
+            }
+          ]
         },
         {
           "tipo": "texto",

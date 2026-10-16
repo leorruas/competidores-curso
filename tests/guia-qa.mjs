@@ -911,9 +911,10 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
   const local=c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi");
   assert.doesNotMatch(local.itens.find(x=>x.pergunta==="Campus Formiga").resposta,/conceito 4|MEC/);
   const experiences=sectionText(c,"Experiências e conquistas dos estudantes");
-  assert.match(experiences,/Formiga.*conceito 4.*Ouro Branco.*quatro estrelas/);
+  assert.match(experiences,/Ouro Branco.*quatro estrelas.*2025/);
   const copies=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]).join("\n");
-  for(const term of ["conceito 4","quatro estrelas"])assert.equal(copies.split(term).length-1,1,term+" citado somente na seção de conquistas");
+  assert.equal(copies.split("quatro estrelas").length-1,1,"reconhecimento de 2025 citado apenas uma vez");
+  assert.doesNotMatch(experiences,/conceito 4|Formiga/,"sem usar nota do MEC de ano desconhecido como conquista recente");
   assert.doesNotMatch(answer,/,\./);
 });
 

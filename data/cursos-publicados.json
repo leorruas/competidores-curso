@@ -1326,6 +1326,36 @@
         },
         {
           "tipo": "texto",
+          "titulo": "Campus Bambuí",
+          "conteudo": "O bacharelado é noturno e desenvolve **Trabalhos Interdisciplinares (TID)**, que aproximam diferentes áreas da Administração para estudar problemas organizacionais. A formação articula planejamento, finanças, marketing e gestão de pessoas com experiências de análise e tomada de decisões."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Formiga",
+          "conteudo": "O curso é noturno e presencial, com **20% da carga horária a distância** na oferta verificada. A formação trabalha planejamento, finanças, marketing, gestão de pessoas e decisões organizacionais. O bacharelado recebeu **conceito 4 em avaliação presencial do MEC**, conforme a página institucional do campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Ouro Branco",
+          "conteudo": "A formação é oferecida à noite, na modalidade presencial, com **8% da carga horária a distância** na oferta verificada. O curso recebeu **quatro estrelas no Guia da Faculdade de 2025**, reconhecimento divulgado pelo IFMG. Os conteúdos incluem gestão de negócios, processos e atividades organizacionais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Ribeirão das Neves",
+          "conteudo": "No campus, a formação noturna aborda **planejamento estratégico, inovação e decisões apoiadas em dados**. As atividades acadêmicas incluem estudos de caso, elaboração de planos de negócios e exercícios de análise de situações organizacionais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Sabará",
+          "conteudo": "O bacharelado é noturno e presencial, com **23,67% da carga horária a distância** na oferta verificada. As atividades acadêmicas articulam temas de gestão, empreendedorismo, planejamento e áreas funcionais da Administração em estudos interdisciplinares."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus São João Evangelista",
+          "conteudo": "A graduação é noturna e aborda **gestão de pessoas, marketing, finanças, processos, logística e administração rural**. Entre as experiências vinculadas ao campus está a **empresa júnior Destaque Jr.**, que permite aproximar conteúdos acadêmicos de atividades de gestão."
+        },
+        {
+          "tipo": "texto",
           "titulo": "Perguntas frequentes",
           "conteudo": ""
         },
@@ -1333,28 +1363,20 @@
           "tipo": "faq",
           "itens": [
             {
-              "pergunta": "Bambuí",
-              "resposta": "Em Bambuí, o bacharelado é presencial e noturno. Os **Trabalhos Interdisciplinares (TID)** integram diferentes áreas da gestão ao longo da graduação, articulando conteúdos e problemas organizacionais."
+              "pergunta": "O que se estuda no bacharelado em Administração?",
+              "resposta": "A graduação aborda planejamento, finanças, marketing, gestão de pessoas, processos, logística e tomada de decisões em organizações. A distribuição das disciplinas e das atividades segue a matriz de cada campus."
             },
             {
-              "pergunta": "Formiga",
-              "resposta": "Em Formiga, o curso é noturno e presencial, com 20% da carga horária EaD. A formação desenvolve planejamento, finanças, marketing, gestão de pessoas e tomada de decisões. O curso obteve **conceito 4** em avaliação in loco do MEC."
+              "pergunta": "O curso tem atividades a distância?",
+              "resposta": "Sim, em algumas ofertas presenciais. Na organização verificada, **Formiga** prevê **20% de carga horária EaD**, **Ouro Branco**, **8%**, e **Sabará**, **23,67%**. A organização das atividades depende do projeto pedagógico de cada campus."
             },
             {
-              "pergunta": "Ouro Branco",
-              "resposta": "No Campus Ouro Branco, Administração é oferecido à noite, na modalidade presencial, com 8% de carga horária EaD. O curso recebeu **quatro estrelas no Guia da Faculdade de 2025**, em avaliação divulgada pelo IFMG."
+              "pergunta": "Há projetos e experiências além das aulas?",
+              "resposta": "Sim. Em **Bambuí**, os Trabalhos Interdisciplinares aproximam diferentes conteúdos de gestão. Em **Ribeirão das Neves**, o curso utiliza estudos de caso e planos de negócios. Em **São João Evangelista**, a empresa júnior Destaque Jr. é uma possibilidade de experiência acadêmica. A participação depende das atividades e das condições de cada período."
             },
             {
-              "pergunta": "Ribeirão das Neves",
-              "resposta": "Em Ribeirão das Neves, o bacharelado é presencial e noturno. A formação trabalha planejamento estratégico, inovação e decisões apoiadas em dados, com estudos de caso, consultorias e planos de negócio."
-            },
-            {
-              "pergunta": "Sabará",
-              "resposta": "No Campus Sabará, o curso é noturno e presencial, com 23,67% de carga horária EaD. A formação reúne atividades interdisciplinares, conhecimentos de gestão e desenvolvimento de competências para organizações e empreendedorismo."
-            },
-            {
-              "pergunta": "São João Evangelista",
-              "resposta": "Em São João Evangelista, o curso é presencial e noturno. A formação abrange gestão de pessoas, marketing, finanças, processos, logística e administração rural. Os estudantes podem participar das atividades da **empresa júnior Destaque Jr.**"
+              "pergunta": "Qual é a diferença entre o bacharelado e o técnico integrado em Administração?",
+              "resposta": "O **bacharelado** é um curso de graduação para quem concluiu o ensino médio e busca formação superior em Administração. O **técnico integrado** reúne ensino médio e formação técnica em um mesmo percurso, destinado a quem concluiu o ensino fundamental. São cursos com níveis, duração e processos seletivos distintos."
             }
           ]
         },

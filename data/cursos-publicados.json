@@ -2863,6 +2863,248 @@
           "conteudo": "O zootecnista pode **planejar programas de alimentação e manejo animal**, definir estratégias de nutrição conforme a espécie e a fase de criação, acompanhar indicadores de desempenho e orientar o uso de pastagens, forragens e rações. Na bovinocultura de leite, por exemplo, pode avaliar índices de produção e condições de alimentação do rebanho. Na avicultura e na suinocultura, pode acompanhar sistemas de criação, bem-estar animal e eficiência dos processos produtivos.\n\nTambém pode trabalhar com **melhoramento genético, reprodução, qualidade de produtos de origem animal, gestão de propriedades e pesquisa**. Sua atuação envolve propriedades rurais, cooperativas, empresas de alimentação animal, agroindústrias, assistência técnica, centros de pesquisa e órgãos públicos. Para exercer a profissão regulamentada, o bacharel precisa de **registro no Conselho Regional de Medicina Veterinária (CRMV)** da região em que atuar, conforme a legislação e as atribuições profissionais."
         }
       ]
+    },
+    {
+      "id": "medicina-veterinaria-bacharelado",
+      "nome": "Medicina Veterinária",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Medicina Veterinária"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Duração prevista",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Medicina Veterinária",
+          "conteudo": "O **Bacharelado em Medicina Veterinária** do IFMG prepara profissionais para atuar na saúde e no bem-estar animal, na prevenção e no tratamento de doenças, na saúde pública e na segurança dos alimentos.\n\nNo **Campus Bambuí**, a formação é presencial e inclui estudos e atividades práticas relacionados a animais de pequeno e grande porte, produção animal e medicina veterinária preventiva."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "A formação reúne clínica e cirurgia de animais, diagnóstico, saúde pública, reprodução e inspeção de alimentos, com vivências no Centro Clínico Veterinário."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A graduação é destinada a quem concluiu o ensino médio e se interessa por saúde animal, biologia, procedimentos clínicos, produção agropecuária e saúde pública. As aulas ocorrem pela manhã e à tarde, exigindo disponibilidade para atividades presenciais nos dois turnos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Ao longo do curso, os estudantes relacionam a estrutura e o funcionamento do organismo animal com prevenção de doenças, diagnóstico, tratamento e produção de alimentos."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Anatomia, fisiologia e patologia",
+              "Estrutura, funcionamento e alterações do organismo animal."
+            ],
+            [
+              "Clínica e cirurgia",
+              "Exame clínico, investigação de doenças, terapias e procedimentos cirúrgicos."
+            ],
+            [
+              "Diagnóstico veterinário",
+              "Análises laboratoriais, exames complementares e interpretação de resultados."
+            ],
+            [
+              "Produção e reprodução animal",
+              "Sanidade, nutrição, manejo reprodutivo e acompanhamento de rebanhos."
+            ],
+            [
+              "Saúde pública e epidemiologia",
+              "Zoonoses, prevenção de doenças e relação entre saúde humana, animal e ambiental."
+            ],
+            [
+              "Inspeção e tecnologia de alimentos",
+              "Condições sanitárias, qualidade e segurança de produtos de origem animal."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Práticas e infraestrutura",
+          "conteudo": "O **Centro Clínico Veterinário (CCV)** do Campus Bambuí realiza atendimentos clínicos, cirúrgicos e exames complementares em animais de pequeno e grande porte. Os procedimentos estão associados às aulas práticas e são acompanhados por docentes, com participação de estudantes. A formação também utiliza espaços da fazenda-escola para atividades relacionadas à saúde e à produção animal."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Medicina Veterinária",
+          "conteudo": "O **Campus Bambuí** oferece o bacharelado de forma presencial, com aulas pela manhã e à tarde."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Manhã e tarde",
+              "Presencial",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "O **Centro Clínico Veterinário** permite acompanhar procedimentos e atendimentos de pequenos e grandes animais durante atividades práticas do curso. O campus também dispõe de estrutura de fazenda-escola para estudos ligados à produção e à saúde animal."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Em **2026**, o projeto de extensão **Grandes Amigos**, do Campus Bambuí, contou com a participação voluntária de estudantes de Medicina Veterinária no atendimento supervisionado a animais de grande porte. No Centro Clínico Veterinário (CCV), os participantes acompanharam a avaliação dos animais, exames, diagnósticos e tratamentos, enquanto produtores rurais receberam orientações sobre cuidados preventivos e manejo. Até janeiro de 2026, o projeto havia atendido **27 animais** e beneficiado diretamente cerca de **14 produtores**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto Grandes Amigos: assistência a grandes animais · Bambuí · 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Medicina Veterinária"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa em saúde ambiental, sanidade animal, zoonoses, epidemiologia e sustentabilidade de sistemas produtivos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Estudantes de Medicina Veterinária do **Campus Bambuí** participaram de uma pesquisa sobre os efeitos da sedação intranasal com detomidina em cavalos, realizada no Centro Clínico Veterinário. Em **2025**, o estudo recebeu o **2º lugar no eixo Clínica e Cirurgia** do XII Simpósio Internacional do Cavalo Atleta, na UFMG, com resultados sobre parâmetros cardiorrespiratórios. Em **2026**, um desdobramento da pesquisa sobre motilidade intestinal foi premiado com o **2º lugar no eixo Clínica Médica e Cirúrgica de Equídeos** do XII Ciclo Internacional sobre Cólica Equina, na UNESP de Jaboticabal."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa em medicina equina premiada em 2025 e 2026 · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O curso tem atividades práticas com animais?",
+              "resposta": "Sim. No **Centro Clínico Veterinário**, os estudantes participam de atividades de aprendizagem acompanhadas por docentes em atendimentos e exames de pequenos e grandes animais. Também há práticas vinculadas às disciplinas na estrutura do campus."
+            },
+            {
+              "pergunta": "O curso inclui estágio e Trabalho de Conclusão de Curso?",
+              "resposta": "O bacharelado inclui **estágio supervisionado obrigatório** e **Trabalho de Conclusão de Curso (TCC)**. O estágio aproxima o estudante de situações profissionais sob supervisão, e o TCC envolve desenvolvimento e avaliação de um trabalho acadêmico. A organização e as cargas horárias dependem da matriz curricular aplicável à turma."
+            },
+            {
+              "pergunta": "Posso participar de pesquisa e extensão?",
+              "resposta": "O **Centro Clínico Veterinário** reúne atividades de ensino, pesquisa e extensão. Projetos como o **Grandes Amigos** e pesquisas em medicina equina mostram formas de participação de estudantes em atividades acompanhadas por professores. O ingresso em cada projeto depende de sua organização e de suas oportunidades."
+            },
+            {
+              "pergunta": "Existe assistência estudantil para estudantes da graduação?",
+              "resposta": "O IFMG mantém programas de assistência estudantil, com auxílios e critérios definidos em editais. As candidaturas dependem dos requisitos e dos procedimentos da seleção vigente."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Medicina Veterinária**, você precisa ter concluído o **ensino médio** ou concluí-lo até a matrícula. O IFMG utiliza processos seletivos de graduação que podem considerar **notas do Enem** e oferece vagas pelo **Sisu**, conforme as modalidades disponíveis para o curso.\n\nConsulte os **editais vigentes** para conhecer as formas de seleção, as vagas, as cotas e a documentação exigida."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "Na **clínica de pequenos e grandes animais**, o médico-veterinário pode realizar consultas, investigar sintomas, solicitar e interpretar exames, definir tratamentos e acompanhar a recuperação de pacientes. Pode atuar em ambulatórios, clínicas, hospitais veterinários, propriedades rurais e serviços de atendimento a animais de produção e de companhia.\n\nNa **medicina veterinária preventiva e na saúde pública**, pode participar do controle de zoonoses, da vigilância sanitária, da prevenção de doenças e de programas de vacinação e educação em saúde. Na **produção animal e na segurança dos alimentos**, pode trabalhar com sanidade dos rebanhos, reprodução, inspeção de produtos de origem animal e procedimentos de qualidade em agroindústrias, dentro das atribuições legais de cada função. Pesquisa, diagnóstico laboratorial, conservação de animais e responsabilidade técnica também integram seus campos de atuação.\n\nO exercício da profissão requer **registro ativo no Conselho Regional de Medicina Veterinária (CRMV)** competente, nos termos da legislação profissional."
+        }
+      ]
     }
   ]
 }

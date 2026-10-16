@@ -395,7 +395,7 @@ test("F1B.11: diferenças institucionais não migram entre modalidades e campi",
   assert.doesNotMatch(projetoAdmin.conteudo,/Hackathon Social/);
   assert.ok(admfaq.some(x=>x.pergunta.includes("a distância")&&x.resposta.includes("16,67%")));
   for(const c of [ed,lg,adm]){
-    assert.ok(c.blocos.filter(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").every(b=>b.itens.length >= (c.id==="tecnico-em-edificacoes-integrado" ? 5 : 6)));
+    assert.ok(c.blocos.filter(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").every(b=>b.itens.length >= (c.id==="tecnico-em-edificacoes-integrado" ? 5 : c.id==="tecnico-em-logistica-subsequente" ? 4 : 6)));
     assert.ok(c.blocos.findIndex(x=>x.titulo==="Perguntas frequentes")>c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG"));
     assert.ok(c.blocos.every(x=>!x.titulo?.startsWith("E se eu já estiver cursando ou tiver concluído o ensino médio?")));
   }
@@ -1055,7 +1055,8 @@ test("Direito tem FAQ orientado a escolha e não duplica a própria página", ()
   const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi");
   const qs=faq.itens.map(x=>x.pergunta);
   assert.ok(qs.some(x=>x.includes("ingressar")));
-  assert.ok(qs.some(x=>x.includes("experiências práticas")));
+  assert.equal(qs.length,3);
+  assert.ok(!qs.some(x=>/experiências práticas|graduação a distância/i.test(x)));
   assert.ok(!qs.some(x=>/Núcleo de Práticas Jurídicas|diploma permite advogar/i.test(x)));
   assert.match(faq.itens[0].resposta,/Histórico Escolar e Redação/);
   assert.match(faq.itens[0].resposta,/Sisu/);

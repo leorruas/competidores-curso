@@ -459,6 +459,39 @@ test("Link único: selecionar estilo; copiar título, descrição e URL", () => 
   assert.doesNotMatch(rendered,/Exemplo de como o Link único aparece|block-link-example/);
 });
 
+test("F1B.8: cabeçalhos FAQ não exibem conteúdo fictício e perguntas pendentes não são copiáveis", () => {
+  for(const id of ["agronomia-bacharelado","engenharia-de-producao-bacharelado"]) {
+    const c=json.courses.find(x=>x.id===id);
+    const header=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Perguntas frequentes");
+    assert.equal(header.conteudo,"");
+    const h=testContext();
+    const fields=h.editorFields(header);
+    assert.equal(fields.length,1);
+    assert.equal(fields[0].value,"Perguntas frequentes");
+    assert.match(fields[0].html,/<h2>Perguntas frequentes<\\/h2>/);
+    const html=h.editorBlock(header,13);
+    assert.equal((html.match(/data-copy-field=/g)||[]).length,1);
+    assert.doesNotMatch(html,/Informação incompleta/);
+    const faq=c.blocos.find(x=>x.tipo==="faq");
+    assert.ok(faq.itens.every(q=>q.pergunta.trim() && q.resposta.trim()!=="Informação incompleta"));
+  }
+  const h=testContext();
+  const unfinished={tipo:"faq",itens:[
+    {pergunta:"Como funciona o estágio?",resposta:"Informação incompleta"},
+    {pergunta:"Posso participar de projetos?",resposta:"Sim, mediante seleção."}
+  ]};
+  const visible=h.editorFields(unfinished);
+  assert.equal(visible.length,2);
+  assert.equal(visible[0].value,"Posso participar de projetos?");
+  assert.equal(visible[1].value,"Sim, mediante seleção.");
+  const rendered=h.editorBlock(unfinished,11);
+  assert.equal((rendered.match(/data-copy-field=/g)||[]).length,2);
+  assert.doesNotMatch(rendered,/Como funciona o estágio|Informação incompleta/);
+  const headingOnly=h.editorFields({tipo:"texto",titulo:"Perguntas frequentes",conteudo:"Informação incompleta"});
+  assert.equal(headingOnly.length,1);
+  assert.equal(headingOnly[0].value,"Perguntas frequentes");
+});
+
 test("FAQ copia cada pergunta e resposta sem copiar o bloco inteiro", () => {
   const h=testContext();
   const b=h.demo.blocos.find(x=>x.tipo==="faq");

@@ -1464,7 +1464,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": "Informação incompleta"
+          "conteudo": ""
         },
         {
           "tipo": "faq",
@@ -1476,10 +1476,6 @@
             {
               "pergunta": "Há atividades práticas?",
               "resposta": "Em **Bambuí**, há atividades práticas e oportunidades de pesquisa e extensão relacionadas à produção agrícola. Em **São João Evangelista**, a formação abrange tecnologias de cultivo, conservação de solos e atividades ligadas ao campo."
-            },
-            {
-              "pergunta": "Como funcionam estágio e TCC em Agronomia?",
-              "resposta": "Informação incompleta"
             },
             {
               "pergunta": "Como ingressar em Agronomia em Bambuí?",
@@ -1703,7 +1699,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": "Informação incompleta"
+          "conteudo": ""
         },
         {
           "tipo": "faq",
@@ -1711,10 +1707,6 @@
             {
               "pergunta": "Como o curso integra engenharia e gestão?",
               "resposta": "O curso combina fundamentos de engenharia com planejamento, processos produtivos, qualidade, logística, custos e organização do trabalho para analisar e melhorar sistemas de produção."
-            },
-            {
-              "pergunta": "Como são o estágio e o TCC em Bambuí?",
-              "resposta": "Informação incompleta"
             },
             {
               "pergunta": "Como ingressar em Engenharia de Produção em Bambuí?",

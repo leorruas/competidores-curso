@@ -123,6 +123,12 @@
     const rich = (label, value) => ({label, value: String(value ?? ""), rich: true, html: richHTML(value)});
     if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor));
     if (b.tipo === "texto") {
+      // Cabeçalhos de FAQ são títulos de seção, sem segundo campo de conteúdo.
+      if (/^perguntas frequentes$/i.test((b.titulo || "").trim()) &&
+          (!String(b.conteudo || "").trim() || /^informação incompleta$/i.test(b.conteudo.trim()))) {
+        return [{label:"Título da seção", value:b.titulo, rich:true,
+          html:richHTML("", b.titulo)}];
+      }
       // Um bloco Texto do Wagtail corresponde a um único campo Rich Text.
       // O título, quando existe, vai no mesmo conteúdo que os parágrafos.
       // Quando ainda não há conteúdo, manter o título da seção visível,
@@ -141,10 +147,14 @@
         html:richHTML(b.conteudo || "", b.titulo || "")}] : [];
     }
     if (b.tipo === "introducao") return [rich("Conteúdo em destaque", b.conteudo)];
-    if (b.tipo === "faq") return b.itens.flatMap((x,i) => [
-      raw("Pergunta " + (i+1), x.pergunta),
-      rich("Resposta " + (i+1), x.resposta)
-    ]);
+    if (b.tipo === "faq") return b.itens
+      .filter(x => x.pergunta?.trim() && x.resposta?.trim() &&
+        !/^informação incompleta$/i.test(x.pergunta.trim()) &&
+        !/^informação incompleta$/i.test(x.resposta.trim()))
+      .flatMap((x,i) => [
+        raw("Pergunta " + (i+1), x.pergunta),
+        rich("Resposta " + (i+1), x.resposta)
+      ]);
     if (b.tipo === "link-unico") return [
       raw("Estilo", b.estilo || "Padrão", true),
       raw("Título / texto do link", b.link.rotulo),

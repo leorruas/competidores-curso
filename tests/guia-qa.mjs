@@ -277,7 +277,8 @@ test("Agronomia e Engenharia de Produção agrupam as cinco ofertas 2027 sem per
   const pTable=prod.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.equal(pTable.linhas[1][3],"coordenacao.producao.congonhas@ifmg.edu.br");
   assert.equal(pTable.linhas[2][3],"coenp.gv@ifmg.edu.br");
-  assert.match(prod.blocos.find(b=>b.titulo==="Reconhecimentos e premiações").conteudo,/Governador Valadares[\\s\\S]*2026/);
+  assert.match(prod.blocos.find(b=>b.titulo==="Reconhecimentos e premiações").conteudo,/Governador Valadares/);
+  assert.match(prod.blocos.find(b=>b.titulo==="Reconhecimentos e premiações").conteudo,/2 de fevereiro de 2026/);
 });
 
 test("Direito explica estágio e TCC com exigências concretas", () => {

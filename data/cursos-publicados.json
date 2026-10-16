@@ -3887,6 +3887,286 @@
           "conteudo": "O engenheiro florestal pode **planejar a produção e o manejo de florestas plantadas**, escolher espécies, organizar o plantio, acompanhar o desenvolvimento das árvores e avaliar formas de colheita e aproveitamento da madeira. Em cadeias como papel e celulose, madeira serrada e carvão vegetal, pode analisar a produtividade, as características da matéria-prima e os impactos dos processos.\n\nNa área ambiental, pode **elaborar projetos de restauração florestal, recuperação de áreas degradadas e proteção de nascentes**, utilizando inventários, medições em campo, dados geográficos e técnicas de conservação. Pode participar do manejo de unidades de conservação, do planejamento de paisagens, da prevenção e do controle de incêndios e da gestão de recursos florestais não madeireiros.\n\nEssas atividades podem ocorrer em propriedades rurais, empresas florestais, cooperativas, consultorias, órgãos ambientais, unidades de conservação e instituições de pesquisa. O exercício profissional nas atividades regulamentadas depende do **registro no Conselho Regional de Engenharia e Agronomia (Crea)** e das atribuições reconhecidas para o profissional."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-agroindustria-integrado",
+      "nome": "Técnico em Agroindústria",
+      "nivel": "Técnico",
+      "tipo": "Integrado ao Ensino Médio",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Agroindústria"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Agroindústria",
+          "conteudo": "O **Técnico em Agroindústria** permite cursar o ensino médio e a formação profissional no mesmo percurso. Em três anos, o estudante aprende sobre **processamento e conservação de produtos de origem animal e vegetal**, associando conhecimentos científicos, tecnologia, empreendedorismo e sustentabilidade.\n\nO curso é oferecido no **Campus Bambuí**, com aulas presenciais pela manhã e à tarde."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Do leite e das frutas aos alimentos processados: aprenda a transformar matérias-primas, preservar a qualidade e compreender a produção agroindustrial."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A formação é destinada a quem **concluiu o ensino fundamental** e quer estudar o ensino médio junto com uma habilitação técnica. É uma opção para estudantes interessados em alimentos, Ciências Agrárias, Química, Biologia, tecnologias de produção e iniciativas de empreendedorismo no campo e na cidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação geral do ensino médio e os conhecimentos técnicos são desenvolvidos ao longo dos três anos. As áreas abaixo mostram como os conteúdos se relacionam com as atividades da agroindústria."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Formação geral",
+              "Língua Portuguesa, Matemática, Química, Biologia, Física, História, Geografia e outros componentes do ensino médio."
+            ],
+            [
+              "Matérias-primas agroindustriais",
+              "Características, seleção e utilização de produtos de origem animal e vegetal."
+            ],
+            [
+              "Processamento de alimentos",
+              "Etapas de preparação, transformação e conservação de matérias-primas."
+            ],
+            [
+              "Higiene e qualidade",
+              "Boas práticas, cuidados com a manipulação, organização e controle de qualidade."
+            ],
+            [
+              "Embalagem e armazenamento",
+              "Formas de acondicionamento, conservação e organização de produtos."
+            ],
+            [
+              "Empreendedorismo e sustentabilidade",
+              "Planejamento de iniciativas agroindustriais, inovação e uso responsável de recursos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "Na formação técnica, o estudante aprende a trabalhar com **matérias-primas de origem animal e vegetal**, considerando etapas de recepção, preparação, processamento, conservação, embalagem e armazenamento de alimentos. A aprendizagem relaciona conhecimentos de Química, Biologia e Ciências Agrárias a questões de **qualidade, higiene, segurança dos alimentos e aproveitamento responsável de recursos**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades práticas de processamento e conservação de alimentos · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Agroindústria",
+          "conteudo": "O curso é oferecido no **Campus Bambuí** na modalidade **integrada ao ensino médio**, com duração de **três anos** e aulas presenciais pela manhã e à tarde."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Manhã e tarde",
+              "Presencial",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "O **Técnico em Agroindústria** tem duração de **três anos** e funciona em horário integral. As atividades regulares acontecem de segunda a sexta-feira, pela manhã e à tarde, integrando os componentes do ensino médio e da formação técnica."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e bolsas",
+          "conteudo": "O **Campus Bambuí** desenvolve iniciativas de iniciação científica que aproximam estudantes do ensino técnico integrado e da graduação. Em **2026**, o programa **“Um mais um é mais que dois”** passou a reunir, em propostas de pesquisa, um estudante de curso superior e um estudante de curso técnico integrado, com orientação docente e atividades de cooperação e mentoria. A participação nos projetos segue os critérios de cada seleção."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Iniciação científica entre cursos técnicos e superiores · Bambuí · programa 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Agroindústria"
+          ],
+          "linhas": [
+            [
+              "Agronomia",
+              "Bambuí",
+              "Produção agrícola, matérias-primas vegetais, qualidade e sustentabilidade dos sistemas produtivos."
+            ],
+            [
+              "Zootecnia",
+              "Bambuí",
+              "Produção animal, alimentação, gestão de sistemas produtivos e qualidade de matérias-primas de origem animal."
+            ],
+            [
+              "Administração",
+              "Bambuí",
+              "Gestão de organizações, planejamento, finanças e empreendedorismo em atividades agroindustriais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com a área de Agroindústria"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Tecnologias para produção sustentável, gestão ambiental e impactos associados às cadeias produtivas. A pós-graduação é uma possibilidade de continuidade após a conclusão de uma graduação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Como funciona estudar o ensino médio junto com Agroindústria?",
+              "resposta": "Você cursa os componentes do **ensino médio e da formação técnica no mesmo percurso**, ao longo de três anos. Química, Biologia e outras disciplinas da formação geral se relacionam com o processamento e a conservação de alimentos."
+            },
+            {
+              "pergunta": "Que atividades práticas fazem parte da formação?",
+              "resposta": "A formação técnica trabalha o **processamento de matérias-primas animais e vegetais**, a conservação dos produtos, a higiene, o acondicionamento e o controle de qualidade. As atividades são desenvolvidas conforme a organização das disciplinas e os espaços de aprendizagem disponíveis."
+            },
+            {
+              "pergunta": "O estágio é obrigatório?",
+              "resposta": "**Não. O estágio supervisionado é não obrigatório.** O estudante pode realizá-lo depois de concluir o primeiro ano e desde que tenha pelo menos **16 anos** no início da atividade. O estágio deve ser acompanhado por orientação e supervisão, seguindo as condições acadêmicas e legais aplicáveis."
+            },
+            {
+              "pergunta": "Posso participar de iniciação científica?",
+              "resposta": "O Campus Bambuí possui programas de pesquisa para estudantes dos cursos técnicos integrados. Uma das iniciativas reúne estudantes do ensino técnico e da graduação em projetos compartilhados com orientação docente. As formas de participação dependem das oportunidades organizadas no campus."
+            },
+            {
+              "pergunta": "Quais cursos superiores do IFMG têm relação com Agroindústria?",
+              "resposta": "No **Campus Bambuí**, os bacharelados em **Agronomia**, **Zootecnia** e **Administração** oferecem possibilidades de aprofundamento em produção, sustentabilidade e gestão. O ingresso na graduação ocorre por processo seletivo próprio para esse nível de ensino."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil?",
+              "resposta": "O IFMG mantém programas de assistência estudantil com condições e auxílios definidos em editais. Os critérios, documentos e procedimentos de candidatura são divulgados em cada seleção."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Agroindústria Integrado ao Ensino Médio**, você precisa ter **concluído o ensino fundamental** ou concluí-lo até a matrícula. O ingresso ocorre por **processo seletivo público do IFMG**, com regras e modalidades estabelecidas no edital vigente.\n\nConsulte o edital para conhecer os critérios de seleção, as vagas, as cotas, os documentos exigidos e os procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Agroindústria pode **acompanhar a recepção e a seleção de matérias-primas**, auxiliar na preparação e no processamento de alimentos e verificar condições de higiene e organização de áreas de produção. Também pode **apoiar procedimentos de conservação, embalagem, rotulagem, armazenamento e controle de qualidade**, de acordo com os métodos, registros e normas utilizados no estabelecimento.\n\nEm uma agroindústria de derivados do leite, por exemplo, pode auxiliar no acompanhamento de etapas de fabricação, conservação e acondicionamento. No processamento de produtos vegetais, pode acompanhar seleção, higienização, transformação e armazenamento das matérias-primas. O profissional também pode registrar informações sobre lotes, acompanhar perdas e colaborar para o uso eficiente da água, da energia e dos insumos.\n\nEssas atividades podem ocorrer em agroindústrias, cooperativas, empresas de alimentos, propriedades familiares, estabelecimentos de processamento e laboratórios de análises, observadas as atribuições técnicas, a supervisão exigida e as normas de segurança dos alimentos."
+        }
+      ]
     }
   ]
 }

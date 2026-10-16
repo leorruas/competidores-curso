@@ -102,3 +102,10 @@ O JSON público não pode conter `validacao`, `pendencias`, `revisao_coordenacao
 - **Anos de projetos e atividades já realizados** (2021, 2022, 2025, 2026) permanecem no conteúdo quando são evidência histórica, não inscrição atual. [CI 63/63 aprovada](https://github.com/leorruas/competidores-curso/actions/runs/38890621879). QA visual, colagem e validação institucional no Wagtail seguem pendentes.
 
 F2.13 revisada em 16/10/2026: a primeira Introdução deve ser geral, sem favorecimento de campus. Prazo, encontros e percentuais exclusivos ficam no FAQ local. QA: 65/65; Wagtail real pendente.
+
+## F4.4 — Continuidade dos estudos sem avisos óbvios (16/10/2026)
+
+- **Regra explícita do usuário:** em **Continue seus estudos no IFMG**, não escrever avisos genéricos do tipo "cada pós-graduação tem processo seletivo próprio", "é necessário cumprir o edital", "não garante matrícula ou vaga" ou introduções explicando o que o leitor já sabe. O objetivo é **apresentar os cursos**, não comentar burocracia.
+- Para **bacharelados**, usar seção com título + **Pós-graduação** + tabela `Curso | Campus | Relação com [curso]` + links oficiais úteis. O `Texto` com título `Continue seus estudos no IFMG` pode ter corpo vazio para ser copiado como título, sem texto de preenchimento.
+- **Exceção factual, não disclaimer:** quando um programa tem uma condição de ingresso específica que altera substantivamente as opções (por exemplo, Engenharia de Segurança do Trabalho restrita a graduações profissionais específicas), incluir apenas a informação necessária para não induzir erro, no contexto certo. Deixar fontes, comprovação de editais e pendências na **auditoria privada**, não em avisos repetitivos do conteúdo público.
+- Não recolocar avisos genéricos ao completar F4.4 ou revisar cursos; esta instrução supera formulações anteriores que incentivavam explicações sobre matrícula, seleção ou requisitos universais.

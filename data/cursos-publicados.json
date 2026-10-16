@@ -6809,6 +6809,326 @@
           "conteudo": "O técnico em Eletrotécnica pode atuar em **instalações e sistemas elétricos**, apoiando projetos, montagens, inspeções, medições e manutenção de equipamentos. Entre as atividades estão interpretar diagramas, acompanhar a instalação de dispositivos de proteção, testar circuitos, registrar grandezas elétricas e colaborar na identificação de falhas.\n\nEm ambientes industriais, pode participar da manutenção de máquinas, comandos e motores elétricos, além do acompanhamento de sistemas de distribuição e eficiência energética. Na construção e nos serviços técnicos, pode atuar em atividades ligadas a instalações elétricas, iluminação e dispositivos de segurança. O exercício profissional depende das atribuições reconhecidas pelo **Sistema CFT/CRTs**, do registro exigido e do cumprimento das normas técnicas e de segurança."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-eletronica-integrado",
+      "nome": "Técnico em Eletrônica",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Sabará"
+      ],
+      "modalidade": "Presencial (16,67% EaD)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Eletrônica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Sabará"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com 16,67% EaD na oferta de 2027"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.250 horas"
+            },
+            {
+              "rotulo": "PPC / matriz para ingressantes em 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "coordeletro.sabara@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Eletrônica",
+          "conteudo": "Estude o ensino médio junto com uma formação técnica em **circuitos, componentes e sistemas eletrônicos**. No IFMG, você aprende a interpretar esquemas, realizar medições, desenvolver soluções com programação e apoiar a instalação e a manutenção de equipamentos eletrônicos."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Conheça circuitos eletrônicos, instrumentos de medição, microcontroladores e automação enquanto conclui o ensino médio. Aulas e práticas se relacionam ao uso da tecnologia em diferentes áreas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O Técnico em Eletrônica Integrado é destinado a quem concluiu o ensino fundamental e deseja cursar o ensino médio com uma formação técnica. É uma opção para estudantes interessados em matemática, física, programação, eletricidade e no funcionamento de aparelhos e sistemas eletrônicos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne conhecimentos gerais do ensino médio e estudos de eletrônica, programação e sistemas de controle. As atividades e as disciplinas seguem o projeto pedagógico do curso."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Eletricidade e eletrônica analógica",
+              "Compreender circuitos, componentes, sinais e princípios de funcionamento de sistemas eletrônicos."
+            ],
+            [
+              "Eletrônica digital e microcontroladores",
+              "Estudar sistemas digitais, programação e controle de equipamentos por circuitos integrados e dispositivos programáveis."
+            ],
+            [
+              "Medições e testes",
+              "Interpretar esquemas e utilizar instrumentos para verificar e diagnosticar circuitos."
+            ],
+            [
+              "Automação e sistemas embarcados",
+              "Relacionar sensores, atuadores e programação a dispositivos e sistemas automatizados."
+            ],
+            [
+              "Instalação e manutenção",
+              "Conhecer montagem, inspeção, manutenção de equipamentos e procedimentos de controle de qualidade."
+            ],
+            [
+              "Formação geral",
+              "Estudar linguagens, matemática, ciências da natureza e humanas integradas à formação técnica."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "Nas atividades de formação, o estudante relaciona a leitura de diagramas a medições, testes, montagem e programação de circuitos. O curso também contempla projetos com microcontroladores, transmissão de dados, automação e manutenção de dispositivos eletrônicos, conforme os componentes curriculares."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Práticas de eletrônica, medições e montagem de circuitos · Sabará",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Eletrônica",
+          "conteudo": "O Técnico em Eletrônica Integrado ao Ensino Médio é oferecido no **Campus Sabará**, com atividades de manhã e à tarde e duração de três anos. A oferta prevista para 2027 é presencial, com **16,67% de carga horária EaD**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Sabará",
+              "Presencial (16,67% EaD no quadro de 2027)",
+              "Manhã e tarde / 3 anos",
+              "coordeletro.sabara@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Sabará",
+              "resposta": "O curso integrado reúne ensino médio e habilitação técnica em três anos. A formação aborda análise, desenvolvimento, teste e manutenção de circuitos e equipamentos eletrônicos, sistemas digitais, microcontroladores e automação. A carga horária total registrada para o curso é de **3.250 horas**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "No Campus Sabará, os estudantes podem acompanhar projetos de pesquisa, ensino e extensão, além de programas de monitoria, de acordo com as atividades e seleções de cada período. Em 2025 e 2026, houve seleção de monitores para componentes como Eletrônica Analógica, Eletrônica Digital e Microcontroladores."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": "Após concluir o ensino médio integrado, você pode concorrer a cursos superiores do IFMG relacionados à eletrônica, automação, programação e sistemas de energia."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Eletrônica"
+          ],
+          "linhas": [
+            [
+              "Engenharia de Controle e Automação",
+              "Betim, Ibirité e Sabará",
+              "Circuitos, instrumentação, sensores, automação e sistemas de controle."
+            ],
+            [
+              "Engenharia Elétrica",
+              "Formiga, Ipatinga e Itabirito",
+              "Energia elétrica, circuitos, máquinas e sistemas de potência."
+            ],
+            [
+              "Sistemas de Informação",
+              "Ouro Branco, Sabará e São João Evangelista",
+              "Programação, aplicações, dados e soluções de tecnologia da informação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": "Depois de concluir uma graduação compatível, também é possível buscar programas de pós-graduação do IFMG relacionados à energia, à tecnologia e à sustentabilidade."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Eletrônica"
+          ],
+          "linhas": [
+            [
+              "Especialização em Sistemas de Energia Renovável: Geração, Distribuição e Eficiência Energética",
+              "Formiga (EaD)",
+              "Tecnologias de energia, distribuição, armazenamento e eficiência energética."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Projetos e tecnologias relacionados a sustentabilidade e soluções ambientais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Na **Feira de Ciências de 8 de fevereiro de 2025**, estudantes do **segundo ano dos técnicos integrados em Eletrônica, Administração e Informática** apresentaram experimentos de Química, Física e Biologia no Campus Sabará. Foram **14 experimentos no total**, considerando os três cursos participantes."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Feira de Ciências · Eletrônica, Administração e Informática · Sabará · fevereiro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **março de 2025**, alunas voluntárias do **segundo ano do Técnico em Eletrônica**, junto a estudantes dos cursos de Informática e Administração, participaram dos projetos de ensino identificados como **Jardim Sensoriar e IFMG + Verde**. As ações realizadas incluíram a distribuição de vasos e a presença de plantas em espaços do campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Jardim Sensoriar e IFMG + Verde · Eletrônica e outros cursos · Sabará · março de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **26 de março de 2025**, dois estudantes do **Técnico em Eletrônica do Campus Sabará** foram homenageados na segunda edição do **Café com o Reitor**: **Erick Albino Oliveira**, pelo destaque nos Jogos Solidários do campus, e **Ana Flávia Barbosa Perdigão**, pelo destaque no NEABI Sabará. A homenagem ocorreu na Reitoria do IFMG."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Café com o Reitor · homenagens a estudantes de Eletrônica · Sabará · março de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre Eletrônica Integrado e Eletrônica Subsequente?",
+              "resposta": "No **integrado**, você cursa o ensino médio junto com a formação técnica, em três anos. O **subsequente** é destinado a quem já concluiu o ensino médio e possui organização curricular própria. O Campus Sabará oferece as duas modalidades."
+            },
+            {
+              "pergunta": "Como funciona a parte a distância do curso integrado?",
+              "resposta": "O quadro de ofertas de 2027 registra **16,67% de carga horária EaD**. A distribuição das atividades e os procedimentos de acompanhamento seguem a matriz e o planejamento acadêmico do campus."
+            },
+            {
+              "pergunta": "Há oportunidades de monitoria no curso?",
+              "resposta": "O Campus Sabará organiza seleções de monitoria para disciplinas técnicas e da formação geral. Em 2025 e 2026, a programação incluiu componentes como Eletrônica Digital, Eletrônica Analógica e Microcontroladores, com participação conforme os critérios de cada seleção."
+            },
+            {
+              "pergunta": "O curso inclui projetos com programação e equipamentos?",
+              "resposta": "Sim. Os conteúdos contemplam programação de microcontroladores, circuitos, testes de equipamentos, transmissão de dados e aplicações em automação, conforme a organização curricular e as práticas disponíveis."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras modalidades relacionadas",
+          "conteudo": "No **Técnico em Eletrônica Integrado**, o estudante conclui o ensino médio junto com a formação técnica. O Campus Sabará também oferece a modalidade **subsequente**, destinada a quem já concluiu o ensino médio."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Concluiu o ensino fundamental e vai cursar o ensino médio",
+              "Técnico em Eletrônica Integrado",
+              "Formação geral e técnica, organização do turno e atividades do campus."
+            ],
+            [
+              "Já concluiu o ensino médio",
+              "Técnico em Eletrônica Subsequente",
+              "Requisitos, duração e horários próprios dessa modalidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Eletrônica Integrado ao Ensino Médio**, é necessário concluir o ensino fundamental até a matrícula. O ingresso ocorre por **processo seletivo público do IFMG**, conforme o edital vigente.\n\nConsulte o edital para conhecer vagas, reserva de vagas, documentos, critérios e procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Eletrônica pode atuar no **desenvolvimento, instalação, teste e manutenção de equipamentos e sistemas eletrônicos**. Entre suas tarefas estão interpretar esquemas, medir sinais, identificar falhas, apoiar a montagem de circuitos, configurar dispositivos e colaborar com rotinas de inspeção e controle de qualidade.\n\nEssas atividades aparecem em empresas de equipamentos eletrônicos, automação, telecomunicações, manutenção, assistência técnica, serviços e laboratórios. O profissional pode participar de projetos com circuitos microcontrolados, dispositivos de comunicação e sistemas eletrônicos embarcados, respeitando as atribuições da habilitação, as normas técnicas e os requisitos de segurança."
+        }
+      ]
     }
   ]
 }

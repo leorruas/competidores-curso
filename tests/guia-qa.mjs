@@ -254,6 +254,99 @@ test("F4.5: Edificações tem continuidade tabular verificável e copiável", ()
   assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 
+test("F1B.11: FAQs técnicos orientam escolhas, cotas, assistência e ficam ao fim da parte informativa", () => {
+  const h=testContext();
+  const configs=[
+    {id:"tecnico-em-edificacoes-integrado",n:6,modality:"Existe Técnico em Edificações para quem já concluiu ou está cursando o ensino médio?",rows:3},
+    {id:"tecnico-em-logistica-subsequente",n:6,modality:null,rows:0},
+    {id:"tecnico-em-administracao-integrado",n:7,modality:"Existe Técnico em Administração para quem já concluiu o ensino médio?",rows:2}
+  ];
+  for(const {id,n,modality,rows} of configs) {
+    const c=json.courses.find(x=>x.id===id),blocos=c.blocos;
+    const f=blocos.findIndex(b=>b.titulo==="Perguntas frequentes");
+    const experienced=blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
+    assert.ok(f>experienced,id+": FAQ depois dos resultados e da continuidade acadêmica");
+    assert.equal(blocos[f].tipo,"texto");
+    assert.equal(blocos[f+1].tipo,"faq");
+    const items=blocos[f+1].itens;
+    assert.equal(items.length,n,id);
+    assert.ok(items.every(x=>x.pergunta.endsWith("?")&&x.resposta.length>100),id);
+    assert.ok(items.every(x=>!c.campi.includes(x.pergunta)),id+": nome de campus não é pergunta");
+    assert.ok(items.every(x=>!/^(as experiências variam|consulte o campus|confirme com a coordenação)/i.test(x.resposta)),id);
+    assert.equal(h.editorFields(blocos[f+1]).length,n*2,id+": pergunta e resposta copiáveis separadamente");
+    const assistance=items.find(x=>/assistência estudantil/i.test(x.pergunta));
+    assert.ok(assistance,id+": assistência estudantil");
+    assert.match(assistance.resposta,/SSAE/);
+    assert.match(assistance.resposta,/edital/i);
+    assert.doesNotMatch(assistance.resposta,/garantid[ao] automaticamente|todo aluno recebe/i);
+    const quotas=items.find(x=>/cotas|reserva de vagas/i.test(x.pergunta));
+    assert.ok(quotas,id+": reserva de vagas");
+    assert.match(quotas.resposta,/edital/i);
+    const links=blocos[f+2];
+    assert.equal(links.tipo,"links");
+    const labels=links.itens.map(x=>x.rotulo);
+    assert.deepEqual(labels,["Como ingressar no IFMG","Reserva de vagas e cotas","Assistência estudantil"],id);
+    assert.ok(links.itens.every(x=>x.url.startsWith("https://portal.ifmg.edu.br/estudantes/")));
+    assert.deepEqual(blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"],id);
+    assert.ok(h.isApprovedCourse(c),id);
+    if(modality){
+      const section=blocos[f+3],table=blocos[f+4];
+      assert.equal(section.titulo,modality);
+      assert.equal(section.tipo,"texto");
+      assert.equal(table.tipo,"tabela");
+      assert.deepEqual(table.colunas,["Se você...","Procure por...","O que comparar"]);
+      assert.equal(table.linhas.length,rows);
+      assert.ok(table.linhas.every(row=>row.length===3));
+      assert.ok(table.linhas.some(row=>row[1]==="Subsequente"));
+      assert.ok(table.linhas.every(row=>row.join(" ").length>60));
+      assert.ok(h.editorFields(section)[0].rich);
+      assert.ok(!blocos.slice(f+5,-2).length,id+": comparação fica antes dos dois últimos blocos");
+    }else{
+      assert.equal(blocos[f+3].titulo,"Forma de ingresso");
+      assert.ok(!blocos.some(b=>b.tipo==="texto"&&/Existe Técnico em Logística para quem/i.test(b.titulo||"")),id);
+    }
+  }
+});
+
+test("F1B.11: diferenças institucionais não migram entre modalidades e campi", () => {
+  const get=id=>json.courses.find(c=>c.id===id);
+  const ed=get("tecnico-em-edificacoes-integrado"),edfaq=ed.blocos.find(b=>b.tipo==="faq").itens;
+  const prat=edfaq.find(x=>x.pergunta.includes("laboratório"));
+  assert.ok(prat);
+  assert.match(prat.resposta,/Congonhas/);
+  assert.match(prat.resposta,/Governador Valadares/);
+  assert.doesNotMatch(prat.resposta,/todos os campi possuem/i);
+  const edsec=ed.blocos.find(b=>b.titulo?.startsWith("Existe Técnico em Edificações"));
+  assert.match(edsec.conteudo,/subsequente.*Congonhas.*Ouro Preto/is);
+  assert.match(edsec.conteudo,/concomitante.*Congonhas/is);
+  assert.doesNotMatch(edsec.conteudo,/subsequente.*Piumhi/is);
+  const lg=get("tecnico-em-logistica-subsequente");
+  const lgfaq=lg.blocos.find(b=>b.tipo==="faq").itens;
+  const ead=lgfaq.find(x=>x.pergunta.includes("a distância"));
+  assert.match(ead.resposta,/Governador Valadares/);
+  assert.match(ead.resposta,/Ribeirão das Neves/);
+  const presencial=lgfaq.find(x=>x.pergunta.includes("comparecer"));
+  assert.match(presencial.resposta,/Em Governador Valadares, sim/);
+  assert.match(presencial.resposta,/informações diferentes/);
+  assert.doesNotMatch(presencial.resposta,/Ribeirão das Neves.{0,80}100%/);
+  const adm=get("tecnico-em-administracao-integrado");
+  const admsec=adm.blocos.find(b=>b.titulo?.startsWith("Existe Técnico em Administração"));
+  assert.match(admsec.conteudo,/Ponte Nova/);
+  assert.match(admsec.conteudo,/Governador Valadares/);
+  assert.doesNotMatch(admsec.conteudo,/subsequente.*Ribeirão das Neves/is);
+  const tab=adm.blocos.find((b,i)=>b.tipo==="tabela"&&adm.blocos[i-1]?.titulo===admsec.titulo);
+  assert.ok(tab);
+  assert.ok(!tab.linhas.some(row=>row[1]==="Concomitante"));
+  const admfaq=adm.blocos.find(b=>b.tipo==="faq").itens;
+  assert.ok(admfaq.some(x=>x.pergunta.includes("atividades práticas")&&x.resposta.includes("Expo Favela Minas em 2026")));
+  assert.ok(admfaq.some(x=>x.pergunta.includes("a distância")&&x.resposta.includes("16,67%")));
+  for(const c of [ed,lg,adm]){
+    assert.ok(c.blocos.filter(x=>x.tipo==="faq").every(b=>b.itens.length>=6));
+    assert.ok(c.blocos.findIndex(x=>x.titulo==="Perguntas frequentes")>c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG"));
+    assert.ok(c.blocos.every(x=>!x.titulo?.startsWith("E se eu já estiver cursando ou tiver concluído o ensino médio?")));
+  }
+});
+
 test("F1B.10: os oito cursos encerram com Forma de ingresso e Mundo do Trabalho", () => {
   const h=testContext();
   const graduationIds=[
@@ -379,7 +472,7 @@ test("F1B.9: oito campi de Administração têm informações próprias e FAQ de
   assert.match(content("Sabará"),/Em \*\*2026\*\*/);
   assert.match(content("Sabará"),/16,67%/);
   const faq=c.blocos.find(x=>x.tipo==="faq");
-  assert.equal(faq.itens.length,4);
+  assert.equal(faq.itens.length,7);
   assert.ok(faq.itens.every(x=>x.pergunta.includes("?")&&x.resposta.length>70));
   assert.ok(faq.itens.every(x=>!c.campi.includes(x.pergunta)));
   assert.ok(faq.itens.some(x=>x.pergunta.includes("distância")&&x.resposta.includes("16%")));

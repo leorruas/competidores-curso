@@ -173,3 +173,11 @@ Decisão do usuário após revisão dos oito pilotos: **continuar construindo no
 - **Não fixar quantidade de cursos nos testes** quando a regra disser respeito a todo o catálogo. Manter testes específicos dos oito pilotos onde forem úteis e acrescentar um teste para cada novo curso. A contagem de 67 grupos pertence à **matriz inicial**, com variações posteriores a conferir; o progresso do guia é separado da homologação acadêmica e do CMS.
 
 **Primeira ampliação F7.1:** Zootecnia Bacharelado, Campus Bambuí, incluída depois dos oito pilotos, com documentação curricular e experiência acadêmica de 2025, galeria GEAS e galeria de encontro com egressos. Ver backlog F7 para commits, QA e pendências.
+
+
+## Fase 7.3: consistência transacional e publicação segura
+
+- **Nunca** inserir um novo curso em `data/cursos-publicados.json` e alterar testes em commits consecutivos na `main`: isso causa falhas temporárias e, com Pages por branch, pode publicar um catálogo ainda não validado. Enviar todos os arquivos coerentes no **mesmo commit**, preferindo pull request com verificações verdes; para integração GitHub API, usar `create_tree` (base tree + blobs) → `create_commit` → `update_ref` com `expected_sha`.
+- O validador `scripts/validar-publicacao.mjs` agora importa `scripts/validar-estrutura.mjs`, que confere galeria após experiência, unicidade das referências, títulos finais e correspondência entre tabela de campi e metadados. Testes `tests/estrutura-catalogo.mjs` simulam corrupções deliberadas. **Não adicionar contagem global fixa** de cursos e galerias na suite; preservar verificações de fatos específicos por curso.
+- A CI em `.github/workflows/validar-publicacao.yml` executa teste de conteúdo **antes** de chamar o QA visual reutilizável `.github/workflows/qa-visual.yml`. A cada novo curso, conferir ambos na **mesma SHA**. `docs/PUBLICACAO-SEGURA.md` descreve os comandos e os sintomas de falha.
+- **Pages**: a origem atual via branch não espera os testes. Já existe job `publicar-pages` com `needs: [validar-conteudo-publico, qa-visual]`, desativado por padrão (`vars.IFMG_PAGES_ACTIONS`). Para proteger a publicação, administrador precisa ajustar **Pages Source = GitHub Actions**, definir `IFMG_PAGES_ACTIONS=true` e disparar workflow manual na `main`. Não afirmar que o site está protegido enquanto a origem for branch.

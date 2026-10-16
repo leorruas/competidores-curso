@@ -54,3 +54,28 @@ jobs:
     uses: ./.github/workflows/qa-visual.yml
     permissions:
       contents: read
+
+  publicar-pages:
+    name: Publicar Pages somente depois do conteúdo e QA aprovados
+    if: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && vars.IFMG_PAGES_ACTIONS == 'true' }}
+    needs: [validar-conteudo-publico, qa-visual]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Obter o commit validado
+        uses: actions/checkout@v5
+      - name: Preparar GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Empacotar o guia
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Publicar a mesma revisão aprovada
+        id: deployment
+        uses: actions/deploy-pages@v4

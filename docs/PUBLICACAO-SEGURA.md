@@ -17,7 +17,7 @@ O primeiro commit com um curso novo aumentava o total de galerias, mas `tests/gu
 
 No momento, a interface do GitHub Pages está configurada para executar `pages build and deployment` automaticamente a cada push; **essa publicação não espera a CI**. O workflow de QA visual agora depende da validação de conteúdo, mas isso, sozinho, **não bloqueia o Pages nativo**.
 
-Para impedir de verdade que uma versão reprovada seja publicada, altere **Settings → Pages → Build and deployment → Source** de *Deploy from a branch* para *GitHub Actions* e crie/ative um workflow `actions/deploy-pages` com `needs` dos jobs de validação e visual. **Não mude a origem sem configurar esse deployment**: do contrário a atualização automática do site pode parar. A troca da origem exige acesso de administração do repositório.
+A implantação pelo GitHub Actions **já está preparada** no job `publicar-pages`, que depende da validação e do QA visual. Ela fica **desativada por padrão** para não interromper o Pages atual. Para ativar a proteção real, quem administra o repositório deve: (1) definir a variável de repositório `IFMG_PAGES_ACTIONS=true` em **Settings → Secrets and variables → Actions → Variables**; (2) alterar **Settings → Pages → Build and deployment → Source** de *Deploy from a branch* para *GitHub Actions*; (3) executar **Validar publicação de cursos → Run workflow** na branch `main` e conferir os três jobs verdes, inclusive `publicar-pages`. Fazer a mudança fora desta ordem pode suspender atualizações. A origem atual por branch continua a publicar independentemente da CI até essa troca.
 
 Até essa configuração ser feita, faça alterações grandes em pull requests e publique somente commits completos; acompanhe o status verde da CI e o deploy da **mesma SHA**.
 

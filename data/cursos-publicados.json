@@ -1585,6 +1585,16 @@
         },
         {
           "tipo": "texto",
+          "titulo": "Campus Bambuí",
+          "conteudo": "A graduação tem **duração prevista de nove semestres** e reúne atividades de campo, estudo da produção agrícola e práticas relacionadas à conservação de recursos naturais. O campus desenvolve grupos de estudo e ações de pesquisa e extensão. Em **2022**, estudantes participaram do projeto **Olericultura – Seleção e Implantação de forma sustentável**, que realizou oficinas e implantou uma horta escolar em uma instituição da comunidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus São João Evangelista",
+          "conteudo": "O campus reúne formação em cultivo, conservação dos solos, manejo de plantas e tecnologias agrícolas. A **empresa júnior Agricampo**, vinculada a Agronomia, desenvolve oportunidades de aprendizagem em cultivos, pastagens, hortaliças e planejamento de irrigação. Em **2025**, o campus inaugurou um Centro de Vivência com espaço destinado à Agricampo e a outra empresa júnior da instituição."
+        },
+        {
+          "tipo": "texto",
           "titulo": "Perguntas frequentes",
           "conteudo": ""
         },
@@ -1614,10 +1624,6 @@
             {
               "pergunta": "Como funcionam estágio e TCC em Agronomia em São João Evangelista?",
               "resposta": "Em **São João Evangelista**, o estágio supervisionado é **obrigatório, com pelo menos 240 horas**. Pode começar após o **5º período** ou depois de **2.445 horas integralizadas**, desde que o estudante tenha cursado os conteúdos necessários à atividade. O **TCC também é obrigatório**, com **60 horas** e avaliação por banca."
-            },
-            {
-              "pergunta": "Qual a duração de Agronomia em Bambuí?",
-              "resposta": "Em **Bambuí**, a duração prevista é de **nove semestres**. O calendário acadêmico e a matriz curricular pertencem à oferta local."
             }
           ]
         },

@@ -793,11 +793,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Mundo do Trabalho",
-          "conteudo": "Na área jurídica, a formação permite **analisar situações concretas à luz das leis, pesquisar decisões judiciais e organizar informações para fundamentar soluções**. O profissional pode atuar em atividades que envolvam contratos, direitos de consumidores, relações de trabalho, políticas públicas ou proteção de direitos, conforme os requisitos de cada função.\n\nNa **advocacia**, depois de obter a inscrição na OAB, pode **orientar clientes, elaborar peças jurídicas, acompanhar processos e atuar em negociações ou conflitos**. Também existem carreiras jurídicas no serviço público, como magistratura, Ministério Público, Defensoria e procuradorias, com **concursos e requisitos próprios**. Pesquisa, docência e organizações da sociedade civil são outros caminhos possíveis, conforme a formação exigida.\n\n**Concluir Direito não habilita automaticamente a advogar**: a inscrição na OAB depende de aprovação no Exame de Ordem, e determinadas carreiras têm exigências legais adicionais."
-        },
-        {
-          "tipo": "texto",
           "titulo": "Experiências de aprendizagem em Direito",
           "conteudo": "A graduação em **Direito** combina interpretação jurídica, análise de casos e atividades práticas orientadas por professores.\n\nOs estudantes desenvolvem atividades de **prática jurídica simulada e real**, incluindo análise de casos, elaboração de peças e ações de extensão voltadas ao atendimento à comunidade. O curso também contempla pesquisa e um Trabalho de Conclusão de Curso."
         },
@@ -899,6 +894,16 @@
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Direito do Campus Arcos**, é necessário ter concluído o ensino médio ou concluí-lo até a matrícula. O acesso depende de participação e classificação em um processo seletivo de graduação do IFMG.\n\nA oferta do curso pode incluir seleção própria por **Histórico Escolar e Redação** e participação pelo **Sisu**, com regras e editais específicos. As vagas, as formas de seleção e os documentos exigidos devem ser conferidos no edital vigente de **Direito em Arcos**. A existência de uma modalidade em determinada edição não garante que ela esteja disponível nas demais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "Na área jurídica, a formação permite **analisar situações concretas à luz das leis, pesquisar decisões judiciais e organizar informações para fundamentar soluções**. O profissional pode atuar em atividades que envolvam contratos, direitos de consumidores, relações de trabalho, políticas públicas ou proteção de direitos, conforme os requisitos de cada função.\n\nNa **advocacia**, depois de obter a inscrição na OAB, pode **orientar clientes, elaborar peças jurídicas, acompanhar processos e atuar em negociações ou conflitos**. Também existem carreiras jurídicas no serviço público, como magistratura, Ministério Público, Defensoria e procuradorias, com **concursos e requisitos próprios**. Pesquisa, docência e organizações da sociedade civil são outros caminhos possíveis, conforme a formação exigida.\n\n**Concluir Direito não habilita automaticamente a advogar**: a inscrição na OAB depende de aprovação no Exame de Ordem, e determinadas carreiras têm exigências legais adicionais."
         }
       ]
     },
@@ -1027,11 +1032,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Mundo do Trabalho",
-          "conteudo": "Na indústria, a Engenharia Mecânica participa do **projeto e da análise de máquinas, peças e equipamentos**, da escolha de materiais e da definição de processos de fabricação. Isso pode envolver desenhos técnicos, modelos digitais, simulações e testes para avaliar o comportamento e o desempenho de componentes.\n\nEm **manutenção e operação**, o engenheiro pode investigar falhas, planejar intervenções, avaliar condições de segurança e buscar maior confiabilidade e eficiência dos equipamentos. Também pode atuar em **sistemas térmicos**, como refrigeração, climatização e processos que utilizam calor, além de instalações industriais e desenvolvimento de produtos.\n\nEssas atividades se encontram em indústrias, empresas de projetos e manutenção, serviços técnicos e pesquisa aplicada. O exercício das atividades de engenharia depende do **registro profissional e das atribuições reconhecidas pelo sistema Confea/Crea**, de acordo com a legislação."
-        },
-        {
-          "tipo": "texto",
           "titulo": "Onde o IFMG oferece Engenharia Mecânica",
           "conteudo": "O bacharelado em Engenharia Mecânica é oferecido em **Arcos** e **Betim**, à noite. A organização das atividades presenciais, a matriz curricular e as experiências acadêmicas são específicas de cada campus."
         },
@@ -1127,6 +1127,16 @@
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Em **Betim**, trabalhos finais de estudantes de Engenharia Mecânica divulgados para bancas em janeiro e fevereiro de 2026 abordaram o **ciclo de vida de baterias de veículos elétricos**, a **manutenção preditiva de equipamentos** e a **otimização de processos de usinagem CNC**. Esses são exemplos de temas desenvolvidos na conclusão da graduação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Engenharia Mecânica**, é necessário ter concluído o ensino médio ou concluí-lo até a matrícula. O IFMG realiza processos seletivos próprios de graduação e pode ofertar vagas pelo **Sisu**, conforme os editais de cada seleção.\n\nNa seleção própria, as formas de participação podem incluir **notas do Enem** ou **análise do Histórico Escolar e Redação**. As opções de ingresso e as vagas podem ser diferentes em **Arcos** e **Betim**. Antes de se inscrever, consulte os editais vigentes para verificar as modalidades disponíveis no campus escolhido, os critérios e os documentos exigidos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "Na indústria, a Engenharia Mecânica participa do **projeto e da análise de máquinas, peças e equipamentos**, da escolha de materiais e da definição de processos de fabricação. Isso pode envolver desenhos técnicos, modelos digitais, simulações e testes para avaliar o comportamento e o desempenho de componentes.\n\nEm **manutenção e operação**, o engenheiro pode investigar falhas, planejar intervenções, avaliar condições de segurança e buscar maior confiabilidade e eficiência dos equipamentos. Também pode atuar em **sistemas térmicos**, como refrigeração, climatização e processos que utilizam calor, além de instalações industriais e desenvolvimento de produtos.\n\nEssas atividades se encontram em indústrias, empresas de projetos e manutenção, serviços técnicos e pesquisa aplicada. O exercício das atividades de engenharia depende do **registro profissional e das atribuições reconhecidas pelo sistema Confea/Crea**, de acordo com a legislação."
         }
       ],
       "aliases": [
@@ -1259,11 +1269,6 @@
         {
           "tipo": "introducao",
           "conteudo": "Em Bambuí, os Trabalhos Interdisciplinares articulam conteúdos de diferentes áreas. Em São João Evangelista, a empresa júnior Destaque Jr. amplia as experiências dos estudantes."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Mundo do Trabalho",
-          "conteudo": "Em uma organização, o administrador pode **planejar o uso de recursos, organizar processos e acompanhar resultados**, identificando problemas e propondo melhorias. Isso inclui preparar e analisar orçamentos, acompanhar custos e indicadores e organizar informações que apoiem as decisões.\n\nNa **gestão de pessoas**, pode participar do planejamento de equipes, da organização do trabalho e de políticas de desenvolvimento profissional. Em **logística e operações**, analisa estoques, fluxos de materiais e processos de atendimento. Em **marketing**, pesquisa mercados, públicos e resultados de ações comerciais, em articulação com outras áreas.\n\nO profissional pode atuar em empresas, órgãos públicos, organizações sociais, consultorias e empreendimentos próprios. O exercício das atividades regulamentadas da Administração observa os requisitos legais e de registro profissional aplicáveis; a graduação não garante contratação ou ingresso em cargo público."
         },
         {
           "tipo": "texto",
@@ -1410,6 +1415,16 @@
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Administração**, é necessário ter concluído o ensino médio ou concluí-lo até a matrícula. O IFMG realiza processos seletivos próprios de graduação e pode ofertar vagas pelo **Sisu**, de acordo com os editais publicados.\n\nA seleção própria pode utilizar **notas do Enem** ou **Histórico Escolar e Redação**, conforme o curso e a edição. Como Administração é oferecida em **diferentes campi**, as formas de participação e a distribuição de vagas podem variar entre as unidades. Consulte os editais vigentes para conhecer as opções do campus desejado, os requisitos e os documentos para inscrição."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "Em uma organização, o administrador pode **planejar o uso de recursos, organizar processos e acompanhar resultados**, identificando problemas e propondo melhorias. Isso inclui preparar e analisar orçamentos, acompanhar custos e indicadores e organizar informações que apoiem as decisões.\n\nNa **gestão de pessoas**, pode participar do planejamento de equipes, da organização do trabalho e de políticas de desenvolvimento profissional. Em **logística e operações**, analisa estoques, fluxos de materiais e processos de atendimento. Em **marketing**, pesquisa mercados, públicos e resultados de ações comerciais, em articulação com outras áreas.\n\nO profissional pode atuar em empresas, órgãos públicos, organizações sociais, consultorias e empreendimentos próprios. O exercício das atividades regulamentadas da Administração observa os requisitos legais e de registro profissional aplicáveis; a graduação não garante contratação ou ingresso em cargo público."
         }
       ],
       "aliases": [
@@ -1545,11 +1560,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Mundo do Trabalho",
-          "conteudo": "No campo, o profissional de Agronomia pode **avaliar condições do solo, orientar práticas de fertilidade e planejar o cultivo de plantas**, considerando clima, água e características da produção. Pode acompanhar etapas de semeadura, manejo e colheita, analisar fatores que reduzem a produtividade e propor formas de melhorar o uso de recursos naturais.\n\nEm **irrigação e drenagem**, trabalha com o planejamento do uso da água na produção agrícola. Em **fitossanidade**, participa da identificação e do manejo de problemas que afetam as culturas. Também pode atuar com mecanização, sementes, assistência técnica a produtores, gestão de propriedades rurais, pesquisa e desenvolvimento de tecnologias agrícolas.\n\nAs atividades se desenvolvem em propriedades rurais, cooperativas, empresas de insumos, serviços de assistência técnica, centros de pesquisa e órgãos públicos. O exercício profissional depende do registro e das **atribuições reconhecidas pelo sistema Confea/Crea**, conforme a legislação."
-        },
-        {
-          "tipo": "texto",
           "titulo": "Onde o IFMG oferece Agronomia",
           "conteudo": "O bacharelado em Agronomia é oferecido em **Bambuí** e **São João Evangelista**, com aulas presenciais de manhã e à tarde. Cada campus tem organização curricular e atividades acadêmicas próprias."
         },
@@ -1652,6 +1662,16 @@
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Em **Bambuí**, o projeto de extensão **Olericultura – Seleção e Implantação de forma sustentável**, concluído em **2022**, capacitou estudantes para conduzir atividades formativas com a comunidade. As oficinas abordaram solo, água, escolha de hortaliças, planejamento de canteiros, irrigação e manejo. O trabalho também incluiu a **implantação de uma horta escolar na Associação Olga Chaves de Miranda Cardoso**, destinada à produção de alimentos para consumo na instituição."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Agronomia**, é necessário ter concluído o ensino médio ou concluí-lo até a matrícula. O IFMG realiza processos seletivos próprios de graduação e pode disponibilizar vagas pelo **Sisu**, de acordo com os editais vigentes.\n\nNa seleção própria, podem existir modalidades que aproveitam **notas do Enem** ou que avaliam **Histórico Escolar e Redação**. As condições de ingresso, as modalidades disponíveis e as vagas podem ser diferentes em **Bambuí** e **São João Evangelista**. Consulte os editais da seleção em andamento para saber quais opções estão abertas para cada campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "No campo, o profissional de Agronomia pode **avaliar condições do solo, orientar práticas de fertilidade e planejar o cultivo de plantas**, considerando clima, água e características da produção. Pode acompanhar etapas de semeadura, manejo e colheita, analisar fatores que reduzem a produtividade e propor formas de melhorar o uso de recursos naturais.\n\nEm **irrigação e drenagem**, trabalha com o planejamento do uso da água na produção agrícola. Em **fitossanidade**, participa da identificação e do manejo de problemas que afetam as culturas. Também pode atuar com mecanização, sementes, assistência técnica a produtores, gestão de propriedades rurais, pesquisa e desenvolvimento de tecnologias agrícolas.\n\nAs atividades se desenvolvem em propriedades rurais, cooperativas, empresas de insumos, serviços de assistência técnica, centros de pesquisa e órgãos públicos. O exercício profissional depende do registro e das **atribuições reconhecidas pelo sistema Confea/Crea**, conforme a legislação."
         }
       ],
       "aliases": [
@@ -1788,11 +1808,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Mundo do Trabalho",
-          "conteudo": "Em uma indústria ou organização de serviços, o engenheiro de produção pode **mapear as etapas de um processo, analisar gargalos e planejar o uso de pessoas, máquinas, materiais e tempo**. Isso envolve estudar o fluxo das atividades, a capacidade produtiva e os custos, além de organizar indicadores para avaliar resultados.\n\nNa **gestão da qualidade**, participa do controle e da melhoria de processos, investigando causas de falhas e desperdícios. Em **logística e planejamento**, pode analisar estoques, distribuição, sequenciamento da produção e utilização de recursos. Métodos de **simulação, estatística e pesquisa operacional** ajudam a comparar alternativas e apoiar decisões em situações complexas.\n\nA atuação inclui indústrias, hospitais, transportes, empresas de tecnologia, serviços e órgãos públicos, respeitando as competências de cada função. O exercício das atividades de engenharia observa as **atribuições profissionais e o registro no sistema Confea/Crea** quando exigidos."
-        },
-        {
-          "tipo": "texto",
           "titulo": "Onde o IFMG oferece Engenharia de Produção",
           "conteudo": "O bacharelado é oferecido em **Bambuí**, **Congonhas** e **Governador Valadares**. O turno, os projetos acadêmicos, a matriz curricular e as regras de estágio e TCC são específicos de cada campus."
         },
@@ -1910,6 +1925,16 @@
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Em **Bambuí**, o egresso de Engenharia de Produção **Euclides Brandão Maluf** conquistou, em **2024**, bolsa integral para cursar doutorado em Engenharia na **University of Nebraska–Lincoln**, nos Estados Unidos. Ele recebeu o reconhecimento **Othmer Fellowship**, após obter seis ofertas de admissão com bolsa integral em universidades norte-americanas. Sua trajetória também inclui atividades de pesquisa e extensão e, posteriormente, atuação como docente e orientador no próprio campus.\n\nEm **2025**, estudantes de Engenharia de Produção de **Bambuí** lideraram a **revitalização do espaço do Diretório Acadêmico do curso**, com apoio de professores e contribuições de empresas parceiras em equipamentos. O ambiente renovado passou a apoiar a convivência e a organização estudantil.\n\nEm **Congonhas**, o estudo desenvolvido pelo estudante de Engenharia de Produção **Victor Rasquinho Ho Te Chang** e por uma estudante de Engenharia Mecânica resultou em um **artigo publicado em 2025 na Brazilian Journal of Production Engineering**. A pesquisa aplicou impressão 3D à criação de peças para apoiar o ensino de desenho técnico e modelagem.\n\nEm **Governador Valadares**, os estudantes de Engenharia de Produção **Luisa Nery e Mauri Nunes** integraram as equipes vencedoras **Universidade Atende** e **Easy Vagas** no **Desafio de Inovação de 2019**, com propostas de novos negócios. As equipes receberam premiação e acompanhamento técnico para desenvolver as ideias."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Engenharia de Produção**, é necessário ter concluído o ensino médio ou concluí-lo até a matrícula. O IFMG utiliza processos seletivos próprios de graduação e pode oferecer vagas pelo **Sisu**, conforme os editais publicados.\n\nNa seleção própria, as opções podem incluir aproveitamento de **notas do Enem** e **Histórico Escolar e Redação**. A oferta de cada modalidade e a quantidade de vagas podem ser diferentes em **Bambuí**, **Congonhas** e **Governador Valadares**. Consulte o edital vigente e as informações do campus escolhido para confirmar requisitos, modalidades e documentos de inscrição."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "Em uma indústria ou organização de serviços, o engenheiro de produção pode **mapear as etapas de um processo, analisar gargalos e planejar o uso de pessoas, máquinas, materiais e tempo**. Isso envolve estudar o fluxo das atividades, a capacidade produtiva e os custos, além de organizar indicadores para avaliar resultados.\n\nNa **gestão da qualidade**, participa do controle e da melhoria de processos, investigando causas de falhas e desperdícios. Em **logística e planejamento**, pode analisar estoques, distribuição, sequenciamento da produção e utilização de recursos. Métodos de **simulação, estatística e pesquisa operacional** ajudam a comparar alternativas e apoiar decisões em situações complexas.\n\nA atuação inclui indústrias, hospitais, transportes, empresas de tecnologia, serviços e órgãos públicos, respeitando as competências de cada função. O exercício das atividades de engenharia observa as **atribuições profissionais e o registro no sistema Confea/Crea** quando exigidos."
         }
       ],
       "aliases": [

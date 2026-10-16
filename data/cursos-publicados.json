@@ -34,10 +34,6 @@
               "valor": "Infraestrutura"
             },
             {
-              "rotulo": "Duração",
-              "valor": "3 anos"
-            },
-            {
               "rotulo": "Carga horária",
               "valor": "Informação incompleta"
             },
@@ -426,10 +422,6 @@
             {
               "rotulo": "Modalidade",
               "valor": "EaD, com atividades presenciais conforme o campus"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "1 ano"
             },
             {
               "rotulo": "Carga horária",
@@ -1207,10 +1199,6 @@
               "valor": "Bambuí; Formiga; Ouro Branco; Ribeirão das Neves; Sabará; São João Evangelista"
             },
             {
-              "rotulo": "Duração",
-              "valor": "4 anos"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Noite"
             },
@@ -1239,7 +1227,7 @@
         },
         {
           "tipo": "introducao",
-          "conteudo": "Na escolha do campus, a organização das aulas faz diferença: Formiga tem 20% da carga horária EaD e Sabará, 23,67%. Cada unidade possui seu próprio percurso formativo."
+          "conteudo": "No bacharelado em Administração, você estuda finanças, marketing, gestão de pessoas, logística e estratégia para compreender organizações e tomar decisões sobre recursos, processos e projetos."
         },
         {
           "tipo": "texto",
@@ -1485,10 +1473,6 @@
             {
               "rotulo": "Campus",
               "valor": "Bambuí e São João Evangelista"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Turno",
@@ -1992,10 +1976,6 @@
             {
               "rotulo": "Eixo tecnológico",
               "valor": "Gestão e Negócios"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos"
             },
             {
               "rotulo": "Turno",

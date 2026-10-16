@@ -1414,7 +1414,8 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "agronomia-bacharelado":4,
     "engenharia-de-producao-bacharelado":6,
     "tecnico-em-administracao-integrado":3,
-    "zootecnia-bacharelado":2
+    "zootecnia-bacharelado":2,
+    "medicina-veterinaria-bacharelado":2
   };
   for(const c of json.courses){
     const galleries=c.blocos.filter(b=>b.tipo==="galeria");
@@ -1491,7 +1492,7 @@ test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promess
 });
 
 test("F7.1: Zootecnia Bambuí integra catálogo com conteúdos e duas galerias", () => {
-  assert.equal(json.courses.length,9,"primeiro grupo adicional entregue");
+  assert.ok(json.courses.length>=9,"Zootecnia e oito pilotos preservados");
   const c=json.courses.find(x=>x.id==="zootecnia-bacharelado");
   assert.ok(c,"Zootecnia publicada como roteiro em validação");
   assert.deepEqual(Array.from(c.campi),["Bambuí"]);
@@ -1512,6 +1513,41 @@ test("F7.1: Zootecnia Bambuí integra catálogo com conteúdos e duas galerias",
   assert.ok(!Object.hasOwn(c,"validacao") && !Object.hasOwn(c,"pendencias") && !Object.hasOwn(c,"revisao_coordenacao"));
 });
 
+test("F7.2: Medicina Veterinária Bambuí tem dados, projetos comprovados e dois blocos de galeria", () => {
+  assert.equal(json.courses.length,10);
+  const c=json.courses.find(x=>x.id==="medicina-veterinaria-bacharelado");
+  assert.ok(c);
+  assert.deepEqual(Array.from(c.campi),["Bambuí"]);
+  assert.equal(c.status,"em_validacao");
+  assert.equal(c.publicacao_autorizada,true);
+  const info=c.blocos.find(x=>x.tipo==="dados-basicos");
+  const byLabel=Object.fromEntries(info.campos.map(x=>[x.rotulo,x.valor]));
+  assert.equal(byLabel["E-mail da coordenação"],"Informação incompleta");
+  assert.equal(byLabel["Carga horária total"],"Informação incompleta");
+  const location=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
+  assert.deepEqual(Array.from(location.linhas[0]),["Bambuí","Manhã e tarde","Presencial","Informação incompleta"]);
+  const ext=c.blocos.findIndex(x=>x.titulo==="Pesquisa, extensão e oportunidades");
+  assert.match(c.blocos[ext].conteudo,/Grandes Amigos/);
+  assert.match(c.blocos[ext].conteudo,/27 animais/);
+  assert.equal(c.blocos[ext+1].tipo,"galeria");
+  const achievements=c.blocos.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
+  assert.match(c.blocos[achievements].conteudo,/2025/);
+  assert.match(c.blocos[achievements].conteudo,/2026/);
+  assert.match(c.blocos[achievements].conteudo,/detomidina/);
+  assert.equal(c.blocos[achievements+1].tipo,"galeria");
+  assert.equal(c.blocos.filter(x=>x.tipo==="galeria").length,2);
+  const continuation=c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG");
+  assert.deepEqual(c.blocos.slice(continuation+1,continuation+3).map(x=>x.titulo||x.tipo),["Pós-graduação","tabela"]);
+  const pos=c.blocos[continuation+2];
+  assert.ok(pos.linhas.some(x=>x[0]==="Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental"));
+  assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+  assert.doesNotMatch(c.blocos.at(-2).conteudo,/2026|2027|inscrições abertas/i);
+  assert.match(c.blocos.at(-1).conteudo,/CRMV/);
+  const raw=JSON.stringify(c);
+  assert.ok(!Object.hasOwn(c,"validacao")&&!Object.hasOwn(c,"pendencias")&&!Object.hasOwn(c,"instrucao"));
+  assert.doesNotMatch(raw,/bambui\.ifmg\.edu\.br|thais\.cruz/,"dados de apuração não aparecem no JSON público");
+});
+
 test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {
   const relevantTitles=new Set(["Projetos e experiências acadêmicas","Projetos e experiências","Práticas e experiências","Pesquisa, extensão e oportunidades","Pesquisa, extensão e aprendizagem prática","Experiências e conquistas dos estudantes","Experiências de aprendizagem em Direito"]);
   const oldDate=/\b20(?:0\d|1\d|2[0-4])\b/;
@@ -1524,5 +1560,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),30);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),32);
 });

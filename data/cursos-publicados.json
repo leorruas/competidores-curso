@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-10-16",
   "courses": [
     {
       "id": "tecnico-em-edificacoes-integrado",
@@ -203,36 +203,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Continuidade dos estudos",
-          "conteudo": "Depois do técnico integrado, o estudante pode concorrer a cursos superiores em áreas relacionadas à construção civil, engenharia, arquitetura, tecnologia e gestão, observando os critérios de ingresso de cada graduação."
-        },
-        {
-          "tipo": "tabela",
-          "colunas": [
-            "Área",
-            "Exemplos de graduação",
-            "Relação com Edificações"
-          ],
-          "linhas": [
-            [
-              "Construção civil",
-              "Engenharia Civil",
-              "Projetos, estruturas e obras"
-            ],
-            [
-              "Projeto e ambiente construído",
-              "Arquitetura e Urbanismo",
-              "Espaços, edificações e planejamento"
-            ],
-            [
-              "Gestão e tecnologia",
-              "Cursos superiores relacionados a infraestrutura e tecnologia",
-              "Planejamento, materiais, processos e inovação"
-            ]
-          ]
-        },
-        {
-          "tipo": "texto",
           "titulo": "Perguntas frequentes",
           "conteudo": ""
         },
@@ -310,7 +280,82 @@
         {
           "tipo": "texto",
           "titulo": "Continue seus estudos no IFMG",
-          "conteudo": "Ao concluir o curso técnico, você pode continuar estudando em cursos de graduação, conforme os requisitos e processos seletivos. O IFMG oferece diferentes formações que permitem ampliar os estudos, inclusive em outros campi."
+          "conteudo": "Ao concluir o **Técnico em Edificações Integrado ao Ensino Médio**, você também conclui o ensino médio e pode participar dos processos seletivos de **graduação**. Depois de concluir uma graduação, poderá se candidatar à **pós-graduação**, desde que atenda aos requisitos específicos de cada curso e edital. O diploma técnico, sozinho, não permite ingresso direto em especializações ou mestrados."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Edificações"
+          ],
+          "linhas": [
+            [
+              "Bacharelado em Arquitetura e Urbanismo",
+              "Santa Luzia",
+              "Projeto arquitetônico, planejamento dos espaços, conforto e patrimônio construído"
+            ],
+            [
+              "Bacharelado em Engenharia Civil",
+              "Governador Valadares",
+              "Projetos, materiais, estruturas e planejamento de obras"
+            ],
+            [
+              "Bacharelado em Engenharia Civil",
+              "Piumhi",
+              "Construção civil, obras, estruturas e técnicas construtivas"
+            ],
+            [
+              "Bacharelado em Engenharia Civil",
+              "Santa Luzia",
+              "Infraestrutura, planejamento e execução de edificações"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Edificações"
+          ],
+          "linhas": [
+            [
+              "Especialização em BIM: Projetos Aplicados às Edificações",
+              "Piumhi (EaD)",
+              "Modelagem digital, compatibilização e planejamento de projetos de construção"
+            ],
+            [
+              "Especialização em Engenharia de Segurança do Trabalho",
+              "Governador Valadares",
+              "Prevenção de riscos e segurança em obras; exige graduação em Engenharia, Arquitetura ou Agronomia"
+            ],
+            [
+              "Especialização em Gestão e Conservação do Patrimônio Cultural",
+              "Ouro Preto",
+              "Conservação e restauro de edifícios e patrimônio construído; requer graduação compatível com a linha de pesquisa"
+            ],
+            [
+              "Especialização em Proteção e Defesa Civil",
+              "Santa Luzia (EaD)",
+              "Prevenção e gestão de riscos ligados a infraestrutura, desastres e vulnerabilidade urbana"
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Impactos ambientais, sustentabilidade e tecnologias aplicáveis ao ambiente construído"
+            ]
+          ]
         },
         {
           "tipo": "texto",

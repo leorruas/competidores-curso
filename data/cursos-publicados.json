@@ -871,7 +871,7 @@
         },
         {
           "tipo": "introducao",
-          "conteudo": "A graduação combina conhecimentos de engenharia com projetos e atividades práticas. A organização curricular e as experiências variam entre os campi Arcos e Betim."
+          "conteudo": "Em Arcos, os Trabalhos Acadêmicos Integradores (TAI) relacionam disciplinas em projetos e protótipos. Em Betim, a matriz inclui 360 horas de extensão, distribuídas entre disciplinas e projetos com a comunidade."
         },
         {
           "tipo": "texto",
@@ -919,7 +919,7 @@
         {
           "tipo": "texto",
           "titulo": "Projetos e experiências acadêmicas",
-          "conteudo": "Em **Arcos**, a aprendizagem é organizada por **Trabalhos Acadêmicos Integradores (TAI)**: estudantes relacionam conteúdos de diferentes disciplinas para desenvolver soluções, produtos ou protótipos e apresentar seus resultados. A formação também integra ações de extensão.\n\nEm **Betim**, a graduação reúne atividades em laboratórios, projetos de engenharia e componentes de extensão. Cada campus possui seus próprios projetos e oportunidades de pesquisa e monitoria."
+          "conteudo": "Em **Arcos**, a aprendizagem é organizada por **Trabalhos Acadêmicos Integradores (TAI)**: estudantes relacionam conteúdos de diferentes disciplinas para desenvolver soluções, produtos ou protótipos e apresentar seus resultados. A formação também integra ações de extensão.\n\nEm **Betim**, a graduação combina aulas de laboratório e extensão curricular. Em 2026, estudantes da disciplina de Injeção de Termoplásticos visitaram a Pollyrubber, em Contagem, onde acompanharam moldagem, seleção de materiais, controle de qualidade e fabricação de componentes."
         },
         {
           "tipo": "introducao",
@@ -976,19 +976,19 @@
             },
             {
               "pergunta": "Como são as atividades acadêmicas em Betim?",
-              "resposta": "Em Betim, a formação combina fundamentos de engenharia, aulas em laboratórios, projetos de desenvolvimento mecânico e atividades de extensão. O campus conta com estruturas voltadas à aprendizagem de processos e sistemas mecânicos."
+              "resposta": "Em **Betim**, você tem aulas práticas em laboratórios e atividades de extensão integradas à graduação. Em maio de 2026, estudantes de Injeção de Termoplásticos visitaram a Pollyrubber, em Contagem, para conhecer processos de moldagem, controle de qualidade e seleção de materiais."
             },
             {
               "pergunta": "O estágio e o TCC são obrigatórios?",
-              "resposta": "Sim. Em **Arcos**, o estágio supervisionado exige **350 horas** e pode ser iniciado após a conclusão de 60% da carga horária do curso. O **TCC é obrigatório, com 30 horas**, e pode assumir a forma de relatório técnico ou monografia. Em **Betim**, a formação também inclui estágio obrigatório e TCC, com organização própria do campus."
+              "resposta": "Sim, com regras diferentes. Em **Arcos**, o estágio obrigatório exige **350 horas**, após a conclusão de 60% da carga horária, e o TCC tem **30 horas**, como relatório técnico ou monografia. Em **Betim**, o estágio obrigatório exige **360 horas**, após pelo menos **1.800 horas de disciplinas**. O Projeto Final de Curso (PFC) é obrigatório, com **duas disciplinas de 30 horas cada**. Você desenvolve um projeto de pesquisa e apresenta uma monografia a uma banca."
             },
             {
               "pergunta": "Posso participar de projetos de pesquisa, extensão ou monitoria?",
-              "resposta": "Sim. Em **Arcos**, estudantes podem concorrer a oportunidades de monitoria e de pesquisa aplicada; entre as iniciativas desenvolvidas está o projeto de kits didáticos e produtos mecânicos. Em **Betim**, a matriz curricular integra ações de extensão. A participação depende das oportunidades e seleções de cada campus."
+              "resposta": "Em **Arcos**, estudantes podem concorrer a seleções de monitoria e pesquisa aplicada, como as relacionadas à produção de kits didáticos e produtos mecânicos. Em **Betim**, a graduação inclui **360 horas de extensão**: 225 horas em disciplinas e 135 horas em projetos com a comunidade. Bolsas e vagas de pesquisa ou monitoria dependem das seleções e dos requisitos de cada campus."
             },
             {
               "pergunta": "Como ingressar em Engenharia Mecânica?",
-              "resposta": "Você pode participar dos processos seletivos do IFMG após concluir o ensino médio. Em **Arcos**, as formas de seleção incluem Enem, Histórico Escolar e Redação e Sisu; em **Betim**, incluem Enem e Sisu. Verifique no portal de ingresso os editais e a distribuição das vagas de 2027."
+              "resposta": "Para ingresso em 2027, você precisa concluir o ensino médio e participar da seleção correspondente. Em **Arcos**, foram oferecidas **20 vagas pela nota do Enem** e **15 por Histórico Escolar e Redação**. Em **Betim**, foram oferecidas **18 vagas pela nota do Enem**. O IFMG também utiliza o **Sisu** no ingresso à graduação, com vagas e calendário definidos em seleção própria."
             },
             {
               "pergunta": "Há atividades a distância?",
@@ -1018,7 +1018,7 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Em **Arcos**, os estudantes têm oportunidades de participar de projetos de pesquisa aplicada e de monitoria por meio de seleções específicas. Entre as iniciativas desenvolvidas está o projeto **kits didáticos e produtos mecânicos**, que relaciona conhecimento de engenharia à criação de recursos de aprendizagem.\n\nEm **Betim**, a graduação inclui atividades extensionistas e projetos acadêmicos relacionados à formação em Engenharia Mecânica."
+          "conteudo": "Em **Arcos**, os estudantes têm oportunidades de participar de projetos de pesquisa aplicada e de monitoria por meio de seleções específicas. Entre as iniciativas desenvolvidas está o projeto **kits didáticos e produtos mecânicos**, que relaciona conhecimento de engenharia à criação de recursos de aprendizagem.\n\nEm **Betim**, você participa de atividades de extensão ao longo da graduação: são **360 horas**, das quais 225 integram disciplinas e 135 são desenvolvidas em projetos com a comunidade. O curso também exige **180 horas de atividades complementares**. Em maio de 2026, estudantes participaram de uma visita à Pollyrubber, em Contagem, e conheceram processos industriais de moldagem e controle de qualidade."
         },
         {
           "tipo": "texto",

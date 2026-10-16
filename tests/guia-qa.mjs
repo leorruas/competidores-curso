@@ -191,6 +191,26 @@ test("Engenharia Mecânica agrupa Arcos e Betim e mantém exigências acadêmica
   assert.doesNotMatch(internship.resposta,/Betim[^.]*350 horas/);
 });
 
+test("Betim: estágio, PFC, extensão e ingresso 2027 não herdam números de Arcos", () => {
+  const c=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
+  const faq=c.blocos.find(b=>b.tipo==="faq").itens;
+  const intern=faq.find(x=>x.pergunta.includes("estágio e o TCC")).resposta;
+  assert.match(intern,/Arcos[\s\S]*350 horas/);
+  assert.match(intern,/Betim[\s\S]*360 horas/);
+  assert.match(intern,/Betim[\s\S]*1\.800 horas de disciplinas/);
+  assert.match(intern,/PFC[\s\S]*duas disciplinas de 30 horas/);
+  assert.doesNotMatch(intern,/Betim[^.]*350 horas/);
+  const ingress=faq.find(x=>x.pergunta.includes("ingressar")).resposta;
+  assert.match(ingress,/Arcos[\s\S]*20 vagas[\s\S]*15 por Histórico Escolar e Redação/);
+  assert.match(ingress,/Betim[\s\S]*18 vagas[\s\S]*Enem/);
+  assert.match(ingress,/Sisu[\s\S]*seleção própria/);
+  assert.match(c.blocos.find(b=>b.titulo==="Projetos e experiências acadêmicas").conteudo,/Betim[\s\S]*Pollyrubber[\s\S]*Contagem/);
+  assert.match(c.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo,/225[\s\S]*135[\s\S]*180 horas/);
+  const intro=c.blocos.find(b=>b.tipo==="introducao").conteudo;
+  assert.ok(intro.length<=280);
+  assert.match(intro,/Betim[\s\S]*360 horas de extensão/);
+});
+
 test("Direito explica estágio e TCC com exigências concretas", () => {
   const c=json.courses.find(x=>x.id==="direito-bacharelado-arcos");
   const faq=c.blocos.find(x=>x.tipo==="faq");

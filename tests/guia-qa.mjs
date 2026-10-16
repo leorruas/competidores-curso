@@ -1436,14 +1436,14 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
 test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promessa de vaga", () => {
   const production=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
   const maker=sectionText(production,"Projetos e experiências acadêmicas");
-  assert.match(maker,/Em \\*\\*2025\\*\\*.*Campus Congonhas/);
+  assert.ok(maker.includes("Em **2025**, o **Campus Congonhas**"));
   assert.match(maker,/seleção de bolsista de iniciação científica e tecnológica/);
   assert.match(maker,/Engenharia de Produção e Engenharia Mecânica/);
   assert.match(maker,/resultado divulgado em agosto/);
   assert.doesNotMatch(maker,/estudante de Engenharia de Produção (?:foi )?selecionad[oa]|inscrições abertas|bolsa garantida/);
   const mechanic=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
   const arcos=sectionText(mechanic,"Pesquisa, extensão e oportunidades");
-  assert.match(arcos,/Em \\*\\*2026\\*\\*.*Campus Arcos/);
+  assert.ok(arcos.includes("Em **2026**, o **Campus Arcos**"));
   assert.match(arcos,/kits didáticos e produtos mecânicos/);
   assert.match(arcos,/dois estudantes de Engenharia Mecânica classificados/);
   assert.doesNotMatch(arcos,/projetos concluídos|bolsa garantida|protótipos entregues/);

@@ -421,6 +421,59 @@ test("F2.12: campos estruturados não exibem vagas de seleções anteriores como
   assert.deepEqual(logistics.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 
+test("F2.13: introdução inicial apresenta o curso, nunca uma unidade privilegiada", () => {
+  for(const c of json.courses){
+    const first=c.blocos.find(b=>b.tipo==="introducao");
+    assert.ok(first&&first.conteudo,c.id+": destaque inicial presente");
+    assert.ok(first.conteudo.length<=280,c.id+": destaque dentro do limite de caracteres");
+    if(c.campi.length>1) {
+      for(const campus of c.campi)assert.ok(!first.conteudo.includes(campus),c.id+": sem menção prematura de "+campus);
+      assert.doesNotMatch(first.conteudo,/\b(?:\d+\s*%|\d+\s*horas? de extensão|encontros? presenciais?|\d+\s*anos?)\b/i,c.id+": sem detalhes exclusivos na abertura");
+    }else{
+      assert.match(first.conteudo,/Arcos/,c.id+": Direito tem apenas um campus");
+    }
+    assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
+  }
+  const mec=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
+  assert.match(mec.blocos.find(b=>b.tipo==="introducao").conteudo,/funcionamento e o desenvolvimento de máquinas/);
+  const mecCampi=mec.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi");
+  assert.match(mecCampi.itens.find(x=>x.pergunta==="Campus Arcos").resposta,/Trabalhos Acadêmicos Integradores/);
+  assert.match(mecCampi.itens.find(x=>x.pergunta==="Campus Betim").resposta,/360 horas de extensão/);
+  const adm=json.courses.find(c=>c.id==="administracao-bacharelado");
+  assert.match(adm.blocos.find(b=>b.tipo==="introducao").conteudo,/finanças, marketing, gestão de pessoas/);
+  const campusInfo=adm.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens;
+  assert.match(campusInfo.find(x=>x.pergunta==="Campus Formiga").resposta,/20%/);
+  assert.match(campusInfo.find(x=>x.pergunta==="Campus Sabará").resposta,/23,67%/);
+  assert.match(campusInfo.find(x=>x.pergunta==="Campus Ouro Branco").resposta,/8%/);
+});
+
+test("F2.13: dados de duração específicos não são projetados a outros campi", () => {
+  const uncertain=[
+    "tecnico-em-edificacoes-integrado","tecnico-em-logistica-subsequente",
+    "tecnico-em-administracao-integrado","administracao-bacharelado","agronomia-bacharelado"
+  ];
+  for(const id of uncertain){
+    const c=json.courses.find(c=>c.id===id);
+    const fields=c.blocos.find(b=>b.tipo==="dados-basicos").campos;
+    assert.ok(!fields.some(f=>f.rotulo==="Duração"),id+": prazo ainda não validado como universal");
+    assert.ok(c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens.length===c.campi.length,id);
+  }
+  const get=(id,campus)=>json.courses.find(c=>c.id===id)
+    .blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi")
+    .itens.find(x=>x.pergunta==="Campus "+campus).resposta;
+  assert.match(get("tecnico-em-logistica-subsequente","Ribeirão das Neves"),/duração prevista de um ano/);
+  assert.match(get("tecnico-em-logistica-subsequente","Governador Valadares"),/800 horas distribuídas em dois módulos/);
+  assert.doesNotMatch(get("tecnico-em-logistica-subsequente","Governador Valadares"),/\b(?:um ano|1 ano)\b/);
+  assert.match(get("tecnico-em-edificacoes-integrado","Ouro Preto"),/duração de três anos/);
+  assert.match(get("tecnico-em-edificacoes-integrado","Santa Luzia"),/três anos/);
+  assert.match(get("agronomia-bacharelado","Bambuí"),/nove semestres/);
+  assert.doesNotMatch(get("agronomia-bacharelado","São João Evangelista"),/nove semestres/);
+  const mech=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
+  const prod=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
+  assert.equal(mech.blocos.find(b=>b.tipo==="dados-basicos").campos.find(f=>f.rotulo==="Duração").valor,"5 anos");
+  assert.equal(prod.blocos.find(b=>b.tipo==="dados-basicos").campos.find(f=>f.rotulo==="Duração").valor,"5 anos");
+});
+
 test("F1B.10: os oito cursos encerram com Forma de ingresso e Mundo do Trabalho", () => {
   const h=testContext();
   const graduationIds=[
@@ -738,7 +791,8 @@ test("Betim: estágio e PFC específicos; ingresso sem números da edição ante
   assert.match(c.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo,/225[\s\S]*135[\s\S]*180 horas/);
   const intro=c.blocos.find(b=>b.tipo==="introducao").conteudo;
   assert.ok(intro.length<=280);
-  assert.match(intro,/Betim[\s\S]*360 horas de extensão/);
+  assert.match(intro,/materiais, fabricação, energia e projetos/);
+  assert.doesNotMatch(intro,/\b(?:Arcos|Betim)\b|\b360 horas\b/);
 });
 
 test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar premiações", () => {
@@ -769,7 +823,7 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
     const c=json.courses.find(x=>x.id===id);
     const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens;
     assert.ok(faq.length>=3,id);
-    assert.ok(c.blocos.find(x=>x.tipo==="dados-basicos").campos.some(x=>x.rotulo==="Duração"));
+    assert.equal(c.blocos.find(x=>x.tipo==="dados-basicos").campos.some(x=>x.rotulo==="Duração"),id==="engenharia-de-producao-bacharelado",id+": só exibir duração comprovada para o grupo");
     for(const q of questions)assert.ok(!faq.some(x=>x.pergunta===q),id+": "+q);
   }
   const c=json.courses.find(x=>x.id==="administracao-bacharelado");

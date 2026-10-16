@@ -939,20 +939,6 @@
           ]
         },
         {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Especialização em Gestão Pública e Desenvolvimento Regional — Ribeirão das Neves",
-              "url": "https://www.ifmg.edu.br/ribeiraodasneves/cursos-1/pos-graduacao/pos-gestao"
-            },
-            {
-              "rotulo": "Especialização em Gestão de Negócios — Ouro Branco",
-              "url": "https://www.ifmg.edu.br/ourobranco/nossos-cursos/especializacao-em-gestao-de-negocios-1/especializacao-em-gestao-de-negocios"
-            }
-          ]
-        },
-        {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
@@ -1213,24 +1199,6 @@
               "Bambuí",
               "Tecnologias sustentáveis, controle de impactos ambientais e aplicação de soluções técnicas."
             ]
-          ]
-        },
-        {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Especialização em Engenharia de Segurança do Trabalho — Governador Valadares",
-              "url": "https://www.ifmg.edu.br/governadorvaladares/cursos/pos-graduacao/pos-graduacao-em-engenharia-de-seguranca-do-trabalho"
-            },
-            {
-              "rotulo": "Especialização em Gestão de Negócios — Ouro Branco",
-              "url": "https://www.ifmg.edu.br/ourobranco/nossos-cursos/especializacao-em-gestao-de-negocios-1/especializacao-em-gestao-de-negocios"
-            },
-            {
-              "rotulo": "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental — Bambuí",
-              "url": "https://www.bambui.ifmg.edu.br/portal/mestrado-profissional-em-sustentabilidade-e-tecnologia-ambiental"
-            }
           ]
         },
         {
@@ -1549,28 +1517,6 @@
           ]
         },
         {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Especialização em Gestão — Bambuí e São João Evangelista",
-              "url": "https://bambui.ifmg.edu.br/portal/especializacao-gestao1"
-            },
-            {
-              "rotulo": "Especialização em Gestão de Negócios — Ouro Branco",
-              "url": "https://www.ifmg.edu.br/ourobranco/nossos-cursos/especializacao-em-gestao-de-negocios-1/especializacao-em-gestao-de-negocios"
-            },
-            {
-              "rotulo": "Especialização em Gestão Pública e Desenvolvimento Regional — Ribeirão das Neves",
-              "url": "https://www.ifmg.edu.br/ribeiraodasneves/cursos-1/pos-graduacao/pos-gestao"
-            },
-            {
-              "rotulo": "Mestrado Profissional em Administração — Formiga",
-              "url": "https://formiga.ifmg.edu.br/mestrado"
-            }
-          ]
-        },
-        {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
@@ -1837,24 +1783,6 @@
               "Bambuí",
               "Tecnologias ambientais, produção sustentável e gestão dos impactos sobre recursos naturais."
             ]
-          ]
-        },
-        {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Especialização em Meio Ambiente — São João Evangelista",
-              "url": "https://www.ifmg.edu.br/portal/cursos/pos-graduacao/especializacao-em-meio-ambiente"
-            },
-            {
-              "rotulo": "Especialização em Engenharia de Segurança do Trabalho — Governador Valadares",
-              "url": "https://www.ifmg.edu.br/governadorvaladares/cursos/pos-graduacao/pos-graduacao-em-engenharia-de-seguranca-do-trabalho"
-            },
-            {
-              "rotulo": "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental — Bambuí",
-              "url": "https://www.bambui.ifmg.edu.br/portal/mestrado-profissional-em-sustentabilidade-e-tecnologia-ambiental"
-            }
           ]
         },
         {
@@ -2144,28 +2072,6 @@
               "Bambuí",
               "Sustentabilidade dos processos, gestão ambiental e soluções técnicas para a produção."
             ]
-          ]
-        },
-        {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Especialização em Engenharia de Segurança do Trabalho — Governador Valadares",
-              "url": "https://www.ifmg.edu.br/governadorvaladares/cursos/pos-graduacao/pos-graduacao-em-engenharia-de-seguranca-do-trabalho"
-            },
-            {
-              "rotulo": "Especialização em Gestão de Negócios — Ouro Branco",
-              "url": "https://www.ifmg.edu.br/ourobranco/nossos-cursos/especializacao-em-gestao-de-negocios-1/especializacao-em-gestao-de-negocios"
-            },
-            {
-              "rotulo": "Mestrado Profissional em Administração — Formiga",
-              "url": "https://formiga.ifmg.edu.br/mestrado"
-            },
-            {
-              "rotulo": "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental — Bambuí",
-              "url": "https://www.bambui.ifmg.edu.br/portal/mestrado-profissional-em-sustentabilidade-e-tecnologia-ambiental"
-            }
           ]
         },
         {

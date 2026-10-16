@@ -138,26 +138,75 @@ test("catálogo mantém ofertas reais e filtros multicampi", () => {
   assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
 });
 
-test("F4.4: Técnico Administração diferencia diploma técnico, graduação e pós com cursos reais", () => {
+test("F4.4: Logística e Administração técnico têm duas tabelas de continuidade copiáveis", () => {
+  const specs=[
+    {id:"tecnico-em-logistica-subsequente",cols:["Curso","Campus","Relação com Logística"],grad:3,pos:2},
+    {id:"tecnico-em-administracao-integrado",cols:["Curso","Campus","Relação com Administração"],grad:3,pos:4}
+  ];
+  const h=testContext();
+  for(const spec of specs) {
+    const c=json.courses.find(x=>x.id===spec.id);
+    assert.ok(c,spec.id);
+    const i=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+    assert.ok(i>=0,spec.id);
+    assert.deepEqual(c.blocos.slice(i,i+5).map(b=>[b.tipo,b.titulo || ""]),[
+      ["texto","Continue seus estudos no IFMG"],["texto","Graduação"],["tabela",""],
+      ["texto","Pós-graduação"],["tabela",""]
+    ],spec.id);
+    const intro=c.blocos[i].conteudo;
+    assert.match(intro,/graduação/);
+    assert.match(intro,/pós-graduação/);
+    assert.match(intro,/não (permite|dá acesso direto)/);
+    assert.doesNotMatch(intro,/2025|2026|2027|vagas abertas|inscrições abertas/);
+    const grad=c.blocos[i+2],pos=c.blocos[i+4];
+    assert.deepEqual(grad.colunas,spec.cols);
+    assert.deepEqual(pos.colunas,spec.cols);
+    assert.equal(grad.linhas.length,spec.grad);
+    assert.equal(pos.linhas.length,spec.pos);
+    for (const b of [grad,pos]) {
+      assert.ok(b.linhas.every(row=>row.length===3&&row.every(Boolean)),spec.id);
+      assert.match(h.editorBlock(b,i+2),/Copiar tabela/);
+      assert.match(h.blockCopy(b),/Curso\\tCampus\\tRelação com/);
+    }
+    assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],spec.id);
+    assert.doesNotMatch(c.blocos.at(-2).conteudo,/2026|2027|48 questões|novembro|setembro|Quer ser lembrado/);
+    assert.ok(h.isApprovedCourse(c),spec.id);
+  }
+});
+
+test("F4.4: Logística usa cursos ativos e exclui programas sem nova entrada confirmada", () => {
+  const c=json.courses.find(x=>x.id==="tecnico-em-logistica-subsequente");
+  const i=c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG");
+  const grad=c.blocos[i+2].linhas,pos=c.blocos[i+4].linhas;
+  assert.ok(grad.some(x=>x[0]==="Curso Superior de Tecnologia em Logística"&&x[1]==="Sabará"));
+  assert.ok(grad.some(x=>x[0]==="Bacharelado em Administração"&&x[1]==="Sabará"));
+  assert.ok(grad.some(x=>x[0]==="Bacharelado em Engenharia de Produção"&&x[1]==="Congonhas"));
+  assert.ok(pos.some(x=>x[0]==="Especialização em Gestão"&&x[1].includes("Bambuí e São João Evangelista")));
+  assert.ok(pos.some(x=>x[0]==="Especialização em Gestão de Negócios"&&x[1]==="Ouro Branco"));
+  assert.ok(!c.blocos.some(x=>x.titulo==="Ingresso e vagas por campus"));
+  assert.doesNotMatch(JSON.stringify([...grad,...pos]),/Gestão de Projetos e Operações|Tecnologia em Processos Gerenciais/);
+});
+
+test("F4.4: Administração técnico identifica pós-graduações e alternativas de graduação", () => {
   const c=json.courses.find(x=>x.id==="tecnico-em-administracao-integrado");
-  const block=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Continue seus estudos no IFMG");
-  assert.ok(block);
-  const text=block.conteudo;
+  const i=c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG");
+  const grad=c.blocos[i+2].linhas,pos=c.blocos[i+4].linhas;
+  const admin=grad.find(x=>x[0]==="Bacharelado em Administração");
+  assert.ok(admin);
+  for(const campus of ["Bambuí","Formiga","Ouro Branco","Ribeirão das Neves","Sabará","São João Evangelista"])
+    assert.ok(admin[1].includes(campus),campus);
+  assert.ok(grad.some(x=>x[0]==="Curso Superior de Tecnologia em Logística"&&x[1]==="Sabará"));
+  assert.ok(grad.some(x=>x[0]==="Bacharelado em Engenharia de Produção"&&x[1]==="Congonhas"));
   const courses=[
+    ["Especialização em Gestão","Bambuí e São João Evangelista"],
     ["Especialização em Gestão de Negócios","Ouro Branco"],
     ["Especialização em Gestão Pública e Desenvolvimento Regional","Ribeirão das Neves"],
     ["Mestrado Profissional em Administração","Formiga"]
   ];
-  assert.ok(text.indexOf("Técnico em Administração")<text.indexOf("Bacharelado em Administração"));
-  assert.ok(text.indexOf("Bacharelado em Administração")<text.indexOf("graduação concluída"));
-  for(const [name,campus] of courses) {
-    assert.ok(text.includes(name),"Falta pós-graduação: "+name);
-    assert.ok(text.includes(campus),"Falta campus: "+campus);
-  }
-  assert.match(text,/graduação concluída/);
-  assert.match(text,/não dá acesso direto à pós-graduação/);
-  assert.doesNotMatch(text,/vagas abertas|inscrições abertas|bolsa garantida|pós-graduação automaticamente/i);
-  assert.doesNotMatch(text,/2025|2026|2027/);
+  for(const [course,campus] of courses)
+    assert.ok(pos.some(x=>x[0]===course&&x[1].includes(campus)),course);
+  assert.ok(pos.find(x=>x[0]==="Mestrado Profissional em Administração")[2].includes("finanças"));
+  assert.doesNotMatch(JSON.stringify([...grad,...pos]),/Tecnologia em Processos Gerenciais/);
 });
 
 test("F4.5: Edificações tem continuidade tabular verificável e copiável", () => {

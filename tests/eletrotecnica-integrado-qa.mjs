@@ -1,0 +1,37 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
+const data=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
+const c=data.courses.find(x=>x.id==="tecnico-em-eletrotecnica-integrado");
+const b=c?.blocos||[];
+test("F7.6: Eletrotécnica Integrado distingue três campi e não reaproveita carga do subsequente",()=>{
+ assert.ok(c);
+ assert.equal(c.tipo,"Integrado");
+ assert.deepEqual(c.campi,["Conselheiro Lafaiete","Formiga","Ipatinga"]);
+ assert.equal(c.modalidade,"Presencial");
+ const table=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");
+ assert.deepEqual(table.linhas.map(x=>x[0]),c.campi);
+ assert.deepEqual(table.linhas.map(x=>x[3]),["Informação incompleta","eletrotecnica.formiga@ifmg.edu.br","eletrotecnica.ipatinga@ifmg.edu.br"]);
+ assert.ok(!JSON.stringify(c).includes("eduardo.pereira@ifmg.edu.br"));
+ const local=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
+ assert.equal(local.itens.length,3);
+ assert.match(local.itens[0].resposta,/3\.238 horas/);
+ assert.match(local.itens[2].resposta,/3\.205 horas/);
+ assert.ok(!/1\.400 horas|20% EaD|1 ano e meio/.test(JSON.stringify(c)));
+ assert.equal(b.find(x=>x.titulo==="Continue seus estudos no IFMG").conteudo,"");
+ assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+});
+test("F7.6: oito experiências recentes possuem galeria individual, sem atribuir prêmios a cursos errados",()=>{
+ const ix=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
+ const gs=b.map((x,i)=>x.tipo==="galeria"?{...x,index:i}:null).filter(Boolean);
+ assert.equal(gs.length,9);
+ assert.equal(new Set(gs.map(x=>x.referencia)).size,gs.length);
+ assert.ok(gs.every(x=>Array.isArray(x.itens)&&x.itens.length===0&&b[x.index-1].tipo==="texto"));
+ const experiences=b.slice(ix,b.findIndex((x,i)=>i>ix&&x.titulo==="Perguntas frequentes")).filter(x=>x.tipo==="texto"&&x.conteudo).map(x=>x.conteudo);
+ assert.equal(experiences.length,8);
+ assert.ok(experiences.every((x,i)=>b[b.findIndex(y=>y.conteudo===x)+1].tipo==="galeria"));
+ assert.ok(experiences.some(x=>/vice-campeonato nacional/.test(x)&&/Administração e Informática/.test(x)));
+ assert.ok(experiences.some(x=>/50 estudantes dos dois cursos/.test(x)));
+ assert.ok(experiences.some(x=>/Daniel Victor/.test(x)));
+ assert.ok(experiences.some(x=>/27 de fevereiro de 2026/.test(x)));
+});

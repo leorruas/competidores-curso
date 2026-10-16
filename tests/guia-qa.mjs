@@ -497,6 +497,17 @@ test("Link único: selecionar estilo; copiar título, descrição e URL", () => 
   assert.doesNotMatch(rendered,/Exemplo de como o Link único aparece|block-link-example/);
 });
 
+test("F3.1: reconhecimento de egresso de Produção pertence apenas a Bambuí", () => {
+  const c=json.courses.find(x=>x.id==="engenharia-de-producao-bacharelado");
+  const b=c.blocos.find(x=>x.titulo==="Experiências e conquistas dos estudantes");
+  assert.match(b.conteudo,/Em \*\*Bambuí\*\*/);
+  assert.match(b.conteudo,/Euclides Brandão Maluf/);
+  assert.match(b.conteudo,/2024/);
+  assert.match(b.conteudo,/University of Nebraska/);
+  assert.match(b.conteudo,/Othmer Fellowship/);
+  assert.doesNotMatch(b.conteudo,/Governador Valadares|Congonhas|2027|bolsa garantida/);
+});
+
 test("F2.2: Bambuí descreve estágio e TCC sem inventar cargas curriculares de 2027", () => {
   const items=[
     {id:"agronomia-bacharelado",q:"Como funcionam estágio e TCC em Agronomia em Bambuí?",tokens:["estágio supervisionado obrigatório","TCC também integra a formação","orientação docente"],proibidos:/240 horas|320 horas|450 horas|160 horas/},

@@ -177,7 +177,8 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
     ["engenharia-de-producao-bacharelado",["Portaria SERES/MEC nº 16","2 de fevereiro de 2026","Diretório Acadêmico","Brazilian Journal of Production Engineering"]],
     ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]
   ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
-  for(const id of ["tecnico-em-edificacoes-integrado","tecnico-em-logistica-subsequente","tecnico-em-administracao-integrado","direito-bacharelado-arcos"]){
+  assert.match(get("tecnico-em-edificacoes-integrado"),/Usina Hidrelétrica de Baguari/);
+  for(const id of ["tecnico-em-logistica-subsequente","tecnico-em-administracao-integrado","direito-bacharelado-arcos"]){
     assert.equal(get(id),"Informação incompleta",id+": uma única pendência, sem inventar conquista");
   }
 });
@@ -1403,7 +1404,7 @@ test("F2.5/F3.1: Agronomia informa contato SJE e empresa júnior Safra em Bambu�
 test("F3.7: cada experiência estruturada possui galeria própria e aviso no editor", () => {
   const h=testContext();
   const expected={
-    "tecnico-em-edificacoes-integrado":1,
+    "tecnico-em-edificacoes-integrado":2,
     "tecnico-em-logistica-subsequente":1,
     "direito-bacharelado-arcos":1,
     "engenharia-mecanica-bacharelado":6,
@@ -1469,5 +1470,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),23);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),24);
 });

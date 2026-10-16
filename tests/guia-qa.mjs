@@ -290,7 +290,7 @@ test("F1B.9: informações locais verificadas continuam atribuídas ao campus ce
   const get=(c,campus)=>c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Campus "+campus)?.conteudo||"";
   assert.match(get(ed,"Congonhas"),/solos, materiais de construção/);
   assert.match(get(ed,"Governador Valadares"),/visitas técnicas/);
-  assert.match(get(ed,"Ouro Preto"),/3\\.460 horas/);
+  assert.match(get(ed,"Ouro Preto"),/3\.460 horas/);
   assert.match(get(ed,"Ouro Preto"),/0,86%/);
   assert.match(get(ed,"Piumhi"),/componentes obrigatórios e optativos/);
   assert.match(get(ed,"Santa Luzia"),/10,3%/);

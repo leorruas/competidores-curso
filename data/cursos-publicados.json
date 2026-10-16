@@ -287,7 +287,12 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Informação incompleta"
+          "conteudo": "Em outubro de 2025, estudantes do Técnico Integrado em Edificações do Campus Governador Valadares participaram de uma visita técnica à Usina Hidrelétrica de Baguari. Durante a atividade, conheceram aspectos de segurança, instalação e funcionamento da usina, além de ações de monitoramento e educação ambiental."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita técnica à Usina Hidrelétrica de Baguari · Governador Valadares · outubro de 2025",
+          "itens": []
         },
         {
           "tipo": "texto",

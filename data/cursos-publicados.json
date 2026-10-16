@@ -440,10 +440,6 @@
               "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Vagas",
-              "valor": "Informação incompleta"
-            },
-            {
               "rotulo": "PPC / matriz",
               "valor": "Informação incompleta"
             }
@@ -541,20 +537,17 @@
           "colunas": [
             "Campus",
             "Modalidade",
-            "Vagas / ingresso 2027",
             "E-mail da coordenação"
           ],
           "linhas": [
             [
               "Governador Valadares",
               "EaD",
-              "Informação incompleta",
               "coordenacao.tslog.gv@ifmg.edu.br"
             ],
             [
               "Ribeirão das Neves",
               "EaD",
-              "120 vagas",
               "Informação incompleta"
             ]
           ]
@@ -757,10 +750,6 @@
             {
               "rotulo": "Turno",
               "valor": "Noturno"
-            },
-            {
-              "rotulo": "Vagas do PS 2027",
-              "valor": "15 vagas — Histórico Escolar e Redação"
             },
             {
               "rotulo": "PPC / matriz",
@@ -999,10 +988,6 @@
             },
             {
               "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Vagas",
               "valor": "Informação incompleta"
             }
           ]
@@ -1243,10 +1228,6 @@
             },
             {
               "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Vagas",
               "valor": "Informação incompleta"
             }
           ]
@@ -1528,10 +1509,6 @@
             {
               "rotulo": "E-mail da coordenação",
               "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Vagas",
-              "valor": "Bambuí: 30 Enem; São João Evangelista: 15 Enem + 15 Histórico Escolar e Redação (Processo Seletivo 2027)"
             }
           ]
         },
@@ -1776,10 +1753,6 @@
             {
               "rotulo": "E-mail da coordenação",
               "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Vagas",
-              "valor": "Bambuí: 20 Enem + 5 Histórico e Redação; Congonhas: 20 Enem; Governador Valadares: 17 Enem + 17 Histórico e Redação (PS 2027)"
             }
           ]
         },

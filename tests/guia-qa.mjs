@@ -1112,7 +1112,7 @@ test("F3.1: Congonhas e GV apresentam projeto, resultado e campus; SJE empresa j
   const localSje=localAgronomia.find(i=>i.pergunta==="Campus São João Evangelista").resposta;
   assert.doesNotMatch(localBambui,/Olericultura|horta escolar/);
   assert.doesNotMatch(localSje,/Agricampo|Centro de Vivência/);
-  assert.match(localSje,/organização curricular de \\*\\*2023\\*\\*/);
+  assert.ok(localSje.includes("organização curricular de **2023**"));
   const copias=ag.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]);
   for(const termo of ["Olericultura","Agricampo"])assert.equal(copias.filter(t=>t.includes(termo)).length,1,termo+" só na seção temática");
   const agAchievements=ag.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;

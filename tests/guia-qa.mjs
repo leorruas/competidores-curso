@@ -248,6 +248,32 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
   assert.doesNotMatch(answer,/,\./);
 });
 
+test("ingresso 2027 em Bambuí distingue vagas Enem, Histórico e Sisu", () => {
+  const items=[
+    {id:"agronomia-bacharelado-bambui",vacancy:/30 vagas pelo Enem/,way:/30 vagas pela nota do Enem/,noHistory:true},
+    {id:"engenharia-de-producao-bacharelado-bambui",vacancy:/20 vagas pelo Enem e 5 por Histórico Escolar e Redação/,way:/20 vagas pelo Enem[\\s\\S]*5 vagas por Histórico Escolar e Redação online/}
+  ];
+  for(const entry of items) {
+    const c=json.courses.find(x=>x.id===entry.id);
+    const basic=c.blocos.find(x=>x.tipo==="dados-basicos");
+    const values=basic.campos.find(x=>x.rotulo==="Vagas").valor;
+    assert.match(values,entry.vacancy);
+    const faq=c.blocos.find(x=>x.tipo==="faq").itens;
+    const ingresso=faq.find(x=>x.pergunta.startsWith("Como ingressar"));
+    assert.match(ingresso.pergunta,/em Bambuí\\?/);
+    assert.match(ingresso.resposta,entry.way);
+    assert.match(ingresso.resposta,/2027/);
+    assert.match(ingresso.resposta,/ensino médio até a matrícula/);
+    assert.match(ingresso.resposta,/3 de agosto a 14 de setembro de 2026/);
+    assert.match(ingresso.resposta,/Sisu tem seleção e vagas próprias/);
+    if(entry.noHistory)assert.doesNotMatch(ingresso.resposta,/Histórico Escolar e Redação/);
+    assert.equal(c.status,"em_validacao");
+    const title=c.blocos.find(b=>b.titulo===`Oferta de ${c.nome} no Campus Bambuí`);
+    assert.ok(title,"Deve indicar que a seção descreve o recorte de Bambuí");
+    assert.doesNotMatch(title.conteudo,/O curso é oferecido no Campus Bambuí/);
+  }
+});
+
 test("Direito explica estágio e TCC com exigências concretas", () => {
   const c=json.courses.find(x=>x.id==="direito-bacharelado-arcos");
   const faq=c.blocos.find(x=>x.tipo==="faq");

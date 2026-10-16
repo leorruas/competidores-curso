@@ -4447,6 +4447,290 @@
           "conteudo": "O técnico em Biotecnologia pode **preparar materiais e soluções para atividades laboratoriais**, organizar amostras, realizar registros e auxiliar em procedimentos de análise e controle de processos, seguindo protocolos de biossegurança e orientações técnicas.\n\nNa agroindústria e na área ambiental, pode **acompanhar processos biotecnológicos**, participar da observação de fermentações, registrar dados experimentais e auxiliar em procedimentos de controle de qualidade. Em pesquisa e desenvolvimento, pode colaborar com a preparação de ensaios, o acompanhamento de resultados e a organização de materiais e equipamentos.\n\nO profissional pode atuar em laboratórios, empresas agroindustriais, unidades de produção animal e vegetal e serviços de apoio técnico, respeitando as atribuições da habilitação e as exigências de supervisão e segurança."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-eletromecanica-integrado",
+      "nome": "Técnico em Eletromecânica",
+      "nivel": "Técnico",
+      "tipo": "Integrado ao Ensino Médio",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Eletromecânica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Eletromecânica",
+          "conteudo": "O **Técnico em Eletromecânica** reúne o ensino médio e a formação profissional em um percurso de **três anos**. Os estudantes aprendem a relacionar conhecimentos de **mecânica, eletricidade e eletrônica** para compreender o funcionamento de equipamentos, máquinas e sistemas utilizados na indústria.\n\nO curso é oferecido no **Campus Bambuí**, com aulas presenciais pela manhã e à tarde."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Entenda como motores, circuitos, máquinas e sistemas de automação trabalham juntos — e aprenda a identificar problemas e apoiar a manutenção de equipamentos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A formação é destinada a quem **concluiu o ensino fundamental** e deseja cursar o ensino médio junto com uma habilitação técnica. É uma opção para estudantes interessados em **Física, Matemática, máquinas, circuitos elétricos, fabricação e tecnologia**."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O curso integra componentes da formação geral e conhecimentos técnicos em eletricidade, eletrônica e mecânica. O aprendizado inclui leitura e desenvolvimento de desenhos, análise de circuitos, processos de fabricação e segurança no trabalho."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Formação geral",
+              "Língua Portuguesa, Matemática, Física, Química, Biologia, História, Geografia e outros componentes do ensino médio."
+            ],
+            [
+              "Circuitos elétricos e eletrônica",
+              "Componentes, medição, interpretação de circuitos e fundamentos de sistemas elétricos."
+            ],
+            [
+              "Mecânica e elementos de máquinas",
+              "Peças, mecanismos, esforços, materiais e funcionamento de equipamentos mecânicos."
+            ],
+            [
+              "Desenho técnico e metrologia",
+              "Representação de peças e conjuntos, instrumentos e procedimentos de medição."
+            ],
+            [
+              "Manutenção e processos de fabricação",
+              "Organização de intervenções, identificação de falhas, materiais e processos de fabricação."
+            ],
+            [
+              "Automação e acionamentos",
+              "Comandos, sensores, motores e sistemas que integram componentes elétricos e mecânicos."
+            ],
+            [
+              "Segurança e projetos integradores",
+              "Prevenção de riscos, organização do trabalho e aplicação prática de conteúdos técnicos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O **Campus Bambuí** dispõe de espaços de aprendizagem em **fabricação mecânica, manutenção, eletrônica e eletromecânica**. As atividades incluem estudos de elementos de máquinas, projetos integradores, circuitos elétricos, desenho técnico e procedimentos de fabricação, conforme a organização das disciplinas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios e atividades práticas de Eletromecânica · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Eletromecânica",
+          "conteudo": "O **Campus Bambuí** oferece o curso presencial integrado ao ensino médio, com duração de **três anos** e aulas pela manhã e à tarde."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Manhã e tarde",
+              "Presencial",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A formação é **integral** e combina ensino médio e estudos técnicos de mecânica, eletricidade e eletrônica. O campus realiza atividades práticas ligadas à fabricação, manutenção, circuitos e projetos integradores."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e bolsas",
+          "conteudo": "O **Electrohm**, grupo de estudos do **Campus Bambuí**, reúne pessoas interessadas em **eletrônica, robótica e automação de processos**. O grupo desenvolve atividades de aprofundamento e troca de conhecimentos na área. Estudantes interessados podem conhecer sua programação e as condições de participação, conforme a organização do grupo."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Grupo de estudos Electrohm · eletrônica, robótica e automação · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Eletromecânica"
+          ],
+          "linhas": [
+            [
+              "Engenharia de Produção",
+              "Bambuí",
+              "Planejamento de processos, produção, qualidade e melhoria de sistemas industriais."
+            ],
+            [
+              "Engenharia Mecânica",
+              "Arcos e Betim",
+              "Projeto, funcionamento e análise de máquinas, processos mecânicos e sistemas térmicos."
+            ],
+            [
+              "Engenharia Metalúrgica",
+              "Ouro Branco",
+              "Materiais metálicos, processos industriais, tratamentos e fabricação de componentes."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com a área de Eletromecânica"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Tecnologias ambientais, materiais, energia e soluções sustentáveis para sistemas produtivos. A pós-graduação exige formação superior compatível."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O que significa integrar o ensino médio à Eletromecânica?",
+              "resposta": "Você cursa as disciplinas do **ensino médio e da formação técnica em uma única matrícula**, ao longo de três anos, com aulas de manhã e à tarde."
+            },
+            {
+              "pergunta": "Que atividades práticas são desenvolvidas?",
+              "resposta": "As disciplinas incluem atividades de **circuitos elétricos e eletrônica, metrologia, desenho técnico, máquinas, fabricação mecânica e projetos integradores**, de acordo com os espaços e os recursos de aprendizagem do campus."
+            },
+            {
+              "pergunta": "Como funciona o estágio?",
+              "resposta": "O curso prevê **estágio supervisionado obrigatório com carga mínima de 120 horas**. Ele pode ser iniciado depois da conclusão do primeiro ano e a partir dos **16 anos**, com orientação e supervisão. Cada período realizado em uma mesma empresa deve ter pelo menos **60 horas** para ser computado, conforme as regras curriculares do curso."
+            },
+            {
+              "pergunta": "Posso participar de atividades de eletrônica e robótica?",
+              "resposta": "O **Electrohm** é um grupo de estudos do campus voltado a eletrônica, robótica e automação. A participação depende das atividades e das condições definidas por seus responsáveis."
+            },
+            {
+              "pergunta": "Como posso continuar os estudos no IFMG?",
+              "resposta": "Após concluir o ensino médio e a formação técnica, você pode concorrer a graduações relacionadas, como **Engenharia de Produção, Engenharia Mecânica e Engenharia Metalúrgica**, em diferentes campi do IFMG."
+            },
+            {
+              "pergunta": "Quais programas de assistência estudantil estão disponíveis?",
+              "resposta": "O IFMG mantém programas de assistência estudantil. Os auxílios, critérios e procedimentos de inscrição são definidos em editais."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Eletromecânica Integrado ao Ensino Médio**, você precisa ter **concluído o ensino fundamental** ou concluí-lo até a matrícula. O ingresso ocorre por **processo seletivo público do IFMG**, seguindo as regras do edital vigente.\n\nConsulte o edital para verificar os critérios de seleção, as vagas, as cotas, os documentos necessários e os procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Eletromecânica pode **auxiliar na montagem, instalação, inspeção e manutenção de sistemas que combinam peças mecânicas e componentes elétricos**, acompanhando o funcionamento de motores, equipamentos e máquinas. Pode utilizar instrumentos de medição, interpretar desenhos e esquemas técnicos, registrar condições de funcionamento e apoiar a identificação de defeitos.\n\nEm uma indústria, por exemplo, pode acompanhar rotinas de manutenção de motores e sistemas de acionamento, apoiar a troca de componentes, verificar parâmetros e colaborar em atividades de prevenção de falhas. Na manutenção de máquinas agrícolas, pode apoiar análises de sistemas mecânicos, elétricos e de comando, conforme sua habilitação.\n\nEssas atividades podem ocorrer em indústrias, oficinas, empresas de manutenção, serviços técnicos e unidades de produção, respeitando as **normas de segurança**, os limites das atribuições profissionais e a supervisão exigida para cada procedimento."
+        }
+      ]
     }
   ]
 }

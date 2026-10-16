@@ -128,3 +128,10 @@ F2.13 revisada em 16/10/2026: a primeira Introdução deve ser geral, sem favore
 - O FAQ de candidatos deve responder dúvidas que acrescentam informação; excluir questões cuja resposta apenas reconte experiências já descritas. Manter os dois componentes FAQ separados e o fechamento obrigatório dos cursos.
 - **Não publicar atividade cuja associação ao curso não esteja comprovada**, mesmo quando houver evento semelhante no campus. Manter a hipótese e a fonte no controle privado, sem apagar fatos verificados nem generalizar um campus aos demais.
 - Caso aplicado ao Técnico em Administração Integrado: Expo Favela Minas 2026 aparece uma única vez, em `Projetos e experiências`, associada a Sabará; FAQ de candidatos perdeu a questão redundante sobre atividades práticas; `Hackathon Social` foi retirado do conteúdo copiável por falta de evidência de vinculação ao curso. A fonte histórica da visita e a lacuna de comprovação permanecem no roteiro privado. CI de publicação: [67/67](https://github.com/leorruas/competidores-curso/actions/runs/38901388643). Auditoria de outros cursos continua aberta.
+
+## F1.6 — Verificação visual do guia (16/10/2026)
+
+- Depois de alterar `app.js`, `style.css`, `index.html` ou os dados exibidos, conferir a suíte de conteúdo **e** o workflow público `QA visual de páginas de cursos` (Playwright). O QA renderiza oito cursos em 375, 768 e 1.440 px e guarda screenshots, verificando overflow horizontal, índices, FAQs, prévia e campos de cópia.
+- O índice lateral deve apresentar títulos reais ou contexto da tabela/FAQ; no celular, o índice desliza dentro da largura disponível, sem alargar a página.
+- No modo `Visualizar`, omitir galerias e introduções vazias, bem como seções cujo único texto é `Informação incompleta`. No modo `Copiar`, manter o bloco para trabalho editorial, sem botão que copie o placeholder. A prévia não pode conter links de índice para blocos ocultados.
+- Aprovação na CI e capturas **não equivalem** a validação de colagem no Wagtail ou homologação institucional. A F6.3 requer teste humano no CMS real.

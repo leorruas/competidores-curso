@@ -77,7 +77,7 @@ O JSON público não pode conter `validacao`, `pendencias`, `revisao_coordenacao
 
 - Os **oito cursos** terminam agora com **Forma de ingresso** e **Mundo do Trabalho** como dois últimos blocos `texto`, nesta ordem. Não incluir conteúdo editorial ou placeholders depois de Mundo do Trabalho. A instrução vale para bacharelados e técnicos, inclusive curso com um campus.
 - O conteúdo profissional anterior foi movido para o fim sem reescrita. Cada bloco final Forma de ingresso deve ser perene: requisito escolar até a matrícula, consulta ao edital vigente e opções específicas por curso e campus, nunca prazos de inscrição, edição 2027 ou promessa de vagas/Sisu. Direito Arcos não recebe acesso Enem direto por analogia a outras graduações.
-- Os blocos finais dos oito cursos são verificados em [CI 58/58](https://github.com/leorruas/competidores-curso/actions/runs/38885597384). **F2.12 permanece parcial** por datas e números de processo seletivo ainda em alguns FAQs; F1B.11, inspeção visual, colagem em Wagtail real e homologação institucional também permanecem pendentes.
+- Os blocos finais dos oito cursos são verificados em [CI 58/58](https://github.com/leorruas/competidores-curso/actions/runs/38885597384). **F2.12 está concluída editorialmente:** datas e números temporários da seleção antiga foram retirados dos FAQs e demais campos públicos; inspeção visual, colagem no Wagtail real e homologação institucional permanecem pendentes.
 
 ## Componente FAQ para as informações dos campi — correção de 16/10/2026
 
@@ -93,3 +93,10 @@ O JSON público não pode conter `validacao`, `pendencias`, `revisao_coordenacao
 
 
 **Checkpoint F1B.12 / F1B.13 (16/10/2026):** oito cursos, dois componentes FAQ distintos por curso, 29 descrições locais preservadas, equivalência privado/público conferida. O guia identifica o bloco local como `FAQ · Informações dos campi` sem acrescentar campo copiável. Seis formulações autorreferentes adicionais foram ajustadas para a voz do IFMG. [CI: 61/61](https://github.com/leorruas/competidores-curso/actions/runs/38888920858). Ainda falta inspeção visual, colagem real no Wagtail e confirmação acadêmica pelas coordenações.
+
+## F2.12 — Ingresso durável em todos os cursos (16/10/2026)
+
+- Os oito cursos devem orientar para o **edital vigente**, mantendo nos textos permanentes apenas requisitos de escolaridade, modalidades condicionadas à oferta e documentação aplicável. **Nunca copiar de volta** calendários de 2026, contagens de vagas da edição 2027 ou faixas de provas do Enem de edital anterior.
+- O FAQ de candidatos foi saneado: **7 respostas antigas transformadas em 4 respostas perenes** em Direito, Engenharia Mecânica, Agronomia e Engenharia de Produção, consolidando perguntas duplicadas nos dois últimos. As seções `Forma de ingresso` permanecem como penúltimo bloco, com `Mundo do Trabalho` no fim.
+- Os **campos Vagas/Vagas do PS 2027 foram retirados dos Dados básicos** dos seis cursos atingidos, e a tabela de Logística não tem mais a coluna `Vagas / ingresso 2027`. O arquivo histórico continua apenas no repositório privado, fora do material de cópia. Isso evita apresentar números vencidos como oferta atual. Só reintroduzir um número com edital verificado e rotina de atualização.
+- **Anos de projetos e atividades já realizados** (2021, 2022, 2025, 2026) permanecem no conteúdo quando são evidência histórica, não inscrição atual. [CI 63/63 aprovada](https://github.com/leorruas/competidores-curso/actions/runs/38890621879). QA visual, colagem e validação institucional no Wagtail seguem pendentes.

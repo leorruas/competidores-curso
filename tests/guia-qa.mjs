@@ -1422,7 +1422,8 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "tecnico-em-agroindustria-integrado":2,
     "tecnico-em-biotecnologia-integrado":2,
     "tecnico-em-eletromecanica-integrado":2,
-    "tecnico-em-quimica-integrado":5
+    "tecnico-em-quimica-integrado":5,
+    "tecnico-em-mecatronica-integrado":4
   };
   for(const c of json.courses){
     const galleries=c.blocos.filter(b=>b.tipo==="galeria");
@@ -1787,7 +1788,7 @@ test("F7.2: Eletromecânica integrada Bambuí mantém PPC, oportunidades e conqu
 });
 
 test("F7.2: Técnico em Química de Betim tem pesquisas comprovadas e estágio não obrigatório", () => {
-  assert.equal(json.courses.length,17);
+  assert.ok(json.courses.length>=17,"Química Betim e cursos anteriores preservados");
   const c=json.courses.find(x=>x.id==="tecnico-em-quimica-integrado");
   assert.ok(c);
   assert.deepEqual(c.campi,["Betim"]);
@@ -1828,6 +1829,51 @@ test("F7.2: Técnico em Química de Betim tem pesquisas comprovadas e estágio n
   for(const k of ["validacao","pendencias","instrucao"]) assert.ok(!Object.hasOwn(c,k));
 });
 
+test("F7.2: Mecatrônica Ibirité mantém curso integrado e três experiências comprovadas", () => {
+  assert.equal(json.courses.length,18);
+  const c=json.courses.find(x=>x.id==="tecnico-em-mecatronica-integrado");
+  assert.ok(c);
+  assert.equal(c.nome,"Técnico em Mecatrônica");
+  assert.equal(c.tipo,"Integrado ao Ensino Médio");
+  assert.deepEqual(c.campi,["Ibirité"]);
+  assert.equal(c.status,"em_validacao");
+  const basic=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
+  assert.equal(basic["Duração"],"3 anos");
+  assert.equal(basic["Carga horária total"],"3.200 horas");
+  assert.equal(basic["Modalidade"],"Presencial (8,3% EaD)");
+  assert.equal(basic["PPC / matriz"],"Informação incompleta");
+  assert.equal(basic["E-mail da coordenação"],"mecatronica.ibirite@ifmg.edu.br");
+  const loc=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
+  assert.deepEqual(loc.linhas[0],["Ibirité","Manhã e tarde","Presencial (8,3% EaD)","mecatronica.ibirite@ifmg.edu.br"]);
+  const lab=c.blocos.findIndex(x=>x.titulo==="Aprendizagem prática e laboratórios");
+  assert.match(c.blocos[lab].conteudo,/Automação, Eletrônica, Circuitos Elétricos/);
+  assert.equal(c.blocos[lab+1].tipo,"galeria");
+  const i=c.blocos.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
+  assert.match(c.blocos[i].conteudo,/janeiro e fevereiro de 2025/);
+  assert.match(c.blocos[i].conteudo,/Darcy Ribeiro/);
+  assert.equal(c.blocos[i+1].tipo,"galeria");
+  assert.match(c.blocos[i+2].conteudo,/2025 do Enem/);
+  assert.match(c.blocos[i+2].conteudo,/785,4/);
+  assert.equal(c.blocos[i+3].tipo,"galeria");
+  assert.match(c.blocos[i+4].conteudo,/Canguru de Matemática 2026/);
+  assert.match(c.blocos[i+4].conteudo,/medalha de bronze/);
+  assert.match(c.blocos[i+4].conteudo,/menções honrosas/);
+  assert.equal(c.blocos[i+5].tipo,"galeria");
+  assert.equal(c.blocos.filter(x=>x.tipo==="galeria").length,4);
+  const stage=c.blocos.find(x=>x.tipo==="faq"&&!x.titulo).itens.find(x=>x.pergunta==="O estágio e o TCC são obrigatórios?");
+  assert.match(stage.resposta,/não obrigatório/);
+  assert.match(stage.resposta,/terceiro semestre/);
+  assert.match(stage.resposta,/Não há TCC previsto/);
+  const cont=c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG");
+  assert.deepEqual(c.blocos.slice(cont+1,cont+5).map(x=>x.titulo||x.tipo),["Graduação","tabela","Pós-graduação","tabela"]);
+  assert.deepEqual(c.blocos[cont+2].linhas.map(x=>x[0]),["Engenharia de Controle e Automação","Ciência da Computação","Engenharia Mecânica"]);
+  assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+  assert.match(c.blocos.at(-2).conteudo,/ensino fundamental/);
+  assert.doesNotMatch(c.blocos.at(-2).conteudo,/2026|2027|inscrições abertas/i);
+  assert.doesNotMatch(JSON.stringify(c),/ppc_mecatronica_integrado_2023\.pdf|dante\.pereira|revisao_coordenacao/);
+  for(const field of ["validacao","pendencias","instrucao"])assert.ok(!Object.hasOwn(c,field));
+});
+
 test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {
   const relevantTitles=new Set(["Projetos e experiências acadêmicas","Projetos e experiências","Práticas e experiências","Pesquisa, extensão e oportunidades","Pesquisa, extensão e aprendizagem prática","Experiências e conquistas dos estudantes","Experiências de aprendizagem em Direito"]);
   const oldDate=/\b20(?:0\d|1\d|2[0-4])\b/;
@@ -1840,5 +1886,5 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),53);
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),57);
 });

@@ -6097,6 +6097,333 @@
           "conteudo": "O técnico em Mecânica pode atuar no **planejamento e acompanhamento de processos de fabricação**, na **inspeção e manutenção de máquinas e equipamentos** e no apoio a projetos de componentes e sistemas mecânicos. Entre suas atividades estão interpretar desenhos técnicos, selecionar materiais, realizar medições, acompanhar usinagem e soldagem, identificar desgastes e registrar dados de operação e qualidade.\n\nEm uma fábrica, pode auxiliar na organização de etapas produtivas e no controle dimensional de peças. Na manutenção, pode acompanhar inspeções, testes, trocas de componentes e análises de falhas. Essas atividades são encontradas em indústrias metalmecânicas, automobilísticas, siderúrgicas, de mineração e em empresas de serviços técnicos, respeitando as atribuições da habilitação e os procedimentos de segurança."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-mineracao-integrado",
+      "nome": "Técnico em Mineração",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Congonhas",
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial (Ouro Preto: 0,87% EaD)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Mineração"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Congonhas; Ouro Preto"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ouro Preto: 0,87% EaD no quadro de ofertas de 2027)"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Varia conforme o campus; Ouro Preto: 3.450 horas"
+            },
+            {
+              "rotulo": "PPC / matriz para ingressantes de 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Contatos por campus na tabela de ofertas"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Mineração",
+          "conteudo": "Estude o ensino médio junto com uma formação técnica sobre os recursos minerais. No IFMG, você aprende a conhecer o terreno, investigar depósitos minerais e acompanhar processos de extração, beneficiamento e controle ambiental, relacionando os conhecimentos técnicos às demais áreas do ensino médio."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Entenda como os minerais são pesquisados, extraídos e beneficiados. O curso integrado reúne formação geral, práticas técnicas e estudos sobre segurança e meio ambiente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O Técnico em Mineração Integrado é destinado a estudantes que concluíram o ensino fundamental e desejam cursar o ensino médio com uma formação técnica. O curso reúne conteúdos de geologia, medições, operações de mina, tratamento de minérios e segurança."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação integrada relaciona matemática, ciências da natureza, linguagens e ciências humanas com estudos técnicos sobre recursos minerais. A distribuição das disciplinas e das atividades práticas segue a matriz curricular de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Geologia e pesquisa mineral",
+              "Reconhecer materiais e estruturas geológicas, apoiar levantamentos e compreender a identificação de depósitos minerais."
+            ],
+            [
+              "Topografia e amostragem",
+              "Conhecer procedimentos para medir áreas, registrar dados de campo e coletar amostras de rochas e minérios."
+            ],
+            [
+              "Lavra de minas",
+              "Estudar planejamento de operações, equipamentos, transporte e condições de trabalho em minas a céu aberto e subterrâneas."
+            ],
+            [
+              "Tratamento de minérios",
+              "Compreender britagem, classificação, separação, concentração e outras etapas de beneficiamento mineral."
+            ],
+            [
+              "Segurança e meio ambiente",
+              "Identificar riscos de operações, estudar impactos ambientais, gestão de rejeitos e medidas de controle."
+            ],
+            [
+              "Formação geral",
+              "Relacionar os conhecimentos da educação básica aos desafios técnicos, sociais e ambientais da atividade mineral."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O curso integra aulas em laboratório, análise de materiais e atividades de campo, conforme a infraestrutura e o planejamento de cada campus. Em Ouro Preto, a formação inclui disciplinas ligadas à lavra de minas, equipamentos, meio ambiente e tratamento mineral. Em Congonhas, o percurso aborda medições, amostragem, processos de extração e beneficiamento."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Aulas e práticas de Mineração · Congonhas e Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Mineração",
+          "conteudo": "O Técnico em Mineração Integrado ao Ensino Médio é oferecido nos campi **Congonhas** e **Ouro Preto**, com aulas de manhã e à tarde e duração de três anos. Em Ouro Preto, o quadro de ofertas de 2027 indica **0,87% de EaD**; o planejamento dessas atividades é próprio do campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Congonhas",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "coordtecmin.congonhas@ifmg.edu.br"
+            ],
+            [
+              "Ouro Preto",
+              "Presencial (0,87% EaD no quadro de 2027)",
+              "Manhã e tarde / 3 anos",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Congonhas",
+              "resposta": "O curso aborda prospecção, caracterização de minérios, operações de extração, amostragem e processos de beneficiamento. A formação integrada combina disciplinas técnicas e da educação básica em atividades de manhã e à tarde. O campus também oferece modalidades técnicas de Mineração com organização e requisitos próprios."
+            },
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "A formação técnica desenvolve conhecimentos de pesquisa mineral, lavra e tratamento de minérios. O curso tem três anos e 3.450 horas totais na documentação institucional. No quadro da seleção de 2027, a oferta registra 0,87% EaD, cuja distribuição depende da organização curricular do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os estudantes podem participar de atividades de pesquisa, extensão, monitoria e visitas técnicas conforme os projetos e as seleções disponíveis para o ensino médio integrado. Essas oportunidades aproximam os estudos de temas como recursos minerais, ambiente, tecnologias de análise, segurança e operações de mina."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": "Após concluir o ensino médio integrado, você pode concorrer aos cursos superiores oferecidos pelo IFMG."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Mineração"
+          ],
+          "linhas": [
+            [
+              "Engenharia Metalúrgica",
+              "Ouro Branco",
+              "Estudo de materiais, processos metalúrgicos e transformação de matérias-primas minerais."
+            ],
+            [
+              "Engenharia de Produção",
+              "Bambuí e Congonhas",
+              "Gestão de operações, qualidade, logística e organização de processos industriais."
+            ],
+            [
+              "Engenharia Ambiental e Sanitária",
+              "Governador Valadares",
+              "Estudo de impactos ambientais, tratamento de resíduos e gestão de recursos naturais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": "Depois de concluir uma graduação compatível, é possível participar das seleções de programas de pós-graduação relacionados a tecnologia e sustentabilidade."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Mineração"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa aplicada a questões ambientais e tecnologias de sustentabilidade; exige graduação compatível."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **julho de 2025**, estudantes do terceiro ano do Técnico Integrado em Mineração do **Campus Ouro Preto** participaram de visita técnica à **Samarco**. Acompanhados por um professor, conheceram etapas de operação de mina, equipamentos, procedimentos de segurança e parte do tratamento do minério."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita técnica à Samarco · 3º ano de Mineração · Ouro Preto · julho de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Entre **junho e julho de 2026**, estudantes dos segundos anos dos cursos técnicos integrados em **Mineração e Metalurgia**, no **Campus Ouro Preto**, visitaram o **Museu da Inconfidência** em atividades da disciplina História II. A experiência aproximou os conteúdos sobre a história do Brasil colonial do acervo e da mediação realizada no museu."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita ao Museu da Inconfidência · Mineração e Metalurgia · Ouro Preto · 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode se candidatar ao Técnico em Mineração Integrado?",
+              "resposta": "Quem concluiu o ensino fundamental ou vai concluí-lo até a matrícula pode participar do processo seletivo do ensino médio integrado, seguindo os requisitos do edital vigente."
+            },
+            {
+              "pergunta": "O curso é igual em Congonhas e Ouro Preto?",
+              "resposta": "Os dois campi oferecem formação técnica em Mineração integrada ao ensino médio, com duração de três anos. As matrizes curriculares, a organização das aulas, os ambientes de prática e as oportunidades acadêmicas são específicos de cada campus."
+            },
+            {
+              "pergunta": "Quais temas aparecem nas atividades práticas?",
+              "resposta": "O estudante conhece procedimentos de amostragem, medição, caracterização de materiais, extração e beneficiamento mineral. As atividades e os equipamentos utilizados seguem a etapa curricular e as condições de cada campus."
+            },
+            {
+              "pergunta": "O estágio é obrigatório?",
+              "resposta": "No Campus Ouro Preto, o estágio dos cursos técnicos é não obrigatório e pode ser desenvolvido conforme as regras institucionais. Em Congonhas, as condições do estágio seguem o projeto pedagógico aplicável ao curso."
+            },
+            {
+              "pergunta": "O curso prepara para continuar os estudos?",
+              "resposta": "Sim. Após concluir o ensino médio, você pode participar de processos seletivos de graduação. No IFMG, Engenharia Metalúrgica, Engenharia de Produção e Engenharia Ambiental e Sanitária são algumas opções relacionadas à área."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras modalidades relacionadas",
+          "conteudo": "O **Técnico em Mineração Integrado** reúne a formação geral do ensino médio e o ensino técnico. O IFMG também oferece Mineração em modalidades para públicos diferentes, como o **subsequente** para quem já concluiu o ensino médio e o **concomitante** para quem o cursa em outra instituição, conforme as ofertas específicas de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Concluiu o ensino fundamental e vai cursar o ensino médio",
+              "Técnico em Mineração Integrado",
+              "Formação geral e técnica no mesmo percurso, turno e campus."
+            ],
+            [
+              "Já concluiu o ensino médio",
+              "Técnico em Mineração Subsequente",
+              "Oferta por campus, carga horária e organização das aulas."
+            ],
+            [
+              "Cursa o ensino médio em outra instituição",
+              "Técnico em Mineração Concomitante",
+              "Compatibilidade dos horários, campus e critérios da modalidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Mineração Integrado ao Ensino Médio**, é necessário concluir o ensino fundamental até a matrícula. O IFMG realiza processo seletivo público para os cursos técnicos integrados.\n\nConsulte o edital vigente para conhecer vagas por campus, critérios de seleção, cotas, documentação e procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Mineração pode atuar em atividades de **pesquisa mineral, lavra e tratamento de minérios**, com atenção à segurança das operações e às exigências ambientais. Entre as tarefas estão apoiar levantamentos geológicos e topográficos, coletar amostras, registrar dados, acompanhar equipamentos de extração e transporte e participar de etapas de análise e separação mineral.\n\nEm operações de mineração, o técnico pode acompanhar planos de lavra, medições, inspeções e procedimentos de controle. No beneficiamento, pode colaborar com a operação e o monitoramento de equipamentos de fragmentação e separação, além de registros de qualidade. A formação também permite atuação em laboratórios, empresas de serviços técnicos e instituições de pesquisa, respeitando as atribuições profissionais, a supervisão exigida e as normas de segurança."
+        }
+      ]
     }
   ]
 }

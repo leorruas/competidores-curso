@@ -1,0 +1,31 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
+const {courses}=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
+const c=courses.find(x=>x.id==="tecnico-em-mineracao-integrado");
+const b=c?.blocos||[];
+test("F7.5: Mineração integrado distingue Congonhas e Ouro Preto",()=>{
+ assert.ok(c);
+ assert.deepEqual(c.campi,["Congonhas","Ouro Preto"]);
+ assert.equal(c.tipo,"Integrado");
+ assert.match(c.modalidade,/0,87% EaD/);
+ const table=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");
+ assert.deepEqual(table.linhas.map(x=>x[0]),c.campi);
+ assert.deepEqual(table.linhas.map(x=>x[3]),["coordtecmin.congonhas@ifmg.edu.br","Informação incompleta"]);
+ const local=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
+ assert.equal(local.itens.length,2);
+ assert.ok(b.some(x=>x.tipo==="faq"&&!x.titulo));
+ const core=b.find(x=>x.tipo==="texto"&&x.titulo==="Continue seus estudos no IFMG");
+ assert.equal(core.conteudo,"");
+ assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+});
+test("F7.5: duas experiências 2025+ têm suas próprias galerias",()=>{
+ const gals=b.map((x,i)=>x.tipo==="galeria"?{...x,index:i}:null).filter(Boolean);
+ assert.equal(gals.length,3);
+ assert.equal(new Set(gals.map(x=>x.referencia)).size,gals.length);
+ assert.ok(gals.every(x=>x.itens.length===0&&b[x.index-1].tipo==="texto"));
+ assert.match(b.find(x=>x.titulo==="Experiências e conquistas dos estudantes").conteudo,/julho de 2025/);
+ assert.ok(b.some(x=>x.tipo==="texto"&&/junho e julho de 2026/.test(x.conteudo||"")));
+ assert.ok(!JSON.stringify(c).includes("ariana.almeida@ifmg.edu.br"));
+ assert.equal(c.blocos.filter(x=>x.tipo==="texto"&&x.titulo==="Experiências e conquistas dos estudantes").length,1);
+});

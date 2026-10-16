@@ -883,7 +883,7 @@
           "itens": [
             {
               "pergunta": "Como posso ingressar no curso de Direito?",
-              "resposta": "Você pode ingressar pelo **Histórico Escolar e Redação** ou pelo **Sisu**. Para ingresso em 2027, são oferecidas **15 vagas** na seleção por Histórico Escolar e Redação. As vagas do Sisu são definidas em seleção própria."
+              "resposta": "Para cursar **Direito no Campus Arcos**, é necessário ter concluído o ensino médio ou concluí-lo até a matrícula e participar de um processo seletivo de graduação do IFMG. O curso pode ter vagas em seleção por **Histórico Escolar e Redação** ou pelo **Sisu**, conforme os editais de cada edição. Consulte o edital vigente para conferir as modalidades disponíveis, os documentos exigidos, as cotas, os prazos e as vagas."
             },
             {
               "pergunta": "Que experiências práticas fazem parte da formação?",
@@ -1132,7 +1132,7 @@
             },
             {
               "pergunta": "Como ingressar em Engenharia Mecânica?",
-              "resposta": "Para ingresso em 2027, você precisa concluir o ensino médio e participar da seleção correspondente. Em **Arcos**, foram oferecidas **20 vagas pela nota do Enem** e **15 por Histórico Escolar e Redação**. Em **Betim**, foram oferecidas **18 vagas pela nota do Enem**. O IFMG também utiliza o **Sisu** no ingresso à graduação, com vagas e calendário definidos em seleção própria."
+              "resposta": "Para ingressar no **Bacharelado em Engenharia Mecânica**, é necessário ter concluído o ensino médio ou concluí-lo até a matrícula. As formas de seleção podem variar entre **Arcos** e **Betim**: conforme o edital, pode haver aproveitamento de **notas do Enem**, seleção por **Histórico Escolar e Redação** ou vagas pelo **Sisu**. Verifique as modalidades disponíveis no campus escolhido, os documentos exigidos, os prazos e as vagas no edital vigente."
             },
             {
               "pergunta": "Há atividades a distância?",
@@ -1663,12 +1663,8 @@
               "resposta": "Em **Bambuí**, há atividades práticas e oportunidades de pesquisa e extensão relacionadas à produção agrícola. Em **São João Evangelista**, a formação abrange tecnologias de cultivo, conservação de solos e atividades ligadas ao campo."
             },
             {
-              "pergunta": "Como ingressar em Agronomia em Bambuí?",
-              "resposta": "Para ingresso em 2027 no Campus Bambuí, é necessário concluir o ensino médio até a matrícula. O processo seletivo próprio oferece **30 vagas pela nota do Enem**, considerando edições de **2017 a 2026** sem nota zero nas provas ou na redação. As inscrições desta edição ocorreram de **3 de agosto a 14 de setembro de 2026**. O Sisu tem seleção e vagas próprias."
-            },
-            {
-              "pergunta": "Como ingressar em Agronomia em São João Evangelista?",
-              "resposta": "Em **São João Evangelista**, o processo seletivo próprio de 2027 oferece **15 vagas pelo Enem** e **15 por Histórico Escolar e Redação online**. É necessário concluir o ensino médio até a matrícula. As inscrições ocorreram de **3 de agosto a 14 de setembro de 2026**; a redação da segunda modalidade está prevista para **1º de novembro de 2026**. O Sisu tem vagas e seleção próprias."
+              "pergunta": "Como ingressar em Agronomia em Bambuí e São João Evangelista?",
+              "resposta": "Para cursar **Agronomia em Bambuí ou São João Evangelista**, é necessário ter concluído o ensino médio ou concluí-lo até a matrícula. O processo seletivo próprio pode utilizar **notas do Enem** ou **Histórico Escolar e Redação**, conforme a edição e o campus. A participação pelo **Sisu**, quando houver oferta para o curso, segue seleção específica. Consulte os editais vigentes para verificar modalidades, vagas, cotas, documentos e prazos de cada campus."
             },
             {
               "pergunta": "Como funcionam estágio e TCC em Agronomia em Bambuí?",
@@ -1921,16 +1917,8 @@
               "resposta": "O curso combina fundamentos de engenharia com planejamento, processos produtivos, qualidade, logística, custos e organização do trabalho para analisar e melhorar sistemas de produção."
             },
             {
-              "pergunta": "Como ingressar em Engenharia de Produção em Bambuí?",
-              "resposta": "Para ingresso em 2027 no Campus Bambuí, é necessário concluir o ensino médio até a matrícula. O processo seletivo próprio oferece **20 vagas pelo Enem** (edições de 2017 a 2026, sem nota zero) e **5 vagas por Histórico Escolar e Redação online**. As inscrições ocorreram de **3 de agosto a 14 de setembro de 2026**; a redação está prevista para **1º de novembro de 2026**. O Sisu tem seleção e vagas próprias."
-            },
-            {
-              "pergunta": "Como ingressar em Engenharia de Produção em Congonhas?",
-              "resposta": "Em **Congonhas**, o processo seletivo próprio de 2027 oferece **20 vagas pelo Enem**, com aproveitamento de resultados das edições de **2017 a 2026**, sem nota zero. É necessário concluir o ensino médio até a matrícula. O Sisu tem seleção própria."
-            },
-            {
-              "pergunta": "Como ingressar em Engenharia de Produção em Governador Valadares?",
-              "resposta": "Em **Governador Valadares**, o processo seletivo próprio de 2027 oferece **17 vagas pelo Enem** e **17 por Histórico Escolar e Redação online**. É necessário concluir o ensino médio até a matrícula. As inscrições ocorreram de **3 de agosto a 14 de setembro de 2026**; a redação da segunda modalidade está prevista para **1º de novembro de 2026**. O Sisu tem seleção própria."
+              "pergunta": "Como ingressar em Engenharia de Produção nos diferentes campi?",
+              "resposta": "Para cursar **Engenharia de Produção em Bambuí, Congonhas ou Governador Valadares**, é necessário ter concluído o ensino médio ou concluí-lo até a matrícula. O ingresso pode ocorrer por seleção própria do IFMG, com aproveitamento de **notas do Enem** ou **Histórico Escolar e Redação**, de acordo com a oferta de cada campus, e também pelo **Sisu** quando houver vagas para o curso. Consulte os editais vigentes para verificar modalidades, vagas, documentação, cotas e prazos da unidade escolhida."
             },
             {
               "pergunta": "Como funcionam estágio e TCC em Engenharia de Produção em Bambuí?",

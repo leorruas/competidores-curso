@@ -5045,6 +5045,310 @@
           "conteudo": "O técnico em Química pode **preparar amostras, soluções e reagentes, realizar análises químicas e registrar resultados**, seguindo métodos e procedimentos de segurança. Pode verificar características de matérias-primas, água, produtos intermediários e finais, colaborando em rotinas de **controle de qualidade** e acompanhamento de processos industriais.\n\nEm um laboratório industrial, por exemplo, pode realizar medições de propriedades, conferir registros e auxiliar a identificar diferenças entre resultados e padrões de qualidade. Em atividades ambientais, pode apoiar a coleta e análise de amostras de água e materiais, contribuindo para o monitoramento de condições de produção e controle ambiental.\n\nA formação permite atuar, dentro das competências técnicas, em indústrias químicas, petroquímicas, alimentícias, siderúrgicas e metalúrgicas, além de laboratórios de análise, pesquisa e serviços de controle da qualidade. O exercício de atividades regulamentadas deve observar **as atribuições profissionais, a legislação e as exigências de registro no Conselho Regional de Química (CRQ)**."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-mecatronica-integrado",
+      "nome": "Técnico em Mecatrônica",
+      "nivel": "Técnico",
+      "tipo": "Integrado ao Ensino Médio",
+      "campi": [
+        "Ibirité"
+      ],
+      "modalidade": "Presencial (8,3% EaD)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Mecatrônica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ibirité"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (8,3% EaD)"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.200 horas"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "mecatronica.ibirite@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Mecatrônica",
+          "conteudo": "O **Técnico em Mecatrônica** integra o ensino médio à formação profissional em mecânica, eletroeletrônica e computação. No **Campus Ibirité**, os estudantes aprendem a compreender e desenvolver sistemas de automação, robótica e equipamentos utilizados em processos de produção.\n\nA formação dura **três anos**, com atividades presenciais pela manhã e à tarde e parte da carga horária desenvolvida a distância, conforme a organização curricular."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda como sensores, motores, circuitos e programas se combinam para automatizar máquinas, criar mecanismos e melhorar processos industriais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a estudantes que **concluíram o ensino fundamental** e querem cursar o ensino médio junto com uma habilitação técnica. É uma opção para quem se interessa por **Matemática, Física, robótica, programação, eletrônica e máquinas**."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Ao longo dos três anos, os estudantes relacionam os componentes do ensino médio a conteúdos técnicos de mecânica, eletricidade e computação, com atividades de representação, programação, montagem e testes."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Formação geral",
+              "Língua Portuguesa, Matemática, Física, Química, Biologia, História, Geografia e outros componentes do ensino médio."
+            ],
+            [
+              "Mecânica e máquinas",
+              "Materiais, componentes, mecanismos, desenho técnico e funcionamento de sistemas mecânicos."
+            ],
+            [
+              "Eletricidade e eletrônica",
+              "Circuitos, comandos, sensores, acionamentos e leitura de esquemas elétricos."
+            ],
+            [
+              "Programação e controle",
+              "Programação aplicada, lógica, controle de equipamentos e integração com dispositivos."
+            ],
+            [
+              "Robótica e automação",
+              "Sistemas automatizados, atuadores, comandos e integração de partes mecânicas e eletrônicas."
+            ],
+            [
+              "Prototipagem e projetos integrados",
+              "Desenvolvimento de soluções, montagem, testes e documentação de projetos."
+            ],
+            [
+              "Qualidade e segurança",
+              "Prevenção de riscos, acompanhamento de processos e práticas de organização e manutenção."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática e laboratórios",
+          "conteudo": "O **Campus Ibirité** conta com espaços de aprendizagem e pesquisa em **Automação, Eletrônica, Circuitos Elétricos, Máquinas e Comandos Elétricos e Prototipagem**. Os estudantes desenvolvem práticas e projetos orientados relacionados a componentes, sistemas e mecanismos, conforme o planejamento das disciplinas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios de Mecatrônica e Prototipagem · Ibirité",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Mecatrônica",
+          "conteudo": "O curso **integrado ao ensino médio** é oferecido no **Campus Ibirité**, com aulas pela manhã e à tarde, duração de três anos e previsão de **8,3% da carga horária a distância** na oferta de referência."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ibirité",
+              "Manhã e tarde",
+              "Presencial (8,3% EaD)",
+              "mecatronica.ibirite@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ibirité",
+              "resposta": "A formação é **integral, em três anos**, e combina aulas do ensino médio, conteúdos de Mecatrônica e atividades práticas de laboratório, com parcela de estudos a distância prevista na organização da oferta."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "As **Práticas Profissionais Integradas (PPI)** do curso envolvem projetos acompanhados por professores, nos quais os estudantes podem desenvolver protótipos e soluções aplicadas à melhoria de processos. A estrutura do campus também dispõe de laboratórios usados em atividades de pesquisa, projetos integradores e iniciativas de extensão."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Mecatrônica"
+          ],
+          "linhas": [
+            [
+              "Engenharia de Controle e Automação",
+              "Ibirité e Betim",
+              "Projeto, programação e controle de máquinas, sistemas automatizados e processos industriais."
+            ],
+            [
+              "Ciência da Computação",
+              "Ibirité e Formiga",
+              "Programação, computação, algoritmos e desenvolvimento de sistemas."
+            ],
+            [
+              "Engenharia Mecânica",
+              "Betim e Arcos",
+              "Projetos mecânicos, máquinas, materiais e processos de fabricação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Mecatrônica"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Tecnologias ambientais, energia e processos produtivos sustentáveis, após formação superior compatível."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Entre **janeiro e fevereiro de 2025**, estudantes do **segundo ano de Mecatrônica**, junto a turmas de Automação Industrial e Sistemas de Energia Renovável do **Campus Ibirité**, participaram de um projeto interdisciplinar sobre a formação do povo brasileiro, com base na obra de **Darcy Ribeiro**. A atividade reuniu estudos de História, Geografia, Filosofia e Sociologia para discutir a diversidade cultural e a constituição da sociedade brasileira."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto interdisciplinar sobre a formação do povo brasileiro · Ibirité · fevereiro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Na edição de **2025 do Enem**, o estudante **Davi Alves Silva**, do **Técnico Integrado em Mecatrônica do Campus Ibirité**, alcançou **785,4 pontos de média geral**, figurando entre as dez maiores notas gerais de estudantes do IFMG no levantamento institucional divulgado em fevereiro de 2026."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Destaque do Técnico em Mecatrônica no Enem 2025 · Ibirité",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "No **Concurso Canguru de Matemática 2026**, o **Campus Ibirité** teve três estudantes de Mecatrônica entre os premiados: **Lucas Sampaio Gouveia Tinoco**, do primeiro ano, recebeu **medalha de bronze**, enquanto **Lucas Prates Gonçalves de Sena** e **Sara Vitória Pinali Reis**, ambos do segundo ano, receberam **menções honrosas**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Premiações de Mecatrônica no Canguru de Matemática · Ibirité · 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Como funciona a formação integrada ao ensino médio?",
+              "resposta": "Você cursa as disciplinas da **formação geral e da formação técnica** em uma única matrícula. A duração prevista é de **três anos**, com aulas pela manhã e à tarde e atividades a distância conforme a organização curricular."
+            },
+            {
+              "pergunta": "O que é uma Prática Profissional Integrada?",
+              "resposta": "As **PPI** permitem reunir conhecimentos de diferentes disciplinas em projetos orientados por professores, com desenvolvimento de protótipos e soluções para problemas concretos ou melhorias de processos."
+            },
+            {
+              "pergunta": "O estágio e o TCC são obrigatórios?",
+              "resposta": "**Não. O estágio supervisionado é não obrigatório**, realizado como atividade opcional além da carga horária regular, com orientação e supervisão. O estágio pode começar a partir do **terceiro semestre**, desde que o estudante tenha **16 anos completos**. **Não há TCC previsto** no projeto pedagógico do curso."
+            },
+            {
+              "pergunta": "Que atividades práticas podem ser realizadas?",
+              "resposta": "O curso reúne atividades em laboratórios de **Automação, Eletrônica, Máquinas e Comandos Elétricos, Circuitos e Prototipagem**, articulando montagem, programação, testes e projetos."
+            },
+            {
+              "pergunta": "Quais graduações do IFMG se relacionam com Mecatrônica?",
+              "resposta": "Entre as possibilidades de continuidade estão **Engenharia de Controle e Automação, Ciência da Computação e Engenharia Mecânica**, em diferentes campi do IFMG."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil?",
+              "resposta": "O IFMG mantém programas de assistência estudantil, com critérios e benefícios divulgados em editais próprios."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Mecatrônica Integrado ao Ensino Médio**, é necessário ter **concluído o ensino fundamental** ou concluí-lo até a matrícula. O IFMG realiza **processos seletivos públicos para cursos técnicos integrados**, com critérios definidos no edital de cada edição.\n\nConsulte o edital vigente para conhecer as vagas, as cotas, as formas de avaliação e os procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Mecatrônica pode **apoiar a montagem, a instalação e a manutenção de máquinas e equipamentos automatizados**, reunindo conhecimentos de mecânica, eletrônica, programação e controle. Pode interpretar diagramas e desenhos, acompanhar testes, medir grandezas, verificar sensores e atuadores e identificar falhas em sistemas que combinam componentes mecânicos e elétricos.\n\nEm uma linha de produção, por exemplo, pode **auxiliar na programação e operação de máquinas e dispositivos automatizados**, monitorar o comportamento de equipamentos, verificar o funcionamento de comandos e apoiar ajustes para melhorar o processo. Na manutenção, pode acompanhar inspeções, registrar ocorrências e colaborar com equipes na substituição ou regulagem de componentes.\n\nPode atuar em indústrias alimentícias, automobilísticas, metalomecânicas, petroquímicas e de outros segmentos, além de empresas de manutenção e integração de sistemas, observando **normas de segurança e os limites das atribuições técnicas**."
+        }
+      ]
     }
   ]
 }

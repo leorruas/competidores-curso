@@ -1349,7 +1349,7 @@
             },
             {
               "rotulo": "Vagas",
-              "valor": "Informação incompleta"
+              "valor": "30 vagas pelo Enem (Processo Seletivo 2027)"
             }
           ]
         },
@@ -1425,8 +1425,8 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Onde o IFMG oferece Agronomia",
-          "conteudo": "O curso é oferecido no Campus Bambuí. Confira o turno e o contato da coordenação na tabela abaixo."
+          "titulo": "Oferta de Agronomia no Campus Bambuí",
+          "conteudo": "Em Bambuí, o curso funciona de manhã e à tarde. Confira o contato da coordenação na tabela abaixo."
         },
         {
           "tipo": "tabela",
@@ -1464,8 +1464,8 @@
               "resposta": "A matriz curricular inclui estágio e Trabalho de Conclusão de Curso (TCC)."
             },
             {
-              "pergunta": "Como ingressar?",
-              "resposta": "Consulte os processos seletivos do IFMG para verificar formas de seleção, prazos e distribuição de vagas."
+              "pergunta": "Como ingressar em Agronomia em Bambuí?",
+              "resposta": "Para ingresso em 2027 no Campus Bambuí, é necessário concluir o ensino médio até a matrícula. O processo seletivo próprio oferece **30 vagas pela nota do Enem**, considerando edições de **2017 a 2026** sem nota zero nas provas ou na redação. As inscrições desta edição ocorreram de **3 de agosto a 14 de setembro de 2026**. O Sisu tem seleção e vagas próprias."
             }
           ]
         },
@@ -1562,7 +1562,7 @@
             },
             {
               "rotulo": "Vagas",
-              "valor": "Informação incompleta"
+              "valor": "20 vagas pelo Enem e 5 por Histórico Escolar e Redação (Processo Seletivo 2027)"
             }
           ]
         },
@@ -1638,8 +1638,8 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Onde o IFMG oferece Engenharia de Produção",
-          "conteudo": "O curso é oferecido no Campus Bambuí. Confira o turno e o contato da coordenação na tabela abaixo."
+          "titulo": "Oferta de Engenharia de Produção no Campus Bambuí",
+          "conteudo": "Em Bambuí, o curso funciona de manhã e à tarde. Confira o contato da coordenação na tabela abaixo."
         },
         {
           "tipo": "tabela",
@@ -1673,8 +1673,8 @@
               "resposta": "Informação incompleta"
             },
             {
-              "pergunta": "Como ingressar?",
-              "resposta": "Acompanhe os processos seletivos do IFMG para verificar formas de ingresso, vagas e cronogramas."
+              "pergunta": "Como ingressar em Engenharia de Produção em Bambuí?",
+              "resposta": "Para ingresso em 2027 no Campus Bambuí, é necessário concluir o ensino médio até a matrícula. O processo seletivo próprio oferece **20 vagas pelo Enem** (edições de 2017 a 2026, sem nota zero) e **5 vagas por Histórico Escolar e Redação online**. As inscrições ocorreram de **3 de agosto a 14 de setembro de 2026**; a redação está prevista para **1º de novembro de 2026**. O Sisu tem seleção e vagas próprias."
             }
           ]
         },

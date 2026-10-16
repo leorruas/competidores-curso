@@ -138,6 +138,29 @@ test("catálogo mantém ofertas reais e filtros multicampi", () => {
   assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
 });
 
+test("F3.6: todos os oito cursos descrevem tarefas reais no Mundo do Trabalho", () => {
+  assert.equal(json.courses.length,8);
+  const expected=new Map([
+    ["tecnico-em-edificacoes-integrado",["desenhos técnicos","orçamentos"]],
+    ["tecnico-em-logistica-subsequente",["controle de estoques","planejamento de rotas"]],
+    ["tecnico-em-administracao-integrado",["atualizar cadastros","orçamentos"]],
+    ["direito-bacharelado-arcos",["analisar situações concretas","Exame de Ordem"]],
+    ["engenharia-mecanica-bacharelado",["projeto e da análise de máquinas","Confea/Crea"]],
+    ["administracao-bacharelado",["acompanhar custos","gestão de pessoas"]],
+    ["agronomia-bacharelado",["condições do solo","fitossanidade"]],
+    ["engenharia-de-producao-bacharelado",["analisar gargalos","pesquisa operacional"]]
+  ]);
+  for(const course of json.courses) {
+    const matching=course.blocos.filter(x=>x.tipo==="texto"&&x.titulo==="Mundo do Trabalho");
+    assert.equal(matching.length,1,course.id);
+    assert.ok(matching[0].conteudo.length>500,course.id);
+    for(const term of expected.get(course.id)||[]) {
+      assert.ok(matching[0].conteudo.toLowerCase().includes(term.toLowerCase()),course.id+": "+term);
+    }
+    assert.doesNotMatch(matching[0].conteudo,/emprego garantido|vaga garantida/i);
+  }
+});
+
 test("F3.6: Logística e Administração técnica descrevem tarefas concretas em Mundo do Trabalho", () => {
   const cases=[
     ["tecnico-em-logistica-subsequente",["controle de estoques","planejamento de rotas","relatórios","transportadoras"]],

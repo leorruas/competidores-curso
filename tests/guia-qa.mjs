@@ -230,6 +230,24 @@ test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar prem
   assert.match(researchAnswer,/seleções de cada período/);
 });
 
+test("FAQ não repete duração e matérias que já aparecem nos dados básicos", () => {
+  const banned=new Map([
+    ["agronomia-bacharelado-bambui",["Qual é a duração?","O que se estuda?"]],
+    ["engenharia-de-producao-bacharelado-bambui",["Quanto tempo dura?","O que se estuda?","Como é organizada a formação?"]]
+  ]);
+  for(const [id,questions] of banned) {
+    const c=json.courses.find(x=>x.id===id);
+    const faq=c.blocos.find(x=>x.tipo==="faq").itens;
+    assert.ok(faq.length>=3,id);
+    assert.ok(c.blocos.find(x=>x.tipo==="dados-basicos").campos.some(x=>x.rotulo==="Duração"));
+    for(const q of questions)assert.ok(!faq.some(x=>x.pergunta===q),id+": "+q);
+  }
+  const c=json.courses.find(x=>x.id==="administracao-bacharelado");
+  const answer=c.blocos.find(x=>x.tipo==="faq").itens.find(x=>x.pergunta==="Ouro Branco").resposta;
+  assert.match(answer,/quatro estrelas no Guia da Faculdade de 2025/);
+  assert.doesNotMatch(answer,/,\./);
+});
+
 test("Direito explica estágio e TCC com exigências concretas", () => {
   const c=json.courses.find(x=>x.id==="direito-bacharelado-arcos");
   const faq=c.blocos.find(x=>x.tipo==="faq");

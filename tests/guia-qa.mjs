@@ -262,7 +262,12 @@ test("F1B.9: áreas locais aparecem imediatamente após as tabelas de ofertas, s
     {id:"tecnico-em-logistica-subsequente",tableTitle:"Onde o IFMG oferece Técnico em Logística",
      campi:["Governador Valadares","Ribeirão das Neves"]},
     {id:"tecnico-em-administracao-integrado",tableTitle:"Onde o IFMG oferece Técnico em Administração Integrado",
-     campi:["Arcos","Bambuí","Formiga","Ouro Branco","Ouro Preto","Ponte Nova","Ribeirão das Neves","Sabará"]}
+     campi:["Arcos","Bambuí","Formiga","Ouro Branco","Ouro Preto","Ponte Nova","Ribeirão das Neves","Sabará"]},
+    {id:"engenharia-mecanica-bacharelado",tableTitle:"Onde o IFMG oferece Engenharia Mecânica",campi:["Arcos","Betim"]},
+    {id:"administracao-bacharelado",tableTitle:"Onde o IFMG oferece Administração",campi:["Bambuí","Formiga","Ouro Branco","Ribeirão das Neves","Sabará","São João Evangelista"]},
+    {id:"agronomia-bacharelado",tableTitle:"Onde o IFMG oferece Agronomia",campi:["Bambuí","São João Evangelista"]},
+    {id:"engenharia-de-producao-bacharelado",tableTitle:"Onde o IFMG oferece Engenharia de Produção",campi:["Bambuí","Congonhas","Governador Valadares"]},
+    {id:"direito-bacharelado-arcos",tableTitle:"Onde o IFMG oferece Direito",campi:["Arcos"]}
   ];
   for(const {id,tableTitle,campi} of specs){
     const c=json.courses.find(x=>x.id===id);
@@ -282,7 +287,7 @@ test("F1B.9: áreas locais aparecem imediatamente após as tabelas de ofertas, s
     assert.ok(c.blocos[nextFaq].itens.every(x=>!campi.includes(x.pergunta)),id+": campus não é pergunta");
     const header=c.blocos.findIndex((x,j)=>j>i+campi.length&&x.titulo==="Perguntas frequentes");
     assert.ok(header>i+campi.length&&header<nextFaq,id+": FAQ independente");
-    assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+    if(c.nivel==="Técnico") assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
     assert.ok(h.isApprovedCourse(c),id);
   }
 });
@@ -335,6 +340,40 @@ test("F1B.9: oito campi de Administração têm informações próprias e FAQ de
   const joined=JSON.stringify(c.blocos.filter(x=>x.titulo?.startsWith("Campus ")));
   assert.doesNotMatch(joined,/Informação incompleta|referência sem validação|Hackathon Social|Mais informações no campus/);
   assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+});
+
+test("F1B.9: cursos superiores distinguem atividades e fontes de cada campus", () => {
+  const get=(id,campus)=>json.courses.find(c=>c.id===id).blocos.find(b=>b.tipo==="texto"&&b.titulo==="Campus "+campus)?.conteudo||"";
+  const cases=[
+    ["engenharia-mecanica-bacharelado","Arcos",/Trabalhos Acadêmicos Integradores/],
+    ["engenharia-mecanica-bacharelado","Betim",/Pollyrubber/],
+    ["administracao-bacharelado","Bambuí",/Trabalhos Interdisciplinares/],
+    ["administracao-bacharelado","Formiga",/conceito 4/],
+    ["administracao-bacharelado","Ouro Branco",/quatro estrelas no Guia da Faculdade de 2025/],
+    ["administracao-bacharelado","Ribeirão das Neves",/planos de negócios/],
+    ["administracao-bacharelado","Sabará",/23,67%/],
+    ["administracao-bacharelado","São João Evangelista",/Destaque Jr/],
+    ["agronomia-bacharelado","Bambuí",/Olericultura/],
+    ["agronomia-bacharelado","São João Evangelista",/Agricampo/],
+    ["engenharia-de-producao-bacharelado","Bambuí",/kits experimentais/],
+    ["engenharia-de-producao-bacharelado","Congonhas",/Pesquisa Operacional/],
+    ["engenharia-de-producao-bacharelado","Governador Valadares",/borracha e pneus/],
+    ["direito-bacharelado-arcos","Arcos",/prática jurídica simulada e real/]
+  ];
+  for(const [id,campus,pattern] of cases) assert.match(get(id,campus),pattern,id+" — "+campus);
+  const direito=json.courses.find(x=>x.id==="direito-bacharelado-arcos");
+  const at=direito.blocos.findIndex(x=>x.titulo==="Onde o IFMG oferece Direito");
+  assert.deepEqual(direito.blocos[at+1].colunas,["Campus","Turno","Modalidade","E-mail da coordenação"]);
+  assert.deepEqual(direito.blocos[at+1].linhas,[["Arcos","Noite","Presencial (30% EaD)","direito.arcos@ifmg.edu.br"]]);
+  assert.ok(!direito.blocos[at+1].linhas.some(x=>x.includes("Informação incompleta")));
+  const admin=json.courses.find(x=>x.id==="administracao-bacharelado");
+  assert.ok(admin.blocos.find(x=>x.tipo==="faq").itens.every(x=>!admin.campi.includes(x.pergunta)));
+  const agr=json.courses.find(x=>x.id==="agronomia-bacharelado");
+  assert.ok(!agr.blocos.find(x=>x.tipo==="faq").itens.some(x=>x.pergunta==="Qual a duração de Agronomia em Bambuí?"));
+  const prod=json.courses.find(x=>x.id==="engenharia-de-producao-bacharelado");
+  assert.ok(!prod.blocos.find(x=>x.tipo==="faq").itens.some(x=>x.pergunta==="O que diferencia a formação em Congonhas?"));
+  const mec=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
+  assert.ok(!mec.blocos.find(x=>x.tipo==="faq").itens.some(x=>/experiências práticas fazem parte da formação em Arcos|atividades acadêmicas em Betim/.test(x.pergunta)));
 });
 
 test("F3.6: todos os oito cursos descrevem tarefas reais no Mundo do Trabalho", () => {
@@ -502,7 +541,7 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
     for(const q of questions)assert.ok(!faq.some(x=>x.pergunta===q),id+": "+q);
   }
   const c=json.courses.find(x=>x.id==="administracao-bacharelado");
-  const answer=c.blocos.find(x=>x.tipo==="faq").itens.find(x=>x.pergunta==="Ouro Branco").resposta;
+  const answer=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Campus Ouro Branco").conteudo;
   assert.match(answer,/quatro estrelas no Guia da Faculdade de 2025/);
   assert.doesNotMatch(answer,/,\./);
 });
@@ -560,7 +599,8 @@ test("Administração reúne seis campi e não repete FAQ de turno", () => {
   assert.equal(offer.linhas.length,6);
   assert.ok(offer.linhas.every(row=>row.length===offer.colunas.length));
   const faq=course.blocos.find(b=>b.tipo==="faq");
-  assert.deepEqual(faq.itens.map(x=>x.pergunta),campi);
+  assert.equal(faq.itens.length,4);
+  assert.ok(faq.itens.every(x=>x.pergunta.includes("?")&&!campi.includes(x.pergunta)));
   assert.equal(course.blocos.filter(b=>b.tipo==="texto")[0].titulo,"Administração");
   assert.ok(h.isApprovedCourse(course));
   assert.ok(course.aliases.includes("administracao-bacharelado-bambui"));

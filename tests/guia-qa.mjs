@@ -1433,6 +1433,30 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
   }
 });
 
+test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promessa de vaga", () => {
+  const production=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
+  const maker=sectionText(production,"Projetos e experiências acadêmicas");
+  assert.match(maker,/Em \\*\\*2025\\*\\*.*Campus Congonhas/);
+  assert.match(maker,/seleção de bolsista de iniciação científica e tecnológica/);
+  assert.match(maker,/Engenharia de Produção e Engenharia Mecânica/);
+  assert.match(maker,/resultado divulgado em agosto/);
+  assert.doesNotMatch(maker,/estudante de Engenharia de Produção (?:foi )?selecionad[oa]|inscrições abertas|bolsa garantida/);
+  const mechanic=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
+  const arcos=sectionText(mechanic,"Pesquisa, extensão e oportunidades");
+  assert.match(arcos,/Em \\*\\*2026\\*\\*.*Campus Arcos/);
+  assert.match(arcos,/kits didáticos e produtos mecânicos/);
+  assert.match(arcos,/dois estudantes de Engenharia Mecânica classificados/);
+  assert.doesNotMatch(arcos,/projetos concluídos|bolsa garantida|protótipos entregues/);
+  const faq=mechanic.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Perguntas frequentes");
+  assert.ok(faq&&faq.itens.length>0);
+  assert.ok(!faq.itens.some(i=>(i.resposta||"").includes("kits didáticos e produtos mecânicos")),"sem repetir o evento no FAQ");
+  for(const [c,ref] of [[production,"Ambiente de Inovação e Maker · Congonhas"],[mechanic,"Projeto de kits didáticos · Arcos"]]){
+    const i=c.blocos.findIndex(b=>b.tipo==="galeria"&&b.referencia===ref);
+    assert.ok(i>0,c.id+" tem galeria do relato recente");
+    assert.equal(c.blocos[i-1].tipo,"texto");
+  }
+});
+
 test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {
   const relevantTitles=new Set(["Projetos e experiências acadêmicas","Projetos e experiências","Práticas e experiências","Pesquisa, extensão e oportunidades","Pesquisa, extensão e aprendizagem prática","Experiências e conquistas dos estudantes","Experiências de aprendizagem em Direito"]);
   const oldDate=/\b20(?:0\d|1\d|2[0-4])\b/;

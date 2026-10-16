@@ -166,7 +166,7 @@ test("F4.4: Logística e Administração técnico têm duas tabelas de continuid
     for (const b of [grad,pos]) {
       assert.ok(b.linhas.every(row=>row.length===3&&row.every(Boolean)),spec.id);
       assert.match(h.editorBlock(b,i+2),/Copiar tabela/);
-      assert.match(h.blockCopy(b),/Curso\\tCampus\\tRelação com/);
+      assert.match(h.blockCopy(b),/Curso\tCampus\tRelação com/);
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],spec.id);
     assert.doesNotMatch(c.blocos.at(-2).conteudo,/2026|2027|48 questões|novembro|setembro|Quer ser lembrado/);

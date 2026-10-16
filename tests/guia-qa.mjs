@@ -512,6 +512,13 @@ test("F2.2: estágio e TCC específicos em SJE e Governador Valadares, sem herda
 
   const prod=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
   const pf=prod.blocos.find(b=>b.tipo==="faq").itens;
+  const congonhas=pf.find(q=>q.pergunta==="Como funcionam estágio e TCC em Engenharia de Produção em Congonhas?");
+  assert.ok(congonhas);
+  assert.match(congonhas.resposta,/450 horas/);
+  assert.match(congonhas.resposta,/60% do curso/);
+  assert.match(congonhas.resposta,/7º período/);
+  assert.match(congonhas.resposta,/TCC também é obrigatório/);
+  assert.doesNotMatch(congonhas.resposta,/160 horas|Governador Valadares/);
   const gv=pf.find(q=>q.pergunta==="Como funcionam estágio e TCC em Engenharia de Produção em Governador Valadares?");
   assert.ok(gv);
   assert.match(gv.resposta,/160 horas/);

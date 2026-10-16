@@ -173,8 +173,8 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
   const get=id=>sectionText(json.courses.find(c=>c.id===id),unified);
   for(const [id,terms] of [
     ["administracao-bacharelado",["Formiga","conceito 4","Ouro Branco","quatro estrelas"]],
-    ["agronomia-bacharelado",["conceito 4","2023","Olericultura","horta escolar"]],
-    ["engenharia-de-producao-bacharelado",["Portaria SERES/MEC nº 16","2 de fevereiro de 2026","Othmer Fellowship","Diretório Acadêmico","Brazilian Journal of Production Engineering","Desafio de Inovação de 2019"]],
+    ["agronomia-bacharelado",["Informação incompleta"]],
+    ["engenharia-de-producao-bacharelado",["Portaria SERES/MEC nº 16","2 de fevereiro de 2026","Diretório Acadêmico","Brazilian Journal of Production Engineering"]],
     ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]
   ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
   for(const id of ["tecnico-em-edificacoes-integrado","tecnico-em-logistica-subsequente","tecnico-em-administracao-integrado","direito-bacharelado-arcos"]){
@@ -1158,20 +1158,21 @@ test("F3.1: Congonhas e GV apresentam projeto, resultado e campus; SJE empresa j
   assert.doesNotMatch(localSje,/Agricampo|Centro de Vivência/);
   assert.ok(localSje.includes("organização curricular de **2023**"));
   const copias=ag.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]);
-  for(const termo of ["Olericultura","Agricampo"])assert.equal(copias.filter(t=>t.includes(termo)).length,1,termo+" só na seção temática");
+  assert.equal(copias.filter(t=>t.includes("Agricampo")).length,1,"Agricampo apenas em oportunidades");
+  assert.ok(!copias.some(t=>/Olericultura – Seleção e Implantação|horta escolar/.test(t)),"projeto de 2022 deve ficar fora do guia");
   const agAchievements=sectionText(ag,"Experiências e conquistas dos estudantes");
-  assert.ok(agAchievements.includes("Olericultura"),"Preservar projeto de Bambuí");
+  assert.equal(agAchievements,"Informação incompleta","não usar projetos ou reconhecimentos anteriores a 2025 como conquistas");
   const pro=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
   const practice=sectionText(pro,"Projetos e experiências acadêmicas");
   for(const term of ["Congonhas","Ambiente de Inovação e Maker","Governador Valadares","2026","ABC Borracha","Batatas Magu"]) {
     assert.ok(practice.includes(term),"Produção prática: "+term);
   }
   const research=sectionText(pro,"Pesquisa, extensão e oportunidades");
-  for(const term of ["Congonhas","Bambuí","Renata Aparecida Pereira","Governador Valadares","2022","Gestão de Projetos","cartazes e adesivos"]) {
+  for(const term of ["Congonhas","Gestão de Operações, Logística e Pesquisa Operacional"]) {
     assert.ok(research.includes(term),"Produção pesquisa: "+term);
   }
   const achievements=sectionText(pro,"Experiências e conquistas dos estudantes");
-  for(const term of ["Othmer Fellowship","Bambuí","Congonhas","2025","Brazilian Journal of Production Engineering","Governador Valadares","Luisa Nery","Mauri Nunes","2019","Victor Rasquinho Ho Te Chang","Dominycke Guasti de Melo","impressão 3D"]) {
+  for(const term of ["Bambuí","Congonhas","2025","Brazilian Journal of Production Engineering","Governador Valadares","Victor Rasquinho Ho Te Chang","Dominycke Guasti de Melo","impressão 3D"]) {
     assert.ok(achievements.includes(term),"Produção conquista: "+term);
   }
   assert.ok(pro.blocos.filter(b=>b.tipo==="galeria").every(b=>b.itens.length===0));
@@ -1186,12 +1187,12 @@ test("F5.3: Engenharia de Produção apresenta cada atividade uma vez no bloco a
   const experiences=section("Experiências e conquistas dos estudantes");
   const local=c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens;
   const texts=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]);
-  for(const term of ["ABC Borracha","Batatas Magu","Victor Rasquinho","Renata Aparecida","Gestão de Operações, Logística e Pesquisa Operacional","kits experimentais","descarte correto de absorventes"]) {
+  for(const term of ["ABC Borracha","Batatas Magu","Victor Rasquinho","Gestão de Operações, Logística e Pesquisa Operacional"]) {
     assert.equal(texts.filter(t=>t.includes(term)).length,1,"não repetir: "+term);
   }
   for(const term of ["ABC Borracha","Batatas Magu","2026","Governador Valadares"])
     assert.ok(project.includes(term),"visita em projetos: "+term);
-  for(const term of ["Renata Aparecida Pereira","2021","e-book","cartazes e adesivos","2022","Pesquisa Operacional"])
+  for(const term of ["Pesquisa Operacional"])
     assert.ok(research.includes(term),"pesquisa e extensão: "+term);
   for(const term of ["Victor Rasquinho Ho Te Chang","Dominycke Guasti de Melo","modelagem e impressão 3D","artigo publicado em 2025"])
     assert.ok(experiences.includes(term),"pesquisa publicada em conquistas: "+term);
@@ -1199,16 +1200,12 @@ test("F5.3: Engenharia de Produção apresenta cada atividade uma vez no bloco a
   assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 
-test("F3.1/F3.4: projetos documentados de Bambuí e avaliação MEC não migram entre campi", () => {
+test("F3.8: informações históricas ficam fora das conquistas públicas", () => {
   const agr=json.courses.find(c=>c.id==="agronomia-bacharelado");
   const agexp=sectionText(agr,"Experiências e conquistas dos estudantes");
-  for(const term of ["Bambuí","Olericultura","2022","horta escolar","Associação Olga Chaves"]) {
-    assert.ok(agexp.includes(term),"Agronomia: "+term);
-  }
+  assert.equal(agexp,"Informação incompleta","sem conquistas de 2025+ verificadas para Agronomia");
   const agrecognition=sectionText(agr,"Experiências e conquistas dos estudantes");
-  for(const term of ["Bambuí","conceito 4","1 a 5","2023","MEC"]) {
-    assert.ok(agrecognition.includes(term),"reconhecimento Agronomia: "+term);
-  }
+  assert.doesNotMatch(agrecognition,/2023|conceito 4|Olericultura|horta escolar/,"sem conquistas históricas como destaques");
   assert.ok(!agrecognition.includes("São João Evangelista"),"nota de Bambuí não é nota de SJE");
   const opportunities=sectionText(agr,"Pesquisa, extensão e oportunidades");
   assert.ok(opportunities.includes("2026"));
@@ -1216,31 +1213,24 @@ test("F3.1/F3.4: projetos documentados de Bambuí e avaliação MEC não migram 
   assert.ok(opportunities.includes("não uma oferta permanente"));
   const pro=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
   const research=sectionText(pro,"Pesquisa, extensão e oportunidades");
-  for(const term of ["Bambuí","Renata Aparecida Pereira","Roberta Lacorte de Araújo","kits experimentais","e-book","2021"]) {
-    assert.ok(research.includes(term),"Produção projeto: "+term);
-  }
+  assert.doesNotMatch(research,/Renata Aparecida|Roberta Lacorte|kits experimentais|e-book|2021|2022/,"pesquisa antiga só no histórico privado");
   assert.ok(research.includes("Congonhas"),"manter pesquisa distinta em Congonhas");
   const achievements=sectionText(pro,"Experiências e conquistas dos estudantes");
   assert.ok(achievements.includes("2025"));
   assert.ok(achievements.includes("Diretório Acadêmico"));
-  assert.ok(achievements.includes("Othmer Fellowship"),"manter exemplo de egresso");
+  assert.doesNotMatch(achievements,/Othmer Fellowship|Euclides Brandão Maluf|Desafio de Inovação de 2019/,"conquistas anteriores a 2025 ficam fora do guia");
   assert.ok(!objWithPrivateControls(agr)&&!objWithPrivateControls(pro));
 });
 function objWithPrivateControls(obj) {
   return /"(?:validacao|pendencias|revisao_coordenacao|instrucao)"\s*:/.test(JSON.stringify(obj));
 }
 
-test("F3.1: reconhecimento de egresso de Produção pertence apenas a Bambuí", () => {
-  const c=json.courses.find(x=>x.id==="engenharia-de-producao-bacharelado");
-  const b={conteudo:sectionText(c,"Experiências e conquistas dos estudantes")};
-  assert.match(b.conteudo,/Em \*\*Bambuí\*\*/);
-  assert.match(b.conteudo,/Euclides Brandão Maluf/);
-  assert.match(b.conteudo,/2024/);
-  assert.match(b.conteudo,/University of Nebraska/);
-  assert.match(b.conteudo,/Othmer Fellowship/);
-  const euclides=b.conteudo.split("\n\n").find(p=>p.includes("Euclides Brandão Maluf"));
-  assert.doesNotMatch(euclides,/Governador Valadares|Congonhas|2027|bolsa garantida/);
-  assert.match(euclides,/Bambuí/);
+test("F3.8: reconhecimentos e projetos antigos permanecem apenas no controle privado", () => {
+  const ag=json.courses.find(x=>x.id==="agronomia-bacharelado");
+  const pr=json.courses.find(x=>x.id==="engenharia-de-producao-bacharelado");
+  const publicContent=[...ag.blocos,...pr.blocos].flatMap(b=>[b.conteudo||"",b.referencia||""]).join("\n");
+  for(const old of ["Olericultura – Seleção","horta escolar","Othmer Fellowship","Euclides Brandão Maluf","Química para crianças","Desafio de Inovação de 2019","descarte de absorventes"])
+    assert.ok(!publicContent.includes(old),"não publicar caso histórico: "+old);
 });
 
 test("F2.2: Bambuí descreve estágio e TCC sem inventar cargas curriculares de 2027", () => {
@@ -1417,8 +1407,8 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     "direito-bacharelado-arcos":1,
     "engenharia-mecanica-bacharelado":6,
     "administracao-bacharelado":3,
-    "agronomia-bacharelado":5,
-    "engenharia-de-producao-bacharelado":10,
+    "agronomia-bacharelado":4,
+    "engenharia-de-producao-bacharelado":6,
     "tecnico-em-administracao-integrado":1
   };
   for(const c of json.courses){
@@ -1440,4 +1430,19 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
   }
+});
+
+test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante", () => {
+  const relevantTitles=new Set(["Projetos e experiências acadêmicas","Projetos e experiências","Práticas e experiências","Pesquisa, extensão e oportunidades","Pesquisa, extensão e aprendizagem prática","Experiências e conquistas dos estudantes","Experiências de aprendizagem em Direito"]);
+  const oldDate=/\b20(?:0\d|1\d|2[0-4])\b/;
+  for(const c of json.courses){
+    let inside=false;
+    for(const b of c.blocos){
+      if(b.titulo)inside=relevantTitles.has(b.titulo);
+      if(!inside||b.tipo!=="texto")continue;
+      assert.doesNotMatch(b.conteudo||"",oldDate,c.id+": experiência anterior a 2025");
+    }
+    assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+  }
+  assert.equal(json.courses.reduce((n,c)=>n+c.blocos.filter(b=>b.tipo==="galeria").length,0),23);
 });

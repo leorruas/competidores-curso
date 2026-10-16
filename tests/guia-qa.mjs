@@ -1405,7 +1405,7 @@ test("F2.5/F3.1: Agronomia informa contato SJE e empresa júnior Safra em Bambu�
 test("F3.7: cada experiência estruturada possui galeria própria e aviso no editor", () => {
   const h=testContext();
   const expected={
-    "tecnico-em-edificacoes-integrado":3,
+    "tecnico-em-edificacoes-integrado":4,
     "tecnico-em-logistica-subsequente":1,
     "direito-bacharelado-arcos":1,
     "engenharia-mecanica-bacharelado":6,

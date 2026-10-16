@@ -138,6 +138,31 @@ test("catálogo mantém ofertas reais e filtros multicampi", () => {
   assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
 });
 
+test("F4.4: os oito cursos apresentam continuidade sem avisos genéricos", () => {
+  const h=testContext();
+  assert.equal(json.courses.length,8);
+  for(const c of json.courses) {
+    const i=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+    assert.ok(i>=0,c.id);
+    assert.equal(c.blocos[i].tipo,"texto");
+    assert.equal(c.blocos[i].conteudo,"",c.id+": título sem explicações óbvias");
+    const fields=h.editorFields(c.blocos[i]);
+    assert.equal(fields.length,1,c.id+": texto como um campo");
+    assert.equal(fields[0].value,"Continue seus estudos no IFMG",c.id);
+    if(c.id.startsWith("tecnico-")){
+      assert.deepEqual(c.blocos.slice(i+1,i+5).map(b=>b.titulo||b.tipo),
+        ["Graduação","tabela","Pós-graduação","tabela"],c.id);
+      assert.ok(c.blocos[i+2].linhas.length>0&&c.blocos[i+4].linhas.length>0,c.id);
+    }else{
+      assert.deepEqual(c.blocos.slice(i+1,i+4).map(b=>b.titulo||b.tipo),
+        ["Pós-graduação","tabela","links"],c.id);
+      assert.ok(c.blocos[i+2].linhas.length>0&&c.blocos[i+3].itens.length>0,c.id);
+    }
+    assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),
+      ["Forma de ingresso","Mundo do Trabalho"],c.id);
+  }
+});
+
 test("F4.4: Logística e Administração técnico têm duas tabelas de continuidade copiáveis", () => {
   const specs=[
     {id:"tecnico-em-logistica-subsequente",cols:["Curso","Campus","Relação com Logística"],grad:3,pos:2},
@@ -154,10 +179,7 @@ test("F4.4: Logística e Administração técnico têm duas tabelas de continuid
       ["texto","Pós-graduação"],["tabela",""]
     ],spec.id);
     const intro=c.blocos[i].conteudo;
-    assert.match(intro,/graduação/);
-    assert.match(intro,/pós-graduação/);
-    assert.match(intro,/não (permite|dá acesso direto)/);
-    assert.doesNotMatch(intro,/2025|2026|2027|vagas abertas|inscrições abertas/);
+    assert.equal(intro,"",spec.id+": sem explicações redundantes sobre ingresso na pós");
     const grad=c.blocos[i+2],pos=c.blocos[i+4];
     assert.deepEqual(grad.colunas,spec.cols);
     assert.deepEqual(pos.colunas,spec.cols);
@@ -220,10 +242,7 @@ test("F4.5: Edificações tem continuidade tabular verificável e copiável", ()
     ["texto","Pós-graduação"],["tabela",""]
   ]);
   const intro=c.blocos[idx].conteudo;
-  assert.ok(intro.indexOf("ensino médio")<intro.indexOf("graduação"));
-  assert.ok(intro.indexOf("graduação")<intro.indexOf("pós-graduação"));
-  assert.match(intro,/diploma técnico, sozinho, não permite ingresso direto/);
-  assert.doesNotMatch(intro,/2025|2026|2027|inscrições abertas|vagas abertas|bolsa garantida/);
+  assert.equal(intro,"","O título conduz diretamente às tabelas, sem parágrafos de ressalvas");
 
   const grad=c.blocos[idx+2],pos=c.blocos[idx+4];
   const cols=["Curso","Campus","Relação com Edificações"];
@@ -921,17 +940,18 @@ test("as seções editoriais existem, independentemente da posição contextual 
 
 test("continuidade de Administração distingue mestrado e especializações por campus", () => {
   const c=json.courses.find(x=>x.id==="administracao-bacharelado");
-  const text=c.blocos.find(x=>x.titulo==="Continue seus estudos no IFMG");
-  assert.ok(text);
-  assert.match(text.conteudo,/Mestrado Profissional em Administração/);
-  assert.match(text.conteudo,/Formiga/);
-  assert.match(text.conteudo,/ProfEPT/);
-  assert.match(text.conteudo,/Educação Profissional e Tecnológica/);
-  assert.match(text.conteudo,/Ouro Branco/);
-  assert.match(text.conteudo,/Especialização em Gestão de Negócios/);
-  assert.match(text.conteudo,/Em \*\*Formiga\*\*, o \*\*Mestrado Profissional em Administração\*\*/);
-  assert.match(text.conteudo,/Em \*\*Ouro Branco\*\*, a \*\*Especialização em Gestão de Negócios\*\*/);
-  assert.doesNotMatch(text.conteudo,/Em \*\*Ouro Branco\*\*, o \*\*Mestrado Profissional em Administração\*\*/);
+  const i=c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG");
+  assert.ok(i>=0);
+  assert.equal(c.blocos[i].conteudo,"");
+  assert.equal(c.blocos[i+1].titulo,"Pós-graduação");
+  const table=c.blocos[i+2];
+  assert.equal(table.tipo,"tabela");
+  assert.deepEqual(table.colunas,["Curso","Campus","Relação com Administração"]);
+  assert.ok(table.linhas.some(row=>row[0]==="Mestrado Profissional em Administração"&&row[1]==="Formiga"));
+  assert.ok(table.linhas.some(row=>row[0]==="Especialização em Gestão de Negócios"&&row[1].includes("Ouro Branco")));
+  assert.ok(table.linhas.some(row=>row[0]==="Especialização em Gestão Pública e Desenvolvimento Regional"&&row[1].includes("Ribeirão das Neves")));
+  assert.ok(table.linhas.some(row=>row[0]==="Especialização em Gestão"&&row[1].includes("Bambuí")));
+  assert.ok(!table.linhas.some(row=>row[0]==="Mestrado Profissional em Administração"&&row[1].includes("Ouro Branco")));
 });
 
 test("Técnico em Administração Integrado agrupa 8 campi sem misturar o bacharelado", () => {

@@ -359,6 +359,50 @@ test("F1B.13: conteúdos públicos falam na voz do IFMG, sem narrar a própria f
   assert.match(mec.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Betim").resposta,/organização curricular de \*\*2023\*\*/);
 });
 
+test("F2.12: FAQs de ingresso não reciclam calendário, notas ou vagas de edição passada", () => {
+  const ids=[
+    "direito-bacharelado-arcos","engenharia-mecanica-bacharelado",
+    "agronomia-bacharelado","engenharia-de-producao-bacharelado"
+  ];
+  let total=0;
+  const temporal=/\b20(?:1[0-9]|2[0-9])\b|\b\d+\s*vagas\b|3 de agosto|14 de setembro|1º de novembro|redação prevista|inscrições ocorreram|ed(?:ições|ição) de 2017/i;
+  for(const c of json.courses){
+    const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi");
+    assert.ok(faq,c.id);
+    const admission=faq.itens.filter(q=>/^(?:Como (?:posso )?ingressar)/i.test(q.pergunta));
+    if(ids.includes(c.id)){
+      assert.equal(admission.length,1,c.id+": apenas uma dúvida de ingresso");
+      total+=admission.length;
+    }else{
+      assert.equal(admission.length,0,c.id+": não criar ingresso duplicado no FAQ");
+    }
+    for(const q of admission){
+      assert.doesNotMatch(q.pergunta+" "+q.resposta,temporal,c.id);
+      assert.match(q.resposta,/ensino médio/i,c.id);
+      assert.match(q.resposta,/matrícula/i,c.id);
+      assert.match(q.resposta,/edita(?:l|is) vigente/i,c.id);
+      assert.ok(q.resposta.length>240,c.id);
+    }
+    const form=c.blocos.at(-2);
+    assert.equal(form.titulo,"Forma de ingresso",c.id);
+    assert.doesNotMatch(form.conteudo,temporal,c.id+": seção perene");
+    assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
+  }
+  assert.equal(total,4);
+  const agr=json.courses.find(c=>c.id==="agronomia-bacharelado");
+  const pro=json.courses.find(c=>c.id==="engenharia-de-producao-bacharelado");
+  for(const c of [agr,pro]){
+    assert.ok(c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens.length>=4,c.id);
+  }
+  // Datas históricas de projetos são fatos editoriais, não prazos de matrícula.
+  const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
+  assert.match(tec.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens.find(x=>x.pergunta.includes("atividades práticas")).resposta,/Expo Favela Minas em 2026/);
+  const eng=json.courses.find(c=>c.id==="engenharia-mecanica-bacharelado");
+  assert.match(eng.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Betim").resposta,/Pollyrubber/);
+  const agrLocal=agr.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
+  assert.match(agrLocal.itens.find(x=>x.pergunta==="Campus Bambuí").resposta,/Em \*\*2022\*\*/);
+});
+
 test("F1B.10: os oito cursos encerram com Forma de ingresso e Mundo do Trabalho", () => {
   const h=testContext();
   const graduationIds=[
@@ -655,7 +699,7 @@ test("Engenharia Mecânica agrupa Arcos e Betim e mantém exigências acadêmica
   assert.doesNotMatch(internship.resposta,/Betim[^.]*350 horas/);
 });
 
-test("Betim: estágio, PFC, extensão e ingresso 2027 não herdam números de Arcos", () => {
+test("Betim: estágio e PFC específicos; ingresso sem números da edição anterior", () => {
   const c=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
   const faq=c.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
   const intern=faq.find(x=>x.pergunta.includes("estágio e o TCC")).resposta;
@@ -665,9 +709,13 @@ test("Betim: estágio, PFC, extensão e ingresso 2027 não herdam números de Ar
   assert.match(intern,/PFC[\s\S]*duas disciplinas de 30 horas/);
   assert.doesNotMatch(intern,/Betim[^.]*350 horas/);
   const ingress=faq.find(x=>x.pergunta.includes("ingressar")).resposta;
-  assert.match(ingress,/Arcos[\s\S]*20 vagas[\s\S]*15 por Histórico Escolar e Redação/);
-  assert.match(ingress,/Betim[\s\S]*18 vagas[\s\S]*Enem/);
-  assert.match(ingress,/Sisu[\s\S]*seleção própria/);
+  assert.match(ingress,/Arcos[\s\S]*Betim/);
+  assert.match(ingress,/ensino médio/);
+  assert.match(ingress,/notas do Enem/);
+  assert.match(ingress,/Histórico Escolar e Redação/);
+  assert.match(ingress,/Sisu/);
+  assert.match(ingress,/edital vigente/);
+  assert.doesNotMatch(ingress,/2027|20 vagas|18 vagas|15 por Histórico/);
   assert.match(c.blocos.find(b=>b.titulo==="Projetos e experiências acadêmicas").conteudo,/Betim[\s\S]*Pollyrubber[\s\S]*Contagem/);
   assert.match(c.blocos.find(b=>b.titulo==="Pesquisa, extensão e oportunidades").conteudo,/225[\s\S]*135[\s\S]*180 horas/);
   const intro=c.blocos.find(b=>b.tipo==="introducao").conteudo;
@@ -731,7 +779,11 @@ test("Agronomia e Engenharia de Produção agrupam as cinco ofertas 2027 sem per
     assert.deepEqual(table.linhas.map(r=>r[1]),spec.turnos);
     assert.ok(table.linhas.every(r=>r[2]==="Presencial"));
     const faq=c.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi").itens;
-    assert.ok(spec.campi.every(campus=>faq.some(x=>x.pergunta.includes(campus)&&x.pergunta.startsWith("Como ingressar"))));
+    const ingressFaq=faq.filter(x=>x.pergunta.startsWith("Como ingressar"));
+    assert.equal(ingressFaq.length,1,spec.id+": uma resposta integrada e durável");
+    for(const campus of spec.campi)assert.ok(ingressFaq[0].pergunta.includes(campus)||ingressFaq[0].resposta.includes(campus),spec.id+": campus "+campus);
+    assert.match(ingressFaq[0].resposta,/editais vigentes/i);
+    assert.doesNotMatch(ingressFaq[0].resposta,/2027|2017|2026|\d+ vagas|inscrições ocorreram|1º de novembro/i);
     assert.ok(c.blocos.some(b=>b.tipo==="texto"&&b.titulo==="Onde o IFMG oferece "+c.nome));
     assert.ok(c.blocos.findIndex(b=>b.tipo==="galeria")<c.blocos.findIndex(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi"));
   }

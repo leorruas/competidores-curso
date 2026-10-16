@@ -203,88 +203,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Perguntas frequentes",
-          "conteudo": ""
-        },
-        {
-          "tipo": "faq",
-          "itens": [
-            {
-              "pergunta": "O que é um curso técnico integrado?",
-              "resposta": "O **integrado** reúne, em uma única formação, as disciplinas do ensino médio e as disciplinas técnicas de Edificações. É destinado a quem já concluiu o ensino fundamental ou vai concluí-lo até a matrícula."
-            },
-            {
-              "pergunta": "O curso é presencial?",
-              "resposta": "Sim. Os cinco campi oferecem o curso presencialmente, com atividades de ensino médio e formação técnica. Em **Ouro Preto**, 0,86% da carga horária é EaD; em **Santa Luzia**, 10,3%. Os demais campi seguem os próprios projetos pedagógicos, sem presumir percentuais iguais."
-            },
-            {
-              "pergunta": "O que vou aprender nas disciplinas técnicas?",
-              "resposta": "Você aprende a **interpretar e elaborar desenhos e projetos**, estudar materiais e solos, levantar quantidades, preparar orçamentos e acompanhar etapas de obras. Os componentes e as atividades específicas são definidos na matriz curricular de cada campus."
-            },
-            {
-              "pergunta": "Há aulas em laboratório e visitas técnicas?",
-              "resposta": "**Há atividades práticas comprovadas em alguns campi.** Em **Congonhas**, a área de Edificações dispõe de laboratórios de solos, materiais de construção, instalações elétricas e hidráulicas e prática de obras. Em **Governador Valadares**, a apresentação institucional registra aulas práticas e visitas técnicas. As experiências e a frequência de visitas variam entre turmas e campi."
-            },
-            {
-              "pergunta": "Posso concorrer à assistência estudantil?",
-              "resposta": "**Sim, desde que exista edital que contemple seu campus e você atenda aos requisitos.** O IFMG mantém programas como Bolsa Permanência, Auxílio Alimentação e Auxílio Moradia, com regras e disponibilidade definidas em cada seleção. As candidaturas aos auxílios socioeconômicos são feitas pelo **Sistema de Seleção da Assistência Estudantil (SSAE)**, conforme orientações do edital. A matrícula não garante recebimento automático."
-            },
-            {
-              "pergunta": "O IFMG tem cotas para esse curso?",
-              "resposta": "**Sim.** O IFMG aplica reserva de vagas nos processos seletivos de cursos técnicos. Os critérios incluem a trajetória escolar em escola pública e outras condições previstas nas regras de ações afirmativas. Na inscrição, é preciso informar o perfil de concorrência e apresentar a documentação exigida no edital vigente."
-            }
-          ]
-        },
-        {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            },
-            {
-              "rotulo": "Assistência estudantil",
-              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
-            }
-          ]
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Existe Técnico em Edificações para quem já concluiu ou está cursando o ensino médio?",
-          "conteudo": "**Sim.** Além do técnico integrado, existem ofertas documentadas de **Técnico em Edificações Subsequente** para quem já concluiu o ensino médio, em **Congonhas** e **Ouro Preto**. Em **Congonhas** também há oferta **concomitante** para quem cursa o ensino médio em outra escola. A disponibilidade de vagas e novas turmas depende de processo seletivo específico: a modalidade não deve ser presumida para os demais campi."
-        },
-        {
-          "tipo": "tabela",
-          "colunas": [
-            "Se você...",
-            "Procure por...",
-            "O que comparar"
-          ],
-          "linhas": [
-            [
-              "Vai começar o ensino médio",
-              "Integrado",
-              "Congonhas, Governador Valadares, Ouro Preto, Piumhi e Santa Luzia; verificar turno e deslocamento"
-            ],
-            [
-              "Já concluiu o ensino médio",
-              "Subsequente",
-              "Congonhas e Ouro Preto; conferir seleção e organização atual do curso"
-            ],
-            [
-              "Já cursa o ensino médio em outra escola",
-              "Concomitante",
-              "Congonhas; verificar requisitos, horários das duas instituições e oferta vigente"
-            ]
-          ]
-        },
-        {
-          "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
           "conteudo": "Informação incompleta"
         },
@@ -377,6 +295,88 @@
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O que é um curso técnico integrado?",
+              "resposta": "O **integrado** reúne, em uma única formação, as disciplinas do ensino médio e as disciplinas técnicas de Edificações. É destinado a quem já concluiu o ensino fundamental ou vai concluí-lo até a matrícula."
+            },
+            {
+              "pergunta": "O curso é presencial?",
+              "resposta": "Sim. Os cinco campi oferecem o curso presencialmente, com atividades de ensino médio e formação técnica. Em **Ouro Preto**, 0,86% da carga horária é EaD; em **Santa Luzia**, 10,3%. Os demais campi seguem os próprios projetos pedagógicos, sem presumir percentuais iguais."
+            },
+            {
+              "pergunta": "O que vou aprender nas disciplinas técnicas?",
+              "resposta": "Você aprende a **interpretar e elaborar desenhos e projetos**, estudar materiais e solos, levantar quantidades, preparar orçamentos e acompanhar etapas de obras. Os componentes e as atividades específicas são definidos na matriz curricular de cada campus."
+            },
+            {
+              "pergunta": "Há aulas em laboratório e visitas técnicas?",
+              "resposta": "**Há atividades práticas comprovadas em alguns campi.** Em **Congonhas**, a área de Edificações dispõe de laboratórios de solos, materiais de construção, instalações elétricas e hidráulicas e prática de obras. Em **Governador Valadares**, a apresentação institucional registra aulas práticas e visitas técnicas. As experiências e a frequência de visitas variam entre turmas e campi."
+            },
+            {
+              "pergunta": "Posso concorrer à assistência estudantil?",
+              "resposta": "**Sim, desde que exista edital que contemple seu campus e você atenda aos requisitos.** O IFMG mantém programas como Bolsa Permanência, Auxílio Alimentação e Auxílio Moradia, com regras e disponibilidade definidas em cada seleção. As candidaturas aos auxílios socioeconômicos são feitas pelo **Sistema de Seleção da Assistência Estudantil (SSAE)**, conforme orientações do edital. A matrícula não garante recebimento automático."
+            },
+            {
+              "pergunta": "O IFMG tem cotas para esse curso?",
+              "resposta": "**Sim.** O IFMG aplica reserva de vagas nos processos seletivos de cursos técnicos. Os critérios incluem a trajetória escolar em escola pública e outras condições previstas nas regras de ações afirmativas. Na inscrição, é preciso informar o perfil de concorrência e apresentar a documentação exigida no edital vigente."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Existe Técnico em Edificações para quem já concluiu ou está cursando o ensino médio?",
+          "conteudo": "**Sim.** Além do técnico integrado, existem ofertas documentadas de **Técnico em Edificações Subsequente** para quem já concluiu o ensino médio, em **Congonhas** e **Ouro Preto**. Em **Congonhas** também há oferta **concomitante** para quem cursa o ensino médio em outra escola. A disponibilidade de vagas e novas turmas depende de processo seletivo específico: a modalidade não deve ser presumida para os demais campi."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Vai começar o ensino médio",
+              "Integrado",
+              "Congonhas, Governador Valadares, Ouro Preto, Piumhi e Santa Luzia; verificar turno e deslocamento"
+            ],
+            [
+              "Já concluiu o ensino médio",
+              "Subsequente",
+              "Congonhas e Ouro Preto; conferir seleção e organização atual do curso"
+            ],
+            [
+              "Já cursa o ensino médio em outra escola",
+              "Concomitante",
+              "Congonhas; verificar requisitos, horários das duas instituições e oferta vigente"
+            ]
+          ]
         },
         {
           "tipo": "texto",
@@ -570,58 +570,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Perguntas frequentes",
-          "conteudo": ""
-        },
-        {
-          "tipo": "faq",
-          "itens": [
-            {
-              "pergunta": "Quem pode fazer o Técnico em Logística Subsequente?",
-              "resposta": "Quem **já concluiu o ensino médio** pode se candidatar. O curso oferece formação técnica após essa etapa escolar e tem ingresso por seleção do IFMG, conforme as regras da oferta de cada campus."
-            },
-            {
-              "pergunta": "O curso é a distância?",
-              "resposta": "**Sim.** O Técnico em Logística Subsequente é ofertado na modalidade **EaD** em **Governador Valadares** e **Ribeirão das Neves**. As disciplinas utilizam atividades a distância; em Ribeirão das Neves, o campus disponibiliza um **Ambiente Virtual de Aprendizagem (Moodle)**. Isso não significa que toda oferta esteja automaticamente dispensada de presença física."
-            },
-            {
-              "pergunta": "Preciso comparecer ao campus em algum momento?",
-              "resposta": "**Em Governador Valadares, sim:** a organização divulgada para o curso prevê **avaliação presencial ao final de cada um dos dois módulos**. Para **Ribeirão das Neves**, a exigência e a frequência de encontros presenciais precisam ser conferidas no edital e no projeto pedagógico aplicáveis à turma, pois os documentos institucionais consultados apresentam informações diferentes."
-            },
-            {
-              "pergunta": "O que vou aprender no curso?",
-              "resposta": "Você vai estudar **transporte e planejamento de rotas, armazenagem, controle de estoques, compras, distribuição e logística reversa**. O curso também trabalha ferramentas e sistemas digitais que ajudam a acompanhar a movimentação de materiais e produtos."
-            },
-            {
-              "pergunta": "Estudantes de cursos EaD podem solicitar assistência estudantil?",
-              "resposta": "**Podem se candidatar quando houver edital do IFMG que inclua sua modalidade e campus e quando atenderem aos requisitos.** Os programas e as condições de participação são definidos em editais; a inscrição é feita pelo **SSAE** para os auxílios socioeconômicos. Não há concessão automática nem garantia de que todos os auxílios sejam oferecidos a estudantes EaD."
-            },
-            {
-              "pergunta": "Existem cotas no processo seletivo?",
-              "resposta": "**Sim.** O IFMG prevê reserva de vagas também para cursos técnicos subsequentes. O enquadramento depende dos critérios do edital e das informações fornecidas na inscrição, com comprovação documental. A existência de cotas não altera o requisito de **ensino médio concluído** para cursar o subsequente."
-            }
-          ]
-        },
-        {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            },
-            {
-              "rotulo": "Assistência estudantil",
-              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
-            }
-          ]
-        },
-        {
-          "tipo": "texto",
           "titulo": "Reconhecimentos e premiações",
           "conteudo": "Informação incompleta"
         },
@@ -694,6 +642,58 @@
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode fazer o Técnico em Logística Subsequente?",
+              "resposta": "Quem **já concluiu o ensino médio** pode se candidatar. O curso oferece formação técnica após essa etapa escolar e tem ingresso por seleção do IFMG, conforme as regras da oferta de cada campus."
+            },
+            {
+              "pergunta": "O curso é a distância?",
+              "resposta": "**Sim.** O Técnico em Logística Subsequente é ofertado na modalidade **EaD** em **Governador Valadares** e **Ribeirão das Neves**. As disciplinas utilizam atividades a distância; em Ribeirão das Neves, o campus disponibiliza um **Ambiente Virtual de Aprendizagem (Moodle)**. Isso não significa que toda oferta esteja automaticamente dispensada de presença física."
+            },
+            {
+              "pergunta": "Preciso comparecer ao campus em algum momento?",
+              "resposta": "**Em Governador Valadares, sim:** a organização divulgada para o curso prevê **avaliação presencial ao final de cada um dos dois módulos**. Para **Ribeirão das Neves**, a exigência e a frequência de encontros presenciais precisam ser conferidas no edital e no projeto pedagógico aplicáveis à turma, pois os documentos institucionais consultados apresentam informações diferentes."
+            },
+            {
+              "pergunta": "O que vou aprender no curso?",
+              "resposta": "Você vai estudar **transporte e planejamento de rotas, armazenagem, controle de estoques, compras, distribuição e logística reversa**. O curso também trabalha ferramentas e sistemas digitais que ajudam a acompanhar a movimentação de materiais e produtos."
+            },
+            {
+              "pergunta": "Estudantes de cursos EaD podem solicitar assistência estudantil?",
+              "resposta": "**Podem se candidatar quando houver edital do IFMG que inclua sua modalidade e campus e quando atenderem aos requisitos.** Os programas e as condições de participação são definidos em editais; a inscrição é feita pelo **SSAE** para os auxílios socioeconômicos. Não há concessão automática nem garantia de que todos os auxílios sejam oferecidos a estudantes EaD."
+            },
+            {
+              "pergunta": "Existem cotas no processo seletivo?",
+              "resposta": "**Sim.** O IFMG prevê reserva de vagas também para cursos técnicos subsequentes. O enquadramento depende dos critérios do edital e das informações fornecidas na inscrição, com comprovação documental. A existência de cotas não altera o requisito de **ensino médio concluído** para cursar o subsequente."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
         },
         {
           "tipo": "texto",
@@ -2207,87 +2207,6 @@
           "conteudo": "A formação acontece em **três anos, em período integral diurno**, com conteúdos de gestão, planejamento e empreendedorismo. Em **2026**, estudantes do Técnico em Administração participaram de uma **visita técnica à Expo Favela Minas**, onde conheceram iniciativas de negócios e inovação. Da carga horária prevista, **16,67% corresponde a atividades a distância**."
         },
         {
-          "tipo": "texto",
-          "titulo": "Perguntas frequentes",
-          "conteudo": ""
-        },
-        {
-          "tipo": "faq",
-          "itens": [
-            {
-              "pergunta": "O que significa fazer Administração integrada ao ensino médio?",
-              "resposta": "Você cursa o **ensino médio e a formação técnica em Administração no mesmo curso**. Essa modalidade é destinada a quem concluiu o ensino fundamental ou vai concluí-lo até a matrícula."
-            },
-            {
-              "pergunta": "As aulas são presenciais? Há atividades a distância?",
-              "resposta": "**Sim, o curso é presencial** nos oito campi. Em **Arcos**, 16% da carga horária é EaD; em **Sabará**, 16,67%. A organização das atividades segue os projetos pedagógicos de cada campus, sem aplicar esses percentuais às demais unidades."
-            },
-            {
-              "pergunta": "O que vou aprender na formação técnica?",
-              "resposta": "Você estuda atividades de **gestão de pessoas, finanças, marketing, compras, estoques, organização de documentos e processos administrativos**, além das disciplinas do ensino médio. As matérias e sua distribuição variam conforme a matriz curricular do campus."
-            },
-            {
-              "pergunta": "Há atividades práticas e projetos?",
-              "resposta": "**Sim, com experiências específicas em cada campus.** Em **Arcos**, a proposta utiliza Trabalhos Acadêmicos Integradores e empresa simulada. Em **Formiga**, o curso articula teoria e prática. Em **Sabará**, estudantes participaram de uma visita técnica à **Expo Favela Minas em 2026**. Essa visita é um exemplo de atividade realizada, não uma programação garantida para as próximas turmas."
-            },
-            {
-              "pergunta": "O curso prepara apenas para trabalhar em empresas privadas?",
-              "resposta": "**Não.** A formação técnica inclui rotinas administrativas aplicadas a **organizações públicas, privadas e do terceiro setor**, como controle de documentos, estoques, informações financeiras e apoio a equipes. O exercício profissional depende das atribuições de cada função."
-            },
-            {
-              "pergunta": "Posso solicitar assistência estudantil?",
-              "resposta": "**Sim, se o edital contemplar seu campus e você cumprir os critérios.** O IFMG mantém programas como Bolsa Permanência, Auxílio Alimentação e Auxílio Moradia, com inscrições e requisitos definidos por edital. Para auxílios socioeconômicos, a candidatura acontece no **SSAE**. Não há benefício concedido automaticamente pela matrícula."
-            },
-            {
-              "pergunta": "Há cotas para o Técnico em Administração Integrado?",
-              "resposta": "**Sim.** O IFMG oferece reserva de vagas nos processos seletivos de cursos técnicos integrados. A seleção considera os requisitos legais e os critérios de cada edital, incluindo a escolarização em rede pública e outras condições de ações afirmativas. É necessário preencher corretamente as informações de inscrição e apresentar os documentos solicitados."
-            }
-          ]
-        },
-        {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            },
-            {
-              "rotulo": "Assistência estudantil",
-              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
-            }
-          ]
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Existe Técnico em Administração para quem já concluiu o ensino médio?",
-          "conteudo": "**Sim.** Além da formação integrada, o IFMG tem ofertas documentadas de **Técnico em Administração Subsequente**, destinadas a quem concluiu o ensino médio, em **Ponte Nova** e **Governador Valadares**. A formação subsequente em Ponte Nova é presencial; em Governador Valadares, há oferta EaD documentada. Os cursos não devem ser confundidos com o bacharelado em Administração. Consulte a seleção vigente de cada campus para verificar se há novas turmas."
-        },
-        {
-          "tipo": "tabela",
-          "colunas": [
-            "Se você...",
-            "Procure por...",
-            "O que comparar"
-          ],
-          "linhas": [
-            [
-              "Vai começar o ensino médio",
-              "Integrado",
-              "Oito campi da tabela de ofertas; comparar rotina, turno e deslocamento"
-            ],
-            [
-              "Já concluiu o ensino médio",
-              "Subsequente",
-              "Ponte Nova (presencial) e Governador Valadares (EaD), com ofertas documentadas; confirmar seleção em vigor"
-            ]
-          ]
-        },
-        {
           "tipo": "galeria",
           "itens": []
         },
@@ -2375,6 +2294,87 @@
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
           "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O que significa fazer Administração integrada ao ensino médio?",
+              "resposta": "Você cursa o **ensino médio e a formação técnica em Administração no mesmo curso**. Essa modalidade é destinada a quem concluiu o ensino fundamental ou vai concluí-lo até a matrícula."
+            },
+            {
+              "pergunta": "As aulas são presenciais? Há atividades a distância?",
+              "resposta": "**Sim, o curso é presencial** nos oito campi. Em **Arcos**, 16% da carga horária é EaD; em **Sabará**, 16,67%. A organização das atividades segue os projetos pedagógicos de cada campus, sem aplicar esses percentuais às demais unidades."
+            },
+            {
+              "pergunta": "O que vou aprender na formação técnica?",
+              "resposta": "Você estuda atividades de **gestão de pessoas, finanças, marketing, compras, estoques, organização de documentos e processos administrativos**, além das disciplinas do ensino médio. As matérias e sua distribuição variam conforme a matriz curricular do campus."
+            },
+            {
+              "pergunta": "Há atividades práticas e projetos?",
+              "resposta": "**Sim, com experiências específicas em cada campus.** Em **Arcos**, a proposta utiliza Trabalhos Acadêmicos Integradores e empresa simulada. Em **Formiga**, o curso articula teoria e prática. Em **Sabará**, estudantes participaram de uma visita técnica à **Expo Favela Minas em 2026**. Essa visita é um exemplo de atividade realizada, não uma programação garantida para as próximas turmas."
+            },
+            {
+              "pergunta": "O curso prepara apenas para trabalhar em empresas privadas?",
+              "resposta": "**Não.** A formação técnica inclui rotinas administrativas aplicadas a **organizações públicas, privadas e do terceiro setor**, como controle de documentos, estoques, informações financeiras e apoio a equipes. O exercício profissional depende das atribuições de cada função."
+            },
+            {
+              "pergunta": "Posso solicitar assistência estudantil?",
+              "resposta": "**Sim, se o edital contemplar seu campus e você cumprir os critérios.** O IFMG mantém programas como Bolsa Permanência, Auxílio Alimentação e Auxílio Moradia, com inscrições e requisitos definidos por edital. Para auxílios socioeconômicos, a candidatura acontece no **SSAE**. Não há benefício concedido automaticamente pela matrícula."
+            },
+            {
+              "pergunta": "Há cotas para o Técnico em Administração Integrado?",
+              "resposta": "**Sim.** O IFMG oferece reserva de vagas nos processos seletivos de cursos técnicos integrados. A seleção considera os requisitos legais e os critérios de cada edital, incluindo a escolarização em rede pública e outras condições de ações afirmativas. É necessário preencher corretamente as informações de inscrição e apresentar os documentos solicitados."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Existe Técnico em Administração para quem já concluiu o ensino médio?",
+          "conteudo": "**Sim.** Além da formação integrada, o IFMG tem ofertas documentadas de **Técnico em Administração Subsequente**, destinadas a quem concluiu o ensino médio, em **Ponte Nova** e **Governador Valadares**. A formação subsequente em Ponte Nova é presencial; em Governador Valadares, há oferta EaD documentada. Os cursos não devem ser confundidos com o bacharelado em Administração. Consulte a seleção vigente de cada campus para verificar se há novas turmas."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Vai começar o ensino médio",
+              "Integrado",
+              "Oito campi da tabela de ofertas; comparar rotina, turno e deslocamento"
+            ],
+            [
+              "Já concluiu o ensino médio",
+              "Subsequente",
+              "Ponte Nova (presencial) e Governador Valadares (EaD), com ofertas documentadas; confirmar seleção em vigor"
+            ]
+          ]
         },
         {
           "tipo": "texto",

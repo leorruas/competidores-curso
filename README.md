@@ -2,13 +2,21 @@
 
 Ferramenta estática de apoio à preparação das páginas dos cursos do IFMG no Wagtail. A interface permite localizar roteiros **aprovados para divulgação**, comparar uma prévia do conteúdo e ver o preenchimento bloco por bloco. O projeto é inspirado na experiência editorial do [Guia do Portal IFMG](https://leorruas.github.io/guiaportalifmg/).
 
-**Estado atual (15/10/2026):** publicados **oito roteiros multicampi e individuais para revisão pela coordenação**, representando **28 ofertas/campi do inventário 2027**, incluindo Administração Bacharelado em seis campi, Técnico em Administração Integrado em oito, **Engenharia Mecânica em Arcos e Betim**, **Agronomia em Bambuí e São João Evangelista** e **Engenharia de Produção em Bambuí, Congonhas e Governador Valadares**. Os roteiros de Agronomia e Engenharia de Produção conservam os identificadores anteriores de Bambuí como aliases para não quebrar links. O catálogo não equivale à publicação ou homologação do conteúdo no Wagtail. Campos incompletos ou divergentes são sinalizados no próprio roteiro. A demonstração fictícia continua disponível por URL.
+**Estado atual (16/10/2026):** publicados **oito roteiros multicampi e individuais para revisão pela coordenação**, representando **29 ofertas/campi representadas no catálogo de revisão**, incluindo Administração Bacharelado em seis campi, Técnico em Administração Integrado em oito, **Engenharia Mecânica em Arcos e Betim**, **Agronomia em Bambuí e São João Evangelista** e **Engenharia de Produção em Bambuí, Congonhas e Governador Valadares**. Os roteiros de Agronomia e Engenharia de Produção conservam os identificadores anteriores de Bambuí como aliases para não quebrar links. O catálogo não equivale à publicação ou homologação do conteúdo no Wagtail. Campos incompletos ou divergentes são sinalizados no próprio roteiro. A demonstração fictícia continua disponível por URL.
 
 ## Abrir e publicar o site
 
 O site é composto por `index.html`, `style.css`, `app.js` e `data/cursos-publicados.json`. Não há compilação, backend, banco de dados nem necessidade de instalar pacotes. Para testes, sirva a pasta por HTTP, por exemplo com `python3 -m http.server 8000` e acesse `http://localhost:8000/` (abrir o HTML por `file://` pode bloquear a leitura do JSON).
 
 Para publicar no **GitHub Pages**, abra **Settings → Pages**, selecione **Deploy from a branch → main → /(root)** e salve. O endereço esperado, **somente depois de Pages estar habilitado e a publicação concluída**, é `https://leorruas.github.io/competidores-curso/`. O repositório já contém os arquivos necessários, mas o envio de arquivos por si só **não comprova** que Pages esteja habilitado.
+
+## Verificação visual no navegador (F1.6)
+
+A rotina [QA visual de páginas de cursos](.github/workflows/qa-visual.yml) pode ser executada no GitHub Actions ou sempre que forem modificados os arquivos da interface. Com Playwright/Chromium, ela abre os **oito cursos** nas larguras **375 px, 768 px e 1.440 px** e confere carregamento, catálogo, busca, responsividade, índice lateral, campos copiáveis, área de transferência, alternância entre `Copiar` e `Visualizar` e abertura dos FAQs. O resultado reúne **24 combinações de curso e largura**, arquivos PNG e um `report.json` no artefato `f1-6-capturas-e-metricas`, retido por 14 dias no workflow.
+
+O índice lateral usa títulos de blocos e associações contextuais. No mobile, os links do índice deslizam horizontalmente **sem aumentar a largura da página**. Galerias vazias, introduções vazias e seções de texto marcadas apenas como `Informação incompleta` são omitidas **somente na aba Visualizar**, mantendo-se visíveis e não copiáveis no modo de preenchimento quando apropriado.
+
+**Limite:** o teste e as capturas comprovam comportamento do guia no navegador, não fidelidade de colagem do HTML no Wagtail, homologação acadêmica nem publicação das páginas no portal institucional. O teste real de cópia e colagem no CMS continua na F6.3.
 
 ## Direção visual: Guia do Portal IFMG
 
@@ -22,7 +30,7 @@ Paleta alinhada ao guia: no tema escuro, fundo `#050505` e acento `#78c981`; no 
 
 O roteiro editorial é **um curso normalizado por tipo/grau**, e não uma página por campus. **Administração Bacharelado** reúne Bambuí, Formiga, Ouro Branco, Ribeirão das Neves, Sabará e São João Evangelista. **Técnico em Administração Integrado** reúne oito campi, em página separada. **Técnico em Logística Subsequente** aparece somente em Ribeirão das Neves no inventário 2027, embora o curso também tenha seleção própria em Governador Valadares em 2026. O curso **Tecnologia em Logística** em Sabará é uma graduação distinta; Governador Valadares aparece como referência histórica no catálogo EaD e aguarda confirmação de oferta atual.
 
-Os títulos são apenas o nome do curso, sem campus no nome principal. O FAQ prioriza dúvidas que acrescentam informações, sobretudo diferenças relevantes entre campi. Todo roteiro mantém, depois da galeria, blocos para **reconhecimentos, pesquisa/extensão/bolsas, continuidade dos estudos e conquistas dos estudantes**. Onde não houver evidências, a interface mostra **Informação incompleta** e a razão da validação, sem oferecer botão para copiar o placeholder. O texto copiável é redigido como a própria instituição, sem frases de atribuição à planilha ou ao PPC.
+Os títulos são apenas o nome do curso, sem campus no nome principal. O FAQ prioriza dúvidas que acrescentam informações, sobretudo diferenças relevantes entre campi. Todo roteiro reúne **pesquisa, extensão e oportunidades**, **continuidade dos estudos** e **uma única seção de experiências e conquistas dos estudantes**. As descrições de cada campus ficam em um FAQ próprio, separado das perguntas dos candidatos. Onde não houver evidências, a interface mostra **Informação incompleta** e a razão da validação, sem oferecer botão para copiar o placeholder. O texto copiável é redigido como a própria instituição, sem frases de atribuição à planilha ou ao PPC.
 
 ## Revisão acadêmica e documentação dos blocos
 
@@ -88,7 +96,7 @@ O arquivo `data/cursos-publicados.json` usa `schemaVersion: 1` e contém `course
 
 O trecho acima **ilustra o formato**, não autoriza a inclusão de um curso nem constitui dado aprovado. Os tipos válidos de bloco são `dados-basicos`, `texto`, `introducao`, `tabela`, `faq`, `galeria`, `links` e `link-unico`. Os tipos `Introdução` aceitam até 280 caracteres. `dados-basicos` possui `campos: [{rotulo, valor}]`; `tabela` tem `colunas` e `linhas`; `faq`, `itens: [{pergunta, resposta}]`; `links`, `itens: [{rotulo, url}]`; `link-unico`, `link: {rotulo, descricao, url}`; `galeria`, `itens: [{url, legenda, alt}]`.
 
-A aplicação recusa registros sem `publicacao_autorizada: true`. Aceita `status: aprovado_para_divulgacao` e também `status: em_validacao`, desde que este último tenha `revisao_coordenacao: true` e uma lista `pendencias` explícita. Campos sem valor apresentam **Informação incompleta** e a razão da validação; esses campos não oferecem cópia. **Isso não substitui a revisão de segurança do conteúdo.** O validador `scripts/validar-publicacao.mjs` tem checagens adicionais para prevenir inserção de conteúdos internos e é executado em GitHub Actions.
+A aplicação recusa registros sem `publicacao_autorizada: true`. Aceita `status: aprovado_para_divulgacao` e `status: em_validacao` quando `publicacao_autorizada: true` e os blocos satisfazem as validações; as notas `revisao_coordenacao`, `pendencias` e `validacao` devem permanecer exclusivamente na pesquisa privada. Campos sem valor apresentam **Informação incompleta** e a razão da validação; esses campos não oferecem cópia. **Isso não substitui a revisão de segurança do conteúdo.** O validador `scripts/validar-publicacao.mjs` tem checagens adicionais para prevenir inserção de conteúdos internos e é executado em GitHub Actions.
 
 ## Critérios antes de adicionar uma oferta
 

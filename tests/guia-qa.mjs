@@ -954,7 +954,7 @@ test("as seções editoriais existem, independentemente da posição contextual 
     assert.ok(gallery,c.nome);
     const texts=c.blocos.filter(b=>b.tipo==="texto");
     const titles=texts.map(b=>b.titulo || "");
-    assert.ok(titles.some(t=>/Reconhecimentos/i.test(t)),c.nome);
+    assert.ok(!titles.some(t=>/^Reconhecimentos e (?:premiações|avaliações)$/.test(t)),c.nome+": evitar seção duplicada");
     assert.ok(titles.some(t=>/Pesquisa/i.test(t)),c.nome);
     assert.ok(titles.some(t=>/Continue seus estudos/i.test(t)),c.nome);
     assert.ok(titles.some(t=>/Experiências/i.test(t)),c.nome);
@@ -1146,7 +1146,7 @@ test("F3.1: reconhecimento de egresso de Produção pertence apenas a Bambuí", 
   assert.match(b.conteudo,/2024/);
   assert.match(b.conteudo,/University of Nebraska/);
   assert.match(b.conteudo,/Othmer Fellowship/);
-  const euclides=b.conteudo.split("\n\n")[0];
+  const euclides=b.conteudo.split("\n\n").find(p=>p.includes("Euclides Brandão Maluf"));
   assert.doesNotMatch(euclides,/Governador Valadares|Congonhas|2027|bolsa garantida/);
   assert.match(euclides,/Bambuí/);
 });

@@ -5349,6 +5349,408 @@
           "conteudo": "O técnico em Mecatrônica pode **apoiar a montagem, a instalação e a manutenção de máquinas e equipamentos automatizados**, reunindo conhecimentos de mecânica, eletrônica, programação e controle. Pode interpretar diagramas e desenhos, acompanhar testes, medir grandezas, verificar sensores e atuadores e identificar falhas em sistemas que combinam componentes mecânicos e elétricos.\n\nEm uma linha de produção, por exemplo, pode **auxiliar na programação e operação de máquinas e dispositivos automatizados**, monitorar o comportamento de equipamentos, verificar o funcionamento de comandos e apoiar ajustes para melhorar o processo. Na manutenção, pode acompanhar inspeções, registrar ocorrências e colaborar com equipes na substituição ou regulagem de componentes.\n\nPode atuar em indústrias alimentícias, automobilísticas, metalomecânicas, petroquímicas e de outros segmentos, além de empresas de manutenção e integração de sistemas, observando **normas de segurança e os limites das atribuições técnicas**."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-automacao-industrial-integrado",
+      "nome": "Técnico em Automação Industrial",
+      "nivel": "Técnico",
+      "tipo": "Integrado ao Ensino Médio",
+      "campi": [
+        "Betim",
+        "Ibirité",
+        "Ipatinga",
+        "Itabirito",
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial (Ibirité: 8,3% EaD)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Automação Industrial"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Betim, Ibirité, Ipatinga, Itabirito e Ouro Preto"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ibirité: 8,3% EaD)"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Consulte a tabela por campus"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Automação Industrial",
+          "conteudo": "O **Técnico em Automação Industrial** reúne o ensino médio e a formação profissional em um percurso de três anos. Os estudantes aprendem a compreender, operar e desenvolver sistemas que combinam **eletricidade, eletrônica, programação, instrumentação e controle** para automatizar equipamentos e processos.\n\nO curso é oferecido em **Betim, Ibirité, Ipatinga, Itabirito e Ouro Preto**, com atividades de manhã e à tarde e características curriculares próprias de cada campus."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda como sensores, motores, controladores e programas trabalham juntos para monitorar máquinas, automatizar processos e melhorar a produção."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A formação é destinada a quem **concluiu o ensino fundamental** e quer cursar o ensino médio junto com uma habilitação técnica. É uma opção para estudantes interessados em **Física, Matemática, eletrônica, programação, máquinas e tecnologias industriais**."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O ensino médio e os conhecimentos técnicos são desenvolvidos no mesmo percurso. As áreas abaixo mostram conteúdos presentes na formação em Automação Industrial; a distribuição das disciplinas e das práticas depende da matriz de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Formação geral",
+              "Língua Portuguesa, Matemática, Física, Química, História, Biologia, Geografia e outros componentes do ensino médio."
+            ],
+            [
+              "Eletricidade e eletrônica",
+              "Circuitos, componentes, medições e interpretação de diagramas elétricos."
+            ],
+            [
+              "Programação e controladores",
+              "Lógica, programação aplicada, controladores lógicos programáveis e microcontroladores."
+            ],
+            [
+              "Sensores e instrumentação",
+              "Medição e monitoramento de variáveis de máquinas e processos."
+            ],
+            [
+              "Acionamentos e comandos",
+              "Motores, atuadores, comandos e sistemas de controle."
+            ],
+            [
+              "Automação e redes industriais",
+              "Integração entre equipamentos, interfaces de operação, comunicação e supervisão de sistemas."
+            ],
+            [
+              "Manutenção, projetos e segurança",
+              "Diagnóstico de falhas, testes, documentação técnica, segurança e melhoria de processos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "Os estudantes desenvolvem atividades de **programação, montagem, medição, controle e testes de sistemas automatizados**, conforme as disciplinas e a infraestrutura de cada campus. A aprendizagem relaciona circuitos e sensores ao funcionamento de máquinas, controladores e outros equipamentos industriais."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades práticas e laboratórios de Automação Industrial · multicampi",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Automação Industrial",
+          "conteudo": "O IFMG oferece o Técnico em Automação Industrial **integrado ao ensino médio** nos campi **Betim, Ibirité, Ipatinga, Itabirito e Ouro Preto**. A duração prevista é de três anos, com aulas pela manhã e à tarde. Em **Ibirité**, a oferta de referência prevê **8,3% da carga horária a distância**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Betim",
+              "Manhã e tarde",
+              "Presencial",
+              "coord.tec.automacao@ifmg.edu.br"
+            ],
+            [
+              "Ibirité",
+              "Manhã e tarde",
+              "Presencial (8,3% EaD)",
+              "automacao.ibirite@ifmg.edu.br"
+            ],
+            [
+              "Ipatinga",
+              "Manhã e tarde",
+              "Presencial",
+              "Informação incompleta"
+            ],
+            [
+              "Itabirito",
+              "Manhã e tarde",
+              "Presencial",
+              "aut.itabirito@ifmg.edu.br"
+            ],
+            [
+              "Ouro Preto",
+              "Manhã e tarde",
+              "Presencial",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Betim",
+              "resposta": "O curso trabalha com **programação de CLPs, microcontroladores, interfaces homem-máquina e manutenção de sistemas automatizados**. O PPC de referência prevê **estágio e TCC não obrigatórios**, e estágio opcional com acompanhamento e aprovação institucional."
+            },
+            {
+              "pergunta": "Campus Ibirité",
+              "resposta": "O curso integrado tem duração prevista de **três anos**, com aulas de manhã e à tarde. A matriz de oferta registra **8,3% de EaD**. A organização curricular específica e as regras de estágio devem seguir o PPC aplicado à turma."
+            },
+            {
+              "pergunta": "Campus Ipatinga",
+              "resposta": "A formação integrada dura **três anos** e aborda **integração de sistemas, programação, redes industriais, manutenção, medições e controle de qualidade**. As atividades práticas seguem o planejamento local do curso."
+            },
+            {
+              "pergunta": "Campus Itabirito",
+              "resposta": "O técnico integrado tem duração prevista de **três anos**. O campus disponibiliza documentação curricular com versões de PPC, incluindo **2025 e 2026**, para orientação das atividades formativas e de conclusão."
+            },
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "O curso integrado dura **três anos** e relaciona **eletrônica, programação, instrumentação, controle de processos e robótica**. Estudantes desenvolvem trabalhos práticos e projetos relacionados à automação."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "O IFMG desenvolve **projetos de ensino, pesquisa e extensão** que relacionam as técnicas de automação a problemas reais, além de atividades de iniciação científica e participação em eventos. As oportunidades dependem dos projetos e das seleções de cada campus. Em Ouro Preto, atividades práticas de robótica e sistemas microcontrolados resultaram em protótipos apresentados à comunidade acadêmica."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Automação Industrial"
+          ],
+          "linhas": [
+            [
+              "Engenharia de Controle e Automação",
+              "Betim, Ibirité e Sabará",
+              "Projeto e controle de sistemas, sensores, programação e processos automatizados."
+            ],
+            [
+              "Engenharia Elétrica",
+              "Formiga, Ipatinga e Itabirito",
+              "Circuitos, máquinas elétricas, energia, acionamentos e instalações."
+            ],
+            [
+              "Engenharia Mecânica",
+              "Arcos e Betim",
+              "Máquinas, processos de fabricação, manutenção e projetos mecânicos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Automação Industrial"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Estudos sobre tecnologias ambientais, materiais, processos produtivos e energia; possível continuidade após graduação compatível."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **maio de 2025**, estudantes do Técnico em Automação Industrial do **Campus Betim** realizaram visitas técnicas à **Tiberina Automotive**, em Juatuba, nos dias 21 e 28. A atividade da disciplina de Manufatura Industrial permitiu observar **prensas automatizadas, robôs utilizados na troca de peças, estampagem de metais, metrologia e controle de qualidade**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita técnica à Tiberina Automotive · Betim · maio de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **agosto de 2025**, a equipe **AutFog**, com participação de **dois estudantes de Automação Industrial e uma estudante de Química** do **Campus Betim**, participou da **68ª Jornada de Foguetes**, no Rio de Janeiro. A programação incluiu oficinas, palestras e uma visita à equipe de foguetes e nanossatélites **Supernova**, da Universidade Federal de Juiz de Fora."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Equipe AutFog na 68ª Jornada de Foguetes · Betim · agosto de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **setembro de 2025**, uma estudante do **segundo ano de Automação Industrial do Campus Betim** participou, com duas estudantes de Química, da apresentação de pesquisa sobre **ações afirmativas e educação antirracista** nos currículos técnicos do campus, durante o Congresso Brasileiro de Pesquisadores/as Negros/as, em Ouro Preto."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa sobre educação antirracista em congresso · Betim · setembro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **agosto de 2026**, **Guilherme Araújo de Paula**, estudante do **Técnico Integrado em Automação Industrial do Campus Betim**, conquistou, em dupla com uma estudante de Química, o **vice-campeonato** na turma 03 da **88ª Jornada de Foguetes**. A competição reuniu oficinas, construção e lançamento de foguetes e intercâmbio com participantes de outras instituições."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Vice-campeonato na 88ª Jornada de Foguetes · Betim · agosto de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **agosto de 2026**, **Brayan Thessalonico Flaubert**, do **terceiro ano de Automação Industrial do Campus Betim**, recebeu uma **Menção Oral** por seu desempenho na **MUNdoCMBH**, simulação de organismos da ONU realizada em Belo Horizonte. Ele integrou um comitê em inglês que discutiu proteção dos oceanos e desenvolvimento sustentável, com preparação no Clube de Debates."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Menção Oral em simulação da ONU · Betim · agosto de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Nos dias **11 e 13 de fevereiro de 2026**, estudantes do **Técnico Integrado em Automação Industrial do Campus Ouro Preto** apresentaram, em uma **exposição de robótica**, trabalhos finais da disciplina Robótica e Sistemas Microcontrolados. Entre os projetos demonstrados estavam **bengalas inteligentes com sensores, casas automatizadas, robôs móveis, irrigação automática e uma mão robótica interativa**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Exposição de robótica e sistemas microcontrolados · Ouro Preto · fevereiro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Na edição de **2025 da Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP)**, **Enzo Dias Araújo**, estudante do **segundo ano do Técnico em Automação Industrial do Campus Ipatinga**, conquistou **medalha de prata**. O resultado foi divulgado pelo campus em fevereiro de 2026."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Medalha de prata na OBMEP 2025 · Ipatinga",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "",
+          "conteudo": "Em **junho de 2025**, estudantes dos cursos técnicos integrados em **Automação Industrial e Eletrotécnica do Campus Ipatinga** estiveram entre os **50 premiados** no programa **Bolsas de Excelência Usiminas**, que considerou desempenho acadêmico, atitude e situação socioeconômica. A premiação ocorreu em cerimônia realizada em 24 de junho na Usiminas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Bolsas de Excelência Usiminas · Automação e Eletrotécnica · Ipatinga · junho de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Como é estudar o ensino médio junto com Automação Industrial?",
+              "resposta": "Você cursa a **formação geral do ensino médio e os conhecimentos técnicos em um mesmo percurso** de três anos. A organização das aulas, dos laboratórios e das práticas segue a matriz curricular do campus."
+            },
+            {
+              "pergunta": "O que são CLPs e sistemas supervisórios?",
+              "resposta": "Os **controladores lógicos programáveis (CLPs)** executam instruções para acompanhar e comandar máquinas e processos. Os **sistemas supervisórios** permitem visualizar informações de equipamentos e acompanhar o funcionamento de sistemas automatizados."
+            },
+            {
+              "pergunta": "Há projetos práticos e atividades de robótica?",
+              "resposta": "Sim. A formação envolve circuitos, programação e controle de equipamentos. Entre as experiências desenvolvidas no IFMG estão protótipos de robótica demonstrados por estudantes de Automação Industrial do Campus Ouro Preto."
+            },
+            {
+              "pergunta": "O estágio ou o TCC são obrigatórios?",
+              "resposta": "As regras dependem do **PPC do campus e da turma**. No **Campus Betim**, o PPC de referência prevê **estágio e TCC não obrigatórios**. O estágio opcional é complementar ao currículo regular e requer aprovação e acompanhamento; a proposta deve ter, no mínimo, **132 horas**. Para os demais campi, consulte a organização curricular específica."
+            },
+            {
+              "pergunta": "O que muda entre os campi?",
+              "resposta": "Todos oferecem o Técnico Integrado em Automação Industrial, mas **a matriz, a distribuição das práticas, os contatos e as condições de oferta podem variar**. Em Ibirité, a oferta de referência inclui 8,3% de carga horária a distância."
+            },
+            {
+              "pergunta": "Como posso continuar os estudos no IFMG?",
+              "resposta": "Após concluir o ensino médio e o curso técnico, você pode concorrer a graduações relacionadas, como **Engenharia de Controle e Automação, Engenharia Elétrica e Engenharia Mecânica**, oferecidas pelo IFMG."
+            },
+            {
+              "pergunta": "Existe assistência estudantil?",
+              "resposta": "O IFMG possui programas de assistência estudantil com condições, benefícios e procedimentos definidos em editais."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Automação Industrial Integrado ao Ensino Médio**, é preciso **concluir o ensino fundamental** até a matrícula. O ingresso ocorre por **processo seletivo público do IFMG**, conforme o edital vigente.\n\nConsulte o edital para conhecer os critérios de seleção, as vagas, as cotas, os documentos e os procedimentos de matrícula de cada campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Automação Industrial pode **auxiliar na instalação, programação, operação e manutenção de sistemas automatizados**, integrando conhecimentos de eletricidade, eletrônica, programação e controle de processos. Pode interpretar diagramas, testar sensores, configurar componentes e acompanhar o funcionamento de controladores lógicos programáveis (CLPs), interfaces homem-máquina e equipamentos industriais.\n\nEm uma linha de produção, por exemplo, pode **monitorar equipamentos, registrar falhas e apoiar a identificação de suas causas**, além de participar de ajustes em sistemas de acionamento e controle. Em atividades de manutenção, pode acompanhar medições, inspeções, testes de dispositivos e substituições de componentes, respeitando procedimentos de segurança e as condições de cada equipamento.\n\nEsses profissionais podem atuar em indústrias automobilísticas, siderúrgicas, alimentícias, metalúrgicas, de energia e de outros setores, além de empresas integradoras de sistemas e prestadoras de manutenção. As atividades dependem das competências da habilitação, das normas técnicas e das exigências de supervisão e segurança."
+        }
+      ]
     }
   ]
 }

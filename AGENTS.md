@@ -44,3 +44,9 @@ Conteúdo copiável deve falar **diretamente com o estudante e como IFMG** (`Voc
 ## Controle de exposição (F5.5)
 
 O JSON público não pode conter `validacao`, `pendencias`, `revisao_coordenacao` ou `instrucao` em nenhum nível. A autorização explícita e o estado `em_validacao` regulam apenas a exibição do roteiro, não a homologação no Wagtail. Os campos `Informação incompleta` ficam sem botão de cópia; títulos de Texto incompleto continuam copiáveis. O validador deve bloquear regressões. As 96 notas e as pendências foram preservadas na vault privada. O histórico Git público anterior continua acessível.
+
+## Regra de FAQ incompleto e Mundo do Trabalho (15/10/2026)
+
+- `Perguntas frequentes` é título de seção, não um parágrafo. Um bloco `Texto` com esse título deve conter apenas o cabeçalho, **sem** o segundo campo `Informação incompleta`. Um FAQ com resposta sem apuração não pode disponibilizar sequer a pergunta como pronta para copiar. Manter a pendência exclusivamente no roteiro canônico privado e publicar somente pares completos. O app filtra preventivamente pares incompletos se entrarem no JSON; testes protegem o caso.
+- Cada curso possui uma seção `Mundo do Trabalho` com atividades efetivas, exemplos de tarefas e ambientes de atuação, evitando listas de locais sem explicação. Técnico integrado, subsequente e bacharelado têm atribuições distintas. Para profissões regulamentadas, informar os requisitos legais de registro/exame/atribuições sem prometer emprego ou habilitação automática. Fontes bibliográficas e notas ficam na vault privada.
+- Teste automatizado e deploy do guia **não** representam avaliação visual do navegador, colagem no Wagtail real nem homologação acadêmica.

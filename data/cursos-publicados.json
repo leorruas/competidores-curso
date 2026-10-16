@@ -2626,6 +2626,243 @@
           "conteudo": "Em setores administrativos, o técnico em Administração pode **organizar documentos, atualizar cadastros e elaborar relatórios** para acompanhar o funcionamento de serviços e processos. Também pode apoiar o atendimento, a comunicação entre equipes e o controle de compras, materiais e prazos.\n\nNa rotina financeira, pode auxiliar na **preparação de orçamentos e controles de entradas e saídas de recursos**, com uso de planilhas e sistemas de informação. Na gestão de pessoas e na organização do trabalho, participa de registros, rotinas de pessoal e **levantamento de dados** que ajudam as equipes a planejar suas atividades e tomar decisões.\n\nO profissional pode exercer essas funções em **empresas, instituições públicas, organizações sociais, comércios e prestadores de serviços**, respeitando os limites das atribuições técnicas e os requisitos de cada função. A formação não assegura contratação nem equivale automaticamente às atribuições privativas de outras profissões."
         }
       ]
+    },
+    {
+      "id": "zootecnia-bacharelado",
+      "nome": "Zootecnia",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Zootecnia"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde (integral)"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Duração prevista",
+              "valor": "4,5 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Zootecnia",
+          "conteudo": "A graduação em **Zootecnia** prepara profissionais para atuar na produção e no manejo de animais, reunindo conhecimentos sobre alimentação, genética, reprodução, bem-estar e gestão de sistemas de criação.\n\nNo **Campus Bambuí**, o bacharelado é presencial e tem aulas de manhã e à tarde. Ao longo da formação, o estudante relaciona aspectos biológicos, tecnológicos e econômicos da produção animal."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "A formação combina nutrição, genética, reprodução e manejo animal com o estudo de sistemas de produção, qualidade e bem-estar dos animais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Zootecnia é uma opção para quem concluiu o ensino médio e se interessa pela criação e pelo bem-estar de animais, pela produção de alimentos de origem animal e pelo planejamento de atividades agropecuárias. O curso exige disponibilidade para estudar em período integral."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "As disciplinas relacionam a biologia dos animais, as condições de criação e as decisões necessárias para organizar sistemas de produção."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Nutrição e alimentação animal",
+              "Estudo das necessidades alimentares, das matérias-primas e da formulação de rações e dietas."
+            ],
+            [
+              "Genética e melhoramento",
+              "Seleção de características e planejamento de programas de melhoramento de rebanhos."
+            ],
+            [
+              "Reprodução animal",
+              "Fisiologia reprodutiva, manejo de reprodutores e planejamento da reprodução."
+            ],
+            [
+              "Sistemas de criação",
+              "Bovinocultura, avicultura, suinocultura, caprinovinocultura, aquicultura e outras produções."
+            ],
+            [
+              "Forragicultura e pastagens",
+              "Produção e manejo de forragens e pastagens para alimentação animal."
+            ],
+            [
+              "Gestão, tecnologia e bem-estar",
+              "Organização de propriedades, qualidade da produção, sustentabilidade e condições de criação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Zootecnia",
+          "conteudo": "O bacharelado em Zootecnia é oferecido no **Campus Bambuí**, em formato presencial, com aulas de manhã e à tarde."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Manhã e tarde",
+              "Presencial",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A graduação tem **duração prevista de quatro anos e meio**. O campus mantém setores ligados à avicultura, bovinocultura, suinocultura, apicultura, piscicultura e caprinovinocultura. O aproveitamento desses espaços nas atividades acadêmicas segue a organização das disciplinas e projetos."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "No **Campus Bambuí**, o **Grupo de Estudos em Animais Silvestres (GEAS)**, criado por estudantes de Zootecnia, desenvolve estudos, seminários, palestras, visitas técnicas e cursos sobre conservação, nutrição, legislação e manejo de animais silvestres e exóticos. O grupo divulga suas atividades e organiza a participação de estudantes conforme sua programação."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Grupo de Estudos em Animais Silvestres (GEAS) · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Zootecnia"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Estudo de agroecossistemas, sustentabilidade, gestão ambiental e temas relacionados à saúde ambiental e aos sistemas produtivos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **maio de 2025**, estudantes do sexto período de Zootecnia do **Campus Bambuí** participaram de uma conversa sobre extensão com dois profissionais formados no próprio curso. O encontro ocorreu na disciplina Componentes Curriculares Exclusivos de Extensão III e abordou o trabalho com produtores, escolas e comunidades, a importância de uma abordagem humanizada e as diferentes atividades de gestão em propriedades rurais."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Encontro sobre extensão com egressos de Zootecnia · Bambuí · maio de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Há atividades práticas relacionadas à criação animal?",
+              "resposta": "Sim. A formação abrange sistemas de criação, alimentação, reprodução e manejo. O Campus Bambuí dispõe de setores de produção animal que podem ser utilizados nas atividades acadêmicas conforme a programação das disciplinas."
+            },
+            {
+              "pergunta": "Como funcionam o estágio e o Trabalho de Conclusão de Curso?",
+              "resposta": "A formação inclui **estágio supervisionado** e **Trabalho de Conclusão de Curso (TCC)**. O estágio permite desenvolver atividades acompanhadas em situações profissionais, e o TCC envolve a realização de um trabalho acadêmico com orientação e avaliação. As cargas horárias e etapas seguem a matriz curricular da turma."
+            },
+            {
+              "pergunta": "Posso participar de grupos de estudo?",
+              "resposta": "O **GEAS** é uma oportunidade de aprofundar estudos sobre animais silvestres e exóticos, com palestras, cursos e atividades acadêmicas. A participação depende do calendário e das seleções organizadas pelo grupo."
+            },
+            {
+              "pergunta": "Como posso concorrer a auxílios estudantis?",
+              "resposta": "O IFMG oferece programas de assistência estudantil com critérios definidos em editais, como auxílios para alimentação, moradia e permanência. A candidatura deve seguir as regras e os procedimentos do processo vigente."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Zootecnia** do Campus Bambuí, você precisa ter concluído o **ensino médio** ou concluí-lo até a matrícula. O IFMG realiza processos seletivos próprios de graduação e também pode oferecer vagas pelo **Sisu**, de acordo com os editais vigentes.\n\nNa seleção própria, podem ser usadas **notas do Enem** ou a modalidade de **Histórico Escolar e Redação**, conforme as opções oferecidas em cada edição. Consulte o edital em vigor para verificar as formas de seleção, as vagas, as cotas e os documentos necessários."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O zootecnista pode **planejar programas de alimentação e manejo animal**, definir estratégias de nutrição conforme a espécie e a fase de criação, acompanhar indicadores de desempenho e orientar o uso de pastagens, forragens e rações. Na bovinocultura de leite, por exemplo, pode avaliar índices de produção e condições de alimentação do rebanho. Na avicultura e na suinocultura, pode acompanhar sistemas de criação, bem-estar animal e eficiência dos processos produtivos.\n\nTambém pode trabalhar com **melhoramento genético, reprodução, qualidade de produtos de origem animal, gestão de propriedades e pesquisa**. Sua atuação envolve propriedades rurais, cooperativas, empresas de alimentação animal, agroindústrias, assistência técnica, centros de pesquisa e órgãos públicos. Para exercer a profissão regulamentada, o bacharel precisa de **registro no Conselho Regional de Medicina Veterinária (CRMV)** da região em que atuar, conforme a legislação e as atribuições profissionais."
+        }
+      ]
     }
   ]
 }

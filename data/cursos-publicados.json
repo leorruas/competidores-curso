@@ -106,6 +106,7 @@
         },
         {
           "tipo": "galeria",
+          "referencia": "Laboratórios e atividades práticas · campi de Edificações",
           "itens": []
         },
         {
@@ -478,6 +479,11 @@
           "conteudo": ""
         },
         {
+          "tipo": "galeria",
+          "referencia": "Atividades de aprendizagem · Técnico em Logística",
+          "itens": []
+        },
+        {
           "tipo": "tabela",
           "colunas": [
             "Área de estudo",
@@ -505,10 +511,6 @@
               "Uso de sistemas e dados para apoiar decisões"
             ]
           ]
-        },
-        {
-          "tipo": "galeria",
-          "itens": []
         },
         {
           "tipo": "texto",
@@ -789,16 +791,21 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Experiências de aprendizagem em Direito",
-          "conteudo": "A graduação em **Direito** combina interpretação jurídica, análise de casos e atividades práticas orientadas por professores.\n\nOs estudantes desenvolvem atividades de **prática jurídica simulada e real**, incluindo análise de casos, elaboração de peças e ações de extensão voltadas ao atendimento à comunidade. O curso também contempla pesquisa e um Trabalho de Conclusão de Curso."
+          "conteudo": "A graduação em **Direito** combina interpretação jurídica, análise de casos e atividades práticas orientadas por professores.",
+          "titulo": "Experiências de aprendizagem em Direito"
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Os estudantes desenvolvem atividades de **prática jurídica simulada e real**, incluindo análise de casos, elaboração de peças e ações de extensão voltadas ao atendimento à comunidade. O curso também contempla pesquisa e um Trabalho de Conclusão de Curso."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Prática jurídica e extensão · Arcos",
+          "itens": []
         },
         {
           "tipo": "introducao",
           "conteudo": "O estudo de casos e a aprendizagem por projetos aproximam os conceitos jurídicos de situações concretas e incentivam a argumentação e a análise de diferentes soluções."
-        },
-        {
-          "tipo": "galeria",
-          "itens": []
         },
         {
           "tipo": "texto",
@@ -1028,16 +1035,26 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Projetos e experiências acadêmicas",
-          "conteudo": "Em **Arcos**, a aprendizagem é organizada por **Trabalhos Acadêmicos Integradores (TAI)**: estudantes relacionam conteúdos de diferentes disciplinas para desenvolver soluções, produtos ou protótipos e apresentar seus resultados. A formação também integra ações de extensão.\n\nEm **Betim**, a graduação combina aulas de laboratório e extensão curricular. Em 2026, estudantes da disciplina de Injeção de Termoplásticos visitaram a Pollyrubber, em Contagem, onde acompanharam moldagem, seleção de materiais, controle de qualidade e fabricação de componentes."
+          "conteudo": "Em **Arcos**, a aprendizagem é organizada por **Trabalhos Acadêmicos Integradores (TAI)**: estudantes relacionam conteúdos de diferentes disciplinas para desenvolver soluções, produtos ou protótipos e apresentar seus resultados. A formação também integra ações de extensão.",
+          "titulo": "Projetos e experiências acadêmicas"
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Trabalhos Acadêmicos Integradores · Arcos",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **Betim**, a graduação combina aulas de laboratório e extensão curricular. Em 2026, estudantes da disciplina de Injeção de Termoplásticos visitaram a Pollyrubber, em Contagem, onde acompanharam moldagem, seleção de materiais, controle de qualidade e fabricação de componentes."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita à Pollyrubber · Betim",
+          "itens": []
         },
         {
           "tipo": "introducao",
           "conteudo": "Projetos integradores permitem exercitar decisões de engenharia ao relacionar cálculos, desenho, desenvolvimento e avaliação de soluções."
-        },
-        {
-          "tipo": "galeria",
-          "itens": []
         },
         {
           "tipo": "texto",
@@ -1123,8 +1140,35 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Em **Arcos**, os estudantes têm oportunidades de participar de projetos de pesquisa aplicada e de monitoria por meio de seleções específicas. Entre as iniciativas desenvolvidas está o projeto **kits didáticos e produtos mecânicos**, que relaciona conhecimento de engenharia à criação de recursos de aprendizagem.\n\nEm **Betim**, o curso inclui **360 horas de extensão**: 225 horas em disciplinas e 135 horas em projetos com a comunidade, além de **180 horas de atividades complementares**.\n\nEm 2025, o Campus Betim registrou uma pesquisa sobre **otimização de estruturas para impressão 3D**, com proposta de utilizar simulações para reduzir material e preservar resistência. Outro projeto tratou do **ensino de química aplicado a questões de energia e materiais** nos cursos de Engenharia Mecânica e Controle e Automação. A participação dos estudantes em pesquisa depende dos projetos e das seleções de cada período."
+          "conteudo": "Em **Arcos**, os estudantes têm oportunidades de participar de projetos de pesquisa aplicada e de monitoria por meio de seleções específicas. Entre as iniciativas desenvolvidas está o projeto **kits didáticos e produtos mecânicos**, que relaciona conhecimento de engenharia à criação de recursos de aprendizagem.",
+          "titulo": "Pesquisa, extensão e oportunidades"
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto de kits didáticos · Arcos",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **Betim**, o curso inclui **360 horas de extensão**: 225 horas em disciplinas e 135 horas em projetos com a comunidade, além de **180 horas de atividades complementares**."
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em 2025, o Campus Betim registrou uma pesquisa sobre **otimização de estruturas para impressão 3D**, com proposta de utilizar simulações para reduzir material e preservar resistência."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa de impressão 3D · Betim",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Outro projeto tratou do **ensino de química aplicado a questões de energia e materiais** nos cursos de Engenharia Mecânica e Controle e Automação. A participação dos estudantes em pesquisa depende dos projetos e das seleções de cada período."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto de ensino de química · Betim",
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -1163,8 +1207,13 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **Betim**, trabalhos finais de estudantes de Engenharia Mecânica divulgados para bancas em janeiro e fevereiro de 2026 abordaram o **ciclo de vida de baterias de veículos elétricos**, a **manutenção preditiva de equipamentos** e a **otimização de processos de usinagem CNC**. Esses são exemplos de temas desenvolvidos na conclusão da graduação."
+          "conteudo": "Em **Betim**, trabalhos finais de estudantes de Engenharia Mecânica divulgados para bancas em janeiro e fevereiro de 2026 abordaram o **ciclo de vida de baterias de veículos elétricos**, a **manutenção preditiva de equipamentos** e a **otimização de processos de usinagem CNC**. Esses são exemplos de temas desenvolvidos na conclusão da graduação.",
+          "titulo": "Experiências e conquistas dos estudantes"
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Trabalhos finais e bancas · Betim",
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -1293,8 +1342,39 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Práticas e experiências",
-          "conteudo": "Os cursos de Administração articulam fundamentos de gestão com atividades aplicadas. Em Bambuí, os **Trabalhos Interdisciplinares (TID)** integram conteúdos de diferentes disciplinas; em Ribeirão das Neves, a proposta inclui estudos de caso, consultorias e planos de negócio; em São João Evangelista, a **Destaque Jr.** aproxima estudantes de atividades de gestão.\n\nAs experiências e os projetos disponíveis variam de acordo com o campus."
+          "conteudo": "Os cursos de Administração articulam fundamentos de gestão com atividades aplicadas.",
+          "titulo": "Práticas e experiências"
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em Bambuí, os **Trabalhos Interdisciplinares (TID)** integram conteúdos de diferentes disciplinas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Trabalhos Interdisciplinares · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em Ribeirão das Neves, a proposta inclui estudos de caso, consultorias e planos de negócio."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Estudos de caso e planos de negócio · Ribeirão das Neves",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em São João Evangelista, a **Destaque Jr.** aproxima estudantes de atividades de gestão."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Empresa júnior Destaque Jr. · São João Evangelista",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "As experiências e os projetos disponíveis variam de acordo com o campus."
         },
         {
           "tipo": "introducao",
@@ -1421,10 +1501,6 @@
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
             }
           ]
-        },
-        {
-          "tipo": "galeria",
-          "itens": []
         },
         {
           "tipo": "texto",
@@ -1599,16 +1675,26 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Pesquisa, extensão e aprendizagem prática",
-          "conteudo": "Em **Bambuí**, a formação inclui atividades práticas, ensino, pesquisa e extensão relacionados à produção agrícola, ao manejo de recursos naturais e à sustentabilidade.\n\nEm **São João Evangelista**, os estudos articulam conservação de solos, cultivo, mecanização agrícola e desafios da produção rural. Cada campus organiza as experiências conforme seus componentes curriculares e projetos acadêmicos."
+          "conteudo": "Em **Bambuí**, a formação inclui atividades práticas, ensino, pesquisa e extensão relacionados à produção agrícola, ao manejo de recursos naturais e à sustentabilidade.",
+          "titulo": "Pesquisa, extensão e aprendizagem prática"
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades práticas · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **São João Evangelista**, os estudos articulam conservação de solos, cultivo, mecanização agrícola e desafios da produção rural. Cada campus organiza as experiências conforme seus componentes curriculares e projetos acadêmicos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades de campo · São João Evangelista",
+          "itens": []
         },
         {
           "tipo": "introducao",
           "conteudo": "Pesquisa e extensão podem aproximar o estudante de problemas do campo, do desenvolvimento de tecnologias e da produção agrícola responsável."
-        },
-        {
-          "tipo": "galeria",
-          "itens": []
         },
         {
           "tipo": "texto",
@@ -1697,8 +1783,21 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Em **Bambuí**, estudantes de Agronomia podem participar de grupos de estudos e de atividades de pesquisa, incluindo iniciação científica com bolsas sujeitas às seleções e aos projetos disponíveis.\n\nEm **2026**, um edital de mobilidade internacional do campus incluiu estudantes de Agronomia na seleção de **uma vaga compartilhada com outros três cursos** para uma missão acadêmica na França, com atividades sobre agroecologia e produção de queijo artesanal. Essa foi uma oportunidade daquela edição, não uma oferta permanente.\n\nEm **São João Evangelista**, a empresa júnior **Agricampo**, vinculada ao Bacharelado em Agronomia, é uma oportunidade de vivenciar atividades como orientação de cultivos, manejo de pastagens, planejamento de hortaliças e projetos de irrigação. Na inauguração do **Centro de Vivência em 2025**, o campus destinou uma sala à Agricampo e à empresa júnior de Engenharia Florestal. A participação e a disponibilidade das atividades seguem a organização da equipe."
+          "conteudo": "Em **Bambuí**, estudantes de Agronomia podem participar de grupos de estudos e de atividades de pesquisa, incluindo iniciação científica com bolsas sujeitas às seleções e aos projetos disponíveis.",
+          "titulo": "Pesquisa, extensão e oportunidades"
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **2026**, um edital de mobilidade internacional do campus incluiu estudantes de Agronomia na seleção de **uma vaga compartilhada com outros três cursos** para uma missão acadêmica na França, com atividades sobre agroecologia e produção de queijo artesanal. Essa foi uma oportunidade daquela edição, não uma oferta permanente."
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **São João Evangelista**, a empresa júnior **Agricampo**, vinculada ao Bacharelado em Agronomia, é uma oportunidade de vivenciar atividades como orientação de cultivos, manejo de pastagens, planejamento de hortaliças e projetos de irrigação. Na inauguração do **Centro de Vivência em 2025**, o campus destinou uma sala à Agricampo e à empresa júnior de Engenharia Florestal. A participação e a disponibilidade das atividades seguem a organização da equipe."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Empresa júnior Agricampo · São João Evangelista",
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -1737,8 +1836,17 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **Bambuí**, o Bacharelado em Agronomia recebeu **conceito 4, em uma escala de 1 a 5**, na avaliação do **Ministério da Educação (MEC)** realizada em **agosto de 2023**, durante o processo de renovação de reconhecimento do curso.\n\nEm **Bambuí**, o projeto de extensão **Olericultura – Seleção e Implantação de forma sustentável**, concluído em **2022**, capacitou estudantes para conduzir atividades formativas com a comunidade. As oficinas abordaram solo, água, escolha de hortaliças, planejamento de canteiros, irrigação e manejo. O trabalho também incluiu a **implantação de uma horta escolar na Associação Olga Chaves de Miranda Cardoso**, destinada à produção de alimentos para consumo na instituição."
+          "conteudo": "Em **Bambuí**, o Bacharelado em Agronomia recebeu **conceito 4, em uma escala de 1 a 5**, na avaliação do **Ministério da Educação (MEC)** realizada em **agosto de 2023**, durante o processo de renovação de reconhecimento do curso.",
+          "titulo": "Experiências e conquistas dos estudantes"
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **Bambuí**, o projeto de extensão **Olericultura – Seleção e Implantação de forma sustentável**, concluído em **2022**, capacitou estudantes para conduzir atividades formativas com a comunidade. As oficinas abordaram solo, água, escolha de hortaliças, planejamento de canteiros, irrigação e manejo. O trabalho também incluiu a **implantação de uma horta escolar na Associação Olga Chaves de Miranda Cardoso**, destinada à produção de alimentos para consumo na instituição."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto Olericultura e horta escolar · Bambuí",
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -1868,16 +1976,35 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Projetos e experiências acadêmicas",
-          "conteudo": "Em **Congonhas**, estudantes podem desenvolver projetos e participar de atividades de iniciação científica no **Ambiente de Inovação e Maker**, relacionando conhecimentos de desenho, modelagem e sistemas produtivos.\n\nEm **Governador Valadares**, estudantes de Engenharia de Produção participaram, em **2026**, de visitas técnicas à **ABC Borracha** e à **Batatas Magu**. Na indústria de borracha, acompanharam processos produtivos, controle de qualidade, logística e segurança; na indústria alimentícia, observaram etapas da produção e relacionaram o funcionamento da empresa aos conteúdos do curso."
+          "conteudo": "Em **Congonhas**, estudantes podem desenvolver projetos e participar de atividades de iniciação científica no **Ambiente de Inovação e Maker**, relacionando conhecimentos de desenho, modelagem e sistemas produtivos.",
+          "titulo": "Projetos e experiências acadêmicas"
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Ambiente de Inovação e Maker · Congonhas",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **Governador Valadares**, estudantes de Engenharia de Produção realizaram, em **2026**, visita técnica à **ABC Borracha**. Acompanharam processos produtivos da indústria de borracha, controle de qualidade, logística e segurança."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita à ABC Borracha · Governador Valadares",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **Governador Valadares**, estudantes de Engenharia de Produção também visitaram, em **2026**, a **Batatas Magu**. Na indústria alimentícia, observaram etapas da produção e relacionaram o funcionamento da empresa aos conteúdos do curso."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita à Batatas Magu · Governador Valadares",
+          "itens": []
         },
         {
           "tipo": "introducao",
           "conteudo": "O estudo de sistemas produtivos aproxima conhecimentos de engenharia, qualidade, logística e organização do trabalho."
-        },
-        {
-          "tipo": "galeria",
-          "itens": []
         },
         {
           "tipo": "texto",
@@ -1976,8 +2103,31 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Em **Congonhas**, o grupo de pesquisa **Gestão de Operações, Logística e Pesquisa Operacional** trabalha com problemas de logística, simulação e otimização de sistemas, com foco na região do Alto Paraopeba. A participação dos estudantes depende dos projetos e das seleções de cada período.\n\nEm **Bambuí**, as estudantes de Engenharia de Produção **Renata Aparecida Pereira e Roberta Lacorte de Araújo** participaram do projeto de extensão **Desenvolvimento de kits experimentais de baixo custo e fácil acesso para ensinar química a crianças**. Os experimentos e atividades de avaliação foram reunidos no e-book **Química para crianças: aprendendo química de um jeito diferente**, divulgado em **2021** para apoiar o ensino em escolas.\n\nEm **Governador Valadares**, estudantes da disciplina **Gestão de Projetos** desenvolveram, em **2022**, uma campanha sobre descarte correto de absorventes. A equipe observou as condições dos banheiros do campus, conversou com profissionais da limpeza e preparou **cartazes e adesivos informativos**, que foram instalados em salas e sanitários. A ação relacionou pesquisa sobre o problema, comunicação e melhoria das condições de uso dos espaços."
+          "conteudo": "Em **Congonhas**, o grupo de pesquisa **Gestão de Operações, Logística e Pesquisa Operacional** trabalha com problemas de logística, simulação e otimização de sistemas, com foco na região do Alto Paraopeba. A participação dos estudantes depende dos projetos e das seleções de cada período.",
+          "titulo": "Pesquisa, extensão e oportunidades"
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Grupo de pesquisa em operações · Congonhas",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **Bambuí**, as estudantes de Engenharia de Produção **Renata Aparecida Pereira e Roberta Lacorte de Araújo** participaram do projeto de extensão **Desenvolvimento de kits experimentais de baixo custo e fácil acesso para ensinar química a crianças**. Os experimentos e atividades de avaliação foram reunidos no e-book **Química para crianças: aprendendo química de um jeito diferente**, divulgado em **2021** para apoiar o ensino em escolas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Kits de química para crianças · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **Governador Valadares**, estudantes da disciplina **Gestão de Projetos** desenvolveram, em **2022**, uma campanha sobre descarte correto de absorventes. A equipe observou as condições dos banheiros do campus, conversou com profissionais da limpeza e preparou **cartazes e adesivos informativos**, que foram instalados em salas e sanitários. A ação relacionou pesquisa sobre o problema, comunicação e melhoria das condições de uso dos espaços."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Campanha de descarte de absorventes · Governador Valadares",
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -2021,8 +2171,44 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **Governador Valadares**, o bacharelado em Engenharia de Produção teve seu **reconhecimento renovado pela Portaria SERES/MEC nº 16, de 2 de fevereiro de 2026**.\n\nEm **Bambuí**, o egresso de Engenharia de Produção **Euclides Brandão Maluf** conquistou, em **2024**, bolsa integral para cursar doutorado em Engenharia na **University of Nebraska–Lincoln**, nos Estados Unidos. Ele recebeu o reconhecimento **Othmer Fellowship**, após obter seis ofertas de admissão com bolsa integral em universidades norte-americanas. Sua trajetória também inclui atividades de pesquisa e extensão e, posteriormente, atuação como docente e orientador no próprio campus.\n\nEm **2025**, estudantes de Engenharia de Produção de **Bambuí** lideraram a **revitalização do espaço do Diretório Acadêmico do curso**, com apoio de professores e contribuições de empresas parceiras em equipamentos. O ambiente renovado passou a apoiar a convivência e a organização estudantil.\n\nEm **Congonhas**, o estudante de Engenharia de Produção **Victor Rasquinho Ho Te Chang** e a estudante de Engenharia Mecânica **Dominycke Guasti de Melo** desenvolveram uma pesquisa com **modelagem e impressão 3D de peças usadas em aulas de desenho técnico e modelagem**. O trabalho resultou em um **artigo publicado em 2025 na Brazilian Journal of Production Engineering**.\n\nEm **Governador Valadares**, os estudantes de Engenharia de Produção **Luisa Nery e Mauri Nunes** integraram as equipes vencedoras **Universidade Atende** e **Easy Vagas** no **Desafio de Inovação de 2019**, com propostas de novos negócios. As equipes receberam premiação e acompanhamento técnico para desenvolver as ideias."
+          "conteudo": "Em **Governador Valadares**, o bacharelado em Engenharia de Produção teve seu **reconhecimento renovado pela Portaria SERES/MEC nº 16, de 2 de fevereiro de 2026**.",
+          "titulo": "Experiências e conquistas dos estudantes"
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **Bambuí**, o egresso de Engenharia de Produção **Euclides Brandão Maluf** conquistou, em **2024**, bolsa integral para cursar doutorado em Engenharia na **University of Nebraska–Lincoln**, nos Estados Unidos. Ele recebeu o reconhecimento **Othmer Fellowship**, após obter seis ofertas de admissão com bolsa integral em universidades norte-americanas. Sua trajetória também inclui atividades de pesquisa e extensão e, posteriormente, atuação como docente e orientador no próprio campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Bolsa de doutorado de egresso · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **2025**, estudantes de Engenharia de Produção de **Bambuí** lideraram a **revitalização do espaço do Diretório Acadêmico do curso**, com apoio de professores e contribuições de empresas parceiras em equipamentos. O ambiente renovado passou a apoiar a convivência e a organização estudantil."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Revitalização do Diretório Acadêmico · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **Congonhas**, o estudante de Engenharia de Produção **Victor Rasquinho Ho Te Chang** e a estudante de Engenharia Mecânica **Dominycke Guasti de Melo** desenvolveram uma pesquisa com **modelagem e impressão 3D de peças usadas em aulas de desenho técnico e modelagem**. O trabalho resultou em um **artigo publicado em 2025 na Brazilian Journal of Production Engineering**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa com impressão 3D · Congonhas",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **Governador Valadares**, os estudantes de Engenharia de Produção **Luisa Nery e Mauri Nunes** integraram as equipes vencedoras **Universidade Atende** e **Easy Vagas** no **Desafio de Inovação de 2019**, com propostas de novos negócios. As equipes receberam premiação e acompanhamento técnico para desenvolver as ideias."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Desafio de Inovação · Governador Valadares",
+          "itens": []
         },
         {
           "tipo": "texto",
@@ -2157,8 +2343,13 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Projetos e experiências",
-          "conteudo": "Em **2026**, estudantes do Técnico em Administração do **Campus Sabará** participaram de visita técnica à **Expo Favela Minas**, onde conheceram iniciativas de negócios e inovação."
+          "conteudo": "Em **2026**, estudantes do Técnico em Administração do **Campus Sabará** participaram de visita técnica à **Expo Favela Minas**, onde conheceram iniciativas de negócios e inovação.",
+          "titulo": "Projetos e experiências"
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita à Expo Favela Minas · Sabará",
+          "itens": []
         },
         {
           "tipo": "introducao",
@@ -2265,10 +2456,6 @@
               "resposta": "A formação é **presencial, em período integral diurno**, com duração de **três anos**. O curso aborda gestão, planejamento e empreendedorismo. No Campus Sabará, a organização curricular prevê **16,67% da carga horária em atividades a distância**."
             }
           ]
-        },
-        {
-          "tipo": "galeria",
-          "itens": []
         },
         {
           "tipo": "texto",

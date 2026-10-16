@@ -69,6 +69,10 @@ try {
       const preview = await metrics(page);
       assert.ok(preview.horizontalOverflow <= 2, JSON.stringify({ width, course: course.id, mode: "visualizar", ...preview }));
       assert.ok(await page.locator("#course-body .content-section").count() >= 8, course.id + ": prévia");
+      assert.equal(await page.locator("#course-body .intro-section:not(:has(p))").count(),0,course.id + ": não mostrar introdução vazia");
+      const menuTargets=await page.locator(".course-side nav a[data-anchor]").evaluateAll(links =>
+        links.every(link => Boolean(document.getElementById("bloco-" + link.dataset.anchor))));
+      assert.ok(menuTargets,course.id + ": índice aponta somente para blocos visíveis");
       const faq = page.locator("#course-body details.faq-item");
       assert.ok(await faq.count() >= 4, course.id + ": FAQ da prévia");
       await faq.first().locator("summary").click();

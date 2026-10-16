@@ -1447,7 +1447,7 @@ test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promess
   assert.match(arcos,/kits didáticos e produtos mecânicos/);
   assert.match(arcos,/dois estudantes de Engenharia Mecânica classificados/);
   assert.doesNotMatch(arcos,/projetos concluídos|bolsa garantida|protótipos entregues/);
-  const faq=mechanic.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Perguntas frequentes");
+  const faq=mechanic.blocos.find(b=>b.tipo==="faq"&&b.titulo!=="Informações dos campi");
   assert.ok(faq&&faq.itens.length>0);
   assert.ok(!faq.itens.some(i=>(i.resposta||"").includes("kits didáticos e produtos mecânicos")),"sem repetir o evento no FAQ");
   for(const [c,ref] of [[production,"Ambiente de Inovação e Maker · Congonhas"],[mechanic,"Projeto de kits didáticos · Arcos"]]){

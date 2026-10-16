@@ -4167,6 +4167,286 @@
           "conteudo": "O técnico em Agroindústria pode **acompanhar a recepção e a seleção de matérias-primas**, auxiliar na preparação e no processamento de alimentos e verificar condições de higiene e organização de áreas de produção. Também pode **apoiar procedimentos de conservação, embalagem, rotulagem, armazenamento e controle de qualidade**, de acordo com os métodos, registros e normas utilizados no estabelecimento.\n\nEm uma agroindústria de derivados do leite, por exemplo, pode auxiliar no acompanhamento de etapas de fabricação, conservação e acondicionamento. No processamento de produtos vegetais, pode acompanhar seleção, higienização, transformação e armazenamento das matérias-primas. O profissional também pode registrar informações sobre lotes, acompanhar perdas e colaborar para o uso eficiente da água, da energia e dos insumos.\n\nEssas atividades podem ocorrer em agroindústrias, cooperativas, empresas de alimentos, propriedades familiares, estabelecimentos de processamento e laboratórios de análises, observadas as atribuições técnicas, a supervisão exigida e as normas de segurança dos alimentos."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-biotecnologia-integrado",
+      "nome": "Técnico em Biotecnologia",
+      "nivel": "Técnico",
+      "tipo": "Integrado ao Ensino Médio",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Biotecnologia"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "biotecnologia.bambui@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Biotecnologia",
+          "conteudo": "O **Técnico em Biotecnologia** integra o ensino médio à formação profissional em um percurso de três anos. No **Campus Bambuí**, os estudantes aprendem a aplicar conhecimentos científicos a processos e materiais de origem animal, vegetal e agroindustrial, com atenção à inovação e ao uso responsável dos recursos naturais."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude microrganismos, células e processos biológicos e descubra como a Biotecnologia contribui para alimentos, agricultura, indústria e saúde."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A formação é destinada a quem **concluiu o ensino fundamental** e quer cursar o ensino médio junto com uma habilitação técnica. É uma opção para estudantes interessados em Biologia, Química, pesquisas científicas e atividades de laboratório."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "As disciplinas do ensino médio se articulam a estudos e práticas de Biotecnologia. A formação aborda aplicações científicas na produção animal, vegetal, industrial e agroindustrial."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Formação geral",
+              "Língua Portuguesa, Matemática, Física, Química, Biologia, História, Geografia e outros componentes do ensino médio."
+            ],
+            [
+              "Microbiologia e biossegurança",
+              "Estudo de microrganismos, procedimentos laboratoriais e segurança."
+            ],
+            [
+              "Bioquímica e biologia molecular",
+              "Estudo de moléculas biológicas e técnicas de análise."
+            ],
+            [
+              "Biotecnologia animal e vegetal",
+              "Aplicações na produção animal, no cultivo vegetal e na pesquisa."
+            ],
+            [
+              "Fermentações, alimentos e bioprodutos",
+              "Processos biotecnológicos empregados em alimentos e produtos industriais."
+            ],
+            [
+              "Saúde e parasitologia",
+              "Imunodiagnóstico, parasitas, saúde pública e técnicas em Biotecnologia."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O curso inclui atividades de **microbiologia, bioquímica, biologia molecular e técnicas em Biotecnologia**. As aulas práticas utilizam espaços como os laboratórios de Microbiologia e Biologia Molecular do campus, de acordo com o planejamento das disciplinas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Aulas práticas de Biotecnologia e laboratórios · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Biotecnologia",
+          "conteudo": "O curso é oferecido no **Campus Bambuí**, com duração de **três anos**, aulas presenciais pela manhã e à tarde e formação integrada ao ensino médio."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Manhã e tarde",
+              "Presencial",
+              "biotecnologia.bambui@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A formação tem duração de **três anos**, funciona em período integral e reúne disciplinas do ensino médio, estudos técnicos e atividades práticas em laboratórios."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e bolsas",
+          "conteudo": "O **Campus Bambuí** mantém programas de iniciação científica para estudantes dos cursos técnicos integrados. Em **2026**, o programa **Um mais um é mais que dois** abriu oportunidades de projetos com estudantes da graduação e do ensino técnico integrado, orientados por professores. A participação depende das seleções e dos projetos oferecidos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Biotecnologia"
+          ],
+          "linhas": [
+            [
+              "Agronomia",
+              "Bambuí",
+              "Biotecnologia vegetal, produção agrícola e tecnologias para o campo."
+            ],
+            [
+              "Zootecnia",
+              "Bambuí",
+              "Biotecnologia animal, reprodução e sistemas de produção."
+            ],
+            [
+              "Medicina Veterinária",
+              "Bambuí",
+              "Saúde animal, microbiologia e prevenção de doenças."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Biotecnologia"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Tecnologias ambientais e processos sustentáveis; possibilidade de continuidade acadêmica após a graduação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "No fim de **junho de 2025**, estudantes do **terceiro ano do Técnico Integrado em Biotecnologia**, no **Campus Bambuí**, criaram **jogos pedagógicos sobre parasitoses de interesse em saúde pública**. A atividade relacionou conhecimentos científicos à produção de recursos educativos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Jogos pedagógicos sobre parasitoses · Bambuí · junho de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Como se integram o ensino médio e a Biotecnologia?",
+              "resposta": "Você cursa as disciplinas do ensino médio e os componentes técnicos em uma única matrícula, ao longo de três anos."
+            },
+            {
+              "pergunta": "O curso tem aulas práticas?",
+              "resposta": "Sim. A formação inclui microbiologia, bioquímica e biologia molecular, com atividades laboratoriais associadas às disciplinas."
+            },
+            {
+              "pergunta": "Como funcionam o estágio e o TCC?",
+              "resposta": "O curso prevê **estágio supervisionado obrigatório de pelo menos 100 horas**, que pode começar após o primeiro ano, a partir dos **16 anos**. Nas condições estabelecidas pela organização curricular, o estudante pode substituir o estágio por **TCC ligado a projeto institucional de pesquisa ou extensão** na área de Biotecnologia, com orientação docente."
+            },
+            {
+              "pergunta": "Posso participar de iniciação científica?",
+              "resposta": "O campus oferece programas de pesquisa que incluem estudantes dos cursos técnicos integrados. A participação depende das seleções e da organização dos projetos."
+            },
+            {
+              "pergunta": "Como posso continuar os estudos?",
+              "resposta": "Após concluir o ensino médio e a formação técnica, você pode concorrer a cursos de graduação, incluindo Agronomia, Zootecnia e Medicina Veterinária no Campus Bambuí."
+            },
+            {
+              "pergunta": "Existe assistência estudantil?",
+              "resposta": "O IFMG possui programas de assistência estudantil com auxílios, requisitos e procedimentos definidos em editais."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Biotecnologia Integrado ao Ensino Médio**, você precisa ter **concluído o ensino fundamental** ou concluí-lo até a matrícula. A seleção ocorre por **processo seletivo público do IFMG**, conforme as regras do edital vigente.\n\nConsulte o edital para conhecer os critérios de seleção, as vagas, as cotas, os documentos e os procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Biotecnologia pode **preparar materiais e soluções para atividades laboratoriais**, organizar amostras, realizar registros e auxiliar em procedimentos de análise e controle de processos, seguindo protocolos de biossegurança e orientações técnicas.\n\nNa agroindústria e na área ambiental, pode **acompanhar processos biotecnológicos**, participar da observação de fermentações, registrar dados experimentais e auxiliar em procedimentos de controle de qualidade. Em pesquisa e desenvolvimento, pode colaborar com a preparação de ensaios, o acompanhamento de resultados e a organização de materiais e equipamentos.\n\nO profissional pode atuar em laboratórios, empresas agroindustriais, unidades de produção animal e vegetal e serviços de apoio técnico, respeitando as atribuições da habilitação e as exigências de supervisão e segurança."
+        }
+      ]
     }
   ]
 }

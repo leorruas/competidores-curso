@@ -309,7 +309,7 @@ test("F1B.11: FAQs técnicos orientam escolhas, cotas, assistência e ficam ao f
   const h=testContext();
   const configs=[
     {id:"tecnico-em-edificacoes-integrado",n:5,modality:"Existe Técnico em Edificações para quem já concluiu ou está cursando o ensino médio?",rows:3},
-    {id:"tecnico-em-logistica-subsequente",n:6,modality:null,rows:0},
+    {id:"tecnico-em-logistica-subsequente",n:4,modality:null,rows:0},
     {id:"tecnico-em-administracao-integrado",n:6,modality:"Existe Técnico em Administração para quem já concluiu o ensino médio?",rows:2}
   ];
   for(const {id,n,modality,rows} of configs) {

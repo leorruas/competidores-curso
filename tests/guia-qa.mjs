@@ -138,6 +138,36 @@ test("catálogo mantém ofertas reais e filtros multicampi", () => {
   assert.doesNotMatch(onlyArcos,/Edificações Integrado/);
 });
 
+test("F5: reconhecimentos e experiências formam uma seção única em todos os cursos", () => {
+  const h=testContext();
+  assert.equal(json.courses.length,8);
+  const unified="Experiências e conquistas dos estudantes";
+  for(const c of json.courses){
+    const relevant=c.blocos.filter(b=>b.titulo===unified);
+    assert.equal(relevant.length,1,c.id+": seção única");
+    assert.equal(relevant[0].tipo,"texto",c.id);
+    assert.equal(h.editorFields(relevant[0]).length,relevant[0].conteudo==="Informação incompleta"?2:1,c.id+": cópia Rich Text respeita pendência");
+    assert.ok(!c.blocos.some(b=>/^Reconhecimentos e (?:premiações|avaliações)$/.test(b.titulo||"")),c.id+": remover seção duplicada");
+    const continuation=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+    const experiences=c.blocos.findIndex(b=>b.titulo===unified);
+    const faq=c.blocos.findIndex(b=>b.titulo==="Perguntas frequentes");
+    assert.ok(experiences>continuation,c.id+": continuidade antes das experiências");
+    assert.ok(faq>=0,c.id+": FAQ de candidatos preservado");
+    if(c.id.startsWith("tecnico-"))assert.ok(faq>experiences,c.id+": FAQ técnico no fim da seção informativa");
+    assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
+  }
+  const get=id=>json.courses.find(c=>c.id===id).blocos.find(b=>b.titulo===unified).conteudo;
+  for(const [id,terms] of [
+    ["administracao-bacharelado",["Formiga","conceito 4","Ouro Branco","quatro estrelas"]],
+    ["agronomia-bacharelado",["conceito 4","2023","Olericultura","horta escolar"]],
+    ["engenharia-de-producao-bacharelado",["Portaria SERES/MEC nº 16","2 de fevereiro de 2026","Othmer Fellowship","Diretório Acadêmico","Brazilian Journal of Production Engineering","Desafio de Inovação de 2019"]],
+    ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]
+  ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
+  for(const id of ["tecnico-em-edificacoes-integrado","tecnico-em-logistica-subsequente","tecnico-em-administracao-integrado","direito-bacharelado-arcos"]){
+    assert.equal(get(id),"Informação incompleta",id+": uma única pendência, sem inventar conquista");
+  }
+});
+
 test("F4.4: os oito cursos apresentam continuidade sem avisos genéricos", () => {
   const h=testContext();
   assert.equal(json.courses.length,8);
@@ -886,8 +916,8 @@ test("Agronomia e Engenharia de Produção preservam campi sem reciclar vagas do
   const pTable=prod.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.equal(pTable.linhas[1][3],"coordenacao.producao.congonhas@ifmg.edu.br");
   assert.equal(pTable.linhas[2][3],"coenp.gv@ifmg.edu.br");
-  assert.match(prod.blocos.find(b=>b.titulo==="Reconhecimentos e premiações").conteudo,/Governador Valadares/);
-  assert.match(prod.blocos.find(b=>b.titulo==="Reconhecimentos e premiações").conteudo,/2 de fevereiro de 2026/);
+  assert.match(prod.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo,/Governador Valadares/);
+  assert.match(prod.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo,/2 de fevereiro de 2026/);
 });
 
 test("Direito explica estágio e TCC com exigências concretas", () => {
@@ -1083,7 +1113,7 @@ test("F3.1/F3.4: projetos documentados de Bambuí e avaliação MEC não migram 
   for(const term of ["Bambuí","Olericultura","2022","horta escolar","Associação Olga Chaves"]) {
     assert.ok(agexp.includes(term),"Agronomia: "+term);
   }
-  const agrecognition=agr.blocos.find(b=>b.titulo==="Reconhecimentos e premiações").conteudo;
+  const agrecognition=agr.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo;
   for(const term of ["Bambuí","conceito 4","1 a 5","2023","MEC"]) {
     assert.ok(agrecognition.includes(term),"reconhecimento Agronomia: "+term);
   }

@@ -2,7 +2,7 @@
 
 Ferramenta estática de apoio à preparação das páginas dos cursos do IFMG no Wagtail. A interface permite localizar roteiros **aprovados para divulgação**, comparar uma prévia do conteúdo e ver o preenchimento bloco por bloco. O projeto é inspirado na experiência editorial do [Guia do Portal IFMG](https://leorruas.github.io/guiaportalifmg/).
 
-**Estado atual (15/10/2026):** publicados **oito roteiros multicampi e individuais para revisão pela coordenação**, representando **25 ofertas/campi do inventário 2027**, incluindo Administração Bacharelado em seis campi, Técnico em Administração Integrado em oito e **Engenharia Mecânica em Arcos e Betim**. O catálogo não equivale à publicação ou homologação do conteúdo no Wagtail. Campos incompletos ou divergentes são sinalizados no próprio roteiro. A demonstração fictícia continua disponível por URL.
+**Estado atual (15/10/2026):** publicados **oito roteiros multicampi e individuais para revisão pela coordenação**, representando **28 ofertas/campi do inventário 2027**, incluindo Administração Bacharelado em seis campi, Técnico em Administração Integrado em oito, **Engenharia Mecânica em Arcos e Betim**, **Agronomia em Bambuí e São João Evangelista** e **Engenharia de Produção em Bambuí, Congonhas e Governador Valadares**. Os roteiros de Agronomia e Engenharia de Produção conservam os identificadores anteriores de Bambuí como aliases para não quebrar links. O catálogo não equivale à publicação ou homologação do conteúdo no Wagtail. Campos incompletos ou divergentes são sinalizados no próprio roteiro. A demonstração fictícia continua disponível por URL.
 
 ## Abrir e publicar o site
 

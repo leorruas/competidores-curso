@@ -1067,20 +1067,22 @@
         },
         {
           "tipo": "texto",
+          "titulo": "Campus Arcos",
+          "conteudo": "A formação utiliza **Trabalhos Acadêmicos Integradores (TAI)** ao longo dos períodos. Os estudantes relacionam disciplinas para desenvolver projetos, produtos e protótipos apresentados a bancas. O campus mantém um **laboratório de ensaios mecânicos**, utilizado em disciplinas como Ciência e Resistência dos Materiais e também em projetos integradores."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Betim",
+          "conteudo": "O curso reúne atividades práticas em laboratórios e uma estrutura curricular com **360 horas de extensão** e **180 horas de atividades complementares**, segundo o PPC de 2023. Em **2026**, estudantes da disciplina de Injeção de Termoplásticos visitaram a **Pollyrubber, em Contagem**, para conhecer moldagem, seleção de materiais e controle de qualidade. A participação em visitas e projetos depende das atividades de cada período."
+        },
+        {
+          "tipo": "texto",
           "titulo": "Perguntas frequentes",
           "conteudo": ""
         },
         {
           "tipo": "faq",
           "itens": [
-            {
-              "pergunta": "Que experiências práticas fazem parte da formação em Arcos?",
-              "resposta": "Em Arcos, os estudantes desenvolvem Trabalhos Acadêmicos Integradores (TAI). Eles combinam conhecimentos de diferentes disciplinas para criar propostas, produtos ou protótipos e apresentam os resultados dos projetos a bancas avaliadoras."
-            },
-            {
-              "pergunta": "Como são as atividades acadêmicas em Betim?",
-              "resposta": "Em **Betim**, você tem aulas práticas em laboratórios e atividades de extensão integradas à graduação. Em maio de 2026, estudantes de Injeção de Termoplásticos visitaram a Pollyrubber, em Contagem, para conhecer processos de moldagem, controle de qualidade e seleção de materiais."
-            },
             {
               "pergunta": "O estágio e o TCC são obrigatórios?",
               "resposta": "Sim, com regras diferentes. Em **Arcos**, o estágio obrigatório exige **350 horas**, após a conclusão de 60% da carga horária, e o TCC tem **30 horas**, como relatório técnico ou monografia. Em **Betim**, o estágio obrigatório exige **360 horas**, após pelo menos **1.800 horas de disciplinas**. O Projeto Final de Curso (PFC) é obrigatório, com **duas disciplinas de 30 horas cada**. Você desenvolve um projeto de pesquisa e apresenta uma monografia a uma banca."

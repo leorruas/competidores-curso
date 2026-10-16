@@ -2077,6 +2077,46 @@
         },
         {
           "tipo": "texto",
+          "titulo": "Campus Arcos",
+          "conteudo": "O curso utiliza o **Trabalho Acadêmico Integrador (TAI)**, uma metodologia baseada em projetos que relaciona disciplinas do ensino médio e conhecimentos de Administração. Entre as experiências previstas está a **empresa simulada**, que aproxima os estudantes de situações de gestão e organização de negócios. A formação tem duração de três anos, com aulas em período integral."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Bambuí",
+          "conteudo": "Ao longo de **três anos**, os estudantes relacionam ensino médio e formação técnica em **gestão de pessoas, produção, marketing, finanças e logística**. A proposta do curso incentiva atitudes empreendedoras e aproxima conhecimentos de tecnologia e relações humanas. O campus também apresenta possibilidades de participação em projetos acadêmicos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Formiga",
+          "conteudo": "A formação está organizada em **três anos, em séries anuais e período integral**. A proposta do curso relaciona as atividades administrativas das organizações da região de Formiga aos conteúdos escolares, alternando **teoria e prática**. Os estudantes desenvolvem atividades de planejamento e análise de processos administrativos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Ouro Branco",
+          "conteudo": "O curso dura **três anos** e inclui **3.442 horas** de formação geral e profissional. Além das rotinas de apoio administrativo, a proposta acadêmica aborda **liderança, empreendedorismo e responsabilidade socioambiental**, relacionando a organização de negócios ao contexto social. As aulas são realizadas pela manhã e à tarde."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Ouro Preto",
+          "conteudo": "Com **3.180 horas** distribuídas em **três anos**, o curso é presencial e tem organização anual. A formação prepara para apoiar atividades administrativas, financeiras, de produção, recursos humanos, marketing e logística, incluindo o uso de informações e **indicadores de desempenho** para melhorar processos nas organizações."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Ponte Nova",
+          "conteudo": "O curso é **presencial, em período integral e com duração de três anos**. A formação combina Administração e ensino médio, com ênfase em **empreendedorismo, inovação, liderança e participação cidadã**. Os estudos preparam para apoiar a organização de documentos, estoques, rotinas administrativas e sistemas de informação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Ribeirão das Neves",
+          "conteudo": "O Técnico em Administração Integrado aborda situações do cotidiano das organizações, como **fluxo de caixa, planejamento financeiro, marketing, recrutamento e treinamento de equipes**. A formação também trabalha logística e controle de estoques, permitindo relacionar essas áreas às disciplinas do ensino médio."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Sabará",
+          "conteudo": "A formação acontece em **três anos, em período integral diurno**, com conteúdos de gestão, planejamento e empreendedorismo. Em **2026**, estudantes do Técnico em Administração participaram de uma **visita técnica à Expo Favela Minas**, onde conheceram iniciativas de negócios e inovação. A oferta possui **16,67% de carga horária EaD**, conforme o inventário institucional de ingresso."
+        },
+        {
+          "tipo": "texto",
           "titulo": "Perguntas frequentes",
           "conteudo": ""
         },
@@ -2084,36 +2124,20 @@
           "tipo": "faq",
           "itens": [
             {
-              "pergunta": "Arcos",
-              "resposta": "Em Arcos, a formação inclui experiências como **Empresa Simulada**, **Hackathon Social**, **Mostra de Maquetes**, **Semana do Empreendedorismo e Inovação** e **Café Empresarial**. As aulas são presenciais, com 16% de carga horária EaD."
+              "pergunta": "O que significa fazer Administração integrada ao ensino médio?",
+              "resposta": "Você cursa, na mesma formação, as disciplinas do ensino médio e os conteúdos técnicos de Administração. O curso é destinado a quem concluiu o ensino fundamental e deseja realizar as duas etapas juntas."
             },
             {
-              "pergunta": "Bambuí",
-              "resposta": "Em Bambuí, o técnico integrado reúne ensino médio e conteúdos de gestão, empreendedorismo, finanças, marketing, produção e logística ao longo de três anos. O campus também desenvolve projetos de ensino, pesquisa e extensão."
+              "pergunta": "As aulas são presenciais? Há atividades a distância?",
+              "resposta": "Sim, o curso é oferecido presencialmente nos oito campi. Em Arcos, a oferta verificada prevê **16% de carga horária EaD**; em Sabará, **16,67%**. A organização das atividades segue o projeto pedagógico e a oferta de cada campus."
             },
             {
-              "pergunta": "Formiga",
-              "resposta": "Em Formiga, o curso integra ensino médio e formação para apoiar atividades de organizações. Os estudos abrangem planejamento, finanças, recursos humanos, marketing, logística, inovação e sustentabilidade."
+              "pergunta": "Há atividades práticas durante a formação?",
+              "resposta": "Sim. As experiências variam por campus. Em Arcos, o Trabalho Acadêmico Integrador utiliza projetos e empresa simulada; em Formiga, a formação articula atividades práticas e teoria; e, em Sabará, estudantes participaram de uma visita técnica à Expo Favela Minas em 2026."
             },
             {
-              "pergunta": "Ouro Branco",
-              "resposta": "Em Ouro Branco, o curso une formação geral e conhecimentos de gestão e negócios, com atenção a liderança, inovação, empreendedorismo e atuação ética em organizações."
-            },
-            {
-              "pergunta": "Ouro Preto",
-              "resposta": "Em Ouro Preto, o curso tem duração prevista de três anos e oferece formação geral e técnica para atividades administrativas, financeiras, de produção, marketing, recursos humanos e logística."
-            },
-            {
-              "pergunta": "Ponte Nova",
-              "resposta": "Em Ponte Nova, o curso integra o ensino médio à formação profissional em gestão, empreendedorismo, finanças, recursos humanos, marketing e processos administrativos."
-            },
-            {
-              "pergunta": "Ribeirão das Neves",
-              "resposta": "Em Ribeirão das Neves, a formação integrada trabalha planejamento, gestão financeira, marketing, recursos humanos, produção e logística, combinando qualificação profissional e formação cidadã."
-            },
-            {
-              "pergunta": "Sabará",
-              "resposta": "Em Sabará, o curso desenvolve conhecimentos de gestão e empreendedorismo. A oferta é presencial, com **16,67% da carga horária EaD**. Estudantes do curso participaram de visita técnica à **Expo Favela Minas 2026**, conhecendo iniciativas de empreendedorismo e inovação."
+              "pergunta": "A formação é voltada apenas a empresas privadas?",
+              "resposta": "Não. As competências de apoio administrativo podem ser aplicadas em **organizações públicas, privadas e do terceiro setor**. A formação aborda documentos, estoques, finanças, gestão de pessoas e outras rotinas de diferentes tipos de organização."
             }
           ]
         },

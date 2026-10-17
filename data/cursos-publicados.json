@@ -8517,6 +8517,332 @@
           "conteudo": "O técnico em Desenvolvimento de Sistemas pode atuar na **criação, implantação, testes e manutenção de sistemas computacionais e aplicativos**. Entre as atividades estão desenvolver programas, modelar bancos de dados, documentar aplicações, testar funcionalidades, apoiar a correção de problemas e colaborar com equipes de tecnologia.\n\nEssas atividades podem ocorrer em empresas de software, organizações públicas e privadas, serviços de tecnologia e equipes que desenvolvem soluções digitais para diferentes setores. A atuação depende da formação recebida, das responsabilidades de cada função e das boas práticas de segurança e qualidade."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-meio-ambiente-integrado",
+      "nome": "Técnico em Meio Ambiente",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Governador Valadares",
+        "Santa Luzia"
+      ],
+      "modalidade": "Presencial (Santa Luzia: 10,73% EaD)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Meio Ambiente"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Governador Valadares; Santa Luzia"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Santa Luzia: 10,73% EaD no PS2027)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC para ingressantes em 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Consulte os contatos por campus"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Meio Ambiente",
+          "conteudo": "Estude o ensino médio junto com uma formação técnica voltada ao **cuidado com o meio ambiente**. No IFMG, você aprende a acompanhar a qualidade da água, do solo e do ar, interpretar dados ambientais e participar de ações de conservação, educação ambiental e gestão de resíduos."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda a investigar questões ambientais, acompanhar recursos naturais e propor formas de reduzir impactos enquanto conclui o ensino médio."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem concluiu o ensino fundamental e deseja fazer o ensino médio junto com uma formação técnica. É uma opção para quem gosta de ciências, natureza, análise de informações, atividades práticas, sustentabilidade e soluções para problemas ambientais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne conhecimentos do ensino médio com estudos sobre recursos naturais, poluição, monitoramento, conservação e formas de reduzir impactos ambientais. A matriz curricular e as atividades práticas são específicas de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Água, solo e ar",
+              "Compreender a qualidade e a conservação dos recursos naturais e formas de identificar alterações ambientais."
+            ],
+            [
+              "Monitoramento ambiental",
+              "Observar condições ambientais, coletar informações e organizar registros de medições e análises."
+            ],
+            [
+              "Resíduos e saneamento",
+              "Conhecer práticas de redução, reutilização, reciclagem e gestão de resíduos, além de temas de saneamento."
+            ],
+            [
+              "Biodiversidade e conservação",
+              "Conhecer ecossistemas, espécies e estratégias de proteção e recuperação ambiental."
+            ],
+            [
+              "Gestão e legislação ambiental",
+              "Estudar programas de gestão, instrumentos de controle e princípios de legislação ambiental."
+            ],
+            [
+              "Educação ambiental",
+              "Desenvolver formas de comunicar informações, mobilizar comunidades e incentivar atitudes de preservação."
+            ],
+            [
+              "Formação geral",
+              "Relacionar matemática, linguagens, ciências da natureza e humanas a problemas ambientais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "As atividades podem envolver observação de campo, amostragem, organização de dados, estudo de impactos e elaboração de propostas de educação ambiental, de acordo com a estrutura e a matriz curricular local. No **Campus Governador Valadares**, existem laboratórios de Biologia e Química, Laboratório de Climatologia e Estação Meteorológica INMET/IFMG-GV, recursos acadêmicos do campus que apoiam atividades nas ciências ambientais."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios e atividades práticas ambientais · Governador Valadares e Santa Luzia",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Meio Ambiente",
+          "conteudo": "O IFMG oferece o **Técnico em Meio Ambiente Integrado ao Ensino Médio** em **Governador Valadares** e **Santa Luzia**. As duas ofertas previstas para 2027 são presenciais, com aulas de manhã e à tarde e percurso de três anos. O quadro de 2027 registra **10,73% de carga horária EaD em Santa Luzia**; em Governador Valadares, não indica percentual EaD."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Governador Valadares",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "coordenacao.tma.gv@ifmg.edu.br"
+            ],
+            [
+              "Santa Luzia",
+              "Presencial (10,73% EaD)",
+              "Manhã e tarde / 3 anos",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Governador Valadares",
+              "resposta": "O curso integrado possui três anos de duração e trabalha coleta e interpretação de dados ambientais, gestão, conservação e educação ambiental. O campus mantém estrutura de laboratórios de ciências e climatologia. Estudantes do integrado participaram de visitas técnicas e da Jornada de Foguetes em 2025."
+            },
+            {
+              "pergunta": "Campus Santa Luzia",
+              "resposta": "O Técnico Integrado em Meio Ambiente aparece como **nova oferta de 2027**, com três anos e percentual de **10,73% EaD** no quadro de seleção. A proposta do curso passou por consulta pública e audiência em janeiro de 2026. O PPC aplicável, os espaços de prática e o contato funcional da coordenação aguardam confirmação."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A formação permite relacionar conservação ambiental, ciência e comunidade a atividades de ensino, pesquisa e extensão. **Em Governador Valadares**, estudantes do integrado participaram em 2025 de uma visita técnica à Usina Hidrelétrica de Baguari, com estudo de monitoramento ambiental, geração de energia e seus impactos. Em **Santa Luzia**, a nova oferta ainda depende da implantação de suas primeiras turmas para que sejam documentadas experiências próprias do curso."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": "Depois de concluir o ensino médio integrado, você pode concorrer a graduações do IFMG relacionadas a ambiente, conservação, saneamento e gestão de recursos naturais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Meio Ambiente"
+          ],
+          "linhas": [
+            [
+              "Engenharia Ambiental e Sanitária",
+              "Governador Valadares",
+              "Qualidade ambiental, recursos hídricos, saneamento e controle de impactos."
+            ],
+            [
+              "Gestão Ambiental (tecnólogo)",
+              "Governador Valadares",
+              "Gestão de recursos naturais, políticas e práticas de sustentabilidade."
+            ],
+            [
+              "Engenharia Florestal",
+              "São João Evangelista",
+              "Conservação, manejo de florestas e recuperação ambiental."
+            ],
+            [
+              "Agronomia",
+              "Bambuí e São João Evangelista",
+              "Solos, sistemas de produção vegetal e uso sustentável dos recursos naturais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": "Depois de uma graduação compatível, você pode aprofundar estudos em sustentabilidade e tecnologias ambientais em programas de pós-graduação do IFMG."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Meio Ambiente"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa aplicada a sustentabilidade, gestão e tecnologias ambientais, conforme as linhas do programa."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **agosto de 2025**, três estudantes do **3º ano do Técnico Integrado em Meio Ambiente do Campus Governador Valadares** conquistaram um **troféu de campeão** na Jornada de Foguetes, realizada em Barra do Piraí (RJ). **Carlos Valentim Cândido Mouro, Efraim Angelo Gonçalves Pereira e Victor Alexandre Silvério Padilha** alcançaram a marca de **209 metros** no lançamento, resultado enquadrado na faixa máxima de desempenho da competição."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Jornada de Foguetes · estudantes de Meio Ambiente · Governador Valadares · agosto de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Nos dias **13, 14 e 15 de outubro de 2025**, estudantes do **Técnico Integrado em Meio Ambiente**, junto a colegas do integrado em **Edificações** e da graduação em **Engenharia Ambiental e Sanitária**, visitaram a **Usina Hidrelétrica de Baguari**, em Governador Valadares. Eles conheceram o funcionamento do empreendimento, medidas de segurança, programas de monitoramento ambiental e a estrutura de transposição de peixes. O grupo total de aproximadamente 70 visitantes reúne os três cursos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita à Usina Hidrelétrica de Baguari · Meio Ambiente e outros cursos · Governador Valadares · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Posso ingressar logo após o ensino fundamental?",
+              "resposta": "Sim. O integrado reúne a formação técnica e o ensino médio no mesmo percurso. É necessário concluir o ensino fundamental até a matrícula e atender às regras do edital."
+            },
+            {
+              "pergunta": "Qual é a diferença entre as ofertas dos dois campi?",
+              "resposta": "Ambas são integradas e diurnas. **Governador Valadares** já mantém turmas e experiências do curso. **Santa Luzia** prevê a oferta a partir de 2027, com **10,73% EaD** na matriz daquele processo seletivo. Os PPCs e as atividades práticas são próprios de cada campus."
+            },
+            {
+              "pergunta": "É possível participar de visitas técnicas e projetos?",
+              "resposta": "As atividades dependem do planejamento curricular, dos projetos e das condições de cada campus. Em Governador Valadares, estudantes do curso visitaram a Usina de Baguari em 2025. Em Santa Luzia, essas atividades dependerão da implantação das turmas."
+            },
+            {
+              "pergunta": "Estágio e TCC são obrigatórios?",
+              "resposta": "As condições são definidas pelo projeto pedagógico aplicável a cada campus e turma. As regras específicas para ingressantes de 2027 precisam ser confirmadas pelas coordenações."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras modalidades relacionadas",
+          "conteudo": "O IFMG também oferece **Técnico em Meio Ambiente Subsequente no Campus Ouro Preto**, destinado a quem já concluiu o ensino médio. A modalidade integrada desta página reúne ensino médio e formação técnica, enquanto o subsequente possui organização e requisitos próprios."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Concluiu o ensino fundamental e vai cursar o ensino médio",
+              "Técnico em Meio Ambiente Integrado",
+              "Campus, turno e proporção de atividades a distância na oferta."
+            ],
+            [
+              "Já concluiu o ensino médio e busca apenas a formação técnica",
+              "Técnico em Meio Ambiente Subsequente",
+              "Campus, duração e organização próprios dessa modalidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Meio Ambiente Integrado ao Ensino Médio**, é necessário ter concluído o ensino fundamental até a matrícula. O IFMG realiza processo seletivo público para ingresso nos cursos técnicos integrados.\n\nConsulte o edital vigente para conhecer as ofertas por campus, critérios, reserva de vagas, documentação e procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Meio Ambiente pode atuar no apoio a **levantamentos, monitoramento, gestão e educação ambiental**. Entre as atividades estão coletar e registrar informações, participar de análises de qualidade ambiental, acompanhar ações de redução e gestão de resíduos, organizar dados e apoiar programas de conservação, recuperação de áreas e uso responsável dos recursos naturais.\n\nOs espaços de atuação incluem órgãos ambientais, empresas, serviços de saneamento, consultorias, organizações da sociedade civil, unidades de conservação e projetos comunitários. O profissional deve respeitar as atribuições reconhecidas para sua habilitação, a supervisão quando necessária e as normas de segurança e proteção ambiental."
+        }
+      ]
     }
   ]
 }

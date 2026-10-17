@@ -3236,6 +3236,333 @@
       ]
     },
     {
+      "id": "engenharia-civil-bacharelado",
+      "nome": "Engenharia Civil",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Governador Valadares",
+        "Piumhi",
+        "Santa Luzia"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Engenharia Civil"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação (Bacharelado)"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Governador Valadares, Piumhi e Santa Luzia"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com componentes EaD em Piumhi e Santa Luzia"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "5 anos (10 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Consulte as informações de cada campus"
+            },
+            {
+              "rotulo": "E-mails das coordenações",
+              "valor": "coordenacao.enc.gv@ifmg.edu.br; coordengcivil.piumhi@ifmg.edu.br; eng.civil.santaluzia@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Engenharia Civil",
+          "conteudo": "Aprenda a **projetar, dimensionar, construir, gerenciar e avaliar edificações e obras de infraestrutura**, relacionando segurança, tecnologia, planejamento e sustentabilidade. O bacharelado em Engenharia Civil do IFMG reúne formação científica e aplicação prática em estruturas, materiais, solos, transportes e saneamento."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Do cálculo estrutural ao canteiro de obras, estude soluções para edifícios, pontes, estradas e cidades em uma formação que combina projetos e atividades práticas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é voltado a quem concluiu o **ensino médio** e tem interesse por matemática, física, construção civil e solução de problemas técnicos. A formação envolve cálculos, desenho e modelagem de projetos, interpretação de normas, atividades de laboratório e planejamento de obras."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estuda **cálculo, física, estatística, desenho técnico, materiais de construção, topografia, resistência dos materiais, estruturas, geotecnia, hidráulica e planejamento de obras**. A graduação também aborda saneamento, sistemas prediais, infraestrutura de transportes e análise de impactos socioambientais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Estruturas e materiais",
+              "Dimensionar e analisar elementos de concreto, aço e outros materiais usados em edificações."
+            ],
+            [
+              "Geotecnia e fundações",
+              "Estudar solos, estabilidade, contenções e soluções de fundação."
+            ],
+            [
+              "Hidráulica e saneamento",
+              "Desenvolver soluções de abastecimento de água, drenagem e esgotamento sanitário."
+            ],
+            [
+              "Transportes e infraestrutura",
+              "Compreender pavimentos, estradas, mobilidade e obras de infraestrutura."
+            ],
+            [
+              "Desenho, CAD e modelagem digital",
+              "Representar projetos, ler desenhos técnicos e empregar ferramentas computacionais."
+            ],
+            [
+              "Gestão e orçamento de obras",
+              "Planejar cronogramas, levantar custos, organizar recursos e acompanhar execução."
+            ],
+            [
+              "Sustentabilidade e segurança",
+              "Avaliar impactos ambientais, normas técnicas, condições de trabalho e desempenho das construções."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Atividades práticas no Campus Governador Valadares",
+          "conteudo": "No Campus Governador Valadares, os estudos de Engenharia Civil contam com **Laboratório de Construção Civil** e **Laboratório de Ensaios Mecânicos**, utilizados no ensino e na análise de materiais, além de atividades que articulam projetos, experimentação e questões de infraestrutura."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Engenharia Civil · Laboratório de Construção Civil e Laboratório de Ensaios Mecânicos · Governador Valadares · 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Atividades práticas no Campus Piumhi",
+          "conteudo": "No Campus Piumhi, a formação relaciona **desenho técnico e computacional, topografia, estruturas, fundações, orçamento e gestão de obras**. Disciplinas práticas, projetos e atividades de extensão conectam os fundamentos da engenharia às necessidades das construções e da infraestrutura regional."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Engenharia Civil · atividades de projeto e práticas da graduação · Campus Piumhi",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Atividades práticas no Campus Santa Luzia",
+          "conteudo": "No Campus Santa Luzia, a formação inclui projetos de **estruturas, fundações, pavimentação, instalações prediais e sistemas de água e esgoto**, além de atividades extensionistas integradas ao currículo. O curso tem componentes que permitem o uso de softwares, a elaboração de projetos e práticas de laboratório."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Engenharia Civil · disciplinas de projeto, laboratório e extensão · Campus Santa Luzia",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Engenharia Civil",
+          "conteudo": "O **Bacharelado em Engenharia Civil** é oferecido nos campi **Governador Valadares, Piumhi e Santa Luzia**, na modalidade presencial e com aulas noturnas. A organização das atividades e parte das cargas horárias são definidas pelo projeto pedagógico de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade e componentes EaD",
+            "Duração",
+            "Carga horária",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Governador Valadares",
+              "Noite",
+              "Presencial",
+              "10 semestres",
+              "3.600 horas",
+              "coordenacao.enc.gv@ifmg.edu.br"
+            ],
+            [
+              "Piumhi",
+              "Noite",
+              "Presencial (21,67% EaD)",
+              "10 semestres",
+              "Informação incompleta",
+              "coordengcivil.piumhi@ifmg.edu.br"
+            ],
+            [
+              "Santa Luzia",
+              "Noite",
+              "Presencial (24,17% EaD)",
+              "10 semestres",
+              "3.600 horas",
+              "eng.civil.santaluzia@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Governador Valadares",
+              "resposta": "O curso é **noturno e presencial**, com duração mínima de dez semestres. A matriz atualizada em **2026** para turmas desde 2023 prevê **3.600 horas**, **160 horas de estágio supervisionado obrigatório** e **60 horas de TCC obrigatório**. O campus dispõe de Laboratório de Construção Civil e Laboratório de Ensaios Mecânicos."
+            },
+            {
+              "pergunta": "Campus Piumhi",
+              "resposta": "A oferta noturna de Engenharia Civil tem duração de **dez semestres**, com atividades presenciais e componentes EaD. A graduação reúne desenho, topografia, estruturas, construção civil, planejamento e projetos de extensão. **Estágio supervisionado e TCC** fazem parte da formação."
+            },
+            {
+              "pergunta": "Campus Santa Luzia",
+              "resposta": "O curso é **noturno e presencial, com 24,17% de componentes EaD** na matriz de 2024. São **3.600 horas** distribuídas em dez semestres, com **180 horas de estágio obrigatório a partir do quinto período** e **TCC individual obrigatório de 30 horas**. O currículo inclui **375 horas de atividades extensionistas**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os três campi desenvolvem atividades de pesquisa, extensão e formação prática relacionadas à Engenharia Civil. As oportunidades podem incluir **iniciação científica, monitoria, projetos de extensão, empresa júnior, visitas técnicas e estágio**, conforme os projetos e os processos de seleção de cada unidade. A participação permite aprofundar temas como estruturas, construção sustentável, materiais, infraestrutura e gestão."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Engenharia Civil"
+          ],
+          "linhas": [
+            [
+              "Especialização em BIM – Projetos Aplicados às Edificações",
+              "Piumhi (EaD)",
+              "Modelagem da informação da construção, integração de projetos e tecnologias aplicadas às edificações."
+            ],
+            [
+              "Especialização em Engenharia de Segurança do Trabalho",
+              "Governador Valadares",
+              "Prevenção de acidentes, análise de riscos e segurança em atividades técnicas e em obras."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento, coordenação de equipes e gestão de operações e projetos."
+            ],
+            [
+              "Especialização em Gestão e Conservação do Patrimônio Cultural",
+              "Ouro Preto",
+              "Conservação do patrimônio edificado, planejamento e técnicas aplicadas à preservação de bens culturais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **setembro de 2026**, o **Bacharelado em Engenharia Civil do Campus Governador Valadares** recebeu **conceito 4 em avaliação presencial do MEC**, com média contínua de **4,29 em cinco pontos**. A análise envolveu o projeto pedagógico, o corpo docente e a infraestrutura, com participação da comunidade acadêmica. Uma estudante do 10º período relatou a contribuição de projetos e atividades práticas para a formação. O curso também havia alcançado **nota 5 no Enade**, resultado distinto da avaliação de 2026."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Engenharia Civil · conceito 4 na avaliação presencial do MEC · Campus Governador Valadares · setembro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Estudantes de Engenharia Civil reconhecidos em Piumhi",
+          "conteudo": "Em reconhecimento ao desempenho acadêmico de **2025**, **dois estudantes de Engenharia Civil do Campus Piumhi** foram homenageados como **Destaque Acadêmico do IFMG**, em cerimônia na Reitoria. A distinção valorizou o comprometimento e a trajetória dos estudantes nas atividades do curso."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Destaque Acadêmico 2025 · estudantes de Engenharia Civil · Campus Piumhi",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Estudantes de Santa Luzia selecionados para monitoria",
+          "conteudo": "Em **abril de 2026**, o Campus Santa Luzia divulgou o resultado final de seleção de monitores, com **dois estudantes do Bacharelado em Engenharia Civil selecionados como bolsistas** nas disciplinas **Cálculo I** e **Mecânica Vetorial para Engenharia**. A seleção é uma oportunidade de aprofundamento dos conteúdos e de apoio ao aprendizado de outros estudantes."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Seleção de monitores bolsistas em Cálculo I e Mecânica Vetorial para Engenharia · Engenharia Civil Santa Luzia · abril de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "A Engenharia Civil é oferecida em quais campi do IFMG?",
+              "resposta": "A graduação está presente nos campi **Governador Valadares, Piumhi e Santa Luzia**. As três ofertas são presenciais e noturnas; Piumhi e Santa Luzia incluem parte da carga horária em componentes EaD, conforme as respectivas matrizes."
+            },
+            {
+              "pergunta": "O curso tem estágios e Trabalho de Conclusão de Curso?",
+              "resposta": "Sim. Os três campi incluem **estágio supervisionado e TCC obrigatórios**. As exigências variam conforme a matriz de cada unidade. Em **Governador Valadares**, são 160 horas de estágio e 60 horas de TCC; em **Santa Luzia**, são 180 horas de estágio e 30 horas de TCC."
+            },
+            {
+              "pergunta": "Há disciplinas e atividades práticas?",
+              "resposta": "Sim. A formação combina projetos, cálculos e atividades de laboratório e campo. Os temas incluem ensaios de materiais, topografia, dimensionamento estrutural, instalações prediais, hidráulica, geotecnia e planejamento de obras."
+            },
+            {
+              "pergunta": "O que significa ter parte da carga horária EaD?",
+              "resposta": "Em **Piumhi** e **Santa Luzia**, uma parcela das atividades curriculares é realizada na modalidade a distância dentro de um curso predominantemente presencial. Isso não transforma a graduação em um curso totalmente EaD. A organização dessas atividades depende das disciplinas e do PPC de cada campus."
+            },
+            {
+              "pergunta": "Posso participar de projetos de pesquisa, extensão ou monitoria?",
+              "resposta": "Sim. As oportunidades dependem dos projetos e das seleções de cada campus. Em 2026, estudantes de Engenharia Civil de **Santa Luzia** foram selecionados como bolsistas de monitoria em Cálculo I e Mecânica Vetorial para Engenharia."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Engenharia Civil**, é necessário concluir o **ensino médio** até a matrícula. O IFMG oferece processos seletivos próprios para graduação, com possibilidades como **notas do Enem** ou **Histórico Escolar e Redação**, além de vagas pelo **Sisu**, conforme a oferta e os editais vigentes em cada campus.\n\nConsulte os processos seletivos em vigor para verificar as modalidades disponíveis, os critérios de participação e a reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O engenheiro civil pode **desenvolver projetos de edificações, dimensionar estruturas, analisar fundações e solos, planejar obras de infraestrutura e acompanhar a execução de construções**. Seu trabalho envolve interpretar normas técnicas, especificar materiais, orçar serviços, organizar etapas da obra, avaliar segurança e acompanhar qualidade, custos e prazos.\n\nNa área de infraestrutura, pode atuar com **estradas, pavimentação, pontes, redes de abastecimento de água, drenagem e saneamento**. Também pode realizar estudos de viabilidade, perícias, avaliações e atividades de consultoria, conforme suas atribuições profissionais. Os ambientes de atuação incluem **construtoras, empresas de engenharia, consultorias, órgãos públicos, serviços de infraestrutura e instituições de pesquisa**. O exercício das atividades regulamentadas depende de **registro no Conselho Regional de Engenharia e Agronomia (Crea)** e das atribuições profissionais correspondentes."
+        }
+      ]
+    },
+    {
       "id": "engenharia-de-producao-bacharelado",
       "nome": "Engenharia de Produção",
       "nivel": "Graduação",

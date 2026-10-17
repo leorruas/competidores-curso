@@ -7540,6 +7540,320 @@
       ]
     },
     {
+      "id": "matematica-licenciatura",
+      "nome": "Matemática",
+      "nivel": "Graduação",
+      "tipo": "Licenciatura",
+      "campi": [
+        "Formiga",
+        "São João Evangelista"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Matemática"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Licenciatura"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Formação de professores de Matemática"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Formiga; São João Evangelista"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial; Formiga inclui atividades EaD"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "4 anos (8 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta para as matrizes de 2027"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Consulte a tabela por campus"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Matemática",
+          "conteudo": "Forme-se para **ensinar Matemática na educação básica**, combinando números, álgebra, geometria, funções e estatística com didática e experiências em escolas. A licenciatura prepara para planejar aulas, criar materiais de aprendizagem e ajudar estudantes a compreender problemas matemáticos de diferentes maneiras."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Transforme conceitos matemáticos em atividades de aprendizagem: explore tecnologias educacionais, participe de projetos com escolas e vivencie a docência durante a graduação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A licenciatura é indicada para quem concluiu o ensino médio e gosta de **resolver problemas, investigar padrões, ensinar e trabalhar com pessoas**. A formação une o aprofundamento em Matemática e o estudo de como diferentes estudantes aprendem."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estuda **cálculo, álgebra, geometria, estatística, probabilidade, lógica e funções**, além de **história da educação, didática, psicologia da aprendizagem, educação inclusiva, avaliação e planejamento de aulas**. Também desenvolve práticas pedagógicas, pesquisa em ensino e estágios em escolas."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Álgebra, cálculo e funções",
+              "Resolver problemas, estudar variações e explicar relações matemáticas."
+            ],
+            [
+              "Geometria e medidas",
+              "Investigar formas, espaços e grandezas e criar atividades de ensino."
+            ],
+            [
+              "Estatística e probabilidade",
+              "Interpretar dados, incertezas e situações do cotidiano."
+            ],
+            [
+              "Matemática escolar e sua história",
+              "Relacionar ideias matemáticas à educação básica e aos contextos de sua construção."
+            ],
+            [
+              "Didática e avaliação",
+              "Planejar aulas, acompanhar aprendizagens e adaptar métodos de ensino."
+            ],
+            [
+              "Tecnologias e recursos didáticos",
+              "Utilizar softwares, jogos e materiais para investigar e comunicar conceitos."
+            ],
+            [
+              "Pesquisa, extensão e estágio",
+              "Investigar desafios do ensino e vivenciar a docência em escolas."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "Ao longo da graduação, você participa de **resolução de problemas, preparação de materiais didáticos e experiências em escolas**. Os campi contam com espaços de informática e estruturas de apoio às atividades de ensino. Em **Formiga**, estudantes desenvolvem projetos de extensão com escolas da cidade. Em **São João Evangelista**, há iniciativas de educação matemática e participação no PIBID."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios, recursos didáticos e experiências de ensino de Matemática · campi Formiga e São João Evangelista",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Matemática",
+          "conteudo": "A **Licenciatura em Matemática** é oferecida nos campi **Formiga e São João Evangelista**, com aulas noturnas. A oferta de **Formiga** inclui atividades EaD; em **São João Evangelista**, a oferta presencial não prevê percentual EaD na matriz de ingresso. Em ambas, a formação combina conteúdos matemáticos, disciplinas pedagógicas e experiências nas escolas."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Formiga",
+              "Presencial (25% EaD na oferta de 2027)",
+              "Noite",
+              "8 semestres",
+              "Informação incompleta",
+              "matematica.formiga@ifmg.edu.br"
+            ],
+            [
+              "São João Evangelista",
+              "Presencial",
+              "Noite",
+              "8 semestres",
+              "Informação incompleta",
+              "lic.matematica.sje@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Formiga",
+              "resposta": "A graduação funciona **à noite**, é presencial e inclui **25% de atividades EaD na oferta de 2027**. Há formação pedagógica, atividades de extensão com escolas da cidade, PIBID e estágio supervisionado obrigatório. A atualização da carga horária total para a matriz de ingresso vigente está indicada como **Informação incompleta** na tabela."
+            },
+            {
+              "pergunta": "Campus São João Evangelista",
+              "resposta": "A graduação funciona **à noite**, na modalidade presencial, e articula disciplinas de Matemática, formação pedagógica, estágio supervisionado em escolas e iniciação à docência. O campus participa do **subprojeto de Matemática do PIBID**, em parceria com escolas públicas. A carga horária total aplicável à matriz de ingresso vigente está indicada como **Informação incompleta** na tabela."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os campi **Formiga e São João Evangelista** participam do **Programa Institucional de Bolsa de Iniciação à Docência (PIBID)**, que aproxima licenciandos de escolas públicas e professores supervisores. Os estudantes também podem participar de pesquisa em Educação Matemática, projetos de extensão, atividades com softwares educacionais e desenvolvimento de materiais didáticos. A participação em bolsas e projetos depende das seleções de cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Matemática"
+          ],
+          "linhas": [
+            [
+              "Pedagogia (Licenciatura)",
+              "Ouro Branco",
+              "Aprendizagem, currículo e formação de professores da educação básica."
+            ],
+            [
+              "Física (Licenciatura)",
+              "Bambuí, Congonhas e Ouro Preto",
+              "Formação docente e relações entre Matemática e fenômenos físicos."
+            ],
+            [
+              "Geografia (Licenciatura)",
+              "Ouro Preto",
+              "Ensino interdisciplinar, dados, cartografia e leitura de informações espaciais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Matemática"
+          ],
+          "linhas": [
+            [
+              "Especialização em Educação Matemática",
+              "Sabará",
+              "Aprofundamento em ensino e aprendizagem de Matemática."
+            ],
+            [
+              "Especialização em Educação Matemática e suas Tecnologias",
+              "São João Evangelista (EaD)",
+              "Pesquisa e práticas em educação matemática com recursos tecnológicos."
+            ],
+            [
+              "Especialização em Ensino de Ciências e Matemática",
+              "Bambuí",
+              "Metodologias e investigação para o ensino de Matemática e Ciências."
+            ],
+            [
+              "Especialização em Ensino e Tecnologias Educacionais",
+              "São João Evangelista (EaD)",
+              "Metodologias e tecnologias para planejar atividades educacionais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **julho de 2026**, estudantes da **Licenciatura em Matemática do Campus Formiga** realizaram **ações de extensão em escolas da cidade**, aproximando o aprendizado da graduação do ensino de Matemática na educação básica. As atividades buscaram tornar o estudo dos conteúdos matemáticos mais dinâmico."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Ações de extensão de licenciandos de Matemática em escolas de Formiga · julho de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Bolsistas compartilham experiências no encontro do PIBID",
+          "conteudo": "Em **junho de 2026**, **bolsistas do PIBID do Campus Formiga** participaram do **Encontro Institucional do programa**, realizado no **Campus Bambuí**. A atividade integrou estudantes e equipes das licenciaturas em uma programação de formação e troca de experiências relacionadas à docência."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Bolsistas do PIBID do Campus Formiga no Encontro Institucional em Bambuí · junho de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "A licenciatura é a formação indicada para quem quer ensinar Matemática?",
+              "resposta": "Sim. A **Licenciatura em Matemática** prepara docentes para a **educação básica**, com disciplinas matemáticas, didática, planejamento, avaliação de aulas e experiências em escolas."
+            },
+            {
+              "pergunta": "Preciso fazer estágio? Posso realizá-lo à noite?",
+              "resposta": "Sim. A formação inclui **estágio supervisionado obrigatório**, com observação e atividades de docência em escolas. Os projetos pedagógicos anteriores dos dois campi registram **400 horas em quatro etapas**, mas a distribuição deve seguir a matriz válida para a sua turma. Como os estágios acompanham o horário das escolas, **podem exigir disponibilidade fora do período noturno**."
+            },
+            {
+              "pergunta": "O que muda entre Formiga e São João Evangelista?",
+              "resposta": "As duas ofertas são **presenciais e noturnas**, mas **Formiga tem 25% de atividades EaD na oferta de 2027**, enquanto **São João Evangelista** consta como presencial sem percentual EaD nessa oferta. As matrizes curriculares e os projetos de ensino de cada campus podem ser diferentes."
+            },
+            {
+              "pergunta": "Há projetos com escolas e bolsas de iniciação à docência?",
+              "resposta": "Sim. Os dois campi integram o **PIBID de Matemática**, que desenvolve atividades formativas com escolas públicas e professores supervisores. Também há projetos de pesquisa e extensão, sujeitos aos requisitos e editais específicos."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na **Licenciatura em Matemática**, é necessário concluir o ensino médio até a matrícula. As formas de seleção, como **Enem, Histórico Escolar e Redação ou Sisu**, e as regras de reserva de vagas são apresentadas no processo seletivo vigente do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O licenciado em Matemática pode atuar como **professor da educação básica**, especialmente nos anos finais do ensino fundamental e no ensino médio. Entre as atividades estão **planejar aulas, desenvolver exercícios e investigações, elaborar materiais didáticos, acompanhar dificuldades de aprendizagem e avaliar o desempenho de estudantes**.\n\nNa escola, pode empregar tecnologias e diferentes estratégias de ensino, conduzir projetos interdisciplinares, organizar recuperação da aprendizagem e colaborar com outras áreas. As competências de análise, comunicação e resolução de problemas também podem apoiar a participação em **projetos educativos, produção de recursos para aprendizagem, divulgação científica e formação de professores**, conforme as exigências de cada função."
+        }
+      ]
+    },
+    {
       "id": "medicina-veterinaria-bacharelado",
       "nome": "Medicina Veterinária",
       "nivel": "Graduação",

@@ -1,0 +1,46 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
+const data=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
+const course=data.courses.find(x=>x.id==="logistica-tecnologo");
+const b=course?.blocos||[];
+test("F7.37: Logística Tecnólogo Sabará mantém formação e PPC 2025 próprios",()=>{
+ assert.ok(course);
+ assert.equal(course.nome,"Logística");
+ assert.equal(course.tipo,"Tecnólogo");
+ assert.deepEqual(course.campi,["Sabará"]);
+ assert.ok(data.courses.some(x=>x.id==="tecnico-em-logistica-subsequente"&&x.tipo==="Subsequente"));
+ const basic=b.find(x=>x.tipo==="dados-basicos").campos;
+ assert.ok(basic.some(x=>x.rotulo==="Carga horária total"&&x.valor==="1.600 horas"));
+ assert.ok(basic.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="logistica.sabara@ifmg.edu.br"));
+ const offer=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
+ assert.deepEqual(offer.linhas,[["Sabará","Presencial (20% de atividades EaD nas disciplinas)","Noite","5 semestres","1.600 horas","logistica.sabara@ifmg.edu.br"]]);
+ const local=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
+ assert.match(local.itens[0].resposta,/205 horas de extensão/);
+ assert.match(local.itens[0].resposta,/75 horas de atividades complementares/);
+ assert.match(local.itens[0].resposta,/estágio supervisionado é opcional/);
+ assert.match(local.itens[0].resposta,/primeiro período/);
+ assert.ok(b.find(x=>x.tipo==="introducao").conteudo.length<=280);
+ assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+ assert.ok(b.at(-1).conteudo.length>500);
+});
+test("F7.37: experiências 2025–26, três galerias e separação da auditoria privada",()=>{
+ assert.equal(b.length,26);
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,3);
+ const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
+ assert.ok(i>0);
+ assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
+ for(const k of [i,i+2]){assert.equal(b[k].tipo,"texto");assert.equal(b[k+1].tipo,"galeria");assert.deepEqual(b[k+1].itens,[]);}
+ assert.match(b[i].conteudo,/26 de março de 2025/);
+ assert.match(b[i].conteudo,/Grazielle Correia de Oliveira Andrade/);
+ assert.match(b[i+2].conteudo,/Festival da Jabuticaba de 2025/);
+ assert.match(b[i+2].conteudo,/28 de abril de 2026/);
+ assert.match(b[i+2].conteudo,/Tecnologia em Logística e Bacharelado em Administração/);
+ const p=b.findIndex(x=>x.titulo==="Pós-graduação");
+ assert.ok(b[p+1].linhas.some(x=>x[0]==="Especialização em Gestão de Projetos e Operações"&&x[1]==="Congonhas"));
+ const grade=b.findIndex(x=>x.titulo==="Graduação");
+ assert.ok(b[grade+1].linhas.some(x=>x[0]==="Processos Gerenciais (Tecnólogo)"&&x[1]==="Ponte Nova e Ribeirão das Neves"));
+ assert.match(b.find(x=>x.tipo==="faq"&&!x.titulo).itens.at(-1).resposta,/não significa que 20% das 1.600 horas totais sejam EaD/);
+ assert.doesNotMatch(JSON.stringify(course),/Auditoria privada|TiDex|www2?\.ifmg\.edu\.br|2017, nota 4/);
+ assert.deepEqual(data.courses.map(x=>x.id),[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
+});

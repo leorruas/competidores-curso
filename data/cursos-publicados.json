@@ -7240,6 +7240,306 @@
       ]
     },
     {
+      "id": "logistica-tecnologo",
+      "nome": "Logística",
+      "nivel": "Graduação",
+      "tipo": "Tecnólogo",
+      "campi": [
+        "Sabará"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Logística"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Tecnólogo"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Gestão de operações e cadeias de suprimentos"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Sabará"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com componentes EaD"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "2 anos e meio (5 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "1.600 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "logistica.sabara@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Logística",
+          "conteudo": "Aprenda a **planejar transportes, organizar estoques e melhorar a circulação de produtos, materiais e informações**. A graduação tecnológica em Logística integra compras, armazenagem, distribuição e gestão de operações, com projetos voltados a problemas reais das organizações e da comunidade."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Resolva desafios de estoque, distribuição e transporte em projetos com empresas e comunidades. A formação inclui cinco projetos de extensão ao longo de cinco semestres."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A graduação é indicada para quem concluiu o ensino médio e se interessa por **organização de processos, planejamento, comércio, indústria, transporte, tecnologia e análise de dados**. Você aprende a tomar decisões considerando custos, prazos, qualidade dos serviços e sustentabilidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estuda **gestão de estoques, compras e armazenagem, transportes, distribuição, cadeia de suprimentos, planejamento e controle da produção, custos logísticos, comércio exterior, logística reversa e simulação de sistemas**. A formação também aborda matemática aplicada, estatística, gestão, empreendedorismo e ferramentas digitais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Transportes e distribuição",
+              "Planejar rotas, escolher modalidades de transporte e acompanhar a entrega de produtos."
+            ],
+            [
+              "Compras e fornecedores",
+              "Comparar propostas, organizar pedidos, negociar condições e acompanhar suprimentos."
+            ],
+            [
+              "Estoques e armazenagem",
+              "Controlar inventários, recebimentos, movimentação e acondicionamento de materiais."
+            ],
+            [
+              "Custos e indicadores",
+              "Analisar despesas, prazos e medidas de desempenho das operações."
+            ],
+            [
+              "Cadeia de suprimentos",
+              "Compreender as relações entre fornecedores, produção, distribuição e consumidores."
+            ],
+            [
+              "Produção e simulação",
+              "Planejar operações e avaliar alternativas de melhoria em processos produtivos."
+            ],
+            [
+              "Logística reversa e sustentabilidade",
+              "Estudar retorno de materiais, resíduos e possibilidades de reduzir impactos ambientais."
+            ],
+            [
+              "Extensão e projetos",
+              "Investigar desafios reais de organizações e comunidades e desenvolver propostas de solução."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática no Campus Sabará",
+          "conteudo": "A formação combina **estudos de caso, simulações, análises de custos e projetos em parceria com a comunidade**. O campus dispõe de **laboratórios de informática, biblioteca e espaços de projetos e inovação**. O curso inclui **205 horas de extensão**, desenvolvidas em cinco **Trabalhos Interdisciplinares Dirigidos (TIDIR)**, que integram diferentes disciplinas e desafios propostos com participação externa."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios de informática, projetos interdisciplinares e atividades de Logística · Campus Sabará",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Logística",
+          "conteudo": "O **curso superior de Tecnologia em Logística** é oferecido no **Campus Sabará**, com aulas noturnas, duração mínima de cinco semestres e componentes EaD. Trata-se de uma **graduação tecnológica**, diferente do Técnico em Logística, que possui formação e requisitos próprios."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Sabará",
+              "Presencial (20% de atividades EaD nas disciplinas)",
+              "Noite",
+              "5 semestres",
+              "1.600 horas",
+              "logistica.sabara@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Sabará",
+              "resposta": "A graduação tem **1.600 horas** e duração mínima de **cinco semestres**, com aulas noturnas. O curso inclui **205 horas de extensão obrigatória**, por meio de projetos TIDIR distribuídos nos cinco períodos, e **75 horas de atividades complementares**. As disciplinas têm **20% de sua carga horária em atividades EaD**. O **estágio supervisionado é opcional**, pode começar no primeiro período e não possui carga horária mínima exigida no currículo."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os **Trabalhos Interdisciplinares Dirigidos (TIDIR)** integram ensino e extensão em cada semestre: estudantes e professores investigam problemas de organizações ou comunidades, realizam diagnósticos e apresentam soluções. Os temas podem envolver **gestão de resíduos, turismo, fluxos de pessoas, estoques, operações e melhoria de processos**. Há oportunidades de pesquisa, iniciação tecnológica e projetos de inovação conforme os programas e seleções disponíveis no campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Logística"
+          ],
+          "linhas": [
+            [
+              "Administração (Bacharelado)",
+              "Bambuí, Formiga, Ouro Branco, Ribeirão das Neves, Sabará e São João Evangelista",
+              "Gestão de pessoas, estratégia, custos, operações e organizações."
+            ],
+            [
+              "Engenharia de Produção (Bacharelado)",
+              "Bambuí, Congonhas e Governador Valadares",
+              "Planejamento da produção, otimização de processos, custos e operações industriais."
+            ],
+            [
+              "Processos Gerenciais (Tecnólogo)",
+              "Ponte Nova e Ribeirão das Neves",
+              "Planejamento, gestão de rotinas, processos e tomada de decisões organizacionais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Logística"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento, coordenação e melhoria de projetos e operações."
+            ],
+            [
+              "Especialização em Gestão de Negócios",
+              "Ouro Branco",
+              "Administração, estratégia e gestão de organizações."
+            ],
+            [
+              "Especialização em Gestão Pública e Desenvolvimento Regional",
+              "Ribeirão das Neves",
+              "Planejamento de políticas e serviços públicos com enfoque territorial."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **26 de março de 2025**, a estudante **Grazielle Correia de Oliveira Andrade**, de Tecnologia em Logística do Campus Sabará, foi homenageada na segunda edição do **Café com o Reitor**, em reconhecimento ao seu **destaque acadêmico no curso**. A cerimônia reuniu estudantes de diferentes campi reconhecidos por desempenho e atividades de formação."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Café com o Reitor · reconhecimento de estudante de Tecnologia em Logística de Sabará · março de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa sobre o Festival da Jabuticaba de Sabará",
+          "conteudo": "Durante o **Festival da Jabuticaba de 2025**, estudantes de **Tecnologia em Logística e Bacharelado em Administração** participaram de pesquisa realizada em parceria com a Prefeitura de Sabará. As equipes entrevistaram visitantes e levantaram informações sobre **turismo, comercialização de produtos, acesso a pontos de descarte e gestão de resíduos**.\n\nEm **28 de abril de 2026**, o campus apresentou à comunidade os resultados e as propostas elaboradas a partir desse levantamento. O trabalho contribuiu para discutir **sustentabilidade e melhoria da organização do festival**, aproximando pesquisa e extensão de uma demanda real do município."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa e apresentação de resultados do Festival da Jabuticaba de Sabará · estudantes de Logística e Administração · 2025–2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual a diferença entre o curso superior e o Técnico em Logística?",
+              "resposta": "**Tecnologia em Logística é uma graduação de nível superior**, que forma tecnólogos e exige a conclusão do ensino médio para ingresso. **Técnico em Logística é um curso de nível técnico**, com organização curricular e diploma diferentes. As duas formações abordam operações logísticas, mas possuem níveis e percursos de estudo distintos."
+            },
+            {
+              "pergunta": "O estágio é obrigatório? Quando posso começar?",
+              "resposta": "**Não. O estágio é opcional**, pode ser realizado desde o **primeiro semestre** e não possui carga horária mínima obrigatória na matriz do curso. O estudante que realizar estágio contará com orientação docente e deverá seguir os procedimentos de registro institucional."
+            },
+            {
+              "pergunta": "O que são os projetos TIDIR?",
+              "resposta": "São **Trabalhos Interdisciplinares Dirigidos** que integram disciplinas e ações de extensão em cada semestre. Os estudantes participam de **cinco projetos ao longo da graduação**, investigando necessidades de organizações ou comunidades e propondo melhorias com orientação dos professores."
+            },
+            {
+              "pergunta": "Como funcionam as atividades EaD?",
+              "resposta": "O curso é presencial, com aulas à noite, mas **as disciplinas incluem 20% de atividades a distância**, organizadas pelos professores no ambiente virtual de aprendizagem. Esse percentual corresponde à carga das disciplinas; **não significa que 20% das 1.600 horas totais sejam EaD**."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **curso superior de Tecnologia em Logística**, é necessário ter concluído o ensino médio até a matrícula. As formas de seleção para graduação, como **Enem** ou **Histórico Escolar e Redação**, e as regras de reserva de vagas constam do processo seletivo vigente do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O tecnólogo em Logística pode atuar no **planejamento e no acompanhamento de operações de transporte, compras, armazenagem, estoques e distribuição**, em organizações industriais, comerciais, prestadoras de serviços e operadores logísticos. Entre as atividades estão **registrar entradas e saídas de mercadorias, acompanhar inventários, analisar pedidos, comparar fornecedores e planejar rotas de entrega**.\n\nNo cotidiano, pode elaborar indicadores de prazo e custo, identificar gargalos, organizar procedimentos de recebimento e separação de materiais e **avaliar alternativas para reduzir desperdícios e atrasos**. Também pode participar do planejamento de suprimentos e da logística reversa, trabalhando com sistemas de informação e equipes de diferentes áreas. As responsabilidades específicas variam conforme a função e os requisitos de cada organização."
+        }
+      ]
+    },
+    {
       "id": "medicina-veterinaria-bacharelado",
       "nome": "Medicina Veterinária",
       "nivel": "Graduação",

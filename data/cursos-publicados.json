@@ -8443,6 +8443,11 @@
         },
         {
           "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
           "titulo": "Perguntas frequentes",
           "conteudo": ""
         },
@@ -8504,7 +8509,7 @@
         {
           "tipo": "texto",
           "titulo": "Forma de ingresso",
-          "conteudo": "Para ingressar no **Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio**, é necessário concluir o ensino fundamental até a matrícula. O curso consta no processo seletivo de 2027 do IFMG, no Campus Itabirito, com oferta presencial de manhã e à tarde.\n\nConsulte o edital para conhecer as regras de inscrição, reserva de vagas, critérios e procedimentos de matrícula."
+          "conteudo": "Para ingressar no **Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio**, é necessário concluir o ensino fundamental até a matrícula. O ingresso ocorre por processo seletivo público do IFMG para cursos técnicos integrados, conforme o edital vigente.\n\nConsulte o edital para conhecer as regras de inscrição, reserva de vagas, critérios e procedimentos de matrícula."
         },
         {
           "tipo": "texto",

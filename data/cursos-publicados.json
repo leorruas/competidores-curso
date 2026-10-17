@@ -7967,6 +7967,327 @@
       ]
     },
     {
+      "id": "tecnico-em-metalurgia-integrado",
+      "nome": "Técnico em Metalurgia",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Ouro Branco",
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Metalurgia"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Branco; Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Varia conforme o campus: Ouro Preto, 3.450 horas; Ouro Branco, Informação incompleta para 2027"
+            },
+            {
+              "rotulo": "PPC / matriz dos ingressantes em 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Consulte a tabela por campus"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Metalurgia",
+          "conteudo": "Estude o ensino médio junto com a formação técnica voltada à **produção e transformação de metais**. No IFMG, você aprende como os materiais metálicos são obtidos, processados, analisados e utilizados em equipamentos e produtos, relacionando a ciência dos materiais à segurança e à qualidade industrial."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Conheça a produção e transformação de metais, os ensaios de materiais e o controle de processos industriais enquanto conclui o ensino médio."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A formação é destinada a quem concluiu o ensino fundamental e deseja cursar o ensino médio junto com uma habilitação técnica. É uma opção para estudantes interessados em química, física, materiais, indústria, equipamentos, processos de fabricação e sustentabilidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação integra disciplinas do ensino médio ao estudo de metais e ligas, propriedades dos materiais, tratamento e transformação de metais, ensaios, desenho técnico e controle de processos. A distribuição das atividades segue o projeto pedagógico de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Metais e ligas",
+              "Identificar materiais ferrosos e não ferrosos e compreender propriedades e aplicações."
+            ],
+            [
+              "Processos metalúrgicos",
+              "Conhecer obtenção, fundição, conformação e transformação dos metais."
+            ],
+            [
+              "Tratamentos e ensaios",
+              "Estudar transformações térmicas, análise de propriedades e métodos de controle da qualidade."
+            ],
+            [
+              "Desenho e fabricação",
+              "Interpretar representações técnicas e conhecer operações como usinagem e soldagem."
+            ],
+            [
+              "Medições e qualidade",
+              "Acompanhar parâmetros de produção, registrar resultados e reconhecer possíveis falhas nos materiais."
+            ],
+            [
+              "Segurança e meio ambiente",
+              "Compreender medidas de prevenção de acidentes e impactos de processos produtivos."
+            ],
+            [
+              "Formação geral",
+              "Relacionar matemática, ciências, linguagens e humanidades às tecnologias e ao mundo do trabalho."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "As atividades podem incluir observação de processos de fabricação, análise de peças e amostras, ensaios de materiais e interpretação de resultados, conforme a etapa da formação e a infraestrutura de cada campus. Em Ouro Preto, há espaços acadêmicos relacionados à caracterização de materiais e à metalurgia; em Ouro Branco, a proposta curricular relaciona materiais, processamento e controle de processos industriais."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades práticas e caracterização de metais · Ouro Branco e Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Metalurgia",
+          "conteudo": "O IFMG oferece **Técnico em Metalurgia Integrado ao Ensino Médio** nos campi **Ouro Branco** e **Ouro Preto**, com aulas presenciais de manhã e à tarde e duração de três anos. Os projetos pedagógicos e a carga horária são definidos por campus. A página institucional de Ouro Preto informa **3.450 horas** para o curso integrado; a carga de Ouro Branco precisa ser confirmada para ingressantes de 2027."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Branco",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "coord.integradometalurgia.obr@ifmg.edu.br"
+            ],
+            [
+              "Ouro Preto",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Branco",
+              "resposta": "O curso técnico integrado trabalha materiais metálicos, processamento, controle de qualidade, instrumentação e análise de falhas. A formação tem duração de três anos. O campus também possui Engenharia Metalúrgica, permitindo contato com a área em diferentes níveis de ensino."
+            },
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "O técnico integrado possui três anos e **3.450 horas** na organização curricular informada pelo campus. A formação inclui obtenção e transformação de materiais ferrosos e não ferrosos, ensaios e análise de metais e ligas, soldagem, usinagem e manufatura aditiva. O campus também oferta **Metalurgia Subsequente**, com matriz e público diferentes."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A formação permite aprofundar conhecimentos em materiais, realizar atividades práticas e participar de iniciativas de ensino e extensão. No **Campus Ouro Preto**, o currículo inclui componentes técnicos como ensaios de materiais metálicos, e estudantes do integrado participaram de atividades acadêmicas e competições em 2026. A participação em monitorias e projetos depende das ações e dos critérios de cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": "Depois de concluir o ensino médio integrado, você pode participar de processos seletivos de cursos superiores do IFMG relacionados a materiais, processos industriais e fabricação."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Metalurgia"
+          ],
+          "linhas": [
+            [
+              "Engenharia Metalúrgica",
+              "Ouro Branco",
+              "Materiais metálicos, processos industriais, ensaios e aplicações de metais e ligas."
+            ],
+            [
+              "Engenharia Mecânica",
+              "Arcos e Betim",
+              "Materiais, fabricação, máquinas, mecanismos e processos industriais."
+            ],
+            [
+              "Engenharia de Produção",
+              "Bambuí, Congonhas e Governador Valadares",
+              "Organização e melhoria de processos de fabricação e controle da produção."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": "Depois de concluir uma graduação compatível, você também pode buscar pós-graduação do IFMG relacionada à tecnologia e à sustentabilidade dos processos produtivos."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Metalurgia"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa aplicada a tecnologias e sustentabilidade, conforme o programa, as linhas de pesquisa e os requisitos de ingresso."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **2026**, o **Técnico Integrado em Metalurgia do Campus Ouro Preto** teve **28 estudantes classificados para a segunda fase da Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP)**. O curso concentrou o maior número de classificados entre as formações técnicas integradas do campus no levantamento divulgado em junho de 2026. A classificação não representa premiação na fase seguinte."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "OBMEP 2026 · 28 classificados do integrado em Metalurgia · Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **junho e julho de 2026**, estudantes do segundo ano dos **Técnicos Integrados em Metalurgia e Mineração do Campus Ouro Preto** realizaram visitas ao **Museu da Inconfidência**, como atividade da disciplina História II. A visita abordou a vida e a história política do período colonial, com mediação do museu e discussões sobre interpretações históricas. A participação foi dos dois cursos, não apenas de Metalurgia."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Museu da Inconfidência · turmas de Metalurgia e Mineração · Ouro Preto · 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Posso fazer Metalurgia ao mesmo tempo que o ensino médio?",
+              "resposta": "Sim. A modalidade **integrada** reúne a formação técnica e o ensino médio no mesmo percurso. Para ingressar, é necessário concluir o ensino fundamental até a matrícula e atender às regras do edital."
+            },
+            {
+              "pergunta": "Qual é a diferença entre Metalurgia Integrado e Metalurgia Subsequente?",
+              "resposta": "O **integrado** é destinado a quem vai fazer o ensino médio junto com o técnico. O **subsequente**, ofertado em Ouro Preto, destina-se a quem já concluiu o ensino médio e tem duração, matriz e forma de oferta próprias."
+            },
+            {
+              "pergunta": "Os dois campi têm a mesma carga horária?",
+              "resposta": "Não necessariamente. O Campus Ouro Preto informa **3.450 horas** para o integrado; em Ouro Branco, a carga horária aplicável à turma de 2027 ainda precisa ser confirmada na matriz vigente."
+            },
+            {
+              "pergunta": "Como são as atividades práticas?",
+              "resposta": "A formação relaciona estudo de metais e ligas a ensaios, interpretação de propriedades, controle de processos e práticas laboratoriais, conforme o PPC e a infraestrutura de cada campus."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras modalidades relacionadas",
+          "conteudo": "Além da modalidade **integrada**, o IFMG oferece **Técnico em Metalurgia Subsequente no Campus Ouro Preto**, destinado a pessoas que já concluíram o ensino médio. Ouro Branco não ofertou o subsequente em 2026, conforme comunicado do campus; a disponibilidade em outros anos depende dos processos seletivos."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Concluiu o ensino fundamental e vai cursar o ensino médio",
+              "Técnico em Metalurgia Integrado",
+              "Oportunidade de fazer ensino médio e formação técnica em três anos, no turno diurno."
+            ],
+            [
+              "Já concluiu o ensino médio",
+              "Técnico em Metalurgia Subsequente, onde houver oferta",
+              "Campus, horários, organização curricular e requisitos próprios dessa modalidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Metalurgia Integrado ao Ensino Médio**, é necessário ter concluído o ensino fundamental até a matrícula. O IFMG realiza processo seletivo público para ingresso nos cursos técnicos integrados.\n\nConsulte o edital vigente para conhecer as ofertas por campus, critérios de seleção, reserva de vagas, documentação e matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Metalurgia pode atuar no acompanhamento de **processos de obtenção e transformação de metais**, no controle de qualidade, na análise de matérias-primas e produtos e na manutenção e inspeção de componentes. Entre as atividades estão interpretar especificações, realizar ou acompanhar ensaios e análises, registrar parâmetros de produção, reconhecer problemas e apoiar melhorias de processos metalúrgicos.\n\nO campo de atuação inclui siderúrgicas, empresas metalúrgicas e metalmecânicas, fundições, indústrias de fabricação de equipamentos, controle de materiais e serviços técnicos. O profissional deve atuar dentro das atribuições reconhecidas para a habilitação, observando as normas de segurança, saúde e meio ambiente."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-mineracao-integrado",
       "nome": "Técnico em Mineração",
       "nivel": "Técnico",

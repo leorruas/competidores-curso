@@ -9468,6 +9468,287 @@
       ]
     },
     {
+      "id": "tecnico-em-sistemas-de-energia-renovavel-integrado",
+      "nome": "Técnico em Sistemas de Energia Renovável",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Ibirité"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Sistemas de Energia Renovável"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ibirité"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (8,3% EaD)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.200 horas"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "PPC de janeiro de 2026"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "energia.ibirite@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Sistemas de Energia Renovável",
+          "conteudo": "Estude o ensino médio junto com a formação técnica voltada à **produção e ao uso eficiente de energia de fontes renováveis**. No IFMG, você conhece tecnologias como sistemas solares, eólicos e hidráulicos, aprende fundamentos de eletricidade e participa de atividades de dimensionamento, instalação e manutenção de equipamentos."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda sobre energia solar, eólica e outras fontes renováveis, com estudos de eletricidade, instalação, manutenção e eficiência energética."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A formação é destinada a quem concluiu o ensino fundamental e deseja cursar o ensino médio junto com uma habilitação técnica. É uma opção para estudantes interessados em física, eletricidade, tecnologia, sustentabilidade e equipamentos usados na geração e no aproveitamento de energia."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne as áreas do ensino médio e componentes técnicos sobre geração de energia, circuitos elétricos, instrumentação, instalações, eficiência energética e manutenção. Você aprende a relacionar a escolha de uma fonte renovável às características do local, às necessidades de consumo e às condições de segurança."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Energia solar",
+              "Funcionamento e aplicação de sistemas de geração de energia a partir da radiação solar."
+            ],
+            [
+              "Energia eólica e hidráulica",
+              "Princípios de aproveitamento do vento e da água para geração de energia."
+            ],
+            [
+              "Eletricidade e circuitos",
+              "Medições elétricas, componentes e fundamentos para instalações e equipamentos."
+            ],
+            [
+              "Instrumentação e proteção",
+              "Uso de instrumentos, interpretação de dados e proteção de sistemas elétricos."
+            ],
+            [
+              "Projetos e instalações",
+              "Dimensionamento básico e escolha de componentes para sistemas de energia renovável."
+            ],
+            [
+              "Eficiência energética",
+              "Identificação de perdas, análise do consumo e uso mais eficiente da energia."
+            ],
+            [
+              "Formação geral",
+              "Articulação de matemática, física, química, linguagens e humanidades com os problemas estudados no curso."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "As práticas incluem medição de grandezas elétricas, estudo de componentes, análise do funcionamento de equipamentos e desenvolvimento de propostas de instalação de sistemas de energia. O curso prevê atividades em laboratório e um **Trabalho Prático Final de 50 horas**, desenvolvido no terceiro ano."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Práticas de eletricidade e sistemas de energia renovável · Ibirité",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Sistemas de Energia Renovável",
+          "conteudo": "O **Técnico em Sistemas de Energia Renovável Integrado ao Ensino Médio** é oferecido no **Campus Ibirité**, com aulas presenciais de manhã e à tarde. A formação dura três anos e tem carga horária total de **3.200 horas**. A organização informada para a oferta contempla **8,3% de atividades a distância**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ibirité",
+              "Presencial (8,3% EaD)",
+              "Manhã e tarde",
+              "energia.ibirite@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ibirité",
+              "resposta": "O curso articula formação técnica e ensino médio em três anos. A estrutura de atividades práticas abrange eletricidade, instrumentação e estudos sobre fontes renováveis e eficiência energética. O campus possui **laboratórios de ensino ligados a sistemas elétricos e energia**, além de espaços de informática. O contato da coordenação é **energia.ibirite@ifmg.edu.br**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "O campus desenvolve ações de ensino relacionadas às áreas de energia e eletricidade. Estudantes do integrado podem participar de atividades de monitoria e de projetos de ensino, pesquisa ou extensão de acordo com as oportunidades de cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Sistemas de Energia Renovável"
+          ],
+          "linhas": [
+            [
+              "Engenharia de Controle e Automação",
+              "Betim, Ibirité e Sabará",
+              "Automação, sensores, sistemas elétricos e controle de processos."
+            ],
+            [
+              "Engenharia Elétrica",
+              "Formiga, Ipatinga e Itabirito",
+              "Geração, distribuição, instalações e uso eficiente de energia."
+            ],
+            [
+              "Engenharia Metalúrgica",
+              "Ouro Branco",
+              "Materiais, processos industriais e uso de energia em sistemas produtivos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Sistemas de Energia Renovável"
+          ],
+          "linhas": [
+            [
+              "Especialização em Sistemas de Energia Renovável: Geração, Distribuição e Eficiência Energética",
+              "Formiga (EaD)",
+              "Geração de energia renovável, distribuição e eficiência energética."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Tecnologias, recursos naturais e sustentabilidade dos processos produtivos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **janeiro e fevereiro de 2025**, estudantes do segundo ano de **Sistemas de Energia Renovável** participaram de um projeto interdisciplinar sobre a formação do povo brasileiro, com atividades ligadas à obra de Darcy Ribeiro. A turma visitou **Sabará**, onde conheceu construções históricas e espaços culturais, relacionando os estudos de História, Geografia, Filosofia e Sociologia ao patrimônio da cidade. O projeto envolveu também turmas de outros cursos técnicos do Campus Ibirité, com roteiros de visita diferentes."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto interdisciplinar sobre a formação do povo brasileiro · visita da turma de Sistemas de Energia Renovável a Sabará · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O curso tem estágio obrigatório?",
+              "resposta": "**Não.** O estágio profissional supervisionado é **não obrigatório** no curso. Ele pode ser realizado como atividade adicional, observadas as normas de estágio."
+            },
+            {
+              "pergunta": "Preciso fazer TCC para concluir o curso?",
+              "resposta": "**Não há TCC previsto.** A formação inclui um **Trabalho Prático Final obrigatório**, com 50 horas no terceiro ano, voltado à aplicação dos conhecimentos técnicos."
+            },
+            {
+              "pergunta": "Há atividades a distância na oferta presencial?",
+              "resposta": "Sim. A oferta do Campus Ibirité prevê **8,3% da carga horária a distância**. As atividades presenciais acontecem nos períodos da manhã e da tarde."
+            },
+            {
+              "pergunta": "O curso aborda somente instalação de painéis solares?",
+              "resposta": "Não. Além dos sistemas solares, a formação inclui princípios de energia eólica e hidráulica, eletricidade, instrumentação, proteção, eficiência energética e manutenção de sistemas."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Sistemas de Energia Renovável Integrado ao Ensino Médio**, é necessário ter concluído o ensino fundamental até a matrícula. O IFMG realiza processo seletivo público para os cursos técnicos integrados.\n\nConsulte o edital vigente para conhecer os critérios de seleção, as regras de reserva de vagas e os documentos para inscrição e matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Sistemas de Energia Renovável pode atuar no **dimensionamento, montagem, instalação, operação e manutenção de sistemas** que utilizam fontes renováveis. Entre as atividades estão analisar necessidades de consumo, selecionar componentes, realizar medições e acompanhar o desempenho de equipamentos, observando requisitos técnicos, ambientais e de segurança.\n\nOs espaços de atuação incluem empresas de projetos e instalação de sistemas solares, prestadores de serviços elétricos, organizações que operam equipamentos de geração renovável, indústrias e órgãos públicos que utilizam essas tecnologias. O trabalho técnico segue as atribuições da habilitação e as normas aplicáveis."
+        }
+      ]
+    },
+    {
       "id": "zootecnia-bacharelado",
       "nome": "Zootecnia",
       "nivel": "Graduação",

@@ -2952,6 +2952,290 @@
       ]
     },
     {
+      "id": "engenharia-ambiental-e-sanitaria-bacharelado",
+      "nome": "Engenharia Ambiental e Sanitária",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Governador Valadares"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Engenharia Ambiental e Sanitária"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação (Bacharelado)"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Engenharia, meio ambiente e saneamento"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Governador Valadares"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e noite"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "5 anos (10 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.600 horas"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "PPC de julho de 2026 (matriz para ingressantes a partir de 2023)"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "coordenacao.eas.gv@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Engenharia Ambiental e Sanitária",
+          "conteudo": "Estude **água, saneamento, resíduos, qualidade ambiental e planejamento de soluções para cidades e territórios**. No IFMG, a Engenharia Ambiental e Sanitária reúne conhecimentos de engenharia e ciências ambientais para avaliar impactos, projetar sistemas de tratamento e propor intervenções que protejam a saúde e os recursos naturais."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Da qualidade da água à prevenção de riscos ambientais: projete soluções de saneamento e gestão ambiental com apoio de laboratórios e práticas de campo."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O bacharelado é destinado a quem concluiu o ensino médio e se interessa por **meio ambiente, matemática, ciências naturais, infraestrutura urbana e resolução de problemas técnicos**. A formação envolve análise de dados, projetos, atividades de laboratório e decisões sobre o uso e a proteção dos recursos naturais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Ao longo da graduação, você estuda matemática, física, química, biologia e fundamentos de engenharia. A formação inclui **hidrologia, hidráulica, tratamento de água e esgoto, gestão de resíduos sólidos, geoprocessamento, avaliação de impactos, legislação e licenciamento ambiental**, além de assuntos como poluição do ar, energia e recuperação de áreas degradadas."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Água e recursos hídricos",
+              "Analisar bacias hidrográficas, vazões, qualidade da água e formas de uso e proteção de mananciais."
+            ],
+            [
+              "Tratamento de água e esgoto",
+              "Entender e projetar sistemas de abastecimento, coleta, tratamento e controle de efluentes."
+            ],
+            [
+              "Resíduos sólidos",
+              "Planejar ações de redução, coleta, destinação e tratamento de resíduos urbanos e industriais."
+            ],
+            [
+              "Geoprocessamento e dados ambientais",
+              "Utilizar mapas, informações territoriais e indicadores para identificar riscos e orientar projetos."
+            ],
+            [
+              "Impactos e licenciamento",
+              "Avaliar efeitos de empreendimentos e propor medidas de prevenção, mitigação e acompanhamento."
+            ],
+            [
+              "Solos e recuperação ambiental",
+              "Investigar propriedades do solo, processos de degradação e estratégias de recuperação."
+            ],
+            [
+              "Energia, clima e poluição",
+              "Estudar fontes energéticas, emissões atmosféricas, meteorologia e controle da poluição."
+            ],
+            [
+              "Projeto e gestão",
+              "Organizar diagnósticos, relatórios técnicos, projetos de engenharia e planos de gestão ambiental."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática e infraestrutura",
+          "conteudo": "O Campus Governador Valadares dispõe de **Laboratório de Geociências e Hidráulica**, **Laboratório de Química e Saneamento**, **Estação de Tratamento de Esgotos** e **Estação Meteorológica**. Esses espaços são usados em atividades de ensino e pesquisa, permitindo estudar características de solos, escoamento de água, processos de saneamento e condições do tempo. A formação também inclui atividades de campo, visitas técnicas e projetos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades práticas nos laboratórios de Geociências e Hidráulica, Química e Saneamento e Estação de Tratamento de Esgotos · Campus Governador Valadares",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Engenharia Ambiental e Sanitária",
+          "conteudo": "O **Bacharelado em Engenharia Ambiental e Sanitária** é oferecido no **Campus Governador Valadares**, na modalidade presencial, com duração mínima de **cinco anos** e carga horária de **3.600 horas**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Governador Valadares",
+              "Presencial",
+              "Manhã e noite · 5 anos",
+              "coordenacao.eas.gv@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Governador Valadares",
+              "resposta": "O campus conta com **laboratórios de Geociências e Hidráulica e de Química e Saneamento**, além de **Estação de Tratamento de Esgotos** e **Estação Meteorológica**, utilizados em atividades acadêmicas da área ambiental. Essas estruturas aproximam a formação de situações de monitoramento, tratamento e análise de dados ambientais."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A formação permite desenvolver estudos de **qualidade da água, saneamento, geoprocessamento, saúde ambiental, recuperação de áreas degradadas e energia**. Estudantes podem participar de projetos de pesquisa e extensão, eventos acadêmicos e atividades de iniciação científica, conforme as seleções e os projetos em andamento. O curso também prevê **estágio supervisionado obrigatório** e atividades de extensão integradas à matriz curricular."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Engenharia Ambiental e Sanitária"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa aplicada em gestão ambiental, ecologia e desenvolvimento de tecnologias para sustentabilidade."
+            ],
+            [
+              "Especialização em Meio Ambiente",
+              "São João Evangelista (EaD)",
+              "Gestão ambiental, impactos, conservação de recursos naturais e recuperação de áreas."
+            ],
+            [
+              "Especialização em Engenharia de Segurança do Trabalho",
+              "Governador Valadares",
+              "Análise de riscos, segurança em atividades técnicas e prevenção de acidentes no trabalho."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **janeiro de 2025**, estudantes do **7º período de Engenharia Ambiental e Sanitária** participaram de uma visita técnica à **Cenibra**, em Belo Oriente. A atividade, vinculada à disciplina de sistemas de esgotamento e tratamento de efluentes, permitiu conhecer a **Estação de Tratamento de Efluentes** da indústria, além de práticas de reuso de resíduos e gestão socioambiental."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita técnica de estudantes de Engenharia Ambiental e Sanitária à Cenibra · Belo Oriente · janeiro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Visita à Usina Hidrelétrica de Baguari",
+          "conteudo": "Em **outubro de 2025**, estudantes de Engenharia Ambiental e Sanitária participaram de uma visita à **Usina Hidrelétrica de Baguari**, junto a turmas de cursos técnicos. Conheceram a casa de força, os geradores, a barragem e o sistema de transposição de peixes, além de ações de monitoramento e educação ambiental ligadas à produção de energia."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita técnica à UHE Baguari · estudantes de Engenharia Ambiental e Sanitária · outubro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa sobre dengue apresentada na COP30",
+          "conteudo": "Em **novembro de 2025**, um estudo desenvolvido por uma **egressa de Engenharia Ambiental e Sanitária do Campus Governador Valadares** integrou um livro digital de iniciativas sustentáveis da Rede Federal, lançado durante a **COP30**. A pesquisa combinou **sistemas de informação geográfica** e análise de dados ambientais e sociais para mapear áreas com maior suscetibilidade à reprodução do mosquito transmissor da dengue na zona urbana da cidade. O trabalho originou um TCC e um relatório de pesquisa."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa de egressa sobre suscetibilidade espacial à dengue em Governador Valadares · publicação em e-book da COP30 · novembro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre Engenharia Ambiental e Sanitária e Gestão Ambiental?",
+              "resposta": "A **Engenharia Ambiental e Sanitária** é um **bacharelado em engenharia**, com formação em cálculos e projetos de sistemas como abastecimento de água, tratamento de esgoto e controle ambiental. **Gestão Ambiental** é um curso superior de tecnologia com outra organização curricular e perfil de atuação. Os dois cursos são oferecidos no Campus Governador Valadares."
+            },
+            {
+              "pergunta": "Vou trabalhar com água e tratamento de esgoto durante a graduação?",
+              "resposta": "Sim. A formação inclui sistemas de abastecimento, esgotamento sanitário, tratamento de águas residuárias e controle da qualidade ambiental. O campus dispõe de **Estação de Tratamento de Esgotos** e laboratórios que apoiam atividades de ensino e pesquisa."
+            },
+            {
+              "pergunta": "O estágio é obrigatório e quando posso realizá-lo?",
+              "resposta": "Sim. O curso exige **300 horas de estágio supervisionado obrigatório**, que pode começar **a partir do 4º período**, em atividades relacionadas à formação, com acompanhamento e documentação previstos nas normas acadêmicas. O estágio não obrigatório também é uma possibilidade durante a graduação."
+            },
+            {
+              "pergunta": "Como funciona o Trabalho de Conclusão de Curso?",
+              "resposta": "O **TCC é obrigatório e individual**, com carga horária prevista de **100 horas**. O estudante elabora uma monografia sobre tema relacionado à Engenharia Ambiental e Sanitária, sob orientação de professor e com avaliação por banca."
+            },
+            {
+              "pergunta": "Posso desenvolver pesquisas com dados ambientais?",
+              "resposta": "Sim. A formação inclui geoprocessamento, avaliação de impactos e análise de informações ambientais. Trabalhos vinculados ao curso já aplicaram essas técnicas ao estudo de problemas locais, como o mapeamento de áreas suscetíveis à dengue."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Engenharia Ambiental e Sanitária**, é necessário ter concluído o ensino médio até a matrícula. O IFMG oferece formas de seleção para cursos superiores, que podem incluir **Enem, Histórico Escolar e Redação ou Sisu**, conforme o processo seletivo vigente.\n\nConsulte o edital em vigor para conhecer as regras de participação e de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O engenheiro ambiental e sanitarista pode **elaborar e acompanhar projetos de abastecimento de água, esgotamento sanitário, tratamento de efluentes e gestão de resíduos sólidos**. Também pode avaliar a qualidade de águas, solos e ar, analisar riscos de poluição, planejar medidas para reduzir impactos de empreendimentos e desenvolver estudos para licenciamento ambiental.\n\nEntre os ambientes de trabalho estão **serviços de saneamento, indústrias, consultorias, órgãos ambientais, empresas de engenharia, organizações de pesquisa e gestão pública**. A atuação em atividades técnicas regulamentadas depende de **registro no Conselho Regional de Engenharia e Agronomia (Crea)** e das atribuições profissionais aplicáveis."
+        }
+      ]
+    },
+    {
       "id": "engenharia-de-producao-bacharelado",
       "nome": "Engenharia de Produção",
       "nivel": "Graduação",

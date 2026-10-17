@@ -1800,6 +1800,305 @@
       ]
     },
     {
+      "id": "conservacao-e-restauro-tecnologo",
+      "nome": "Conservação e Restauro",
+      "nivel": "Graduação",
+      "tipo": "Tecnólogo",
+      "campi": [
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Conservação e Restauro"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Superior de Tecnologia (Tecnólogo)"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Conservação e restauro do patrimônio cultural construído"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos (6 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "2.550 horas"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "PPC de março de 2023 e Matriz 2023.1, identificados pelo campus como vigentes"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Conservação e Restauro",
+          "conteudo": "Aprenda a **identificar, estudar e preservar edificações e conjuntos urbanos de valor histórico e cultural**. Na graduação tecnológica em Conservação e Restauro do IFMG, você une conhecimentos sobre arquitetura, história, materiais e técnicas construtivas para compreender as transformações do patrimônio e participar de intervenções que respeitem sua memória."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Conheça materiais e técnicas tradicionais, aprenda a registrar edificações históricas e participe de estudos, diagnósticos e projetos voltados à preservação do patrimônio construído."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Esta graduação é destinada a quem concluiu o ensino médio e se interessa por patrimônio histórico, arquitetura, cultura, artes e atividades práticas. É uma opção para quem gosta de observar detalhes, investigar materiais e técnicas, documentar construções e trabalhar com pessoas de diferentes áreas para preservar bens culturais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O curso combina conhecimentos de história da arte, arquitetura, técnicas de construção e estudos de materiais com práticas de documentação, análise de danos, conservação e restauro. Você aprende a compreender como edificações antigas foram construídas, identificar fatores de deterioração e planejar ações adequadas a cada bem e ao contexto cultural em que ele existe."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "História e patrimônio cultural",
+              "Relacionar edifícios, conjuntos urbanos, estilos arquitetônicos e transformações históricas."
+            ],
+            [
+              "Materiais e técnicas tradicionais",
+              "Estudar argamassas, revestimentos, pinturas, alvenarias e métodos construtivos de diferentes períodos."
+            ],
+            [
+              "Desenho e levantamento arquitetônico",
+              "Registrar edificações por desenhos, medidas, fotografias e documentação técnica."
+            ],
+            [
+              "Diagnóstico e mapeamento de danos",
+              "Observar manifestações de deterioração e organizar informações para orientar intervenções."
+            ],
+            [
+              "Química e biologia aplicadas",
+              "Investigar como propriedades dos materiais, umidade e agentes biológicos afetam a conservação."
+            ],
+            [
+              "Projetos de conservação e restauro",
+              "Analisar alternativas de preservação, com respeito às características e aos valores do bem cultural."
+            ],
+            [
+              "Gestão e educação patrimonial",
+              "Compreender a participação das comunidades e dos profissionais envolvidos na preservação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "As atividades incluem levantamentos arquitetônicos, documentação de edifícios, análise de materiais e exercícios relacionados a técnicas construtivas tradicionais. No **Canteiro Experimental de Conservação e Restauro**, estudantes têm contato com produção de bancadas, desenhos arquitetônicos e mapeamento de danos, aproximando os estudos de situações encontradas em bens culturais."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Práticas de levantamento arquitetônico, argamassas e mapeamento de danos · Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Conservação e Restauro",
+          "conteudo": "A graduação tecnológica em **Conservação e Restauro** é oferecida no **Campus Ouro Preto**, na modalidade presencial, em período **noturno**. O curso tem duração de **três anos (seis semestres)** e carga horária total de **2.550 horas**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Preto",
+              "Presencial",
+              "Noite · 3 anos",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "A graduação tecnológica é **presencial e noturna**, com **2.550 horas e seis semestres**. O PPC de março de 2023 e a Matriz 2023.1 constam como vigentes na página do curso. As práticas envolvem documentação do patrimônio construído, técnicas tradicionais, levantamentos arquitetônicos e **Canteiro Experimental**. O **TCC é obrigatório**, com **120 horas**, e o **estágio é não obrigatório**. O contato funcional da coordenação ainda precisa de confirmação."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A cidade de Ouro Preto oferece situações de estudo ligadas a edificações históricas, memória urbana e técnicas tradicionais. A formação pode se articular a atividades de pesquisa, educação patrimonial e extensão, incluindo experiências como o Canteiro Experimental, que relacionam investigação, prática e diálogo com o patrimônio da cidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Conservação e Restauro"
+          ],
+          "linhas": [
+            [
+              "Engenharia Civil",
+              "Governador Valadares, Piumhi e Santa Luzia",
+              "Materiais, estruturas, técnicas construtivas e intervenções em edificações."
+            ],
+            [
+              "Design de Interiores",
+              "Santa Luzia",
+              "Ambientes construídos, materiais, soluções de projeto e leitura de espaços."
+            ],
+            [
+              "Geografia",
+              "Ouro Preto",
+              "Paisagem cultural, espaço urbano, território e relações entre sociedade e patrimônio."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Conservação e Restauro"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão e Conservação do Patrimônio Cultural",
+              "Ouro Preto",
+              "Proteção, valorização, gestão e conservação de bens culturais."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Organização de projetos, recursos, equipes e processos de trabalho."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **fevereiro de 2025**, o Campus Ouro Preto apresentou atividades do **Canteiro Experimental** do curso de Tecnologia em Conservação e Restauro. O projeto reúne estudantes em práticas como **produção de bancadas, levantamentos e desenhos arquitetônicos** e **mapeamento de danos** do espaço utilizado. A iniciativa também promove o estudo de técnicas construtivas tradicionais da região."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Canteiro Experimental de Conservação e Restauro · produção e levantamento arquitetônico · Ouro Preto · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **março de 2025**, o IFMG apresentou a experiência de uma estudante de **Conservação e Restauro** que realizou mobilidade acadêmica no **Instituto Politécnico de Bragança, em Portugal**, em uma experiência que se estendeu até fevereiro de 2025. Além de cursar disciplinas sobre materiais, estruturas e arquitetura, ela participou de pesquisa sobre **argamassas tradicionais à base de cal**, comparando seu comportamento em diferentes condições climáticas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Mobilidade acadêmica em Bragança, Portugal · pesquisa com argamassas tradicionais · Conservação e Restauro · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **novembro de 2025**, duas estudantes do curso desenvolveram e conduziram a visita guiada **“Um olhar de Ouro Preto através do Caminho-Tronco”**, durante o **II Seminário Nacional de Direito do Patrimônio Cultural**. O percurso relacionou construções históricas, transformações urbanas, paisagem e memórias da cidade, incluindo ruas e edifícios menos presentes nos roteiros turísticos tradicionais."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita guiada Caminho-Tronco · estudantes de Conservação e Restauro · Ouro Preto · novembro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Conservação e Restauro é um curso técnico ou uma graduação?",
+              "resposta": "É uma **graduação superior de tecnologia**. Ao concluir o curso, você recebe o diploma de **tecnólogo em Conservação e Restauro**. A oferta identificada para o processo seletivo de 2027 é a tecnológica, não um curso técnico."
+            },
+            {
+              "pergunta": "O curso trabalha principalmente com museus e objetos de arte?",
+              "resposta": "A formação do Campus Ouro Preto se concentra especialmente em **edificações e conjuntos urbanos de interesse histórico e cultural**. Você estuda materiais, técnicas construtivas, registro arquitetônico, diagnóstico e conservação do patrimônio construído."
+            },
+            {
+              "pergunta": "O estágio é obrigatório?",
+              "resposta": "**Não.** Conforme o PPC vigente de 2023, o estágio supervisionado é **não obrigatório**. Caso seja realizado, pode ser aproveitado como atividade complementar nos limites estabelecidos pelo projeto pedagógico."
+            },
+            {
+              "pergunta": "É preciso fazer Trabalho de Conclusão de Curso?",
+              "resposta": "**Sim.** O PPC de 2023 prevê um **TCC obrigatório**, com **120 horas** na matriz curricular. O trabalho pode explorar estudos e projetos relacionados à conservação e ao restauro do patrimônio cultural."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na graduação tecnológica em **Conservação e Restauro**, é necessário ter concluído o ensino médio até a matrícula. O IFMG realiza processos seletivos para os cursos superiores, com formas de seleção definidas em cada edição.\n\nConsulte o processo seletivo vigente para conhecer os critérios de seleção e as regras de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O tecnólogo em Conservação e Restauro pode atuar no **estudo, diagnóstico, documentação, planejamento e acompanhamento de ações de preservação** de edificações e conjuntos urbanos de valor histórico e cultural. O trabalho envolve conhecer materiais e técnicas tradicionais, analisar danos, registrar informações e colaborar na definição de soluções adequadas às características de cada bem.\n\nA atuação pode ocorrer em **empresas e escritórios especializados, instituições de preservação do patrimônio, projetos de restauro, órgãos públicos, organizações culturais e equipes multidisciplinares** de arquitetura e engenharia, observadas as atribuições profissionais e responsabilidades técnicas aplicáveis."
+        }
+      ]
+    },
+    {
       "id": "direito-bacharelado-arcos",
       "nome": "Direito",
       "nivel": "Graduação",

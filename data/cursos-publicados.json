@@ -9468,6 +9468,332 @@
       ]
     },
     {
+      "id": "tecnico-em-seguranca-do-trabalho-integrado",
+      "nome": "Técnico em Segurança do Trabalho",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Conselheiro Lafaiete",
+        "Governador Valadares",
+        "Santa Luzia"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Segurança do Trabalho"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Segurança"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Conselheiro Lafaiete; Governador Valadares; Santa Luzia"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta por campus para 2027"
+            },
+            {
+              "rotulo": "PPC / matriz dos ingressantes em 2027",
+              "valor": "Informação incompleta por campus"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Consulte a tabela por campus"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Segurança do Trabalho",
+          "conteudo": "Aprenda a identificar riscos nos ambientes de trabalho e a propor medidas para **prevenir acidentes e proteger a saúde das pessoas**. No IFMG, a formação combina o ensino médio com conhecimentos sobre condições de trabalho, legislação, equipamentos de proteção e ações educativas de segurança."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude prevenção de acidentes, identificação de riscos ocupacionais, proteção coletiva e individual e organização de ações de saúde e segurança no trabalho."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é voltado a quem concluiu o ensino fundamental e deseja cursar o ensino médio junto com uma habilitação técnica. É uma opção para quem se interessa por saúde, ciências, investigação de problemas, organização de ambientes e proteção das pessoas no trabalho."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação articula os conhecimentos do ensino médio a temas como riscos físicos, químicos, biológicos, ergonômicos e de acidentes; legislação de segurança e saúde no trabalho; prevenção de doenças ocupacionais; ergonomia; análise de incidentes; e comunicação de medidas preventivas."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Identificação de riscos",
+              "Observar ambientes e processos de trabalho para reconhecer situações que podem causar acidentes ou adoecimento."
+            ],
+            [
+              "Higiene e saúde ocupacional",
+              "Estudar exposição a agentes físicos, químicos e biológicos e formas de prevenção."
+            ],
+            [
+              "Ergonomia",
+              "Analisar a relação entre atividades, esforço, organização do trabalho e saúde."
+            ],
+            [
+              "Proteção coletiva e individual",
+              "Conhecer medidas de controle, equipamentos de proteção coletiva (EPCs) e equipamentos de proteção individual (EPIs)."
+            ],
+            [
+              "Legislação e normas",
+              "Compreender as Normas Regulamentadoras e a organização das medidas de segurança e saúde no trabalho."
+            ],
+            [
+              "Investigação e prevenção",
+              "Analisar ocorrências, registrar informações e propor ações para evitar novos acidentes."
+            ],
+            [
+              "Formação geral",
+              "Articular matemática, biologia, química, física, linguagens e ciências humanas aos desafios da área."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "Nas atividades práticas, você pode observar condições de trabalho, reconhecer situações de risco, utilizar instrumentos de avaliação, planejar ações educativas e discutir medidas de prevenção. **No Campus Governador Valadares**, há laboratório de Segurança do Trabalho com instrumentação para práticas relacionadas às Normas Regulamentadoras. As atividades e os recursos variam conforme a estrutura curricular e o campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Aprendizagem prática em segurança do trabalho · atividades e instrumentos de prevenção",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Segurança do Trabalho",
+          "conteudo": "O **Técnico em Segurança do Trabalho Integrado ao Ensino Médio** é oferecido nos campi **Conselheiro Lafaiete, Governador Valadares e Santa Luzia**, na modalidade presencial, com aulas durante o dia. A formação tem duração de três anos. A oferta de **Conselheiro Lafaiete começa em 2027**; Governador Valadares e Santa Luzia já possuem turmas da modalidade integrada."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Conselheiro Lafaiete",
+              "Presencial",
+              "Manhã e tarde · 3 anos",
+              "Informação incompleta"
+            ],
+            [
+              "Governador Valadares",
+              "Presencial",
+              "Manhã e tarde · 3 anos",
+              "coordenacao.tst.gv@ifmg.edu.br"
+            ],
+            [
+              "Santa Luzia",
+              "Presencial",
+              "Manhã e tarde · 3 anos",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Conselheiro Lafaiete",
+              "resposta": "O campus inicia o **Técnico em Segurança do Trabalho Integrado ao Ensino Médio em 2027**. A formação é presencial, diurna e dura três anos. O curso abordará riscos ocupacionais, medidas preventivas e segurança de diferentes processos de trabalho. O PPC e a matriz curricular estão em elaboração. O contato funcional da coordenação ainda não foi confirmado."
+            },
+            {
+              "pergunta": "Campus Governador Valadares",
+              "resposta": "O curso integrado funciona em período diurno, com duração de três anos. O campus possui laboratório de Segurança do Trabalho com instrumentos usados em atividades relacionadas às Normas Regulamentadoras. O contato coletivo da coordenação é **coordenacao.tst.gv@ifmg.edu.br**. O PPC de 2016 está em revisão, por isso a carga horária para 2027 precisa de confirmação."
+            },
+            {
+              "pergunta": "Campus Santa Luzia",
+              "resposta": "O campus oferece o Técnico em Segurança do Trabalho Integrado ao Ensino Médio em período diurno, com duração de três anos. Também existe uma oferta **subsequente**, destinada a outro público; elas são formações distintas. O endereço funcional da coordenação e a carga horária do integrado para 2027 ainda precisam ser confirmados."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "As atividades relacionadas a prevenção de acidentes, investigação das condições de trabalho e promoção da saúde podem integrar projetos de ensino, pesquisa e extensão, além de visitas técnicas e ações com empresas e instituições parceiras. As experiências documentadas nesta página identificam o campus e os estudantes participantes."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Segurança do Trabalho"
+          ],
+          "linhas": [
+            [
+              "Engenharia Ambiental e Sanitária",
+              "Governador Valadares",
+              "Gestão de riscos ambientais, qualidade ambiental e prevenção de impactos."
+            ],
+            [
+              "Engenharia Civil",
+              "Governador Valadares, Piumhi e Santa Luzia",
+              "Segurança dos processos construtivos, planejamento e condições de trabalho na construção."
+            ],
+            [
+              "Engenharia de Produção",
+              "Bambuí, Congonhas e Governador Valadares",
+              "Organização de processos, melhoria contínua, análise de riscos e ergonomia."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Segurança do Trabalho"
+          ],
+          "linhas": [
+            [
+              "Especialização em Engenharia de Segurança do Trabalho",
+              "Arcos (EaD) e Governador Valadares (presencial)",
+              "Gestão de riscos ocupacionais e aprofundamento na área de segurança."
+            ],
+            [
+              "Especialização em Proteção e Defesa Civil",
+              "Santa Luzia (EaD)",
+              "Prevenção, planejamento e gestão de riscos e emergências."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento, organização de equipes e melhoria de processos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **agosto de 2025**, estudantes dos **2º e 3º anos do Técnico Integrado em Segurança do Trabalho do Campus Governador Valadares** participaram da **Semana Interna de Prevenção de Acidentes do Trabalho (SIPAT) da Cemig**, realizada no auditório do campus. A atividade aproximou os estudantes de profissionais da empresa e de ações de conscientização sobre saúde e segurança."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "SIPAT da Cemig · estudantes do integrado Segurança do Trabalho · Governador Valadares · agosto de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **26 de maio de 2026**, estudantes do **2º ano do integrado em Segurança do Trabalho de Governador Valadares** visitaram a unidade da **Vale** pelo projeto *Vale nas Escolas*. Eles conheceram atividades da empresa e sistemas de segurança, acompanhados de profissionais das áreas de Segurança do Trabalho, Operação e Manutenção."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita à Vale · segundo ano do integrado Segurança do Trabalho · Governador Valadares · maio de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **8 de outubro de 2026**, estudantes do **3º ano do integrado em Segurança do Trabalho**, junto com uma turma do 2º ano de Edificações de Governador Valadares, fizeram outra visita técnica à **Vale**. A atividade abordou procedimentos de segurança, prevenção de acidentes, áreas de treinamento e seleção de equipamentos de proteção individual."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita à Vale · terceiro ano Segurança do Trabalho e Edificações · Governador Valadares · outubro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre o técnico integrado e o subsequente em Segurança do Trabalho?",
+              "resposta": "No **integrado**, você cursa o ensino médio e a formação técnica ao mesmo tempo, depois de concluir o ensino fundamental. O **subsequente** é voltado a quem já concluiu o ensino médio. São ofertas distintas, inclusive quando compartilham o mesmo nome de curso."
+            },
+            {
+              "pergunta": "O curso envolve atividades fora da sala de aula?",
+              "resposta": "A formação inclui conhecimentos aplicados à identificação de riscos e medidas de prevenção. As atividades podem envolver laboratório, exercícios de observação e visitas técnicas, de acordo com o planejamento e a estrutura de cada campus."
+            },
+            {
+              "pergunta": "O curso de Conselheiro Lafaiete já possui turmas formadas?",
+              "resposta": "**Não.** O campus prevê iniciar a oferta integrada em **2027**. Já os campi Governador Valadares e Santa Luzia têm turmas em funcionamento."
+            },
+            {
+              "pergunta": "Vou aprender apenas a usar equipamentos de proteção?",
+              "resposta": "Não. A escolha e o uso de EPIs e EPCs são parte da formação, mas você também estuda investigação de acidentes, avaliação de riscos, ergonomia, legislação, saúde ocupacional e planejamento de ações preventivas."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Segurança do Trabalho Integrado ao Ensino Médio**, é necessário ter concluído o ensino fundamental até a matrícula. O IFMG realiza processo seletivo público para o ingresso nos cursos técnicos integrados.\n\nConsulte o edital vigente para conhecer as regras de seleção, reserva de vagas, documentos e matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Segurança do Trabalho atua na **identificação e avaliação de riscos ocupacionais**, na proposta e no acompanhamento de medidas de prevenção, na inspeção de ambientes e na organização de ações educativas sobre saúde e segurança. Pode colaborar com análises de acidentes, registros técnicos, treinamentos, medidas de proteção coletiva e individual e programas de prevenção, de acordo com as atribuições da profissão.\n\nA formação permite atuação em diferentes setores, como **construção civil, indústria, mineração, logística, comércio, serviços e instituições públicas**, integrando equipes responsáveis por melhorar as condições de trabalho e proteger a saúde dos trabalhadores."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-sistemas-de-energia-renovavel-integrado",
       "nome": "Técnico em Sistemas de Energia Renovável",
       "nivel": "Técnico",

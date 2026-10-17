@@ -2099,6 +2099,296 @@
       ]
     },
     {
+      "id": "design-de-interiores-tecnologo",
+      "nome": "Design de Interiores",
+      "nivel": "Graduação",
+      "tipo": "Tecnólogo",
+      "campi": [
+        "Santa Luzia"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Design de Interiores"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Superior de Tecnologia (Tecnólogo)"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Design de Interiores e ambientes construídos"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Santa Luzia"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (11,54% EaD na oferta de 2027)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos (6 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "1.690 horas"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "PPC de 2025 e matriz curricular de 2025"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "des.interiores.santaluzia@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Design de Interiores",
+          "conteudo": "Aprenda a **planejar e transformar ambientes internos**, considerando como as pessoas usam os espaços. No IFMG, você estuda projeto, representação gráfica, materiais, conforto, ergonomia e sustentabilidade para desenvolver soluções funcionais, acessíveis e adequadas às necessidades de quem vive, trabalha ou circula nesses ambientes."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Crie projetos de ambientes residenciais, comerciais e institucionais, combinando desenho, materiais, iluminação, ergonomia e bem-estar."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A graduação é destinada a quem concluiu o ensino médio e tem interesse em ambientes, design, arquitetura, desenho e criação de soluções práticas. É uma opção para quem gosta de observar os usos dos espaços, representar ideias visualmente, pesquisar materiais e conversar com pessoas para compreender suas necessidades."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O curso reúne fundamentos de design, história da arte e da arquitetura, desenho técnico e ferramentas digitais. Você também estuda projeto de interiores, modelagem tridimensional, materiais, iluminação, conforto ambiental, percepção dos espaços, ergonomia, ecodesign, paisagismo e gestão de projetos. O aprendizado articula aspectos estéticos, funcionais, sociais e ambientais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Projetos de interiores",
+              "Investigar necessidades e desenvolver propostas para ambientes internos de diferentes usos."
+            ],
+            [
+              "Desenho e representação",
+              "Comunicar soluções por desenho arquitetônico, modelos tridimensionais e detalhamento técnico."
+            ],
+            [
+              "Materiais e técnicas construtivas",
+              "Selecionar revestimentos, componentes, sistemas e materiais adequados ao projeto."
+            ],
+            [
+              "Conforto e iluminação",
+              "Relacionar luz, som, temperatura e percepção ambiental à qualidade dos espaços."
+            ],
+            [
+              "Ergonomia e acessibilidade",
+              "Analisar dimensões, circulação, mobiliário e necessidades de diferentes pessoas."
+            ],
+            [
+              "Ecodesign e paisagismo",
+              "Considerar impactos ambientais e relações entre espaços internos, vegetação e entorno."
+            ],
+            [
+              "História, cultura e sociedade",
+              "Entender como estilos, hábitos e contextos culturais influenciam a organização dos ambientes."
+            ],
+            [
+              "Gestão e prática profissional",
+              "Organizar processos de projeto, recursos, apresentações e documentação das soluções."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "As atividades incluem desenhos, modelos digitais, levantamentos, propostas de iluminação, seleção de materiais e desenvolvimento de projetos de ambientes. A matriz de 2025 inclui componentes de **projeto paisagístico** e **laboratório de projetos de design** vinculados à extensão, aproximando o aprendizado de necessidades e situações reais."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Práticas de representação gráfica, modelos e projetos de Design de Interiores · Campus Santa Luzia",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Design de Interiores",
+          "conteudo": "O curso superior de Tecnologia em **Design de Interiores** é oferecido no **Campus Santa Luzia**, em período **noturno**, na modalidade presencial. O PPC de 2025 registra **1.690 horas e duração de três anos**. Para ingresso em 2027, a oferta prevê **11,54% de atividades a distância**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Santa Luzia",
+              "Presencial (11,54% EaD na oferta de 2027)",
+              "Noite · 3 anos",
+              "des.interiores.santaluzia@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Santa Luzia",
+              "resposta": "A graduação tecnológica tem **1.690 horas e duração de três anos (seis semestres)**, com aulas à noite. O **PPC de 2025** prevê projetos de interiores, desenho técnico, modelagem digital, ecodesign, paisagismo e práticas extensionistas. O **TCC é obrigatório (90 horas)**, e o **estágio é não obrigatório**. Contato da coordenação: **des.interiores.santaluzia@ifmg.edu.br**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A formação se relaciona com atividades de projeto e extensão ligadas à comunidade, aos espaços construídos e à sustentabilidade. Os estudantes podem conhecer iniciativas como a **empresa júnior multidisciplinar Desenharqui Jr.**, que desenvolve consultorias e projetos, e propostas de escritório-modelo voltadas a demandas de Design de Interiores. A participação depende das atividades e oportunidades de cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Design de Interiores"
+          ],
+          "linhas": [
+            [
+              "Arquitetura e Urbanismo",
+              "Santa Luzia",
+              "Projeto de edificações, organização espacial, representação e ambientes construídos."
+            ],
+            [
+              "Engenharia Civil",
+              "Governador Valadares, Piumhi e Santa Luzia",
+              "Materiais, instalações, sistemas construtivos e aspectos técnicos de edificações."
+            ],
+            [
+              "Conservação e Restauro",
+              "Ouro Preto",
+              "Materiais, patrimônio construído, documentação e intervenções em ambientes históricos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Design de Interiores"
+          ],
+          "linhas": [
+            [
+              "Especialização em BIM – Projetos Aplicados às Edificações",
+              "Piumhi (EaD)",
+              "Modelagem da informação e integração de projetos de edificações."
+            ],
+            [
+              "Especialização em Gestão e Conservação do Patrimônio Cultural",
+              "Ouro Preto",
+              "Preservação, estudo de materiais e gestão de bens culturais."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento de projetos, organização de processos e gestão de equipes."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **outubro de 2025**, estudantes da graduação em **Design de Interiores do Campus Santa Luzia** participaram do projeto de ensino **Laboratório Verde: o Campus como um Laboratório de Paisagismo**. A equipe, que reuniu estudantes de diferentes cursos, produziu um **catálogo de boas práticas de paisagismo** para orientar cuidados com a vegetação do campus e apoiar atividades de aprendizagem. Entre os participantes de Design de Interiores estavam um **bolsista** e um **voluntário**, identificados na publicação oficial do projeto."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Catálogo Boas Práticas de Paisagismo · Laboratório Verde · estudantes de Design de Interiores · Santa Luzia · outubro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Design de Interiores é uma graduação ou um curso técnico?",
+              "resposta": "É uma **graduação superior de tecnologia**. Ao concluir o curso, você recebe o diploma de **tecnólogo em Design de Interiores**. O curso tem duração de três anos, com formação específica em projeto e organização de ambientes internos."
+            },
+            {
+              "pergunta": "Vou aprender apenas a escolher móveis e cores?",
+              "resposta": "Não. As escolhas estéticas fazem parte do processo, mas você também estuda **ergonomia, acessibilidade, representação técnica, iluminação, materiais, conforto e planejamento de projetos**, entre outros conteúdos."
+            },
+            {
+              "pergunta": "O curso é todo a distância?",
+              "resposta": "Não. É uma formação **presencial, noturna**. No Processo Seletivo de 2027, a oferta prevê **11,54% de atividades a distância**, combinadas às atividades presenciais."
+            },
+            {
+              "pergunta": "Preciso fazer estágio e Trabalho de Conclusão de Curso?",
+              "resposta": "O **estágio é não obrigatório**. Já o **TCC é obrigatório**, com **90 horas** na matriz de 2025. O trabalho pode ser realizado como projeto ou monografia, conforme o regulamento do curso."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na graduação tecnológica em **Design de Interiores**, é necessário ter concluído o ensino médio até a matrícula. O IFMG realiza processos seletivos para os cursos superiores, com formas de seleção divulgadas a cada edição.\n\nConsulte o processo seletivo vigente para conhecer os critérios e as regras de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O tecnólogo em Design de Interiores pode **conceber, representar, planejar e acompanhar projetos de ambientes internos**, considerando funcionalidade, conforto, acessibilidade, materiais, iluminação e identidade dos espaços. Entre as atividades estão levantar necessidades de usuários, elaborar soluções de layout e mobiliário, produzir desenhos e modelos, selecionar materiais e organizar informações de projeto.\n\nA atuação inclui projetos para **residências, escritórios, lojas, restaurantes, hotéis, clínicas, instituições públicas e espaços temporários**, além de escritórios de design e arquitetura, empresas de mobiliário e lojas de acabamentos, respeitadas as atribuições profissionais e responsabilidades técnicas aplicáveis."
+        }
+      ]
+    },
+    {
       "id": "direito-bacharelado-arcos",
       "nome": "Direito",
       "nivel": "Graduação",

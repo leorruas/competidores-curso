@@ -8882,6 +8882,278 @@
       ]
     },
     {
+      "id": "tecnico-em-nutricao-e-dietetica-integrado",
+      "nome": "Técnico em Nutrição e Dietética",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "São João Evangelista"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Nutrição e Dietética"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "São João Evangelista"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz dos ingressantes em 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "ctnd.sje@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Nutrição e Dietética",
+          "conteudo": "Aprenda a trabalhar com **alimentação, preparo de refeições e segurança dos alimentos** enquanto cursa o ensino médio. No IFMG, a formação técnica reúne conhecimentos sobre composição dos alimentos, técnicas de preparo, cuidados de higiene e organização de serviços de alimentação, considerando as necessidades de diferentes públicos."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude alimentos, técnicas de preparo, qualidade e educação alimentar enquanto conclui o ensino médio e conhece atividades de serviços de alimentação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A formação é destinada a quem concluiu o ensino fundamental e deseja cursar o ensino médio junto com uma habilitação técnica. É uma opção para quem se interessa por alimentação, saúde, ciências, culinária, organização de serviços e cuidados com a qualidade das refeições."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne os conhecimentos gerais do ensino médio e temas técnicos ligados à alimentação e à nutrição. Você conhece princípios de higiene e segurança dos alimentos, composição e aproveitamento de ingredientes, técnicas dietéticas, organização da produção de refeições e educação alimentar."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Alimentos e nutrientes",
+              "Conhecer a composição dos alimentos e relacionar nutrientes às necessidades alimentares."
+            ],
+            [
+              "Técnica dietética",
+              "Estudar modos de preparo, características dos ingredientes e alterações durante o processamento."
+            ],
+            [
+              "Higiene e segurança dos alimentos",
+              "Aplicar princípios de boas práticas na manipulação, conservação e distribuição de refeições."
+            ],
+            [
+              "Planejamento de refeições",
+              "Compreender cardápios, porcionamento e organização de refeições para diferentes públicos."
+            ],
+            [
+              "Produção e serviços de alimentação",
+              "Conhecer rotinas de recebimento, armazenamento, preparo e distribuição de alimentos."
+            ],
+            [
+              "Educação alimentar",
+              "Participar de ações que compartilham informações sobre escolhas alimentares e saúde."
+            ],
+            [
+              "Formação geral",
+              "Articular biologia, química, matemática, linguagens e ciências humanas à formação profissional."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O estudo da área envolve observar e organizar etapas de preparação de refeições, reconhecer cuidados de higiene, analisar ingredientes e interpretar situações de produção e distribuição de alimentos. As atividades práticas são desenvolvidas conforme o planejamento curricular e os espaços disponíveis no campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Técnicas de preparo e cuidados com alimentos · São João Evangelista",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Nutrição e Dietética",
+          "conteudo": "O **Técnico em Nutrição e Dietética Integrado ao Ensino Médio** é oferecido no **Campus São João Evangelista**, na modalidade presencial, com aulas de manhã e à tarde."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "São João Evangelista",
+              "Presencial",
+              "Manhã e tarde",
+              "ctnd.sje@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus São João Evangelista",
+              "resposta": "A formação técnica integrada combina ensino médio com conteúdos sobre alimentação, segurança sanitária, preparo de refeições e organização de serviços de alimentação. O curso é presencial, com atividades nos períodos da manhã e da tarde. O contato coletivo da coordenação é **ctnd.sje@ifmg.edu.br**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Nutrição e Dietética"
+          ],
+          "linhas": [
+            [
+              "Engenharia de Alimentos",
+              "Bambuí",
+              "Processamento, conservação, qualidade e desenvolvimento de produtos alimentícios."
+            ],
+            [
+              "Ciências Biológicas (Licenciatura)",
+              "Bambuí e São João Evangelista",
+              "Estudo de seres vivos, metabolismo e temas de biologia presentes na formação em alimentação."
+            ],
+            [
+              "Agronomia",
+              "Bambuí e São João Evangelista",
+              "Produção agrícola, manejo de alimentos na origem e organização de sistemas de cultivo."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Nutrição e Dietética"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão de Negócios",
+              "São João Evangelista (EaD)",
+              "Planejamento e gestão de serviços, equipes e empreendimentos, incluindo os ligados à alimentação."
+            ],
+            [
+              "Especialização em Meio Ambiente",
+              "São João Evangelista (EaD)",
+              "Gestão ambiental e sustentabilidade em processos produtivos e serviços."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O técnico em Nutrição e Dietética é a mesma formação de um nutricionista?",
+              "resposta": "Não. O **técnico** atua nas atividades próprias de sua habilitação, incluindo produção de refeições, higiene, organização de serviços e apoio a ações de educação alimentar. A profissão de **nutricionista** exige graduação em Nutrição e tem atribuições próprias, como avaliação e prescrição dietética. O trabalho técnico que envolve essas atribuições ocorre conforme as normas profissionais e sob supervisão."
+            },
+            {
+              "pergunta": "O curso prepara apenas para trabalhar em hospitais?",
+              "resposta": "Não. A formação também se relaciona a restaurantes, cozinhas industriais, escolas, unidades de alimentação, serviços de produção de refeições e atividades de educação alimentar, conforme as atribuições do técnico."
+            },
+            {
+              "pergunta": "O curso aborda segurança dos alimentos, além do preparo de refeições?",
+              "resposta": "Sim. O estudo inclui cuidados de higiene, conservação, armazenamento, manipulação e distribuição de refeições. Essas etapas ajudam a prevenir contaminações e organizar a qualidade dos serviços de alimentação."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Nutrição e Dietética Integrado ao Ensino Médio**, é necessário ter concluído o ensino fundamental até a matrícula. O IFMG realiza processo seletivo público para ingresso nos cursos técnicos integrados.\n\nConsulte o edital vigente para conhecer as regras de seleção, reserva de vagas, documentação e matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Nutrição e Dietética pode participar do **recebimento, armazenamento, seleção, preparo e distribuição de alimentos**, acompanhar rotinas de higiene e segurança sanitária e apoiar o planejamento de refeições. Também pode registrar informações de produção, colaborar com a organização de cardápios e participar de ações de educação alimentar, respeitando suas atribuições profissionais.\n\nEntre os espaços de atuação estão **unidades de alimentação e nutrição, restaurantes, cozinhas industriais, escolas, hospitais e instituições de cuidado**. As atividades relacionadas à assistência nutricional e a decisões clínicas seguem as normas profissionais, com orientação e supervisão de nutricionista quando exigidas."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-quimica-integrado",
       "nome": "Técnico em Química",
       "nivel": "Técnico",

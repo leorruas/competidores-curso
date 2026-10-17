@@ -9,12 +9,14 @@ export function validarEstruturaCurso(curso) {
   }
   const blocos = curso.blocos;
   const pos = titulo => blocos.findIndex(b => b?.tipo === "texto" && b.titulo === titulo);
-  const obrigatorias = ["Continue seus estudos no IFMG", "Experiências e conquistas dos estudantes", "Perguntas frequentes", "Forma de ingresso", "Mundo do Trabalho"];
+  // Curso novo sem turmas não tem experiências para apresentar. Não criar relatos fictícios.
+  const cursoSemTurmas = curso.id === "tecnico-em-desenvolvimento-de-sistemas-integrado";
+  const obrigatorias = ["Continue seus estudos no IFMG", ...(cursoSemTurmas ? [] : ["Experiências e conquistas dos estudantes"]), "Perguntas frequentes", "Forma de ingresso", "Mundo do Trabalho"];
   for (const titulo of obrigatorias) {
     if (blocos.filter(b => b?.tipo === "texto" && b.titulo === titulo).length !== 1)
       erros.push("seção obrigatória deve aparecer uma vez: " + titulo);
   }
-  if (pos("Experiências e conquistas dos estudantes") <= pos("Continue seus estudos no IFMG"))
+  if (!cursoSemTurmas && pos("Experiências e conquistas dos estudantes") <= pos("Continue seus estudos no IFMG"))
     erros.push("continuidade deve anteceder as experiências");
   if (blocos.at(-2)?.titulo !== "Forma de ingresso" || blocos.at(-1)?.titulo !== "Mundo do Trabalho")
     erros.push("os dois últimos blocos devem ser Forma de ingresso e Mundo do Trabalho");
@@ -39,6 +41,8 @@ export function validarEstruturaCurso(curso) {
       erros.push("galeria " + i + " deve seguir título ou texto de contexto válido");
   }
   if (!galerias) erros.push("curso sem nenhum bloco de galeria");
+  if (cursoSemTurmas && pos("Experiências e conquistas dos estudantes") >= 0)
+    erros.push("curso ainda sem estudantes não deve inventar experiências");
   const ix = pos("Experiências e conquistas dos estudantes");
   // Dois pilotos apresentam reconhecimento institucional (avaliação/portaria)
   // como abertura da seção; não são relatos de uma vivência estudantil a ilustrar.

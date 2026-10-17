@@ -8225,6 +8225,298 @@
           "conteudo": "O técnico em Eletroeletrônica pode atuar em atividades de **montagem, instalação, inspeção, testes e manutenção de sistemas elétricos e eletrônicos**. Entre as tarefas estão ler diagramas, acompanhar instalações, fazer medições e apoiar a identificação de falhas em circuitos, equipamentos, comandos e sistemas de automação.\n\nO campo de atuação inclui indústrias, manutenção de máquinas e equipamentos, instalações elétricas, automação e serviços técnicos especializados. A realização dessas atividades deve observar as atribuições profissionais aplicáveis à habilitação, o registro quando exigido, a supervisão necessária e as normas de segurança, especialmente em serviços com eletricidade."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-desenvolvimento-de-sistemas-integrado",
+      "nome": "Técnico em Desenvolvimento de Sistemas",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Itabirito"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Desenvolvimento de Sistemas"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Itabirito"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC para ingressantes de 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Desenvolvimento de Sistemas",
+          "conteudo": "Estude o ensino médio junto com uma formação técnica voltada à criação de programas e aplicações digitais. No IFMG, você aprende a planejar, programar, testar e manter sistemas para computadores, dispositivos móveis e ambientes web, relacionando esses conhecimentos à formação geral."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda a desenvolver sistemas, construir aplicações, trabalhar com bancos de dados e testar programas enquanto conclui o ensino médio no Campus Itabirito."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a estudantes que concluíram o ensino fundamental e desejam cursar o ensino médio com uma formação técnica. É uma opção para quem se interessa por programação, lógica, tecnologia e resolução de problemas com sistemas digitais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação integrada reúne as disciplinas do ensino médio e conhecimentos necessários para desenvolver software, do entendimento de necessidades à entrega e à manutenção de aplicações."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Programação",
+              "Utilizar linguagens e ambientes de programação para desenvolver sistemas."
+            ],
+            [
+              "Análise de requisitos",
+              "Identificar necessidades, funcionalidades e condições para construir aplicações."
+            ],
+            [
+              "Modelagem de sistemas",
+              "Organizar a estrutura e o funcionamento de soluções computacionais."
+            ],
+            [
+              "Bancos de dados",
+              "Modelar e administrar bancos de dados relacionais."
+            ],
+            [
+              "Testes e manutenção",
+              "Realizar testes funcionais, encontrar problemas e manter programas e aplicativos."
+            ],
+            [
+              "Documentação e trabalho em equipe",
+              "Documentar sistemas e colaborar no desenvolvimento de soluções digitais."
+            ],
+            [
+              "Formação geral",
+              "Relacionar matemática, linguagens, ciências da natureza e humanas às aplicações tecnológicas."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O curso prevê formação em codificação, modelagem e testes de sistemas. Os ambientes, equipamentos e atividades práticas utilizados por cada turma serão definidos na organização pedagógica do Campus Itabirito."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Ambientes de aprendizagem e práticas de Desenvolvimento de Sistemas · Itabirito",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Desenvolvimento de Sistemas",
+          "conteudo": "O **Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio** será oferecido no **Campus Itabirito** a partir de 2027. A oferta prevista na seleção é **presencial**, com aulas de manhã e à tarde."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Itabirito",
+              "Presencial",
+              "Manhã e tarde / Informação incompleta",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Itabirito",
+              "resposta": "O novo curso integrado, previsto para iniciar em 2027, apresenta formação em desenvolvimento de sistemas para web, dispositivos móveis e outros ambientes digitais. A página institucional destaca programação, requisitos, testes, bancos de dados e documentação. As condições curriculares específicas para os ingressantes dependem do PPC."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "O Campus Itabirito possui atividades de ensino, pesquisa e extensão em áreas tecnológicas. Os projetos e as oportunidades que venham a envolver estudantes de **Desenvolvimento de Sistemas** dependerão da implantação do curso e das ações acadêmicas de cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": "Depois de concluir o ensino médio integrado, você poderá concorrer a graduações do IFMG relacionadas a programação, aplicações e sistemas de informação."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Desenvolvimento de Sistemas"
+          ],
+          "linhas": [
+            [
+              "Ciência da Computação",
+              "Formiga e Ibirité",
+              "Algoritmos, programação e sistemas computacionais."
+            ],
+            [
+              "Sistemas de Informação",
+              "Ouro Branco, Sabará e São João Evangelista",
+              "Desenvolvimento de aplicações, dados e uso de sistemas em organizações."
+            ],
+            [
+              "Análise e Desenvolvimento de Sistemas",
+              "Ouro Preto e Ribeirão das Neves",
+              "Projeto, implementação, testes e manutenção de sistemas."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": "Depois de concluir uma graduação compatível, você poderá buscar oportunidades de especialização relacionadas à computação."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Desenvolvimento de Sistemas"
+          ],
+          "linhas": [
+            [
+              "Especialização em Inteligência Artificial",
+              "Ouro Preto",
+              "Aplicações de programação, dados e métodos de inteligência artificial, conforme os requisitos do programa."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O curso já recebe estudantes?",
+              "resposta": "A primeira oferta está prevista para o processo seletivo de 2027 no Campus Itabirito. A turma iniciará suas atividades conforme o calendário acadêmico."
+            },
+            {
+              "pergunta": "Preciso já saber programar para ingressar?",
+              "resposta": "Não é exigido conhecimento prévio de programação como requisito geral da formação. O ingresso no integrado exige ensino fundamental concluído até a matrícula e atendimento ao edital vigente."
+            },
+            {
+              "pergunta": "Qual a diferença em relação ao Técnico em Automação Industrial?",
+              "resposta": "**Desenvolvimento de Sistemas** tem como foco a criação, os testes e a manutenção de programas e aplicativos. **Automação Industrial**, também oferecido no Campus Itabirito, concentra-se em equipamentos e processos automatizados. São cursos distintos."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras modalidades relacionadas",
+          "conteudo": "O Campus Itabirito também oferece **Técnico em Automação Industrial Integrado**, com objetivos curriculares diferentes. O novo curso de Desenvolvimento de Sistemas é uma alternativa para quem deseja concentrar sua formação técnica na criação de software."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você se interessa por...",
+            "Conheça",
+            "Principal foco"
+          ],
+          "linhas": [
+            [
+              "Programas, sites, aplicativos e bancos de dados",
+              "Técnico em Desenvolvimento de Sistemas",
+              "Desenvolvimento de software."
+            ],
+            [
+              "Máquinas, sensores, equipamentos e processos automatizados",
+              "Técnico em Automação Industrial",
+              "Sistemas e processos de automação."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio**, é necessário concluir o ensino fundamental até a matrícula. O ingresso ocorre por processo seletivo público do IFMG para cursos técnicos integrados, conforme o edital vigente.\n\nConsulte o edital para conhecer as regras de inscrição, reserva de vagas, critérios e procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Desenvolvimento de Sistemas pode atuar na **criação, implantação, testes e manutenção de sistemas computacionais e aplicativos**. Entre as atividades estão desenvolver programas, modelar bancos de dados, documentar aplicações, testar funcionalidades, apoiar a correção de problemas e colaborar com equipes de tecnologia.\n\nEssas atividades podem ocorrer em empresas de software, organizações públicas e privadas, serviços de tecnologia e equipes que desenvolvem soluções digitais para diferentes setores. A atuação depende da formação recebida, das responsabilidades de cada função e das boas práticas de segurança e qualidade."
+        }
+      ]
     }
   ]
 }

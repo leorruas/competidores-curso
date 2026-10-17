@@ -7183,7 +7183,7 @@
               "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Contato da coordenação",
+              "rotulo": "E-mail da coordenação",
               "valor": "Consultar a tabela de campi"
             }
           ]
@@ -7261,7 +7261,7 @@
             "Campus",
             "Modalidade",
             "Turno / duração",
-            "Contato da coordenação"
+            "E-mail da coordenação"
           ],
           "linhas": [
             [

@@ -2942,6 +2942,273 @@
       ]
     },
     {
+      "id": "tecnico-em-agrimensura-integrado",
+      "nome": "Técnico em Agrimensura",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "São João Evangelista"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Agrimensura"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Infraestrutura"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "São João Evangelista"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC / matriz dos ingressantes em 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Agrimensura",
+          "conteudo": "Aprenda a **medir, representar e analisar terrenos** enquanto cursa o ensino médio. No IFMG, a formação técnica em Agrimensura relaciona topografia, cartografia, georreferenciamento e uso de dados espaciais a atividades de planejamento, obras e gestão do território."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Conheça técnicas de medição de terrenos, elaboração de mapas e representação do espaço, articulando conhecimentos de matemática, tecnologia e meio ambiente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A formação é destinada a quem concluiu o ensino fundamental e deseja cursar o ensino médio junto com uma habilitação técnica. É uma opção para estudantes interessados em mapas, medições, tecnologia, desenho, geografia e projetos que dependem de informações sobre o terreno."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O curso reúne a formação geral do ensino médio e conhecimentos técnicos voltados ao levantamento e à representação de áreas urbanas e rurais. Entre os temas da Agrimensura estão topografia, cartografia, geoprocessamento, georreferenciamento, desenho técnico e interpretação de informações espaciais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Topografia",
+              "Medição de distâncias, ângulos, desníveis e características de terrenos."
+            ],
+            [
+              "Cartografia e desenho técnico",
+              "Leitura e elaboração de mapas, plantas, escalas e representações de áreas."
+            ],
+            [
+              "Georreferenciamento",
+              "Localização de pontos e áreas a partir de referências e coordenadas."
+            ],
+            [
+              "Geoprocessamento",
+              "Organização, análise e representação de dados espaciais com ferramentas digitais."
+            ],
+            [
+              "Levantamentos para obras",
+              "Coleta e interpretação de medidas que apoiam projetos de infraestrutura e construção."
+            ],
+            [
+              "Território e meio ambiente",
+              "Interpretação do relevo, ocupação do solo e informações para planejamento territorial."
+            ],
+            [
+              "Formação geral",
+              "Articulação de matemática, ciências da natureza, linguagens e ciências humanas à formação técnica."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "Na Agrimensura, medições em campo e análise de dados se complementam. O estudo técnico envolve compreender instrumentos de levantamento, registrar medidas e transformar informações coletadas em plantas, mapas e representações digitais. A organização das práticas e os equipamentos utilizados seguem as atividades previstas no curso."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Práticas de levantamento e representação do terreno · São João Evangelista",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Agrimensura",
+          "conteudo": "O **Técnico em Agrimensura Integrado ao Ensino Médio** é oferecido no **Campus São João Evangelista**, na modalidade presencial, com aulas de manhã e à tarde. A oferta integrada começou em 2025."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "São João Evangelista",
+              "Presencial",
+              "Manhã e tarde",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus São João Evangelista",
+              "resposta": "Desde **2025**, o campus oferece a formação técnica em Agrimensura integrada ao ensino médio. O percurso combina estudos gerais e conhecimentos de medição de terrenos, representação cartográfica e análise de informações espaciais. A oferta ocorre presencialmente, nos períodos da manhã e da tarde."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Agrimensura"
+          ],
+          "linhas": [
+            [
+              "Engenharia Florestal",
+              "São João Evangelista",
+              "Levantamento e interpretação de informações sobre território, recursos naturais e manejo de áreas."
+            ],
+            [
+              "Agronomia",
+              "Bambuí e São João Evangelista",
+              "Uso de informações sobre solos, relevo, áreas rurais e planejamento da produção."
+            ],
+            [
+              "Engenharia Civil",
+              "Governador Valadares, Piumhi e Santa Luzia",
+              "Topografia, planejamento territorial e apoio a projetos e obras."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Agrimensura"
+          ],
+          "linhas": [
+            [
+              "Especialização em Agrimensura",
+              "São João Evangelista (EaD com encontros presenciais)",
+              "Aprofundamento em conhecimentos e aplicações da Agrimensura."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre o técnico integrado e o antigo subsequente em Agrimensura?",
+              "resposta": "O **integrado** reúne ensino médio e formação técnica em um só percurso, destinado a quem concluiu o ensino fundamental. O **subsequente** era voltado a quem já tinha concluído o ensino médio. Em São João Evangelista, a oferta integrada começou em 2025, substituindo a oferta subsequente no planejamento do campus."
+            },
+            {
+              "pergunta": "Agrimensura se aplica apenas a propriedades rurais?",
+              "resposta": "Não. O conhecimento técnico da área é usado para medir, mapear e representar terrenos **urbanos e rurais**, apoiando obras, infraestrutura, planejamento territorial e atividades relacionadas ao meio ambiente."
+            },
+            {
+              "pergunta": "Qual é a relação entre Agrimensura e Engenharia Civil?",
+              "resposta": "A Agrimensura produz levantamentos, medidas e representações de terrenos que apoiam projetos e obras. A Engenharia Civil é uma graduação com atribuições profissionais próprias, incluindo planejamento, projeto e execução de estruturas e infraestrutura. As duas áreas podem trabalhar juntas, com responsabilidades diferentes."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Agrimensura Integrado ao Ensino Médio**, é necessário ter concluído o ensino fundamental até a matrícula. O IFMG realiza processo seletivo público para os cursos técnicos integrados.\n\nConsulte o edital vigente para conhecer as regras de inscrição, seleção, reserva de vagas, documentos e matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Agrimensura pode atuar em **levantamentos topográficos e geodésicos**, medindo e representando terrenos, identificando pontos de referência e elaborando plantas e mapas. Também pode organizar informações espaciais, apoiar o georreferenciamento de áreas e utilizar ferramentas de cartografia e geoprocessamento.\n\nEssas atividades atendem a projetos de construção civil, infraestrutura, serviços de mapeamento, planejamento territorial, atividades rurais e ambientais. O exercício profissional deve observar as atribuições legais da habilitação, as exigências de segurança e os procedimentos técnicos aplicáveis."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-agroindustria-integrado",
       "nome": "Técnico em Agroindústria",
       "nivel": "Técnico",

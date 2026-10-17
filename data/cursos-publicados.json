@@ -1184,6 +1184,316 @@
       ]
     },
     {
+      "id": "ciencia-da-computacao-bacharelado",
+      "nome": "Ciência da Computação",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Formiga",
+        "Ibirité"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Ciência da Computação"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Bacharelado"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Computação e Tecnologia da Informação"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Formiga; Ibirité"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ibirité: 38,3% EaD na oferta de 2027)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Formiga: manhã e tarde; Ibirité: noite"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "4 anos (8 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Formiga: Informação incompleta para ingressantes em 2027; Ibirité: 3.205 horas"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Formiga: PPC publicado para turmas 2023–2025, atualização 2027 a confirmar; Ibirité: PPC de novembro de 2024"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Consulte a tabela por campus"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Ciência da Computação",
+          "conteudo": "Entenda como os computadores funcionam e aprenda a **criar soluções computacionais para problemas complexos**. No bacharelado em Ciência da Computação do IFMG, você estuda algoritmos, programação, matemática, dados, redes e inteligência artificial, combinando fundamentos teóricos, experimentação e desenvolvimento de projetos."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Explore a computação para além do código: investigue problemas, desenvolva algoritmos, crie sistemas e descubra aplicações de inteligência artificial, redes e ciência de dados."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Esta graduação é voltada a quem concluiu o ensino médio e tem interesse em resolver problemas com tecnologia, matemática e raciocínio lógico. Ao longo do curso, você aprende a investigar alternativas, construir programas e avaliar como as soluções computacionais afetam as pessoas e a sociedade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne fundamentos de programação, matemática e computação com estudo de estruturas de dados, desenvolvimento de software, sistemas operacionais, redes, bancos de dados, inteligência artificial e métodos para analisar problemas. As disciplinas, os laboratórios e as práticas de extensão variam conforme a matriz curricular de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Algoritmos e programação",
+              "Representar problemas, criar algoritmos e desenvolver programas."
+            ],
+            [
+              "Matemática para computação",
+              "Aplicar lógica, matemática discreta, cálculo, probabilidade e estatística."
+            ],
+            [
+              "Estruturas de dados",
+              "Organizar informações para construir soluções eficientes."
+            ],
+            [
+              "Arquitetura de computadores",
+              "Compreender componentes de hardware e o funcionamento de sistemas computacionais."
+            ],
+            [
+              "Bancos de dados e redes",
+              "Modelar dados e conhecer sistemas de comunicação entre computadores."
+            ],
+            [
+              "Engenharia de software",
+              "Planejar, implementar, testar e evoluir aplicações."
+            ],
+            [
+              "Inteligência artificial e ciência de dados",
+              "Investigar formas de aprender com dados, reconhecer padrões e apoiar decisões."
+            ],
+            [
+              "Pesquisa e extensão",
+              "Formular problemas, desenvolver projetos e dialogar com demandas da comunidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "Você desenvolve programas, experimenta tecnologias em laboratórios e participa de projetos que envolvem análise, testes e avaliação de soluções. Em Formiga, a formação está associada a trabalhos de conclusão de curso e a projetos de pesquisa e extensão. Em Ibirité, o PPC prevê disciplinas extensionistas, atividades de pesquisa e **Trabalho de Conclusão de Curso obrigatório**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projetos de programação e atividades em laboratórios de computação · Formiga e Ibirité",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Ciência da Computação",
+          "conteudo": "O Bacharelado em **Ciência da Computação** é oferecido nos campi **Formiga e Ibirité**. Os cursos são presenciais e têm duração de **quatro anos**. Em **Formiga**, as aulas são de manhã e à tarde. Em **Ibirité**, são à noite; a oferta de 2027 prevê **38,3% de atividades a distância**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Formiga",
+              "Presencial",
+              "Manhã e tarde · 4 anos",
+              "coord.ccomp.formiga@ifmg.edu.br"
+            ],
+            [
+              "Ibirité",
+              "Presencial (38,3% EaD na oferta de 2027)",
+              "Noite · 4 anos",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Formiga",
+              "resposta": "O Bacharelado em Ciência da Computação funciona em **período integral**, com aulas de manhã e à tarde e duração de **quatro anos**. Os estudos incluem programação, fundamentos de computação, matemática, projetos e atividades de pesquisa e extensão. O curso possui laboratórios de ensino e divulga apresentações públicas de trabalhos de conclusão de curso. Contato coletivo: **coord.ccomp.formiga@ifmg.edu.br**. A carga horária da matriz aplicável aos ingressantes de 2027 ainda precisa ser confirmada."
+            },
+            {
+              "pergunta": "Campus Ibirité",
+              "resposta": "O bacharelado funciona **à noite** e tem duração de **quatro anos**. O PPC de novembro de 2024 registra **3.205 horas**, estágio supervisionado **não obrigatório** e TCC **obrigatório, com 60 horas**. A oferta de ingresso de **2027 prevê 38,3% de atividades a distância**, sem transformar o curso em EaD integral. O e-mail coletivo da coordenação ainda precisa ser confirmado."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A formação oferece contato com problemas que podem ser estudados por meio de pesquisa, experimentação, desenvolvimento de sistemas e projetos de extensão. Em Formiga, o curso divulga publicamente trabalhos de conclusão e também oportunidades de pesquisa em áreas como inteligência artificial. Em Ibirité, o PPC prevê atividades extensionistas e o desenvolvimento de projetos ligados à computação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Ciência da Computação"
+          ],
+          "linhas": [
+            [
+              "Análise e Desenvolvimento de Sistemas",
+              "Ouro Preto e Ribeirão das Neves",
+              "Desenvolvimento de aplicações, bancos de dados, interfaces e engenharia de software."
+            ],
+            [
+              "Sistemas de Informação",
+              "Ouro Branco, Sabará e São João Evangelista",
+              "Computação aplicada à informação, às organizações e aos processos de negócio."
+            ],
+            [
+              "Inteligência Artificial",
+              "Bambuí",
+              "Estudo de modelos, algoritmos e aplicações de sistemas inteligentes."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Ciência da Computação"
+          ],
+          "linhas": [
+            [
+              "Especialização em Inteligência Artificial",
+              "Ouro Preto",
+              "Modelos inteligentes e aplicações de técnicas computacionais."
+            ],
+            [
+              "Especialização em Análise Estratégica de Dados",
+              "Formiga (EaD)",
+              "Análise de dados, métodos computacionais e apoio à tomada de decisões."
+            ],
+            [
+              "Especialização em Inteligência Artificial Aplicada à Estratégia e Inovação Empresarial",
+              "Formiga (EaD)",
+              "Aplicação de inteligência artificial em processos, projetos e inovação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **abril de 2025**, o curso de **Ciência da Computação do Campus Formiga** divulgou a apresentação pública de um Trabalho de Conclusão de Curso sobre um **protótipo de aplicação web para extração de dados não estruturados**, desenvolvido por um estudante da graduação. O trabalho investigou formas de transformar informações não estruturadas em dados úteis para automação e análise."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "TCC sobre extração de dados não estruturados em aplicação web · Ciência da Computação · Formiga · abril de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **julho de 2026**, a agenda de apresentações de TCC do bacharelado em **Ciência da Computação de Formiga** incluiu um **protótipo de sistema web para gestão de projetos de pesquisa em um Polo de Inovação do IFMG**. O trabalho abordou a organização de propostas, equipes, orçamentos e registros de horas em uma aplicação, para substituir procedimentos dispersos em planilhas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "TCC sobre sistema web de gestão de projetos de pesquisa · Ciência da Computação · Formiga · julho de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre Ciência da Computação e Análise e Desenvolvimento de Sistemas?",
+              "resposta": "**Ciência da Computação é um bacharelado** que reúne programação, matemática, teoria da computação e diferentes áreas de pesquisa e aplicação. **Análise e Desenvolvimento de Sistemas** é uma graduação tecnológica com foco na criação, implantação e manutenção de sistemas. Ambas permitem trabalhar com software, mas têm currículos e percursos distintos."
+            },
+            {
+              "pergunta": "Preciso saber programar antes de começar?",
+              "resposta": "Não. A graduação desenvolve fundamentos de algoritmos e programação ao longo do curso. O interesse em matemática, o raciocínio lógico e a disposição para praticar ajudam nos estudos."
+            },
+            {
+              "pergunta": "O curso de Ibirité é totalmente a distância?",
+              "resposta": "Não. A graduação é **presencial, oferecida à noite**. Para o processo seletivo de 2027, a oferta prevê **38,3% de atividades a distância**, combinadas com as atividades presenciais."
+            },
+            {
+              "pergunta": "O bacharelado tem TCC e estágio obrigatório?",
+              "resposta": "Em **Ibirité**, o PPC de 2024 prevê **TCC obrigatório** e **estágio não obrigatório**. Em **Formiga**, a existência de TCCs e apresentações públicas é documentada, mas os requisitos curriculares detalhados dos ingressantes em 2027 precisam ser confirmados na matriz aplicável ao curso."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no Bacharelado em **Ciência da Computação**, é necessário ter concluído o ensino médio até a matrícula. O IFMG realiza processos seletivos para os cursos superiores, com formas de seleção definidas em cada edição.\n\nConsulte o processo seletivo vigente para conhecer os critérios de classificação e as regras de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O bacharel em Ciência da Computação pode **desenvolver software, projetar e analisar sistemas computacionais, trabalhar com dados, inteligência artificial, redes e segurança da informação**, além de pesquisar novas tecnologias e métodos para resolver problemas. As atividades podem envolver programação, arquitetura de sistemas, avaliação de desempenho, modelagem e integração de soluções.\n\nEsses conhecimentos são aplicados em empresas de tecnologia, indústrias, serviços financeiros, instituições públicas, centros de pesquisa, organizações sociais e equipes de desenvolvimento de produtos e serviços digitais."
+        }
+      ]
+    },
+    {
       "id": "direito-bacharelado-arcos",
       "nome": "Direito",
       "nivel": "Graduação",

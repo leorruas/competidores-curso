@@ -6035,6 +6035,302 @@
       ]
     },
     {
+      "id": "gestao-ambiental-tecnologo",
+      "nome": "Gestão Ambiental",
+      "nivel": "Graduação",
+      "tipo": "Tecnólogo",
+      "campi": [
+        "Governador Valadares"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Gestão Ambiental"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Tecnólogo"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Gestão ambiental e sustentabilidade"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Governador Valadares"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "1.700 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "coordenacao.tga.gv@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Gestão Ambiental",
+          "conteudo": "Aprenda a **avaliar impactos ambientais, acompanhar a qualidade da água, do solo e do ar e propor soluções para o uso responsável dos recursos naturais**. O curso superior de Tecnologia em Gestão Ambiental reúne ciência, ferramentas de análise e gestão para atuar com problemas ambientais em organizações e territórios."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Trabalhe com impactos e soluções ambientais: o curso combina geoprocessamento, análises de água e solo, visitas técnicas e projetos de extensão em uma formação superior de dois anos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A graduação é indicada para quem concluiu o ensino médio e tem interesse por **meio ambiente, ciências naturais, dados, gestão e trabalho de campo**. É uma opção para quem deseja investigar problemas ambientais e participar da construção de medidas de prevenção, monitoramento e recuperação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação inclui **ecologia, geografia física, química ambiental, climatologia, estatística, legislação ambiental, geoprocessamento, avaliação de impactos, hidrologia, saneamento, gestão de resíduos, recuperação de áreas degradadas, economia ambiental e gestão de unidades de conservação**. Há também projetos de extensão, atividades complementares e estágio supervisionado."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Ecologia e qualidade ambiental",
+              "Compreender ecossistemas e analisar alterações na água, no solo, no ar e na biodiversidade."
+            ],
+            [
+              "Geoprocessamento e cartografia",
+              "Organizar dados espaciais, interpretar mapas e imagens e apoiar o diagnóstico ambiental."
+            ],
+            [
+              "Impactos e legislação ambiental",
+              "Avaliar impactos de atividades humanas, conhecer instrumentos de gestão e aplicar critérios legais."
+            ],
+            [
+              "Recursos hídricos e saneamento",
+              "Investigar usos da água, sistemas de tratamento, drenagem, efluentes e riscos de poluição."
+            ],
+            [
+              "Gestão de resíduos e recuperação",
+              "Planejar práticas de manejo, prevenção de danos, controle de resíduos e recuperação ambiental."
+            ],
+            [
+              "Planejamento e economia ambiental",
+              "Relacionar projetos e decisões de gestão aos efeitos sociais, econômicos e ambientais."
+            ],
+            [
+              "Extensão e estágio",
+              "Desenvolver projetos com a comunidade e aplicar conhecimentos em experiências de trabalho supervisionado."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática no Campus Governador Valadares",
+          "conteudo": "A formação utiliza estruturas do campus, como **laboratórios de Geociências e Hidráulica, Química e Saneamento, Ciências Biológicas e informática**, para articular conceitos e procedimentos de análise ambiental. O curso também prevê **atividades de campo, visitas técnicas, 170 horas de extensão curricular e 100 horas de estágio obrigatório**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios e atividades práticas relacionadas à Gestão Ambiental · Campus Governador Valadares",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Gestão Ambiental",
+          "conteudo": "O curso superior de **Tecnologia em Gestão Ambiental** é oferecido no **Campus Governador Valadares**, em formato presencial e no período da noite. A formação tem duração mínima de quatro semestres, combinando disciplinas, projetos de extensão, atividades complementares e estágio."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Governador Valadares",
+              "Presencial",
+              "Noite",
+              "4 semestres",
+              "1.700 horas",
+              "coordenacao.tga.gv@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Governador Valadares",
+              "resposta": "O curso é **presencial e noturno**, com duração mínima de **quatro semestres** e **1.700 horas**. O **estágio supervisionado obrigatório** tem **100 horas** e pode começar no **terceiro período**, após aprovação nos componentes dos dois primeiros períodos. A matriz inclui ainda **170 horas de extensão** e **175 horas de atividades complementares de graduação**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Você pode se envolver com **atividades de pesquisa aplicada, análise da qualidade ambiental, planejamento de ações de sustentabilidade, educação ambiental e projetos de extensão**. Na matriz curricular, os projetos extensionistas aproximam o estudante de questões ambientais da comunidade. O campus também conta com iniciativas e laboratórios voltados a clima, geociências e saneamento, conforme as atividades e oportunidades de cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Gestão Ambiental"
+          ],
+          "linhas": [
+            [
+              "Engenharia Ambiental e Sanitária (Bacharelado)",
+              "Governador Valadares",
+              "Aprofundamento em saneamento, recursos hídricos e soluções de engenharia para problemas ambientais."
+            ],
+            [
+              "Engenharia Florestal (Bacharelado)",
+              "São João Evangelista",
+              "Gestão de recursos florestais, conservação e recuperação de áreas."
+            ],
+            [
+              "Ciências Biológicas (Licenciatura)",
+              "Bambuí e São João Evangelista",
+              "Ecologia e educação ambiental, com foco em formação docente."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Gestão Ambiental"
+          ],
+          "linhas": [
+            [
+              "Especialização em Meio Ambiente",
+              "São João Evangelista (EaD)",
+              "Licenciamento, avaliação de impactos, educação ambiental, saneamento e geoprocessamento."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa aplicada em sustentabilidade e desenvolvimento de tecnologias ambientais."
+            ],
+            [
+              "Especialização em Gestão Pública e Desenvolvimento Regional",
+              "Ribeirão das Neves",
+              "Gestão de políticas públicas e questões do desenvolvimento territorial e regional."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **29 de janeiro de 2025**, estudantes do **4º período de Tecnologia em Gestão Ambiental** visitaram a unidade da **Cenibra**, em Belo Oriente, junto a estudantes de Engenharia Ambiental e Sanitária. Na atividade da disciplina **Saneamento Básico I**, conheceram o processo industrial, a gestão de resíduos e o funcionamento de uma estação de tratamento de efluentes. A visita aproximou conteúdos do curso das práticas de controle ambiental na indústria."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita dos estudantes de Gestão Ambiental à Cenibra, em Belo Oriente · janeiro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Egresso apresenta soluções de saneamento rural",
+          "conteudo": "Em **5 de junho de 2025**, durante a **Semana do Meio Ambiente** do Campus Governador Valadares, **Guilherme Freitas**, egresso de Gestão Ambiental, apresentou desafios do saneamento na zona rural e experiências do **Centro de Informação e Assessoria Técnica (CIAAT)**. Entre as iniciativas discutidas estiveram **biodigestores desenvolvidos com comunidades do Vale do Rio Doce**, uma aplicação de tecnologia social para o tratamento de resíduos e a preservação ambiental."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Semana do Meio Ambiente do Campus GV · apresentação sobre saneamento rural por egresso de Gestão Ambiental · junho de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre Tecnologia em Gestão Ambiental e Engenharia Ambiental e Sanitária?",
+              "resposta": "**Gestão Ambiental é uma graduação tecnológica** com duração mínima de dois anos, voltada ao diagnóstico, monitoramento e planejamento da gestão ambiental. **Engenharia Ambiental e Sanitária é um bacharelado em engenharia**, com formação, duração e atribuições profissionais próprias. Ambos tratam de temas ambientais, mas são cursos distintos."
+            },
+            {
+              "pergunta": "O curso inclui atividades fora da sala de aula?",
+              "resposta": "Sim. A formação integra **atividades de campo, visitas técnicas, práticas em laboratório, projetos de extensão e estágio supervisionado**. Essas experiências permitem aplicar conhecimentos de geoprocessamento, saneamento, impactos ambientais e gestão de recursos naturais."
+            },
+            {
+              "pergunta": "O estágio é obrigatório? Quando posso começar?",
+              "resposta": "O **estágio obrigatório tem 100 horas** e pode começar no **terceiro período**, depois da aprovação nos componentes dos dois primeiros períodos. O estudante realiza atividades relacionadas à sua formação, com supervisão docente e relatório final. Também pode realizar estágio não obrigatório desde o primeiro período, conforme as condições do curso."
+            },
+            {
+              "pergunta": "Como a extensão faz parte da graduação?",
+              "resposta": "A matriz contempla **170 horas de atividades de extensão**, incluindo projetos realizados com participação dos estudantes. Essas ações permitem estudar problemas ambientais em diálogo com comunidades e outros grupos fora do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar em **Gestão Ambiental**, é necessário ter concluído o ensino médio até a matrícula. Você pode consultar as formas de seleção para graduação, como Enem, Histórico Escolar e Redação ou Sisu, além das regras de reserva de vagas, no processo seletivo vigente do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O tecnólogo em Gestão Ambiental pode atuar na **identificação e avaliação de impactos ambientais**, no acompanhamento da qualidade da água, do solo e do ar, na **gestão de resíduos**, no controle de riscos ambientais e no planejamento de medidas de prevenção e recuperação de áreas degradadas. Pode colaborar na organização de indicadores, mapas, relatórios, programas de educação ambiental e sistemas de gestão ambiental.\n\nEssas atividades podem ocorrer em **indústrias, órgãos públicos, organizações da sociedade civil e prestadoras de serviços ambientais**. A assinatura de laudos, pareceres e outras responsabilidades técnicas depende das atribuições legais e dos requisitos profissionais aplicáveis."
+        }
+      ]
+    },
+    {
       "id": "medicina-veterinaria-bacharelado",
       "nome": "Medicina Veterinária",
       "nivel": "Graduação",

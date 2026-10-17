@@ -7901,6 +7901,330 @@
           "conteudo": "O técnico em Informática pode atuar na **programação, instalação, configuração, operação, teste e suporte de sistemas digitais**. Entre suas atividades estão desenvolver e manter aplicações, consultar bancos de dados, diagnosticar falhas, instalar softwares, acompanhar redes e orientar usuários.\n\nA formação permite trabalhar em equipes de tecnologia, empresas de serviços, organizações públicas e privadas ou no suporte a sistemas em diferentes setores. As atividades seguem as atribuições da função e os requisitos técnicos e de segurança da informação."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-eletroeletronica-integrado",
+      "nome": "Técnico em Eletroeletrônica",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Ribeirão das Neves"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Eletroeletrônica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ribeirão das Neves"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC da turma 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Eletroeletrônica",
+          "conteudo": "Estude o ensino médio junto com uma formação técnica que reúne **eletricidade e eletrônica**. No IFMG, você aprende sobre circuitos, instalações elétricas, sensores, dispositivos eletrônicos, comandos e sistemas de automação, relacionando os conhecimentos técnicos à formação geral."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda a compreender circuitos, montar e testar equipamentos, estudar instalações elétricas e automação enquanto conclui o ensino médio no Campus Ribeirão das Neves."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a estudantes que concluíram o ensino fundamental e desejam cursar o ensino médio junto com a formação técnica. É uma opção para quem se interessa por matemática, física, tecnologias elétricas e eletrônicas, manutenção, sistemas de energia e desenvolvimento de soluções práticas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação integra as disciplinas do ensino médio ao estudo de instalações elétricas, circuitos eletrônicos, sistemas de controle, automação e segurança. As disciplinas e experiências práticas seguem o projeto pedagógico do campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Eletricidade e circuitos",
+              "Conhecer grandezas elétricas, componentes, ligações e análise de circuitos."
+            ],
+            [
+              "Instalações elétricas",
+              "Estudar condutores, dispositivos de proteção, montagem, inspeção e procedimentos de segurança."
+            ],
+            [
+              "Eletrônica",
+              "Compreender componentes e circuitos eletrônicos, sua aplicação e procedimentos de teste."
+            ],
+            [
+              "Comandos e automação",
+              "Relacionar sensores, atuadores, máquinas e programação ao controle de equipamentos."
+            ],
+            [
+              "Energia e sustentabilidade",
+              "Conhecer aplicações de energia solar e outras fontes alternativas e cuidados ambientais."
+            ],
+            [
+              "Medição e manutenção",
+              "Utilizar instrumentos de medição, interpretar esquemas e reconhecer falhas."
+            ],
+            [
+              "Formação geral",
+              "Articular matemática, ciências, linguagens e ciências humanas aos estudos da área."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "As atividades técnicas relacionam interpretação de diagramas, medições, montagem, programação e testes de circuitos. O campus apresenta o uso de laboratórios em atividades sobre instalações elétricas, manutenção, automação e aplicações de energia solar, de acordo com o planejamento curricular."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios e atividades práticas de Eletroeletrônica · Ribeirão das Neves",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Eletroeletrônica",
+          "conteudo": "O **Técnico em Eletroeletrônica Integrado ao Ensino Médio** é oferecido no **Campus Ribeirão das Neves**, na modalidade presencial, com aulas de manhã e à tarde. A duração de referência é de três anos. A matriz de ofertas de 2027 não indica percentual de carga horária a distância."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ribeirão das Neves",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ribeirão das Neves",
+              "resposta": "A formação reúne estudos de instalações elétricas, eletrônica, programação de sistemas de automação, manutenção e aplicações de energia solar. O campus disponibiliza PPCs históricos de 2017 e 2020; a versão aplicável aos ingressantes de 2027 depende de confirmação acadêmica."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os **Projetos Integradores** do curso permitem desenvolver soluções que relacionam eletrônica, matemática, programação, acessibilidade e necessidades da comunidade. Em 2026, estudantes e ex-alunos apresentaram resultados desses projetos no Congresso Brasileiro de Educação em Engenharia, em Belo Horizonte."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": "Depois de concluir o ensino médio integrado, você pode concorrer a cursos superiores do IFMG relacionados à eletricidade, equipamentos e sistemas de automação."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Eletroeletrônica"
+          ],
+          "linhas": [
+            [
+              "Engenharia Elétrica",
+              "Formiga, Ipatinga e Itabirito",
+              "Circuitos, máquinas, instalações, potência e energia elétrica."
+            ],
+            [
+              "Engenharia de Controle e Automação",
+              "Betim, Ibirité e Sabará",
+              "Controle, sensores, instrumentação e integração de sistemas."
+            ],
+            [
+              "Engenharia Mecânica",
+              "Arcos e Betim",
+              "Máquinas, manutenção e integração de equipamentos eletromecânicos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": "Após concluir uma graduação compatível, você pode buscar programas de pós-graduação do IFMG relacionados a sistemas de energia e tecnologias aplicadas."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Eletroeletrônica"
+          ],
+          "linhas": [
+            [
+              "Especialização em Sistemas de Energia Renovável: Geração, Distribuição e Eficiência Energética",
+              "Formiga (EaD)",
+              "Geração e distribuição de energia, fontes renováveis e eficiência energética."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "No **Concurso Canguru de Matemática de 2025**, **Isaque Gonçalves Fidêncio**, estudante do **terceiro ano de Eletroeletrônica do Campus Ribeirão das Neves**, conquistou **medalha de prata**. O resultado foi publicado pelo campus em junho de 2025."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Canguru de Matemática · medalha de prata Isaque Gonçalves Fidêncio · Neves · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **maio de 2026**, três estudantes do **terceiro ano de Eletroeletrônica do Campus Ribeirão das Neves** avançaram às **semifinais da Technovation Girls 2026**. A equipe **eXpertGirls**, formada por **Ana Clara Pereira de Lima Correia, Ludmilla Santos Brandão e Stéfani Emanuele Alvarenga de Andrade**, desenvolveu o aplicativo **Yvy**, voltado ao registro de problemas ambientais e à mobilização comunitária para ações de cuidado com o território."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Technovation Girls · eXpertGirls e aplicativo Yvy · Eletroeletrônica Neves · 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Entre **14 e 17 de setembro de 2026**, estudantes do **Técnico em Eletroeletrônica do Campus Ribeirão das Neves** apresentaram, no **COBENGE 2026**, o projeto integrador **Jogo eletrônico de tabuleiro para nivelamento em Matemática de alunos ingressantes no Ensino Médio**. A proposta utiliza um jogo eletrônico para apoiar os estudos de matemática de estudantes ingressantes."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "COBENGE 2026 · jogo eletrônico para nivelamento em Matemática · Eletroeletrônica Neves",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "No mesmo **COBENGE 2026**, **ex-alunos do Técnico em Eletroeletrônica do Campus Ribeirão das Neves** apresentaram o projeto integrador **Acessibilidade nos games: construção de um controle de videogame para pessoas com deficiências físico-motoras**. O trabalho desenvolveu um controle adaptado que reúne recursos tecnológicos e inclusão."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "COBENGE 2026 · controle de videogame acessível · ex-alunos Eletroeletrônica Neves",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Este curso é o mesmo que o Técnico em Eletrotécnica?",
+              "resposta": "São habilitações com denominações e projetos pedagógicos próprios. Em Ribeirão das Neves, **Eletroeletrônica** reúne instalações elétricas, circuitos eletrônicos e automação. O IFMG oferece **Eletrotécnica** em outros campi, com organização curricular específica."
+            },
+            {
+              "pergunta": "Preciso já saber programação ou eletrônica para ingressar?",
+              "resposta": "O curso é voltado a quem concluiu o ensino fundamental. Os conhecimentos técnicos são desenvolvidos ao longo da formação, conforme as disciplinas e práticas do currículo."
+            },
+            {
+              "pergunta": "Qual é a diferença para a oferta do Trilhas de Futuro?",
+              "resposta": "O **integrado** reúne ensino médio e formação técnica no mesmo percurso presencial diurno. O campus também participa do programa **Trilhas de Futuro**, que possui regras, público e organização próprios. As informações deste guia se referem ao integrado do IFMG."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras modalidades relacionadas",
+          "conteudo": "No Campus Ribeirão das Neves há também oferta de **Eletroeletrônica pelo programa Trilhas de Futuro**, voltada a público e condições de formação próprios. Consulte a modalidade para a qual pretende se candidatar."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Concluiu o ensino fundamental e vai cursar o ensino médio",
+              "Técnico em Eletroeletrônica Integrado",
+              "Ensino médio e técnico juntos, aulas diurnas e proposta curricular do IFMG."
+            ],
+            [
+              "Está no ensino médio ou já o concluiu e considera um programa estadual",
+              "Oferta de Eletroeletrônica pelo Trilhas de Futuro",
+              "Público atendido, inscrições, turno e organização do programa."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Eletroeletrônica Integrado ao Ensino Médio**, é necessário ter concluído o ensino fundamental até a matrícula. O ingresso é realizado pelo processo seletivo público do IFMG para os cursos técnicos integrados.\n\nConsulte o edital vigente para acompanhar vagas, procedimentos, critérios, reserva de vagas e documentação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Eletroeletrônica pode atuar em atividades de **montagem, instalação, inspeção, testes e manutenção de sistemas elétricos e eletrônicos**. Entre as tarefas estão ler diagramas, acompanhar instalações, fazer medições e apoiar a identificação de falhas em circuitos, equipamentos, comandos e sistemas de automação.\n\nO campo de atuação inclui indústrias, manutenção de máquinas e equipamentos, instalações elétricas, automação e serviços técnicos especializados. A realização dessas atividades deve observar as atribuições profissionais aplicáveis à habilitação, o registro quando exigido, a supervisão necessária e as normas de segurança, especialmente em serviços com eletricidade."
+        }
+      ]
     }
   ]
 }

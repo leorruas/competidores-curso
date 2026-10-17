@@ -6628,6 +6628,307 @@
       ]
     },
     {
+      "id": "inteligencia-artificial-bacharelado",
+      "nome": "Inteligência Artificial",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Inteligência Artificial"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Bacharelado"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Computação e sistemas inteligentes"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com componentes EaD"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde (integral)"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "4 anos (8 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.200 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "ia.bambui@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Inteligência Artificial",
+          "conteudo": "Aprenda a **criar e avaliar sistemas capazes de reconhecer padrões, trabalhar com dados e apoiar decisões**. O Bacharelado em Inteligência Artificial reúne computação, matemática e estatística para desenvolver soluções em linguagem, imagens, previsão, otimização e outras aplicações."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Da análise de dados à criação de modelos inteligentes: desenvolva aplicações, experimente algoritmos e trabalhe com problemas apresentados por organizações e comunidades."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O bacharelado é indicado a quem concluiu o ensino médio e tem interesse por **matemática, programação, dados e resolução de problemas**. Ao longo da graduação, você aprende a formular problemas, avaliar evidências e estudar como sistemas inteligentes podem ser usados de maneira responsável."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação inclui **programação, algoritmos, bancos de dados, redes, engenharia de software, matemática, estatística, ciência de dados e aprendizado de máquina**. Você também estuda **processamento de linguagem natural, visão computacional, robótica e otimização**, com atividades de desenvolvimento de aplicações e pesquisa."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Programação e algoritmos",
+              "Representar problemas, escrever programas e avaliar alternativas de solução."
+            ],
+            [
+              "Matemática e estatística",
+              "Utilizar ferramentas matemáticas para interpretar dados e construir modelos."
+            ],
+            [
+              "Aprendizado de máquina",
+              "Treinar e testar modelos que identificam padrões e apoiam classificações e previsões."
+            ],
+            [
+              "Ciência de dados",
+              "Preparar, analisar e comunicar dados, examinando a qualidade das informações."
+            ],
+            [
+              "Linguagem natural e visão computacional",
+              "Desenvolver aplicações que analisam textos, imagens e outros tipos de informação."
+            ],
+            [
+              "Robótica e otimização",
+              "Estudar sistemas que percebem ambientes e métodos para melhorar decisões e processos."
+            ],
+            [
+              "Engenharia de software e infraestrutura",
+              "Construir, testar e manter aplicações, bancos de dados e sistemas em rede."
+            ],
+            [
+              "Pesquisa, projetos e responsabilidade",
+              "Planejar experimentos, avaliar resultados e considerar limites e impactos das tecnologias."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática no Campus Bambuí",
+          "conteudo": "A graduação contará com **laboratório próprio para as atividades do curso**, além dos laboratórios de informática e dos espaços de pesquisa e inovação do campus. Os estudantes poderão desenvolver **aplicações e projetos para empresas, produtores rurais, órgãos públicos e organizações sociais**, com atuação prevista na **Fábrica de Soluções Tecnológicas (FAST)**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios e atividades de computação e pesquisa · Bacharelado em Inteligência Artificial, Campus Bambuí · imagem de referência institucional",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Inteligência Artificial",
+          "conteudo": "O **Bacharelado em Inteligência Artificial** é oferecido no **Campus Bambuí**, em modalidade presencial com parte das atividades EaD. A duração mínima é de **oito semestres** e a oferta é em período integral, com aulas pela manhã e à tarde."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Manhã e tarde",
+              "Presencial, com componentes EaD",
+              "8 semestres",
+              "3.200 horas",
+              "ia.bambui@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "O curso tem **3.200 horas**, duração mínima de **oito semestres** e aulas presenciais em período integral, com atividades a distância. A formação prevê **laboratório exclusivo, uso dos demais laboratórios de informática, desenvolvimento de aplicações e projetos de pesquisa e inovação**. A **FAST** é um espaço para trabalhar em soluções relacionadas a demandas externas."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "O campus desenvolve projetos de **pesquisa em computação, aprendizado de máquina e sistemas inteligentes** por meio de grupos como o **GPSisCom** e de ambientes como a **Fábrica de Soluções Tecnológicas (FAST)**. A proposta da graduação prevê participação em pesquisa, desenvolvimento, inovação e atividades com organizações. Existem programas de monitoria, iniciação científica, extensão e assistência estudantil, com participação conforme cada edital."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa do campus com IA aplicada à saúde",
+          "conteudo": "Em **julho de 2026**, o IFMG divulgou um estudo sobre **modelos de aprendizado de máquina para analisar desfechos da tuberculose no Brasil**, publicado na revista científica **IEEE Latin America Transactions**. O trabalho foi desenvolvido por uma estudante do **Bacharelado em Engenharia de Computação** e pesquisadores do **GPSisCom**. A pesquisa é exemplo da atuação em IA no Campus Bambuí, anterior à implantação do novo bacharelado."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Artigo do GPSisCom e estudante de Engenharia de Computação sobre IA aplicada à tuberculose · Campus Bambuí · julho de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "FAST desenvolve tecnologia para a Prefeitura de Bambuí",
+          "conteudo": "Em **setembro de 2026**, a **Fábrica de Soluções Tecnológicas (FAST)** entregou à Prefeitura de Bambuí o sistema **Ilumina Fácil**, que permite registrar problemas na iluminação pública e acompanhar solicitações. O projeto foi desenvolvido por **estudantes de Engenharia de Computação** em atividades de extensão. A FAST integra o ambiente de projetos previsto para a graduação em Inteligência Artificial, mas essa experiência é anterior à primeira turma do novo curso."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "FAST e estudantes de Engenharia de Computação desenvolvem Ilumina Fácil para a Prefeitura de Bambuí · setembro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Inteligência Artificial"
+          ],
+          "linhas": [
+            [
+              "Ciência da Computação (Bacharelado)",
+              "Formiga e Ibirité",
+              "Algoritmos, matemática, engenharia de software e fundamentos de computação."
+            ],
+            [
+              "Análise e Desenvolvimento de Sistemas (Tecnólogo)",
+              "Ouro Preto e Ribeirão das Neves",
+              "Programação, bancos de dados e desenvolvimento de aplicações."
+            ],
+            [
+              "Sistemas de Informação (Bacharelado)",
+              "Ouro Branco, Sabará e São João Evangelista",
+              "Sistemas de informação, dados e tecnologias aplicadas a organizações."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Inteligência Artificial"
+          ],
+          "linhas": [
+            [
+              "Especialização em Inteligência Artificial",
+              "Ouro Preto",
+              "Aprofundamento em aplicações, técnicas e desenvolvimento de soluções de IA."
+            ],
+            [
+              "Especialização em Análise Estratégica de Dados",
+              "Formiga (EaD)",
+              "Métodos e ferramentas para interpretar dados e apoiar decisões."
+            ],
+            [
+              "Especialização em Inteligência Artificial Aplicada à Estratégia e Inovação Empresarial",
+              "Formiga (EaD)",
+              "Aplicação de IA e agentes inteligentes a problemas organizacionais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Informação incompleta"
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre Inteligência Artificial e Ciência da Computação?",
+              "resposta": "O **Bacharelado em Inteligência Artificial** concentra a formação na construção e avaliação de sistemas inteligentes, com estudo de aprendizado de máquina, ciência de dados, linguagem natural, visão computacional e robótica. **Ciência da Computação** tem uma formação mais ampla sobre fundamentos e diferentes áreas da computação. Ambos exigem programação e matemática."
+            },
+            {
+              "pergunta": "Como os projetos práticos entram na formação?",
+              "resposta": "O curso prevê **projetos de desenvolvimento e inovação**, inclusive na **FAST**, para trabalhar com demandas de empresas, produtores rurais, órgãos públicos e organizações sociais. As atividades podem envolver dados, software e outros recursos computacionais, conforme os projetos disponíveis."
+            },
+            {
+              "pergunta": "Há oportunidades de pesquisa e assistência estudantil?",
+              "resposta": "Sim. O IFMG oferece programas de **iniciação científica, extensão, monitoria e assistência estudantil**, além de oportunidades de moradia estudantil no Campus Bambuí. A participação depende dos critérios e das seleções de cada programa."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Inteligência Artificial**, é necessário ter concluído o ensino médio até a matrícula. Você pode concorrer por meio das formas de seleção para graduação, como o **Enem e o Sisu**, de acordo com as regras do processo seletivo vigente do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O bacharel em Inteligência Artificial pode trabalhar no **desenvolvimento e na avaliação de sistemas que utilizam dados e modelos computacionais**, em setores como tecnologia, saúde, indústria, serviços, agropecuária e administração pública. Entre as atividades estão **preparar bases de dados, programar modelos de aprendizado de máquina, comparar resultados, investigar erros e integrar modelos a aplicações**.\n\nNo cotidiano, pode colaborar com equipes de software, pesquisa e análise de dados para **criar sistemas de classificação, reconhecimento de padrões, previsão e apoio à decisão**, acompanhando o desempenho das soluções após sua implantação. Também precisa considerar a qualidade dos dados, os limites dos modelos e os possíveis efeitos das decisões automatizadas sobre pessoas e organizações."
+        }
+      ]
+    },
+    {
       "id": "medicina-veterinaria-bacharelado",
       "nome": "Medicina Veterinária",
       "nivel": "Graduação",

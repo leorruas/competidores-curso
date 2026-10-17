@@ -6929,6 +6929,317 @@
       ]
     },
     {
+      "id": "letras-licenciatura",
+      "nome": "Letras (Português/Inglês)",
+      "nivel": "Graduação",
+      "tipo": "Licenciatura",
+      "campi": [
+        "Congonhas"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Letras (Português/Inglês)"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Licenciatura"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Formação de professores de Língua Portuguesa e Língua Inglesa"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Congonhas"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "4 anos e meio (9 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.992 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "coordletras.congonhas@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Letras (Português/Inglês)",
+          "conteudo": "Forme-se para **ensinar Língua Portuguesa, Língua Inglesa e suas literaturas** na educação básica. A Licenciatura em Letras articula conhecimentos sobre linguagem, leitura, produção textual, literatura e educação com pesquisa, extensão e experiências de ensino nas escolas."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude Português e Inglês em uma mesma licenciatura, participe de experiências em escolas e explore o ensino de línguas, a literatura e diferentes práticas culturais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Para quem concluiu o ensino médio e tem interesse por **línguas, literatura, leitura, escrita, comunicação e educação**. Ao longo da formação, você aprofunda o conhecimento de Português e Inglês e aprende a planejar, desenvolver e avaliar atividades de aprendizagem."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne **língua portuguesa, língua inglesa, linguística, fonética e fonologia, gramática, análise do discurso, literaturas em português e em inglês**, além de história e psicologia da educação, didática, currículo, inclusão e Libras. Você desenvolve práticas de ensino, atividades de extensão e **estágios supervisionados de observação e regência**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Língua Portuguesa e linguística",
+              "Compreender a estrutura e os usos da língua, suas variedades, textos e discursos."
+            ],
+            [
+              "Língua Inglesa",
+              "Desenvolver habilidades linguísticas e refletir sobre métodos de aprendizagem e ensino de inglês."
+            ],
+            [
+              "Literaturas",
+              "Ler e analisar obras de diferentes períodos e contextos em língua portuguesa e inglesa."
+            ],
+            [
+              "Leitura, escrita e produção cultural",
+              "Criar práticas de leitura, produção textual e interpretação de diferentes linguagens."
+            ],
+            [
+              "Educação e didática",
+              "Planejar aulas, selecionar materiais, avaliar aprendizagens e trabalhar com diversidade e inclusão."
+            ],
+            [
+              "Pesquisa e análise linguística",
+              "Investigar usos da linguagem e produzir estudos, relatos e materiais pedagógicos."
+            ],
+            [
+              "Extensão e estágios",
+              "Desenvolver atividades com a comunidade e experiências docentes em escolas."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática no Campus Congonhas",
+          "conteudo": "A licenciatura combina produção de materiais didáticos, leitura e análise de textos, **aulas de língua inglesa, projetos culturais e experiências em escolas**. O campus dispõe de **laboratórios de informática com recursos de edição e análise linguística** e biblioteca com acervo físico e digital. A formação inclui **399 horas de extensão curricularizada**, **200 horas de atividades complementares** e **700 horas de estágio obrigatório** em Português e Inglês."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios, biblioteca, práticas de ensino e atividades culturais da Licenciatura em Letras · Campus Congonhas",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Letras",
+          "conteudo": "A **Licenciatura em Letras (Português/Inglês)** é oferecida no **Campus Congonhas**. O curso é presencial, com aulas à noite e duração mínima de nove semestres. O percurso inclui disciplinas nas duas línguas, formação pedagógica, extensão, estágios escolares e TCC."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Congonhas",
+              "Presencial",
+              "Noite",
+              "9 semestres",
+              "3.992 horas",
+              "coordletras.congonhas@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Congonhas",
+              "resposta": "O curso é presencial e noturno. A formação tem **3.992 horas** e duração mínima de **nove semestres**, com **399 horas de extensão curricularizada**, **200 horas de atividades complementares** e **700 horas de estágio obrigatório**: 400 em Língua Portuguesa e Literatura e 300 em Língua Inglesa. Os estágios incluem observação e regência. Parte das atividades em escolas pode ocorrer **de manhã ou à tarde**, mesmo com aulas regulares à noite. O curso também prevê TCC."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os estudantes podem participar de **projetos de pesquisa, extensão, monitoria, atividades literárias e programas de iniciação à docência**, conforme cada seleção. O **PIBID de Letras** promove contato com escolas públicas e experiências de leitura, produção textual e ensino de Português e Inglês. A formação também estimula pesquisa linguística, projetos culturais e produção de materiais didáticos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Letras"
+          ],
+          "linhas": [
+            [
+              "Pedagogia (Licenciatura)",
+              "Ouro Branco",
+              "Aprofundamento em aprendizagem, organização do trabalho pedagógico e educação básica."
+            ],
+            [
+              "Geografia (Licenciatura)",
+              "Ouro Preto",
+              "Formação docente e práticas interdisciplinares com linguagens, território e cultura."
+            ],
+            [
+              "Ciências Biológicas (Licenciatura)",
+              "Bambuí e São João Evangelista",
+              "Formação para ensino de ciências e diálogo interdisciplinar no ambiente escolar."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Letras"
+          ],
+          "linhas": [
+            [
+              "Especialização em Ensino de Língua Portuguesa e Literatura na Educação Básica",
+              "Sabará (EaD)",
+              "Ensino de leitura, produção de textos e literatura no contexto escolar."
+            ],
+            [
+              "Especialização em Ensino de Língua Portuguesa na Educação Básica",
+              "Ouro Preto",
+              "Práticas e pesquisa sobre ensino da língua portuguesa."
+            ],
+            [
+              "Especialização em Educação",
+              "Piumhi (EaD)",
+              "Estudo de práticas pedagógicas, currículo e formação educacional."
+            ],
+            [
+              "ProfEPT — Mestrado Profissional em Educação Profissional e Tecnológica",
+              "Ouro Branco",
+              "Pesquisa aplicada à educação profissional e ao ensino."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "A **Licenciatura em Letras do Campus Congonhas recebeu cinco estrelas no Guia da Faculdade 2025**, classificação máxima da avaliação realizada pelo Estadão e pela Quero Educação.\n\nEm **3 de maio de 2025**, estudantes de Letras visitaram a **Bienal Mineira do Livro**, em Belo Horizonte, onde acompanharam uma palestra de **Conceição Evaristo**. A atividade integrou as comemorações do Dia Internacional da Língua Portuguesa e aproximou os estudantes da produção literária contemporânea e dos debates sobre representatividade."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Estudantes de Letras de Congonhas na Bienal Mineira do Livro e palestra de Conceição Evaristo · 3 de maio de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Intercâmbio acadêmico com pesquisadores dos Estados Unidos",
+          "conteudo": "Entre **26 de maio e 2 de junho de 2026**, o curso recebeu pesquisadores da **State University of New York at Cortland (SUNY Cortland)**. Na **Academic Exchange Week**, estudantes de Letras participaram de entrevistas de pesquisa sobre aprendizagem da língua inglesa, de uma roda de conversa em inglês sobre bilinguismo e formação docente e de atividades de intercâmbio acadêmico."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Academic Exchange Week com estudantes de Letras e pesquisadores da SUNY Cortland · maio e junho de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "II Semana de Letras reúne pesquisas, sarau e formação docente",
+          "conteudo": "De **30 de setembro a 3 de outubro de 2026**, o Campus Congonhas realizou a **II Semana de Letras**, com o tema *Linguagens em Diálogo*. Estudantes apresentaram **pôsteres de pesquisas, projetos de extensão, atividades do PIBID e trabalhos de disciplinas**, participaram de debates e de um **sarau com música e poesia** e realizaram visitas ao **Centro Cultural Banco do Brasil (CCBB) e à Academia Mineira de Letras**. Egressas compartilharam experiências de trabalho e continuidade dos estudos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "II Semana de Letras Congonhas · pôsteres, sarau, egressas e visita cultural · setembro e outubro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Vou estudar Português e Inglês no mesmo curso?",
+              "resposta": "Sim. A licenciatura oferece formação em **Língua Portuguesa, Língua Inglesa e suas literaturas**, além de conhecimentos pedagógicos para atuar no ensino dessas áreas."
+            },
+            {
+              "pergunta": "Os estágios são obrigatórios? Posso fazê-los à noite?",
+              "resposta": "Sim. São **700 horas obrigatórias**, com **100 horas de observação e 300 de regência em Português** e **100 horas de observação e 200 de regência em Inglês**. A observação em Português começa a partir do **5º semestre**; a regência em Português, do **6º**; a observação em Inglês, do **7º**; e a regência em Inglês, do **8º**. Como as atividades dependem dos horários das escolas, **algumas podem exigir disponibilidade de manhã ou à tarde**, mesmo que as aulas da graduação sejam noturnas."
+            },
+            {
+              "pergunta": "Que experiências de ensino posso ter além do estágio?",
+              "resposta": "O curso participa de atividades como o **PIBID**, que aproxima licenciandos das escolas públicas. Há também **projetos de extensão, eventos literários e pesquisa em língua e literatura**, conforme os projetos e seleções disponíveis."
+            },
+            {
+              "pergunta": "O curso também prepara para atividades além de dar aulas?",
+              "resposta": "A formação desenvolve competências de **leitura, escrita, análise linguística e produção cultural**, que podem ser aplicadas em revisão de textos, edição, atividades literárias e outras funções relacionadas à linguagem, conforme as exigências de cada área."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na **Licenciatura em Letras (Português/Inglês)**, é necessário ter concluído o ensino médio até a matrícula. Você pode consultar as formas de seleção para graduação, como **Enem, Histórico Escolar e Redação ou Sisu**, e as regras de reserva de vagas no processo seletivo vigente do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A Licenciatura em Letras prepara para **planejar, ministrar e avaliar aulas de Língua Portuguesa, Língua Inglesa e literatura**, especialmente na educação básica. A atuação docente envolve selecionar textos e recursos didáticos, elaborar planos de ensino, acompanhar o desenvolvimento das turmas, corrigir produções escritas e organizar atividades de leitura, escrita, oralidade e interpretação.\n\nAlém da escola, as competências desenvolvidas podem ser aplicadas em **revisão e preparação de textos, produção de materiais didáticos, projetos de incentivo à leitura, atividades editoriais e mediação cultural**. Nesses espaços, o profissional pode analisar textos, adequar conteúdos a públicos diferentes, organizar oficinas, produzir materiais de comunicação e colaborar com equipes de educação e cultura, respeitando as exigências específicas de cada função."
+        }
+      ]
+    },
+    {
       "id": "medicina-veterinaria-bacharelado",
       "nome": "Medicina Veterinária",
       "nivel": "Graduação",

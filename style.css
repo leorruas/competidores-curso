@@ -516,3 +516,6 @@ h1 em{color:var(--accent);font-style:normal}
 .review-button{display:none}
 .course-review-note{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding:15px 0 5px;max-width:720px}
 .course-review-note strong{color:var(--accent)}
+
+/* Títulos longos, inclusive habilitações com barra, não devem expandir a tela no celular. */
+.course-head h1,.block-card-title{overflow-wrap:anywhere;min-width:0}

@@ -1,0 +1,48 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
+const j=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
+const c=j.courses.find(x=>x.id==="letras-licenciatura"),b=c?.blocos||[];
+test("F7.36: Letras Português Inglês Congonhas usa PPC e contato do PS2027",()=>{
+ assert.ok(c);
+ assert.equal(c.nome,"Letras (Português/Inglês)");
+ assert.equal(c.tipo,"Licenciatura");
+ assert.deepEqual(c.campi,["Congonhas"]);
+ const v=b.find(x=>x.tipo==="dados-basicos").campos;
+ assert.ok(v.some(x=>x.rotulo==="Carga horária total"&&x.valor==="3.992 horas"));
+ assert.ok(v.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="coordletras.congonhas@ifmg.edu.br"));
+ const t=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
+ assert.deepEqual(t.linhas,[["Congonhas","Presencial","Noite","9 semestres","3.992 horas","coordletras.congonhas@ifmg.edu.br"]]);
+ const loc=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
+ assert.match(loc.itens[0].resposta,/700 horas/);
+ assert.match(loc.itens[0].resposta,/400 em Língua Portuguesa/);
+ assert.match(loc.itens[0].resposta,/300 em Língua Inglesa/);
+ assert.match(loc.itens[0].resposta,/de manhã ou à tarde/);
+ assert.match(loc.itens[0].resposta,/399 horas de extensão/);
+ assert.match(loc.itens[0].resposta,/200 horas de atividades complementares/);
+ assert.ok(b.find(x=>x.tipo==="introducao").conteudo.length<=280);
+ assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+ assert.ok(b.at(-1).conteudo.length>500);
+});
+test("F7.36: experiências 2025+ documentadas, quatro galerias e prêmio identificado",()=>{
+ assert.equal(b.length,28);
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,4);
+ const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
+ assert.ok(i>0);
+ assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
+ const actual=[i,i+2,i+4];
+ for(const k of actual){assert.equal(b[k].tipo,"texto");assert.equal(b[k+1].tipo,"galeria");assert.deepEqual(b[k+1].itens,[]);}
+ assert.match(b[i].conteudo,/cinco estrelas no Guia da Faculdade 2025/);
+ assert.match(b[i].conteudo,/3 de maio de 2025/);
+ assert.match(b[i].conteudo,/Conceição Evaristo/);
+ assert.match(b[i+2].conteudo,/SUNY Cortland/);
+ assert.match(b[i+2].conteudo,/2026/);
+ assert.match(b[i+4].conteudo,/3 de outubro de 2026/);
+ assert.match(b[i+4].conteudo,/pôsteres de pesquisas/);
+ const pos=b.findIndex(x=>x.titulo==="Pós-graduação");
+ assert.ok(b[pos+1].linhas.some(x=>x[0]==="Especialização em Ensino de Língua Portuguesa e Literatura na Educação Básica"&&x[1].includes("Sabará")));
+ assert.ok(b[pos+1].linhas.some(x=>x[0]==="Especialização em Ensino de Língua Portuguesa na Educação Básica"&&x[1]==="Ouro Preto"));
+ const txt=JSON.stringify(c);
+ assert.doesNotMatch(txt,/Auditoria privada|estatísticas do benchmark|www2?\.ifmg\.edu\.br|documentos-da-licenciatura-em-letras/);
+ assert.deepEqual(j.courses.map(x=>x.id),[...j.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
+});

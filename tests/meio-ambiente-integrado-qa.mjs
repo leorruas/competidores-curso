@@ -20,6 +20,6 @@ test("F7.13: somente duas experiências verificáveis 2025 em GV, com galerias s
  assert.equal(ex.length,2);assert.ok(ex.every(x=>b[b.indexOf(x)+1].tipo==="galeria"));
  assert.match(ex[0].conteudo,/209 metros/);assert.match(ex[0].conteudo,/2025/);
  assert.match(ex[1].conteudo,/Baguari/);assert.match(ex[1].conteudo,/Edificações/);assert.match(ex[1].conteudo,/Engenharia Ambiental e Sanitária/);
- assert.ok(ex.every(x=>!x.includes("Santa Luzia")));
+ assert.ok(ex.every(x=>!x.conteudo.includes("Santa Luzia")));
  assert.ok(b.find(x=>x.tipo==="faq"&&!x.titulo).itens.every(x=>!/^O que (é|são)/i.test(x.pergunta)));
 });

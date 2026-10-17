@@ -6331,6 +6331,303 @@
       ]
     },
     {
+      "id": "gestao-da-qualidade-tecnologo",
+      "nome": "Gestão da Qualidade",
+      "nivel": "Graduação",
+      "tipo": "Tecnólogo",
+      "campi": [
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Gestão da Qualidade"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Tecnólogo"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com componentes EaD"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "3 anos (6 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "1.660 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Gestão da Qualidade",
+          "conteudo": "Aprenda a **analisar processos, identificar problemas e propor melhorias** na produção de bens e serviços. O curso reúne estatística, auditoria, gestão de pessoas, saúde, segurança e meio ambiente para apoiar decisões nas organizações."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Trabalhe com indicadores e melhoria de processos: o curso combina análise de dados, auditorias, projetos integradores e práticas em laboratórios de tecnologia e qualidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Para quem concluiu o ensino médio e se interessa por **gestão, análise de dados, resolução de problemas e funcionamento das organizações**. A formação prepara para estudar falhas, interpretar indicadores e colaborar em projetos de melhoria."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estuda **gestão da qualidade, estatística, controle estatístico de processos, ferramentas da qualidade, auditorias, normas, sistemas de gestão, metrologia, gestão de projetos, saúde e segurança, administração, legislação e meio ambiente**. A formação também inclui atividades de extensão, projetos integradores e TCC."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Qualidade e processos",
+              "Mapear processos, localizar causas de problemas e planejar melhorias."
+            ],
+            [
+              "Estatística e indicadores",
+              "Interpretar dados e acompanhar o desempenho de atividades e serviços."
+            ],
+            [
+              "Auditorias e normas",
+              "Verificar procedimentos, evidências e atendimento a normas de gestão."
+            ],
+            [
+              "Metrologia",
+              "Empregar medições para compreender variações e reduzir erros."
+            ],
+            [
+              "Gestão de pessoas e projetos",
+              "Organizar projetos de melhoria e atuar em equipes."
+            ],
+            [
+              "Saúde, segurança e ambiente",
+              "Relacionar riscos ocupacionais e questões ambientais à gestão."
+            ],
+            [
+              "Pesquisa e extensão",
+              "Desenvolver estudos de caso, projetos e atividades com públicos externos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática no Campus Ouro Preto",
+          "conteudo": "No **Pavilhão de Gestão da Qualidade**, o curso utiliza laboratório de informática e espaços ligados a **tecnologias, segurança do trabalho e análises ambientais**. A aprendizagem inclui estudos de caso, projetos, seminários e atividades de campo. São **170 horas de extensão** distribuídas nas disciplinas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Aulas e laboratórios do curso de Gestão da Qualidade em Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Gestão da Qualidade",
+          "conteudo": "O curso superior de **Tecnologia em Gestão da Qualidade** é oferecido no **Campus Ouro Preto**, com aulas noturnas e componentes EaD. A formação presencial tem duração mínima de seis semestres e reúne disciplinas de gestão, extensão e TCC."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Preto",
+              "Presencial (27,7% EaD)",
+              "Noite",
+              "6 semestres",
+              "1.660 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "O curso tem **1.660 horas** e duração mínima de **seis semestres**. A matriz inclui **170 horas de extensão**, **55 horas de atividades complementares** e **TCC obrigatório de 30 horas**. O **estágio curricular é opcional**. O curso utiliza laboratórios de informática, tecnologias, higiene ocupacional e análises ambientais."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os estudantes desenvolvem projetos e estudos relacionados a **qualidade, controle estatístico de processos, gestão ambiental, saúde e segurança do trabalho**. A matriz possui **170 horas de extensão curricularizada**. Projetos de pesquisa, monitoria e bolsas dependem das oportunidades e seleções de cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Gestão da Qualidade"
+          ],
+          "linhas": [
+            [
+              "Administração (Bacharelado)",
+              "Bambuí, Formiga, Ouro Branco, Ribeirão das Neves, Sabará e São João Evangelista",
+              "Gestão estratégica, pessoas e operações."
+            ],
+            [
+              "Engenharia de Produção (Bacharelado)",
+              "Bambuí, Congonhas e Governador Valadares",
+              "Processos de produção, operações e qualidade."
+            ],
+            [
+              "Processos Gerenciais (Tecnólogo)",
+              "Ponte Nova e Ribeirão das Neves",
+              "Processos, rotinas e decisões organizacionais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Gestão da Qualidade"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento e controle de projetos e operações."
+            ],
+            [
+              "Especialização em Gestão de Negócios",
+              "Ouro Branco",
+              "Estratégia e administração organizacional."
+            ],
+            [
+              "Especialização em Análise Estratégica de Dados",
+              "Formiga (EaD)",
+              "Dados e análises para decisões."
+            ],
+            [
+              "Mestrado Profissional em Administração",
+              "Formiga",
+              "Pesquisa aplicada em gestão e finanças."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **10 de setembro de 2025**, estudantes de Gestão da Qualidade, Física e Geografia visitaram a **Escola Família Agrícola Paulo Freire**, em Acaiaca. A atividade permitiu conhecer a pedagogia da alternância e dialogar sobre **educação, cultura e diversidade** com estudantes e monitores da escola."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita de estudantes de Gestão da Qualidade à Escola Família Agrícola Paulo Freire · setembro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Trabalho de campo em Cordisburgo e Diamantina",
+          "conteudo": "Nos dias **7, 8 e 9 de agosto de 2026**, estudantes de Gestão da Qualidade, Geografia e Física participaram de atividades em **Cordisburgo e Diamantina**. O trabalho da disciplina **Currículo, Diversidade, Gênero e Raça** abordou memória, patrimônio cultural, relações raciais e inclusão, com visitas a espaços históricos e à Vila do Biribiri."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Trabalho de campo de estudantes de Gestão da Qualidade em Cordisburgo e Diamantina · agosto de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O curso de Gestão da Qualidade é uma graduação?",
+              "resposta": "Sim. É uma **graduação tecnológica**, que confere diploma superior de **tecnólogo em Gestão da Qualidade**."
+            },
+            {
+              "pergunta": "O estágio é obrigatório?",
+              "resposta": "**Não.** O estágio curricular é opcional e pode ser realizado pelo estudante interessado, conforme as normas e orientações institucionais."
+            },
+            {
+              "pergunta": "O TCC é obrigatório? Como pode ser apresentado?",
+              "resposta": "Sim. O **TCC tem 30 horas e defesa perante banca**. Pode ser realizado individualmente ou em dupla, como **artigo científico, monografia, relatório de estágio ou trabalho tecnológico e de inovação**."
+            },
+            {
+              "pergunta": "O curso inclui atividades práticas e de extensão?",
+              "resposta": "Sim. A formação inclui **estudos de caso, auditorias, seminários e projetos integradores**, além de **170 horas de extensão** distribuídas em disciplinas."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no curso superior de **Gestão da Qualidade**, é necessário ter concluído o ensino médio até a matrícula. As formas de seleção para graduação, como Enem e Sisu, e as regras de reserva de vagas são informadas no processo seletivo vigente do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O tecnólogo em Gestão da Qualidade atua na **análise e melhoria de processos**, no acompanhamento de indicadores, na organização de procedimentos e em **auditorias e sistemas de gestão**. Pode levantar dados, investigar não conformidades, propor ações corretivas e acompanhar resultados em equipes de trabalho.\n\nNo dia a dia, pode **mapear etapas de produção ou atendimento, analisar medições e gráficos de controle, preparar listas de verificação para auditorias e acompanhar planos de ação**. Também pode organizar registros e verificar se as melhorias reduziram erros, desperdícios ou atrasos.\n\nEssas atividades podem ocorrer em **indústrias, comércio, serviços, instituições de saúde e organizações públicas**, conforme as exigências de cada função."
+        }
+      ]
+    },
+    {
       "id": "medicina-veterinaria-bacharelado",
       "nome": "Medicina Veterinária",
       "nivel": "Graduação",

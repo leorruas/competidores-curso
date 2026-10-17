@@ -5729,6 +5729,312 @@
       ]
     },
     {
+      "id": "geografia-licenciatura",
+      "nome": "Geografia",
+      "nivel": "Graduação",
+      "tipo": "Licenciatura",
+      "campi": [
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Geografia"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Licenciatura"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Formação de professores de Geografia"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "4 anos (8 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.200 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Geografia",
+          "conteudo": "Forme-se para **ensinar Geografia na educação básica**, relacionando território, sociedade e natureza. No IFMG, você aprende a interpretar paisagens, produzir e analisar mapas, compreender mudanças nas cidades e no campo e transformar essas questões em atividades de aprendizagem."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Investigue o território em trabalhos de campo, produza mapas com geotecnologias e transforme problemas sociais e ambientais em experiências de ensino de Geografia."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A licenciatura é indicada para quem concluiu o ensino médio e se interessa por **educação, mapas, cidades, meio ambiente, relações sociais e transformações do território**. É uma formação para quem quer compreender o espaço geográfico e aprender a ensinar seus temas na escola."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estuda **cartografia, climatologia, geologia, geomorfologia, geografia urbana, agrária, econômica, da população e regional**, além de geopolítica e formação territorial do Brasil. Também aprende a usar **sensoriamento remoto, geoprocessamento, pesquisa de campo, didática, educação inclusiva, planejamento e avaliação de aulas**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Cartografia e geotecnologias",
+              "Ler e produzir mapas, interpretar imagens de satélite e usar ferramentas de geoprocessamento."
+            ],
+            [
+              "Natureza e ambiente",
+              "Investigar clima, relevo, solos, paisagens, águas e problemas ambientais."
+            ],
+            [
+              "Cidades, campo e território",
+              "Analisar urbanização, atividades econômicas, população, uso da terra e desigualdades espaciais."
+            ],
+            [
+              "Geopolítica e história territorial",
+              "Compreender disputas territoriais, formação do Brasil e relações entre escalas locais e globais."
+            ],
+            [
+              "Ensino de Geografia",
+              "Planejar aulas, trabalhar diferentes linguagens, avaliar aprendizagens e produzir materiais didáticos."
+            ],
+            [
+              "Pesquisa e trabalho de campo",
+              "Observar paisagens, reunir dados, construir interpretações e comunicar resultados."
+            ],
+            [
+              "Estágio e extensão",
+              "Desenvolver experiências em escolas e projetos de Geografia com a comunidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática no Campus Ouro Preto",
+          "conteudo": "O Campus Ouro Preto dispõe de **laboratórios de geoprocessamento, cartografia, prática de ensino em Geografia e estudos urbanos e populacionais**. A formação combina elaboração de mapas, análise de imagens, produção de materiais didáticos e **trabalhos de campo**. O curso também inclui **320 horas de projetos de extensão** distribuídas pela graduação."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios de geoprocessamento, cartografia e prática de ensino em Geografia · Campus Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Geografia",
+          "conteudo": "A **Licenciatura em Geografia** é oferecida no **Campus Ouro Preto**, com aulas noturnas e formação presencial. São oito semestres previstos de estudo, integrando conhecimentos geográficos, formação docente, extensão, estágio escolar e TCC."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Preto",
+              "Presencial",
+              "Noite",
+              "8 semestres",
+              "3.200 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "A formação inclui **quatro componentes obrigatórios de estágio**, com **100 horas de atividades em escolas** e **30 horas de aulas de orientação em cada componente**. O **Trabalho de Conclusão de Curso é obrigatório** e se desenvolve nos dois últimos semestres, podendo assumir formatos acadêmicos ou de produto didático e educacional previstos no curso. O campus oferece laboratórios de cartografia, geoprocessamento e prática de ensino."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A licenciatura participa do **PIBID de Geografia**, que aproxima estudantes da rotina de escolas públicas e do planejamento de atividades educativas. A formação também abre espaço para pesquisas sobre **educação ambiental, cartografia, territórios, cidades e metodologias de ensino**, além de trabalhos de campo e projetos de extensão. A participação em bolsas depende das seleções de cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Geografia"
+          ],
+          "linhas": [
+            [
+              "Física (Licenciatura)",
+              "Bambuí, Congonhas e Ouro Preto",
+              "Formação docente, práticas de ensino e estudo de fenômenos naturais."
+            ],
+            [
+              "Ciências Biológicas (Licenciatura)",
+              "Bambuí e São João Evangelista",
+              "Ensino de Ciências, ecologia e temas ambientais trabalhados de forma interdisciplinar."
+            ],
+            [
+              "Pedagogia (Licenciatura)",
+              "Ouro Branco",
+              "Estudos sobre educação, currículo e processos de aprendizagem."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Geografia"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Ensino de Geografia em Rede Nacional (PROFGEO)",
+              "Ouro Preto (semipresencial)",
+              "Pesquisa e elaboração de práticas, materiais e recursos para o ensino de Geografia."
+            ],
+            [
+              "Especialização em Gestão e Conservação do Patrimônio Cultural",
+              "Ouro Preto",
+              "Relações entre território, paisagem, memória e patrimônio cultural."
+            ],
+            [
+              "Especialização em Docência",
+              "Arcos e Ponte Nova (EaD)",
+              "Formação continuada em práticas pedagógicas e educação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **fevereiro de 2025**, estudantes dos **4º e 8º períodos** realizaram um **trabalho de campo na Região Metropolitana do Vale do Aço**, articulando conteúdos de Geografia Urbana, Geografia Regional e Planejamento Urbano-Regional. O roteiro incluiu a Agência Metropolitana, o Parque Estadual do Rio Doce, áreas urbanas de Ipatinga e Timóteo e espaços de memória e de comércio local."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Trabalho de campo da Licenciatura em Geografia no Vale do Aço · fevereiro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Visita à Escola Família Agrícola Paulo Freire",
+          "conteudo": "Em **10 de setembro de 2025**, estudantes de **Geografia, Física e Gestão da Qualidade** visitaram a **Escola Família Agrícola Paulo Freire**, em Acaiaca. O grupo conheceu a pedagogia da alternância, dialogou com estudantes e educadores e observou práticas relacionadas à agricultura familiar, aos saberes tradicionais e à formação no território rural."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita de estudantes de Geografia à Escola Família Agrícola Paulo Freire · setembro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa sobre sustentabilidade e educação de jovens e adultos",
+          "conteudo": "Em **setembro de 2026**, o Campus Ouro Preto divulgou a publicação do artigo **“Caminhos da sustentabilidade na educação de jovens e adultos (EJA)”**, assinado por docentes, uma licencianda em Geografia, egressos e estudantes de cursos técnicos. A pesquisa, realizada em escola estadual de Mariana, usou **mapas conceituais** para investigar como estudantes da EJA compreendem a sustentabilidade."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa com participação de licencianda em Geografia sobre educação ambiental na EJA · setembro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Geografia no IFMG é licenciatura ou bacharelado?",
+              "resposta": "A formação oferecida no **Campus Ouro Preto é uma licenciatura**, voltada à preparação de professores de Geografia para os anos finais do ensino fundamental e para o ensino médio. O curso também desenvolve pesquisa, cartografia e estudos sobre o território."
+            },
+            {
+              "pergunta": "Vou realizar trabalhos de campo durante a graduação?",
+              "resposta": "Sim. **Trabalhos de campo** integram a formação e permitem observar paisagens, processos urbanos, ambientais e sociais fora da sala de aula. A matriz também inclui atividades de geotecnologias, cartografia e prática de ensino."
+            },
+            {
+              "pergunta": "Como funciona o estágio em escolas?",
+              "resposta": "O estágio obrigatório está distribuído em **quatro componentes**, cada um com **100 horas de prática na escola e 30 horas de aulas de orientação**. As atividades aproximam o licenciando da observação, do planejamento e da experiência de ensino."
+            },
+            {
+              "pergunta": "Preciso apresentar Trabalho de Conclusão de Curso?",
+              "resposta": "Sim. O **TCC é obrigatório**, organizado no sétimo e no oitavo períodos. Entre os formatos previstos estão monografia, artigo científico, livro ou capítulo e produto didático ou educacional, com orientação e defesa conforme as regras do curso."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na **Licenciatura em Geografia**, é necessário ter concluído o ensino médio até a matrícula. As modalidades de seleção para graduação e as regras de reserva de vagas são divulgadas no processo seletivo vigente do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A Licenciatura em Geografia prepara para **planejar, ministrar e avaliar aulas de Geografia na educação básica**, em escolas públicas e privadas. O trabalho docente inclui produzir mapas e materiais didáticos, organizar atividades de campo e explicar, em sala de aula, relações entre **sociedade, natureza, cidade, campo e território**.\n\nA formação também pode apoiar atividades de pesquisa e projetos de educação ambiental e divulgação científica. Outras atividades profissionais podem exigir qualificações e registros próprios; a licenciatura tem como foco principal a docência."
+        }
+      ]
+    },
+    {
       "id": "medicina-veterinaria-bacharelado",
       "nome": "Medicina Veterinária",
       "nivel": "Graduação",

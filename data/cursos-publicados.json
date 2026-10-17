@@ -4219,6 +4219,361 @@
       ]
     },
     {
+      "id": "engenharia-eletrica-bacharelado",
+      "nome": "Engenharia Elétrica",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Formiga",
+        "Ipatinga",
+        "Itabirito"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Engenharia Elétrica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação (Bacharelado)"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Formiga, Ipatinga e Itabirito"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turnos",
+              "valor": "Formiga: noite; Ipatinga: manhã, tarde e noite; Itabirito: noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "5 anos (10 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.600 horas por campus"
+            },
+            {
+              "rotulo": "E-mail da coordenação - Formiga",
+              "valor": "eng.eletrica.formiga@ifmg.edu.br"
+            },
+            {
+              "rotulo": "E-mail da coordenação - Ipatinga",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação - Itabirito",
+              "valor": "eng.eletrica.itabirito@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Engenharia Elétrica",
+          "conteudo": "Estude **geração, transmissão e distribuição de energia elétrica**, além de eletrônica, máquinas elétricas, automação e sistemas de controle. O bacharelado do IFMG desenvolve conhecimentos para projetar, analisar e acompanhar sistemas e instalações elétricas."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "De usinas e redes de distribuição a motores, circuitos e energia renovável: aprenda a projetar e operar sistemas elétricos com atividades práticas e pesquisa."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O bacharelado é destinado a quem concluiu o ensino médio e tem interesse por **matemática, física, eletricidade, eletrônica e tecnologias energéticas**. A formação envolve cálculos, projetos, experimentos, interpretação de normas e trabalho em equipes técnicas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estuda **cálculo, física, álgebra, eletromagnetismo, circuitos elétricos, eletrônica analógica e digital, máquinas elétricas, instalações, acionamentos, sistemas elétricos de potência, qualidade da energia, instrumentação e controle**. As matrizes também incluem programação, segurança e gestão, com atividades próprias de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Energia elétrica",
+              "Compreender geração, transmissão, distribuição e uso eficiente da energia."
+            ],
+            [
+              "Circuitos e eletromagnetismo",
+              "Analisar grandezas elétricas, circuitos, campos e componentes."
+            ],
+            [
+              "Máquinas e acionamentos",
+              "Estudar motores, transformadores, conversão de energia e operação de equipamentos."
+            ],
+            [
+              "Sistemas de potência",
+              "Avaliar redes elétricas, proteção, qualidade da energia e funcionamento do sistema elétrico."
+            ],
+            [
+              "Eletrônica e controle",
+              "Projetar circuitos, aplicar sistemas de controle e integrar dispositivos e instrumentos."
+            ],
+            [
+              "Instalações e segurança",
+              "Dimensionar instalações elétricas e considerar normas, proteção e riscos."
+            ],
+            [
+              "Programação e projetos",
+              "Utilizar ferramentas computacionais e desenvolver análises e projetos de engenharia."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Atividades práticas no Campus Formiga",
+          "conteudo": "Em Formiga, o curso utiliza **laboratórios e projetos de circuitos, máquinas elétricas, eletrônica e sistemas de energia**, além de atividades de campo e visitas técnicas. Essas experiências relacionam cálculos e medições ao comportamento de equipamentos e redes elétricas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Engenharia Elétrica · práticas em laboratório e projetos de energia · Campus Formiga",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Atividades práticas no Campus Ipatinga",
+          "conteudo": "Em Ipatinga, a matriz integra **eletrônica, sistemas embarcados, máquinas elétricas, instalações, eficiência energética e controle**. A graduação utiliza laboratórios de formação específica e informática e realiza práticas extensionistas relacionadas às necessidades da comunidade."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Engenharia Elétrica · disciplinas e atividades de laboratório · Campus Ipatinga",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Atividades práticas no Campus Itabirito",
+          "conteudo": "Em Itabirito, a formação contempla **eletrotécnica, sistemas de energia, controle e automação**, com disciplinas de instalações, eletrônica, máquinas e programação. O currículo inclui experimentos em laboratório, estágio supervisionado e projeto final de engenharia."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Engenharia Elétrica · atividades de eletrotécnica, energia e laboratório · Campus Itabirito",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Engenharia Elétrica",
+          "conteudo": "O **Bacharelado em Engenharia Elétrica** é oferecido nos campi **Formiga, Ipatinga e Itabirito**, em formato presencial. Em Formiga e Itabirito, a oferta é noturna; em Ipatinga, as atividades são distribuídas entre manhã, tarde e noite. Cada campus possui organização curricular própria."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Formiga",
+              "Noite",
+              "Presencial",
+              "10 semestres",
+              "3.600 horas",
+              "eng.eletrica.formiga@ifmg.edu.br"
+            ],
+            [
+              "Ipatinga",
+              "Manhã, tarde e noite",
+              "Presencial",
+              "10 semestres",
+              "3.600 horas",
+              "Informação incompleta"
+            ],
+            [
+              "Itabirito",
+              "Noite",
+              "Presencial",
+              "10 semestres",
+              "3.600 horas",
+              "eng.eletrica.itabirito@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Formiga",
+              "resposta": "O bacharelado tem **3.600 horas** e duração mínima de **dez semestres**. A matriz acadêmica prevê **160 horas de estágio supervisionado obrigatório** e **TCC obrigatório de 30 horas**, dividido entre TCC 1 e TCC 2. A formação abrange geração, distribuição e controle de energia."
+            },
+            {
+              "pergunta": "Campus Ipatinga",
+              "resposta": "A graduação funciona de **manhã, tarde e noite**, com **3.600 horas** em dez semestres. A matriz de 2024 estabelece **160 horas de estágio supervisionado obrigatório a partir do sexto período** e **TCC obrigatório de 40 horas a partir do nono período**, além da disciplina TCC I, e atividades práticas de extensão."
+            },
+            {
+              "pergunta": "Campus Itabirito",
+              "resposta": "O curso é **noturno**, com **3.600 horas** e duração mínima de dez semestres. O currículo prevê **180 horas de estágio supervisionado obrigatório**, após completar pelo menos 1.800 horas de formação, e **TCC obrigatório de 120 horas**, a partir do oitavo período. A formação articula eletrotécnica, controle e automação."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "As atividades acadêmicas podem envolver **projetos de eficiência energética, energias renováveis, eletrônica, redes de distribuição, pesquisa aplicada e extensão**. Estudantes podem desenvolver trabalhos de conclusão de curso, participar de eventos e visitas técnicas e se candidatar a projetos e bolsas, conforme as oportunidades de cada campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Engenharia Elétrica"
+          ],
+          "linhas": [
+            [
+              "Especialização em Inteligência Artificial",
+              "Ouro Preto",
+              "Aplicações de inteligência artificial, dados e sistemas inteligentes em projetos tecnológicos."
+            ],
+            [
+              "Especialização em Engenharia de Segurança do Trabalho",
+              "Governador Valadares",
+              "Prevenção de riscos e segurança em instalações, operações e ambientes industriais."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento e coordenação de projetos técnicos, equipes e operações."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Estudos de sustentabilidade, tecnologias energéticas e soluções para problemas ambientais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **9 de junho de 2026**, estudantes do **7º período de Engenharia Elétrica do Campus Formiga** visitaram o **Centro de Operações da Distribuição da Cemig**, em Belo Horizonte. A atividade permitiu acompanhar o monitoramento da rede elétrica em tempo real e conhecer operações de distribuição com profissionais do setor."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Visita ao Centro de Operações da Distribuição da Cemig · Engenharia Elétrica Formiga · junho de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Projetos de estudantes apresentados no COBENGE 2026",
+          "conteudo": "Entre **14 e 17 de setembro de 2026**, três estudantes de **Engenharia Elétrica de Formiga** apresentaram projetos no **Congresso Brasileiro de Educação em Engenharia (COBENGE)**. Os trabalhos envolveram **modelos didáticos de energias renováveis**, o projeto de extensão **Iluminando o Saber**, com modernização de iluminação escolar, e uma ferramenta computacional para ensinar números complexos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Apresentações de estudantes de Engenharia Elétrica de Formiga no COBENGE · setembro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Semana da Engenharia Elétrica em Ipatinga",
+          "conteudo": "De **30 de junho a 4 de julho de 2025**, o **Campus Ipatinga** realizou a **Semana da Engenharia Elétrica**, reunindo estudantes, professores e profissionais. A programação teve apresentações de pesquisas, minicursos, oficinas, palestras e visita técnica, aproximando as atividades do curso de ambientes profissionais."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Semana da Engenharia Elétrica · Campus Ipatinga · junho e julho de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Estudantes de Ipatinga levam educação sobre energia às escolas",
+          "conteudo": "Em **19 de junho de 2026**, estudantes de **Engenharia Elétrica do Campus Ipatinga** realizaram atividades educativas para turmas do **9º ano de escolas públicas**. As ações abordaram segurança e prevenção de acidentes, consumo consciente de energia e formação cidadã, em projetos de extensão do curso."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Ações educativas de estudantes de Engenharia Elétrica em escolas públicas · Ipatinga · junho de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Egressos de Itabirito desenvolvem pesquisas no Reino Unido",
+          "conteudo": "Em **setembro de 2026**, dois **egressos de Engenharia Elétrica do Campus Itabirito**, formados em 2020 e 2023, desenvolviam atividades acadêmicas e de pesquisa na **Universidade de Bristol**, no Reino Unido. Uma egressa participava como estudante visitante em Engenharia Matemática e o outro realizava doutorado-sanduíche na mesma área."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Egressos de Engenharia Elétrica de Itabirito em pesquisa na Universidade de Bristol · setembro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quais são as diferenças de horário entre os campi?",
+              "resposta": "**Formiga e Itabirito** oferecem o curso à **noite**. Em **Ipatinga**, as atividades acadêmicas são distribuídas entre **manhã, tarde e noite**, o que deve ser considerado na organização da rotina."
+            },
+            {
+              "pergunta": "Qual é a diferença entre Engenharia Elétrica e Engenharia de Controle e Automação?",
+              "resposta": "A **Engenharia Elétrica** aprofunda **sistemas de energia, máquinas, instalações, eletrônica e sistemas de potência**, incluindo controle. A **Engenharia de Controle e Automação** enfatiza integração de sensores, softwares, máquinas e processos automatizados. São bacharelados distintos."
+            },
+            {
+              "pergunta": "O estágio supervisionado é obrigatório?",
+              "resposta": "Sim. As matrizes preveem **estágio obrigatório de 160 horas em Formiga e Ipatinga** e **180 horas em Itabirito**. Em Ipatinga, o estágio pode começar no sexto período; em Itabirito, depois de completar 1.800 horas da graduação."
+            },
+            {
+              "pergunta": "É necessário fazer Trabalho de Conclusão de Curso?",
+              "resposta": "Sim. O **TCC é obrigatório** nos três campi. Formiga prevê **30 horas**, Ipatinga possui **TCC de 40 horas**, além de disciplina TCC I, e Itabirito prevê **120 horas**. A elaboração e avaliação seguem as regras de cada campus."
+            },
+            {
+              "pergunta": "Há experiências práticas além das disciplinas?",
+              "resposta": "Sim. Estudantes participam de **visitas técnicas, pesquisa, extensão, projetos e eventos**. Entre experiências realizadas estão visitas a empresas de energia, ações em escolas públicas e apresentações de trabalhos acadêmicos em congressos."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Engenharia Elétrica**, é necessário concluir o **ensino médio** até a matrícula. O IFMG realiza processos seletivos para cursos superiores e pode oferecer ingresso por **notas do Enem, Histórico Escolar e Redação e Sisu**, conforme o edital e a oferta de cada campus.\n\nConsulte o processo seletivo vigente para conhecer as modalidades, as cotas e a documentação de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O engenheiro eletricista pode **projetar instalações e sistemas elétricos, analisar circuitos, máquinas e redes de energia e acompanhar a geração, transmissão, distribuição e utilização da eletricidade**. Pode dimensionar equipamentos, interpretar normas técnicas, estudar eficiência energética, acompanhar testes e manutenção e participar de projetos de automação e controle.\n\nOs ambientes de atuação incluem **concessionárias de energia, indústrias, empresas de engenharia, integradoras de sistemas, consultorias, órgãos públicos e instituições de pesquisa**. Para exercer atividades regulamentadas, é necessário **registro no Conselho Regional de Engenharia e Agronomia (Crea)** e observar as atribuições reconhecidas."
+        }
+      ]
+    },
+    {
       "id": "engenharia-florestal-bacharelado",
       "nome": "Engenharia Florestal",
       "nivel": "Graduação",

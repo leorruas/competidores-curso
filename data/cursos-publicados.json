@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-17",
   "courses": [
     {
       "id": "tecnico-em-edificacoes-integrado",
@@ -7127,6 +7127,319 @@
           "tipo": "texto",
           "titulo": "Mundo do Trabalho",
           "conteudo": "O técnico em Eletrônica pode atuar no **desenvolvimento, instalação, teste e manutenção de equipamentos e sistemas eletrônicos**. Entre suas tarefas estão interpretar esquemas, medir sinais, identificar falhas, apoiar a montagem de circuitos, configurar dispositivos e colaborar com rotinas de inspeção e controle de qualidade.\n\nEssas atividades aparecem em empresas de equipamentos eletrônicos, automação, telecomunicações, manutenção, assistência técnica, serviços e laboratórios. O profissional pode participar de projetos com circuitos microcontrolados, dispositivos de comunicação e sistemas eletrônicos embarcados, respeitando as atribuições da habilitação, as normas técnicas e os requisitos de segurança."
+        }
+      ]
+    },
+    {
+      "id": "tecnico-em-agropecuaria-integrado",
+      "nome": "Técnico em Agropecuária",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Bambuí",
+        "São João Evangelista"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Agropecuária"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí e São João Evangelista"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC e matriz para ingressantes de 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Consultar a tabela de campi"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Agropecuária",
+          "conteudo": "Estude o ensino médio junto com uma formação técnica em produção animal e vegetal. No IFMG, você aprende sobre cultivos agrícolas, criação e manejo de animais, conservação do solo, uso da água e organização da produção rural, relacionando esses conhecimentos à ciência e à sustentabilidade."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Conheça a produção de alimentos, os cuidados com os animais e o manejo das culturas agrícolas. A formação une ensino médio, práticas agropecuárias e sustentabilidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem concluiu o ensino fundamental e deseja cursar o ensino médio junto com uma habilitação técnica. É uma opção para estudantes interessados em biologia, meio ambiente, produção agrícola, criação de animais, tecnologias aplicadas ao campo e desenvolvimento rural."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O curso integra as áreas de formação geral do ensino médio a conhecimentos de agricultura, pecuária e organização de atividades rurais. As disciplinas e as práticas são distribuídas conforme a matriz curricular de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Produção vegetal",
+              "Estudar o cultivo de hortaliças, frutas, grãos e outras culturas, com atenção ao manejo de plantas e às condições de produção."
+            ],
+            [
+              "Produção animal",
+              "Conhecer alimentação, instalações, bem-estar e manejo de diferentes espécies criadas na atividade agropecuária."
+            ],
+            [
+              "Solos, água e conservação",
+              "Compreender fertilidade do solo, irrigação, manejo de recursos naturais e práticas para reduzir impactos ambientais."
+            ],
+            [
+              "Tecnologias e práticas de campo",
+              "Aprender a acompanhar atividades de produção, medições, registros técnicos, equipamentos e processos de trabalho rural."
+            ],
+            [
+              "Gestão e comercialização",
+              "Relacionar planejamento, custos, qualidade, cooperação e comercialização à organização da produção agropecuária."
+            ],
+            [
+              "Formação geral",
+              "Estudar linguagens, matemática, ciências da natureza e ciências humanas em diálogo com os problemas do meio rural."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação articula aulas e atividades em ambientes de ensino agropecuário, com observação de cultivos, manejo animal, análises, registros e planejamento de práticas rurais. A infraestrutura utilizada e as espécies ou culturas trabalhadas variam conforme o campus e a etapa do curso."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Aulas e atividades práticas de Agropecuária · Bambuí e São João Evangelista",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Agropecuária",
+          "conteudo": "O **Técnico em Agropecuária Integrado ao Ensino Médio** é oferecido nos campi **Bambuí** e **São João Evangelista**, na modalidade presencial e com aulas nos períodos da manhã e da tarde. O percurso previsto é de três anos. A organização curricular e os ambientes de prática seguem as características de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "Informação incompleta"
+            ],
+            [
+              "São João Evangelista",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "agropecuaria.sje@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A formação inclui produção animal e vegetal, conservação do meio ambiente e planejamento de atividades agropecuárias. O campus mantém espaços acadêmicos relacionados à produção, à pesquisa e ao ensino nas ciências agrárias. Além do integrado, Bambuí oferece **Técnico em Agropecuária Subsequente**, voltado a quem já concluiu o ensino médio."
+            },
+            {
+              "pergunta": "Campus São João Evangelista",
+              "resposta": "A formação integrada relaciona estudos sobre agricultura, zootecnia, solos e recursos naturais à educação básica. O campus oferece atividades de formação técnica em ciências agrárias, com práticas específicas do projeto pedagógico local e aulas de manhã e à tarde."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os campi desenvolvem atividades nas áreas de produção agrícola, animal, conservação e desenvolvimento rural. Em Bambuí, o estudante encontra a formação técnica associada a uma estrutura acadêmica que também reúne cursos superiores e projetos nas ciências agrárias; em São João Evangelista, o campus oferece graduação em Agronomia e Engenharia Florestal, ampliando o contato com essas áreas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": "Depois de concluir o ensino médio integrado, você pode concorrer aos cursos superiores do IFMG relacionados à agricultura, à criação de animais e à gestão dos recursos naturais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Agropecuária"
+          ],
+          "linhas": [
+            [
+              "Agronomia",
+              "Bambuí e São João Evangelista",
+              "Sistemas de produção agrícola, solos, culturas vegetais, técnicas e planejamento rural."
+            ],
+            [
+              "Zootecnia",
+              "Bambuí",
+              "Criação, nutrição, produção e bem-estar animal."
+            ],
+            [
+              "Medicina Veterinária",
+              "Bambuí",
+              "Saúde animal, prevenção de doenças e atendimento veterinário."
+            ],
+            [
+              "Engenharia Florestal",
+              "São João Evangelista",
+              "Manejo de florestas, conservação ambiental e uso sustentável dos recursos naturais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": "Após concluir uma graduação compatível, você pode buscar programas de pós-graduação do IFMG para aprofundar conhecimentos em sustentabilidade e tecnologias ambientais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Agropecuária"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Tecnologias sustentáveis e pesquisa aplicada a questões ambientais ligadas à produção e ao uso dos recursos naturais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **2025**, cinco estudantes do **Técnico Integrado em Agropecuária do Campus Bambuí** foram classificados para a segunda fase da **Olimpíada Brasileira de Física das Escolas Públicas (OBFEP)**: **Luis Fernando Valentim, Miguel Rayner Fonseca, Ana Clara Costa, Arthur Cordeiro Dutra e Dominik Stefany da Silva**. A primeira etapa ocorreu em agosto no campus; a notícia institucional de setembro confirma a classificação para a fase seguinte, sem atribuir aos participantes premiações posteriores."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Estudantes de Agropecuária classificados na OBFEP · Bambuí · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Posso fazer o curso após o ensino fundamental?",
+              "resposta": "Sim. O Técnico em Agropecuária Integrado reúne o ensino médio e a formação técnica no mesmo percurso para quem concluiu o ensino fundamental até a matrícula."
+            },
+            {
+              "pergunta": "Em quais campi posso estudar Agropecuária Integrado?",
+              "resposta": "O IFMG oferece o integrado em **Bambuí** e **São João Evangelista**, com aulas de manhã e à tarde. Cada campus tem seu projeto pedagógico e organiza as práticas de acordo com sua estrutura."
+            },
+            {
+              "pergunta": "O que diferencia o integrado do subsequente em Agropecuária?",
+              "resposta": "No **integrado**, você cursa o ensino médio e a formação técnica juntos. O **subsequente**, oferecido em Bambuí, é destinado a quem já concluiu o ensino médio e tem horários e organização curricular próprios."
+            },
+            {
+              "pergunta": "Como são as atividades práticas do curso?",
+              "resposta": "A formação relaciona estudos de agricultura e pecuária a atividades de observação, manejo, medições e registros em ambientes de ensino. Os trabalhos práticos seguem o planejamento, a infraestrutura e as normas de segurança de cada campus."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras modalidades relacionadas",
+          "conteudo": "Além do **Técnico em Agropecuária Integrado**, o IFMG oferece **Técnico em Agropecuária Subsequente no Campus Bambuí**. As modalidades atendem estudantes em momentos diferentes da formação escolar."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Concluiu o ensino fundamental e vai fazer o ensino médio",
+              "Técnico em Agropecuária Integrado",
+              "Campus, rotina de manhã e à tarde e formação geral junto com a técnica."
+            ],
+            [
+              "Já concluiu o ensino médio",
+              "Técnico em Agropecuária Subsequente",
+              "Oferta em Bambuí, horários, critérios e matriz próprios."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Agropecuária Integrado ao Ensino Médio**, é necessário concluir o ensino fundamental até a matrícula. O IFMG realiza processo seletivo público para os cursos integrados.\n\nConsulte o edital vigente para conhecer as regras de inscrição, avaliação, reserva de vagas, documentação e matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Agropecuária pode atuar no apoio à **produção agrícola e animal**, acompanhando o plantio e a colheita, o manejo de rebanhos, a alimentação e o bem-estar animal, o uso de equipamentos e a organização de atividades rurais. Também pode participar do monitoramento de solos, da irrigação, do controle de qualidade, de registros de produção e de iniciativas de conservação ambiental.\n\nO campo de atuação inclui propriedades rurais, cooperativas, empresas de insumos e de serviços, agroindústrias e iniciativas de assistência e extensão rural. A atuação profissional deve respeitar as atribuições da habilitação técnica, a supervisão quando exigida e as normas de segurança, sanidade e meio ambiente."
         }
       ]
     }

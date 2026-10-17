@@ -3563,6 +3563,336 @@
       ]
     },
     {
+      "id": "engenharia-de-controle-e-automacao-bacharelado",
+      "nome": "Engenharia de Controle e Automação",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Betim",
+        "Ibirité",
+        "Sabará"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Engenharia de Controle e Automação"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação (Bacharelado)"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Betim, Ibirité e Sabará"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com componentes EaD em Ibirité e Sabará"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "5 anos (10 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.600 horas em cada campus"
+            },
+            {
+              "rotulo": "E-mail da coordenação - Betim",
+              "valor": "eng.automacao.betim@ifmg.edu.br"
+            },
+            {
+              "rotulo": "E-mail da coordenação - Ibirité",
+              "valor": "eng.controle.automacao.ibirite@ifmg.edu.br"
+            },
+            {
+              "rotulo": "E-mail da coordenação - Sabará",
+              "valor": "eng.automacao.sabara@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Engenharia de Controle e Automação",
+          "conteudo": "Aprenda a **projetar sistemas automatizados**, combinar sensores, máquinas e softwares e criar soluções para monitorar e controlar processos. Na graduação do IFMG, a formação integra eletrônica, computação, mecânica e gestão de projetos para aplicar tecnologia à indústria e a outros ambientes."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Da programação de robôs ao controle de processos industriais: una eletrônica, mecânica e computação para desenvolver sistemas automatizados."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O bacharelado é destinado a quem concluiu o ensino médio e se interessa por **matemática, física, programação, eletrônica e funcionamento de máquinas**. O estudante aprende a analisar problemas, programar dispositivos, interpretar sinais e projetar soluções técnicas, com atividades de laboratório, projetos e estágio."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação começa com cálculo, física, álgebra, programação e fundamentos da engenharia. Depois reúne **circuitos elétricos, eletrônica, controle de sistemas dinâmicos, instrumentação, acionamentos, automação industrial, robótica, redes industriais, sistemas supervisórios e embarcados**, além de gestão de projetos e segurança."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Programação e computação",
+              "Desenvolver programas, algoritmos e integração de dispositivos e dados."
+            ],
+            [
+              "Eletrônica e instrumentação",
+              "Projetar circuitos, medir grandezas e escolher sensores e atuadores."
+            ],
+            [
+              "Sistemas de controle",
+              "Modelar o comportamento de equipamentos e projetar controladores para processos dinâmicos."
+            ],
+            [
+              "Automação industrial",
+              "Programar controladores lógicos programáveis (CLPs) e integrar máquinas, redes e sistemas supervisórios."
+            ],
+            [
+              "Robótica e acionamentos",
+              "Compreender robôs, motores, máquinas elétricas e o controle de movimentos."
+            ],
+            [
+              "Sistemas embarcados",
+              "Programar sistemas que combinam hardware e software para monitorar e controlar equipamentos."
+            ],
+            [
+              "Gestão e projetos de engenharia",
+              "Avaliar requisitos, riscos, custos e a implantação de soluções tecnológicas."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Atividades práticas no Campus Betim",
+          "conteudo": "O Campus Betim reúne atividades em **laboratórios de automação**, programação de controladores, eletrônica, acionamentos e sistemas supervisórios. A formação também utiliza projetos de conclusão de curso para conectar teoria e aplicação, como estudos com sensores, controle e microcontroladores."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Engenharia de Controle e Automação · práticas de automação e laboratório · Campus Betim",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Atividades práticas no Campus Ibirité",
+          "conteudo": "O Campus Ibirité desenvolve o ensino de **eletrônica, programação, controle, robótica, instrumentação e projetos integrados**. O currículo reúne atividades práticas profissionais e componentes de extensão que relacionam conhecimentos técnicos à solução de problemas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Engenharia de Controle e Automação · práticas e projetos acadêmicos · Campus Ibirité",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Atividades práticas no Campus Sabará",
+          "conteudo": "No Campus Sabará, a formação explora **eletrônica, redes industriais, controle digital, acionamentos, robótica, programação e projetos extensionistas**. O currículo permite integrar programação e dispositivos físicos e desenvolver atividades que comunicam ciência e tecnologia à comunidade."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Engenharia de Controle e Automação · projetos e atividades práticas · Campus Sabará",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Engenharia de Controle e Automação",
+          "conteudo": "O **Bacharelado em Engenharia de Controle e Automação** é oferecido nos campi **Betim, Ibirité e Sabará**, com aulas presenciais no turno da noite. As três formações têm duração mínima de **dez semestres** e carga horária de **3.600 horas**, mas a distribuição dos componentes curriculares varia por campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Betim",
+              "Noite",
+              "Presencial",
+              "10 semestres",
+              "3.600 horas",
+              "eng.automacao.betim@ifmg.edu.br"
+            ],
+            [
+              "Ibirité",
+              "Noite",
+              "Presencial (5,4% EaD)",
+              "10 semestres",
+              "3.600 horas",
+              "eng.controle.automacao.ibirite@ifmg.edu.br"
+            ],
+            [
+              "Sabará",
+              "Noite",
+              "Presencial (11,12% EaD)",
+              "10 semestres",
+              "3.600 horas",
+              "eng.automacao.sabara@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "titulo": "Informações dos campi",
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Campus Betim",
+              "resposta": "O curso é **presencial e noturno**, com **3.600 horas** em dez semestres. A matriz para ingressantes a partir de 2023 prevê **360 horas de estágio supervisionado obrigatório**, após integralização de pelo menos 1.800 horas em disciplinas, e **60 horas de Projeto de Conclusão de Curso**, distribuídas em dois componentes de 30 horas. As atividades abrangem controle, automação industrial e laboratórios."
+            },
+            {
+              "pergunta": "Campus Ibirité",
+              "resposta": "O curso tem aulas **noturnas**, **3.600 horas** em dez semestres e **5,4% da carga horária em EaD**. A matriz para turmas de 2026 em diante inclui **160 horas de estágio obrigatório** e **30 horas de TCC**, distribuídas entre TCC I e TCC II. A formação também contempla **360 horas de atividades de extensão**."
+            },
+            {
+              "pergunta": "Campus Sabará",
+              "resposta": "O bacharelado é **presencial e noturno**, com **3.600 horas** em dez semestres. A formação inclui **360 horas de estágio supervisionado obrigatório**, realizado após integralizar pelo menos 1.200 horas, e **60 horas de Trabalho de Conclusão de Curso**. A oferta combina atividades presenciais e componentes EaD e desenvolve projetos e práticas de automação, controle e robótica."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os estudantes podem aprofundar seus interesses por meio de **pesquisa, extensão, atividades práticas, projetos de conclusão de curso e estágios** relacionados à automação. As oportunidades podem envolver programação de sistemas embarcados, controle de processos, robótica, integração de sensores e projetos de divulgação científica, conforme os projetos e as seleções disponíveis em cada campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com a formação"
+          ],
+          "linhas": [
+            [
+              "Especialização em Inteligência Artificial",
+              "Ouro Preto",
+              "Uso de técnicas de inteligência artificial, análise de dados e sistemas inteligentes em aplicações tecnológicas."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento e gestão de projetos, processos e operações industriais."
+            ],
+            [
+              "Especialização em Engenharia de Segurança do Trabalho",
+              "Governador Valadares",
+              "Avaliação de riscos, prevenção de acidentes e segurança em instalações e processos industriais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **2025**, a programação de Trabalhos de Conclusão de Curso do **Campus Betim** incluiu o projeto **“Implementação de controlador PID em um sistema barra-bola utilizando Arduino”**, de estudante do Bacharelado em Engenharia de Controle e Automação. A apresentação foi agendada para dezembro de 2025, no Laboratório de Automação 1. O trabalho demonstra uma aplicação acadêmica de programação, sensores e controle de sistemas dinâmicos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto de TCC sobre controlador PID e sistema barra-bola com Arduino · Engenharia de Controle e Automação Betim · programação de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Projeto Relatividade em Cena em Sabará",
+          "conteudo": "Em **julho de 2025**, estudantes de **Engenharia de Controle e Automação do Campus Sabará** desenvolveram o projeto **“Relatividade em Cena”**, com uma proposta de oficina para aproximar estudantes dos cursos técnicos de conceitos da Teoria da Relatividade por meio de atividades criativas. A programação divulgada previa encontros em 28 e 29 de julho."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto estudantil Relatividade em Cena · Engenharia de Controle e Automação Sabará · julho de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Concluintes de Engenharia de Controle e Automação em Sabará",
+          "conteudo": "Em **23 de janeiro de 2026**, **dois estudantes do Bacharelado em Engenharia de Controle e Automação do Campus Sabará** participaram de uma cerimônia de **colação de grau em gabinete** e receberam o título de bacharel. A conclusão efetiva do curso foi celebrada junto a formandos de outras graduações do campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Colação de grau de bacharéis em Engenharia de Controle e Automação · Campus Sabará · janeiro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre automação e programação de computadores?",
+              "resposta": "A **automação** integra programas, sensores, motores, controladores e máquinas para acompanhar e comandar sistemas físicos. A programação é parte dessa atividade, mas a engenharia também envolve eletrônica, mecânica, modelagem e dimensionamento de sistemas."
+            },
+            {
+              "pergunta": "Há atividades de programação e robótica?",
+              "resposta": "Sim. A formação contempla **algoritmos, sistemas embarcados, controladores industriais, controle de sistemas e robótica**. A aplicação prática e as disciplinas específicas seguem a matriz de cada campus."
+            },
+            {
+              "pergunta": "O estágio e o TCC são obrigatórios?",
+              "resposta": "Sim. Em **Betim e Sabará**, a matriz prevê **360 horas de estágio obrigatório e 60 horas de TCC**. Em **Ibirité**, são **160 horas de estágio obrigatório e 30 horas de TCC**. As regras de início, orientação e documentação seguem a organização curricular de cada campus."
+            },
+            {
+              "pergunta": "O curso é totalmente a distância em algum campus?",
+              "resposta": "Não. As três ofertas são **presenciais e noturnas**. Em **Ibirité**, 5,4% da carga horária é EaD; em **Sabará**, a oferta inclui 11,12% de atividades EaD. Betim está identificado como presencial na oferta."
+            },
+            {
+              "pergunta": "O que posso desenvolver em projetos acadêmicos?",
+              "resposta": "Os temas podem incluir **controle de equipamentos, sistemas de medição, robótica, programação embarcada, redes industriais e automação de processos**. A participação em pesquisas e atividades de extensão depende dos projetos realizados em cada unidade."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Engenharia de Controle e Automação**, é necessário concluir o **ensino médio** até a matrícula. O IFMG oferece processos seletivos de graduação com seleção por **notas do Enem** ou vagas pelo **Sisu**, conforme os editais e as ofertas de cada campus. A modalidade **Histórico Escolar e Redação** também pode estar disponível em processos próprios, quando expressamente prevista para a unidade.\n\nConsulte o edital vigente para verificar as modalidades de ingresso, os critérios e a reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O engenheiro de controle e automação pode **projetar, programar, testar e manter sistemas que monitoram e controlam máquinas e processos**. Entre suas atividades estão selecionar sensores e atuadores, definir estratégias de controle, integrar controladores industriais, desenvolver sistemas embarcados, configurar redes industriais e acompanhar o funcionamento de equipamentos automatizados.\n\nPode participar da **automação de linhas de produção, projetos de robótica, eficiência energética, sistemas de monitoramento e modernização de instalações**, incluindo especificação técnica, análise de segurança, documentação e gestão de projetos. Atua em indústrias, empresas integradoras de sistemas, fabricantes de equipamentos, consultorias, organizações de pesquisa e serviços de engenharia. O exercício de atividades regulamentadas depende de **registro no Conselho Regional de Engenharia e Agronomia (Crea)** e das atribuições profissionais aplicáveis."
+        }
+      ]
+    },
+    {
       "id": "engenharia-de-producao-bacharelado",
       "nome": "Engenharia de Produção",
       "nivel": "Graduação",

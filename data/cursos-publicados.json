@@ -5394,6 +5394,341 @@
       ]
     },
     {
+      "id": "fisica-licenciatura",
+      "nome": "Física",
+      "nivel": "Graduação",
+      "tipo": "Licenciatura",
+      "campi": [
+        "Bambuí",
+        "Congonhas",
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Física"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Graduação (Licenciatura)"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí, Congonhas e Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com componentes EaD em Ouro Preto"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "4 anos (8 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informações específicas por campus na tabela"
+            },
+            {
+              "rotulo": "E-mail da coordenação - Bambuí",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação - Congonhas",
+              "valor": "lic.fisica.congonhas@ifmg.edu.br"
+            },
+            {
+              "rotulo": "E-mail da coordenação - Ouro Preto",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Física",
+          "conteudo": "Forme-se para **ensinar Física na educação básica**, unindo conhecimento científico, experimentação e formação pedagógica. Na licenciatura do IFMG, o estudo de movimentos, energia, luz, eletricidade e outros fenômenos naturais é articulado ao planejamento de aulas e à aprendizagem dos estudantes."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda a transformar fenômenos físicos em experiências de ensino: desenvolva experimentos, planeje aulas e participe de atividades em escolas e espaços de divulgação científica."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A licenciatura é indicada para quem concluiu o ensino médio e gosta de **Física, matemática, experimentos e educação**. O estudante aprende a investigar fenômenos, explicar conceitos, adaptar experiências para diferentes turmas e avaliar a aprendizagem em contextos escolares."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estuda **mecânica, termodinâmica, ondas, óptica, eletricidade, magnetismo, física moderna, cálculo e métodos experimentais**. A formação inclui **didática, psicologia da educação, educação inclusiva, avaliação, planejamento de aulas, história e filosofia da ciência**, além de projetos de ensino e estágio supervisionado."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Mecânica",
+              "Estudar movimentos, forças, energia e suas aplicações em situações cotidianas."
+            ],
+            [
+              "Termodinâmica, ondas e óptica",
+              "Investigar calor, propagação de ondas, luz, som e fenômenos físicos."
+            ],
+            [
+              "Eletricidade e magnetismo",
+              "Compreender circuitos, campos, fenômenos eletromagnéticos e experimentos."
+            ],
+            [
+              "Física moderna e astronomia",
+              "Explorar estrutura da matéria, conceitos da física contemporânea e o universo."
+            ],
+            [
+              "Didática e práticas de ensino",
+              "Planejar sequências didáticas, aplicar metodologias e acompanhar a aprendizagem."
+            ],
+            [
+              "Experimentos e tecnologias educacionais",
+              "Criar materiais didáticos, realizar medições e utilizar recursos digitais no ensino."
+            ],
+            [
+              "Estágio e educação inclusiva",
+              "Conhecer a rotina escolar, observar aulas e desenvolver propostas adequadas a diferentes estudantes."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática no Campus Bambuí",
+          "conteudo": "O Campus Bambuí dispõe de **Laboratório Experimental Didático de Física, laboratório de novas tecnologias, laboratórios de informática e Observatório Astronômico**. Esses espaços apoiam a formação científica, as demonstrações de fenômenos físicos e o desenvolvimento de atividades educacionais."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Licenciatura em Física · Laboratório Experimental Didático de Física e Observatório Astronômico · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática no Campus Congonhas",
+          "conteudo": "Em Congonhas, o **laboratório de Física** permite experimentos de mecânica, termodinâmica, ondas, óptica, eletricidade, magnetismo e física moderna. O campus dispõe também de **telescópios e materiais experimentais** usados nas atividades da licenciatura e de divulgação científica."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Licenciatura em Física · experimentos e telescópios do laboratório de Física · Congonhas",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática no Campus Ouro Preto",
+          "conteudo": "Em Ouro Preto, as atividades incluem **laboratórios de Física, experimentação, elaboração de materiais didáticos, atividades extensionistas e experiências de formação docente**. A formação explora a Física e sua presença na sociedade por meio de projetos, oficinas e experiências em escolas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Licenciatura em Física · laboratórios, oficinas e prática pedagógica · Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Física",
+          "conteudo": "A **Licenciatura em Física** é oferecida nos campi **Bambuí, Congonhas e Ouro Preto**, no turno da noite e em formato presencial. Em **Ouro Preto**, parte da carga horária envolve componentes EaD. As matrizes acadêmicas e as condições de estágio e TCC são específicas de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Turno",
+            "Modalidade",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Noite",
+              "Presencial",
+              "8 semestres",
+              "Informação incompleta",
+              "Informação incompleta"
+            ],
+            [
+              "Congonhas",
+              "Noite",
+              "Presencial",
+              "8 semestres",
+              "3.220 horas",
+              "lic.fisica.congonhas@ifmg.edu.br"
+            ],
+            [
+              "Ouro Preto",
+              "Noite",
+              "Presencial (12,1% EaD)",
+              "8 semestres",
+              "3.225 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A licenciatura tem **aulas noturnas** e duração mínima de **oito semestres**. A formação utiliza o Laboratório Experimental Didático de Física, espaços de informática, laboratório de novas tecnologias e o Observatório Astronômico. O Campus Bambuí também integra o subprojeto de Física do **PIBID**, com atividades de aproximação entre licenciandos e escolas."
+            },
+            {
+              "pergunta": "Campus Congonhas",
+              "resposta": "O curso é **noturno**, com **3.220 horas** em oito semestres. O estágio supervisionado obrigatório corresponde a **400 horas** e pode ser iniciado após a conclusão de pelo menos **50% das disciplinas**. O **TCC é obrigatório, sem carga horária própria**, e a formação conta com laboratório de experimentos de Física e telescópios."
+            },
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "O curso é **noturno**, com **3.225 horas** e oito semestres. O estágio inclui **400 horas de atividades em escolas e 150 horas de componentes teóricos e orientação**, distribuídos desde o início da graduação. O **TCC individual é obrigatório**, com **30 horas de TCC I** e **60 horas de TCC II**. A oferta inclui componentes EaD."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os estudantes podem participar de **iniciação à docência, atividades de pesquisa, experimentação, divulgação científica, projetos de extensão e estágio em escolas**, conforme as oportunidades de cada campus. O **PIBID de Física** integra licenciandos de Bambuí, Congonhas e Ouro Preto, aproximando-os de escolas e do planejamento de atividades educativas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com a Licenciatura em Física"
+          ],
+          "linhas": [
+            [
+              "Especialização em Ensino de Ciências e Matemática",
+              "Bambuí",
+              "Metodologias, experimentação e desenvolvimento de práticas para ensinar Ciências e Matemática."
+            ],
+            [
+              "Especialização em Educação Matemática",
+              "Sabará",
+              "Fundamentos e metodologias do ensino de matemática relacionados à formação científica."
+            ],
+            [
+              "Especialização em Docência com ênfase em Educação Inclusiva",
+              "Ipatinga (EaD)",
+              "Acessibilidade, inclusão e adaptação de estratégias para a aprendizagem."
+            ],
+            [
+              "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+              "Ouro Branco",
+              "Pesquisa aplicada em educação profissional e tecnológica e produção de recursos educacionais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **agosto de 2026**, o subprojeto de **Física do PIBID** reunia licenciandos dos campi **Bambuí, Congonhas e Ouro Preto** em uma iniciativa de formação docente vinculada a escolas de educação básica. O projeto institucional registrava **59 bolsistas em conjunto**, além de supervisores e coordenações de área. A proposta articula práticas de ensino, materiais experimentais acessíveis e acompanhamento da rotina escolar."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Subprojeto de Física do PIBID · Bambuí, Congonhas e Ouro Preto · formação docente em 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Visita ao Centro de Ciências da UFJF",
+          "conteudo": "Em **30 de maio de 2026**, estudantes da **Licenciatura em Física do Campus Congonhas**, acompanhados por professores e estudantes de cursos técnicos, participaram do evento **ICE de Portas Abertas** e visitaram o **Centro de Ciências da Universidade Federal de Juiz de Fora**. O grupo conheceu laboratórios, o planetário, um telescópio de uso didático e experimentos com gerador de Van de Graaff."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Licenciandos de Física do Campus Congonhas no Centro de Ciências da UFJF · maio de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Visita à Escola Família Agrícola Paulo Freire",
+          "conteudo": "Em **10 de setembro de 2025**, estudantes da **Licenciatura em Física do Campus Ouro Preto** participaram de uma visita à **Escola Família Agrícola Paulo Freire**, em Acaiaca, junto a estudantes de Geografia e Gestão da Qualidade. A atividade abordou práticas educativas e a formação docente, incluindo trocas com estudantes e monitores da escola."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Estudantes da Licenciatura em Física de Ouro Preto na Escola Família Agrícola Paulo Freire · setembro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "A licenciatura em Física forma professores ou engenheiros?",
+              "resposta": "A **Licenciatura em Física** é voltada à **formação de professores de Física**, especialmente para a educação básica. O curso reúne conteúdos científicos e pedagógicos, experimentação e prática docente. É diferente de um bacharelado em Física ou de Engenharia."
+            },
+            {
+              "pergunta": "Vou aprender a fazer experimentos e ensinar em escolas?",
+              "resposta": "Sim. A formação combina **laboratórios, preparação de experiências, didática e atividades em escolas**. O estágio supervisionado obrigatório aproxima os estudantes da rotina das instituições de educação básica, e projetos de iniciação à docência podem ampliar essa vivência."
+            },
+            {
+              "pergunta": "Como funciona o estágio supervisionado?",
+              "resposta": "Em **Congonhas**, são **400 horas obrigatórias de estágio**, com início após completar pelo menos metade das disciplinas. Em **Ouro Preto**, o percurso curricular inclui **400 horas práticas de estágio e 150 horas de atividades teóricas e orientação**, com componentes desde o primeiro período."
+            },
+            {
+              "pergunta": "O curso tem Trabalho de Conclusão de Curso?",
+              "resposta": "Em **Congonhas**, o **TCC é obrigatório** e não possui carga horária própria. Em **Ouro Preto**, o trabalho individual é obrigatório e envolve **TCC I (30 horas)** e **TCC II (60 horas)**. As etapas, orientações e formatos seguem as regras da formação em cada campus."
+            },
+            {
+              "pergunta": "Há oportunidades de iniciação à docência e pesquisa?",
+              "resposta": "Sim. O **PIBID de Física** reúne as licenciaturas dos três campi em atividades de iniciação à docência e de aproximação com escolas. A participação depende das oportunidades e dos processos seletivos de cada período; também podem existir projetos de pesquisa e extensão."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na **Licenciatura em Física**, é necessário concluir o **ensino médio** até a matrícula. O IFMG realiza processos seletivos de graduação com modalidades como **Enem, Histórico Escolar e Redação e Sisu**, conforme a oferta de cada campus e o edital vigente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A licenciatura em Física prepara para **planejar, ministrar e avaliar aulas de Física na educação básica**, relacionando conceitos, experimentos e problemas reais à aprendizagem. O trabalho inclui preparar materiais didáticos, adaptar experiências, utilizar tecnologias educacionais, acompanhar o desenvolvimento de estudantes e colaborar com equipes pedagógicas.\n\nO licenciado também pode participar de **projetos de educação científica, produção de materiais educativos, divulgação científica e atividades em museus e centros de ciência**. A atuação depende da formação, dos requisitos da instituição e das regras aplicáveis a cada função. A docência e a pesquisa no ensino superior podem exigir formação adicional."
+        }
+      ]
+    },
+    {
       "id": "medicina-veterinaria-bacharelado",
       "nome": "Medicina Veterinária",
       "nivel": "Graduação",

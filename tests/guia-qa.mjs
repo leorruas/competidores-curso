@@ -201,11 +201,19 @@ test("F4.4: os oito cursos apresentam continuidade sem avisos genéricos", () =>
         ["Graduação","tabela","Pós-graduação","tabela"],c.id);
       assert.ok(c.blocos[i+2].linhas.length>0&&c.blocos[i+4].linhas.length>0,c.id);
     }else{
-      assert.deepEqual(c.blocos.slice(i+1,i+3).map(b=>b.titulo||b.tipo),
-        ["Pós-graduação","tabela"],c.id);
-      assert.ok(c.blocos[i+2].linhas.length>0,c.id);
-      assert.equal(c.blocos[i+3].titulo,"Experiências e conquistas dos estudantes",c.id);
-      assert.ok(!c.blocos.slice(i+2,i+4).some(b=>b.tipo==="links"),c.id+": sem links de cursos legados");
+      // Graduações podem indicar outra graduação relacionada antes da pós-graduação.
+      // Conferir ambas as tabelas, quando presentes, sem abrir mão da continuidade.
+      const hasOtherGraduations=c.blocos[i+1]?.titulo==="Graduação";
+      const labels=hasOtherGraduations
+        ? ["Graduação","tabela","Pós-graduação","tabela"]
+        : ["Pós-graduação","tabela"];
+      const end=i+1+labels.length;
+      assert.deepEqual(c.blocos.slice(i+1,end).map(b=>b.titulo||b.tipo),labels,c.id);
+      for(let offset=2;offset<=labels.length;offset+=2) {
+        assert.ok(c.blocos[i+offset].linhas.length>0,c.id+": tabela vazia");
+      }
+      assert.equal(c.blocos[end].titulo,"Experiências e conquistas dos estudantes",c.id);
+      assert.ok(!c.blocos.slice(i+2,end+1).some(b=>b.tipo==="links"),c.id+": sem links de cursos legados");
     }
     assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),
       ["Forma de ingresso","Mundo do Trabalho"],c.id);

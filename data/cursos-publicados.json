@@ -636,6 +636,298 @@
       ]
     },
     {
+      "id": "analise-e-desenvolvimento-de-sistemas-tecnologo",
+      "nome": "Análise e Desenvolvimento de Sistemas",
+      "nivel": "Graduação",
+      "tipo": "Tecnólogo",
+      "campi": [
+        "Ouro Preto",
+        "Ribeirão das Neves"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Análise e Desenvolvimento de Sistemas"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Superior de Tecnologia (Tecnólogo)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Preto; Ribeirão das Neves"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ribeirão das Neves: 28% EaD na oferta de 2027)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos (6 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "2.000 horas em cada campus"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Ouro Preto: PPC de novembro/2024 em vigor; Ribeirão das Neves: PPC de agosto/2025"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta por campus"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Análise e Desenvolvimento de Sistemas",
+          "conteudo": "Aprenda a **projetar, desenvolver, testar e manter programas e aplicações** que resolvem problemas de pessoas, empresas e serviços públicos. O curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas do IFMG reúne programação, bancos de dados, engenharia de software e projetos que relacionam tecnologia às necessidades de seus usuários."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Transforme necessidades reais em sistemas: estude programação, bancos de dados, interfaces, testes, arquitetura e desenvolvimento de aplicações."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Esta graduação é destinada a quem concluiu o ensino médio e deseja trabalhar com desenvolvimento de software, análise de requisitos e soluções digitais. É uma opção para quem gosta de raciocínio lógico, tecnologia, colaboração e de compreender problemas antes de criar aplicações."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação começa pelos fundamentos da computação e da programação e avança para construção de aplicações, modelagem e manipulação de bancos de dados, desenvolvimento de interfaces, engenharia de software e projetos. A inteligência artificial e suas aplicações também fazem parte do contexto de formação, com abordagens e disciplinas que podem variar conforme a matriz de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Lógica e algoritmos",
+              "Organizar problemas em etapas e criar soluções computacionais."
+            ],
+            [
+              "Programação",
+              "Escrever, interpretar, testar e melhorar códigos de programas e aplicações."
+            ],
+            [
+              "Bancos de dados",
+              "Modelar informações, consultar dados e apoiar sua organização e proteção."
+            ],
+            [
+              "Engenharia de software",
+              "Levantar requisitos, planejar sistemas, trabalhar em equipe e acompanhar a qualidade do desenvolvimento."
+            ],
+            [
+              "Interfaces e experiência de uso",
+              "Pensar na interação com os sistemas e nas necessidades das pessoas que os utilizam."
+            ],
+            [
+              "Arquitetura e infraestrutura",
+              "Relacionar software, redes, serviços e ambientes de execução."
+            ],
+            [
+              "Projetos e extensão",
+              "Desenvolver soluções e relacionar conhecimentos técnicos a demandas da comunidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "Ao longo da graduação, você desenvolve programas e projetos, realiza atividades de laboratório, participa de trabalhos em equipe e aplica conhecimentos de programação e engenharia de software. Os PPCs dos dois campi preveem **práticas de extensão**, que aproximam os estudos de problemas e públicos fora da sala de aula."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Desenvolvimento de software, protótipos e atividades de laboratório · Ouro Preto e Ribeirão das Neves",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Análise e Desenvolvimento de Sistemas",
+          "conteudo": "A graduação em **Análise e Desenvolvimento de Sistemas** é oferecida nos campi **Ouro Preto e Ribeirão das Neves**, em período noturno. As duas ofertas são presenciais, têm duração de **três anos** e carga horária total de **2.000 horas**. Em **Ribeirão das Neves**, a oferta de 2027 contempla **28% de atividades a distância**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Preto",
+              "Presencial",
+              "Noite · 3 anos",
+              "Informação incompleta"
+            ],
+            [
+              "Ribeirão das Neves",
+              "Presencial (28% EaD na oferta de 2027)",
+              "Noite · 3 anos",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "A graduação é noturna, presencial, com **2.000 horas e seis semestres**. O PPC de novembro de 2024, disponibilizado como vigente pelo campus, prevê componentes de programação, matemática, engenharia de software, projetos e extensão. O **estágio não é obrigatório**; quando realizado, pode contar até **200 horas** nas atividades complementares previstas no PPC. O e-mail funcional da coordenação ainda precisa ser confirmado."
+            },
+            {
+              "pergunta": "Campus Ribeirão das Neves",
+              "resposta": "A graduação é noturna, presencial, com **2.000 horas e seis semestres**. A oferta de ingresso de **2027 prevê 28% de atividades a distância**. O PPC de agosto de 2025 inclui desenvolvimento de sistemas web e mobile, engenharia de software, programação e práticas de extensão. O **estágio não é obrigatório** e pode contar até **40 horas** como atividade complementar. O e-mail funcional da coordenação ainda precisa ser confirmado."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os projetos de software podem conectar a formação a temas como acessibilidade digital, serviços públicos, negócios e atendimento de demandas locais. A graduação também inclui práticas de extensão e oferece oportunidades de aplicar conhecimentos em problemas reais, de acordo com a programação de cada campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Como se relaciona à formação em ADS"
+          ],
+          "linhas": [
+            [
+              "Ciência da Computação",
+              "Formiga e Ibirité",
+              "Aprofundamento em fundamentos, teoria e métodos da computação."
+            ],
+            [
+              "Sistemas de Informação",
+              "Ouro Branco, Sabará e São João Evangelista",
+              "Sistemas que apoiam processos e decisões nas organizações."
+            ],
+            [
+              "Inteligência Artificial",
+              "Bambuí",
+              "Estudo de técnicas computacionais para análise e desenvolvimento de sistemas inteligentes."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Como se relaciona à formação em ADS"
+          ],
+          "linhas": [
+            [
+              "Especialização em Inteligência Artificial",
+              "Ouro Preto",
+              "Aplicações e métodos de inteligência artificial em soluções tecnológicas."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento e organização de projetos e equipes em diferentes áreas."
+            ],
+            [
+              "Especialização em Gestão Pública e Desenvolvimento Regional",
+              "Ribeirão das Neves",
+              "Sistemas, processos e serviços aplicados à gestão pública e ao território."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Análise e Desenvolvimento de Sistemas é uma graduação ou um curso técnico?",
+              "resposta": "É uma **graduação superior de tecnologia**. Ao concluir o curso, você recebe o diploma de **tecnólogo em Análise e Desenvolvimento de Sistemas**. Não é um curso técnico de nível médio."
+            },
+            {
+              "pergunta": "É preciso saber programar antes de entrar?",
+              "resposta": "Não é necessário chegar dominando linguagens de programação. A graduação aborda lógica, algoritmos e fundamentos da área desde os primeiros períodos. Interesse em tecnologia e disposição para praticar ajudam no aprendizado."
+            },
+            {
+              "pergunta": "O estágio é obrigatório?",
+              "resposta": "**Não.** Os PPCs de Ouro Preto e Ribeirão das Neves preveem estágio **não obrigatório**. Os limites para aproveitá-lo como atividade complementar são diferentes: até 200 horas em Ouro Preto e até 40 horas em Ribeirão das Neves."
+            },
+            {
+              "pergunta": "As aulas de Ribeirão das Neves são totalmente a distância?",
+              "resposta": "Não. O curso é **presencial** e funciona à noite. A oferta do processo seletivo de 2027 prevê que **28% das atividades sejam a distância**. Em Ouro Preto, a oferta é indicada como presencial, sem percentual EaD informado."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na graduação em **Análise e Desenvolvimento de Sistemas**, é necessário ter concluído o ensino médio até a matrícula. O IFMG realiza processos seletivos para os cursos superiores, com critérios definidos para cada edição.\n\nConsulte as informações do processo seletivo vigente para conhecer as formas de seleção e as regras de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O tecnólogo em Análise e Desenvolvimento de Sistemas pode trabalhar com **análise de requisitos, programação, testes, implantação, manutenção e evolução de software**, além de colaborar na definição de soluções para necessidades de usuários e organizações. Entre as atividades estão desenvolver aplicações web e mobile, organizar dados, integrar sistemas e apoiar projetos tecnológicos.\n\nA área está presente em empresas de tecnologia, indústrias, instituições financeiras, serviços, órgãos públicos, organizações sociais e equipes que criam ou mantêm produtos digitais."
+        }
+      ]
+    },
+    {
       "id": "arquitetura-e-urbanismo-bacharelado",
       "nome": "Arquitetura e Urbanismo",
       "nivel": "Graduação",

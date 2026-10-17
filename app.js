@@ -270,7 +270,9 @@
 
   function filterCourses() {
     return state.courses.filter(c => (!state.query || normalize([c.nome,c.nivel,c.tipo,...c.campi].join(" ")).includes(normalize(state.query))) &&
-      (!state.level || c.nivel === state.level) && (!state.campus || c.campi.includes(state.campus)));
+      (!state.level || c.nivel === state.level) && (!state.campus || c.campi.includes(state.campus)))
+      .sort((a,b) => a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true}) ||
+        String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR") || a.id.localeCompare(b.id,"pt-BR"));
   }
   function optionHTML(v) { return '<option value="' + escapeHTML(v) + '">' + escapeHTML(v) + "</option>"; }
   function updateFilters() {

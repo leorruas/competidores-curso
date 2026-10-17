@@ -598,7 +598,7 @@ test("F1B.12: informações dos campi usam FAQ do Wagtail separado das perguntas
      campi:["Congonhas","Governador Valadares","Ouro Preto","Piumhi","Santa Luzia"]},
     {id:"tecnico-em-logistica-subsequente",tableTitle:"Onde o IFMG oferece Técnico em Logística",
      campi:["Governador Valadares","Ribeirão das Neves"]},
-    {id:"tecnico-em-administracao-integrado",tableTitle:"Onde o IFMG oferece Técnico em Administração Integrado",
+    {id:"tecnico-em-administracao-integrado",tableTitle:"Onde o IFMG oferece Técnico em Administração",
      campi:["Arcos","Bambuí","Formiga","Ouro Branco","Ouro Preto","Ponte Nova","Ribeirão das Neves","Sabará"]},
     {id:"engenharia-mecanica-bacharelado",tableTitle:"Onde o IFMG oferece Engenharia Mecânica",campi:["Arcos","Betim"]},
     {id:"administracao-bacharelado",tableTitle:"Onde o IFMG oferece Administração",campi:["Bambuí","Formiga","Ouro Branco","Ribeirão das Neves","Sabará","São João Evangelista"]},

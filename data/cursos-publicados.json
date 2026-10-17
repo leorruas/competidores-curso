@@ -2636,6 +2636,322 @@
       ]
     },
     {
+      "id": "educacao-fisica-licenciatura",
+      "nome": "Educação Física",
+      "nivel": "Graduação",
+      "tipo": "Licenciatura",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Educação Física"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Licenciatura"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Formação de professores de Educação Física"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "4 anos (8 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "3.270 horas"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "PPC de abril de 2025"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Educação Física",
+          "conteudo": "Forme-se para **ensinar Educação Física na educação básica**, relacionando movimento, esporte, jogos, dança, lutas e cultura corporal à aprendizagem e ao desenvolvimento dos estudantes. Na licenciatura do IFMG, a formação pedagógica é articulada ao estudo do corpo e às práticas de ensino."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda a planejar aulas de Educação Física, participar de experiências em escolas e desenvolver práticas de ensino, pesquisa e extensão."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A licenciatura é destinada a quem concluiu o ensino médio e deseja trabalhar com **educação e práticas corporais**. É indicada para quem tem interesse por esporte, jogos, dança, inclusão, saúde e pela maneira como crianças e jovens aprendem em diferentes contextos escolares."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estuda **didática, políticas educacionais, desenvolvimento humano, avaliação e metodologias de ensino**, além de anatomia, fisiologia, biomecânica, brincadeiras, ginástica, esportes coletivos, atletismo, lutas, dança, lazer, atividades aquáticas e Educação Física escolar. A formação discute as relações entre corpo, cultura, gênero, inclusão e educação."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Educação e formação docente",
+              "Planejar aulas, acompanhar aprendizagens e considerar diferenças entre estudantes."
+            ],
+            [
+              "Jogos e brincadeiras",
+              "Trabalhar experiências lúdicas e desenvolvimento corporal em diferentes idades."
+            ],
+            [
+              "Esportes coletivos e individuais",
+              "Ensinar fundamentos e adaptar práticas de futebol, voleibol, basquetebol e atletismo."
+            ],
+            [
+              "Dança, lutas e cultura corporal",
+              "Explorar manifestações culturais do movimento e suas possibilidades pedagógicas."
+            ],
+            [
+              "Saúde e movimento",
+              "Relacionar anatomia, fisiologia, biomecânica e atividades corporais ao ensino."
+            ],
+            [
+              "Inclusão e avaliação",
+              "Construir práticas acessíveis e avaliar a participação e a aprendizagem."
+            ],
+            [
+              "Estágio, pesquisa e extensão",
+              "Desenvolver propostas de ensino, experiências na escola e projetos com a comunidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação combina vivências de práticas corporais, planejamento de aulas, estudos da escola e **estágio supervisionado obrigatório de 400 horas**. O PPC de 2025 também prevê componentes de extensão ao longo do curso e **Trabalho de Conclusão de Curso (TCC)** como parte da formação acadêmica."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Aulas e práticas corporais da Licenciatura em Educação Física · Campus Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Educação Física",
+          "conteudo": "A **Licenciatura em Educação Física** é oferecida no **Campus Bambuí**, em aulas noturnas e na modalidade presencial. A matriz curricular de 2025 organiza a formação em oito períodos, com atividades de ensino, prática pedagógica, extensão e estágio supervisionado."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Presencial",
+              "Noite · 4 anos",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A licenciatura é **presencial e noturna**. A matriz de 2025 organiza a formação em oito períodos, com **3.270 horas totais**, **400 horas de estágio supervisionado obrigatório** e disciplina de **TCC**. A formação inclui experiências com jogos, esportes, dança, lutas, prática pedagógica e extensão."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Estudantes de Educação Física do Campus Bambuí podem participar de iniciativas de **iniciação à docência**, como o **PIBID**, que aproxima licenciandos de escolas públicas e do planejamento de atividades pedagógicas. Projetos de pesquisa e extensão também permitem investigar a Educação Física escolar, as práticas corporais e o ensino. As oportunidades dependem das seleções e atividades de cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Educação Física"
+          ],
+          "linhas": [
+            [
+              "Pedagogia (Licenciatura)",
+              "Ouro Branco",
+              "Formação docente, aprendizagem, inclusão e práticas na educação básica."
+            ],
+            [
+              "Ciências Biológicas (Licenciatura)",
+              "Bambuí e São João Evangelista",
+              "Ensino de Ciências, corpo humano, saúde e metodologias de educação."
+            ],
+            [
+              "Física (Licenciatura)",
+              "Bambuí, Congonhas e Ouro Preto",
+              "Didática, formação de professores e estudos interdisciplinares em educação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Educação Física"
+          ],
+          "linhas": [
+            [
+              "Especialização em Educação para Relações Étnico-Raciais",
+              "Bambuí (EaD)",
+              "Educação antirracista e tratamento da diversidade nas práticas escolares."
+            ],
+            [
+              "Especialização em Docência",
+              "Arcos e Ponte Nova (EaD)",
+              "Práticas pedagógicas e formação continuada de professores."
+            ],
+            [
+              "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+              "Ouro Branco",
+              "Pesquisa aplicada à educação, práticas de ensino e produtos educacionais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **maio de 2025**, uma estudante da Licenciatura em Educação Física do Campus Bambuí, em parceria com docentes, publicou um **artigo sobre o ensino de danças tradicionais e de matriz afro-brasileira nas escolas**. O estudo discutiu a dança como prática pedagógica para valorizar identidades culturais e contribuir para uma educação antirracista."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Artigo sobre danças tradicionais e cultura afro-brasileira na escola · Educação Física Bambuí · maio de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa sobre gênero nas aulas de Educação Física",
+          "conteudo": "Em **dezembro de 2025**, uma estudante do curso apresentou no **X Encontro Nacional das Licenciaturas e IX Seminário Nacional do PIBID**, em Brasília, o trabalho **“Onde estão as meninas?”**, desenvolvido a partir de experiências de iniciação à docência. A pesquisa discutiu a participação de meninas nas aulas de Educação Física e possibilidades de enfrentar desigualdades no contexto escolar."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Trabalho Onde estão as meninas? · encontro nacional de licenciaturas e PIBID · dezembro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa sobre o ensino de lutas na escola",
+          "conteudo": "Uma estudante da licenciatura e uma docente publicaram o artigo **“O ensino de lutas e as ‘lutas’ na Educação Física escolar”**, divulgado pelo IFMG em **janeiro de 2026**. O estudo partiu de experiências do **PIBID** e examinou uma sequência didática para trabalhar lutas nas aulas de Educação Física."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Artigo sobre o ensino de lutas e experiências do PIBID · Educação Física Bambuí · janeiro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Semana da Educação Física 2026",
+          "conteudo": "Entre **1º e 3 de setembro de 2026**, o curso realizou a **3ª Semana da Educação Física** no Campus Bambuí. Estudantes participaram de palestras e conversas sobre identidade docente, arbitragem, carreira e possibilidades de trabalho. A programação incluiu um relato de estudante sobre experiências com a rede municipal de ensino."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "3ª Semana da Educação Física · Bambuí · setembro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "A licenciatura e o bacharelado em Educação Física têm a mesma atuação?",
+              "resposta": "A **licenciatura** forma professores para trabalhar com Educação Física na educação básica. O **bacharelado** tem outra formação e outras possibilidades de atuação, de acordo com suas atribuições profissionais. O curso oferecido pelo IFMG em Bambuí é uma **licenciatura**."
+            },
+            {
+              "pergunta": "Vou ter experiências de ensino em escolas durante o curso?",
+              "resposta": "Sim. O curso prevê **estágio supervisionado obrigatório de 400 horas** e disciplinas de prática pedagógica. Os estudantes também podem se candidatar a programas como o **PIBID**, conforme as seleções vigentes."
+            },
+            {
+              "pergunta": "O curso inclui pesquisa e Trabalho de Conclusão de Curso?",
+              "resposta": "Sim. A matriz curricular de 2025 inclui uma disciplina de **TCC**, com **60 horas**, além de componentes de ensino, pesquisa e extensão relacionados à Educação Física e à formação docente."
+            },
+            {
+              "pergunta": "A formação envolve apenas prática esportiva?",
+              "resposta": "A graduação combina esportes e outras práticas corporais com **didática, educação inclusiva, desenvolvimento humano, cultura, avaliação da aprendizagem e planejamento de aulas**. O foco é a formação de professores."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na **Licenciatura em Educação Física**, é necessário ter concluído o ensino médio até a matrícula. As formas de seleção para graduação e as regras de reserva de vagas são informadas no processo seletivo vigente do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A licenciatura em Educação Física prepara para **planejar, conduzir e avaliar aulas de Educação Física na educação básica**, em escolas públicas e privadas. O trabalho inclui selecionar e adaptar jogos, danças, lutas, ginásticas e esportes aos objetivos de aprendizagem, às faixas etárias e às necessidades dos estudantes.\n\nO profissional pode participar de projetos escolares de promoção da saúde, inclusão, cultura corporal e atividades interdisciplinares. Para atuar legalmente, é necessário cumprir os requisitos da profissão e das instituições de ensino, respeitando as atribuições próprias da **licenciatura**, distintas das do bacharelado."
+        }
+      ]
+    },
+    {
       "id": "engenharia-de-producao-bacharelado",
       "nome": "Engenharia de Produção",
       "nivel": "Graduação",

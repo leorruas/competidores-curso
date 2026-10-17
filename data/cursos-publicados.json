@@ -7442,6 +7442,465 @@
           "conteudo": "O técnico em Agropecuária pode atuar no apoio à **produção agrícola e animal**, acompanhando o plantio e a colheita, o manejo de rebanhos, a alimentação e o bem-estar animal, o uso de equipamentos e a organização de atividades rurais. Também pode participar do monitoramento de solos, da irrigação, do controle de qualidade, de registros de produção e de iniciativas de conservação ambiental.\n\nO campo de atuação inclui propriedades rurais, cooperativas, empresas de insumos e de serviços, agroindústrias e iniciativas de assistência e extensão rural. A atuação profissional deve respeitar as atribuições da habilitação técnica, a supervisão quando exigida e as normas de segurança, sanidade e meio ambiente."
         }
       ]
+    },
+    {
+      "id": "tecnico-em-informatica-integrado",
+      "nome": "Técnico em Informática",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Bambuí",
+        "Formiga",
+        "Ibirité",
+        "Ouro Branco",
+        "Ponte Nova",
+        "Ribeirão das Neves",
+        "Sabará",
+        "São João Evangelista"
+      ],
+      "modalidade": "Presencial (Ibirité: 8,3% EaD; Sabará: 16,67% EaD)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Informática"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí; Formiga; Ibirité; Ouro Branco; Ponte Nova; Ribeirão das Neves; Sabará; São João Evangelista"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ibirité: 8,3% EaD; Sabará: 16,67% EaD no PS2027)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "PPC aplicável para ingressantes em 2027",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Consultar tabela por campus"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Informática",
+          "conteudo": "Estude o ensino médio junto com uma formação técnica em tecnologia da informação. No IFMG, você aprende **programação, desenvolvimento de sistemas, bancos de dados, computadores e redes**, relacionando esses conhecimentos às demais áreas do ensino médio."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda programação, desenvolvimento de aplicações, redes e manutenção de computadores enquanto conclui o ensino médio. Compare as oito ofertas do IFMG."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O Técnico em Informática Integrado é destinado a quem concluiu o ensino fundamental e deseja fazer o ensino médio com uma formação técnica. É uma opção para estudantes interessados em lógica, tecnologia, criação de aplicações e funcionamento de computadores e redes."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne conhecimentos gerais do ensino médio e estudos de programação, desenvolvimento de software, computadores e comunicação de dados. As disciplinas e atividades práticas seguem a matriz curricular de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Programação e algoritmos",
+              "Organizar problemas, escrever programas e testar soluções."
+            ],
+            [
+              "Desenvolvimento de aplicações",
+              "Criar sites, aplicações e interfaces de acordo com o currículo."
+            ],
+            [
+              "Banco de dados",
+              "Organizar e consultar dados de sistemas digitais."
+            ],
+            [
+              "Computadores e sistemas",
+              "Conhecer componentes, sistemas operacionais e instalação de aplicativos."
+            ],
+            [
+              "Redes e suporte",
+              "Compreender redes, configuração e diagnóstico de problemas."
+            ],
+            [
+              "Projetos e trabalho em equipe",
+              "Planejar, documentar, testar e apresentar soluções tecnológicas."
+            ],
+            [
+              "Formação geral",
+              "Relacionar matemática, linguagens, ciências e sociedade às tecnologias."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "Você pode desenvolver aplicações, testar programas, configurar equipamentos e produzir projetos interdisciplinares, conforme as disciplinas e os espaços disponíveis. **Em Bambuí**, o Laboratório 1 de Informática recebeu **35 computadores novos em 2026**, sendo 34 para estudantes e um para docente."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios e atividades práticas de Informática · oito campi",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Informática",
+          "conteudo": "O Técnico em Informática Integrado ao Ensino Médio é oferecido em **oito campi**, com aulas de manhã e à tarde e duração prevista de três anos. O quadro de 2027 registra **8,3% de EaD em Ibirité** e **16,67% em Sabará**. Os demais campi aparecem como presenciais, sem percentual EaD discriminado."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno / duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "info.bambui@ifmg.edu.br"
+            ],
+            [
+              "Formiga",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "coordtecinfo.formiga@ifmg.edu.br"
+            ],
+            [
+              "Ibirité",
+              "Presencial (8,3% EaD)",
+              "Manhã e tarde / 3 anos",
+              "informatica.ibirite@ifmg.edu.br"
+            ],
+            [
+              "Ouro Branco",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "coord.integradoinformatica.obr@ifmg.edu.br"
+            ],
+            [
+              "Ponte Nova",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "coordinf.pontenova@ifmg.edu.br"
+            ],
+            [
+              "Ribeirão das Neves",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "Informação incompleta"
+            ],
+            [
+              "Sabará",
+              "Presencial (16,67% EaD)",
+              "Manhã e tarde / 3 anos",
+              "coordinf.sabara@ifmg.edu.br"
+            ],
+            [
+              "São João Evangelista",
+              "Presencial",
+              "Manhã e tarde / 3 anos",
+              "informatica.sje@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A formação abrange implementação, avaliação, suporte e manutenção de sistemas, computadores e redes. O campus modernizou o Laboratório 1 de Informática em 2026."
+            },
+            {
+              "pergunta": "Campus Formiga",
+              "resposta": "O curso trabalha programação, desenvolvimento de aplicações, redes e manutenção. Estudantes de Informática participam de atividades de robótica junto a colegas de outros integrados."
+            },
+            {
+              "pergunta": "Campus Ibirité",
+              "resposta": "O curso foi aprovado em 2025 e passou a integrar as ofertas de 2026. Abrange softwares e infraestrutura de informática. Em 2027, a matriz registra **8,3% EaD**. A qualificação intermediária em suporte indicada na página antiga deve ser confirmada no PPC vigente."
+            },
+            {
+              "pergunta": "Campus Ouro Branco",
+              "resposta": "A formação contempla programação e projetos de sistemas. Estudantes do integrado desenvolveram sistemas, sites e aplicativos ao longo de 2025, mencionados na divulgação de uma mostra de projetos."
+            },
+            {
+              "pergunta": "Campus Ponte Nova",
+              "resposta": "A formação inclui programação, bancos de dados, redes e projetos integradores. Os projetos **Mobilidade Urbana Inteligente** e **ConectaMed** foram apresentados no SIA da UFV em 2025."
+            },
+            {
+              "pergunta": "Campus Ribeirão das Neves",
+              "resposta": "O integrado trabalha sistemas, computadores, aplicações e suporte. O campus também oferece Técnico em Informática no programa Trilhas de Futuro, modalidade distinta, com calendário e horário próprios."
+            },
+            {
+              "pergunta": "Campus Sabará",
+              "resposta": "O curso desenvolve conhecimentos de programação, aplicações, redes e manutenção. A matriz de 2027 registra **16,67% EaD**, com organização definida pelo PPC local."
+            },
+            {
+              "pergunta": "Campus São João Evangelista",
+              "resposta": "O integrado reúne formação geral e técnica, em aulas pela manhã e à tarde. As atividades e os ambientes de prática seguem a organização do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "O IFMG desenvolve projetos integradores, atividades de robótica e participação em competições acadêmicas. Em **Ponte Nova**, estudantes de Informática apresentaram aplicações digitais no SIA da UFV; em **Formiga**, participaram de equipes de robótica; em **Ouro Branco**, a estudante Beatriz da Silva Andrade participou do projeto identificado **MinasCoder's**, voltado a meninas na computação. As conquistas verificadas aparecem na seção de experiências."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": "Depois de concluir o ensino médio integrado, você pode concorrer às graduações relacionadas ao desenvolvimento de aplicações, dados e sistemas do IFMG."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Informática"
+          ],
+          "linhas": [
+            [
+              "Ciência da Computação",
+              "Formiga e Ibirité",
+              "Algoritmos, programação e sistemas computacionais."
+            ],
+            [
+              "Sistemas de Informação",
+              "Ouro Branco, Sabará e São João Evangelista",
+              "Aplicações, dados, organizações e sistemas de informação."
+            ],
+            [
+              "Análise e Desenvolvimento de Sistemas",
+              "Ouro Preto e Ribeirão das Neves",
+              "Construção, testes e manutenção de software."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": "Após concluir uma graduação compatível, você pode aprofundar a formação no IFMG em programas de especialização e mestrado."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Informática"
+          ],
+          "linhas": [
+            [
+              "Especialização em Inteligência Artificial",
+              "Ouro Preto",
+              "Métodos e aplicações de inteligência artificial. O programa exige diploma superior compatível, conforme o edital."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **agosto de 2025**, os estudantes **Igor Paim, Maria Isabel Arantes e Pedro Paulo Duque**, de Informática do **Campus Formiga**, participaram da equipe G.I.Ants na modalidade Resgate da etapa estadual da **Olimpíada Brasileira de Robótica**. A equipe mista, com estudantes de Administração, recebeu o **Troféu de Robustez**. **Romana Santos**, de Informática, também participou da modalidade Artística."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Olimpíada Brasileira de Robótica · equipes de Informática e Administração · Formiga · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Na **Jornada Nacional de Foguetes de agosto de 2025**, **Gabriel José Alves do Couto**, do segundo ano de Informática de **Formiga**, integrou uma equipe **campeã nacional** com estudante de Administração. **Lucas Malaquias Bispo Silva**, também de Informática, integrou uma equipe **vice-campeã** com estudantes de Eletrotécnica e Administração. Ambas as conquistas pertencem às equipes mistas."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Jornada Nacional de Foguetes · equipes mistas com Informática · Formiga · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **2026**, **Daniel Garcia de Oliveira**, estudante do primeiro ano do Técnico Integrado em Informática do **Campus Ibirité**, conquistou **medalha de bronze no Concurso Canguru de Matemática**, conforme os resultados divulgados pelo campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Canguru de Matemática · Daniel Garcia de Oliveira · Informática Ibirité · 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "A ex-aluna **Beatriz da Silva Andrade**, do Técnico Integrado em Informática do **Campus Ouro Branco**, recebeu **medalha de bronze na Olimpíada Brasileira de Informática de 2025**. O resultado foi divulgado em julho de 2026. Durante sua trajetória no IFMG, participou também do projeto **MinasCoder's**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Medalha OBI 2025 · Beatriz da Silva Andrade · Ouro Branco",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **outubro de 2025**, estudantes do **Técnico Integrado em Informática do Campus Ponte Nova** apresentaram no **SIA da Universidade Federal de Viçosa** os projetos integradores **Mobilidade Urbana Inteligente** e **ConectaMed**. O primeiro foi reconhecido com o **segundo lugar na dimensão econômica da Agenda 2030**, concorrendo também com trabalhos de graduação."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "SIA UFV · Mobilidade Urbana Inteligente e ConectaMed · Informática Ponte Nova · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **junho de 2025**, a equipe **Golden Girls**, formada por quatro estudantes do segundo ano do Técnico Integrado em Informática de **Ribeirão das Neves**, venceu a **etapa regional da Technovation Girls** com o projeto identificado **Caminho Seguro**, aplicativo voltado à segurança de mulheres em deslocamentos."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Technovation Girls regional · Caminho Seguro · Informática Ribeirão das Neves · 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "No **Enem 2025**, **Lucas Braga Monteiro**, de Informática do **Campus Ribeirão das Neves**, alcançou **779,3 pontos** de média geral e ficou entre os dez melhores resultados de estudantes do IFMG, segundo o levantamento divulgado em janeiro de 2026."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Enem 2025 · Lucas Braga Monteiro · Informática Ribeirão das Neves",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **8 de fevereiro de 2025**, estudantes dos técnicos integrados em **Informática, Eletrônica e Administração de Sabará** apresentaram **14 experimentos científicos no conjunto dos três cursos** durante a Feira de Ciências. As atividades envolveram Física, Química e Biologia."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Feira de Ciências · Informática, Eletrônica e Administração · Sabará · fevereiro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "No **Enem 2025**, **Maria Fernanda Couto Figueira**, de Informática do **Campus Sabará**, alcançou **960 pontos na redação**, segundo levantamento do IFMG divulgado em janeiro de 2026."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Redação Enem 2025 · Maria Fernanda Couto Figueira · Informática Sabará",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode fazer o Técnico em Informática Integrado?",
+              "resposta": "Quem concluiu o ensino fundamental ou vai concluí-lo até a matrícula pode concorrer ao curso. A formação técnica e o ensino médio são realizados no mesmo percurso."
+            },
+            {
+              "pergunta": "O curso tem atividades a distância em todos os campi?",
+              "resposta": "O quadro de ofertas de 2027 informa **8,3% EaD em Ibirité** e **16,67% em Sabará**. Nos demais campi, a oferta aparece como presencial, sem percentual a distância discriminado na matriz."
+            },
+            {
+              "pergunta": "Vou aprender a desenvolver sites e aplicações?",
+              "resposta": "Sim. A formação contempla programação e desenvolvimento de sistemas, com distribuição curricular própria de cada campus. O curso de Ponte Nova, por exemplo, apresentou projetos de mobilidade e saúde digital no SIA da UFV em 2025."
+            },
+            {
+              "pergunta": "O estágio ou o TCC são obrigatórios?",
+              "resposta": "As regras são definidas pelo projeto pedagógico do campus e da turma. As exigências curriculares de 2027 ainda precisam ser confirmadas pelas coordenações das oito ofertas."
+            },
+            {
+              "pergunta": "O que diferencia o integrado do subsequente ou do Trilhas de Futuro?",
+              "resposta": "O integrado é para quem vai cursar o ensino médio junto com a formação técnica. Cursos subsequentes ou programas de formação técnica para outros públicos seguem condições, horários e currículos próprios."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Outras modalidades relacionadas",
+          "conteudo": "Além do **Técnico em Informática Integrado**, há formações de Informática com públicos e regras distintos, como ofertas **subsequentes em Ponte Nova** e a formação do programa **Trilhas de Futuro em Ribeirão das Neves**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Se você...",
+            "Procure por...",
+            "O que comparar"
+          ],
+          "linhas": [
+            [
+              "Concluiu o ensino fundamental e vai fazer o ensino médio",
+              "Técnico em Informática Integrado",
+              "Campus, turno e formação geral e técnica."
+            ],
+            [
+              "Já concluiu o ensino médio",
+              "Técnico em Informática Subsequente, onde oferecido",
+              "Duração, turno e requisitos."
+            ],
+            [
+              "Busca curso oferecido por programa de formação específico",
+              "Oferta própria do programa, como Trilhas de Futuro",
+              "Público-alvo, calendário e regras distintas do integrado."
+            ]
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Informática Integrado ao Ensino Médio**, é necessário concluir o ensino fundamental até a matrícula. O IFMG realiza processo seletivo público para os cursos integrados.\n\nConsulte o edital vigente para conhecer vagas, critérios, cotas, documentação e procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Informática pode atuar na **programação, instalação, configuração, operação, teste e suporte de sistemas digitais**. Entre suas atividades estão desenvolver e manter aplicações, consultar bancos de dados, diagnosticar falhas, instalar softwares, acompanhar redes e orientar usuários.\n\nA formação permite trabalhar em equipes de tecnologia, empresas de serviços, organizações públicas e privadas ou no suporte a sistemas em diferentes setores. As atividades seguem as atribuições da função e os requisitos técnicos e de segurança da informação."
+        }
+      ]
     }
   ]
 }

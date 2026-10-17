@@ -1494,6 +1494,312 @@
       ]
     },
     {
+      "id": "ciencias-biologicas-licenciatura",
+      "nome": "Ciências Biológicas",
+      "nivel": "Graduação",
+      "tipo": "Licenciatura",
+      "campi": [
+        "Bambuí",
+        "São João Evangelista"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Ciências Biológicas"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Licenciatura"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Ciências Biológicas e formação de professores"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí; São João Evangelista"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Informação incompleta para a matriz de 2027 (por campus)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta para a matriz de 2027 (por campus)"
+            },
+            {
+              "rotulo": "PPC / matriz",
+              "valor": "Bambuí: PPC 2026 listado pelo campus; São João Evangelista: PPC de 2022 localizado. Confirmar as versões aplicáveis a 2027"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta por campus"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Ciências Biológicas",
+          "conteudo": "Conheça a diversidade da vida, os processos que mantêm os organismos e as relações entre seres vivos e ambientes. Na **Licenciatura em Ciências Biológicas** do IFMG, você estuda biologia e aprende a **ensinar Ciências e Biologia**, planejando aulas, atividades práticas e projetos educativos para escolas e outros espaços de aprendizagem."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude os seres vivos, a biodiversidade, a ecologia e a evolução enquanto desenvolve habilidades para ensinar Ciências e Biologia."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A licenciatura é voltada a quem concluiu o ensino médio e se interessa pela natureza, pela ciência e por compartilhar conhecimentos. Ao longo da graduação, você aprende a investigar fenômenos biológicos e a transformar esse conhecimento em atividades de ensino, comunicação e educação ambiental."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação combina conteúdos de biologia e conhecimentos pedagógicos. Você estuda organização e funcionamento dos seres vivos, genética, evolução, ecologia e biodiversidade e também aprende sobre didática, planejamento de aulas, avaliação da aprendizagem e práticas de ensino. As disciplinas e suas cargas horárias são definidas pela matriz curricular de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Diversidade dos seres vivos",
+              "Identificar grupos de organismos e compreender suas características e relações evolutivas."
+            ],
+            [
+              "Ecologia e meio ambiente",
+              "Investigar ecossistemas, relações ecológicas, biodiversidade e conservação."
+            ],
+            [
+              "Genética e evolução",
+              "Estudar hereditariedade, variabilidade biológica e mudanças das espécies ao longo do tempo."
+            ],
+            [
+              "Células e organismos",
+              "Compreender processos celulares e o funcionamento de plantas, animais e microrganismos."
+            ],
+            [
+              "Práticas de laboratório e campo",
+              "Observar organismos, coletar e analisar informações e interpretar fenômenos naturais."
+            ],
+            [
+              "Educação e didática",
+              "Planejar aulas, recursos pedagógicos e avaliações para diferentes contextos escolares."
+            ],
+            [
+              "Ensino de Ciências e Biologia",
+              "Relacionar conteúdos científicos a práticas educativas, experimentos e projetos de aprendizagem."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação articula atividades em laboratório e em campo com práticas de ensino nas escolas. O contato com a educação básica inclui observação, planejamento de aulas e desenvolvimento de atividades pedagógicas. O **PIBID Biologia** reúne os campi Bambuí e São João Evangelista e aproxima licenciandos de escolas parceiras, com propostas de colaboração entre estudantes e professores."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades de laboratório, estudo da biodiversidade e práticas de ensino · Bambuí e São João Evangelista",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Ciências Biológicas",
+          "conteudo": "A **Licenciatura em Ciências Biológicas** é oferecida nos campi **Bambuí** e **São João Evangelista**, na modalidade presencial e no período noturno. Cada campus organiza as disciplinas, as práticas de ensino e os componentes curriculares conforme seu projeto pedagógico."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Presencial",
+              "Noite",
+              "Informação incompleta"
+            ],
+            [
+              "São João Evangelista",
+              "Presencial",
+              "Noite",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A Licenciatura em Ciências Biológicas é **presencial e noturna**. O campus disponibiliza projetos pedagógicos de **2025 e 2026**, além de programas voltados à formação de professores, como o **PIBID Biologia**. As atividades podem envolver laboratórios, aulas práticas, estudos de campo e projetos com escolas parceiras. A carga horária e o contato funcional da coordenação para a edição de 2027 ainda precisam de confirmação."
+            },
+            {
+              "pergunta": "Campus São João Evangelista",
+              "resposta": "A Licenciatura em Ciências Biológicas é **presencial e noturna**. O curso integra o **PIBID Biologia**, que aproxima licenciandos de escolas públicas do município e da região. A matriz e a carga horária aplicáveis aos ingressantes de 2027 precisam de confirmação no PPC vigente, assim como o contato funcional da coordenação."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A formação oferece possibilidades de participação em projetos de ensino, pesquisa e extensão relacionados à biodiversidade, à educação científica e ao meio ambiente. No **PIBID Biologia**, os campi Bambuí e São João Evangelista atuam com escolas parceiras para desenvolver práticas pedagógicas e fortalecer a formação inicial de professores."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Ciências Biológicas"
+          ],
+          "linhas": [
+            [
+              "Agronomia",
+              "Bambuí e São João Evangelista",
+              "Relações entre plantas, solo, produção agrícola e meio ambiente."
+            ],
+            [
+              "Engenharia Florestal",
+              "São João Evangelista",
+              "Ecologia, manejo florestal, conservação da biodiversidade e recursos naturais."
+            ],
+            [
+              "Medicina Veterinária",
+              "Bambuí",
+              "Saúde animal, fisiologia, microbiologia e relações entre organismos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Ciências Biológicas"
+          ],
+          "linhas": [
+            [
+              "Especialização em Ensino de Ciências e Matemática",
+              "Bambuí",
+              "Formação docente, estratégias didáticas e ensino de ciências."
+            ],
+            [
+              "Especialização em Meio Ambiente",
+              "São João Evangelista (EaD)",
+              "Ecologia, educação ambiental, sustentabilidade e questões socioambientais."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa aplicada a ecologia, biodiversidade, gestão e sustentabilidade ambiental."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **23 e 24 de setembro de 2025**, estudantes do **PIBID de Ciências Biológicas do Campus Bambuí** participaram, em parceria com o projeto de extensão **Saúde com MotivAÇÃO**, de atividades de valorização da vida. A programação envolveu momentos de reflexão e ações voltadas ao bem-estar da comunidade acadêmica."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Campanha de Valorização da Vida · PIBID Ciências Biológicas e Saúde com MotivAÇÃO · Bambuí · setembro de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "conteudo": "Em **dezembro de 2025**, o curso de **Licenciatura em Ciências Biológicas de Bambuí** divulgou uma **defesa pública de Trabalho de Conclusão de Curso** prevista para **8 de janeiro de 2026**. A divulgação identifica a graduação e apresenta à comunidade a oportunidade de acompanhar a pesquisa de uma estudante. A notícia é um convite para a apresentação e não informa resultado ou aprovação."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Divulgação de defesa pública de TCC · Licenciatura em Ciências Biológicas · Bambuí · janeiro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre licenciatura e bacharelado em Ciências Biológicas?",
+              "resposta": "A **licenciatura** reúne conhecimentos de biologia e formação pedagógica para atuar no **ensino de Ciências e Biologia**. O bacharelado tem outra organização curricular, com ênfase em campos de atuação profissional e pesquisa. A escolha depende das atividades que você deseja desenvolver."
+            },
+            {
+              "pergunta": "Vou estudar apenas para dar aulas?",
+              "resposta": "Não. Você estuda conteúdos de biologia, realiza atividades práticas e pode participar de pesquisa e extensão. A formação pedagógica é parte central do curso e prepara para desenvolver atividades de ensino em escolas e outros espaços educativos."
+            },
+            {
+              "pergunta": "Como funcionam as experiências nas escolas?",
+              "resposta": "Ao longo da formação, as atividades pedagógicas permitem observar, planejar e desenvolver práticas de ensino. Projetos como o **PIBID Biologia** aproximam licenciandos de escolas parceiras e oferecem vivências adicionais de formação docente."
+            },
+            {
+              "pergunta": "O curso de Ciências Biológicas é noturno nos dois campi?",
+              "resposta": "Sim. As ofertas de **Bambuí e São João Evangelista** são **presenciais e noturnas**. Algumas atividades práticas de campo, laboratório e estágio podem ter horários específicos definidos pela programação acadêmica."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na **Licenciatura em Ciências Biológicas**, é necessário ter concluído o ensino médio até a matrícula. O IFMG realiza processos seletivos para os cursos superiores e informa, em cada edição, as formas de seleção e as regras de reserva de vagas.\n\nConsulte o processo seletivo vigente para acompanhar os critérios e os procedimentos de matrícula."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A licenciatura forma profissionais para o **ensino de Ciências nos anos finais do ensino fundamental e de Biologia no ensino médio**. O licenciado pode planejar aulas, desenvolver atividades investigativas, elaborar materiais didáticos, participar de projetos de educação ambiental e atuar em ações de divulgação científica.\n\nEntre os espaços de trabalho estão **escolas públicas e privadas, projetos educativos, museus, centros de ciência e instituições que desenvolvem atividades de educação e formação**. O exercício de funções técnicas regulamentadas fora da docência depende dos requisitos e das atribuições profissionais aplicáveis."
+        }
+      ]
+    },
+    {
       "id": "direito-bacharelado-arcos",
       "nome": "Direito",
       "nivel": "Graduação",

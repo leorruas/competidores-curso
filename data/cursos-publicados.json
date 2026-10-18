@@ -14389,6 +14389,304 @@
       ]
     },
     {
+      "id": "tecnico-em-mecanica-subsequente",
+      "nome": "Técnico em Mecânica",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Congonhas",
+        "Conselheiro Lafaiete"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Mecânica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Congonhas; Conselheiro Lafaiete"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Conselheiro Lafaiete: 20% EaD na oferta de 2027)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Congonhas: Informação incompleta; Conselheiro Lafaiete: 1.200 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Congonhas: coordtecmec.congonhas@ifmg.edu.br; Conselheiro Lafaiete: coord.meccl@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Mecânica",
+          "conteudo": "Aprenda a **fabricar, instalar, inspecionar e realizar a manutenção de máquinas e equipamentos**, compreendendo desenhos técnicos, materiais, usinagem, soldagem e controle de qualidade. A formação técnica em Mecânica do IFMG reúne conhecimentos de processos industriais, segurança e atividades práticas para enfrentar desafios de produção e manutenção."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Depois do ensino médio, estude Mecânica à noite e aprenda desenho técnico, manutenção, usinagem, materiais e processos de fabricação com atividades práticas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Este curso é destinado a quem **já concluiu o ensino médio** e deseja uma habilitação técnica ligada à fabricação, instalação, inspeção e manutenção de sistemas mecânicos. A formação é indicada para quem gosta de compreender o funcionamento de máquinas, medir componentes, interpretar desenhos e resolver problemas em oficinas e ambientes industriais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Os estudos relacionam **desenho técnico mecânico, metrologia, propriedades dos materiais, processos de fabricação, usinagem, soldagem, elementos de máquinas e manutenção**. A formação inclui noções de segurança e controle da qualidade. Em Conselheiro Lafaiete, a matriz também contempla **hidropneumática, eletrotécnica, informática e desenvolvimento de projetos**. Os conteúdos são distribuídos conforme o currículo de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Desenho técnico",
+              "Interpretar e produzir representações de componentes, conjuntos e sistemas mecânicos."
+            ],
+            [
+              "Metrologia e controle da qualidade",
+              "Medir peças, analisar tolerâncias, registrar resultados e conferir padrões de fabricação."
+            ],
+            [
+              "Materiais e resistência",
+              "Reconhecer propriedades de materiais e relacioná-las à escolha de peças e processos."
+            ],
+            [
+              "Usinagem e fabricação",
+              "Conhecer métodos de produção, conformação, soldagem e montagem de componentes."
+            ],
+            [
+              "Máquinas e manutenção",
+              "Estudar mecanismos, reconhecer falhas e planejar ações de inspeção e manutenção."
+            ],
+            [
+              "Hidráulica, pneumática e sistemas industriais",
+              "Compreender o funcionamento de componentes e sistemas presentes em máquinas e equipamentos."
+            ],
+            [
+              "Segurança e projetos",
+              "Aplicar procedimentos de trabalho seguro, organizar documentação e propor melhorias em processos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O curso utiliza atividades de **desenho técnico, medição, estudo de materiais, fabricação, montagem e manutenção mecânica**. Os ambientes de aprendizagem podem envolver laboratórios, oficinas didáticas, exercícios de interpretação de projetos e análise de situações industriais. As práticas e os equipamentos efetivamente utilizados seguem o planejamento e a estrutura de cada campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades de metrologia, usinagem, desenho técnico e manutenção · Técnico em Mecânica Subsequente · Congonhas e Conselheiro Lafaiete",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Mecânica",
+          "conteudo": "O **Técnico em Mecânica Subsequente** é oferecido nos campi **Congonhas e Conselheiro Lafaiete**, com atividades à noite e duração de **dois anos**. A modalidade é destinada a quem concluiu o ensino médio. Em **Conselheiro Lafaiete**, a oferta de 2027 é presencial, com **20% de atividades a distância**; em Congonhas, a oferta é presencial."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Congonhas",
+              "Presencial",
+              "Noite",
+              "4 semestres",
+              "Informação incompleta",
+              "coordtecmec.congonhas@ifmg.edu.br"
+            ],
+            [
+              "Conselheiro Lafaiete",
+              "Presencial (20% EaD na oferta de 2027)",
+              "Noite",
+              "4 semestres",
+              "1.200 horas",
+              "coord.meccl@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Congonhas",
+              "resposta": "A formação é **presencial e noturna**, organizada em **quatro semestres**. As atividades abrangem projetos de componentes, desenho técnico, usinagem, soldagem, medições, controle da qualidade e manutenção de máquinas. O setor de Extensão mantém orientações para **estágios de 360 horas na modalidade subsequente**, com cadastro prévio obrigatório para quem realiza estágio. O contato da coordenação é **coordtecmec.congonhas@ifmg.edu.br**."
+            },
+            {
+              "pergunta": "Campus Conselheiro Lafaiete",
+              "resposta": "A formação é **noturna**, com **quatro semestres e 1.200 horas**, na modalidade presencial. A oferta de 2027 prevê **20% de atividades a distância**. O currículo inclui metrologia, materiais, desenho técnico, manutenção, fabricação, hidropneumática e projetos. **O estágio é opcional**, com acompanhamento e relatório quando realizado. O contato funcional da coordenação é **coord.meccl@ifmg.edu.br**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A formação em Mecânica permite aprofundar o conhecimento de **equipamentos, materiais, processos produtivos e manutenção industrial** em atividades acadêmicas de laboratório e de projetos. O IFMG desenvolve oportunidades de ensino, pesquisa e extensão relacionadas a tecnologias industriais e à comunidade. A participação em cada iniciativa segue as condições dos projetos oferecidos pelos campi."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Mecânica"
+          ],
+          "linhas": [
+            [
+              "Engenharia Mecânica (Bacharelado)",
+              "Arcos e Betim",
+              "Projetos de máquinas, sistemas mecânicos, fabricação, energia e manutenção."
+            ],
+            [
+              "Engenharia de Produção (Bacharelado)",
+              "Bambuí, Congonhas e Governador Valadares",
+              "Planejamento da produção, processos industriais, custos, organização e qualidade."
+            ],
+            [
+              "Engenharia de Controle e Automação (Bacharelado)",
+              "Betim, Ibirité e Sabará",
+              "Automação, controle e integração de equipamentos e processos industriais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Mecânica"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento e coordenação de projetos, equipes, processos e operações."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa aplicada a sustentabilidade e tecnologias de materiais, energia e meio ambiente."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **27 de fevereiro de 2026**, o **Campus Conselheiro Lafaiete** realizou uma cerimônia de formatura para concluintes dos cursos técnicos **integrados e subsequentes em Mecânica e Eletrotécnica**. A solenidade aconteceu no Centro Cultural da Escola Estadual Narciso de Queirós e reuniu estudantes, familiares, professores e representantes do IFMG. A atividade marcou a conclusão dos percursos de formação técnica, incluindo o subsequente em Mecânica."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Formatura dos cursos de Mecânica e Eletrotécnica, modalidades integrada e subsequente · Conselheiro Lafaiete · fevereiro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode ingressar no Técnico em Mecânica Subsequente?",
+              "resposta": "O subsequente é destinado a quem **já concluiu o ensino médio**. A formação técnica tem duração de dois anos e não inclui uma nova etapa de ensino médio."
+            },
+            {
+              "pergunta": "Qual é a diferença entre Mecânica Integrado e Subsequente?",
+              "resposta": "No **integrado**, o estudante cursa o ensino médio e a formação técnica em um único percurso, com duração de três anos. No **subsequente**, a pessoa já terminou o ensino médio e cursa a formação técnica em **dois anos**, com aulas à noite em Congonhas e Conselheiro Lafaiete."
+            },
+            {
+              "pergunta": "O curso exige estágio em Conselheiro Lafaiete?",
+              "resposta": "**Não. O estágio é opcional em Conselheiro Lafaiete**. Quem optar por realizá-lo deve seguir os procedimentos de orientação, registro e entrega de relatórios previstos para a atividade."
+            },
+            {
+              "pergunta": "Como funcionam as atividades a distância em Conselheiro Lafaiete?",
+              "resposta": "O curso é **presencial e noturno**, mas a oferta de ingresso de 2027 prevê **20% de atividades EaD**. Essas atividades são organizadas pelos professores e se integram às disciplinas, sem transformar a graduação técnica em curso totalmente a distância."
+            },
+            {
+              "pergunta": "Quais atividades técnicas são aprendidas?",
+              "resposta": "Você aprende a **interpretar desenhos técnicos, medir peças, conhecer propriedades dos materiais, compreender processos de fabricação, planejar manutenção e trabalhar com procedimentos de qualidade e segurança**. As atividades práticas variam conforme o campus e a etapa da formação."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Mecânica Subsequente**, é necessário **concluir o ensino médio até a matrícula**. O IFMG realiza processos seletivos para cursos técnicos, com critérios estabelecidos a cada edição. Consulte o processo seletivo vigente para conhecer as formas de classificação, os documentos necessários e as regras de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Mecânica pode atuar no **planejamento, execução e acompanhamento de processos de fabricação, inspeção, instalação e manutenção de máquinas e equipamentos**. Entre as atividades estão **interpretar desenhos e especificações, medir peças e conjuntos, identificar desgastes e falhas, registrar resultados de inspeção, executar procedimentos de manutenção preventiva e corretiva e apoiar processos de usinagem, soldagem e montagem**.\n\nO trabalho pode ocorrer em empresas de fabricação de máquinas e componentes, indústrias metalmecânicas, mineradoras, siderúrgicas, empresas de manutenção, setores automotivos e prestadores de serviços industriais. Também envolve documentação técnica, controle de qualidade e apoio à segurança dos processos. As atribuições dependem da habilitação concluída, dos requisitos legais e da responsabilidade profissional aplicável a cada função."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-mecatronica-integrado",
       "nome": "Técnico em Mecatrônica",
       "nivel": "Técnico",

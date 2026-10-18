@@ -21,6 +21,6 @@ test("F7.43: conquistas não comprovadas vazias e material privado ausente do JS
  assert.ok(b.find(x=>x.tipo==="introducao").conteudo.length<=280);
  assert.deepEqual(b.filter(x=>x.tipo==="galeria")[0].itens,[]);
  const p=b.findIndex(x=>x.titulo==="Pós-graduação");assert.ok(b[p+1].linhas.some(x=>x[0]==="Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental"));
- assert.doesNotMatch(JSON.stringify(c),/Auditoria privada|PPC 2016|2\\.040|ivan\\.vieira@ifmg\\.edu\\.br|tecnico-em-agropecuaria-integrado\\/|PPC_Tecnico/);
+ for(const forbidden of ["Auditoria privada","PPC 2016","2.040","ivan.vieira@ifmg.edu.br","tecnico-em-agropecuaria-integrado/","PPC_Tecnico"])assert.ok(!JSON.stringify(c).includes(forbidden),forbidden);
  assert.deepEqual(data.courses.map(x=>x.id),[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
 });

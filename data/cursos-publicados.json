@@ -8096,6 +8096,320 @@
       ]
     },
     {
+      "id": "processos-gerenciais-tecnologo",
+      "nome": "Processos Gerenciais",
+      "nivel": "Graduação",
+      "tipo": "Tecnólogo",
+      "campi": [
+        "Ponte Nova",
+        "Ribeirão das Neves"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Processos Gerenciais"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Superior de Tecnologia (Tecnólogo)"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Gestão de negócios e processos organizacionais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ponte Nova; Ribeirão das Neves"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ribeirão das Neves: 24% de atividades EaD)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "Ponte Nova: 5 semestres; Ribeirão das Neves: 4 semestres"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "1.600 horas em cada campus"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Ponte Nova: coordenacao.processosgerenciais@ifmg.edu.br; Ribeirão das Neves: Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Processos Gerenciais",
+          "conteudo": "Aprenda a **analisar e organizar processos, planejar atividades, acompanhar resultados e propor melhorias para organizações**. A graduação tecnológica em Processos Gerenciais reúne estratégia, finanças, marketing, gestão de pessoas e operações, com aplicações em empresas, órgãos públicos e iniciativas da comunidade."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Desenvolva projetos de gestão que relacionam planejamento, análise de custos e melhoria de processos a desafios reais de organizações e comunidades."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Esta graduação é indicada para quem concluiu o ensino médio e deseja compreender como funcionam empresas, serviços e organizações. É uma formação para quem se interessa por **resolver problemas de gestão, organizar equipes, interpretar indicadores, empreender e melhorar rotinas de trabalho**."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O curso relaciona **planejamento estratégico, administração financeira, gestão de pessoas, marketing, logística, empreendedorismo, análise de custos e melhoria de processos**. As disciplinas e a distribuição de atividades práticas variam conforme a matriz curricular de cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Gestão de processos",
+              "Descrever etapas de trabalho, identificar gargalos e propor melhorias."
+            ],
+            [
+              "Planejamento e estratégia",
+              "Analisar cenários, estabelecer objetivos e acompanhar resultados."
+            ],
+            [
+              "Finanças e custos",
+              "Organizar informações financeiras, comparar custos e apoiar decisões."
+            ],
+            [
+              "Marketing e empreendedorismo",
+              "Conhecer públicos, estruturar iniciativas e planejar ações para produtos e serviços."
+            ],
+            [
+              "Gestão de pessoas",
+              "Organizar rotinas de equipes, comunicação e distribuição de responsabilidades."
+            ],
+            [
+              "Logística e operações",
+              "Analisar fluxos de materiais, serviços e informações no cotidiano das organizações."
+            ],
+            [
+              "Projetos e extensão",
+              "Aplicar conhecimentos de gestão em demandas de organizações e comunidades."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A graduação envolve **estudos de caso, projetos, análise de situações reais e práticas de extensão**. Em Ponte Nova, estudantes já prestaram mentorias a empreendedores da região; em Ribeirão das Neves, a matriz curricular organiza atividades interdisciplinares para diagnóstico e melhoria de processos. As oportunidades específicas dependem dos projetos de cada campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades práticas, gestão de processos e trabalhos em equipe · Ponte Nova e Ribeirão das Neves",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Processos Gerenciais",
+          "conteudo": "O **curso superior de Tecnologia em Processos Gerenciais** é oferecido nos campi **Ponte Nova e Ribeirão das Neves**, no turno noturno. As duas ofertas são presenciais e possuem carga horária total de 1.600 horas. A duração mínima é de **cinco semestres em Ponte Nova** e **quatro semestres em Ribeirão das Neves**, onde parte das atividades acontece a distância."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ponte Nova",
+              "Presencial",
+              "Noite",
+              "5 semestres",
+              "1.600 horas",
+              "coordenacao.processosgerenciais@ifmg.edu.br"
+            ],
+            [
+              "Ribeirão das Neves",
+              "Presencial (24% de atividades EaD)",
+              "Noite",
+              "4 semestres",
+              "1.600 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ponte Nova",
+              "resposta": "A graduação é presencial, noturna e tem **1.600 horas**, com duração mínima de **cinco semestres (dois anos e meio)**. A formação inclui **160 horas de extensão** e **90 horas de atividades complementares**, além de estudos de estratégia, empreendedorismo, gestão financeira, marketing, processos e pessoas. O estágio é **não obrigatório**. A coordenação utiliza o e-mail **coordenacao.processosgerenciais@ifmg.edu.br**."
+            },
+            {
+              "pergunta": "Campus Ribeirão das Neves",
+              "resposta": "O curso é **presencial e noturno**, com **1.600 horas** e duração mínima de **quatro semestres (dois anos)**. A organização inclui **384 horas de atividades EaD (24% da carga total)**, **165 horas de extensão** e **85 horas de atividades complementares**. A matriz contempla projetos e práticas interdisciplinares voltados à análise e melhoria de processos. O **estágio é opcional** e o curso não possui TCC curricular obrigatório."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os projetos de extensão permitem aplicar conhecimentos de gestão em situações concretas. Em **Ponte Nova**, experiências realizadas com empreendedores e com uma escola da região envolveram planejamento estratégico, comunicação e organização de atividades. Em **Ribeirão das Neves**, estudantes de Processos Gerenciais estão entre os públicos contemplados por projetos de pesquisa e formação prática, como iniciativas de inovação e apoio a setores administrativos do campus. A participação depende de cada projeto e de suas condições de seleção."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Processos Gerenciais"
+          ],
+          "linhas": [
+            [
+              "Administração (Bacharelado)",
+              "Bambuí, Formiga, Ouro Branco, Ribeirão das Neves, Sabará e São João Evangelista",
+              "Amplia o estudo de estratégia, finanças, pessoas e gestão organizacional."
+            ],
+            [
+              "Engenharia de Produção (Bacharelado)",
+              "Bambuí, Congonhas e Governador Valadares",
+              "Aprofunda métodos de planejamento, processos produtivos, custos e qualidade."
+            ],
+            [
+              "Logística (Tecnólogo)",
+              "Sabará",
+              "Desenvolve o planejamento e a análise de transportes, estoques e distribuição."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Processos Gerenciais"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento e coordenação de projetos, operações e melhorias."
+            ],
+            [
+              "Especialização em Gestão de Negócios",
+              "Ouro Branco",
+              "Estratégia, empreendedorismo e administração de organizações."
+            ],
+            [
+              "Especialização em Gestão Pública e Desenvolvimento Regional",
+              "Ribeirão das Neves",
+              "Planejamento e organização de serviços públicos e desenvolvimento territorial."
+            ],
+            [
+              "Mestrado Profissional em Administração",
+              "Formiga",
+              "Pesquisa aplicada a problemas de administração e gestão de organizações."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **18 de junho de 2025**, estudantes do **5º período de Processos Gerenciais do Campus Ponte Nova** realizaram o encontro **Planejamento Estratégico na Prática: Mentorias de Negócios**. Quatro empreendedores da região receberam orientação sobre **análise do ambiente dos negócios, definição de metas, estratégias de marketing e posicionamento de marca**. A atividade aplicou conteúdos do curso a situações apresentadas pelos convidados."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Planejamento Estratégico na Prática · estudantes de Processos Gerenciais e empreendedores locais · Ponte Nova, junho de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Projeto Harmonia Interior com estudantes do CESEC",
+          "conteudo": "Em **maio e junho de 2025**, estudantes de **Tecnologia em Processos Gerenciais do Campus Ponte Nova** desenvolveram o projeto de extensão **Harmonia Interior: o impacto da música na saúde mental**, em parceria com o **CESEC Professora Vera Parentoni**. A programação realizada incluiu uma palestra sobre música e emoções, uma conversa com músico e terapeuta e uma **oficina de escuta ativa**. As atividades aproximaram organização de projetos, cuidado com as pessoas e trabalho com a comunidade."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Projeto Harmonia Interior · estudantes de Processos Gerenciais no CESEC Professora Vera Parentoni · Ponte Nova, 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Processos Gerenciais é um curso superior ou técnico?",
+              "resposta": "É uma **graduação superior de tecnologia**, que confere o diploma de **tecnólogo em Processos Gerenciais**. Para ingressar, é necessário concluir o ensino médio até a matrícula. A formação se diferencia de cursos técnicos e do Bacharelado em Administração pelo grau e pela organização curricular."
+            },
+            {
+              "pergunta": "A duração é igual nos dois campi?",
+              "resposta": "Não. A duração mínima é de **cinco semestres em Ponte Nova** e **quatro semestres em Ribeirão das Neves**. As duas graduações têm 1.600 horas e funcionam à noite. A distribuição das disciplinas e dos projetos é própria de cada campus."
+            },
+            {
+              "pergunta": "O estágio e o TCC são obrigatórios?",
+              "resposta": "O **estágio supervisionado é não obrigatório nos dois campi**. A organização curricular consultada de Ribeirão das Neves **não inclui TCC obrigatório**; em Ponte Nova, a matriz consultada também não apresenta TCC como componente curricular obrigatório. Os cursos incluem projetos e atividades complementares próprias."
+            },
+            {
+              "pergunta": "As atividades em Ribeirão das Neves são totalmente a distância?",
+              "resposta": "Não. A graduação é **presencial** e ofertada no período noturno, com **384 horas (24% da carga total) em atividades EaD**. Em Ponte Nova, a oferta é presencial sem percentual EaD informado na seleção de 2027."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na graduação em **Processos Gerenciais**, é necessário ter concluído o ensino médio até a matrícula. O IFMG oferece formas de seleção como **Enem, Histórico Escolar e Redação ou Sisu**, conforme a oferta e o processo seletivo vigente de cada campus. Consulte as condições de ingresso e reserva de vagas para a edição em andamento."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O tecnólogo em Processos Gerenciais pode trabalhar com **planejamento e organização de processos, controle de custos, gestão de projetos, análise de indicadores, melhoria de rotinas e apoio a decisões administrativas**. Entre as atividades estão mapear as etapas de atendimento ou produção de um serviço, identificar retrabalho, acompanhar prazos, organizar informações financeiras e comerciais e participar da implantação de melhorias.\n\nEm empresas, cooperativas, serviços, iniciativas sociais ou órgãos públicos, pode colaborar com equipes de finanças, compras, marketing, recursos humanos e operações. Também pode apoiar pequenos empreendedores na estruturação de negócios, no planejamento de ações e na avaliação de resultados. O trabalho envolve compreender necessidades, reunir dados, propor soluções viáveis, acompanhar sua execução e ajustar processos conforme os resultados observados e as responsabilidades de cada função."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-administracao-integrado",
       "nome": "Técnico em Administração",
       "nivel": "Técnico",

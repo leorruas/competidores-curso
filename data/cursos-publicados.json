@@ -10303,6 +10303,290 @@
       ]
     },
     {
+      "id": "tecnico-em-agropecuaria-subsequente",
+      "nome": "Técnico em Agropecuária",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Agropecuária"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "1 ano e meio (3 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "1.620 horas"
+            },
+            {
+              "rotulo": "Estágio supervisionado obrigatório",
+              "valor": "240 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Agropecuária",
+          "conteudo": "Aprenda a acompanhar a **produção agrícola e a criação de animais**, com conhecimentos de cultivos, manejo de solos, alimentação e cuidados com os animais e organização do trabalho rural. O curso técnico do IFMG relaciona atividades agropecuárias à sustentabilidade, à segurança alimentar e às necessidades de propriedades e organizações do campo."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Depois do ensino médio, forme-se em Agropecuária em três semestres: aprenda manejo de culturas e animais, técnicas de produção rural e atividades práticas com estágio obrigatório."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Este curso é destinado a quem **já concluiu o ensino médio** e deseja obter uma formação técnica em Agropecuária. É indicado para quem se interessa por **agricultura, criação de animais, produção de alimentos, conservação ambiental e práticas de campo**. Ao contrário do integrado, o subsequente concentra-se na formação técnica, sem cursar novamente as disciplinas do ensino médio."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estuda **avicultura, piscicultura, olericultura, viveiricultura, solos e fertilidade**, além de técnicas de produção animal e vegetal, gestão ambiental, mecanização agrícola e organização de atividades rurais. A formação envolve observação de processos produtivos, registros técnicos, noções de segurança e atividades de campo. O estágio supervisionado é parte obrigatória do percurso."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Produção vegetal",
+              "Acompanhar plantio, manejo e desenvolvimento de culturas e hortaliças."
+            ],
+            [
+              "Produção animal",
+              "Compreender alimentação, cuidados, instalações e manejo de espécies de criação."
+            ],
+            [
+              "Solos e fertilidade",
+              "Observar características dos solos e relacioná-las ao cultivo e à conservação dos recursos."
+            ],
+            [
+              "Mecanização e tecnologia rural",
+              "Conhecer equipamentos, registros e procedimentos técnicos usados na produção agropecuária."
+            ],
+            [
+              "Meio ambiente e sustentabilidade",
+              "Avaliar práticas de manejo que protejam água, solo e recursos naturais."
+            ],
+            [
+              "Gestão e extensão rural",
+              "Planejar atividades de campo, acompanhar resultados e apoiar propriedades e produtores."
+            ],
+            [
+              "Estágio supervisionado",
+              "Aplicar conhecimentos em situação profissional com orientação e acompanhamento."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O curso reúne aulas e práticas voltadas ao **manejo animal, cultivo de plantas, análise de solos e organização de atividades rurais**. Entre os componentes oferecidos no Campus Bambuí estão avicultura, piscicultura, olericultura, viveiricultura e informática aplicada. Você também realiza **240 horas de estágio supervisionado obrigatório**, para vivenciar atividades e rotinas profissionais ligadas à Agropecuária."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Aulas e atividades práticas de produção vegetal e animal do Técnico em Agropecuária Subsequente · Bambuí",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Agropecuária",
+          "conteudo": "O **Técnico em Agropecuária Subsequente** é oferecido no **Campus Bambuí**, com aulas presenciais nos períodos da manhã e da tarde. A duração mínima é de **três semestres**, com **1.620 horas**, incluindo estágio obrigatório. O campus também oferece a modalidade **integrada ao ensino médio**, que possui matrícula, duração e currículo diferentes."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Presencial",
+              "Manhã e tarde",
+              "3 semestres",
+              "1.620 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Bambuí",
+              "resposta": "A formação técnica é presencial e funciona de **manhã e à tarde**, com duração mínima de **três semestres** e carga total de **1.620 horas**. O currículo inclui **240 horas de estágio supervisionado obrigatório**. Não exige **Trabalho de Conclusão de Curso (TCC), atividades complementares ou disciplinas optativas** para a conclusão do percurso. As práticas abrangem produção animal, vegetal e gestão de atividades agropecuárias."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os espaços de ensino e pesquisa do Campus Bambuí aproximam os estudantes de temas como **produção agrícola e animal, sustentabilidade, segurança alimentar e práticas de manejo**. Há oportunidades de participar de atividades e projetos vinculados às ciências agrárias, de acordo com as seleções e os projetos em andamento. A participação de estudantes do subsequente em uma atividade específica depende das condições e do público de cada iniciativa."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Agropecuária"
+          ],
+          "linhas": [
+            [
+              "Agronomia (Bacharelado)",
+              "Bambuí e São João Evangelista",
+              "Aprofunda cultivo agrícola, solos, manejo das lavouras e planejamento de sistemas produtivos."
+            ],
+            [
+              "Zootecnia (Bacharelado)",
+              "Bambuí",
+              "Amplia o estudo de produção, alimentação, manejo e bem-estar animal."
+            ],
+            [
+              "Medicina Veterinária (Bacharelado)",
+              "Bambuí",
+              "Relaciona a produção rural aos estudos sobre saúde, prevenção e cuidados com os animais."
+            ],
+            [
+              "Engenharia Florestal (Bacharelado)",
+              "São João Evangelista",
+              "Estuda recursos florestais, conservação e manejo de áreas naturais e produtivas."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Agropecuária"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Pesquisa e tecnologias aplicadas à sustentabilidade, aos recursos naturais e ao meio ambiente."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual a diferença entre Agropecuária Subsequente e Integrado?",
+              "resposta": "No **subsequente**, você já concluiu o ensino médio e cursa apenas a formação técnica, em **três semestres no Campus Bambuí**. No **integrado**, o ensino médio e a formação técnica são realizados juntos, em um percurso de **três anos**, oferecido nos campi Bambuí e São João Evangelista."
+            },
+            {
+              "pergunta": "Preciso ter concluído o ensino médio para ingressar?",
+              "resposta": "**Sim.** Para entrar no curso técnico subsequente, é necessário apresentar a conclusão do ensino médio até a matrícula."
+            },
+            {
+              "pergunta": "O estágio é obrigatório? Quantas horas?",
+              "resposta": "**Sim.** A formação prevê **240 horas de estágio supervisionado obrigatório**, incluídas nas **1.620 horas totais** do curso."
+            },
+            {
+              "pergunta": "É necessário fazer TCC ou atividades complementares?",
+              "resposta": "**Não.** O curso não exige Trabalho de Conclusão de Curso (TCC), atividades complementares ou disciplinas optativas para a conclusão. O estágio supervisionado, porém, é obrigatório."
+            },
+            {
+              "pergunta": "Posso cursar Agropecuária Subsequente à noite?",
+              "resposta": "O curso é oferecido **de manhã e à tarde** no Campus Bambuí. A oferta não é noturna."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Agropecuária Subsequente**, é necessário ter **concluído o ensino médio até a matrícula**. O IFMG realiza processos seletivos próprios para cursos técnicos; consulte as formas de classificação e as regras de reserva de vagas do processo seletivo vigente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Agropecuária pode atuar no **acompanhamento da produção agrícola e animal**, apoiando o planejamento de plantios, o manejo de culturas, a alimentação e os cuidados de rebanhos, a preparação e o uso de equipamentos e o controle de atividades das propriedades rurais. No dia a dia, pode **registrar informações da produção, acompanhar irrigação e fertilidade do solo, orientar práticas de manejo, observar condições de instalações e auxiliar na organização de processos agroindustriais**.\n\nO trabalho pode ocorrer em propriedades rurais, cooperativas, empresas de insumos, agroindústrias, organizações de assistência técnica e extensão rural, além de projetos e serviços relacionados ao campo. As atribuições profissionais dependem da habilitação, das condições de trabalho, das normas de segurança e sanidade e dos requisitos legais de registro e responsabilidade técnica quando aplicáveis."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-automacao-industrial-integrado",
       "nome": "Técnico em Automação Industrial",
       "nivel": "Técnico",

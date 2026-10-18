@@ -8692,6 +8692,342 @@
       ]
     },
     {
+      "id": "sistemas-de-informacao-bacharelado",
+      "nome": "Sistemas de Informação",
+      "nivel": "Graduação",
+      "tipo": "Bacharelado",
+      "campi": [
+        "Ouro Branco",
+        "Sabará",
+        "São João Evangelista"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Sistemas de Informação"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Bacharelado"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Branco; Sabará; São João Evangelista"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Sabará: 11,4% EaD na oferta de 2027)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Ouro Branco: noite; Sabará: manhã; São João Evangelista: manhã e tarde"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "4 anos (8 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Ouro Branco: 3.004 horas; Sabará: 3.000 horas; São João Evangelista: Informação incompleta"
+            },
+            {
+              "rotulo": "E-mails das coordenações",
+              "valor": "Ouro Branco: coord.graduacaosistemasdeinformacao.obr@ifmg.edu.br; Sabará: bsi.sabara@ifmg.edu.br; São João Evangelista: bsi.sje@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Sistemas de Informação",
+          "conteudo": "Aprenda a **projetar, desenvolver e aprimorar sistemas digitais** que ajudam pessoas e organizações a resolver problemas. O Bacharelado em Sistemas de Informação combina programação, bancos de dados, engenharia de software, segurança e gestão para criar soluções tecnológicas conectadas às necessidades dos usuários."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Crie aplicações, analise dados e desenvolva soluções de tecnologia que melhorem serviços, processos e a vida das pessoas, com projetos práticos e pesquisa."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "Esta graduação é destinada a quem concluiu o ensino médio e deseja trabalhar com **tecnologia, desenvolvimento de software, análise de dados e gestão de sistemas**. É uma escolha para quem gosta de investigar problemas, criar soluções digitais, colaborar com outras pessoas e relacionar programação às necessidades de organizações e usuários."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne **lógica e programação, algoritmos, bancos de dados, redes, arquitetura de computadores, engenharia de software e sistemas de informação**. Também trabalha requisitos, interfaces, segurança, matemática e administração, além de projetos de pesquisa, extensão e elaboração de soluções. As matrizes de cada campus organizam esses conteúdos e as atividades práticas de maneiras próprias."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Algoritmos e programação",
+              "Planejar soluções computacionais e desenvolver programas."
+            ],
+            [
+              "Engenharia de software",
+              "Identificar necessidades, organizar requisitos, testar aplicações e acompanhar sua evolução."
+            ],
+            [
+              "Bancos de dados",
+              "Estruturar informações, escrever consultas e apoiar decisões com dados."
+            ],
+            [
+              "Interfaces e interação",
+              "Criar e avaliar experiências de uso em sistemas e aplicações."
+            ],
+            [
+              "Redes, sistemas e segurança",
+              "Compreender a infraestrutura tecnológica e medidas para proteger sistemas e dados."
+            ],
+            [
+              "Gestão e negócios",
+              "Relacionar sistemas de informação aos processos, objetivos e serviços das organizações."
+            ],
+            [
+              "Inteligência artificial e análise de dados",
+              "Explorar técnicas computacionais para identificar padrões e construir aplicações."
+            ],
+            [
+              "Pesquisa, projetos e extensão",
+              "Investigar problemas reais e desenvolver soluções com orientação acadêmica."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A graduação combina **desenvolvimento de aplicações, projetos interdisciplinares, uso de laboratórios e atividades de pesquisa e extensão**. Os estudantes podem trabalhar com programação web e mobile, bancos de dados, interfaces, robótica, otimização de processos e soluções digitais para serviços públicos e organizações. As atividades concretas variam conforme a estrutura e os projetos de cada campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratórios de informática, protótipos e projetos de software · Ouro Branco, Sabará e São João Evangelista",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Sistemas de Informação",
+          "conteudo": "O Bacharelado em **Sistemas de Informação** é oferecido nos campi **Ouro Branco, Sabará e São João Evangelista**. As três ofertas são presenciais e têm duração mínima de oito semestres, mas funcionam em turnos diferentes: **noite em Ouro Branco**, **manhã em Sabará** e **manhã e tarde em São João Evangelista**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Branco",
+              "Presencial",
+              "Noite",
+              "8 semestres",
+              "3.004 horas",
+              "coord.graduacaosistemasdeinformacao.obr@ifmg.edu.br"
+            ],
+            [
+              "Sabará",
+              "Presencial (11,4% EaD na oferta de 2027)",
+              "Manhã",
+              "8 semestres",
+              "3.000 horas",
+              "bsi.sabara@ifmg.edu.br"
+            ],
+            [
+              "São João Evangelista",
+              "Presencial",
+              "Manhã e tarde",
+              "8 semestres",
+              "Informação incompleta",
+              "bsi.sje@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Branco",
+              "resposta": "A graduação funciona **à noite**, com duração mínima de **oito semestres** e **3.004 horas**. Conta com **quatro laboratórios de informática, laboratório de Hardware e Robótica e laboratório de Pesquisa**. A formação inclui **projetos integradores, TCC obrigatório em duas etapas e atividades complementares**. **O estágio supervisionado não é obrigatório**. O campus realiza o Workshop de Sistemas de Informação, que reúne trabalhos e projetos elaborados pelos estudantes."
+            },
+            {
+              "pergunta": "Campus Sabará",
+              "resposta": "O Bacharelado é **matutino**, presencial, tem **3.000 horas** e duração mínima de **oito semestres**. A oferta de 2027 inclui **11,4% de atividades EaD**. O curso prevê **120 horas de estágio supervisionado obrigatório, 60 horas de TCC, 300 horas de extensão e 60 horas de atividades complementares**. A infraestrutura acadêmica reúne laboratórios de informática e ambientes para projetos tecnológicos."
+            },
+            {
+              "pergunta": "Campus São João Evangelista",
+              "resposta": "A graduação é **presencial e diurna**, com aulas nos períodos da **manhã e da tarde** e duração mínima de **oito semestres**. A formação inclui programação, banco de dados, redes, engenharia de software, gestão e desenvolvimento de sistemas. A matriz disponibilizada pelo campus prevê **estágio supervisionado, TCC e atividades complementares**. O campus conta com laboratórios de informática e com a **empresa júnior OneBit**, ligada à formação na área."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os estudantes podem desenvolver projetos de **software, inteligência artificial, visualização e análise de dados, melhoria de serviços e sistemas para organizações**. Em Ouro Branco, a graduação apresenta trabalhos e resultados de pesquisa no Workshop de Sistemas de Informação. Em Sabará, projetos acadêmicos já abordaram problemas de gestão escolar e de planejamento de serviços de saúde. São João Evangelista mantém atividades de formação com laboratórios e a empresa júnior OneBit."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Como se relaciona a Sistemas de Informação"
+          ],
+          "linhas": [
+            [
+              "Ciência da Computação (Bacharelado)",
+              "Formiga e Ibirité",
+              "Amplia fundamentos de computação, algoritmos e pesquisa em software."
+            ],
+            [
+              "Análise e Desenvolvimento de Sistemas (Tecnólogo)",
+              "Ouro Preto e Ribeirão das Neves",
+              "Aprofunda práticas de programação e construção de aplicações."
+            ],
+            [
+              "Inteligência Artificial (Bacharelado)",
+              "Bambuí",
+              "Desenvolve estudos de sistemas inteligentes, aprendizado de máquina e dados."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Como se relaciona a Sistemas de Informação"
+          ],
+          "linhas": [
+            [
+              "Especialização em Inteligência Artificial",
+              "Ouro Preto",
+              "Desenvolvimento e aplicações de sistemas inteligentes e análise de dados."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento e coordenação de projetos, equipes e operações tecnológicas."
+            ],
+            [
+              "Especialização em Gestão Pública e Desenvolvimento Regional",
+              "Ribeirão das Neves",
+              "Aplicação de sistemas e análise de processos em serviços e políticas públicas."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **julho de 2025**, estudantes do **Bacharelado em Sistemas de Informação do Campus Ouro Branco** reuniram projetos e trabalhos de conclusão de curso no **V Workshop de Sistemas de Informação**. Os trabalhos publicados abordaram aplicações de software, uso de inteligência artificial, soluções para organizações e tecnologias desenvolvidas para necessidades concretas, incluindo sistemas financeiros e ferramentas de apoio a usuários."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "V Workshop de Sistemas de Informação e anais de trabalhos de estudantes · Ouro Branco, julho de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisas sobre horários acadêmicos e unidades de saúde",
+          "conteudo": "Dois trabalhos desenvolvidos por estudantes de **Sistemas de Informação do Campus Sabará** foram apresentados no **58º Simpósio Brasileiro de Pesquisa Operacional, em setembro e outubro de 2026**. **João Vitor de Melo** apresentou uma pesquisa para otimizar a construção de horários acadêmicos considerando restrições de docentes e turmas. **Ana Luiza de Oliveira Gouvêa** apresentou um estudo sobre a localização de Unidades Básicas de Saúde em Sabará, utilizando modelos computacionais de otimização para apoiar o planejamento da rede pública."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Trabalhos de Sistemas de Informação de Sabará no SBPO 2026 · horários acadêmicos e unidades de saúde",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Intercâmbio acadêmico em Portugal",
+          "conteudo": "Em **setembro de 2026**, os estudantes **Paulo Moura e Arthur Garcia**, do **Bacharelado em Sistemas de Informação do Campus Sabará**, iniciaram uma experiência de mobilidade acadêmica na **Universidade Politécnica de Bragança, em Portugal**, pelo Programa Internacionaliza IFMG. A experiência inclui estudos na área de Engenharia Eletrotécnica e de Computadores. Os estudantes também desenvolvem pesquisas ligadas a **gamificação na educação** e **classificação de conteúdos infantis em plataformas digitais**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Programa Internacionaliza IFMG 2026 · estudantes de Sistemas de Informação de Sabará em Bragança, Portugal",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Sistemas de Informação é bacharelado ou curso técnico?",
+              "resposta": "É um **bacharelado de nível superior**, com duração mínima de oito semestres. A graduação integra o desenvolvimento de software à gestão de informações e processos das organizações. É distinta dos cursos técnicos e das graduações de tecnólogo."
+            },
+            {
+              "pergunta": "Em quais turnos há oferta?",
+              "resposta": "O **Campus Ouro Branco** oferece aulas à **noite**, **Sabará** no período da **manhã** e **São João Evangelista** nos períodos da **manhã e da tarde**. Em Sabará, parte das atividades da oferta 2027 acontece a distância, dentro da graduação presencial."
+            },
+            {
+              "pergunta": "O estágio é obrigatório nos três campi?",
+              "resposta": "**Não.** Em **Ouro Branco**, o estágio supervisionado é **opcional**. Em **Sabará**, a matriz prevê **120 horas obrigatórias**. Em **São João Evangelista**, a matriz disponibilizada pelo campus também inclui estágio supervisionado, com previsão de **300 horas**. As exigências são específicas de cada campus."
+            },
+            {
+              "pergunta": "É preciso apresentar Trabalho de Conclusão de Curso (TCC)?",
+              "resposta": "**Sim.** Os três campi possuem TCC nas matrizes disponibilizadas. Em **Ouro Branco**, o curso inclui TCC I e II; em **Sabará**, há **60 horas de TCC**; em **São João Evangelista**, o documento curricular disponível prevê TCC em duas etapas. A organização e a forma de avaliação dependem do currículo de cada campus."
+            },
+            {
+              "pergunta": "O curso de Sabará é totalmente a distância?",
+              "resposta": "**Não.** A oferta é **presencial e matutina**. Para ingresso em 2027, o campus informa **11,4% de atividades EaD**, integradas ao curso presencial."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Bacharelado em Sistemas de Informação**, é necessário concluir o ensino médio até a matrícula. O IFMG utiliza formas de seleção para graduação como **Enem, Histórico Escolar e Redação e Sisu**, conforme a oferta e as regras do processo seletivo vigente. Consulte os canais de ingresso e reserva de vagas para conhecer as condições da edição atual."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O bacharel em Sistemas de Informação pode trabalhar com **análise de requisitos, desenvolvimento de software, bancos de dados, segurança da informação, arquitetura de sistemas e gestão de projetos digitais**. Entre as atividades estão compreender as necessidades de pessoas e organizações, projetar aplicações, construir e testar programas, organizar informações, integrar serviços digitais e acompanhar a qualidade e a segurança de sistemas.\n\nTambém pode atuar na análise de dados para apoiar decisões, automatizar processos, desenvolver soluções para serviços públicos e empresas e coordenar equipes responsáveis por produtos digitais. Essas funções estão presentes em organizações de diferentes setores, empresas de tecnologia, indústrias, instituições financeiras, órgãos públicos e iniciativas de inovação. A formação prepara para relacionar conhecimentos técnicos, gestão e necessidades reais dos usuários."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-administracao-integrado",
       "nome": "Técnico em Administração",
       "nivel": "Técnico",

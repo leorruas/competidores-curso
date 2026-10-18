@@ -8410,6 +8410,288 @@
       ]
     },
     {
+      "id": "quimica-licenciatura",
+      "nome": "Química",
+      "nivel": "Graduação",
+      "tipo": "Licenciatura",
+      "campi": [
+        "Betim"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Química"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Licenciatura"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Betim"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com atividades a distância"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Química",
+          "conteudo": "Estude **os fenômenos e as transformações da matéria** e aprenda a ensinar Química na Educação Básica. A Licenciatura em Química do IFMG combina formação científica, atividades práticas e estudos sobre educação para preparar professores capazes de planejar aulas, desenvolver experiências e avaliar a aprendizagem."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda Química e formas de ensiná-la, relacionando experiências de laboratório, atividades pedagógicas e a realidade das escolas da região de Betim."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A graduação é destinada a quem concluiu o ensino médio e tem interesse pela **Química, pelas ciências e pelo trabalho com educação**. A formação relaciona experimentos, interpretação de fenômenos naturais e elaboração de situações de aprendizagem para estudantes da Educação Básica."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne **fundamentos da Química, práticas de laboratório, matemática, áreas relacionadas às ciências naturais e estudos pedagógicos**. Também aborda planejamento de aulas, didática, avaliação da aprendizagem, educação inclusiva e formas de relacionar os conteúdos científicos ao cotidiano dos estudantes. A distribuição das disciplinas e atividades segue a matriz curricular do curso."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Química e transformações da matéria",
+              "Investigar materiais, substâncias, reações e mudanças químicas."
+            ],
+            [
+              "Experimentação e segurança",
+              "Realizar atividades de laboratório, registrar observações e seguir cuidados no uso de reagentes e equipamentos."
+            ],
+            [
+              "Matemática e ciências naturais",
+              "Utilizar conceitos e ferramentas para compreender e explicar fenômenos."
+            ],
+            [
+              "Educação e didática",
+              "Planejar aulas e escolher estratégias para ensinar Química a públicos diferentes."
+            ],
+            [
+              "Avaliação e aprendizagem",
+              "Acompanhar o que os estudantes aprendem e adaptar as atividades pedagógicas."
+            ],
+            [
+              "Práticas de ensino e estágio",
+              "Observar situações escolares e desenvolver experiências de formação docente."
+            ],
+            [
+              "Pesquisa e extensão",
+              "Relacionar ciência, educação e demandas de escolas e comunidades."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação relaciona **estudos científicos, atividades experimentais, planejamento de aulas e práticas de ensino**. As atividades de laboratório ajudam a observar e explicar transformações químicas; a formação pedagógica trabalha maneiras de comunicar esses conteúdos e acompanhar a aprendizagem. O curso prevê estágios supervisionados como parte da formação para a docência."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades experimentais de Química e formação de professores · Campus Betim",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Química",
+          "conteudo": "A **Licenciatura em Química** é oferecida no **Campus Betim**, no período noturno, em modalidade presencial com parte das atividades a distância. A graduação prepara para a docência e é distinta do **Técnico em Química**, também oferecido no campus, que é uma formação de nível médio."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Betim",
+              "Presencial, com atividades a distância",
+              "Noite",
+              "Informação incompleta",
+              "Informação incompleta",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Betim",
+              "resposta": "A graduação funciona **à noite**, com atividades presenciais e parte da formação em ambiente virtual de aprendizagem. O curso relaciona conhecimentos de Química, atividades experimentais, estudos pedagógicos e estágios supervisionados em ambientes escolares. O Campus Betim também oferece o Técnico em Química, que possui currículo e diploma próprios."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "O IFMG desenvolve atividades de **pesquisa e extensão** que aproximam a formação científica das demandas sociais e educacionais. Na Licenciatura em Química, a participação em projetos pode envolver educação científica, experimentação, metodologias de ensino e atividades com escolas. As ações concretas serão organizadas conforme os projetos acadêmicos do campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Química"
+          ],
+          "linhas": [
+            [
+              "Ciências Biológicas (Licenciatura)",
+              "Bambuí e São João Evangelista",
+              "Relaciona as ciências naturais ao ensino e ao estudo da vida e do ambiente."
+            ],
+            [
+              "Física (Licenciatura)",
+              "Bambuí, Congonhas e Ouro Preto",
+              "Aprofunda fenômenos físicos e relações entre Física, Química e ensino de Ciências."
+            ],
+            [
+              "Engenharia de Controle e Automação (Bacharelado)",
+              "Betim, Ibirité e Sabará",
+              "Amplia estudos de sistemas, processos e tecnologias de automação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Química"
+          ],
+          "linhas": [
+            [
+              "Especialização em Ensino de Ciências e Matemática",
+              "Bambuí",
+              "Aprofunda práticas de ensino e elaboração de atividades para a área de Ciências, incluindo Química."
+            ],
+            [
+              "Especialização em Ensino e Tecnologias Educacionais",
+              "São João Evangelista (EaD)",
+              "Relaciona recursos digitais, metodologias e processos de ensino e aprendizagem."
+            ],
+            [
+              "Especialização em Docência com ênfase em Educação Inclusiva",
+              "Ipatinga (EaD)",
+              "Amplia estudos sobre planejamento e participação de estudantes com necessidades diversas."
+            ],
+            [
+              "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+              "Ouro Branco",
+              "Desenvolve estudos e pesquisa sobre educação profissional e práticas de ensino."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual a diferença entre a Licenciatura em Química e o Técnico em Química?",
+              "resposta": "A **Licenciatura em Química é uma graduação superior voltada à formação de professores**. O **Técnico em Química** é uma formação de nível médio ligada a técnicas laboratoriais e processos químicos. Os dois cursos estudam Química, mas têm objetivos, currículos e diplomas diferentes."
+            },
+            {
+              "pergunta": "A licenciatura forma professores para quais etapas da educação?",
+              "resposta": "A graduação prepara para o **ensino de Química na Educação Básica**, especialmente no Ensino Médio, e para atividades relacionadas à educação científica. As atribuições profissionais dependem da formação concluída e das normas aplicáveis."
+            },
+            {
+              "pergunta": "O curso é totalmente a distância?",
+              "resposta": "**Não.** A Licenciatura em Química de Betim é **presencial**, funciona à noite e inclui parte das atividades a distância. O curso combina estudos com atividades práticas, formação pedagógica e estágio supervisionado."
+            },
+            {
+              "pergunta": "Como a formação combina Química e prática docente?",
+              "resposta": "Os estudos incluem conceitos e experimentos de Química, planejamento de aulas, didática e avaliação da aprendizagem. Os **estágios supervisionados** aproximam a formação universitária de situações de ensino em escolas."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na **Licenciatura em Química**, é necessário ter concluído o ensino médio até a matrícula. O IFMG disponibiliza processos seletivos para as graduações, com formas de ingresso como **Enem e Sisu**, de acordo com as regras da seleção vigente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A pessoa licenciada em Química pode atuar no **ensino da disciplina na Educação Básica**, especialmente no Ensino Médio, desenvolvendo e acompanhando atividades de aprendizagem. Entre as tarefas estão **planejar aulas, preparar experimentos seguros, elaborar materiais didáticos, avaliar o aprendizado, relacionar a Química a questões do cotidiano e adaptar explicações a diferentes turmas**.\n\nA formação também permite participar de projetos de educação científica, feiras e atividades de divulgação das ciências, produção de materiais educativos, ações de extensão e pesquisa em ensino de Química. Esses trabalhos podem acontecer em escolas, projetos educacionais, museus e espaços de educação não formal, conforme os requisitos das funções. A atuação em atividades técnicas de Química depende de atribuições e habilitações profissionais específicas."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-administracao-integrado",
       "nome": "Técnico em Administração",
       "nivel": "Técnico",

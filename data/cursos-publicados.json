@@ -13283,6 +13283,295 @@
       ]
     },
     {
+      "id": "tecnico-em-eletrotecnica-subsequente",
+      "nome": "Técnico em Eletrotécnica",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Conselheiro Lafaiete",
+        "Ipatinga"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Eletrotécnica"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Conselheiro Lafaiete; Ipatinga"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com atividades a distância em parte das disciplinas"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "Conselheiro Lafaiete: 4 semestres; Ipatinga: 3 semestres"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Conselheiro Lafaiete: 1.202 horas; Ipatinga: 1.400 horas"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Conselheiro Lafaiete: não obrigatório; Ipatinga: 200 horas obrigatórias"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Eletrotécnica",
+          "conteudo": "Aprenda a **interpretar circuitos elétricos, instalar e manter equipamentos e compreender sistemas de comando e automação**. A formação técnica reúne fundamentos de eletricidade, medições, instalações e segurança para atividades em edifícios, empresas de serviços e ambientes industriais."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude Eletrotécnica à noite após concluir o ensino médio. A formação combina circuitos, instalações elétricas, máquinas, comandos e segurança, com práticas aplicadas a diferentes sistemas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem **já concluiu o ensino médio** e deseja trabalhar com eletricidade e sistemas eletroeletrônicos. É indicado para quem se interessa por **montagem, medição, análise de falhas, manutenção e automação**, além de rotinas de trabalho que exigem atenção a procedimentos de segurança."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estudará **fundamentos de eletricidade, análise de circuitos, instalações elétricas, máquinas elétricas, eletrônica, comandos, desenho técnico e segurança do trabalho**. Os dois campi organizam as disciplinas, as atividades a distância e a formação prática segundo matrizes próprias."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Circuitos e medições",
+              "Reconhecer grandezas elétricas, interpretar esquemas e utilizar instrumentos para medir e analisar circuitos."
+            ],
+            [
+              "Instalações elétricas",
+              "Ler e desenvolver desenhos e projetos básicos, dimensionar componentes e acompanhar montagens e verificações."
+            ],
+            [
+              "Máquinas e acionamentos",
+              "Compreender o funcionamento de motores, transformadores, partidas e sistemas de acionamento."
+            ],
+            [
+              "Comandos e automação",
+              "Estudar dispositivos de comando, controle, instrumentação e aplicações de automação industrial."
+            ],
+            [
+              "Eletrônica e manutenção",
+              "Identificar componentes, analisar falhas e acompanhar procedimentos de manutenção e testes."
+            ],
+            [
+              "Segurança e normas técnicas",
+              "Aplicar procedimentos de prevenção de riscos e normas pertinentes a serviços com eletricidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "As atividades incluem **montagem e análise de circuitos, leitura de diagramas, utilização de instrumentos de medição e estudo de instalações e comandos elétricos**. Em **Conselheiro Lafaiete**, o currículo inclui práticas em componentes técnicos e estágio não obrigatório. Em **Ipatinga**, há **estágio supervisionado obrigatório de 200 horas** e **225 horas de atividades complementares**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Aulas práticas de circuitos, medições e instalações elétricas · Conselheiro Lafaiete e Ipatinga",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Eletrotécnica",
+          "conteudo": "O **Técnico em Eletrotécnica Subsequente** é oferecido nos campi **Conselheiro Lafaiete e Ipatinga**, com aulas **noturnas**, em formato **presencial com parte das atividades a distância**. Em Conselheiro Lafaiete, a duração mínima é de quatro semestres; em Ipatinga, de três semestres. A carga horária e a exigência de estágio também são diferentes."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Conselheiro Lafaiete",
+              "Presencial, com atividades EaD",
+              "Noite",
+              "4 semestres",
+              "1.202 horas",
+              "Informação incompleta"
+            ],
+            [
+              "Ipatinga",
+              "Presencial, com atividades EaD",
+              "Noite",
+              "3 semestres",
+              "1.400 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Conselheiro Lafaiete",
+              "resposta": "O curso é **noturno e presencial**, com componentes a distância. A matriz curricular de referência organiza **1.202 horas em quatro semestres**. O **estágio supervisionado não é obrigatório**. A formação abrange instalações elétricas, circuitos, eletrônica, máquinas elétricas e comandos industriais."
+            },
+            {
+              "pergunta": "Campus Ipatinga",
+              "resposta": "O curso funciona **à noite, em formato presencial com parte das disciplinas a distância**, e prevê duração mínima de **três semestres** e **1.400 horas totais**. Inclui **200 horas obrigatórias de estágio supervisionado** e **225 horas de atividades complementares**. Os componentes abrangem desenho, instalações, circuitos, máquinas elétricas, automação e manutenção."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A formação em Eletrotécnica permite aprofundar temas como **eficiência energética, instalações, manutenção industrial, acionamentos elétricos e automação**. Atividades de pesquisa, extensão, projetos acadêmicos e visitas técnicas podem relacionar esses temas a situações profissionais, conforme as iniciativas de cada campus. No curso de Ipatinga, o estágio supervisionado integra obrigatoriamente o percurso formativo."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Eletrotécnica"
+          ],
+          "linhas": [
+            [
+              "Engenharia Elétrica (Bacharelado)",
+              "Formiga, Ipatinga e Itabirito",
+              "Aprofunda circuitos, sistemas elétricos, eletrônica, energia, instalações e máquinas elétricas."
+            ],
+            [
+              "Engenharia de Controle e Automação (Bacharelado)",
+              "Betim, Ibirité e Sabará",
+              "Estuda instrumentação, controle, automação de processos, sistemas industriais e integração de tecnologias."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Eletrotécnica"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Aprofunda o planejamento de projetos e a gestão de operações, inclusive no contexto técnico e industrial."
+            ],
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Possibilita pesquisa aplicada a tecnologias, uso de recursos e sustentabilidade, temas associados à produção e ao uso de energia."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **27 de fevereiro de 2026**, estudantes concluintes do **Técnico em Eletrotécnica Subsequente** do **Campus Conselheiro Lafaiete** participaram da cerimônia de formatura dos cursos técnicos do campus, realizada com turmas das modalidades integrada e subsequente de Eletrotécnica e Mecânica."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Formatura de concluintes de Eletrotécnica Subsequente · Conselheiro Lafaiete · 27 de fevereiro de 2026",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a diferença entre o estágio dos dois campi?",
+              "resposta": "Em **Conselheiro Lafaiete**, o estágio é **não obrigatório**. Em **Ipatinga**, são **200 horas obrigatórias**, realizadas após a conclusão do primeiro módulo, conforme as condições de acompanhamento e formalização do curso."
+            },
+            {
+              "pergunta": "As aulas são totalmente presenciais?",
+              "resposta": "As ofertas são **presenciais e noturnas**, mas ambas possuem **atividades a distância em componentes da formação**. As práticas, os horários e a organização das atividades seguem o calendário acadêmico e a matriz curricular de cada campus."
+            },
+            {
+              "pergunta": "A formação trata apenas de instalações residenciais?",
+              "resposta": "**Não.** O curso aborda também circuitos, máquinas e acionamentos elétricos, comandos, eletrônica, medições e aplicações industriais. As disciplinas e atividades práticas são organizadas por campus."
+            },
+            {
+              "pergunta": "O curso de Ipatinga exige atividades complementares?",
+              "resposta": "**Sim.** A matriz de Ipatinga inclui **225 horas de atividades complementares**, além das disciplinas e do estágio obrigatório. Em Conselheiro Lafaiete, a matriz curricular consultada não estabelece essa exigência."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Eletrotécnica Subsequente**, é necessário **ter concluído o ensino médio até a matrícula**. O IFMG realiza processos seletivos próprios para os cursos técnicos. Consulte o edital vigente para conferir a forma de classificação, a documentação e as condições de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Eletrotécnica pode atuar na **instalação, montagem, teste, operação e manutenção de sistemas elétricos**, com leitura de esquemas, medições, identificação de falhas e acompanhamento de equipamentos. Entre as atividades estão verificar circuitos e instalações, apoiar a montagem de quadros elétricos, avaliar condições de funcionamento de motores e acompanhar comandos e sistemas de automação.\n\nOs ambientes de atuação incluem **empresas de instalações e manutenção, indústrias, prestadoras de serviços, sistemas prediais e atividades ligadas ao uso da energia elétrica**. O trabalho exige cumprimento das normas de segurança e das atribuições profissionais previstas na legislação, inclusive quanto ao registro profissional aplicável."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-informatica-integrado",
       "nome": "Técnico em Informática",
       "nivel": "Técnico",
@@ -17693,295 +17982,6 @@
           "tipo": "texto",
           "titulo": "Mundo do Trabalho",
           "conteudo": "O zootecnista pode **planejar programas de alimentação e manejo animal**, definir estratégias de nutrição conforme a espécie e a fase de criação, acompanhar indicadores de desempenho e orientar o uso de pastagens, forragens e rações. Na bovinocultura de leite, por exemplo, pode avaliar índices de produção e condições de alimentação do rebanho. Na avicultura e na suinocultura, pode acompanhar sistemas de criação, bem-estar animal e eficiência dos processos produtivos.\n\nTambém pode trabalhar com **melhoramento genético, reprodução, qualidade de produtos de origem animal, gestão de propriedades e pesquisa**. Sua atuação envolve propriedades rurais, cooperativas, empresas de alimentação animal, agroindústrias, assistência técnica, centros de pesquisa e órgãos públicos. Para exercer a profissão regulamentada, o bacharel precisa de **registro no Conselho Regional de Medicina Veterinária (CRMV)** da região em que atuar, conforme a legislação e as atribuições profissionais."
-        }
-      ]
-    },
-    {
-      "id": "tecnico-em-eletrotecnica-subsequente",
-      "nome": "Técnico em Eletrotécnica",
-      "nivel": "Técnico",
-      "tipo": "Subsequente",
-      "campi": [
-        "Conselheiro Lafaiete",
-        "Ipatinga"
-      ],
-      "modalidade": "Presencial",
-      "status": "em_validacao",
-      "publicacao_autorizada": true,
-      "blocos": [
-        {
-          "tipo": "dados-basicos",
-          "campos": [
-            {
-              "rotulo": "Curso",
-              "valor": "Técnico em Eletrotécnica"
-            },
-            {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
-            },
-            {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
-            },
-            {
-              "rotulo": "Campi",
-              "valor": "Conselheiro Lafaiete; Ipatinga"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial, com atividades a distância em parte das disciplinas"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "Conselheiro Lafaiete: 4 semestres; Ipatinga: 3 semestres"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Conselheiro Lafaiete: 1.202 horas; Ipatinga: 1.400 horas"
-            },
-            {
-              "rotulo": "Estágio supervisionado",
-              "valor": "Conselheiro Lafaiete: não obrigatório; Ipatinga: 200 horas obrigatórias"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
-            }
-          ]
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Técnico em Eletrotécnica",
-          "conteudo": "Aprenda a **interpretar circuitos elétricos, instalar e manter equipamentos e compreender sistemas de comando e automação**. A formação técnica reúne fundamentos de eletricidade, medições, instalações e segurança para atividades em edifícios, empresas de serviços e ambientes industriais."
-        },
-        {
-          "tipo": "introducao",
-          "conteudo": "Estude Eletrotécnica à noite após concluir o ensino médio. A formação combina circuitos, instalações elétricas, máquinas, comandos e segurança, com práticas aplicadas a diferentes sistemas."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Para quem é o curso",
-          "conteudo": "O curso é destinado a quem **já concluiu o ensino médio** e deseja trabalhar com eletricidade e sistemas eletroeletrônicos. É indicado para quem se interessa por **montagem, medição, análise de falhas, manutenção e automação**, além de rotinas de trabalho que exigem atenção a procedimentos de segurança."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "O que você vai estudar",
-          "conteudo": "Você estudará **fundamentos de eletricidade, análise de circuitos, instalações elétricas, máquinas elétricas, eletrônica, comandos, desenho técnico e segurança do trabalho**. Os dois campi organizam as disciplinas, as atividades a distância e a formação prática segundo matrizes próprias."
-        },
-        {
-          "tipo": "tabela",
-          "colunas": [
-            "Área de formação",
-            "O que você aprende"
-          ],
-          "linhas": [
-            [
-              "Circuitos e medições",
-              "Reconhecer grandezas elétricas, interpretar esquemas e utilizar instrumentos para medir e analisar circuitos."
-            ],
-            [
-              "Instalações elétricas",
-              "Ler e desenvolver desenhos e projetos básicos, dimensionar componentes e acompanhar montagens e verificações."
-            ],
-            [
-              "Máquinas e acionamentos",
-              "Compreender o funcionamento de motores, transformadores, partidas e sistemas de acionamento."
-            ],
-            [
-              "Comandos e automação",
-              "Estudar dispositivos de comando, controle, instrumentação e aplicações de automação industrial."
-            ],
-            [
-              "Eletrônica e manutenção",
-              "Identificar componentes, analisar falhas e acompanhar procedimentos de manutenção e testes."
-            ],
-            [
-              "Segurança e normas técnicas",
-              "Aplicar procedimentos de prevenção de riscos e normas pertinentes a serviços com eletricidade."
-            ]
-          ]
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Aprendizagem prática",
-          "conteudo": "As atividades incluem **montagem e análise de circuitos, leitura de diagramas, utilização de instrumentos de medição e estudo de instalações e comandos elétricos**. Em **Conselheiro Lafaiete**, o currículo inclui práticas em componentes técnicos e estágio não obrigatório. Em **Ipatinga**, há **estágio supervisionado obrigatório de 200 horas** e **225 horas de atividades complementares**."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Aulas práticas de circuitos, medições e instalações elétricas · Conselheiro Lafaiete e Ipatinga",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Onde o IFMG oferece Técnico em Eletrotécnica",
-          "conteudo": "O **Técnico em Eletrotécnica Subsequente** é oferecido nos campi **Conselheiro Lafaiete e Ipatinga**, com aulas **noturnas**, em formato **presencial com parte das atividades a distância**. Em Conselheiro Lafaiete, a duração mínima é de quatro semestres; em Ipatinga, de três semestres. A carga horária e a exigência de estágio também são diferentes."
-        },
-        {
-          "tipo": "tabela",
-          "colunas": [
-            "Campus",
-            "Modalidade",
-            "Turno",
-            "Duração mínima",
-            "Carga horária total",
-            "E-mail da coordenação"
-          ],
-          "linhas": [
-            [
-              "Conselheiro Lafaiete",
-              "Presencial, com atividades EaD",
-              "Noite",
-              "4 semestres",
-              "1.202 horas",
-              "Informação incompleta"
-            ],
-            [
-              "Ipatinga",
-              "Presencial, com atividades EaD",
-              "Noite",
-              "3 semestres",
-              "1.400 horas",
-              "Informação incompleta"
-            ]
-          ]
-        },
-        {
-          "tipo": "faq",
-          "titulo": "Informações dos campi",
-          "itens": [
-            {
-              "pergunta": "Campus Conselheiro Lafaiete",
-              "resposta": "O curso é **noturno e presencial**, com componentes a distância. A matriz curricular de referência organiza **1.202 horas em quatro semestres**. O **estágio supervisionado não é obrigatório**. A formação abrange instalações elétricas, circuitos, eletrônica, máquinas elétricas e comandos industriais."
-            },
-            {
-              "pergunta": "Campus Ipatinga",
-              "resposta": "O curso funciona **à noite, em formato presencial com parte das disciplinas a distância**, e prevê duração mínima de **três semestres** e **1.400 horas totais**. Inclui **200 horas obrigatórias de estágio supervisionado** e **225 horas de atividades complementares**. Os componentes abrangem desenho, instalações, circuitos, máquinas elétricas, automação e manutenção."
-            }
-          ]
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "A formação em Eletrotécnica permite aprofundar temas como **eficiência energética, instalações, manutenção industrial, acionamentos elétricos e automação**. Atividades de pesquisa, extensão, projetos acadêmicos e visitas técnicas podem relacionar esses temas a situações profissionais, conforme as iniciativas de cada campus. No curso de Ipatinga, o estágio supervisionado integra obrigatoriamente o percurso formativo."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Continue seus estudos no IFMG",
-          "conteudo": ""
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Graduação",
-          "conteudo": ""
-        },
-        {
-          "tipo": "tabela",
-          "colunas": [
-            "Curso",
-            "Campus",
-            "Relação com Eletrotécnica"
-          ],
-          "linhas": [
-            [
-              "Engenharia Elétrica (Bacharelado)",
-              "Formiga, Ipatinga e Itabirito",
-              "Aprofunda circuitos, sistemas elétricos, eletrônica, energia, instalações e máquinas elétricas."
-            ],
-            [
-              "Engenharia de Controle e Automação (Bacharelado)",
-              "Betim, Ibirité e Sabará",
-              "Estuda instrumentação, controle, automação de processos, sistemas industriais e integração de tecnologias."
-            ]
-          ]
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Pós-graduação",
-          "conteudo": ""
-        },
-        {
-          "tipo": "tabela",
-          "colunas": [
-            "Programa",
-            "Campus",
-            "Relação com Eletrotécnica"
-          ],
-          "linhas": [
-            [
-              "Especialização em Gestão de Projetos e Operações",
-              "Congonhas",
-              "Aprofunda o planejamento de projetos e a gestão de operações, inclusive no contexto técnico e industrial."
-            ],
-            [
-              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
-              "Bambuí",
-              "Possibilita pesquisa aplicada a tecnologias, uso de recursos e sustentabilidade, temas associados à produção e ao uso de energia."
-            ]
-          ]
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **27 de fevereiro de 2026**, estudantes concluintes do **Técnico em Eletrotécnica Subsequente** do **Campus Conselheiro Lafaiete** participaram da cerimônia de formatura dos cursos técnicos do campus, realizada com turmas das modalidades integrada e subsequente de Eletrotécnica e Mecânica."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Formatura de concluintes de Eletrotécnica Subsequente · Conselheiro Lafaiete · 27 de fevereiro de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Perguntas frequentes",
-          "conteudo": ""
-        },
-        {
-          "tipo": "faq",
-          "itens": [
-            {
-              "pergunta": "Qual é a diferença entre o estágio dos dois campi?",
-              "resposta": "Em **Conselheiro Lafaiete**, o estágio é **não obrigatório**. Em **Ipatinga**, são **200 horas obrigatórias**, realizadas após a conclusão do primeiro módulo, conforme as condições de acompanhamento e formalização do curso."
-            },
-            {
-              "pergunta": "As aulas são totalmente presenciais?",
-              "resposta": "As ofertas são **presenciais e noturnas**, mas ambas possuem **atividades a distância em componentes da formação**. As práticas, os horários e a organização das atividades seguem o calendário acadêmico e a matriz curricular de cada campus."
-            },
-            {
-              "pergunta": "A formação trata apenas de instalações residenciais?",
-              "resposta": "**Não.** O curso aborda também circuitos, máquinas e acionamentos elétricos, comandos, eletrônica, medições e aplicações industriais. As disciplinas e atividades práticas são organizadas por campus."
-            },
-            {
-              "pergunta": "O curso de Ipatinga exige atividades complementares?",
-              "resposta": "**Sim.** A matriz de Ipatinga inclui **225 horas de atividades complementares**, além das disciplinas e do estágio obrigatório. Em Conselheiro Lafaiete, a matriz curricular consultada não estabelece essa exigência."
-            }
-          ]
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Forma de ingresso",
-          "conteudo": "Para ingressar no **Técnico em Eletrotécnica Subsequente**, é necessário **ter concluído o ensino médio até a matrícula**. O IFMG realiza processos seletivos próprios para os cursos técnicos. Consulte o edital vigente para conferir a forma de classificação, a documentação e as condições de reserva de vagas."
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Mundo do Trabalho",
-          "conteudo": "O técnico em Eletrotécnica pode atuar na **instalação, montagem, teste, operação e manutenção de sistemas elétricos**, com leitura de esquemas, medições, identificação de falhas e acompanhamento de equipamentos. Entre as atividades estão verificar circuitos e instalações, apoiar a montagem de quadros elétricos, avaliar condições de funcionamento de motores e acompanhar comandos e sistemas de automação.\n\nOs ambientes de atuação incluem **empresas de instalações e manutenção, indústrias, prestadoras de serviços, sistemas prediais e atividades ligadas ao uso da energia elétrica**. O trabalho exige cumprimento das normas de segurança e das atribuições profissionais previstas na legislação, inclusive quanto ao registro profissional aplicável."
         }
       ]
     }

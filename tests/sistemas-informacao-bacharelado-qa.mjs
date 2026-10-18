@@ -1,0 +1,12 @@
+import test from "node:test";import assert from "node:assert/strict";import {readFileSync} from "node:fs";
+const d=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));const c=d.courses.find(x=>x.id==="sistemas-de-informacao-bacharelado");const b=c?.blocos||[];
+test("F7.42: três campi têm turnos, cargas e estágios próprios",()=>{assert.ok(c);assert.equal(c.nome,"Sistemas de Informação");assert.equal(c.tipo,"Bacharelado");assert.deepEqual(c.campi,["Ouro Branco","Sabará","São João Evangelista"]);assert.equal(b.length,28);assert.equal(b.filter(x=>x.tipo==="galeria").length,4);
+const tb=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");assert.deepEqual(tb.linhas.map(x=>x[2]),["Noite","Manhã","Manhã e tarde"]);assert.deepEqual(tb.linhas.map(x=>x[4]),["3.004 horas","3.000 horas","Informação incompleta"]);assert.deepEqual(tb.linhas.map(x=>x[5]),["coord.graduacaosistemasdeinformacao.obr@ifmg.edu.br","bsi.sabara@ifmg.edu.br","bsi.sje@ifmg.edu.br"]);
+const l=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");assert.equal(l.itens.length,3);assert.match(l.itens[0].resposta,/estágio supervisionado não é obrigatório/i);assert.match(l.itens[1].resposta,/120 horas de estágio supervisionado obrigatório/);assert.match(l.itens[2].resposta,/OneBit/);
+assert.equal(b.find(x=>x.tipo==="faq"&&!x.titulo).itens.length,5);assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);assert.ok(b.at(-1).conteudo.length>500);});
+test("F7.42: três relatos reais têm galerias próprias e não exportam auditoria",()=>{const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");assert.ok(i>0);assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
+for(const k of [i,i+2,i+4]){assert.equal(b[k].tipo,"texto");assert.equal(b[k+1].tipo,"galeria");assert.deepEqual(b[k+1].itens,[]);}
+assert.match(b[i].conteudo,/julho de 2025/);assert.match(b[i+2].conteudo,/João Vitor de Melo/);assert.match(b[i+2].conteudo,/Ana Luiza de Oliveira Gouvêa/);assert.match(b[i+4].conteudo,/Paulo Moura e Arthur Garcia/);
+assert.ok(b.find(x=>x.tipo==="introducao").conteudo.length<=280);
+assert.doesNotMatch(JSON.stringify(c),/Auditoria privada|PPC de janeiro|www2?\\.ifmg\\.edu\\.br|3\\.030|2017|engenharia-de-controle-e-automacao/);
+assert.deepEqual(d.courses.map(x=>x.id),[...d.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));});

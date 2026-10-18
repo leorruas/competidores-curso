@@ -15965,6 +15965,308 @@
       ]
     },
     {
+      "id": "tecnico-em-mineracao-subsequente",
+      "nome": "Técnico em Mineração",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Congonhas",
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Mineração"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Congonhas; Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ouro Preto: 5% de atividades EaD na oferta de 2027)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Congonhas: 1.560 horas; Ouro Preto: 1.210 horas"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Congonhas: 360 horas obrigatórias; Ouro Preto: não obrigatório"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Congonhas: coordtecmin.congonhas@ifmg.edu.br; Ouro Preto: Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Mineração",
+          "conteudo": "Aprenda a **investigar depósitos minerais, acompanhar processos de extração e tratar minérios**, utilizando conhecimentos de geologia, mineralogia, topografia e segurança. O curso técnico relaciona pesquisa mineral, planejamento das operações e cuidados ambientais a atividades de uma área essencial para diferentes cadeias produtivas."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude Mineração à noite depois de concluir o ensino médio. A formação combina geologia, pesquisa mineral, topografia, lavra e tratamento de minérios."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem **já concluiu o ensino médio** e deseja trabalhar com a investigação, a extração e o tratamento de recursos minerais. É uma formação para quem se interessa por **geologia, minerais, rochas, medições, tecnologias industriais e conservação ambiental**, além de trabalho em equipe e rotinas que exigem planejamento e segurança."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação inclui **geologia, mineralogia, pesquisa mineral, topografia, desenho técnico, métodos de lavra, tratamento de minérios e segurança nas operações**. Você conhece equipamentos e procedimentos de amostragem, observa propriedades de minerais e rochas e aprende a analisar as etapas de uma atividade mineral. As matrizes curriculares organizam os conteúdos e a prática de modo diferente em cada campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Geologia e mineralogia",
+              "Identificar rochas e minerais e compreender a formação e a distribuição de depósitos minerais."
+            ],
+            [
+              "Pesquisa mineral",
+              "Conhecer métodos de investigação, reconhecimento de áreas, amostragem e registro de resultados."
+            ],
+            [
+              "Topografia e desenho técnico",
+              "Representar terrenos, interpretar plantas e organizar informações de levantamentos."
+            ],
+            [
+              "Lavra de minas",
+              "Compreender as etapas de extração, os métodos de lavra e a organização das operações."
+            ],
+            [
+              "Tratamento de minérios",
+              "Conhecer processos de fragmentação, separação e preparação de materiais minerais."
+            ],
+            [
+              "Segurança e meio ambiente",
+              "Analisar riscos das operações e práticas de prevenção, controle e recuperação ambiental."
+            ],
+            [
+              "Planejamento e gestão",
+              "Relacionar documentação técnica, qualidade, recursos e condições de trabalho aos projetos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação envolve **análise de amostras minerais e rochas, leitura de mapas, desenhos e plantas, estudos de topografia e processos de lavra e beneficiamento**. Em Congonhas, os projetos integradores relacionam essas etapas e o estágio supervisionado obrigatório aproxima os estudos de uma situação profissional. Em Ouro Preto, o currículo inclui atividades complementares, desenhos técnicos e topográficos e a possibilidade de estágio não obrigatório."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades práticas de mineralogia, rochas, topografia e tratamento de minérios · Congonhas e Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Mineração",
+          "conteudo": "O **Técnico em Mineração Subsequente** é oferecido nos campi **Congonhas e Ouro Preto**, com aulas no período **noturno** e duração de **quatro semestres**. Ambos são presenciais. Em Ouro Preto, a oferta de 2027 inclui **5% de atividades EaD**. Os currículos diferem principalmente na carga horária total e na exigência de estágio."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Congonhas",
+              "Presencial",
+              "Noite",
+              "4 semestres",
+              "1.560 horas",
+              "coordtecmin.congonhas@ifmg.edu.br"
+            ],
+            [
+              "Ouro Preto",
+              "Presencial (5% EaD na oferta de 2027)",
+              "Noite",
+              "4 semestres",
+              "1.210 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Congonhas",
+              "resposta": "A formação é **presencial e noturna**, organizada em **quatro semestres**, com **1.560 horas no total**. O currículo reúne **1.200 horas de disciplinas** e **360 horas de estágio supervisionado obrigatório**. Inclui estudos de mineralogia, pesquisa mineral, desenho técnico, lavra, tratamento de minérios, segurança e **projetos integradores**, desenvolvidos ao longo do curso. A coordenação atende pelo e-mail **coordtecmin.congonhas@ifmg.edu.br**."
+            },
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "O curso é **noturno e presencial**, tem **quatro semestres** e **1.210 horas**, das quais **1.200 são disciplinas e 10 são atividades complementares**. A oferta de 2027 prevê **5% de atividades EaD**, em conteúdos de desenho técnico e desenho topográfico. **O estágio supervisionado é opcional, e não há TCC obrigatório**. A formação inclui pesquisa mineral, geologia, topografia, lavra e tratamento de minérios."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "O IFMG desenvolve atividades de ensino, pesquisa e extensão relacionadas a **geociências, recursos minerais, tecnologias de produção, sustentabilidade e segurança**. Os estudos de Mineração podem dialogar com projetos de análise de materiais, estudos de campo, topografia e recuperação ambiental. As oportunidades específicas para estudantes do subsequente dependem das atividades organizadas em cada campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Mineração"
+          ],
+          "linhas": [
+            [
+              "Engenharia Metalúrgica (Bacharelado)",
+              "Ouro Branco",
+              "Aprofunda o estudo de materiais, processos metalúrgicos e transformação de matérias-primas minerais."
+            ],
+            [
+              "Engenharia de Produção (Bacharelado)",
+              "Bambuí, Congonhas e Governador Valadares",
+              "Planejamento de processos produtivos, qualidade, logística e gestão das operações."
+            ],
+            [
+              "Engenharia Ambiental e Sanitária (Bacharelado)",
+              "Governador Valadares",
+              "Estuda os impactos ambientais, os recursos hídricos e a gestão de sistemas ambientais."
+            ],
+            [
+              "Gestão Ambiental (Tecnólogo)",
+              "Governador Valadares",
+              "Desenvolve estudos de avaliação, planejamento e gestão ambiental."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Mineração"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Estudos e pesquisa aplicada a tecnologias ambientais, recursos naturais e sustentabilidade."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Planejamento, acompanhamento e gestão de projetos e operações em diferentes setores."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode se candidatar ao Técnico em Mineração Subsequente?",
+              "resposta": "O subsequente é destinado a quem **já concluiu o ensino médio**. Em Congonhas e Ouro Preto, o curso tem duração mínima de **dois anos** e funciona à noite."
+            },
+            {
+              "pergunta": "O estágio é obrigatório nos dois campi?",
+              "resposta": "**Não.** Em **Congonhas**, o estágio supervisionado é **obrigatório e tem 360 horas**. Em **Ouro Preto**, é **não obrigatório**. As condições de orientação e formalização seguem as regras de cada campus."
+            },
+            {
+              "pergunta": "Por que a carga horária total é diferente?",
+              "resposta": "Em **Congonhas**, o curso tem **1.560 horas**, incluindo 360 horas de estágio obrigatório. Em **Ouro Preto**, são **1.210 horas**, incluindo 10 horas de atividades complementares. A matriz de cada campus organiza seus componentes de forma própria."
+            },
+            {
+              "pergunta": "É preciso fazer Trabalho de Conclusão de Curso?",
+              "resposta": "Em **Congonhas**, a formação inclui **projetos integradores**, que articulam os conteúdos estudados e constituem o trabalho final do percurso. Em **Ouro Preto**, não há TCC obrigatório no currículo disponibilizado pelo campus."
+            },
+            {
+              "pergunta": "O curso de Ouro Preto pode ser feito inteiramente a distância?",
+              "resposta": "**Não.** A oferta é **presencial e noturna**, com **5% de atividades EaD** previstas para 2027, vinculadas a componentes de desenho técnico e topográfico."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Mineração Subsequente**, é necessário ter **concluído o ensino médio até a matrícula**. O IFMG realiza processos seletivos próprios para os cursos técnicos. Consulte as regras da edição vigente para verificar a forma de classificação, a documentação e as condições de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Mineração pode atuar no **acompanhamento da pesquisa, extração e tratamento de recursos minerais**. Entre as atividades estão **coletar e registrar amostras, apoiar levantamentos geológicos e topográficos, caracterizar materiais, acompanhar processos de lavra, observar a estabilidade de rochas e participar do controle de etapas de fragmentação, classificação e separação de minérios**.\n\nO trabalho pode ocorrer em minas a céu aberto e subterrâneas, empresas de mineração, prestadores de serviços, laboratórios de análise e centros de pesquisa e desenvolvimento. A atuação também envolve **planejamento de atividades, registros técnicos, segurança operacional, gestão de riscos e cuidados ambientais**, conforme as responsabilidades da função. Os procedimentos profissionais e as atribuições técnicas devem seguir a legislação e as regras de segurança aplicáveis."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-nutricao-e-dietetica-integrado",
       "nome": "Técnico em Nutrição e Dietética",
       "nivel": "Técnico",

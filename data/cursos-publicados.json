@@ -11545,6 +11545,7 @@
       "nivel": "Técnico",
       "tipo": "Integrado",
       "campi": [
+        "Contagem",
         "Itabirito"
       ],
       "modalidade": "Presencial",
@@ -11567,8 +11568,8 @@
               "valor": "Informação e Comunicação"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Itabirito"
+              "rotulo": "Campi",
+              "valor": "Contagem; Itabirito"
             },
             {
               "rotulo": "Modalidade",
@@ -11579,7 +11580,7 @@
               "valor": "Manhã e tarde"
             },
             {
-              "rotulo": "Duração",
+              "rotulo": "Duração mínima",
               "valor": "Informação incompleta"
             },
             {
@@ -11587,7 +11588,11 @@
               "valor": "Informação incompleta"
             },
             {
-              "rotulo": "PPC para ingressantes de 2027",
+              "rotulo": "Estágio supervisionado",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Trabalho de Conclusão de Curso",
               "valor": "Informação incompleta"
             },
             {
@@ -11603,7 +11608,7 @@
         },
         {
           "tipo": "introducao",
-          "conteudo": "Aprenda a desenvolver sistemas, construir aplicações, trabalhar com bancos de dados e testar programas enquanto conclui o ensino médio no Campus Itabirito."
+          "conteudo": "Aprenda a programar, criar aplicativos e organizar bancos de dados enquanto conclui o ensino médio. A formação combina criação, testes e documentação de sistemas."
         },
         {
           "tipo": "texto",
@@ -11655,49 +11660,61 @@
         {
           "tipo": "texto",
           "titulo": "Aprendizagem prática",
-          "conteudo": "O curso prevê formação em codificação, modelagem e testes de sistemas. Os ambientes, equipamentos e atividades práticas utilizados por cada turma serão definidos na organização pedagógica do Campus Itabirito."
+          "conteudo": "A formação envolve **programação, organização de dados, modelagem de aplicações, testes de funcionalidades e documentação de sistemas**. As atividades práticas e os ambientes de aprendizagem são organizados por cada campus, de acordo com sua matriz curricular e estrutura."
         },
         {
           "tipo": "galeria",
-          "referencia": "Ambientes de aprendizagem e práticas de Desenvolvimento de Sistemas · Itabirito",
+          "referencia": "Ambientes de aprendizagem, programação e desenvolvimento de sistemas · Contagem e Itabirito",
           "itens": []
         },
         {
           "tipo": "texto",
           "titulo": "Onde o IFMG oferece Técnico em Desenvolvimento de Sistemas",
-          "conteudo": "O **Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio** será oferecido no **Campus Itabirito** a partir de 2027. A oferta prevista na seleção é **presencial**, com aulas de manhã e à tarde."
+          "conteudo": "Oferecemos o **Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio** nos campi **Contagem e Itabirito**, em modalidade **presencial**, com aulas **de manhã e à tarde**. Cada campus organiza a formação a partir de seu projeto pedagógico."
         },
         {
           "tipo": "tabela",
           "colunas": [
             "Campus",
             "Modalidade",
-            "Turno / duração",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
             "E-mail da coordenação"
           ],
           "linhas": [
             [
+              "Contagem",
+              "Presencial",
+              "Manhã e tarde",
+              "Informação incompleta",
+              "Informação incompleta",
+              "Informação incompleta"
+            ],
+            [
               "Itabirito",
               "Presencial",
-              "Manhã e tarde / Informação incompleta",
+              "Manhã e tarde",
+              "Informação incompleta",
+              "Informação incompleta",
               "Informação incompleta"
             ]
           ]
         },
         {
-          "tipo": "faq",
-          "titulo": "Informações dos campi",
-          "itens": [
-            {
-              "pergunta": "Campus Itabirito",
-              "resposta": "O novo curso integrado, previsto para iniciar em 2027, apresenta formação em desenvolvimento de sistemas para web, dispositivos móveis e outros ambientes digitais. A página institucional destaca programação, requisitos, testes, bancos de dados e documentação. As condições curriculares específicas para os ingressantes dependem do PPC."
-            }
-          ]
+          "tipo": "texto",
+          "titulo": "Campus Contagem",
+          "conteudo": "O **Campus Contagem** integra a expansão da oferta de educação profissional na Região Metropolitana de Belo Horizonte. **Desenvolvimento de Sistemas** está entre os primeiros cursos regulares da unidade, com formação técnica integrada ao ensino médio."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Itabirito",
+          "conteudo": "No **Campus Itabirito**, a formação enfatiza **criação de sistemas para web, dispositivos móveis e redes**, reunindo programação, análise de requisitos, bancos de dados, testes e documentação de aplicações."
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "O Campus Itabirito possui atividades de ensino, pesquisa e extensão em áreas tecnológicas. Os projetos e as oportunidades que venham a envolver estudantes de **Desenvolvimento de Sistemas** dependerão da implantação do curso e das ações acadêmicas de cada período."
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -11707,7 +11724,7 @@
         {
           "tipo": "texto",
           "titulo": "Graduação",
-          "conteudo": "Depois de concluir o ensino médio integrado, você poderá concorrer a graduações do IFMG relacionadas a programação, aplicações e sistemas de informação."
+          "conteudo": ""
         },
         {
           "tipo": "tabela",
@@ -11737,7 +11754,7 @@
         {
           "tipo": "texto",
           "titulo": "Pós-graduação",
-          "conteudo": "Depois de concluir uma graduação compatível, você poderá buscar oportunidades de especialização relacionadas à computação."
+          "conteudo": ""
         },
         {
           "tipo": "tabela",
@@ -11768,23 +11785,27 @@
           "tipo": "faq",
           "itens": [
             {
-              "pergunta": "O curso já recebe estudantes?",
-              "resposta": "A primeira oferta está prevista para o processo seletivo de 2027 no Campus Itabirito. A turma iniciará suas atividades conforme o calendário acadêmico."
-            },
-            {
               "pergunta": "Preciso já saber programar para ingressar?",
               "resposta": "Não é exigido conhecimento prévio de programação como requisito geral da formação. O ingresso no integrado exige ensino fundamental concluído até a matrícula e atendimento ao edital vigente."
             },
             {
               "pergunta": "Qual a diferença em relação ao Técnico em Automação Industrial?",
-              "resposta": "**Desenvolvimento de Sistemas** tem como foco a criação, os testes e a manutenção de programas e aplicativos. **Automação Industrial**, também oferecido no Campus Itabirito, concentra-se em equipamentos e processos automatizados. São cursos distintos."
+              "resposta": "**Desenvolvimento de Sistemas** tem como foco a **criação, os testes e a manutenção de programas e aplicativos**. **Automação Industrial**, oferecido também no **Campus Itabirito**, concentra-se em equipamentos e processos automatizados. São cursos distintos."
+            },
+            {
+              "pergunta": "Qual é a diferença entre Desenvolvimento de Sistemas e o Técnico em Informática EJA de Contagem?",
+              "resposta": "Em **Contagem**, Desenvolvimento de Sistemas integra a formação técnica ao **ensino médio regular**, com aulas de manhã e à tarde e ingresso após o ensino fundamental. O **Técnico em Informática integrado à EJA** é uma oferta diferente, destinada à Educação de Jovens e Adultos, com aulas no período noturno e requisitos de ingresso próprios."
+            },
+            {
+              "pergunta": "Desenvolvimento de Sistemas Integrado é o mesmo que a graduação em Análise e Desenvolvimento de Sistemas?",
+              "resposta": "São formações de níveis diferentes. O **Técnico em Desenvolvimento de Sistemas Integrado** combina ensino médio e curso técnico para quem concluiu o ensino fundamental. **Análise e Desenvolvimento de Sistemas** é um **curso superior de tecnologia**, para quem já concluiu o ensino médio."
             }
           ]
         },
         {
           "tipo": "texto",
           "titulo": "Outras modalidades relacionadas",
-          "conteudo": "O Campus Itabirito também oferece **Técnico em Automação Industrial Integrado**, com objetivos curriculares diferentes. O novo curso de Desenvolvimento de Sistemas é uma alternativa para quem deseja concentrar sua formação técnica na criação de software."
+          "conteudo": "O **Campus Itabirito** oferece também o **Técnico em Automação Industrial Integrado**, voltado a equipamentos, sistemas de controle e processos automatizados. Já Desenvolvimento de Sistemas concentra a formação técnica na criação de software."
         },
         {
           "tipo": "tabela",
@@ -11822,7 +11843,7 @@
         {
           "tipo": "texto",
           "titulo": "Forma de ingresso",
-          "conteudo": "Para ingressar no **Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio**, é necessário concluir o ensino fundamental até a matrícula. O ingresso ocorre por processo seletivo público do IFMG para cursos técnicos integrados, conforme o edital vigente.\n\nConsulte o edital para conhecer as regras de inscrição, reserva de vagas, critérios e procedimentos de matrícula."
+          "conteudo": "Para ingressar no **Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio**, é necessário **concluir o ensino fundamental até a matrícula**. O IFMG realiza processos seletivos com regras próprias para cada oferta. Consulte o edital vigente para verificar os critérios de classificação, os documentos e as condições de reserva de vagas."
         },
         {
           "tipo": "texto",

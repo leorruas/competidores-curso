@@ -8,13 +8,20 @@ export function validarEstruturaCurso(curso) {
     return ["curso sem blocos"];
   }
   const blocos = curso.blocos;
+  // Pós-graduação é uma etapa acadêmica própria, com créditos, linhas e trabalho
+  // final. Não impor a tabela de continuidade destinada a técnicos e graduandos.
+  const posGraduacao = curso.nivel === "Pós-graduação";
   const pos = titulo => blocos.findIndex(b => b?.tipo === "texto" && b.titulo === titulo);
-  const obrigatorias = ["Continue seus estudos no IFMG", "Experiências e conquistas dos estudantes", "Perguntas frequentes", "Forma de ingresso", "Mundo do Trabalho"];
+  const obrigatorias = [
+    ...(!posGraduacao ? ["Continue seus estudos no IFMG"] : []),
+    "Experiências e conquistas dos estudantes", "Perguntas frequentes",
+    "Forma de ingresso", "Mundo do Trabalho"
+  ];
   for (const titulo of obrigatorias) {
     if (blocos.filter(b => b?.tipo === "texto" && b.titulo === titulo).length !== 1)
       erros.push("seção obrigatória deve aparecer uma vez: " + titulo);
   }
-  if (pos("Experiências e conquistas dos estudantes") <= pos("Continue seus estudos no IFMG"))
+  if (!posGraduacao && pos("Experiências e conquistas dos estudantes") <= pos("Continue seus estudos no IFMG"))
     erros.push("continuidade deve anteceder as experiências");
   if (blocos.at(-2)?.titulo !== "Forma de ingresso" || blocos.at(-1)?.titulo !== "Mundo do Trabalho")
     erros.push("os dois últimos blocos devem ser Forma de ingresso e Mundo do Trabalho");

@@ -8,8 +8,10 @@ export function validarEstruturaCurso(curso) {
     return ["curso sem blocos"];
   }
   const blocos = curso.blocos;
-  // Pós-graduação é uma etapa acadêmica própria, com créditos, linhas e trabalho
-  // final. Não impor a tabela de continuidade destinada a técnicos e graduandos.
+  // Na pós-graduação, a continuidade é opcional: só faz sentido apresentar
+  // uma formação de nível superior disponível no IFMG e comprovada editorialmente.
+  // A validação estrutural confere o avanço de nível; a evidência da oferta
+  // permanece sob responsabilidade da auditoria privada.
   const posGraduacao = curso.nivel === "Pós-graduação";
   const pos = titulo => blocos.findIndex(b => b?.tipo === "texto" && b.titulo === titulo);
   const obrigatorias = [
@@ -21,8 +23,42 @@ export function validarEstruturaCurso(curso) {
     if (blocos.filter(b => b?.tipo === "texto" && b.titulo === titulo).length !== 1)
       erros.push("seção obrigatória deve aparecer uma vez: " + titulo);
   }
-  if (!posGraduacao && pos("Experiências e conquistas dos estudantes") <= pos("Continue seus estudos no IFMG"))
+  const continuidade = pos("Continue seus estudos no IFMG");
+  if (!posGraduacao && pos("Experiências e conquistas dos estudantes") <= continuidade)
     erros.push("continuidade deve anteceder as experiências");
+  if (posGraduacao && continuidade >= 0) {
+    if (blocos.filter(b => b?.tipo === "texto" && b.titulo === "Continue seus estudos no IFMG").length !== 1)
+      erros.push("continuidade da pós-graduação deve aparecer uma única vez");
+    if (pos("Experiências e conquistas dos estudantes") <= continuidade)
+      erros.push("continuidade deve anteceder as experiências");
+
+    // Um título sem programa de nível acima não é conteúdo pronto para copiar.
+    const tabela = blocos[continuidade + 1];
+    const colunas = tabela?.colunas;
+    const indice = titulo => Array.isArray(colunas) ? colunas.indexOf(titulo) : -1;
+    const temTabela = tabela?.tipo === "tabela" && indice("Curso") >= 0 &&
+      indice("Campus") >= 0 && indice("Nível") >= 0 &&
+      Array.isArray(tabela.linhas) && tabela.linhas.length > 0;
+    if (!temTabela) {
+      erros.push("continuidade da pós-graduação exige tabela de cursos de nível acima com Curso, Campus e Nível");
+    } else {
+      const tipo = String(curso.tipo || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+      const superiores = /especializ|mba/.test(tipo)
+        ? ["mestrado", "doutorado"]
+        : /mestrado/.test(tipo) ? ["doutorado"] : [];
+      const campo = indice("Nível");
+      for (const linha of tabela.linhas) {
+        const nivel = String(linha?.[campo] || "").normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+        if (!superiores.some(x => nivel === x || nivel.startsWith(x + " ")))
+          erros.push("continuidade da pós-graduação deve indicar somente formação de nível acima");
+        if (["Curso", "Campus"].some(rotulo =>
+          !String(linha?.[indice(rotulo)] || "").trim() ||
+          String(linha[indice(rotulo)]).trim() === "Informação incompleta"))
+          erros.push("continuidade da pós-graduação precisa identificar curso e campus confirmados");
+      }
+    }
+  }
   if (blocos.at(-2)?.titulo !== "Forma de ingresso" || blocos.at(-1)?.titulo !== "Mundo do Trabalho")
     erros.push("os dois últimos blocos devem ser Forma de ingresso e Mundo do Trabalho");
   const refs = new Set();

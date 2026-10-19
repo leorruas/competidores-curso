@@ -1072,8 +1072,12 @@ test("título permanece copiável quando Texto tem conteúdo incompleto", () => 
 test("nenhum roteiro oferece links para sites antigos do IFMG", () => {
   for(const course of json.courses) {
     const items=course.blocos.flatMap(b=>b.tipo==="links"?b.itens:b.tipo==="link-unico"?[b.link]:[]);
-    assert.ok(items.some(x=>x.url==="https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"),course.id);
-    assert.ok(items.some(x=>x.url==="https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"),course.id);
+    // Esses destinos são da graduação e dos cursos técnicos, não dos
+    // processos seletivos próprios de mestrados e especializações.
+    if (course.nivel !== "Pós-graduação") {
+      assert.ok(items.some(x=>x.url==="https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"),course.id);
+      assert.ok(items.some(x=>x.url==="https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"),course.id);
+    }
     for(const x of items)assert.doesNotMatch(x.url,/^https?:\/\/(?!portal\.ifmg\.edu\.br)[^/]*\.ifmg\.edu\.br\//);
   }
 });

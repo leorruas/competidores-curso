@@ -42,6 +42,55 @@ function pilotoPos(tipo) {
   };
 }
 
+// A seção é opcional na pós e só entra quando há formação acima,
+ // oferecida pelo IFMG e verificada pela auditoria (a existência não é dedutível do JSON).
+function incluirContinuacao(curso, nivel = "Mestrado profissional") {
+  const i = curso.blocos.findIndex(b => b.titulo === "Experiências e conquistas dos estudantes");
+  curso.blocos.splice(i, 0,
+    {tipo:"texto",titulo:"Continue seus estudos no IFMG",conteudo:""},
+    {tipo:"tabela",colunas:["Curso","Campus","Nível","Relação com o curso"],
+      linhas:[["Mestrado Profissional em Administração","Formiga",nivel,
+        "Pesquisa aplicada após a especialização"]]}
+  );
+  return curso;
+}
+
+test("F8.3A: especialização pode indicar mestrado comprovado do IFMG", () => {
+  const curso = incluirContinuacao(pilotoPos("Especialização"));
+  assert.deepEqual(validarEstruturaCurso(curso),[]);
+});
+
+test("F8.3A: mestrado só aceita doutorado como continuidade, nunca outro mestrado", () => {
+  const mestrado = incluirContinuacao(pilotoPos("Mestrado profissional"));
+  assert.ok(validarEstruturaCurso(mestrado).some(e=>e.includes("somente formação de nível acima")));
+  mestrado.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("Nível")).linhas = [
+    ["Doutorado em programa comprovado","Campus da oferta","Doutorado","Pesquisa após mestrado"]
+  ];
+  assert.deepEqual(validarEstruturaCurso(mestrado),[]);
+});
+
+test("F8.3A: continuidade não pode repetir especialização nem omitir programa e campus", () => {
+  const curso = incluirContinuacao(pilotoPos("Especialização"),"Especialização");
+  assert.ok(validarEstruturaCurso(curso).some(e=>e.includes("somente formação de nível acima")));
+  const table = curso.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("Nível"));
+  table.linhas[0][2]="Mestrado";
+  table.linhas[0][0]="Informação incompleta";
+  assert.ok(validarEstruturaCurso(curso).some(e=>e.includes("curso e campus confirmados")));
+});
+
+test("F8.3A: continuidade opcional exige tabela adequada e ordem anterior às experiências", () => {
+  const curso = incluirContinuacao(pilotoPos("Especialização"));
+  const table = curso.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("Nível"));
+  table.colunas = ["Curso","Campus","Relação com o curso"];
+  assert.ok(validarEstruturaCurso(curso).some(e=>e.includes("Curso, Campus e Nível")));
+  table.colunas = ["Curso","Campus","Nível","Relação com o curso"];
+  const index = curso.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+  const pair = curso.blocos.splice(index,2);
+  const experiencias = curso.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
+  curso.blocos.splice(experiencias+2,0,...pair);
+  assert.ok(validarEstruturaCurso(curso).some(e=>e.includes("continuidade deve anteceder as experiências")));
+});
+
 test("F8.3A: especialização sem continuidade de graduação passa na estrutura", () => {
   const curso = pilotoPos("Especialização");
   assert.equal(curso.blocos.some(b=>b.titulo==="Continue seus estudos no IFMG"),false);

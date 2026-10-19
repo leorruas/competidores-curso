@@ -46,7 +46,16 @@ test("F8.6A: TCC e Moodle seguem PPC e regulamento de 2026",()=>{
  assert.match(texto("Aprendizagem a distância").conteudo,/Moodle/);
 });
 
-test("F8.6A: TCC pode ser artigo ou produto técnico, com contexto e sem inventar presencialidade",()=>{
+test("F8.6A: TCC admite artigo ou produto técnico sem prometer ausência de avaliações presenciais",()=>{
+ const tcc=texto("Trabalho Prático de Conclusão de Curso").conteudo;
+ assert.match(tcc,/individualmente ou em dupla/);
+ assert.match(tcc,/artigo/);
+ assert.match(tcc,/produto técnico aplicado/);
+ assert.match(texto("Exemplos de produtos técnicos").conteudo,/planos de manutenção/);
+ assert.match(texto("Exemplos de produtos técnicos").conteudo,/painéis de indicadores/);
+ const raw=JSON.stringify(curso);
+ assert.doesNotMatch(raw,/não (?:há|terá) atividades presenciais|nunca haverá encontro presencial/i);
+ assert.ok(!blocos.some(b=>b.titulo==="Continue seus estudos no IFMG"));
 });
 
 test("F8.6A: contato não ativado, sem experiências nem evidências privadas no guia",()=>{

@@ -14141,6 +14141,272 @@
       ]
     },
     {
+      "id": "tecnico-em-enfermagem-subsequente",
+      "nome": "Técnico em Enfermagem",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Piumhi"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Enfermagem"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Piumhi"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração prevista",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Carga horária da formação",
+              "valor": "Mínimo de 1.200 horas; carga total: Informação incompleta"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Enfermagem",
+          "conteudo": "Estude **cuidados de enfermagem, promoção da saúde e prevenção de doenças**, com atenção às necessidades de pessoas em diferentes fases da vida. A formação técnica aborda o cuidado em equipes de saúde, a segurança do paciente e as práticas de atendimento desenvolvidas sob supervisão de enfermeiros."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Aprenda sobre cuidados de enfermagem, saúde coletiva, segurança do paciente e trabalho em equipes de saúde. O curso subsequente é presencial, noturno e tem duração prevista de dois anos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O **Técnico em Enfermagem Subsequente** é voltado a quem **já concluiu o ensino médio** e deseja trabalhar com cuidados a pessoas em hospitais, unidades de saúde e outros serviços de atendimento. O curso reúne conhecimentos de **saúde, comunicação, responsabilidade ética e trabalho em equipe**."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação abrange temas como **organização do Sistema Único de Saúde (SUS), biossegurança, ética profissional, saúde coletiva, segurança do paciente, cuidado de crianças, adultos e idosos, atenção à saúde da mulher e procedimentos de enfermagem**. A aprendizagem relaciona conhecimentos sobre o corpo humano, prevenção de doenças e atendimento às necessidades de cada pessoa."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de estudo",
+            "O que envolve"
+          ],
+          "linhas": [
+            [
+              "Saúde coletiva e SUS",
+              "Compreender ações de promoção da saúde, prevenção de doenças e organização dos serviços de saúde."
+            ],
+            [
+              "Cuidados de enfermagem",
+              "Estudar procedimentos e rotinas de assistência à pessoa em diferentes situações, sempre dentro das atribuições profissionais."
+            ],
+            [
+              "Biossegurança e segurança do paciente",
+              "Reconhecer riscos e adotar medidas de proteção, higiene, prevenção de infecções e cuidado seguro."
+            ],
+            [
+              "Saúde ao longo da vida",
+              "Conhecer necessidades de atenção à saúde da criança, do adolescente, do adulto e da pessoa idosa."
+            ],
+            [
+              "Ética e comunicação",
+              "Respeitar a privacidade, o acolhimento, os direitos das pessoas atendidas e o trabalho em equipes multiprofissionais."
+            ],
+            [
+              "Urgência e acompanhamento clínico",
+              "Compreender cuidados e procedimentos em serviços de saúde conforme a orientação e a supervisão profissional."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação técnica em Enfermagem articula **estudo de procedimentos, prevenção de riscos, cuidado seguro e atividades supervisionadas de atendimento**. O curso é presencial. A organização específica das práticas, dos locais de realização e do estágio supervisionado segue a matriz curricular e as orientações acadêmicas da turma."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Formação prática em cuidados de enfermagem e segurança do paciente · Campus Piumhi",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Enfermagem",
+          "conteudo": "O **Técnico em Enfermagem Subsequente** é oferecido no **Campus Piumhi**, em formato **presencial**, no turno **noturno**, com duração prevista de **dois anos**. A formação tem **carga horária mínima de 1.200 horas**. A carga total e a organização específica do estágio seguem a matriz curricular da turma."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração",
+            "Carga horária",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Piumhi",
+              "Presencial",
+              "Noite",
+              "2 anos",
+              "Mínimo de 1.200 horas; total: Informação incompleta",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Piumhi",
+              "resposta": "O curso é **presencial, noturno e destinado a quem concluiu o ensino médio**. A duração prevista é de **dois anos**, e a formação tem **carga horária mínima de 1.200 horas**. A matriz curricular da turma organiza as práticas e os estágios supervisionados."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os conhecimentos de Enfermagem podem ser relacionados a atividades de **educação em saúde, prevenção de doenças, acompanhamento de indicadores de saúde e ações de cuidado à comunidade**. A participação em projetos de ensino, pesquisa e extensão depende da programação acadêmica do campus e das atividades oferecidas a cada turma."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Enfermagem"
+          ],
+          "linhas": [
+            [
+              "Ciências Biológicas (Licenciatura)",
+              "Bambuí",
+              "Aprofunda conhecimentos de biologia e educação científica, com atuação profissional própria da licenciatura."
+            ],
+            [
+              "Educação Física (Licenciatura)",
+              "Bambuí",
+              "Desenvolve estudos de corpo, movimento, educação e promoção de hábitos saudáveis, no campo de atuação da licenciatura."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Enfermagem"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Permite aprofundar pesquisa aplicada sobre meio ambiente e saúde ambiental, após uma formação superior compatível."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode ingressar no Técnico em Enfermagem Subsequente?",
+              "resposta": "Pessoas que **concluíram o ensino médio**. A formação é técnica e tem duração prevista de **dois anos**, com aulas **presenciais à noite**."
+            },
+            {
+              "pergunta": "O curso exige atividades práticas e estágio?",
+              "resposta": "A formação em Enfermagem envolve **aprendizagem prática e acompanhamento supervisionado**. A organização, a carga horária e as condições do estágio seguem a matriz curricular adotada para cada turma."
+            },
+            {
+              "pergunta": "Quem conclui o curso pode trabalhar como enfermeiro?",
+              "resposta": "O curso forma **técnicos em Enfermagem**. A atuação é diferente da do enfermeiro, que possui formação superior. Os técnicos trabalham dentro de suas atribuições legais, sob supervisão de enfermeiro e com registro profissional exigido pelo Conselho Regional de Enfermagem."
+            },
+            {
+              "pergunta": "O curso é a distância?",
+              "resposta": "A oferta é **presencial e noturna**. A distribuição das atividades acadêmicas e das práticas segue o calendário e a organização do curso."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Enfermagem Subsequente** de Piumhi, é necessário **ter concluído o ensino médio até a matrícula**. O IFMG realiza processos seletivos para cursos técnicos, com critérios e documentos definidos em cada edital. Consulte o edital vigente para conhecer o procedimento de classificação e as regras de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Enfermagem pode participar de ações de **promoção, prevenção, recuperação e acompanhamento da saúde**, oferecendo cuidados a pessoas de diferentes idades e necessidades. Entre suas atividades, conforme a legislação e a orientação de enfermeiros, estão acompanhar condições de saúde, executar procedimentos de enfermagem permitidos à categoria, apoiar a higiene e o conforto da pessoa atendida e colaborar na segurança do paciente.\n\nPode atuar em **hospitais, unidades básicas de saúde, clínicas, serviços de atendimento domiciliar e instituições de longa permanência**, integrando equipes de saúde. A atuação requer **registro no Conselho Regional de Enfermagem (Coren)**, observância das normas profissionais e execução das atividades sob supervisão de enfermeiro."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-informatica-integrado",
       "nome": "Técnico em Informática",
       "nivel": "Técnico",

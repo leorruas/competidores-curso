@@ -39,7 +39,8 @@ test("F7.53: cargas e contatos pertencem a cada campus",()=>{
   assert.equal(campus.itens.length,3);
   assert.match(campus.itens[1].resposta,/1.095 horas de disciplinas e 105 horas de atividades complementares obrigatórias/);
   assert.match(campus.itens[2].resposta,/120 horas obrigatórias de estágio supervisionado ou TCC/);
-  assert.match(dados("Estágio supervisionado"),/Governador Valadares: Informação incompleta/);
+  assert.match(dados("Estágio supervisionado"),/Governador Valadares: não obrigatório \\(120 horas se realizado\\)/);
+  assert.match(dados("Trabalho de Conclusão de Curso"),/Governador Valadares: Informação incompleta/);
 });
 
 test("F7.53: não confunde estágio, TCC e complementares",()=>{
@@ -47,7 +48,7 @@ test("F7.53: não confunde estágio, TCC e complementares",()=>{
   assert.equal(faq.itens.length,4);
   assert.match(faq.itens[2].resposta,/105 horas de atividades complementares/);
   assert.match(faq.itens[2].resposta,/120 horas de estágio supervisionado ou de TCC/);
-  assert.match(faq.itens[2].resposta,/informação sobre a exigência de estágio ou TCC ainda está incompleta/);
+  assert.match(faq.itens[2].resposta,/Governador Valadares.*120 horas para quem optar por realizá-lo/);
   assert.match(faq.itens[3].resposta,/4,54%/);
   assert.match(dados("Carga horária total"),/1.095 horas de disciplinas/);
   assert.match(dados("Carga horária total"),/1.200 horas de disciplinas e 120 horas de estágio ou TCC/);

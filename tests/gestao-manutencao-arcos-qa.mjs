@@ -59,7 +59,10 @@ test("F8.6A: TCC admite artigo ou produto técnico sem prometer ausência de ava
 });
 
 test("F8.6A: contato não ativado, sem experiências nem evidências privadas no guia",()=>{
- assert.equal(campo("E-mail da coordenação"),"Informação incompleta");
+ assert.equal(campo("E-mail da coordenação"),"pos.manutencao.arcos@ifmg.edu.br");
+ const campi=blocos.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
+ assert.equal(campi.linhas.length,1);
+ assert.equal(campi.linhas[0][4],"pos.manutencao.arcos@ifmg.edu.br");
  assert.equal(texto("Experiências e conquistas dos estudantes").conteudo,"");
  const gal=blocos.filter(x=>x.tipo==="galeria");
  assert.equal(gal.length,1);
@@ -73,5 +76,5 @@ test("F8.6A: contato não ativado, sem experiências nem evidências privadas no
  assert.ok(!blocos.some(b=>b.titulo==="Continue seus estudos no IFMG"));
  assert.equal(blocos.find(x=>x.tipo==="faq").itens.length,4);
  const raw=JSON.stringify(curso);
- for(const bad of ["Benchmark/","competidores-cursos","será ativado em breve","pos.manutencao.arcos@ifmg.edu.br","2027/1","inscrições abertas","Portaria de autorização","www.ifmg.edu.br"])assert.ok(!raw.includes(bad),bad);
+ for(const bad of ["Benchmark/","competidores-cursos","será ativado em breve","2027/1","inscrições abertas","Portaria de autorização","www.ifmg.edu.br"])assert.ok(!raw.includes(bad),bad);
 });

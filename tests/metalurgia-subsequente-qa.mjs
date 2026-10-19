@@ -1,0 +1,48 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
+import {validarEstruturaCurso} from "../scripts/validar-estrutura.mjs";
+const d=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
+const c=d.courses.find(x=>x.id==="tecnico-em-metalurgia-subsequente");
+const b=c?.blocos||[];
+const campo=r=>b[0].campos.find(x=>x.rotulo===r)?.valor;
+const section=t=>b.find(x=>x.tipo==="texto"&&x.titulo===t);
+test("F7.52: subsequente separado do integrado e PPC fevereiro de 2026",()=>{
+ assert.ok(c);
+ assert.equal(c.tipo,"Subsequente");
+ assert.equal(c.nome,"Técnico em Metalurgia");
+ assert.deepEqual(c.campi,["Ouro Preto"]);
+ assert.ok(d.courses.some(x=>x.id==="tecnico-em-metalurgia-integrado"));
+ assert.equal(b.length,23);
+ assert.deepEqual(validarEstruturaCurso(c),[]);
+ assert.equal(campo("Modalidade"),"Presencial");
+ assert.equal(campo("Turno"),"Noite");
+ assert.equal(campo("Duração mínima"),"2 anos (4 semestres)");
+ assert.equal(campo("Carga horária total"),"1.200 horas (990 horas de disciplinas e 210 horas de atividades complementares obrigatórias)");
+ assert.equal(campo("Estágio supervisionado"),"Não obrigatório");
+ assert.equal(campo("Trabalho de Conclusão de Curso"),"Não obrigatório");
+ assert.equal(campo("E-mail da coordenação"),"Informação incompleta");
+});
+test("F7.52: atividades complementares não são estágio obrigatório",()=>{
+ const faq=b.find(x=>x.tipo==="faq"&&!x.titulo);
+ assert.equal(faq.itens.length,4);
+ assert.match(faq.itens[1].resposta,/estágio e o TCC não são obrigatórios/);
+ assert.match(faq.itens[2].resposta,/210 horas/);
+ assert.match(faq.itens[2].resposta,/visitas técnicas/);
+ assert.match(faq.itens[2].resposta,/estágio supervisionado opcional/);
+ assert.match(faq.itens[3].resposta,/não prevê disciplinas a distância/);
+ assert.match(section("O que você vai estudar").conteudo,/metalografia/);
+});
+test("F7.52: sem transferir eventos do integrado ou do convênio",()=>{
+ assert.equal(section("Experiências e conquistas dos estudantes").conteudo,"");
+ const gs=b.filter(x=>x.tipo==="galeria");
+ assert.equal(gs.length,1);
+ assert.deepEqual(gs[0].itens,[]);
+ assert.equal(b[b.indexOf(gs[0])-1].titulo,"Aprendizagem prática");
+ const raw=JSON.stringify(c);
+ for(const forbidden of ["daniel.fraga@ifmg.edu.br","MEC nº 081","1.228 horas","Samarco","Museu da Inconfidência","Benchmark/","2026.1","20% EaD","Moodle"])assert.ok(!raw.includes(forbidden),forbidden);
+ assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+ assert.ok(b.find(x=>x.tipo==="introducao").conteudo.length<=280);
+ const sorted=[...d.courses].sort((a,z)=>a.nome.localeCompare(z.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(z.tipo||""),"pt-BR")||a.id.localeCompare(z.id,"pt-BR"));
+ assert.deepEqual(d.courses.map(x=>x.id),sorted.map(x=>x.id));
+});

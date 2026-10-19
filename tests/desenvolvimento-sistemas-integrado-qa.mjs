@@ -51,7 +51,9 @@ test("F7.P1: não transfere atividades do Integrado de outros campi nem dados do
  const str=JSON.stringify(c);
  for(const forbidden of ["40 vagas","30 vagas","1.020/2026","3.210 horas","assuntosinstitucionais.contagem@ifmg.edu.br","PPC de Contagem","2027","Auditoria privada","Consulta pública","2026"]) assert.ok(!str.includes(forbidden),forbidden);
  const faq=b.find(x=>x.tipo==="faq"&&!x.titulo);
- assert.equal(faq.itens.length,2);
+ assert.equal(faq.itens.length,4);
+ assert.ok(faq.itens.some(x=>x.pergunta.includes("Informática EJA de Contagem")));
+ assert.ok(faq.itens.some(x=>x.pergunta.includes("graduação em Análise e Desenvolvimento de Sistemas")));
  assert.ok(!faq.itens.some(x=>x.pergunta.includes("já recebe estudantes")));
  assert.match(section("Forma de ingresso").conteudo,/regras próprias para cada oferta/);
 });

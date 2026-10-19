@@ -17330,6 +17330,280 @@
       ]
     },
     {
+      "id": "tecnico-em-metalurgia-subsequente",
+      "nome": "Técnico em Metalurgia",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Metalurgia"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "1.200 horas (990 horas de disciplinas e 210 horas de atividades complementares obrigatórias)"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Não obrigatório"
+            },
+            {
+              "rotulo": "Trabalho de Conclusão de Curso",
+              "valor": "Não obrigatório"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Metalurgia",
+          "conteudo": "Aprenda a **entender como metais e ligas são obtidos, transformados e analisados**, incluindo técnicas de fundição, conformação mecânica, tratamentos térmicos e controle de qualidade. A formação relaciona materiais, processos industriais, segurança e responsabilidade ambiental."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude Metalurgia à noite, em quatro semestres. Conheça os processos de produção de metais, fundição, soldagem, análises de materiais e controle de qualidade em ambientes industriais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O **Técnico em Metalurgia Subsequente** é destinado a quem **já concluiu o ensino médio** e deseja trabalhar com **materiais metálicos, processos industriais, fundição, siderurgia, soldagem e análise da qualidade**. A formação envolve observação, leitura de dados técnicos, acompanhamento de etapas de produção e atenção às condições de segurança no trabalho."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O currículo reúne **metalurgia física, mineralogia, termodinâmica, tecnologia dos materiais, beneficiamento de minérios, fundição, siderurgia, processos de redução e refino, metalografia, ensaios mecânicos e tratamentos térmicos**. Você também estudará **conformação, soldagem, gestão do trabalho e meio ambiente**, além de disciplinas de pesquisa aplicada."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Metais e materiais",
+              "Conhecer propriedades, características e transformações de metais e ligas metálicas."
+            ],
+            [
+              "Siderurgia e beneficiamento",
+              "Estudar preparação de matérias-primas, extração e processos de redução e refino."
+            ],
+            [
+              "Fundição e conformação",
+              "Compreender fabricação de peças, processos de moldagem e transformação mecânica de materiais."
+            ],
+            [
+              "Tratamentos térmicos",
+              "Relacionar aquecimento e resfriamento às propriedades e ao desempenho dos metais."
+            ],
+            [
+              "Metalografia e ensaios",
+              "Analisar estruturas dos materiais e interpretar resultados de testes de resistência, dureza e integridade."
+            ],
+            [
+              "Soldagem e desenho técnico",
+              "Conhecer processos de união de metais e representação de componentes e operações industriais."
+            ],
+            [
+              "Pesquisa aplicada e gestão",
+              "Desenvolver estudos técnicos de processos, organizar informações e considerar segurança e impactos ambientais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação utiliza **laboratórios de ensaios físicos e mecânicos, fundição, metalografia, tratamentos térmicos e microscopia eletrônica**. As disciplinas relacionam esses espaços a atividades como análise de amostras, observação de estruturas metálicas e estudo de processos industriais. O currículo inclui **210 horas de atividades complementares obrigatórias**, que podem ser cumpridas por diferentes atividades aceitas pelo curso, como **visitas técnicas, monitoria, eventos, pesquisa e estágio opcional**, conforme os critérios de validação acadêmica."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades de laboratório, ensaios de materiais, fundição e metalografia · Campus Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Metalurgia",
+          "conteudo": "O **Técnico em Metalurgia Subsequente** é oferecido no **Campus Ouro Preto**, em modalidade **presencial**, com aulas **à noite**. A duração mínima é de **quatro semestres**, e a formação tem **1.200 horas**: **990 horas de disciplinas e 210 horas de atividades complementares obrigatórias**. O estágio supervisionado é opcional."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Preto",
+              "Presencial",
+              "Noite",
+              "4 semestres",
+              "1.200 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "O curso é **presencial, noturno e destinado a quem concluiu o ensino médio**. A duração mínima é de **dois anos**. Das **1.200 horas**, são **990 horas de disciplinas** e **210 horas de atividades complementares obrigatórias**. O estágio supervisionado é **não obrigatório**, e não há TCC exigido."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "O curso aborda **análise de metais e ligas, processos de fundição, tratamentos térmicos e propriedades dos materiais**, áreas que podem ser aprofundadas em projetos de pesquisa e extensão. A matriz inclui **Projeto de Pesquisa Aplicada I e II**, com atividades de investigação técnica associadas à formação. O campus dispõe de laboratórios voltados a ensaios, metalografia e materiais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Metalurgia"
+          ],
+          "linhas": [
+            [
+              "Engenharia Metalúrgica (Bacharelado)",
+              "Ouro Branco",
+              "Aprofunda o estudo de materiais metálicos, ligas, processos de extração, fabricação e controle de qualidade."
+            ],
+            [
+              "Engenharia de Controle e Automação (Bacharelado)",
+              "Betim, Ibirité e Sabará",
+              "Estuda controle de processos, instrumentação, automação e sistemas aplicados à indústria."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Metalurgia"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Aprofunda planejamento, organização e acompanhamento de projetos e operações, inclusive em ambientes industriais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode ingressar no Técnico em Metalurgia Subsequente?",
+              "resposta": "Pessoas que **já concluíram o ensino médio**. O curso é **presencial**, funciona à noite no Campus Ouro Preto e tem duração mínima de **dois anos**."
+            },
+            {
+              "pergunta": "Preciso fazer estágio ou TCC para concluir o curso?",
+              "resposta": "**O estágio e o TCC não são obrigatórios.** Para concluir a formação, é necessário cumprir as disciplinas e as **210 horas de atividades complementares obrigatórias**."
+            },
+            {
+              "pergunta": "Como posso cumprir as 210 horas de atividades complementares?",
+              "resposta": "É possível apresentar **atividades reconhecidas pelo curso**, como **visitas técnicas, monitoria, participação em eventos, pesquisa, extensão ou estágio supervisionado opcional**. A coordenação avalia os documentos e a carga horária aproveitada de acordo com as regras curriculares."
+            },
+            {
+              "pergunta": "Há aulas ou disciplinas a distância?",
+              "resposta": "A formação é **presencial**. Ferramentas digitais podem apoiar os estudos, mas a matriz vigente **não prevê disciplinas a distância**."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Metalurgia Subsequente** do Campus Ouro Preto, você precisa **ter concluído o ensino médio até a matrícula**. O IFMG realiza processos seletivos para cursos técnicos. Consulte o edital vigente para verificar as formas de classificação, os documentos e as condições de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Metalurgia pode trabalhar no **acompanhamento e controle de processos de produção e transformação de metais**, na preparação de materiais, execução e interpretação de ensaios, fundição, tratamento térmico e apoio a processos de soldagem e conformação. Entre as tarefas estão registrar resultados de testes, analisar características de ligas metálicas, acompanhar etapas de fabricação e colaborar com a qualidade e a segurança dos processos.\n\nA atuação pode ocorrer em **empresas siderúrgicas, metalúrgicas, metalmecânicas, mineradoras, fundições, indústrias de equipamentos e laboratórios de controle de qualidade**, dentro das atribuições profissionais aplicáveis. O trabalho envolve seguir normas técnicas, procedimentos de segurança e cuidados ambientais, em articulação com equipes de produção e engenharia."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-mineracao-integrado",
       "nome": "Técnico em Mineração",
       "nivel": "Técnico",

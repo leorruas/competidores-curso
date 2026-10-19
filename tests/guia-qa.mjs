@@ -165,7 +165,7 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
     const continuation=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
     const experiences=c.blocos.findIndex(b=>b.titulo===unified);
     const faq=c.blocos.findIndex(b=>b.titulo==="Perguntas frequentes");
-    assert.ok(experiences>continuation,c.id+": continuidade antes das experiências");
+    if (c.nivel !== "Pós-graduação") assert.ok(experiences>continuation,c.id+": continuidade antes das experiências");
     assert.ok(faq>=0,c.id+": FAQ de candidatos preservado");
     if(c.id.startsWith("tecnico-"))assert.ok(faq>experiences,c.id+": FAQ técnico no fim da seção informativa");
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
@@ -185,10 +185,11 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
   }
 });
 
-test("F4.4: os oito cursos apresentam continuidade sem avisos genéricos", () => {
+test("F4.4: cursos técnicos e de graduação apresentam continuidade sem avisos genéricos", () => {
   const h=testContext();
   assert.ok(json.courses.length>=8,"os oito pilotos originais devem continuar no guia");
   for(const c of json.courses) {
+    if (c.nivel === "Pós-graduação") continue;
     const i=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
     assert.ok(i>=0,c.id);
     assert.equal(c.blocos[i].tipo,"texto");
@@ -1002,7 +1003,7 @@ test("as seções editoriais existem, independentemente da posição contextual 
     const titles=texts.map(b=>b.titulo || "");
     assert.ok(!titles.some(t=>/^Reconhecimentos e (?:premiações|avaliações)$/.test(t)),c.nome+": evitar seção duplicada");
     assert.ok(titles.some(t=>/Pesquisa/i.test(t)),c.nome);
-    assert.ok(titles.some(t=>/Continue seus estudos/i.test(t)),c.nome);
+    if (c.nivel !== "Pós-graduação") assert.ok(titles.some(t=>/Continue seus estudos/i.test(t)),c.nome);
     assert.ok(titles.some(t=>/Experiências/i.test(t)),c.nome);
     for (const b of texts.filter(b=>b.conteudo==="Informação incompleta")) {
       assert.ok(b.titulo,c.nome+": seção incompleta precisa de título");
@@ -1071,8 +1072,12 @@ test("título permanece copiável quando Texto tem conteúdo incompleto", () => 
 test("nenhum roteiro oferece links para sites antigos do IFMG", () => {
   for(const course of json.courses) {
     const items=course.blocos.flatMap(b=>b.tipo==="links"?b.itens:b.tipo==="link-unico"?[b.link]:[]);
-    assert.ok(items.some(x=>x.url==="https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"),course.id);
-    assert.ok(items.some(x=>x.url==="https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"),course.id);
+    // Esses destinos são da graduação e dos cursos técnicos, não dos
+    // processos seletivos próprios de mestrados e especializações.
+    if (course.nivel !== "Pós-graduação") {
+      assert.ok(items.some(x=>x.url==="https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"),course.id);
+      assert.ok(items.some(x=>x.url==="https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"),course.id);
+    }
     for(const x of items)assert.doesNotMatch(x.url,/^https?:\/\/(?!portal\.ifmg\.edu\.br)[^/]*\.ifmg\.edu\.br\//);
   }
 });

@@ -5462,6 +5462,291 @@
       ]
     },
     {
+      "id": "especializacao-em-sistemas-de-energia-renovavel",
+      "nome": "Especialização em Sistemas de Energia Renovável: Geração, Distribuição e Eficiência Energética",
+      "nivel": "Pós-graduação",
+      "tipo": "Especialização",
+      "campi": [
+        "Formiga"
+      ],
+      "modalidade": "EaD",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Especialização em Sistemas de Energia Renovável: Geração, Distribuição e Eficiência Energética"
+            },
+            {
+              "rotulo": "Nível",
+              "valor": "Pós-graduação lato sensu · Especialização"
+            },
+            {
+              "rotulo": "Titulação",
+              "valor": "Especialista em Sistemas de Energia Renovável"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Formiga"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Educação a distância (EaD)"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Três semestres"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "420 horas, incluindo 45 horas de Projeto Final de Curso"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Não consta estágio obrigatório na matriz curricular"
+            },
+            {
+              "rotulo": "Trabalho final",
+              "valor": "Projeto Final de Curso obrigatório, 45 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Especialização em Sistemas de Energia Renovável: Geração, Distribuição e Eficiência Energética",
+          "conteudo": "Aprofunde conhecimentos em **geração, distribuição, armazenamento e uso eficiente de energia**. O curso relaciona sistemas fotovoltaicos, energia eólica, bioenergia, redes elétricas, mobilidade elétrica e análise econômica de projetos energéticos."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude fontes renováveis, armazenamento de energia, mobilidade elétrica e eficiência energética em uma especialização a distância com projeto aplicado ao setor de energia."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A especialização é destinada a pessoas com **diploma de graduação em Engenharia, Física, Química ou curso superior de tecnologia relacionado à área de Energia**, conforme as formações previstas no projeto pedagógico e no processo seletivo. A proposta é aprofundar conhecimentos para análise, planejamento e avaliação de sistemas e projetos energéticos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O curso combina **fontes renováveis de geração, redes de distribuição, armazenamento de energia, mercado de eletricidade e de carbono, gestão e eficiência energética**. As disciplinas estão organizadas em três semestres e terminam com um Projeto Final de Curso, no qual você aplica os conhecimentos estudados a uma questão da área."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Semestre",
+            "Componente curricular",
+            "Carga horária"
+          ],
+          "linhas": [
+            [
+              "Primeiro",
+              "Ambientação à Plataforma EaD",
+              "15 horas"
+            ],
+            [
+              "Primeiro",
+              "Sistemas Fotovoltaicos",
+              "45 horas"
+            ],
+            [
+              "Primeiro",
+              "Tecnologias de Bioenergia",
+              "45 horas"
+            ],
+            [
+              "Primeiro",
+              "Energia Eólica e Pequenas Centrais Hidrelétricas",
+              "45 horas"
+            ],
+            [
+              "Segundo",
+              "Sistemas de Distribuição de Energia Elétrica",
+              "45 horas"
+            ],
+            [
+              "Segundo",
+              "Armazenamento de Energia e Mobilidade Elétrica",
+              "45 horas"
+            ],
+            [
+              "Segundo",
+              "Mercado de Energia Elétrica e de Carbono",
+              "45 horas"
+            ],
+            [
+              "Terceiro",
+              "Gestão e Eficiência Energética",
+              "45 horas"
+            ],
+            [
+              "Terceiro",
+              "Análise de Viabilidade Econômica de Projetos em Energia",
+              "45 horas"
+            ],
+            [
+              "Terceiro",
+              "Projeto Final de Curso",
+              "45 horas"
+            ],
+            [
+              "**Total**",
+              "**Três semestres**",
+              "**420 horas**"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem a distância",
+          "conteudo": "A especialização ocorre **integralmente a distância**, utilizando o **Moodle** como ambiente de atividades acadêmicas. A formação inclui estudos de caso, exercícios, análise de situações reais e atividades de modelagem e simulação. As tarefas envolvem aplicações dos conteúdos a problemas de geração, distribuição, armazenamento e uso eficiente da energia."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Estudo de sistemas renováveis e atividades digitais da especialização · Campus Formiga.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Projeto Final de Curso",
+          "conteudo": "O **Projeto Final de Curso** é obrigatório, tem **45 horas** e integra a carga horária total de 420 horas. Desenvolvido no terceiro semestre, pode envolver **diagnósticos, simulações, modelos, análises aplicadas, softwares ou outros produtos técnicos** relacionados a energia renovável. Os resultados devem ser organizados em um **artigo científico**, conforme as exigências de orientação e avaliação do curso."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Linhas de investigação do projeto final",
+          "conteudo": "Os projetos finais devem se relacionar a uma das três linhas previstas no projeto pedagógico."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Linha",
+            "Possibilidades de investigação"
+          ],
+          "linhas": [
+            [
+              "Modelagem, Simulação e Otimização de Sistemas Energéticos",
+              "Criar modelos, simular cenários e comparar soluções de sistemas de energia."
+            ],
+            [
+              "Sistemas Avançados de Geração, Armazenamento e Uso Eficiente de Energia",
+              "Estudar geração renovável, armazenamento, mobilidade elétrica e eficiência de sistemas."
+            ],
+            [
+              "Integração de Sistemas de Energia Renovável em Redes Elétricas",
+              "Analisar a conexão de fontes renováveis às redes e seus efeitos na distribuição de eletricidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece a especialização",
+          "conteudo": "A **Especialização em Sistemas de Energia Renovável** é oferecida pelo **Campus Formiga**, na modalidade **EaD**. A formação é organizada em três semestres e possui 420 horas totais, com um projeto final obrigatório."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Duração",
+            "Carga horária",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Formiga",
+              "Educação a distância",
+              "Três semestres",
+              "420 horas, incluindo Projeto Final de Curso",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Formiga",
+          "conteudo": "No **Campus Formiga**, a especialização reúne estudos sobre **energia solar, eólica, bioenergia, redes elétricas, armazenamento e eficiência energética**. A organização em módulos a distância permite desenvolver estudos de caso e projetos ligados aos desafios técnicos e econômicos do setor."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, projetos e oportunidades",
+          "conteudo": "A formação inclui investigação e elaboração de **projeto final aplicado**, com possibilidades de analisar **viabilidade de sistemas renováveis, armazenamento de energia, integração de fontes à rede e melhoria da eficiência energética**. O trabalho pode produzir modelos, análises técnicas e econômicas e propostas de solução para problemas do setor."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Nível",
+            "Relação com o curso"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Mestrado profissional",
+              "A linha Tecnologias Ambientais inclui sistemas de energias renováveis, conectando projetos energéticos à sustentabilidade e à pesquisa aplicada."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode ingressar na especialização?",
+              "resposta": "O curso é destinado a pessoas que concluíram **graduação em Engenharia, Física, Química ou curso superior de tecnologia relacionado à área de Energia**, de acordo com as formações aceitas na seleção vigente."
+            },
+            {
+              "pergunta": "Qual é a carga horária e a duração?",
+              "resposta": "São **420 horas ao longo de três semestres**. O total já inclui **45 horas do Projeto Final de Curso**, previsto para o terceiro semestre."
+            },
+            {
+              "pergunta": "É obrigatório desenvolver um projeto final?",
+              "resposta": "Sim. O **Projeto Final de Curso** tem **45 horas**, integra a carga total e envolve investigação ou aplicação técnica relacionada a uma das linhas previstas no projeto pedagógico. Seus resultados devem ser apresentados em **artigo científico**."
+            },
+            {
+              "pergunta": "O curso tem atividades presenciais obrigatórias?",
+              "resposta": "O curso é ofertado **integralmente na modalidade EaD**. As atividades acontecem no ambiente virtual Moodle e podem incluir encontros síncronos, quando programados, com gravações disponibilizadas posteriormente."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar na **Especialização em Sistemas de Energia Renovável**, é necessário **ter diploma de graduação nas áreas aceitas pelo curso** e atender aos critérios do processo seletivo específico. O IFMG divulga em cada edital as regras de participação e as condições de classificação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A especialização aprofunda a capacidade de **analisar sistemas de energia renovável, avaliar alternativas de geração elétrica, estudar o uso de armazenamento e mobilidade elétrica e examinar a integração de pequenas fontes à rede de distribuição**. O conteúdo apoia atividades de planejamento, avaliação técnica e econômica, elaboração de estudos, identificação de perdas e proposição de medidas de eficiência energética.\n\nEsses conhecimentos podem ser aplicados em **empresas de energia e engenharia, indústrias, consultorias, instituições públicas, pesquisa e desenvolvimento tecnológico**, conforme a formação profissional anterior e as atribuições de cada função. O projeto final permite trabalhar um problema específico, articulando dados, análise de viabilidade, alternativas técnicas e comunicação dos resultados para orientar decisões no setor de energia."
+        }
+      ]
+    },
+    {
       "id": "fisica-licenciatura",
       "nome": "Física",
       "nivel": "Graduação",
@@ -8196,6 +8481,251 @@
           "tipo": "texto",
           "titulo": "Mundo do Trabalho",
           "conteudo": "Na **clínica de pequenos e grandes animais**, o médico-veterinário pode realizar consultas, investigar sintomas, solicitar e interpretar exames, definir tratamentos e acompanhar a recuperação de pacientes. Pode atuar em ambulatórios, clínicas, hospitais veterinários, propriedades rurais e serviços de atendimento a animais de produção e de companhia.\n\nNa **medicina veterinária preventiva e na saúde pública**, pode participar do controle de zoonoses, da vigilância sanitária, da prevenção de doenças e de programas de vacinação e educação em saúde. Na **produção animal e na segurança dos alimentos**, pode trabalhar com sanidade dos rebanhos, reprodução, inspeção de produtos de origem animal e procedimentos de qualidade em agroindústrias, dentro das atribuições legais de cada função. Pesquisa, diagnóstico laboratorial, conservação de animais e responsabilidade técnica também integram seus campos de atuação.\n\nO exercício da profissão requer **registro ativo no Conselho Regional de Medicina Veterinária (CRMV)** competente, nos termos da legislação profissional."
+        }
+      ]
+    },
+    {
+      "id": "mestrado-profissional-em-administracao",
+      "nome": "Mestrado Profissional em Administração",
+      "nivel": "Pós-graduação",
+      "tipo": "Mestrado profissional",
+      "campi": [
+        "Formiga"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Mestrado Profissional em Administração"
+            },
+            {
+              "rotulo": "Nível",
+              "valor": "Pós-graduação stricto sensu · Mestrado profissional"
+            },
+            {
+              "rotulo": "Área de concentração",
+              "valor": "Finanças"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Formiga"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (o regulamento admite disciplinas presenciais, remotas ou híbridas conforme decisão do colegiado)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Integral"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "24 meses"
+            },
+            {
+              "rotulo": "Integralização",
+              "valor": "30 créditos: 12 obrigatórios, 12 optativos, 2 atividades práticas supervisionadas, 4 dissertação"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Exame de qualificação",
+              "valor": "Obrigatório"
+            },
+            {
+              "rotulo": "Trabalho final",
+              "valor": "Dissertação com defesa"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mestrado Profissional em Administração",
+          "conteudo": "Desenvolva pesquisas aplicadas em **Finanças**, relacionando decisões de investimento, comportamento financeiro e gestão de organizações. O programa reúne métodos de pesquisa, análise de dados, fundamentos de finanças e elaboração de soluções para problemas de empresas e instituições."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Investigue finanças e tomada de decisão em um mestrado profissional que conecta pesquisa aplicada, análise de dados, investimentos e desafios de organizações."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o programa",
+          "conteudo": "O Mestrado Profissional em Administração é dirigido a pessoas com **graduação concluída** que desejam pesquisar problemas da área de Finanças. Os projetos relacionam teorias e métodos de pesquisa a questões enfrentadas por organizações, mercados e pessoas que tomam decisões financeiras."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Área de concentração e linhas de pesquisa",
+          "conteudo": "A área de concentração é **Finanças**, com duas linhas de pesquisa que orientam a escolha do tema, das disciplinas e da dissertação."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Linha de pesquisa",
+            "O que investiga"
+          ],
+          "linhas": [
+            [
+              "Finanças Comportamentais e Tomada de Decisões",
+              "Como processos cognitivos e comportamentais influenciam decisões financeiras, investimentos e gestão empresarial."
+            ],
+            [
+              "Finanças Corporativas e Investimentos",
+              "Financiamento e investimentos das organizações, criação de valor, função financeira e alocação de ativos."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O currículo combina **teorias de finanças, métodos quantitativos e qualitativos, análise de dados e estudos sobre organizações**. Entre os componentes obrigatórios estão Teoria de Finanças, Metodologia de Pesquisa, Teorias das Organizações, Introdução à Ciência dos Dados e Pesquisa Científica, Técnica e Tecnológica. A escolha de optativas depende do plano de pesquisa e das disciplinas ofertadas em cada período."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Componente curricular",
+            "Créditos mínimos",
+            "Equivalência em horas"
+          ],
+          "linhas": [
+            [
+              "Disciplinas obrigatórias",
+              "12",
+              "180"
+            ],
+            [
+              "Disciplinas optativas",
+              "12",
+              "180"
+            ],
+            [
+              "Atividades práticas supervisionadas",
+              "2",
+              "30"
+            ],
+            [
+              "Dissertação",
+              "4",
+              "60"
+            ],
+            [
+              "Total de créditos",
+              "30",
+              "450"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Como funciona a pesquisa",
+          "conteudo": "Ao longo do curso, você define um problema de pesquisa, escolhe métodos de investigação e trabalha com orientação docente. A formação inclui **atividades práticas supervisionadas, exame de qualificação e elaboração e defesa de dissertação**. Também são exigidos nivelamento em Matemática Financeira e proficiência em língua inglesa, conforme a regulamentação do programa."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa aplicada, orientação e atividades acadêmicas do Mestrado Profissional em Administração · Campus Formiga.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece o Mestrado Profissional em Administração",
+          "conteudo": "O programa é oferecido no **Campus Formiga**, com área de concentração em **Finanças**. O regulamento organiza a formação em semestres, com período de integralização de 24 meses. A modalidade oficial é presencial, podendo haver disciplinas ofertadas remotamente ou em formato híbrido por decisão do colegiado."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Formiga",
+              "Presencial, com possibilidade de disciplinas remotas ou híbridas",
+              "24 meses",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Formiga",
+          "conteudo": "No **Campus Formiga**, o Programa de Pós-Graduação em Administração concentra estudos em **Finanças Corporativas e Investimentos** e **Finanças Comportamentais e Tomada de Decisões**. A formação articula pesquisa, análise de dados e problemas de gestão financeira."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, publicações e oportunidades",
+          "conteudo": "As dissertações e atividades acadêmicas do programa abordam **investimentos, gestão financeira, decisões, governança e comportamento de pessoas e organizações**. Os projetos são desenvolvidos com orientação docente e têm como finalidade produzir conhecimento e soluções aplicadas a problemas concretos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "**Em 2025**, uma dissertação do programa examinou **a relação entre informações financeiras e desempenho percebido em micro e pequenas empresas**. O trabalho de Patrícia Fátima Rodrigues Pereira foi **aprovado em 9 de julho de 2025**, e integra o acervo acadêmico do Mestrado Profissional em Administração."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Dissertação de Patrícia Fátima Rodrigues Pereira sobre informações financeiras e pequenas empresas · Formiga · 2025.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisas sobre decisões e comportamento financeiro",
+          "conteudo": "Outra dissertação de **2025**, de **Kelma Maria Leal Faria**, investigou o comportamento na gestão de carteiras de investimento de **Regimes Próprios de Previdência Social (RPPS)**, com foco em heurísticas e vieses comportamentais que influenciam decisões financeiras."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Dissertação de Kelma Maria Leal Faria sobre gestão de investimentos em RPPS · Formiga · 2025.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a área de concentração do mestrado?",
+              "resposta": "A área de concentração é **Finanças**. As duas linhas de pesquisa são **Finanças Comportamentais e Tomada de Decisões** e **Finanças Corporativas e Investimentos**. Os temas podem envolver decisões, investimentos, gestão financeira e comportamento em organizações."
+            },
+            {
+              "pergunta": "Quantos créditos são necessários?",
+              "resposta": "São **30 créditos mínimos**, distribuídos entre **12 em disciplinas obrigatórias, 12 em optativas, 2 em atividades práticas supervisionadas e 4 na dissertação**. Há ainda exigências de qualificação, nivelamento em Matemática Financeira e proficiência em inglês."
+            },
+            {
+              "pergunta": "Preciso elaborar uma dissertação?",
+              "resposta": "Sim. A **dissertação** integra o percurso obrigatório e precisa ser defendida. Também há exame de qualificação durante o curso."
+            },
+            {
+              "pergunta": "O mestrado é totalmente presencial?",
+              "resposta": "O programa é **classificado como presencial**, mas o regulamento permite que determinadas disciplinas sejam oferecidas em formato **presencial, remoto ou híbrido**, conforme decisão do colegiado e planejamento acadêmico."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "O ingresso no **Mestrado Profissional em Administração** ocorre por seleção específica do Programa de Pós-Graduação em Administração. Para participar, é necessário **ter concluído uma graduação** e atender aos requisitos do edital vigente. O programa prevê exigências acadêmicas de proficiência em inglês e nivelamento em Matemática Financeira, que devem ser observadas segundo as regras aplicáveis."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O Mestrado Profissional em Administração desenvolve competências para **investigar situações financeiras, avaliar decisões de investimento, analisar dados, examinar estratégias de financiamento e desenvolver soluções para organizações**. Os estudos podem tratar de administração pública e privada, comportamento de investidores, gestão de riscos, governança corporativa e processos de decisão sob incerteza.\n\nA formação também permite aprofundar o trabalho com **métodos quantitativos e qualitativos de pesquisa, interpretação de resultados, comunicação de evidências e elaboração de dissertações e produtos de pesquisa aplicada**. Essas atividades são relevantes para profissionais que atuam em gestão financeira, consultoria, pesquisa, análise de investimentos e apoio técnico à decisão em instituições de diferentes setores."
         }
       ]
     },

@@ -19195,7 +19195,11 @@
             },
             {
               "rotulo": "Estágio supervisionado",
-              "valor": "Governador Valadares: Informação incompleta; Ouro Preto: não obrigatório; Santa Luzia: estágio ou TCC, com 120 horas"
+              "valor": "Governador Valadares: não obrigatório (120 horas se realizado); Ouro Preto: não obrigatório; Santa Luzia: estágio ou TCC, com 120 horas"
+            },
+            {
+              "rotulo": "Trabalho de Conclusão de Curso",
+              "valor": "Governador Valadares: Informação incompleta; Ouro Preto: não obrigatório; Santa Luzia: alternativa ao estágio supervisionado, com 120 horas"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -19313,7 +19317,7 @@
           "itens": [
             {
               "pergunta": "Campus Governador Valadares",
-              "resposta": "O curso funciona **à noite**, na modalidade **presencial**, com duração mínima de **três semestres** e **1.200 horas**. As atividades incluem estudo de riscos ocupacionais e práticas com instrumentação técnica no laboratório de Segurança do Trabalho. E-mail da coordenação: **coordenacao.tst.gv@ifmg.edu.br**."
+              "resposta": "O curso funciona **à noite**, na modalidade **presencial**, com duração mínima de **três semestres** e **1.200 horas**. As atividades incluem estudo de riscos ocupacionais e práticas com instrumentação técnica no laboratório de Segurança do Trabalho. E-mail da coordenação: **coordenacao.tst.gv@ifmg.edu.br**. O estágio é **não obrigatório** e prevê **120 horas quando realizado**, conforme o PPC disponibilizado pelo campus."
             },
             {
               "pergunta": "Campus Ouro Preto",
@@ -19418,7 +19422,7 @@
             },
             {
               "pergunta": "O estágio ou o TCC é obrigatório?",
-              "resposta": "Em **Ouro Preto**, o estágio **não é obrigatório** e **não há TCC exigido**, mas é necessário completar **105 horas de atividades complementares**. Em **Santa Luzia**, é necessário concluir **120 horas de estágio supervisionado ou de TCC**, escolhendo uma das duas opções. Em **Governador Valadares**, a informação sobre a exigência de estágio ou TCC ainda está incompleta."
+              "resposta": "Em **Governador Valadares**, o estágio **não é obrigatório** e o PPC disponibilizado prevê **120 horas para quem optar por realizá-lo**. Em **Ouro Preto**, o estágio **não é obrigatório** e **não há TCC exigido**, mas é necessário completar **105 horas de atividades complementares**. Em **Santa Luzia**, é necessário concluir **120 horas de estágio supervisionado ou de TCC**, escolhendo uma das duas opções."
             },
             {
               "pergunta": "Há aulas a distância?",

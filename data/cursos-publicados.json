@@ -15472,6 +15472,276 @@
       ]
     },
     {
+      "id": "tecnico-em-marketing-digital-integrado",
+      "nome": "Técnico em Marketing Digital",
+      "nivel": "Técnico",
+      "tipo": "Integrado",
+      "campi": [
+        "Bom Despacho"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Marketing Digital"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Bom Despacho"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos (6 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Trabalho de Conclusão de Curso",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Marketing Digital",
+          "conteudo": "Aprenda a **planejar ações de comunicação, compreender públicos e relacionar empresas e organizações a seus clientes e comunidades em ambientes digitais**. O curso integra o ensino médio à formação técnica em marketing, articulando **comunicação, negócios e cultura digital**."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude comunicação, comportamento de públicos e estratégias de marketing em ambientes digitais enquanto conclui o ensino médio. Relacione linguagem, dados e negócios."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O **Técnico em Marketing Digital Integrado** é destinado a estudantes que **concluíram o ensino fundamental** e desejam cursar o ensino médio junto com uma formação profissional. A área pode interessar a quem gosta de **comunicação, criação de conteúdo, pesquisa sobre públicos, negócios e tecnologias digitais**."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você vai relacionar conhecimentos do **ensino médio** a temas de **comunicação, planejamento, negócios, cultura digital e relacionamento com diferentes públicos**. A formação técnica considera como organizações apresentam produtos, serviços e ideias, identificam necessidades e desenvolvem ações de comunicação. As disciplinas e a distribuição de horas seguem a matriz curricular do curso."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Comunicação e linguagem",
+              "Relacionar linguagem verbal, visual e digital a mensagens e públicos diferentes."
+            ],
+            [
+              "Conhecimento de públicos",
+              "Estudar necessidades, hábitos de consumo e formas de relacionamento entre pessoas e organizações."
+            ],
+            [
+              "Planejamento de marketing",
+              "Organizar objetivos e ações de divulgação, considerando o contexto de empresas e instituições."
+            ],
+            [
+              "Cultura e canais digitais",
+              "Compreender como tecnologias e plataformas digitais influenciam comunicação e negócios."
+            ],
+            [
+              "Negócios e território",
+              "Relacionar estratégias de marketing a atividades comerciais, serviços e necessidades da comunidade."
+            ],
+            [
+              "Ética e responsabilidade",
+              "Analisar como transparência, inclusão, uso de dados e responsabilidade social afetam a comunicação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação permite **relacionar situações de comunicação e negócios a decisões sobre linguagem, públicos, canais digitais e planejamento**. Projetos, exercícios e outras atividades de aprendizagem podem explorar problemas reais de organizações e da comunidade, segundo a organização pedagógica do campus. Os ambientes e equipamentos utilizados dependem da implantação do curso."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Aprendizagem em comunicação, marketing e cultura digital · Campus Bom Despacho",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Marketing Digital",
+          "conteudo": "O **Técnico em Marketing Digital Integrado ao Ensino Médio** é oferecido no **Campus Bom Despacho**, de forma **presencial**, com aulas **de manhã e à tarde**. A duração prevista é de **três anos**, organizados em **seis semestres**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bom Despacho",
+              "Presencial",
+              "Manhã e tarde",
+              "3 anos (6 semestres)",
+              "Informação incompleta",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Bom Despacho",
+          "conteudo": "O **Campus Bom Despacho** reúne o ensino médio e a formação técnica em Marketing Digital. O curso faz parte da oferta inicial da unidade, ampliando as possibilidades de estudo ligadas a **comunicação, cultura digital e negócios** na região."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Temas como **comunicação digital, necessidades de públicos e relação entre organizações e território** podem orientar atividades de pesquisa e extensão. A participação em projetos e ações depende das iniciativas oferecidas pelo campus em cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Marketing Digital"
+          ],
+          "linhas": [
+            [
+              "Administração (Bacharelado)",
+              "Bambuí, Formiga, Ouro Branco, Ribeirão das Neves, Sabará e São João Evangelista",
+              "Aprofunda gestão de empresas, planejamento, relações comerciais e tomada de decisões."
+            ],
+            [
+              "Sistemas de Informação (Bacharelado)",
+              "Ouro Branco, Sabará e São João Evangelista",
+              "Aprofunda o desenvolvimento e o uso de sistemas e informações digitais em organizações."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Marketing Digital"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão de Negócios",
+              "Ouro Branco",
+              "Aprofunda gestão, estratégias de negócios e empreendedorismo após uma graduação."
+            ],
+            [
+              "Mestrado Profissional em Administração",
+              "Formiga",
+              "Desenvolve estudos e aplicações de gestão de organizações após formação superior compatível."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Preciso saber editar vídeos ou usar ferramentas profissionais de marketing para ingressar?",
+              "resposta": "O requisito escolar para ingressar no curso integrado é **ter concluído o ensino fundamental até a matrícula**. O estudante desenvolve conhecimentos técnicos ao longo da formação, de acordo com a matriz curricular."
+            },
+            {
+              "pergunta": "Marketing Digital é apenas produzir publicações para redes sociais?",
+              "resposta": "**Marketing** envolve compreender públicos, planejar ações de comunicação e relacionar mensagens, canais e objetivos das organizações. As redes sociais são um dos ambientes possíveis, ao lado de outros canais e formas de relacionamento."
+            },
+            {
+              "pergunta": "Qual é a diferença para o Técnico em Administração Integrado?",
+              "resposta": "**Marketing Digital** concentra a formação técnica em **comunicação, públicos e estratégias em ambientes digitais**. O **Técnico em Administração** tem foco mais amplo em organização e processos administrativos, como gestão, finanças e operações."
+            },
+            {
+              "pergunta": "Qual é a diferença entre este técnico integrado e uma graduação na área de negócios?",
+              "resposta": "O **técnico integrado** combina **ensino médio e educação profissional** para quem concluiu o ensino fundamental. Uma **graduação**, como o Bacharelado em Administração, é uma formação superior, acessível após concluir o ensino médio."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Marketing Digital Integrado ao Ensino Médio**, é necessário **ter concluído o ensino fundamental até a matrícula**. O IFMG realiza processos seletivos com regras específicas para cada oferta. Consulte o edital vigente para verificar critérios de seleção, documentação e reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A formação técnica em Marketing Digital pode apoiar atividades de **planejamento de comunicação, pesquisa de públicos, organização de campanhas, produção e revisão de conteúdos, acompanhamento de canais digitais e relacionamento com clientes e comunidades**. Também envolve analisar objetivos e comunicar informações de maneira ética e responsável.\n\nEssas atividades podem ocorrer em **empresas de comércio e serviços, indústrias, organizações públicas, agências de comunicação, empreendimentos digitais e iniciativas locais**, conforme as atribuições das funções e oportunidades disponíveis."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-mecanica-integrado",
       "nome": "Técnico em Mecânica",
       "nivel": "Técnico",

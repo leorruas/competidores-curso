@@ -14887,6 +14887,276 @@
       ]
     },
     {
+      "id": "tecnico-em-informatica-eja",
+      "nome": "Técnico em Informática",
+      "nivel": "Técnico",
+      "tipo": "Integrado EJA",
+      "campi": [
+        "Contagem"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Informática"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico integrado à Educação de Jovens e Adultos (EJA)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Contagem"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Trabalho de Conclusão de Curso",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Informática",
+          "conteudo": "Conclua o **ensino médio pela Educação de Jovens e Adultos (EJA)** e estude uma área técnica ligada ao uso de computadores, aplicativos e informações digitais. A formação integra conhecimentos gerais e profissionais, aproximando a tecnologia de necessidades de pessoas e organizações."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Volte a estudar à noite, conclua o ensino médio e desenvolva conhecimentos técnicos em informática. A formação EJA reúne educação geral e tecnologia no mesmo percurso."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O **Técnico em Informática Integrado à EJA** é destinado a **pessoas com 18 anos ou mais que ainda não concluíram o ensino médio**. A formação é voltada a quem deseja retomar ou continuar os estudos e conhecer aplicações da informática em situações da vida pessoal, do trabalho e da comunidade."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A informática envolve **computadores, programas, redes, organização de informações e soluções digitais**. O curso integra a formação geral do ensino médio a conhecimentos técnicos desta área. O conjunto de disciplinas e a distribuição das atividades são definidos pela organização curricular da oferta EJA."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de conhecimento",
+            "O que você pode aprender"
+          ],
+          "linhas": [
+            [
+              "Computadores e sistemas",
+              "Compreender funções de equipamentos e programas usados no dia a dia."
+            ],
+            [
+              "Aplicativos e ferramentas digitais",
+              "Utilizar e organizar informações em sistemas e aplicativos de uso profissional."
+            ],
+            [
+              "Redes e conectividade",
+              "Entender como dispositivos compartilham informações em redes."
+            ],
+            [
+              "Organização de dados",
+              "Registrar, consultar, manter e proteger informações digitais."
+            ],
+            [
+              "Resolução de problemas",
+              "Identificar dificuldades de uso de tecnologias e buscar soluções adequadas."
+            ],
+            [
+              "Segurança e ética digital",
+              "Reconhecer cuidados com privacidade, senhas e uso responsável de informações."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O estudo da informática pode incluir **tarefas com sistemas, organização de arquivos, uso de aplicativos, noções de redes e resolução de problemas cotidianos com tecnologias digitais**. A realização de atividades em laboratório e os equipamentos disponíveis seguem a organização do Campus Contagem."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Ambientes e atividades de aprendizagem em informática · Educação de Jovens e Adultos · Campus Contagem",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Informática",
+          "conteudo": "Oferecemos o **Técnico em Informática Integrado à Educação de Jovens e Adultos (EJA)** no **Campus Contagem**, em modalidade **presencial**, com aulas **à noite**. O curso permite fazer o ensino médio e a formação técnica no mesmo percurso."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Contagem",
+              "Presencial",
+              "Noite",
+              "Informação incompleta",
+              "Informação incompleta",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Contagem",
+          "conteudo": "O **Campus Contagem** oferece a formação de **Técnico em Informática na modalidade integrada à EJA**, com aulas noturnas para pessoas adultas que ainda não concluíram o ensino médio. A unidade também oferece **Técnico em Desenvolvimento de Sistemas Integrado ao Ensino Médio regular**, em outro turno e com requisitos de ingresso próprios."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A informática abre possibilidades de estudo em **tecnologias digitais, organização de informações, inclusão digital e soluções para a comunidade**. A participação em projetos de pesquisa, extensão e outras atividades depende das iniciativas oferecidas pelo campus em cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Informática"
+          ],
+          "linhas": [
+            [
+              "Ciência da Computação (Bacharelado)",
+              "Formiga e Ibirité",
+              "Aprofunda algoritmos, programação e fundamentos de sistemas computacionais."
+            ],
+            [
+              "Sistemas de Informação (Bacharelado)",
+              "Ouro Branco, Sabará e São João Evangelista",
+              "Relaciona tecnologias, sistemas, dados e o trabalho em organizações."
+            ],
+            [
+              "Análise e Desenvolvimento de Sistemas (Tecnólogo)",
+              "Ouro Preto e Ribeirão das Neves",
+              "Aprofunda análise, criação, testes e manutenção de softwares."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Informática"
+          ],
+          "linhas": [
+            [
+              "Especialização em Inteligência Artificial",
+              "Ouro Preto",
+              "Aprofunda aplicações de computação e inteligência artificial após concluir uma graduação compatível."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode ingressar no Técnico em Informática Integrado à EJA?",
+              "resposta": "A oferta é destinada a **pessoas com 18 anos ou mais que ainda não concluíram o ensino médio**. O estudante cursa, no mesmo percurso, os conteúdos do ensino médio e a formação técnica em Informática."
+            },
+            {
+              "pergunta": "Qual é a diferença para Desenvolvimento de Sistemas em Contagem?",
+              "resposta": "**Informática Integrado à EJA** oferece ensino médio e formação técnica para pessoas adultas que ainda não concluíram essa etapa, em aulas noturnas. **Desenvolvimento de Sistemas Integrado ao Ensino Médio regular** é outra oferta do campus, com aulas de manhã e à tarde. Os currículos e requisitos são próprios de cada curso."
+            },
+            {
+              "pergunta": "Informática envolve apenas programação?",
+              "resposta": "A área de Informática abrange **uso e organização de computadores, sistemas, redes, informações e ferramentas digitais**, além de aspectos de programação. A distribuição exata desses assuntos nas disciplinas depende do currículo da oferta."
+            },
+            {
+              "pergunta": "Posso cursar uma graduação depois da EJA?",
+              "resposta": "Ao concluir o **ensino médio integrado à formação técnica**, você pode disputar vagas em cursos superiores, como **Análise e Desenvolvimento de Sistemas**, **Sistemas de Informação** e **Ciência da Computação**, atendendo às regras do processo seletivo de cada curso."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Informática Integrado à EJA**, é necessário **ter 18 anos ou mais e ainda não ter concluído o ensino médio**. O IFMG realiza processos seletivos com regras específicas para cada oferta. Consulte o edital vigente para conhecer as condições de inscrição, seleção, documentação e reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Informática pode colaborar com atividades de **uso e organização de sistemas digitais, apoio a pessoas que utilizam aplicativos e computadores, registro e tratamento de informações e identificação de problemas comuns de tecnologia**. Entre as tarefas possíveis estão configurar ferramentas de uso cotidiano, organizar arquivos digitais, conferir registros em sistemas, orientar o uso de aplicativos e relatar dificuldades técnicas às equipes responsáveis.\n\nEssas atividades podem ocorrer em **empresas de comércio e serviços, organizações públicas, escolas, escritórios e equipes de tecnologia**, conforme as atribuições de cada função. O trabalho envolve atenção à segurança da informação, cuidado com dados pessoais, documentação de procedimentos e comunicação clara com outras pessoas. A atuação em ambientes especializados depende da formação e das responsabilidades profissionais estabelecidas pela organização."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-joalheria-subsequente",
       "nome": "Técnico em Joalheria",
       "nivel": "Técnico",

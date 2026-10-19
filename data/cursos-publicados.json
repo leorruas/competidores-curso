@@ -14866,6 +14866,290 @@
       ]
     },
     {
+      "id": "tecnico-em-joalheria-subsequente",
+      "nome": "Técnico em Joalheria",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Joalheria"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Industrial"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (20% de atividades EaD)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "1.200 horas (960 presenciais e 240 EaD)"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Não obrigatório"
+            },
+            {
+              "rotulo": "Trabalho de Conclusão de Curso",
+              "valor": "Não obrigatório"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Joalheria",
+          "conteudo": "Aprenda a **criar, desenhar, fabricar e reparar joias**, combinando técnicas de ourivesaria, lapidação de gemas, modelagem tridimensional e conhecimento dos materiais. A formação inclui criação de coleções, processos de produção e acabamento de peças."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude Joalheria à noite, em quatro semestres. Aprenda desenho, modelagem 3D, ourivesaria, gemologia e lapidação. O curso é presencial, com 20% da carga horária a distância."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem **já concluiu o ensino médio** e deseja trabalhar com **criação, fabricação, reparo ou comercialização de joias e acessórios**. É indicado para pessoas interessadas em desenho, processos manuais, gemas, metais, materiais, técnicas de acabamento e projetos de produtos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne **design de joias, desenho à mão, modelagem 3D, ourivesaria artesanal, lapidação cabochão e facetada, gemologia e desenvolvimento de coleções**. Você estuda ferramentas, ligas metálicas, preparação e acabamento de peças, além de práticas de planejamento, segurança e organização da produção joalheira."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Criação e desenho de joias",
+              "Representar ideias, explorar formas e desenvolver projetos com desenho à mão e processos de criação."
+            ],
+            [
+              "Modelagem tridimensional",
+              "Utilizar ferramentas de modelagem 3D para planejar formas e detalhes de peças."
+            ],
+            [
+              "Ourivesaria artesanal",
+              "Conhecer processos de preparação de metais, fabricação, união de componentes, montagem e acabamento."
+            ],
+            [
+              "Lapidação de gemas",
+              "Conhecer e praticar técnicas de lapidação cabochão, facetada e de gemas de cor."
+            ],
+            [
+              "Gemologia",
+              "Identificar propriedades e características de gemas usadas em joalheria."
+            ],
+            [
+              "Coleções e projeto integrado",
+              "Desenvolver propostas de coleção e relacionar desenho, materiais, produção e apresentação de peças."
+            ],
+            [
+              "Oficina, manutenção e segurança",
+              "Organizar ferramentas e materiais e acompanhar procedimentos de manutenção e trabalho seguro."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "As disciplinas incluem **desenho de joias, trabalho com ferramentas de ourivesaria, criação em 3D, montagem e acabamento de peças e lapidação de gemas**. A formação é desenvolvida em atividades presenciais de oficina e em estudos a distância. No quarto semestre, a disciplina **Design de Joias IV – Projeto Integrado** reúne conhecimentos adquiridos ao longo do curso. O estágio supervisionado é opcional."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades práticas de desenho, ourivesaria, lapidação e fabricação de joias · Campus Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Joalheria",
+          "conteudo": "O **Técnico em Joalheria Subsequente** é oferecido no **Campus Ouro Preto**, com aulas **no período noturno** e duração mínima de **quatro semestres**. O curso é **presencial**, com **240 das 1.200 horas** organizadas a distância em parte das disciplinas. O estágio não é obrigatório."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Preto",
+              "Presencial (20% EaD)",
+              "Noite",
+              "4 semestres",
+              "1.200 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "A formação é **presencial e noturna**, com **1.200 horas em quatro semestres**. Parte das disciplinas inclui atividades EaD, que somam **240 horas**. O currículo abrange desenho de joias, ourivesaria, lapidação, modelagem 3D, gemologia e um projeto integrado no último semestre. O estágio supervisionado é **não obrigatório**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "As atividades de Joalheria podem se relacionar a pesquisas e projetos sobre **materiais, técnicas de lapidação, design de produtos, processos de fabricação e conservação de peças**. O campus conta com um **Pavilhão de Joalheria** destinado a atividades acadêmicas da área. Oficinas, aulas abertas e iniciativas de extensão dependem da programação de cada período."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Joalheria"
+          ],
+          "linhas": [
+            [
+              "Conservação e Restauro (Tecnólogo)",
+              "Ouro Preto",
+              "Aprofunda conhecimentos de materiais, técnicas de conservação e preservação de bens culturais."
+            ],
+            [
+              "Design de Interiores (Tecnólogo)",
+              "Santa Luzia",
+              "Trabalha criação, materiais, representação de projetos e processos de design aplicados a espaços."
+            ],
+            [
+              "Engenharia Metalúrgica (Bacharelado)",
+              "Ouro Branco",
+              "Estuda metais, ligas, processos de transformação e propriedades de materiais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Joalheria"
+          ],
+          "linhas": [
+            [
+              "Especialização em Gestão e Conservação do Patrimônio Cultural",
+              "Ouro Preto",
+              "Aprofunda a conservação e a gestão de bens culturais, com relações possíveis com objetos e materiais."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Aprofunda planejamento, produção, acompanhamento de projetos e organização de operações."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode se candidatar ao Técnico em Joalheria Subsequente?",
+              "resposta": "Pessoas que **já concluíram o ensino médio**. O curso tem duração mínima de **dois anos**, com aulas à noite no Campus Ouro Preto."
+            },
+            {
+              "pergunta": "O curso pode ser feito totalmente a distância?",
+              "resposta": "**Não.** O curso é **presencial**, com atividades práticas de criação, ourivesaria e lapidação. A matriz prevê **240 horas EaD**, correspondentes a **20% das 1.200 horas**."
+            },
+            {
+              "pergunta": "O estágio e o Trabalho de Conclusão de Curso são obrigatórios?",
+              "resposta": "**Não.** O estágio supervisionado é opcional e **não há TCC obrigatório** nem carga obrigatória de atividades complementares. O currículo inclui, no quarto semestre, uma disciplina chamada **Design de Joias IV – Projeto Integrado**, que faz parte das 1.200 horas."
+            },
+            {
+              "pergunta": "O que se aprende sobre gemas e metais?",
+              "resposta": "A formação inclui **lapidação de gemas de cor, gemologia, ourivesaria e processos de fabricação de joias**. Você estuda propriedades dos materiais, técnicas de montagem e acabamento e desenvolvimento de produtos."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Joalheria Subsequente** do Campus Ouro Preto, é necessário **ter concluído o ensino médio até a matrícula**. O IFMG realiza processos seletivos para os cursos técnicos. Consulte o edital vigente para verificar a forma de classificação, os documentos e as condições de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Joalheria pode atuar no **desenho, fabricação, montagem, reparação e acabamento de joias**, utilizando técnicas de ourivesaria, lapidação e conhecimento de gemas e metais. Entre as atividades estão planejar etapas de produção, preparar materiais, criar projetos, executar processos de conformação e união de componentes, organizar ferramentas e acompanhar a qualidade das peças.\n\nO trabalho pode ocorrer em **ateliês de joias, oficinas de ourivesaria, empresas de produção joalheira e de gemas, serviços especializados e comércio do setor**, inclusive em atividades autônomas. A atuação envolve cuidado com equipamentos, controle de materiais e atenção às condições de segurança e às responsabilidades profissionais."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-logistica-subsequente",
       "nome": "Técnico em Logística",
       "nivel": "Técnico",

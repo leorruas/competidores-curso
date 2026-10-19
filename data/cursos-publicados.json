@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-19",
   "courses": [
     {
       "id": "administracao-bacharelado",
@@ -11261,6 +11261,281 @@
           "tipo": "texto",
           "titulo": "Mundo do Trabalho",
           "conteudo": "O técnico em Biotecnologia pode **preparar materiais e soluções para atividades laboratoriais**, organizar amostras, realizar registros e auxiliar em procedimentos de análise e controle de processos, seguindo protocolos de biossegurança e orientações técnicas.\n\nNa agroindústria e na área ambiental, pode **acompanhar processos biotecnológicos**, participar da observação de fermentações, registrar dados experimentais e auxiliar em procedimentos de controle de qualidade. Em pesquisa e desenvolvimento, pode colaborar com a preparação de ensaios, o acompanhamento de resultados e a organização de materiais e equipamentos.\n\nO profissional pode atuar em laboratórios, empresas agroindustriais, unidades de produção animal e vegetal e serviços de apoio técnico, respeitando as atribuições da habilitação e as exigências de supervisão e segurança."
+        }
+      ]
+    },
+    {
+      "id": "tecnico-em-defesa-civil-subsequente",
+      "nome": "Técnico em Defesa Civil",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Santa Luzia"
+      ],
+      "modalidade": "Educação a distância (20% presencial)",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Defesa Civil"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Segurança"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Santa Luzia"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Educação a distância (80% EaD e 20% presencial obrigatório)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "1 ano e meio (3 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "800 horas (640 horas EaD e 160 horas presenciais)"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Não obrigatório"
+            },
+            {
+              "rotulo": "Trabalho de Conclusão de Curso",
+              "valor": "Não obrigatório"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "ead.defesacivil.santaluzia@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Defesa Civil",
+          "conteudo": "Aprenda a **identificar riscos, mapear áreas vulneráveis e apoiar ações de prevenção e resposta a desastres**. A formação reúne gestão de riscos, primeiros socorros, geologia urbana, geoprocessamento e planejamento de ações voltadas à proteção das pessoas e dos territórios."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude Defesa Civil a distância, com 20% de atividades presenciais obrigatórias. Em três semestres, aprenda a reconhecer áreas de risco, planejar medidas preventivas e atuar com equipes de resposta."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem **já concluiu o ensino médio** e deseja atuar na **prevenção de riscos, na preparação para emergências e no apoio à gestão de desastres**. Pode interessar a pessoas que trabalham ou desejam trabalhar com defesa civil, segurança, meio ambiente, gestão pública e serviços comunitários."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você estudará **gestão de riscos e desastres, geologia urbana, primeiros socorros, saúde pública, geoprocessamento, clima, proteção contra incêndios, gestão de barragens, vistorias e planejamento de emergências**. Os conteúdos relacionam ameaças naturais e tecnológicas, vulnerabilidade das comunidades, prevenção, resposta e recuperação."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Gestão de riscos e desastres",
+              "Identificar ameaças, avaliar situações de risco e compreender as etapas de prevenção, preparação, resposta e recuperação."
+            ],
+            [
+              "Geologia urbana e geoprocessamento",
+              "Reconhecer problemas associados a encostas, solo, ocupação do território e representação de áreas de risco em mapas."
+            ],
+            [
+              "Primeiros socorros e segurança",
+              "Estudar procedimentos iniciais de atendimento, proteção contra incêndios e prevenção de acidentes."
+            ],
+            [
+              "Clima, meio ambiente e saúde pública",
+              "Relacionar eventos climáticos, monitoramento ambiental, epidemiologia e riscos à população."
+            ],
+            [
+              "Barragens e construções",
+              "Estudar condições de risco em barragens, edificações e estruturas, com noções de vistoria e patologia das construções."
+            ],
+            [
+              "Gestão operacional e comunicação",
+              "Compreender a coordenação de equipes, a organização de medidas de contingência e a articulação entre instituições e comunidades."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O curso utiliza o **ambiente virtual Moodle** para atividades de estudo, fóruns, tarefas e interação com professores. As **160 horas presenciais obrigatórias** incluem atividades de formação prática, como **simulações de emergências, primeiros socorros, exercícios de mapeamento de riscos, atividades em laboratório e avaliações presenciais**, conforme o calendário acadêmico da turma. O estágio supervisionado é opcional."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades práticas presenciais de Defesa Civil: laboratório, simulações, primeiros socorros e mapeamento de riscos · Santa Luzia",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Defesa Civil",
+          "conteudo": "O **Técnico em Defesa Civil Subsequente** é oferecido no **Campus Santa Luzia**, na modalidade de **educação a distância, com 20% de atividades presenciais obrigatórias**. A formação tem **800 horas**, distribuídas em **três semestres**. A organização dos momentos presenciais é informada na programação acadêmica de cada turma."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Santa Luzia",
+              "EaD com 20% presencial obrigatório",
+              "Informação incompleta",
+              "3 semestres",
+              "800 horas",
+              "ead.defesacivil.santaluzia@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Santa Luzia",
+              "resposta": "O curso tem **800 horas em três semestres**, com **640 horas a distância e 160 horas presenciais obrigatórias**. As atividades on-line são organizadas no **Moodle**. Os momentos presenciais incluem práticas e avaliações, conforme o calendário da turma. O estágio supervisionado é **não obrigatório**, e a coordenação atende por **ead.defesacivil.santaluzia@ifmg.edu.br**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "O **Campus Santa Luzia** possui espaços de estudo e prática ligados a **geotecnia, hidráulica e instalações**, pertinentes à análise de terrenos, construções e riscos. A formação em Defesa Civil inclui estudos de caso, simulações e atividades que podem integrar projetos de pesquisa e extensão relacionados a **mapeamento de áreas de risco, prevenção e proteção das comunidades**."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Defesa Civil"
+          ],
+          "linhas": [
+            [
+              "Engenharia Civil (Bacharelado)",
+              "Santa Luzia, Governador Valadares e Piumhi",
+              "Estuda estruturas, geotecnia, drenagem, obras e condições de segurança dos espaços construídos."
+            ],
+            [
+              "Arquitetura e Urbanismo (Bacharelado)",
+              "Santa Luzia",
+              "Aprofunda planejamento urbano, ocupação do território, desenho da cidade e adaptação de espaços."
+            ],
+            [
+              "Engenharia Ambiental e Sanitária (Bacharelado)",
+              "Governador Valadares",
+              "Estuda impactos ambientais, recursos hídricos e sistemas relacionados à prevenção e ao controle de riscos ambientais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Defesa Civil"
+          ],
+          "linhas": [
+            [
+              "Especialização em Proteção e Defesa Civil",
+              "Santa Luzia",
+              "Aprofunda gestão de riscos e desastres, mapeamento, planejamento de medidas preventivas, resposta e recuperação."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "É possível fazer o curso sem ir ao campus?",
+              "resposta": "**Não.** A formação é a distância, mas **160 das 800 horas** são presenciais e obrigatórias. Elas envolvem práticas, simulações e avaliações no Campus Santa Luzia, conforme a programação acadêmica."
+            },
+            {
+              "pergunta": "Como funcionam os estudos a distância?",
+              "resposta": "As disciplinas são organizadas no **Moodle**, com materiais de estudo, atividades avaliativas, fóruns e interação com professores. Também podem ocorrer encontros síncronos previstos nas disciplinas. O calendário da turma informa os momentos presenciais obrigatórios."
+            },
+            {
+              "pergunta": "Preciso fazer estágio ou TCC para concluir o curso?",
+              "resposta": "**Não.** O **estágio supervisionado é opcional**, e a matriz do curso não exige **Trabalho de Conclusão de Curso (TCC)** nem carga adicional de atividades complementares."
+            },
+            {
+              "pergunta": "O que há no terceiro semestre?",
+              "resposta": "O terceiro semestre inclui **gestão de barragens, proteção contra incêndios, vistorias de construções, urbanismo tático e planejamento interinstitucional**, além de **uma disciplina optativa**. A carga dessa optativa já faz parte das 800 horas do curso."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Defesa Civil Subsequente**, você precisa **ter concluído o ensino médio até a matrícula**. O IFMG realiza seleção para os cursos técnicos conforme o edital vigente. Consulte as regras da edição para conhecer o procedimento de classificação, os documentos e as condições de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Defesa Civil pode trabalhar no **apoio à identificação e ao monitoramento de áreas de risco**, na coleta e organização de informações sobre ameaças, na elaboração de mapas e registros técnicos e no acompanhamento de ações preventivas. Em municípios sujeitos a enchentes ou deslizamentos, por exemplo, pode apoiar o levantamento de áreas vulneráveis, a organização de planos de contingência e a comunicação de orientações à população.\n\nPode atuar em **órgãos municipais, estaduais e federais de proteção e defesa civil**, empresas e instituições que trabalhem com gestão de riscos, segurança, infraestrutura e monitoramento ambiental. A atuação em emergências envolve **cooperação com equipes especializadas e órgãos competentes**, observando as atribuições legais, os protocolos e as exigências de capacitação de cada atividade."
         }
       ]
     },

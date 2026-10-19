@@ -19145,6 +19145,313 @@
       ]
     },
     {
+      "id": "tecnico-em-seguranca-do-trabalho-subsequente",
+      "nome": "Técnico em Segurança do Trabalho",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Governador Valadares",
+        "Ouro Preto",
+        "Santa Luzia"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Segurança do Trabalho"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Segurança"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Governador Valadares; Ouro Preto; Santa Luzia"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial; em Santa Luzia, 4,54% da carga horária a distância"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "Governador Valadares: 3 semestres; Ouro Preto e Santa Luzia: 4 semestres"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "Governador Valadares: 1.200 horas; Ouro Preto: 1.200 horas (1.095 horas de disciplinas e 105 horas de atividades complementares obrigatórias); Santa Luzia: 1.320 horas (1.200 horas de disciplinas e 120 horas de estágio ou TCC)"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Governador Valadares: Informação incompleta; Ouro Preto: não obrigatório; Santa Luzia: estágio ou TCC, com 120 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Governador Valadares: coordenacao.tst.gv@ifmg.edu.br; Ouro Preto: Informação incompleta; Santa Luzia: strabalho.santaluzia@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Segurança do Trabalho",
+          "conteudo": "Aprenda a **identificar riscos no trabalho, orientar medidas de prevenção e acompanhar condições de saúde e segurança em diferentes atividades profissionais**. O curso reúne legislação, análise de riscos, higiene ocupacional, ergonomia, prevenção de acidentes e organização de ações de proteção."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude Segurança do Trabalho à noite depois de concluir o ensino médio. Conheça técnicas de prevenção de acidentes, avaliação de riscos, saúde ocupacional e proteção das pessoas em ambientes de trabalho."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O **Técnico em Segurança do Trabalho Subsequente** é destinado a pessoas que **já concluíram o ensino médio** e desejam atuar na **prevenção de acidentes e doenças relacionadas ao trabalho**. A formação envolve observação de ambientes e processos, análise de riscos, interpretação de normas, produção de relatórios e orientação de medidas de segurança."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você vai estudar **segurança do trabalho, normas regulamentadoras, higiene ocupacional, saúde do trabalhador, ergonomia, gestão de riscos, prevenção e combate a incêndios, primeiros socorros, legislação e organização de ações preventivas**. Cada campus organiza a matriz e as atividades curriculares conforme seu projeto pedagógico."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Identificação e gestão de riscos",
+              "Reconhecer perigos em processos e ambientes de trabalho, avaliar riscos e propor medidas de prevenção."
+            ],
+            [
+              "Higiene e saúde ocupacional",
+              "Estudar agentes físicos, químicos e biológicos, exposição ocupacional e ações de proteção à saúde."
+            ],
+            [
+              "Ergonomia",
+              "Relacionar tarefas, esforço, ambiente e organização do trabalho às condições de saúde e segurança."
+            ],
+            [
+              "Normas e legislação",
+              "Interpretar normas regulamentadoras, responsabilidades e documentos de segurança e saúde do trabalho."
+            ],
+            [
+              "Proteção e emergência",
+              "Conhecer equipamentos de proteção individual e coletiva, prevenção de incêndios e procedimentos de emergência."
+            ],
+            [
+              "Gestão e comunicação preventiva",
+              "Elaborar registros, acompanhar indicadores e comunicar orientações de prevenção em equipes e organizações."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "As atividades práticas podem envolver **avaliação de riscos, uso de instrumentos de medição, análise de medidas de proteção, elaboração de documentos técnicos e estudos sobre situações de trabalho**. Em **Governador Valadares**, o curso conta com laboratório e instrumentação voltados a práticas relacionadas às Normas Regulamentadoras. Em **Ouro Preto**, o currículo inclui **105 horas de atividades complementares obrigatórias**, cumpridas por atividades aceitas pelo curso, como visitas técnicas, pesquisa, extensão, eventos ou estágio opcional. Em **Santa Luzia**, a formação exige **120 horas de estágio supervisionado ou trabalho de conclusão de curso**, conforme a opção curricular escolhida."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Laboratório, instrumentos e atividades de prevenção em Segurança do Trabalho · Governador Valadares, Ouro Preto e Santa Luzia",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Segurança do Trabalho",
+          "conteudo": "O **Técnico em Segurança do Trabalho Subsequente** é oferecido nos campi **Governador Valadares, Ouro Preto e Santa Luzia**, no período **noturno**. A duração mínima é de **três semestres em Governador Valadares** e de **quatro semestres em Ouro Preto e Santa Luzia**. As cargas horárias e as exigências de conclusão variam entre os campi."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Governador Valadares",
+              "Presencial",
+              "Noite",
+              "3 semestres",
+              "1.200 horas",
+              "coordenacao.tst.gv@ifmg.edu.br"
+            ],
+            [
+              "Ouro Preto",
+              "Presencial",
+              "Noite",
+              "4 semestres",
+              "1.200 horas",
+              "Informação incompleta"
+            ],
+            [
+              "Santa Luzia",
+              "Presencial, 4,54% EaD",
+              "Noite",
+              "4 semestres",
+              "1.320 horas",
+              "strabalho.santaluzia@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Governador Valadares",
+              "resposta": "O curso funciona **à noite**, na modalidade **presencial**, com duração mínima de **três semestres** e **1.200 horas**. As atividades incluem estudo de riscos ocupacionais e práticas com instrumentação técnica no laboratório de Segurança do Trabalho. E-mail da coordenação: **coordenacao.tst.gv@ifmg.edu.br**."
+            },
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "O curso é **noturno e presencial**, com **1.200 horas em quatro semestres**. A carga inclui **1.095 horas de disciplinas e 105 horas de atividades complementares obrigatórias**. O **estágio não é obrigatório** e não há exigência de TCC. As atividades complementares seguem os critérios de reconhecimento do curso."
+            },
+            {
+              "pergunta": "Campus Santa Luzia",
+              "resposta": "O curso é **noturno e presencial**, com **4,54% da carga horária em atividades a distância**, duração mínima de **quatro semestres** e **1.320 horas totais**. São **1.200 horas de disciplinas e 120 horas obrigatórias de estágio supervisionado ou TCC**. E-mail da coordenação: **strabalho.santaluzia@ifmg.edu.br**."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "A área de Segurança do Trabalho permite desenvolver estudos sobre **prevenção de acidentes, ergonomia, exposição ocupacional, saúde, gestão de riscos e condições de trabalho**. As iniciativas de pesquisa, extensão, visitas técnicas e atividades de formação prática dependem dos projetos e das oportunidades de cada campus. Em Ouro Preto, atividades comprovadas e aceitas podem ser aproveitadas nas horas complementares previstas no currículo."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Segurança do Trabalho"
+          ],
+          "linhas": [
+            [
+              "Engenharia Ambiental e Sanitária (Bacharelado)",
+              "Governador Valadares",
+              "Estuda processos, impactos ambientais, medidas de controle e condições ambientais que podem se relacionar à prevenção de riscos."
+            ],
+            [
+              "Engenharia de Produção (Bacharelado)",
+              "Bambuí, Congonhas e Governador Valadares",
+              "Aprofunda análise de processos, organização produtiva e gestão de operações, com relações com segurança e prevenção."
+            ],
+            [
+              "Engenharia Civil (Bacharelado)",
+              "Governador Valadares, Piumhi e Santa Luzia",
+              "Aborda projetos e atividades da construção, setor em que a prevenção de acidentes é parte do trabalho técnico."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Segurança do Trabalho"
+          ],
+          "linhas": [
+            [
+              "Especialização em Engenharia de Segurança do Trabalho",
+              "Governador Valadares",
+              "Aprofunda a análise e o controle de riscos ocupacionais e a gestão de segurança, após formação superior compatível."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Aprofunda planejamento, acompanhamento e organização de operações, inclusive em ambientes com riscos ocupacionais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **1º de julho de 2025**, estudantes do **Técnico em Segurança do Trabalho Subsequente do Campus Governador Valadares** participaram de uma **capacitação na Vale**, no **Dojô de Segurança**, instalado na estação ferroviária da cidade. Acompanhados pelo professor **Heitor Cardoso**, conheceram práticas de prevenção de acidentes, procedimentos seguros e trabalho em equipe. A atividade reuniu também estudantes de outros cursos do campus."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Capacitação de estudantes do Técnico em Segurança do Trabalho Subsequente no Dojô de Segurança da Vale · Governador Valadares · 1º de julho de 2025",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode ingressar no Técnico em Segurança do Trabalho Subsequente?",
+              "resposta": "O curso é destinado a pessoas que **já concluíram o ensino médio**. As ofertas ocorrem **à noite** nos campi Governador Valadares, Ouro Preto e Santa Luzia."
+            },
+            {
+              "pergunta": "Qual é a duração do curso em cada campus?",
+              "resposta": "Em **Governador Valadares**, a duração mínima é de **três semestres**. Em **Ouro Preto e Santa Luzia**, é de **quatro semestres**. A carga horária é de **1.200 horas nos dois primeiros campi** e de **1.320 horas em Santa Luzia**."
+            },
+            {
+              "pergunta": "O estágio ou o TCC é obrigatório?",
+              "resposta": "Em **Ouro Preto**, o estágio **não é obrigatório** e **não há TCC exigido**, mas é necessário completar **105 horas de atividades complementares**. Em **Santa Luzia**, é necessário concluir **120 horas de estágio supervisionado ou de TCC**, escolhendo uma das duas opções. Em **Governador Valadares**, a informação sobre a exigência de estágio ou TCC ainda está incompleta."
+            },
+            {
+              "pergunta": "Há aulas a distância?",
+              "resposta": "A oferta é **presencial** nos três campi. Em **Santa Luzia**, a matriz prevê **4,54% da carga horária a distância**, distribuída em disciplinas específicas. Esse percentual não se aplica às ofertas de Governador Valadares e Ouro Preto."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Segurança do Trabalho Subsequente**, é necessário **ter concluído o ensino médio até a matrícula**. O ingresso ocorre por processo seletivo do IFMG e pelas demais formas previstas nas normas acadêmicas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Segurança do Trabalho atua na **identificação e avaliação de riscos, orientação de medidas de prevenção, inspeção de condições de trabalho e acompanhamento de procedimentos de segurança e saúde ocupacional**. Pode colaborar na elaboração de relatórios, no uso adequado de equipamentos de proteção, na organização de treinamentos e em ações de prevenção de acidentes.\n\nO trabalho pode ocorrer em **indústrias, construção civil, serviços, hospitais, empresas de logística e atividades agroindustriais**, conforme as atribuições profissionais aplicáveis. A atuação requer atenção às normas técnicas, à prevenção de doenças ocupacionais e à proteção das pessoas."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-sistemas-de-energia-renovavel-integrado",
       "nome": "Técnico em Sistemas de Energia Renovável",
       "nivel": "Técnico",

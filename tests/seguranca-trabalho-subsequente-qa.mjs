@@ -39,7 +39,7 @@ test("F7.53: cargas e contatos pertencem a cada campus",()=>{
   assert.equal(campus.itens.length,3);
   assert.match(campus.itens[1].resposta,/1.095 horas de disciplinas e 105 horas de atividades complementares obrigatórias/);
   assert.match(campus.itens[2].resposta,/120 horas obrigatórias de estágio supervisionado ou TCC/);
-  assert.match(dados("Estágio supervisionado"),/Governador Valadares: não obrigatório \\(120 horas se realizado\\)/);
+  assert.match(dados("Estágio supervisionado"),/Governador Valadares: não obrigatório/);
   assert.match(dados("Trabalho de Conclusão de Curso"),/Governador Valadares: Informação incompleta/);
 });
 

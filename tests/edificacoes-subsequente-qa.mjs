@@ -1,0 +1,46 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
+import {validarEstruturaCurso} from "../scripts/validar-estrutura.mjs";
+const data=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
+const c=data.courses.find(x=>x.id==="tecnico-em-edificacoes-subsequente");
+const b=c?.blocos||[];
+const campo=r=>b[0].campos.find(x=>x.rotulo===r)?.valor;
+const txt=t=>b.find(x=>x.tipo==="texto"&&x.titulo===t);
+test("F7.48: integrado e subsequente distintos e PPC 2025 preservado",()=>{
+ assert.ok(c);
+ assert.equal(c.nome,"Técnico em Edificações");
+ assert.equal(c.tipo,"Subsequente");
+ assert.deepEqual(c.campi,["Ouro Preto"]);
+ assert.ok(data.courses.some(x=>x.id==="tecnico-em-edificacoes-integrado"));
+ assert.equal(b.length,23);
+ assert.deepEqual(validarEstruturaCurso(c),[]);
+ assert.match(campo("Carga horária total"),/1.210 horas.*1.080.*130/);
+ assert.equal(campo("Duração mínima"),"2 anos (4 semestres)");
+ assert.equal(campo("Estágio supervisionado"),"Não obrigatório");
+ assert.equal(campo("Trabalho de Conclusão de Curso"),"Não obrigatório");
+ assert.equal(campo("E-mail da coordenação"),"Informação incompleta");
+ assert.match(campo("Modalidade"),/30 horas EaD/);
+});
+test("F7.48: exceção de Topografia, integradores e 30h EaD",()=>{
+ assert.match(campo("Turno"),/16h às 18h30/);
+ assert.match(txt("Onde o IFMG oferece Técnico em Edificações").conteudo,/Topografia I e II/);
+ const itens=b.find(x=>x.tipo==="faq"&&!x.titulo).itens;
+ assert.equal(itens.length,4);
+ assert.match(itens[1].resposta,/16h às 18h30/);
+ assert.match(itens[2].resposta,/120 horas de Projetos Integradores/);
+ assert.match(itens[2].resposta,/10 horas de Atividades Práticas Curriculares/);
+ assert.match(itens[3].resposta,/30 horas da disciplina Desenho Técnico/);
+});
+test("F7.48: experiências incertas vazias, galeria e auditoria segregadas",()=>{
+ assert.equal(txt("Experiências e conquistas dos estudantes").conteudo,"");
+ const gs=b.filter(x=>x.tipo==="galeria");
+ assert.equal(gs.length,1);
+ assert.deepEqual(gs[0].itens,[]);
+ assert.equal(b[b.indexOf(gs[0])-1].titulo,"Aprendizagem prática");
+ const raw=JSON.stringify(c);
+ for(const forbidden of ["renato.ferreira@ifmg.edu.br","Quartzolit","visita à obra de shopping","PPC 2025","Benchmark/","1.213 horas","Portaria MEC"])assert.ok(!raw.includes(forbidden),forbidden);
+ assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
+ const sorted=[...data.courses].sort((a,c)=>a.nome.localeCompare(c.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(c.tipo||""),"pt-BR")||a.id.localeCompare(c.id,"pt-BR"));
+ assert.deepEqual(data.courses.map(x=>x.id),sorted.map(x=>x.id));
+});

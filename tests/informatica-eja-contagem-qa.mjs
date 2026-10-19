@@ -32,7 +32,8 @@ test("F7.P4: curso Informática EJA Contagem independente dos integrados regular
 test("F7.P4: público de 18 anos ou mais e médio incompleto, currículo não inventado",()=>{
  assert.match(text("Para quem é o curso").conteudo,/18 anos ou mais/);
  assert.match(text("Forma de ingresso").conteudo,/ainda não ter concluído o ensino médio/);
- for(const key of ["Eixo tecnológico","Duração mínima","Carga horária total","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
+ assert.equal(field("Eixo tecnológico"),"Informação e Comunicação");
+ for(const key of ["Duração mínima","Carga horária total","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
   assert.equal(field(key),"Informação incompleta",key);
  const table=blocos.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");
  assert.deepEqual(table.colunas,["Campus","Modalidade","Turno","Duração mínima","Carga horária total","E-mail da coordenação"]);

@@ -32,9 +32,10 @@ test("F7.P3: dois registros independentes, com nome comum e modalidade explícit
  assert.match(field(regular,"Tipo de curso"),/Ensino Médio/);
  assert.doesNotMatch(field(regular,"Tipo de curso"),/EJA/);
 });
-test("F7.P3: estágio, carga, eixo, TCC e coordenação não são inventados",()=>{
+test("F7.P3: eixo é Produção Industrial, demais campos sem invenção",()=>{
  for(const c of [regular,eja]){
-  for(const key of ["Eixo tecnológico","Duração mínima","Carga horária total","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
+  assert.equal(field(c,"Eixo tecnológico"),"Produção Industrial",c.id+":Eixo tecnológico");
+  for(const key of ["Duração mínima","Carga horária total","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
    assert.equal(field(c,key),"Informação incompleta",c.id+":"+key);
   const table=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas[0]==="Campus");
   assert.deepEqual(table.colunas,["Campus","Modalidade","Turno","Duração mínima","Carga horária total","E-mail da coordenação"]);

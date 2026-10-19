@@ -5462,6 +5462,288 @@
       ]
     },
     {
+      "id": "especializacao-em-gestao-da-manutencao",
+      "nome": "Especialização em Gestão da Manutenção",
+      "nivel": "Pós-graduação",
+      "tipo": "Especialização",
+      "campi": [
+        "Arcos"
+      ],
+      "modalidade": "EaD",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Especialização em Gestão da Manutenção"
+            },
+            {
+              "rotulo": "Nível",
+              "valor": "Pós-graduação lato sensu · Especialização"
+            },
+            {
+              "rotulo": "Titulação",
+              "valor": "Especialista em Gestão da Manutenção"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Arcos"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Educação a distância (EaD)"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "12 meses, organizados em dois semestres"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "480 horas, incluindo 60 horas de Trabalho Prático de Conclusão de Curso"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Trabalho final",
+              "valor": "Trabalho Prático de Conclusão de Curso obrigatório, 60 horas, em artigo ou produto técnico aplicado"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "pos.manutencao.arcos@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Especialização em Gestão da Manutenção",
+          "conteudo": "Aprofunde conhecimentos sobre **planejamento, análise de falhas, confiabilidade, indicadores e custos de manutenção**. A especialização articula métodos técnicos e de gestão para avaliar processos, melhorar o desempenho de equipamentos e desenvolver soluções aplicadas à manutenção de ativos."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude planejamento, confiabilidade, manutenção preditiva e gestão de ativos em uma especialização EaD com trabalho final aplicado."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A especialização é destinada a pessoas com **graduação concluída em qualquer área** que desejam aprofundar sua formação na gestão da manutenção. A proposta dialoga especialmente com experiências em Engenharia, processos industriais, produção, automação, gestão de ativos e atividades técnicas de manutenção."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação reúne **planejamento e controle da manutenção, análise de falhas, confiabilidade, manutenção corretiva, preventiva e preditiva, gestão de custos, indicadores, segurança e novas tecnologias**. Os estudos também incluem metodologia de pesquisa e um trabalho prático voltado a problemas de manutenção em organizações."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Semestre",
+            "Componente curricular",
+            "Carga horária"
+          ],
+          "linhas": [
+            [
+              "Primeiro",
+              "Ambientação ao EaD",
+              "15 horas"
+            ],
+            [
+              "Primeiro",
+              "Introdução à Gestão da Manutenção",
+              "30 horas"
+            ],
+            [
+              "Primeiro",
+              "Metodologia da Pesquisa",
+              "15 horas"
+            ],
+            [
+              "Primeiro",
+              "Planejamento e Controle da Manutenção",
+              "30 horas"
+            ],
+            [
+              "Primeiro",
+              "Manutenção Corretiva, Preventiva e Preditiva",
+              "30 horas"
+            ],
+            [
+              "Primeiro",
+              "Análise de Falhas",
+              "30 horas"
+            ],
+            [
+              "Primeiro",
+              "Confiabilidade na Manutenção",
+              "30 horas"
+            ],
+            [
+              "Primeiro",
+              "Seminário Temático",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Manutenção Produtiva Total",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Indicadores de Manutenção",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Gestão de Custos e de Ativos",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Manutenção e Meio Ambiente",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Segurança do Trabalho e Ergonomia na Manutenção",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Novas Tecnologias na Manutenção",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Gestão Ágil de Projetos para a Engenharia",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Trabalho Prático de Conclusão de Curso",
+              "60 horas"
+            ],
+            [
+              "**Total**",
+              "**Dois semestres**",
+              "**480 horas**"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem a distância",
+          "conteudo": "A especialização é organizada na modalidade **EaD**, utilizando o **Moodle** para acesso a materiais, fóruns e atividades acadêmicas. Os componentes combinam videoaulas, estudos de caso, exercícios e análises de situações reais ou simuladas. Também podem ocorrer encontros síncronos e debates com profissionais da área, conforme o planejamento de cada disciplina."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Gestão de ativos, acompanhamento de equipamentos ou estudos de manutenção associados à formação EaD do Campus Arcos.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Trabalho Prático de Conclusão de Curso",
+          "conteudo": "O **Trabalho Prático de Conclusão de Curso** é obrigatório, corresponde a **60 horas incluídas na carga total de 480 horas** e permite aplicar conhecimentos da especialização. Pode ser realizado **individualmente ou em dupla**, com orientação docente, na forma de **artigo** ou **produto técnico aplicado** a uma situação real ou simulada da área de manutenção."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Exemplos de produtos técnicos",
+          "conteudo": "Entre os produtos que podem ser desenvolvidos estão **planos de manutenção, matrizes de criticidade de ativos, relatórios de análise de falhas, painéis de indicadores, manuais técnicos e procedimentos operacionais**. A escolha depende do problema investigado, da orientação e dos critérios de avaliação do curso."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Apoio à aprendizagem",
+          "conteudo": "A organização da especialização prevê acompanhamento acadêmico no ambiente virtual, com **fóruns de dúvidas, atividades avaliativas e mediação pedagógica**. O estudante pode receber orientações para desenvolver os componentes curriculares e o trabalho final, além de devolutivas sobre suas atividades."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG prevê oferecer a especialização",
+          "conteudo": "O IFMG aprovou a criação da **Especialização em Gestão da Manutenção** no **Campus Arcos**, na modalidade EaD. A formação foi planejada para dois semestres e 480 horas, incluindo trabalho prático de conclusão. A realização das turmas ocorre conforme o planejamento acadêmico e os processos seletivos do campus."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Duração",
+            "Carga horária",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Arcos",
+              "Educação a distância",
+              "12 meses",
+              "480 horas, incluindo trabalho final de 60 horas",
+              "pos.manutencao.arcos@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Arcos",
+          "conteudo": "O **Campus Arcos** desenvolve a proposta da especialização com foco em **manutenção industrial, confiabilidade, gestão de ativos, segurança e tecnologias de acompanhamento de processos**. A formação foi planejada para reunir estudos técnicos, ferramentas de gestão e um projeto final aplicado."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, projetos e oportunidades",
+          "conteudo": "Os componentes de metodologia, seminário temático e trabalho final abrem espaço para **investigar problemas de manutenção, interpretar indicadores e avaliar alternativas técnicas e gerenciais**. Os estudos podem abordar disponibilidade de equipamentos, falhas recorrentes, custos, segurança, desempenho e medidas para melhorar processos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Gestão e tomada de decisão",
+          "conteudo": "A formação aproxima análise de confiabilidade, planejamento de recursos e acompanhamento de indicadores da **tomada de decisão sobre ativos e processos de manutenção**. A aplicação de ferramentas de gestão e análise técnica permite comparar alternativas e propor intervenções fundamentadas em informações sobre operação, custos e desempenho."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Qual é a duração e a carga horária da especialização?",
+              "resposta": "A formação está organizada em **dois semestres, com duração mínima de 12 meses e 480 horas totais**. Nesse total estão incluídas **60 horas do Trabalho Prático de Conclusão de Curso**."
+            },
+            {
+              "pergunta": "Quem pode estudar Gestão da Manutenção?",
+              "resposta": "O curso é destinado a pessoas com **diploma de graduação em qualquer área**, sendo especialmente relacionado a atividades de engenharia, manutenção, produção, automação e gestão de ativos."
+            },
+            {
+              "pergunta": "Como funciona o trabalho final?",
+              "resposta": "O **Trabalho Prático de Conclusão de Curso** pode ser desenvolvido **individualmente ou em dupla**, como artigo ou produto técnico aplicado a um problema de manutenção real ou simulado. A orientação e a avaliação seguem as regras acadêmicas do curso."
+            },
+            {
+              "pergunta": "Como são organizadas as atividades a distância?",
+              "resposta": "O **Moodle** é utilizado para materiais, fóruns, exercícios e estudos de caso. O planejamento de cada componente também pode prever **encontros síncronos** e outras atividades de acompanhamento."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "O ingresso na **Especialização em Gestão da Manutenção** ocorre por **processo seletivo institucional específico**, destinado a pessoas com graduação concluída. O IFMG divulgará os procedimentos e requisitos de cada seleção por meio do edital correspondente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A especialização desenvolve competências para **planejar e acompanhar atividades de manutenção, analisar falhas, avaliar a confiabilidade e disponibilidade dos equipamentos, interpretar indicadores e relacionar decisões técnicas a custos, segurança e desempenho**. O percurso inclui ferramentas de gestão de ativos, novas tecnologias de manutenção e desenvolvimento de propostas de melhoria.\n\nEsses conhecimentos podem contribuir para a atuação em **indústrias, mineração, siderurgia, energia, logística, manufatura, manutenção de instalações e serviços técnicos**, de acordo com a formação anterior e as atribuições profissionais. O trabalho final permite investigar um problema concreto e formular uma solução técnica ou gerencial sustentada por análise de processos e dados."
+        }
+      ]
+    },
+    {
       "id": "especializacao-em-sistemas-de-energia-renovavel",
       "nome": "Especialização em Sistemas de Energia Renovável: Geração, Distribuição e Eficiência Energética",
       "nivel": "Pós-graduação",

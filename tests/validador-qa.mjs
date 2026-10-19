@@ -95,3 +95,42 @@ test("rejeita metadados privados em qualquer nível do JSON público", () => {
     assert.match(result.output,/metadado de auditoria/,k);
   }
 });
+
+// O validador de publicação também aplica a regra de continuidade ao JSON,
+// independentemente dos testes unitários do contrato estrutural.
+test("F8.3A: publicação da pós permite continuidade apenas com nível acima", () => {
+  function preparar(data, nivelAlvo) {
+    const curso = data.courses.find(c => c.nivel === "Graduação" &&
+      c.blocos.some(b => b.titulo === "Continue seus estudos no IFMG"));
+    assert.ok(curso);
+    curso.nivel = "Pós-graduação";
+    curso.tipo = "Especialização";
+    const inicio = curso.blocos.findIndex(b => b.titulo === "Continue seus estudos no IFMG");
+    const fim = curso.blocos.findIndex(b => b.titulo === "Experiências e conquistas dos estudantes");
+    curso.blocos.splice(inicio, fim - inicio,
+      {tipo:"texto",titulo:"Continue seus estudos no IFMG",conteudo:""},
+      {tipo:"tabela",colunas:["Curso","Campus","Nível","Relação com o curso"],
+        linhas:[["Mestrado Profissional em Administração","Formiga",nivelAlvo,
+          "Aprofunda pesquisa aplicada em Finanças."]]}
+    );
+  }
+  const acima = runValidation(data => preparar(data,"Mestrado profissional"));
+  assert.equal(acima.status, 0, acima.output);
+  const igual = runValidation(data => preparar(data,"Especialização"));
+  assert.notEqual(igual.status, 0);
+  assert.match(igual.output, /somente formação de nível acima/);
+});
+
+test("F8.3A: publicação da pós permite omitir continuidade quando não há nível acima", () => {
+  const result = runValidation(data => {
+    const curso = data.courses.find(c => c.nivel === "Graduação" &&
+      c.blocos.some(b => b.titulo === "Continue seus estudos no IFMG"));
+    assert.ok(curso);
+    curso.nivel = "Pós-graduação";
+    curso.tipo = "Mestrado profissional";
+    const inicio = curso.blocos.findIndex(b => b.titulo === "Continue seus estudos no IFMG");
+    const fim = curso.blocos.findIndex(b => b.titulo === "Experiências e conquistas dos estudantes");
+    curso.blocos.splice(inicio, fim - inicio);
+  });
+  assert.equal(result.status, 0, result.output);
+});

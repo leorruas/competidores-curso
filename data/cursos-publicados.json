@@ -31,6 +31,10 @@
               "valor": "Graduação — Bacharelado"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
               "rotulo": "Campi",
               "valor": "Bambuí; Formiga; Ouro Branco; Ribeirão das Neves; Sabará; São João Evangelista"
             },
@@ -362,6 +366,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
             },
             {
               "rotulo": "Campus",
@@ -951,6 +959,10 @@
               "valor": "Graduação — Bacharelado"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Infraestrutura"
+            },
+            {
               "rotulo": "Campus",
               "valor": "Santa Luzia"
             },
@@ -1206,6 +1218,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Bacharelado"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
             },
             {
               "rotulo": "Área",
@@ -1518,6 +1534,10 @@
               "valor": "Licenciatura"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
               "rotulo": "Área",
               "valor": "Ciências Biológicas e formação de professores"
             },
@@ -1823,6 +1843,10 @@
               "valor": "Superior de Tecnologia (Tecnólogo)"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Cultural e Design"
+            },
+            {
               "rotulo": "Área de formação",
               "valor": "Conservação e restauro do patrimônio cultural construído"
             },
@@ -2122,6 +2146,10 @@
               "valor": "Superior de Tecnologia (Tecnólogo)"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Cultural e Design"
+            },
+            {
               "rotulo": "Área de formação",
               "valor": "Design de Interiores e ambientes construídos"
             },
@@ -2408,6 +2436,10 @@
               "valor": "Direito"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
               "rotulo": "Categoria / tipo",
               "valor": "Graduação / Bacharelado"
             },
@@ -2657,6 +2689,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Licenciatura"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
             },
             {
               "rotulo": "Área de formação",
@@ -2975,6 +3011,10 @@
               "valor": "Graduação (Bacharelado)"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
               "rotulo": "Área de formação",
               "valor": "Engenharia, meio ambiente e saneamento"
             },
@@ -3259,6 +3299,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Graduação (Bacharelado)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Infraestrutura"
             },
             {
               "rotulo": "Campi",
@@ -3586,6 +3630,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Graduação (Bacharelado)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
             },
             {
               "rotulo": "Campi",
@@ -3918,6 +3966,10 @@
               "valor": "Graduação — Bacharelado"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Industrial"
+            },
+            {
               "rotulo": "Campus",
               "valor": "Bambuí, Congonhas e Governador Valadares"
             },
@@ -4242,6 +4294,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Graduação (Bacharelado)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
             },
             {
               "rotulo": "Campi",
@@ -4597,6 +4653,10 @@
               "valor": "Graduação — Bacharelado"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
+            },
+            {
               "rotulo": "Campus",
               "valor": "São João Evangelista"
             },
@@ -4866,6 +4926,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
             },
             {
               "rotulo": "Campi",
@@ -5161,6 +5225,10 @@
               "valor": "Graduação — Bacharelado"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
               "rotulo": "Campus",
               "valor": "Ouro Branco"
             },
@@ -5417,6 +5485,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Graduação (Licenciatura)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
             },
             {
               "rotulo": "Campi",
@@ -5752,6 +5824,10 @@
               "valor": "Licenciatura"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
               "rotulo": "Área de formação",
               "valor": "Formação de professores de Geografia"
             },
@@ -6058,6 +6134,10 @@
               "valor": "Tecnólogo"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
               "rotulo": "Área de formação",
               "valor": "Gestão ambiental e sustentabilidade"
             },
@@ -6352,6 +6432,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Tecnólogo"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
             },
             {
               "rotulo": "Campus",
@@ -6649,6 +6733,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Bacharelado"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
             },
             {
               "rotulo": "Área de formação",
@@ -6950,6 +7038,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Licenciatura"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
             },
             {
               "rotulo": "Área",
@@ -7263,6 +7355,10 @@
               "valor": "Tecnólogo"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
               "rotulo": "Área",
               "valor": "Gestão de operações e cadeias de suprimentos"
             },
@@ -7562,6 +7658,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Licenciatura"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
             },
             {
               "rotulo": "Área",
@@ -7877,6 +7977,10 @@
               "valor": "Graduação — Bacharelado"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
               "rotulo": "Campus",
               "valor": "Bambuí"
             },
@@ -8118,6 +8222,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Superior de Tecnologia (Tecnólogo)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
             },
             {
               "rotulo": "Área",
@@ -8433,6 +8541,10 @@
               "valor": "Licenciatura"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
               "rotulo": "Campus",
               "valor": "Betim"
             },
@@ -8715,6 +8827,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Bacharelado"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
             },
             {
               "rotulo": "Campi",
@@ -9733,6 +9849,10 @@
               "valor": "Técnico Integrado ao Ensino Médio"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Alimentícia"
+            },
+            {
               "rotulo": "Campus",
               "valor": "Bambuí"
             },
@@ -10614,6 +10734,10 @@
               "valor": "Técnico Integrado ao Ensino Médio"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
               "rotulo": "Campi",
               "valor": "Betim, Ibirité, Ipatinga, Itabirito e Ouro Preto"
             },
@@ -11006,6 +11130,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Técnico Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Industrial"
             },
             {
               "rotulo": "Campus",
@@ -12892,6 +13020,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Técnico Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
             },
             {
               "rotulo": "Campus",
@@ -14911,7 +15043,7 @@
             },
             {
               "rotulo": "Eixo tecnológico",
-              "valor": "Informação incompleta"
+              "valor": "Informação e Comunicação"
             },
             {
               "rotulo": "Campus",
@@ -16038,6 +16170,10 @@
               "valor": "Técnico integrado ao Ensino Médio"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
               "rotulo": "Campi",
               "valor": "Arcos; Betim; Congonhas; Conselheiro Lafaiete"
             },
@@ -16679,6 +16815,10 @@
               "valor": "Técnico Integrado ao Ensino Médio"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
               "rotulo": "Campus",
               "valor": "Ibirité"
             },
@@ -16985,7 +17125,7 @@
             },
             {
               "rotulo": "Eixo tecnológico",
-              "valor": "Recursos Naturais"
+              "valor": "Ambiente e Saúde"
             },
             {
               "rotulo": "Campi",
@@ -19090,7 +19230,7 @@
             },
             {
               "rotulo": "Eixo tecnológico",
-              "valor": "Informação incompleta"
+              "valor": "Produção Industrial"
             },
             {
               "rotulo": "Campus",
@@ -19360,7 +19500,7 @@
             },
             {
               "rotulo": "Eixo tecnológico",
-              "valor": "Informação incompleta"
+              "valor": "Produção Industrial"
             },
             {
               "rotulo": "Campus",
@@ -19627,6 +19767,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Técnico Integrado ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
             },
             {
               "rotulo": "Campus",
@@ -20859,6 +21003,10 @@
             {
               "rotulo": "Tipo de curso",
               "valor": "Graduação — Bacharelado"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
             },
             {
               "rotulo": "Campus",

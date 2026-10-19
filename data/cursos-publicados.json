@@ -16725,6 +16725,290 @@
       ]
     },
     {
+      "id": "tecnico-em-meio-ambiente-subsequente",
+      "nome": "Técnico em Meio Ambiente",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Meio Ambiente"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "1.200 horas (1.110 horas de disciplinas e 90 horas de atividades complementares obrigatórias)"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Não obrigatório"
+            },
+            {
+              "rotulo": "Trabalho de Conclusão de Curso",
+              "valor": "Não obrigatório"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Meio Ambiente",
+          "conteudo": "Aprenda a **identificar impactos ambientais, coletar e interpretar dados, acompanhar o uso da água e organizar ações de gestão e conservação**. A formação reúne estudos sobre ecologia, recursos hídricos, resíduos, qualidade do ar e educação ambiental para atuar em diferentes ambientes de trabalho."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude Meio Ambiente à noite, em quatro semestres. Aprenda a monitorar a qualidade da água, analisar impactos ambientais e colaborar em ações de conservação, saneamento e educação ambiental."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem **já concluiu o ensino médio** e deseja trabalhar com **monitoramento ambiental, proteção de recursos naturais, gestão de resíduos, saneamento e educação ambiental**. É indicado a pessoas interessadas em compreender problemas ambientais e participar da elaboração de medidas de prevenção e recuperação."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "As disciplinas incluem **ecologia, geografia aplicada, gestão de recursos hídricos, microbiologia e química ambiental, tratamento de efluentes, qualidade do ar, biodiversidade, resíduos sólidos, saúde ambiental e direito ambiental**. Você também estudará planejamento, gestão e sustentabilidade para interpretar dados e colaborar em projetos ambientais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Ecologia e biodiversidade",
+              "Compreender relações entre seres vivos, ecossistemas, conservação de recursos naturais e impactos humanos."
+            ],
+            [
+              "Recursos hídricos",
+              "Estudar bacias hidrográficas, monitoramento da água e medidas de conservação de rios e nascentes."
+            ],
+            [
+              "Química e microbiologia ambiental",
+              "Conhecer análises e indicadores para acompanhar alterações em águas, solos e outros ambientes."
+            ],
+            [
+              "Saneamento e resíduos",
+              "Compreender tratamento de efluentes, gerenciamento de resíduos sólidos e prevenção da poluição."
+            ],
+            [
+              "Qualidade do ar e saúde ambiental",
+              "Relacionar monitoramento de poluentes, condições ambientais e riscos à saúde coletiva."
+            ],
+            [
+              "Gestão e legislação ambiental",
+              "Acompanhar procedimentos de gestão, planejamento, documentação e normas aplicadas ao meio ambiente."
+            ],
+            [
+              "Educação e percepção ambiental",
+              "Organizar ações de sensibilização, observação e diálogo com comunidades sobre questões ambientais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "A formação relaciona a observação do ambiente com **levantamentos de campo, coleta e interpretação de dados, estudos sobre água, solos e resíduos e análises ambientais**. As disciplinas permitem aplicar procedimentos de monitoramento a situações reais. Além das **1.110 horas de disciplinas**, são exigidas **90 horas de atividades complementares**. O estágio supervisionado é opcional."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades de aprendizagem prática, coleta de amostras e monitoramento ambiental · Campus Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Meio Ambiente",
+          "conteudo": "O **Técnico em Meio Ambiente Subsequente** é oferecido no **Campus Ouro Preto**, em modalidade **presencial**, com aulas **à noite** e duração mínima de **quatro semestres**. O currículo reúne **1.110 horas de disciplinas e 90 horas de atividades complementares obrigatórias**, totalizando **1.200 horas**. O estágio é opcional."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Preto",
+              "Presencial",
+              "Noite",
+              "4 semestres",
+              "1.200 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "O curso é **presencial e noturno**, com duração mínima de **dois anos**. A formação reúne **1.110 horas de disciplinas e 90 horas de atividades complementares obrigatórias**. O estágio supervisionado é **não obrigatório**, e não há exigência de TCC."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Temas como **qualidade da água, resíduos sólidos, saneamento, biodiversidade e educação ambiental** podem ser aprofundados em atividades acadêmicas de pesquisa e extensão. Os estudos de campo e a análise de dados ambientais ajudam a relacionar conhecimentos de sala de aula a questões dos territórios e das comunidades."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Meio Ambiente"
+          ],
+          "linhas": [
+            [
+              "Gestão Ambiental (Tecnólogo)",
+              "Governador Valadares",
+              "Aprofunda a análise de impactos, o planejamento ambiental e a gestão de recursos naturais."
+            ],
+            [
+              "Engenharia Ambiental e Sanitária (Bacharelado)",
+              "Governador Valadares",
+              "Estuda saneamento, recursos hídricos, tratamento de água e resíduos e projetos de prevenção da poluição."
+            ],
+            [
+              "Geografia (Licenciatura)",
+              "Ouro Preto",
+              "Aprofunda estudos do território, da paisagem e do ensino de temas geográficos e ambientais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Programa",
+            "Campus",
+            "Relação com Meio Ambiente"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+              "Bambuí",
+              "Desenvolve pesquisa aplicada a sustentabilidade, tecnologias ambientais e gestão de recursos naturais."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **15 de agosto de 2026**, estudantes da turma **N1 do Técnico em Meio Ambiente Subsequente** participaram de uma atividade de campo no **Parque Natural Municipal das Andorinhas**, em Ouro Preto. Na disciplina de **Gestão de Recursos Hídricos**, eles percorreram parte do parque e mediram a qualidade da água no **Poço do Baú** e no **Poço das Crianças**, utilizando equipamento multiparâmetro para verificar **oxigênio dissolvido, pH, temperatura e condutividade elétrica**."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividade da turma N1 no Parque Natural Municipal das Andorinhas, em 15 de agosto de 2026 · Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode ingressar no Técnico em Meio Ambiente Subsequente?",
+              "resposta": "Pessoas que **já concluíram o ensino médio**. O curso funciona **à noite**, no Campus Ouro Preto, e tem duração mínima de **dois anos**."
+            },
+            {
+              "pergunta": "O estágio e o TCC são obrigatórios?",
+              "resposta": "**Não.** O estágio supervisionado é **opcional**, e a formação não exige **Trabalho de Conclusão de Curso (TCC)**. Para concluir o curso, você deve cumprir as disciplinas e as **90 horas de atividades complementares obrigatórias**."
+            },
+            {
+              "pergunta": "Como são realizadas as atividades práticas?",
+              "resposta": "O curso pode envolver **observação e monitoramento ambiental em campo, análise de água e resíduos, coleta de informações e estudos de caso**. O planejamento depende das disciplinas e da programação acadêmica de cada turma."
+            },
+            {
+              "pergunta": "O curso tem disciplinas sobre água e resíduos?",
+              "resposta": "**Sim.** A matriz inclui **Gestão de Recursos Hídricos, Gestão e Tratamento de Efluentes, Gestão de Resíduos Sólidos, Microbiologia Ambiental e Química Analítica Ambiental**, além de conteúdos de educação e planejamento ambiental."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Meio Ambiente Subsequente** do Campus Ouro Preto, é necessário **ter concluído o ensino médio até a matrícula**. O IFMG realiza processos seletivos para os cursos técnicos. Consulte o edital vigente para conferir os critérios de classificação, a documentação e as condições de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Meio Ambiente pode atuar na **coleta, registro e interpretação de informações ambientais**, no monitoramento da água e de resíduos, no acompanhamento de medidas para reduzir impactos e na organização de programas de educação ambiental. Também pode apoiar análises sobre a qualidade do ar, a conservação de recursos naturais, o tratamento de efluentes e a gestão de áreas sob pressão ambiental.\n\nAs atividades podem ser desenvolvidas em **órgãos públicos, empresas de saneamento e licenciamento, consultorias ambientais, indústrias, associações e unidades de conservação**, dentro das atribuições profissionais aplicáveis. O trabalho envolve observar normas técnicas, colaborar com equipes e documentar informações para projetos e ações de gestão ambiental."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-metalurgia-integrado",
       "nome": "Técnico em Metalurgia",
       "nivel": "Técnico",

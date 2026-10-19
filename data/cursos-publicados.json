@@ -12232,6 +12232,300 @@
       ]
     },
     {
+      "id": "tecnico-em-edificacoes-subsequente",
+      "nome": "Técnico em Edificações",
+      "nivel": "Técnico",
+      "tipo": "Subsequente",
+      "campi": [
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Técnico em Edificações"
+            },
+            {
+              "rotulo": "Tipo de curso",
+              "valor": "Técnico subsequente ao Ensino Médio"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Infraestrutura"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (30 horas EaD em Desenho Técnico)"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite, com possibilidade de Topografia I e II das 16h às 18h30"
+            },
+            {
+              "rotulo": "Duração mínima",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "1.210 horas (1.080 de disciplinas e 130 de atividades complementares obrigatórias)"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Não obrigatório"
+            },
+            {
+              "rotulo": "Trabalho de Conclusão de Curso",
+              "valor": "Não obrigatório"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Técnico em Edificações",
+          "conteudo": "Aprenda a **interpretar projetos, acompanhar obras, analisar materiais e organizar etapas da construção civil**. A formação combina desenho técnico e por computador, topografia, instalações, estruturas e planejamento para trabalhar com edificações e serviços de construção."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude Edificações à noite, em quatro semestres. A formação inclui projetos arquitetônicos, tecnologia das construções, topografia e 120 horas obrigatórias de projetos integradores."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O curso é destinado a quem **já concluiu o ensino médio** e deseja trabalhar com **construção civil, projetos, obras, materiais, levantamento de terrenos e planejamento de serviços**. É uma formação para quem se interessa por desenho, medições, solução de problemas e acompanhamento técnico de construções."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "Você conhecerá **desenho técnico, estabilidade das construções, materiais, tecnologia construtiva, mecânica dos solos, topografia, projeto arquitetônico, estruturas, instalações elétricas e hidrossanitárias, desenho assistido por computador e gestão de obras**. Ao longo dos quatro semestres, as disciplinas combinam leitura de projetos, cálculo, análise de materiais e atividades práticas."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Área de formação",
+            "O que você aprende"
+          ],
+          "linhas": [
+            [
+              "Desenho e projetos",
+              "Interpretar plantas, escalas, representações técnicas e projetos arquitetônicos; utilizar programas de desenho."
+            ],
+            [
+              "Materiais e processos construtivos",
+              "Conhecer propriedades, aplicações e procedimentos de uso de materiais, sistemas e etapas de construção."
+            ],
+            [
+              "Topografia e solos",
+              "Fazer leituras e levantamentos, representar terrenos e estudar condições do solo relevantes para obras."
+            ],
+            [
+              "Estruturas e estabilidade",
+              "Compreender esforços e elementos estruturais e acompanhar soluções construtivas."
+            ],
+            [
+              "Instalações prediais",
+              "Ler e analisar projetos de instalações elétricas, hidráulicas e sanitárias."
+            ],
+            [
+              "Planejamento de obras",
+              "Estudar orçamentos, medições, organização do canteiro e acompanhamento de serviços."
+            ],
+            [
+              "Projetos integradores",
+              "Articular conhecimentos das disciplinas em situações de planejamento, projeto e prática de construção."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem prática",
+          "conteudo": "O **Campus Ouro Preto** dispõe de ambientes de estudo e prática para construção civil, como o **Galpão de Práticas de Obras**. O currículo inclui atividades de **desenho, projeto arquitetônico, topografia, análise de materiais e planejamento de obras**. Além das disciplinas, são exigidas **130 horas de atividades complementares**, das quais **120 horas de Projetos Integradores de Edificações e 10 horas de Atividades Práticas Curriculares**. O estágio supervisionado é opcional."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Práticas de Edificações, projetos integradores, materiais e construção civil · Campus Ouro Preto",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece Técnico em Edificações",
+          "conteudo": "O **Técnico em Edificações Subsequente** é oferecido no **Campus Ouro Preto**, para quem já concluiu o ensino médio. A formação é **presencial e noturna**, com duração mínima de **quatro semestres**. Das **1.210 horas** do curso, **30 horas** de Desenho Técnico são desenvolvidas a distância. **Topografia I e II podem ter aulas entre 16h e 18h30**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Turno",
+            "Duração mínima",
+            "Carga horária total",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Preto",
+              "Presencial, com 30 horas EaD em Desenho Técnico",
+              "Noite; Topografia I e II podem ocorrer das 16h às 18h30",
+              "4 semestres",
+              "1.210 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "faq",
+          "titulo": "Informações dos campi",
+          "itens": [
+            {
+              "pergunta": "Campus Ouro Preto",
+              "resposta": "O curso é **presencial, tem aulas à noite e duração mínima de dois anos**, com **1.210 horas** no total. São **1.080 horas de disciplinas e 130 horas de atividades complementares obrigatórias**. A matriz prevê **30 horas EaD em Desenho Técnico**, além de práticas e projetos integradores. **Topografia I e II podem ocorrer das 16h às 18h30**, conforme o horário acadêmico."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, extensão e oportunidades",
+          "conteudo": "Os conteúdos de **materiais, estruturas, topografia, planejamento de obras e projeto arquitetônico** podem ser aprofundados em atividades de ensino, pesquisa e extensão do campus. O **Galpão de Práticas de Obras** é um ambiente para formação prática em técnicas construtivas e materiais. A programação de oficinas, visitas e projetos depende das atividades organizadas pelo curso e pelo campus."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Edificações"
+          ],
+          "linhas": [
+            [
+              "Engenharia Civil (Bacharelado)",
+              "Governador Valadares, Piumhi e Santa Luzia",
+              "Amplia estudos de estruturas, geotecnia, materiais, obras, infraestrutura e gestão da construção."
+            ],
+            [
+              "Arquitetura e Urbanismo (Bacharelado)",
+              "Santa Luzia",
+              "Aprofunda projeto arquitetônico, desenho, conforto, cidade e planejamento de espaços."
+            ],
+            [
+              "Conservação e Restauro (Tecnólogo)",
+              "Ouro Preto",
+              "Estuda técnicas de conservação e intervenção em edificações e conjuntos urbanos de valor cultural."
+            ],
+            [
+              "Design de Interiores (Tecnólogo)",
+              "Santa Luzia",
+              "Desenvolve projetos de espaços internos, materiais, ergonomia, iluminação e acessibilidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pós-graduação",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Relação com Edificações"
+          ],
+          "linhas": [
+            [
+              "Especialização em BIM: Projetos Aplicados às Edificações",
+              "Piumhi",
+              "Aprofunda modelagem da informação da construção e integração digital de projetos e obras."
+            ],
+            [
+              "Especialização em Gestão e Conservação do Patrimônio Cultural",
+              "Ouro Preto",
+              "Estuda gestão e conservação de patrimônios construídos, técnicas de intervenção e preservação."
+            ],
+            [
+              "Especialização em Gestão de Projetos e Operações",
+              "Congonhas",
+              "Aprofunda planejamento, acompanhamento e gestão de projetos e operações em diferentes setores."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Quem pode se candidatar ao Técnico em Edificações Subsequente?",
+              "resposta": "Pessoas que **já concluíram o ensino médio**. O curso é técnico, presencial e tem duração mínima de **dois anos**, no Campus Ouro Preto."
+            },
+            {
+              "pergunta": "Todas as aulas acontecem depois das 18h?",
+              "resposta": "As aulas são oferecidas **no período noturno**, mas **Topografia I e II podem acontecer das 16h às 18h30**. A programação de cada turma informa os dias e horários dessas atividades."
+            },
+            {
+              "pergunta": "Preciso fazer estágio ou Trabalho de Conclusão de Curso?",
+              "resposta": "**O estágio supervisionado é opcional, e não há TCC obrigatório.** Para concluir a formação, você deve cumprir as disciplinas e **130 horas de atividades complementares obrigatórias**, incluindo **120 horas de Projetos Integradores de Edificações** e **10 horas de Atividades Práticas Curriculares**."
+            },
+            {
+              "pergunta": "O curso pode ser feito a distância?",
+              "resposta": "**Não.** O curso é **presencial**. Apenas **30 horas da disciplina Desenho Técnico** são organizadas a distância, dentro da carga horária total de 1.210 horas."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "Para ingressar no **Técnico em Edificações Subsequente** do Campus Ouro Preto, é necessário **ter concluído o ensino médio até a matrícula**. O IFMG realiza processos seletivos para os cursos técnicos. Consulte o edital vigente para verificar a forma de classificação, a documentação exigida e as condições de reserva de vagas."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O técnico em Edificações pode atuar na **leitura e elaboração de desenhos e projetos técnicos**, no levantamento de quantidades e medidas, na elaboração de orçamentos e no acompanhamento da execução e manutenção de obras. Entre as tarefas estão organizar informações de materiais e serviços, realizar medições, apoiar levantamentos topográficos, verificar procedimentos de construção e colaborar no controle de qualidade e segurança.\n\nAs atividades podem ocorrer em **construtoras, canteiros de obras, escritórios de arquitetura e engenharia, empresas de projetos, comércio técnico de materiais e órgãos públicos**. As responsabilidades sobre projetos, execução e fiscalização devem respeitar as atribuições profissionais e os registros legalmente exigidos para cada atividade."
+        }
+      ]
+    },
+    {
       "id": "tecnico-em-eletroeletronica-integrado",
       "nome": "Técnico em Eletroeletrônica",
       "nivel": "Técnico",

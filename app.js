@@ -124,6 +124,8 @@
   const blockName = { "dados-basicos": "Dados básicos", "texto": "Texto", "introducao": "Introdução", "tabela": "Tabela", "faq": "FAQ", "galeria": "Galeria", "links": "Links", "link-unico": "Link único" };
   function blockCopy(b, omitTitle = false) {
     if (b.tipo === "dados-basicos") return b.campos.map(x => x.rotulo + ": " + x.valor).join("\n");
+    if (b.tipo === "texto" && b.subtitulo)
+      return [b.titulo,b.subtitulo,b.subtituloConteudo].filter(Boolean).join("\n\n");
     if (b.tipo === "tabela") return [b.colunas.join("\t"),...b.linhas.map(row => row.join("\t"))].join("\n");
     if (b.tipo === "faq") return b.itens.map(x => "Pergunta: " + x.pergunta + "\nResposta: " + x.resposta).join("\n\n");
     if (b.tipo === "links") return b.itens.map(x => x.rotulo + " — " + x.url).join("\n");
@@ -144,7 +146,9 @@
     const head = b.titulo ? "<" + tag + ">" + escapeHTML(b.titulo) + "</" + tag + ">" : "";
     if (b.tipo === "introducao") return '<section class="content-section intro-section" id="' + id + '">' + label + (b.conteudo ? "<p>" + renderInline(b.conteudo) + "</p>" : "") + "</section>";
     if (b.tipo === "dados-basicos") return '<section class="content-section" id="' + id + '">' + label + head + '<div class="table-wrap"><table><tbody>' + b.campos.map(x => '<tr><th scope="row">' + escapeHTML(x.rotulo) + '</th><td>' + escapeHTML(x.valor) + '</td></tr>').join("") + "</tbody></table></div></section>";
-    if (b.tipo === "texto") return '<section class="content-section" id="' + id + '">' + label + head + textContentToHTML(b.conteudo) + "</section>";
+    if (b.tipo === "texto") return '<section class="content-section" id="' + id + '">' + label + head +
+      (b.subtitulo ? "<h3>" + escapeHTML(b.subtitulo) + "</h3>" + textContentToHTML(b.subtituloConteudo || "") : "") +
+      textContentToHTML(b.conteudo) + "</section>";
     if (b.tipo === "tabela") return '<section class="content-section" id="' + id + '">' + label + head + '<div class="table-wrap"><table><thead><tr>' + b.colunas.map(x => '<th scope="col">' + escapeHTML(x) + '</th>').join("") + '</tr></thead><tbody>' + b.linhas.map(row => '<tr>' + row.map(x => '<td>' + renderInline(x) + '</td>').join("") + '</tr>').join("") + '</tbody></table></div></section>';
     if (b.tipo === "faq") return '<section class="content-section" id="' + id + '">' + label + head + b.itens.map(x => '<details class="faq-item"><summary>' + escapeHTML(x.pergunta) + '</summary>' + textContentToHTML(x.resposta) + '</details>').join("") + "</section>";
     if (b.tipo === "links") return '<section class="content-section" id="' + id + '">' + label + head + '<div class="link-list">' + b.itens.map(x => '<a class="link-chip" href="' + escapeHTML(x.url) + '" target="_blank" rel="noopener noreferrer">' + escapeHTML(x.rotulo) + ' <span aria-hidden="true">↗</span></a>').join("") + "</div></section>";
@@ -172,6 +176,12 @@
     const rich = (label, value) => ({label, value: String(value ?? ""), rich: true, html: richHTML(value)});
     if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor));
     if (b.tipo === "texto") {
+      // Para a continuidade, copiar H2 + H3 adjacente num único Rich Text Wagtail.
+      if (b.subtitulo) return [{
+        label:"Conteúdo", rich:true,
+        value:[b.titulo,b.subtitulo,b.subtituloConteudo||""].filter(Boolean).join("\n\n"),
+        html:richHTML("",b.titulo,2) + richHTML(b.subtituloConteudo||"",b.subtitulo,3)
+      }];
       // O primeiro bloco textual apresenta o curso. O nome já é o título
       // copiável da página e não deve ser repetido nos parágrafos.
       if (omitTitle) return [{
@@ -280,8 +290,21 @@
       fieldHTML({label:"Título da página",value:course.nome,rich:false,html:"",setting:false},-1,0,true) +
       '</section>';
   }
+  function firstContinuitySubheading(course,i) {
+    const b=course?.blocos?.[i],next=course?.blocos?.[i+1];
+    return b?.tipo === "texto" && b.titulo === "Continue seus estudos no IFMG" &&
+      next?.tipo === "texto" && ["Graduação","Pós-graduação"].includes(next.titulo) ? next : null;
+  }
+  function hiddenContinuationSubheading(course,i) {
+    return Boolean(course && i>0 && firstContinuitySubheading(course,i-1) === course.blocos[i]);
+  }
+  function copyBlockForCourse(course,b,i) {
+    const first=firstContinuitySubheading(course,i);
+    return first ? {...b,subtitulo:first.titulo,subtituloConteudo:first.conteudo||""} : b;
+  }
   function editorBlock(b, i, course = null) {
-    const fields = editorFields(b, isIntroBlock(course, b, i));
+    if (hiddenContinuationSubheading(course,i)) return "";
+    const fields = editorFields(copyBlockForCourse(course,b,i), isIntroBlock(course, b, i));
     return '<section class="block-card" id="bloco-' + i + '" aria-labelledby="block-heading-' + i + '">' +
       '<span class="block-badge" aria-hidden="true">' + String(i+1).padStart(2,"0") + '</span>' +
       '<header class="block-card-header"><h2 class="block-card-title" id="block-heading-' + i +
@@ -331,12 +354,16 @@
       const suffix = previousTitle ? " · " + previousTitle : "";
       const label = b.tipo === "galeria" && b.referencia ? "Galeria · " + b.referencia : b.titulo || ((b.tipo === "tabela" || b.tipo === "faq") ? blockName[b.tipo] + suffix : blockName[b.tipo]);
       return { title: label, index: i };
-    }).filter(x => !activePreview || blockPreview(course.blocos[x.index], x.index));
+    }).filter(x => !hiddenContinuationSubheading(course,x.index) &&
+      (!activePreview || blockPreview(copyBlockForCourse(course,course.blocos[x.index],x.index),x.index)));
     root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Exemplo fictício" : kind) + '</div><h1>' + title + '</h1>' + (course.descricao ? '<p>' + escapeHTML(course.descricao) + '</p>' : '') + (flags ? '<div class="course-flags">' + flags + '</div>' : '') + '</div></div>' +
       '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +
       (!activePreview ? '' : '') +
-      (activePreview ? course.blocos.map(blockPreview).join("") : pageTitleHTML(course) + course.blocos.map((b,i) => editorBlock(b,i,course)).join("")) +
+      (activePreview
+      ? course.blocos.map((b,i) => hiddenContinuationSubheading(course,i) ? "" :
+          blockPreview(copyBlockForCourse(course,b,i),i)).join("")
+      : pageTitleHTML(course) + course.blocos.map((b,i) => editorBlock(b,i,course)).join("")) +
       '' +
       '</div><aside class="course-side"><div class="side-label">NESTA PÁGINA</div><nav aria-label="Índice dos blocos">' +
       headings.map(x => '<a href="#bloco-' + x.index + '" data-anchor="' + x.index + '"><span class="side-number">' + String(x.index+1).padStart(2,"0") + '</span>' + escapeHTML(x.title) + '</a>').join("") +
@@ -436,7 +463,7 @@
       if (button) {
         const c = state.current === "demonstracao" ? demo : state.courses.find(x => x.id === state.current || x.aliases?.includes(state.current));
         const b = c?.blocos[Number(button.dataset.copyBlock)];
-        const field = b ? editorFields(b, isIntroBlock(c, b, Number(button.dataset.copyBlock)))[Number(button.dataset.copyField)] : null;
+        const field = b ? editorFields(copyBlockForCourse(c,b,Number(button.dataset.copyBlock)), isIntroBlock(c, b, Number(button.dataset.copyBlock)))[Number(button.dataset.copyField)] : null;
         if (field && !field.setting) {
           await performCopy(button, field.value, field.rich ? field.html : "");
         }

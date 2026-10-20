@@ -239,7 +239,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -259,6 +259,18 @@
             {
               "pergunta": "Qual é a diferença entre o bacharelado e o técnico integrado em Administração?",
               "resposta": "O **bacharelado** é um curso de graduação para quem concluiu o ensino médio e busca formação superior em Administração. O **técnico integrado** reúne ensino médio e formação técnica em um mesmo percurso, destinado a quem concluiu o ensino fundamental. São cursos com níveis, duração e processos seletivos distintos."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -273,6 +285,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -520,7 +536,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -544,6 +560,14 @@
             {
               "pergunta": "Como funcionam estágio e TCC em Agronomia em São João Evangelista?",
               "resposta": "Em **São João Evangelista**, o estágio supervisionado é **obrigatório, com pelo menos 240 horas**. Pode começar após o **5º período** ou depois de **2.445 horas integralizadas**, desde que o estudante tenha cursado os conteúdos necessários à atividade. O **TCC também é obrigatório**, com **60 horas** e avaliação por banca."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -557,6 +581,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -888,7 +916,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -908,6 +936,14 @@
             {
               "pergunta": "As aulas de Ribeirão das Neves são totalmente a distância?",
               "resposta": "Não. O curso é **presencial** e funciona à noite. A oferta do processo seletivo de 2027 prevê que **28% das atividades sejam a distância**. Em Ouro Preto, a oferta é indicada como presencial, sem percentual EaD informado."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -921,6 +957,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -1137,7 +1177,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -1161,6 +1201,14 @@
             {
               "pergunta": "Como funciona a assistência estudantil?",
               "resposta": "O IFMG mantém programas de assistência estudantil, com critérios de inscrição e concessão definidos em editais. Os auxílios disponíveis e as condições de acesso devem ser consultados no processo vigente."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -1458,7 +1506,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -1478,6 +1526,18 @@
             {
               "pergunta": "O bacharelado tem TCC e estágio obrigatório?",
               "resposta": "Em **Ibirité**, o PPC de 2024 prevê **TCC obrigatório** e **estágio não obrigatório**. Em **Formiga**, a existência de TCCs e apresentações públicas é documentada, mas os requisitos curriculares detalhados dos ingressantes em 2027 precisam ser confirmados na matriz aplicável ao curso."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -1491,6 +1551,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -1767,7 +1831,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -1787,6 +1851,18 @@
             {
               "pergunta": "O curso de Ciências Biológicas é noturno nos dois campi?",
               "resposta": "Sim. As ofertas de **Bambuí e São João Evangelista** são **presenciais e noturnas**. Algumas atividades práticas de campo, laboratório e estágio podem ter horários específicos definidos pela programação acadêmica."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -1800,6 +1876,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -2069,7 +2149,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -2089,6 +2169,18 @@
             {
               "pergunta": "É preciso fazer Trabalho de Conclusão de Curso?",
               "resposta": "**Sim.** O PPC de 2023 prevê um **TCC obrigatório**, com **120 horas** na matriz curricular. O trabalho pode explorar estudos e projetos relacionados à conservação e ao restauro do patrimônio cultural."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -2102,6 +2194,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -2362,7 +2458,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -2382,6 +2478,18 @@
             {
               "pergunta": "Preciso fazer estágio e Trabalho de Conclusão de Curso?",
               "resposta": "O **estágio é não obrigatório**. Já o **TCC é obrigatório**, com **90 horas** na matriz de 2025. O trabalho pode ser realizado como projeto ou monografia, conforme o regulamento do curso."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -2395,6 +2503,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -2570,7 +2682,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -2586,6 +2698,14 @@
             {
               "pergunta": "Quais oportunidades de pesquisa e extensão existem em Direito?",
               "resposta": "Além de projetos acadêmicos e atividades de pesquisa, a formação inclui **ações de extensão ligadas à prática jurídica**. Nos períodos finais, os estudantes desenvolvem atividades supervisionadas de orientação à comunidade e análise de casos, articulando estudos teóricos e situações reais."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -2600,6 +2720,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -2929,7 +3053,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -2949,6 +3073,18 @@
             {
               "pergunta": "A formação envolve apenas prática esportiva?",
               "resposta": "A graduação combina esportes e outras práticas corporais com **didática, educação inclusiva, desenvolvimento humano, cultura, avaliação da aprendizagem e planejamento de aulas**. O foco é a formação de professores."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -2962,6 +3098,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -3210,7 +3350,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -3234,6 +3374,18 @@
             {
               "pergunta": "Posso desenvolver pesquisas com dados ambientais?",
               "resposta": "Sim. A formação inclui geoprocessamento, avaliação de impactos e análise de informações ambientais. Trabalhos vinculados ao curso já aplicaram essas técnicas ao estudo de problemas locais, como o mapeamento de áreas suscetíveis à dengue."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -3247,6 +3399,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -3542,7 +3698,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -3566,6 +3722,18 @@
             {
               "pergunta": "Posso participar de projetos de pesquisa, extensão ou monitoria?",
               "resposta": "Sim. As oportunidades dependem dos projetos e das seleções de cada campus. Em 2026, estudantes de Engenharia Civil de **Santa Luzia** foram selecionados como bolsistas de monitoria em Cálculo I e Mecânica Vetorial para Engenharia."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -3579,6 +3747,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -3869,7 +4041,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -3893,6 +4065,18 @@
             {
               "pergunta": "O que posso desenvolver em projetos acadêmicos?",
               "resposta": "Os temas podem incluir **controle de equipamentos, sistemas de medição, robótica, programação embarcada, redes industriais e automação de processos**. A participação em pesquisas e atividades de extensão depende dos projetos realizados em cada unidade."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -3906,6 +4090,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -4117,7 +4305,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -4141,6 +4329,14 @@
             {
               "pergunta": "Como funcionam estágio e TCC em Engenharia de Produção em Governador Valadares?",
               "resposta": "Em **Governador Valadares**, o estágio supervisionado é **obrigatório, com pelo menos 160 horas**, e pode começar a partir do **7º período**. O estudante realiza as atividades com orientação docente e entrega um **relatório final**, acompanhado da documentação de avaliação. O **TCC também é obrigatório** e pode ser elaborado como artigo científico ou projeto, com orientação e avaliação. As etapas estão organizadas em **Projeto em Engenharia I e II**, recomendadas para o **9º e o 10º períodos**, respectivamente."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -4154,6 +4350,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -4548,7 +4748,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -4572,6 +4772,18 @@
             {
               "pergunta": "Há experiências práticas além das disciplinas?",
               "resposta": "Sim. Estudantes participam de **visitas técnicas, pesquisa, extensão, projetos e eventos**. Entre experiências realizadas estão visitas a empresas de energia, ações em escolas públicas e apresentações de trabalhos acadêmicos em congressos."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -4585,6 +4797,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -4811,7 +5027,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -4839,6 +5055,14 @@
             {
               "pergunta": "Como funciona a assistência estudantil?",
               "resposta": "O IFMG mantém programas de assistência estudantil com regras e auxílios definidos em editais. A participação nas seleções depende dos critérios e da documentação exigida em cada processo."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -5043,7 +5267,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -5063,6 +5287,14 @@
             {
               "pergunta": "Há atividades a distância?",
               "resposta": "O curso é presencial nos dois campi. Em **Arcos**, a oferta prevê **25% da carga horária EaD**. Em **Betim**, a oferta é presencial, com organização curricular própria."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -5077,6 +5309,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -5367,7 +5603,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -5391,6 +5627,14 @@
             {
               "pergunta": "Como concorrer a auxílios estudantis?",
               "resposta": "O IFMG mantém programas de assistência estudantil com critérios, documentação e condições de concessão definidos em editais. O estudante deve acompanhar a seleção vigente para verificar os auxílios disponíveis e os requisitos."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -5672,7 +5916,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, ações afirmativas e apoios estudantis que podem se aplicar ao programa."
         },
         {
           "tipo": "faq",
@@ -5692,6 +5936,18 @@
             {
               "pergunta": "Como são organizadas as atividades a distância?",
               "resposta": "O **Moodle** é utilizado para materiais, fóruns, exercícios e estudos de caso. O planejamento de cada componente também pode prever **encontros síncronos** e outras atividades de acompanhamento."
+            },
+            {
+              "pergunta": "Como ingressar neste programa de pós-graduação?",
+              "resposta": "O ingresso ocorre por seleção específica do programa, com requisitos, etapas e documentação informados em edital. Consulte os canais oficiais do programa para conhecer as condições da seleção."
+            },
+            {
+              "pergunta": "Há ações afirmativas ou reserva de vagas na seleção?",
+              "resposta": "As regras de ações afirmativas ou de reserva de vagas, quando aplicáveis, são estabelecidas pelas normas e pelo edital específico do programa. Consulte o edital da seleção para verificar critérios e documentação."
+            },
+            {
+              "pergunta": "Há assistência estudantil ou outros apoios para estudantes deste programa?",
+              "resposta": "A oferta e a elegibilidade para ações de apoio estudantil dependem das regras institucionais e do programa. Consulte a área de Assistência Estudantil e a coordenação para verificar opções aplicáveis."
             }
           ]
         },
@@ -5941,7 +6197,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, ações afirmativas e apoios estudantis que podem se aplicar ao programa."
         },
         {
           "tipo": "faq",
@@ -5961,6 +6217,14 @@
             {
               "pergunta": "A especialização cobra mensalidade?",
               "resposta": "As condições de **gratuidade, mensalidades e eventual taxa de inscrição** são definidas no edital de cada oferta. Consulte o processo seletivo vigente para verificar as condições aplicáveis à turma."
+            },
+            {
+              "pergunta": "Há ações afirmativas ou reserva de vagas na seleção?",
+              "resposta": "As regras de ações afirmativas ou de reserva de vagas, quando aplicáveis, são estabelecidas pelas normas e pelo edital específico do programa. Consulte o edital da seleção para verificar critérios e documentação."
+            },
+            {
+              "pergunta": "Há assistência estudantil ou outros apoios para estudantes deste programa?",
+              "resposta": "A oferta e a elegibilidade para ações de apoio estudantil dependem das regras institucionais e do programa. Consulte a área de Assistência Estudantil e a coordenação para verificar opções aplicáveis."
             }
           ]
         },
@@ -6231,7 +6495,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, ações afirmativas e apoios estudantis que podem se aplicar ao programa."
         },
         {
           "tipo": "faq",
@@ -6251,6 +6515,14 @@
             {
               "pergunta": "O curso tem atividades presenciais obrigatórias?",
               "resposta": "O curso é ofertado **integralmente na modalidade EaD**. As atividades acontecem no ambiente virtual Moodle e podem incluir encontros síncronos, quando programados, com gravações disponibilizadas posteriormente."
+            },
+            {
+              "pergunta": "Há ações afirmativas ou reserva de vagas na seleção?",
+              "resposta": "As regras de ações afirmativas ou de reserva de vagas, quando aplicáveis, são estabelecidas pelas normas e pelo edital específico do programa. Consulte o edital da seleção para verificar critérios e documentação."
+            },
+            {
+              "pergunta": "Há assistência estudantil ou outros apoios para estudantes deste programa?",
+              "resposta": "A oferta e a elegibilidade para ações de apoio estudantil dependem das regras institucionais e do programa. Consulte a área de Assistência Estudantil e a coordenação para verificar opções aplicáveis."
             }
           ]
         },
@@ -6546,7 +6818,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -6570,6 +6842,18 @@
             {
               "pergunta": "Há oportunidades de iniciação à docência e pesquisa?",
               "resposta": "Sim. O **PIBID de Física** reúne as licenciaturas dos três campi em atividades de iniciação à docência e de aproximação com escolas. A participação depende das oportunidades e dos processos seletivos de cada período; também podem existir projetos de pesquisa e extensão."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -6583,6 +6867,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -6863,7 +7151,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -6883,6 +7171,18 @@
             {
               "pergunta": "Preciso apresentar Trabalho de Conclusão de Curso?",
               "resposta": "Sim. O **TCC é obrigatório**, organizado no sétimo e no oitavo períodos. Entre os formatos previstos estão monografia, artigo científico, livro ou capítulo e produto didático ou educacional, com orientação e defesa conforme as regras do curso."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -6896,6 +7196,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -7166,7 +7470,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -7186,6 +7490,18 @@
             {
               "pergunta": "Como a extensão faz parte da graduação?",
               "resposta": "A matriz contempla **170 horas de atividades de extensão**, incluindo projetos realizados com participação dos estudantes. Essas ações permitem estudar problemas ambientais em diálogo com comunidades e outros grupos fora do campus."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -7199,6 +7515,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -7470,7 +7790,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -7490,6 +7810,18 @@
             {
               "pergunta": "O curso inclui atividades práticas e de extensão?",
               "resposta": "Sim. A formação inclui **estudos de caso, auditorias, seminários e projetos integradores**, além de **170 horas de extensão** distribuídas em disciplinas."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -7503,6 +7835,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -7782,7 +8118,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -7798,6 +8134,14 @@
             {
               "pergunta": "Há oportunidades de pesquisa e assistência estudantil?",
               "resposta": "Sim. O IFMG oferece programas de **iniciação científica, extensão, monitoria e assistência estudantil**, além de oportunidades de moradia estudantil no Campus Bambuí. A participação depende dos critérios e das seleções de cada programa."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -7811,6 +8155,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -8096,7 +8444,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -8116,6 +8464,18 @@
             {
               "pergunta": "O curso também prepara para atividades além de dar aulas?",
               "resposta": "A formação desenvolve competências de **leitura, escrita, análise linguística e produção cultural**, que podem ser aplicadas em revisão de textos, edição, atividades literárias e outras funções relacionadas à linguagem, conforme as exigências de cada área."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -8129,6 +8489,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -8403,7 +8767,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -8423,6 +8787,18 @@
             {
               "pergunta": "Como funcionam as atividades EaD?",
               "resposta": "O curso é presencial, com aulas à noite, mas **as disciplinas incluem 20% de atividades a distância**, organizadas pelos professores no ambiente virtual de aprendizagem. Esse percentual corresponde à carga das disciplinas; **não significa que 20% das 1.600 horas totais sejam EaD**."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -8436,6 +8812,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -8724,7 +9104,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -8744,6 +9124,18 @@
             {
               "pergunta": "Há projetos com escolas e bolsas de iniciação à docência?",
               "resposta": "Sim. Os dois campi integram o **PIBID de Matemática**, que desenvolve atividades formativas com escolas públicas e professores supervisores. Também há projetos de pesquisa e extensão, sujeitos aos requisitos e editais específicos."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -8757,6 +9149,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -8963,7 +9359,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -8983,6 +9379,14 @@
             {
               "pergunta": "Existe assistência estudantil para estudantes da graduação?",
               "resposta": "O IFMG mantém programas de assistência estudantil, com auxílios e critérios definidos em editais. As candidaturas dependem dos requisitos e dos procedimentos da seleção vigente."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -9224,7 +9628,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, ações afirmativas e apoios estudantis que podem se aplicar ao programa."
         },
         {
           "tipo": "faq",
@@ -9244,6 +9648,18 @@
             {
               "pergunta": "O mestrado é totalmente presencial?",
               "resposta": "O programa é **classificado como presencial**, mas o regulamento permite que determinadas disciplinas sejam oferecidas em formato **presencial, remoto ou híbrido**, conforme decisão do colegiado e planejamento acadêmico."
+            },
+            {
+              "pergunta": "Como ingressar neste programa de pós-graduação?",
+              "resposta": "O ingresso ocorre por seleção específica do programa, com requisitos, etapas e documentação informados em edital. Consulte os canais oficiais do programa para conhecer as condições da seleção."
+            },
+            {
+              "pergunta": "Há ações afirmativas ou reserva de vagas na seleção?",
+              "resposta": "As regras de ações afirmativas ou de reserva de vagas, quando aplicáveis, são estabelecidas pelas normas e pelo edital específico do programa. Consulte o edital da seleção para verificar critérios e documentação."
+            },
+            {
+              "pergunta": "Há assistência estudantil ou outros apoios para estudantes deste programa?",
+              "resposta": "A oferta e a elegibilidade para ações de apoio estudantil dependem das regras institucionais e do programa. Consulte a área de Assistência Estudantil e a coordenação para verificar opções aplicáveis."
             }
           ]
         },
@@ -9532,7 +9948,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -9552,6 +9968,18 @@
             {
               "pergunta": "As atividades em Ribeirão das Neves são totalmente a distância?",
               "resposta": "Não. A graduação é **presencial** e ofertada no período noturno, com **384 horas (24% da carga total) em atividades EaD**. Em Ponte Nova, a oferta é presencial sem percentual EaD informado na seleção de 2027."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -9565,6 +9993,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -9821,7 +10253,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -9841,6 +10273,18 @@
             {
               "pergunta": "Como a formação combina Química e prática docente?",
               "resposta": "Os estudos incluem conceitos e experimentos de Química, planejamento de aulas, didática e avaliação da aprendizagem. Os **estágios supervisionados** aproximam a formação universitária de situações de ensino em escolas."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -9854,6 +10298,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -10160,7 +10608,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -10184,6 +10632,18 @@
             {
               "pergunta": "O curso de Sabará é totalmente a distância?",
               "resposta": "**Não.** A oferta é **presencial e matutina**. Para ingresso em 2027, o campus informa **11,4% de atividades EaD**, integradas ao curso presencial."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -10197,6 +10657,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -10544,7 +11008,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -10572,6 +11036,10 @@
             {
               "pergunta": "Há cotas para o Técnico em Administração Integrado?",
               "resposta": "**Sim.** O IFMG oferece reserva de vagas nos processos seletivos de cursos técnicos integrados. A seleção considera os requisitos legais e os critérios de cada edital, incluindo a escolarização em rede pública e outras condições de ações afirmativas. É necessário preencher corretamente as informações de inscrição e apresentar os documentos solicitados."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
             }
           ]
         },
@@ -10853,7 +11321,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -10869,6 +11337,18 @@
             {
               "pergunta": "Qual é a relação entre Agrimensura e Engenharia Civil?",
               "resposta": "A Agrimensura produz levantamentos, medidas e representações de terrenos que apoiam projetos e obras. A Engenharia Civil é uma graduação com atribuições profissionais próprias, incluindo planejamento, projeto e execução de estruturas e infraestrutura. As duas áreas podem trabalhar juntas, com responsabilidades diferentes."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -10882,6 +11362,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -11120,7 +11604,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -11148,6 +11632,14 @@
             {
               "pergunta": "Como funciona a assistência estudantil?",
               "resposta": "O IFMG mantém programas de assistência estudantil com condições e auxílios definidos em editais. Os critérios, documentos e procedimentos de candidatura são divulgados em cada seleção."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -11419,7 +11911,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -11439,6 +11931,35 @@
             {
               "pergunta": "Como são as atividades práticas do curso?",
               "resposta": "A formação relaciona estudos de agricultura e pecuária a atividades de observação, manejo, medições e registros em ambientes de ensino. Os trabalhos práticos seguem o planejamento, a infraestrutura e as normas de segurança de cada campus."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -11467,19 +11988,6 @@
             ]
           ],
           "cabecalhoPrimeiraLinha": true
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
         },
         {
           "tipo": "texto",
@@ -11728,7 +12236,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -11752,6 +12260,14 @@
             {
               "pergunta": "Posso cursar Agropecuária Subsequente à noite?",
               "resposta": "O curso é oferecido **de manhã e à tarde** no Campus Bambuí. A oferta não é noturna."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -11765,6 +12281,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -12121,7 +12641,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -12149,6 +12669,14 @@
             {
               "pergunta": "Existe assistência estudantil?",
               "resposta": "O IFMG possui programas de assistência estudantil com condições, benefícios e procedimentos definidos em editais."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -12404,7 +12932,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -12432,6 +12960,14 @@
             {
               "pergunta": "Existe assistência estudantil?",
               "resposta": "O IFMG possui programas de assistência estudantil com auxílios, requisitos e procedimentos definidos em editais."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -12694,7 +13230,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -12714,6 +13250,18 @@
             {
               "pergunta": "O que há no terceiro semestre?",
               "resposta": "O terceiro semestre inclui **gestão de barragens, proteção contra incêndios, vistorias de construções, urbanismo tático e planejamento interinstitucional**, além de **uma disciplina optativa**. A carga dessa optativa já faz parte das 800 horas do curso."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -12727,6 +13275,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -12985,7 +13537,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -13005,6 +13557,31 @@
             {
               "pergunta": "Desenvolvimento de Sistemas Integrado é o mesmo que a graduação em Análise e Desenvolvimento de Sistemas?",
               "resposta": "São formações de níveis diferentes. O **Técnico em Desenvolvimento de Sistemas Integrado** combina ensino médio e curso técnico para quem concluiu o ensino fundamental. **Análise e Desenvolvimento de Sistemas** é um **curso superior de tecnologia**, para quem já concluiu o ensino médio."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -13033,19 +13610,6 @@
             ]
           ],
           "cabecalhoPrimeiraLinha": true
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
         },
         {
           "tipo": "texto",
@@ -13244,20 +13808,6 @@
           ]
         },
         {
-          "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
-        },
-        {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
           "conteudo": "Informação incompleta"
@@ -13378,7 +13928,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -13402,6 +13952,28 @@
             {
               "pergunta": "O IFMG tem cotas para esse curso?",
               "resposta": "**Sim.** O IFMG aplica reserva de vagas nos processos seletivos de cursos técnicos. Os critérios incluem a trajetória escolar em escola pública e outras condições previstas nas regras de ações afirmativas. Na inscrição, é preciso informar o perfil de concorrência e apresentar a documentação exigida no edital vigente."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "estilo": "Padrão",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -13715,7 +14287,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -13735,6 +14307,14 @@
             {
               "pergunta": "O curso pode ser feito a distância?",
               "resposta": "**Não.** O curso é **presencial**. Apenas **30 horas da disciplina Desenho Técnico** são organizadas a distância, dentro da carga horária total de 1.210 horas."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -13748,6 +14328,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -14017,7 +14601,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -14033,6 +14617,31 @@
             {
               "pergunta": "Qual é a diferença para a oferta do Trilhas de Futuro?",
               "resposta": "O **integrado** reúne ensino médio e formação técnica no mesmo percurso presencial diurno. O campus também participa do programa **Trilhas de Futuro**, que possui regras, público e organização próprios. As informações deste guia se referem ao integrado do IFMG."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -14061,19 +14670,6 @@
             ]
           ],
           "cabecalhoPrimeiraLinha": true
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
         },
         {
           "tipo": "texto",
@@ -14314,7 +14910,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -14342,6 +14938,14 @@
             {
               "pergunta": "Quais programas de assistência estudantil estão disponíveis?",
               "resposta": "O IFMG mantém programas de assistência estudantil. Os auxílios, critérios e procedimentos de inscrição são definidos em editais."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -14620,7 +15224,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -14640,6 +15244,35 @@
             {
               "pergunta": "O curso inclui projetos com programação e equipamentos?",
               "resposta": "Sim. Os conteúdos contemplam programação de microcontroladores, circuitos, testes de equipamentos, transmissão de dados e aplicações em automação, conforme a organização curricular e as práticas disponíveis."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -14668,19 +15301,6 @@
             ]
           ],
           "cabecalhoPrimeiraLinha": true
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
         },
         {
           "tipo": "texto",
@@ -15014,7 +15634,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -15038,6 +15658,31 @@
             {
               "pergunta": "É possível continuar os estudos depois do curso?",
               "resposta": "Sim. Com o ensino médio concluído, você pode participar de processos seletivos de graduação, como Engenharia Elétrica e Engenharia de Controle e Automação. Depois de concluir a graduação, também existem opções de especialização e mestrado."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -15066,19 +15711,6 @@
             ]
           ],
           "cabecalhoPrimeiraLinha": true
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
         },
         {
           "tipo": "texto",
@@ -15336,7 +15968,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -15356,6 +15988,18 @@
             {
               "pergunta": "O curso de Ipatinga exige atividades complementares?",
               "resposta": "**Sim.** A matriz de Ipatinga inclui **225 horas de atividades complementares**, além das disciplinas e do estágio obrigatório. Em Conselheiro Lafaiete, a matriz curricular consultada não estabelece essa exigência."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -15369,6 +16013,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -15605,7 +16253,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -15625,6 +16273,14 @@
             {
               "pergunta": "O curso é a distância?",
               "resposta": "A oferta é **presencial e noturna**. A distribuição das atividades acadêmicas e das práticas segue o calendário e a organização do curso."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -15638,6 +16294,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -16029,7 +16689,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -16053,6 +16713,35 @@
             {
               "pergunta": "O que diferencia o integrado do subsequente ou do Trilhas de Futuro?",
               "resposta": "O integrado é para quem vai cursar o ensino médio junto com a formação técnica. Cursos subsequentes ou programas de formação técnica para outros públicos seguem condições, horários e currículos próprios."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -16086,19 +16775,6 @@
             ]
           ],
           "cabecalhoPrimeiraLinha": true
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
         },
         {
           "tipo": "texto",
@@ -16337,7 +17013,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -16357,6 +17033,14 @@
             {
               "pergunta": "Posso cursar uma graduação depois da EJA?",
               "resposta": "Ao concluir o **ensino médio integrado à formação técnica**, você pode disputar vagas em cursos superiores, como **Análise e Desenvolvimento de Sistemas**, **Sistemas de Informação** e **Ciência da Computação**, atendendo às regras do processo seletivo de cada curso."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -16370,6 +17054,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -16624,7 +17312,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -16644,6 +17332,14 @@
             {
               "pergunta": "O que se aprende sobre gemas e metais?",
               "resposta": "A formação inclui **lapidação de gemas de cor, gemologia, ourivesaria e processos de fabricação de joias**. Você estuda propriedades dos materiais, técnicas de montagem e acabamento e desenvolvimento de produtos."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -16657,6 +17353,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -16924,7 +17624,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -17205,7 +17905,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -17225,6 +17925,14 @@
             {
               "pergunta": "Qual é a diferença entre este técnico integrado e uma graduação na área de negócios?",
               "resposta": "O **técnico integrado** combina **ensino médio e educação profissional** para quem concluiu o ensino fundamental. Uma **graduação**, como o Bacharelado em Administração, é uma formação superior, acessível após concluir o ensino médio."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -17238,6 +17946,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -17495,37 +18207,12 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "No **Enem 2025**, estudantes do Técnico em Mecânica dos campi **Arcos e Betim** apareceram entre os destaques do IFMG. **Stéfany Eduarda Oliveira Miranda**, de Arcos, alcançou **960 pontos na redação**."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Enem 2025 · redação com 960 pontos · Técnico em Mecânica · Arcos",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "",
-          "conteudo": "Em **Betim**, **João Lucas Vieira Campos**, estudante do Técnico em Mecânica, alcançou **803,4 pontos de média geral** no Enem 2025 e **960 na redação**. **Nicolas Lopes Ferreira**, também do curso, alcançou **960 na redação**."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Enem 2025 · notas de estudantes do Técnico em Mecânica · Betim",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "",
-          "conteudo": "Em **27 de fevereiro de 2026**, o Campus **Conselheiro Lafaiete** realizou a formatura de estudantes dos cursos técnicos integrados e subsequentes em Mecânica e Eletrotécnica. A solenidade reuniu concluintes, docentes e familiares no Centro Cultural da Escola Estadual Narciso de Queirós."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Formatura de Mecânica e Eletrotécnica · Conselheiro Lafaiete · fevereiro de 2026",
-          "itens": []
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -17549,6 +18236,31 @@
             {
               "pergunta": "Posso cursar uma graduação depois do técnico?",
               "resposta": "Sim. Com o ensino médio concluído, você pode participar de processos seletivos de graduação, como Engenharia Mecânica e Engenharia de Produção. A seleção e a matrícula seguem as regras de cada curso."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -17577,19 +18289,6 @@
             ]
           ],
           "cabecalhoPrimeiraLinha": true
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
         },
         {
           "tipo": "texto",
@@ -17842,17 +18541,12 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **27 de fevereiro de 2026**, o **Campus Conselheiro Lafaiete** realizou uma cerimônia de formatura para concluintes dos cursos técnicos **integrados e subsequentes em Mecânica e Eletrotécnica**. A solenidade aconteceu no Centro Cultural da Escola Estadual Narciso de Queirós e reuniu estudantes, familiares, professores e representantes do IFMG. A atividade marcou a conclusão dos percursos de formação técnica, incluindo o subsequente em Mecânica."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Formatura dos cursos de Mecânica e Eletrotécnica, modalidades integrada e subsequente · Conselheiro Lafaiete · fevereiro de 2026",
-          "itens": []
+          "conteudo": "Informação incompleta"
         },
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -17876,6 +18570,14 @@
             {
               "pergunta": "Quais atividades técnicas são aprendidas?",
               "resposta": "Você aprende a **interpretar desenhos técnicos, medir peças, conhecer propriedades dos materiais, compreender processos de fabricação, planejar manutenção e trabalhar com procedimentos de qualidade e segurança**. As atividades práticas variam conforme o campus e a etapa da formação."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -17889,6 +18591,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -18151,7 +18857,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -18179,6 +18885,14 @@
             {
               "pergunta": "Como funciona a assistência estudantil?",
               "resposta": "O IFMG mantém programas de assistência estudantil, com critérios e benefícios divulgados em editais próprios."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -18463,7 +19177,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -18483,6 +19197,31 @@
             {
               "pergunta": "Estágio e TCC são obrigatórios?",
               "resposta": "As condições são definidas pelo projeto pedagógico aplicável a cada campus e turma. As regras específicas para ingressantes de 2027 precisam ser confirmadas pelas coordenações."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -18511,19 +19250,6 @@
             ]
           ],
           "cabecalhoPrimeiraLinha": true
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
         },
         {
           "tipo": "texto",
@@ -18776,7 +19502,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -18796,6 +19522,14 @@
             {
               "pergunta": "O curso tem disciplinas sobre água e resíduos?",
               "resposta": "**Sim.** A matriz inclui **Gestão de Recursos Hídricos, Gestão e Tratamento de Efluentes, Gestão de Resíduos Sólidos, Microbiologia Ambiental e Química Analítica Ambiental**, além de conteúdos de educação e planejamento ambiental."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -18809,6 +19543,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -19071,7 +19809,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -19091,6 +19829,35 @@
             {
               "pergunta": "Como são as atividades práticas?",
               "resposta": "A formação relaciona estudo de metais e ligas a ensaios, interpretação de propriedades, controle de processos e práticas laboratoriais, conforme o PPC e a infraestrutura de cada campus."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -19119,19 +19886,6 @@
             ]
           ],
           "cabecalhoPrimeiraLinha": true
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
         },
         {
           "tipo": "texto",
@@ -19374,7 +20128,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -19394,6 +20148,14 @@
             {
               "pergunta": "Há aulas ou disciplinas a distância?",
               "resposta": "A formação é **presencial**. Ferramentas digitais podem apoiar os estudos, mas a matriz vigente **não prevê disciplinas a distância**."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -19407,6 +20169,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -19666,7 +20432,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -19690,6 +20456,31 @@
             {
               "pergunta": "O curso prepara para continuar os estudos?",
               "resposta": "Sim. Após concluir o ensino médio, você pode participar de processos seletivos de graduação. No IFMG, Engenharia Metalúrgica, Engenharia de Produção e Engenharia Ambiental e Sanitária são algumas opções relacionadas à área."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
+            }
+          ]
+        },
+        {
+          "tipo": "links",
+          "itens": [
+            {
+              "rotulo": "Como ingressar no IFMG",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
+            },
+            {
+              "rotulo": "Reserva de vagas e cotas",
+              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -19723,19 +20514,6 @@
             ]
           ],
           "cabecalhoPrimeiraLinha": true
-        },
-        {
-          "tipo": "links",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            }
-          ]
         },
         {
           "tipo": "texto",
@@ -20002,7 +20780,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -20026,6 +20804,14 @@
             {
               "pergunta": "O curso de Ouro Preto pode ser feito inteiramente a distância?",
               "resposta": "**Não.** A oferta é **presencial e noturna**, com **5% de atividades EaD** previstas para 2027, vinculadas a componentes de desenho técnico e topográfico."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -20039,6 +20825,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -20281,7 +21071,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -20297,6 +21087,18 @@
             {
               "pergunta": "O curso aborda segurança dos alimentos, além do preparo de refeições?",
               "resposta": "Sim. O estudo inclui cuidados de higiene, conservação, armazenamento, manipulação e distribuição de refeições. Essas etapas ajudam a prevenir contaminações e organizar a qualidade dos serviços de alimentação."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -20310,6 +21112,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -20550,7 +21356,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -20570,6 +21376,18 @@
             {
               "pergunta": "Qual a diferença entre este técnico e Engenharia de Produção?",
               "resposta": "O **técnico integrado** combina ensino médio e formação técnica para quem concluiu o ensino fundamental. **Engenharia de Produção** é uma graduação de nível superior, que exige ensino médio concluído."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -20583,6 +21401,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -20823,7 +21645,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -20843,6 +21665,14 @@
             {
               "pergunta": "É possível continuar na graduação depois do curso?",
               "resposta": "A conclusão do **ensino médio junto com a formação técnica** permite participar de seleções para cursos superiores, como **Engenharia de Produção**, segundo os critérios de cada edital."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -20856,6 +21686,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -21128,7 +21962,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -21156,6 +21990,14 @@
             {
               "pergunta": "Como funciona a assistência estudantil?",
               "resposta": "O IFMG mantém programas de assistência estudantil, com auxílios e critérios definidos nos editais correspondentes."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },
@@ -21465,7 +22307,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -21485,6 +22327,18 @@
             {
               "pergunta": "Vou aprender apenas a usar equipamentos de proteção?",
               "resposta": "Não. A escolha e o uso de EPIs e EPCs são parte da formação, mas você também estuda investigação de acidentes, avaliação de riscos, ergonomia, legislação, saúde ocupacional e planejamento de ações preventivas."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -21498,6 +22352,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -21779,7 +22637,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -21799,6 +22657,14 @@
             {
               "pergunta": "Há aulas a distância?",
               "resposta": "A oferta é **presencial** nos três campi. Em **Santa Luzia**, a matriz prevê **4,54% da carga horária a distância**, distribuída em disciplinas específicas. Esse percentual não se aplica às ofertas de Governador Valadares e Ouro Preto."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -21812,6 +22678,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -22059,7 +22929,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -22079,6 +22949,18 @@
             {
               "pergunta": "O curso aborda somente instalação de painéis solares?",
               "resposta": "Não. Além dos sistemas solares, a formação inclui princípios de energia eólica e hidráulica, eletricidade, instrumentação, proteção, eficiência energética e manutenção de sistemas."
+            },
+            {
+              "pergunta": "Como ingressar neste curso técnico?",
+              "resposta": "Para ingressar, é necessário atender à escolaridade exigida pela modalidade e participar do processo seletivo do IFMG. O edital vigente informa critérios, etapas e documentos para a matrícula."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
+            },
+            {
+              "pergunta": "Como funciona a assistência estudantil neste curso?",
+              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -22092,6 +22974,10 @@
             {
               "rotulo": "Reserva de vagas e cotas",
               "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
+            },
+            {
+              "rotulo": "Assistência estudantil",
+              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
             }
           ]
         },
@@ -22293,7 +23179,7 @@
         {
           "tipo": "texto",
           "titulo": "Perguntas frequentes",
-          "conteudo": ""
+          "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
         {
           "tipo": "faq",
@@ -22313,6 +23199,14 @@
             {
               "pergunta": "Como posso concorrer a auxílios estudantis?",
               "resposta": "O IFMG oferece programas de assistência estudantil com critérios definidos em editais, como auxílios para alimentação, moradia e permanência. A candidatura deve seguir as regras e os procedimentos do processo vigente."
+            },
+            {
+              "pergunta": "Como ingressar neste curso de graduação?",
+              "resposta": "Confira as formas de ingresso previstas para esta graduação e campus no processo seletivo do IFMG. O edital vigente informa os critérios, as etapas, os documentos e as modalidades de seleção disponíveis."
+            },
+            {
+              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
+              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
             }
           ]
         },

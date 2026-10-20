@@ -37,7 +37,7 @@ function testContext(clipboard = {}) {
   const ending = "  init();\n})();";
   assert.ok(source.includes(ending),"Não foi possível isolar a aplicação para testes");
   const instrumented = source.replace(ending,
-    "  return {demo,state,editorFields,editorBlock,blockPreview,blockCopy,tableHTML,richHTML,copyValue,renderCatalog,renderCourse,pageTitleHTML,isIntroBlock,fieldHTML,isApprovedCourse};\n})();");
+    "  return {demo,state,editorFields,editorBlock,blockPreview,blockCopy,tableHTML,richHTML,copyValue,renderCatalog,renderCourse,pageTitleHTML,isIntroBlock,fieldHTML,isApprovedCourse,copyBlockForCourse,firstContinuitySubheading,hiddenContinuationSubheading};\n})();");
   const hooks = vm.runInNewContext(instrumented, vm.createContext(sandbox), {timeout:2500});
   return { ...hooks, elements, clipboardState };
 }
@@ -1312,11 +1312,11 @@ test("F1B.8: cabeçalhos FAQ não exibem conteúdo fictício e perguntas pendent
   for(const id of ["agronomia-bacharelado","engenharia-de-producao-bacharelado"]) {
     const c=json.courses.find(x=>x.id===id);
     const header=c.blocos.find(x=>x.tipo==="texto"&&x.titulo==="Perguntas frequentes");
-    assert.equal(header.conteudo,"");
+    assert.match(header.conteudo,/ingresso|orientações/i);
     const h=testContext();
     const fields=h.editorFields(header);
     assert.equal(fields.length,1);
-    assert.equal(fields[0].value,"Perguntas frequentes");
+    assert.match(fields[0].value,/Perguntas frequentes/);
     assert.ok(fields[0].html.includes("<h2>Perguntas frequentes</h2>"));
     const html=h.editorBlock(header,13);
     assert.equal((html.match(/data-copy-field=/g)||[]).length,1);
@@ -2194,4 +2194,67 @@ test("o filtro do app rejeita dados básicos com campos indevidos",()=>{
     copy.blocos[0].campos.push({rotulo:label,valor:"Exemplo"});
     assert.equal(h.isApprovedCourse(copy),false,label);
   }
+});
+
+test("continuidade H2 e primeiro H3 usam um único campo de cópia por seção",()=>{
+ const h=testContext();
+ let paired=0;
+ for(const c of json.courses){
+  const index=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+  if(index<0)continue;
+  const next=h.firstContinuitySubheading(c,index);
+  if(!next)continue;
+  paired++;
+  const merged=h.copyBlockForCourse(c,c.blocos[index],index);
+  const fields=h.editorFields(merged);
+  assert.equal(fields.length,1,c.id);
+  assert.ok(fields[0].html.startsWith("<h2>Continue seus estudos no IFMG</h2><h3>"+next.titulo+"</h3>"),c.id);
+  assert.equal(h.editorBlock(c.blocos[index+1],index+1,c),"",c.id+": H3 não requer outro copiar");
+  assert.equal((h.editorBlock(c.blocos[index],index,c).match(/data-copy-field=/g)||[]).length,1,c.id);
+  h.state.tab="editor";
+  h.renderCourse(c);
+  const html=h.elements.get("course-content").innerHTML;
+  assert.ok(html.includes("<h2>Continue seus estudos no IFMG</h2><h3>"+next.titulo+"</h3>"),c.id);
+  assert.ok(!html.includes('id="bloco-'+(index+1)+'"'),c.id+": H3 junto ao H2, não card separado");
+  h.state.tab="preview";
+  h.renderCourse(c);
+  const preview=h.elements.get("course-content").innerHTML;
+  assert.ok(preview.includes("<h2>Continue seus estudos no IFMG</h2><h3>"+next.titulo+"</h3>"),c.id);
+ }
+ assert.ok(paired>=60);
+});
+test("FAQ e Links de cursos regulares cobrem ingresso, cotas e assistência",()=>{
+ const normalize=x=>String(x).normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase();
+ const checks=[/ingress|inscri|candidat|processo seletivo|matricul|sisu|entrar/,/cotas?|reserva de vagas|acoes afirmativas/,/assistencia|auxilio|permanencia|apoio financeiro/];
+ for(const c of json.courses){
+  const blocks=c.blocos;
+  const head=blocks.find(b=>b.titulo==="Perguntas frequentes");
+  assert.ok(head.conteudo?.trim(),c.id+": cabeçalho tem texto introdutório útil");
+  const faqIndex=blocks.findIndex(b=>b.tipo==="faq"&&!b.titulo);
+  const faq=blocks[faqIndex];
+  assert.ok(faq?.itens?.length,c.id);
+  const q=faq.itens.map(x=>normalize(x.pergunta));
+  for(const re of checks) assert.ok(q.some(x=>re.test(x)),c.id+": tema de FAQ "+re);
+  const linkIndex=blocks.findIndex(b=>b.tipo==="links");
+  if(linkIndex<0){assert.equal(c.nivel,"Pós-graduação",c.id);continue}
+  assert.equal(linkIndex,faqIndex+1,c.id+": links imediatamente após o FAQ");
+  if(c.nivel!=="Pós-graduação"){
+    const urls=blocks[linkIndex].itens.map(x=>x.url);
+    for(const url of [
+    "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/",
+    "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/",
+    "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"])
+      assert.ok(urls.includes(url),c.id+": serviço "+url);
+  }
+ }
+});
+test("Técnicos em Mecânica não apresentam Enem e formatura como conquistas",()=>{
+ for(const id of ["tecnico-em-mecanica-integrado","tecnico-em-mecanica-subsequente"]){
+  const c=json.courses.find(x=>x.id===id);
+  const ix=c.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
+  assert.equal(c.blocos[ix].conteudo,"Informação incompleta",id);
+  let j=ix+1;while(j<c.blocos.length&&!(c.blocos[j].tipo==="texto"&&c.blocos[j].titulo)) {
+    assert.notEqual(c.blocos[j].tipo,"galeria",id+": sem galeria de formatura/Enem");j++;
+  }
+ }
 });

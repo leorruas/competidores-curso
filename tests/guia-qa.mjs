@@ -1825,7 +1825,7 @@ test("F7.2: Técnico em Química de Betim tem pesquisas comprovadas e estágio n
   for(const k of ["validacao","pendencias","instrucao"]) assert.ok(!Object.hasOwn(c,k));
 });
 
-test("F7.2: Mecatrônica Ibirité mantém curso integrado e três experiências comprovadas", () => {
+test("F9.4: Mecatrônica Ibirité preserva premiações verificadas sem relato curricular como conquista", () => {
   assert.ok(json.courses.length>=18,"Mecatrônica e cursos anteriores preservados");
   const c=json.courses.find(x=>x.id==="tecnico-em-mecatronica-integrado");
   assert.ok(c);
@@ -1843,16 +1843,15 @@ test("F7.2: Mecatrônica Ibirité mantém curso integrado e três experiências 
   assert.deepEqual(loc.linhas[0],["Ibirité","Manhã e tarde","Presencial (8,3% EaD)","mecatronica.ibirite@ifmg.edu.br"]);
   const lab=c.blocos.findIndex(x=>x.titulo==="Aprendizagem prática e laboratórios");
   assert.match(c.blocos[lab].conteudo,/Automação, Eletrônica, Circuitos Elétricos/);
-  assert.equal(c.blocos[lab+1].tipo,"galeria");
   const i=c.blocos.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
-  assert.match(c.blocos[i].conteudo,/janeiro e fevereiro de 2025/);
-  assert.match(c.blocos[i].conteudo,/Darcy Ribeiro/);
-  assert.equal(c.blocos[i+1].tipo,"galeria");
-  assert.match(c.blocos[i+2].conteudo,/Canguru de Matemática 2026/);
-  assert.match(c.blocos[i+2].conteudo,/medalha de bronze/);
-  assert.match(c.blocos[i+2].conteudo,/menções honrosas/);
-  assert.equal(c.blocos[i+3].tipo,"galeria");
-  assert.equal(c.blocos.filter(x=>x.tipo==="galeria").length,3);
+  const end=c.blocos.findIndex((x,k)=>k>i&&x.titulo==="Perguntas frequentes");
+  const relatos=c.blocos.slice(i,end).filter(x=>x.tipo==="texto");
+  assert.equal(relatos.length,1);
+  assert.match(relatos[0].conteudo,/Canguru de Matemática 2026.*Campus Ibirité/);
+  assert.match(relatos[0].conteudo,/Lucas Sampaio Gouveia Tinoco.*medalha de bronze/);
+  assert.match(relatos[0].conteudo,/Lucas Prates Gonçalves de Sena.*Sara Vitória Pinali Reis.*menções honrosas/);
+  assert.doesNotMatch(JSON.stringify(c),/Darcy Ribeiro|formação do povo brasileiro|Enem 2025|785,4/);
+  assert.equal(c.blocos.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
   const stage=c.blocos.find(x=>x.tipo==="faq"&&!x.titulo).itens.find(x=>x.pergunta==="O estágio e o TCC são obrigatórios?");
   assert.match(stage.resposta,/não obrigatório/);
   assert.match(stage.resposta,/terceiro semestre/);

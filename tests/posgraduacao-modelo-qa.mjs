@@ -38,7 +38,12 @@ function pilotoPos(tipo) {
         conteudo:mestrado?"Uma dissertação defendida em 2025 investigou finanças.":""},
       ...(mestrado ? [{tipo:"galeria",referencia:"Dissertação de finanças defendida no ano de 2025",itens:[]}] : []),
       {tipo:"texto",titulo:"Perguntas frequentes",conteudo:""},
-      {tipo:"faq",itens:[{pergunta:"É necessário concluir graduação?",resposta:"Sim, conforme a seleção específica."}]},
+      {tipo:"faq",itens:[
+        {pergunta:"É necessário concluir graduação?",resposta:"Sim, conforme a seleção específica."},
+        {pergunta:"Como ingressar nesta pós-graduação?",resposta:"O ingresso segue seleção por edital específico, que define requisitos e documentação."},
+        {pergunta:"Existem cotas ou reserva de vagas?",resposta:"As condições e a documentação aplicáveis devem ser conferidas no edital vigente do programa."},
+        {pergunta:"Como funciona a assistência estudantil?",resposta:"A disponibilidade e os critérios de auxílios dependem de regulamentos e chamadas vigentes."}
+      ]},
       {tipo:"texto",titulo:"Forma de ingresso",conteudo:"O ingresso ocorre por edital específico."},
       {tipo:"texto",titulo:"Mundo do Trabalho",conteudo:"Desenvolvimento de atividades de pesquisa aplicada."}
     ]

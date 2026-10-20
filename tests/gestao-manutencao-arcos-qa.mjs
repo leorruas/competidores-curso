@@ -28,7 +28,7 @@ test("F8.6A: especialização de Arcos é oferta própria, aprovada mas sem turm
 
 test("F8.6A: matriz 480 horas inclui 60h de trabalho final sem duplicação",()=>{
  assert.equal(campo("Eixo tecnológico"),"Controle e Processos Industriais");
- assert.match(campo("Carga horária total"),/480 horas, incluindo 60 horas/);
+ assert.match(campo("Carga horária"),/480 horas, incluindo 60 horas/);
  assert.match(campo("Trabalho final"),/60 horas/);
  assert.match(campo("Duração"),/12 meses/);
  assert.equal(campo("Estágio supervisionado"),"Informação incompleta");

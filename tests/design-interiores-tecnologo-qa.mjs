@@ -5,7 +5,7 @@ const data=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
 const c=data.courses.find(x=>x.id==="design-de-interiores-tecnologo"),b=c?.blocos||[];
 test("F7.25: Design de Interiores é tecnólogo, PPC 2025, 1690h, 3 anos, 11,54% EaD",()=>{
  assert.ok(c);assert.equal(c.nome,"Design de Interiores");assert.equal(c.tipo,"Tecnólogo");assert.equal(c.nivel,"Graduação");assert.deepEqual(c.campi,["Santa Luzia"]);
- const f=b[0].campos;assert.ok(f.some(x=>x.rotulo==="Carga horária total"&&x.valor==="1.690 horas"));
+ const f=b[0].campos;assert.ok(f.some(x=>x.rotulo==="Carga horária"&&x.valor==="1.690 horas"));
  assert.ok(f.some(x=>x.rotulo==="Duração"&&x.valor.includes("3 anos")));
  assert.ok(f.some(x=>x.rotulo==="PPC / matriz"&&x.valor.includes("2025")));
  assert.ok(f.some(x=>x.rotulo==="Modalidade"&&x.valor.includes("11,54% EaD")));

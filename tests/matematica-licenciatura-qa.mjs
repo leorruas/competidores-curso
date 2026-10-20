@@ -12,7 +12,7 @@ test("F7.38: Matemática multicampi diferencia Formiga de São João Evangelista
  assert.equal(c.tipo,"Licenciatura");
  assert.deepEqual(c.campi,["Formiga","São João Evangelista"]);
  const basic=b.find(x=>x.tipo==="dados-basicos").campos;
- assert.ok(basic.some(x=>x.rotulo==="Carga horária total"&&x.valor==="Informação incompleta para as matrizes de 2027"));
+ assert.ok(basic.some(x=>x.rotulo==="Carga horária"&&x.valor==="Informação incompleta para as matrizes de 2027"));
  const table=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
  assert.deepEqual(table.linhas,[
  ["Formiga","Presencial (25% EaD na oferta de 2027)","Noite","8 semestres","Informação incompleta","matematica.formiga@ifmg.edu.br"],

@@ -11,7 +11,7 @@ test("F7.47: PPC novo, 20% presencial e contato de curso",()=>{
  assert.deepEqual(c.campi,["Santa Luzia"]);
  assert.equal(b.length,23);
  const v=key=>b[0].campos.find(x=>x.rotulo===key)?.valor;
- assert.match(v("Carga horária total"),/800 horas.*640 horas EaD e 160 horas presenciais/);
+ assert.match(v("Carga horária"),/800 horas.*640 horas EaD e 160 horas presenciais/);
  assert.equal(v("Turno"),"Informação incompleta");
  assert.equal(v("Estágio supervisionado"),"Não obrigatório");
  assert.equal(v("E-mail da coordenação"),"ead.defesacivil.santaluzia@ifmg.edu.br");

@@ -10,7 +10,7 @@ test("F7.41: licenciatura Betim não mistura formação técnica nem propaga pro
  assert.equal(b.length,23);assert.equal(b.filter(x=>x.tipo==="galeria").length,1);
  const bas=b.find(x=>x.tipo==="dados-basicos").campos;
  assert.ok(bas.some(x=>x.rotulo==="Duração"&&x.valor==="Informação incompleta"));
- assert.ok(bas.some(x=>x.rotulo==="Carga horária total"&&x.valor==="Informação incompleta"));
+ assert.ok(bas.some(x=>x.rotulo==="Carga horária"&&x.valor==="Informação incompleta"));
  assert.ok(bas.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="Informação incompleta"));
  const q=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");assert.deepEqual(q.linhas,[["Betim","Presencial, com atividades a distância","Noite","Informação incompleta","Informação incompleta","Informação incompleta"]]);
  assert.equal(b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.length,1);

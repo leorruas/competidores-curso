@@ -5,7 +5,7 @@ const data=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
 const c=data.courses.find(x=>x.id==="tecnico-em-sistemas-de-energia-renovavel-integrado"), b=c?.blocos||[];
 test("F7.19: Sistemas de Energia Renovável integrado Ibirité usa PPC 2026 e oferta 2027",()=>{
  assert.ok(c);assert.equal(c.nome,"Técnico em Sistemas de Energia Renovável");assert.equal(c.tipo,"Integrado");assert.deepEqual(c.campi,["Ibirité"]);
- assert.ok(b[0].campos.some(x=>x.rotulo==="Carga horária total"&&x.valor==="3.200 horas"));
+ assert.ok(b[0].campos.some(x=>x.rotulo==="Carga horária"&&x.valor==="3.200 horas"));
  assert.ok(b[0].campos.some(x=>x.rotulo==="Duração"&&x.valor==="3 anos"));
  assert.ok(b[0].campos.some(x=>x.rotulo==="Modalidade"&&x.valor.includes("8,3% EaD")));
  const t=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.deepEqual(t.linhas,[["Ibirité","Presencial (8,3% EaD)","Manhã e tarde","energia.ibirite@ifmg.edu.br"]]);

@@ -12,7 +12,7 @@ test("F7.8: Eletrônica Integrado Sabará segue PS2027 e não mistura subsequent
  assert.deepEqual(tbl.linhas.map(x=>x[0]),["Sabará"]);
  assert.equal(tbl.linhas[0][3],"coordeletro.sabara@ifmg.edu.br");
  const fields=b[0].campos;
- assert.ok(fields.some(x=>x.rotulo==="Carga horária total"&&x.valor==="3.250 horas"));
+ assert.ok(fields.some(x=>x.rotulo==="Carga horária"&&x.valor==="3.250 horas"));
  assert.ok(fields.some(x=>x.rotulo==="PPC / matriz para ingressantes em 2027"&&x.valor==="Informação incompleta"));
  assert.equal(b.find(x=>x.titulo==="Continue seus estudos no IFMG").conteudo,"");
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);

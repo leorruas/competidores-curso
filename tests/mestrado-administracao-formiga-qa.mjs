@@ -31,7 +31,7 @@ test("F8.3C: dados do regulamento PPGA 01-2026 e créditos não viram carga tota
   assert.equal(campo("Duração"),"24 meses");
   assert.equal(campo("Turno"),"Integral");
   assert.match(campo("Integralização"),/30 créditos/);
-  assert.equal(campo("Carga horária total"),"Informação incompleta");
+  assert.equal(campo("Carga horária"),"Informação incompleta");
   assert.equal(campo("E-mail da coordenação"),"Informação incompleta");
   assert.match(campo("Trabalho final"),/Dissertação com defesa/);
   const tabela=blocos.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Componente curricular");

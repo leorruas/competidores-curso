@@ -28,14 +28,14 @@ test("F7.P3: dois registros independentes, com nome comum e modalidade explícit
  }
  assert.equal(field(regular,"Turno"),"Manhã e tarde");
  assert.equal(field(eja,"Turno"),"Noite");
- assert.match(field(eja,"Tipo de curso"),/Educação de Jovens e Adultos/);
- assert.match(field(regular,"Tipo de curso"),/Ensino Médio/);
- assert.doesNotMatch(field(regular,"Tipo de curso"),/EJA/);
+ assert.equal(field(eja,"Tipo de oferta"),"Técnico integrado EJA");
+ assert.equal(field(regular,"Tipo de oferta"),"Técnico integrado");
+ assert.doesNotMatch(field(regular,"Tipo de oferta"),/EJA/);
 });
 test("F7.P3: eixo é Produção Industrial, demais campos sem invenção",()=>{
  for(const c of [regular,eja]){
   assert.equal(field(c,"Eixo tecnológico"),"Produção Industrial",c.id+":Eixo tecnológico");
-  for(const key of ["Duração mínima","Carga horária total","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
+  for(const key of ["Duração","Carga horária","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
    assert.equal(field(c,key),"Informação incompleta",c.id+":"+key);
   const table=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas[0]==="Campus");
   assert.deepEqual(table.colunas,["Campus","Modalidade","Turno","Duração mínima","Carga horária total","E-mail da coordenação"]);

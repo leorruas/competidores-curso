@@ -28,7 +28,7 @@ test("F8.6C: pós IA Ouro Preto é especialização em uma sede, não múltiplos
 test("F8.6C: 360h de disciplinas e 60h TCC integram 420h sem duplicação",()=>{
  assert.equal(campo("Eixo tecnológico"),"Informação e Comunicação");
  assert.equal(campo("Duração"),"20 meses");
- assert.match(campo("Carga horária total"),/420 horas, sendo 360 de disciplinas e 60 de TCC/);
+ assert.match(campo("Carga horária"),/420 horas, sendo 360 de disciplinas e 60 de TCC/);
  assert.match(campo("Trabalho final"),/obrigatório/);
  assert.match(campo("Trabalho final"),/60 horas/);
  assert.equal(campo("Estágio supervisionado"),"Informação incompleta");

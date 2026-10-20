@@ -5,7 +5,7 @@ const data=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
 const c=data.courses.find(x=>x.id==="tecnico-em-seguranca-do-trabalho-integrado"),b=c?.blocos||[];
 test("F7.20: segurança do trabalho integrado multicampi, contato verificável e currículo não especulado",()=>{
  assert.ok(c);assert.equal(c.nome,"Técnico em Segurança do Trabalho");assert.equal(c.tipo,"Integrado");assert.deepEqual(c.campi,["Conselheiro Lafaiete","Governador Valadares","Santa Luzia"]);
- assert.ok(b[0].campos.some(x=>x.rotulo==="Carga horária total"&&x.valor.includes("Informação incompleta")));
+ assert.ok(b[0].campos.some(x=>x.rotulo==="Carga horária"&&x.valor.includes("Informação incompleta")));
  const tab=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.deepEqual(tab.linhas.map(x=>x[0]),c.campi);
  assert.equal(tab.linhas[0][3],"Informação incompleta");assert.equal(tab.linhas[1][3],"coordenacao.tst.gv@ifmg.edu.br");assert.equal(tab.linhas[2][3],"Informação incompleta");
  assert.ok(!JSON.stringify(c).includes("3.275")&&!JSON.stringify(c).includes("3753")&&!JSON.stringify(c).includes("strabalho.santaluzia@ifmg.edu.br"));

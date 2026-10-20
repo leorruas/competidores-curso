@@ -6,7 +6,7 @@ const c=data.courses.find(x=>x.id==="tecnico-em-agrimensura-integrado"),b=c?.blo
 test("F7.16: Agrimensura integrado SJE tem oferta 2027, nome curto e dados não inventados",()=>{
  assert.ok(c);assert.equal(c.nome,"Técnico em Agrimensura");assert.equal(c.tipo,"Integrado");assert.deepEqual(c.campi,["São João Evangelista"]);
  const t=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.deepEqual(t.linhas.map(x=>x[0]),c.campi);assert.equal(t.linhas[0][3],"Informação incompleta");
- for(const label of ["Duração","Carga horária total","PPC / matriz dos ingressantes em 2027","E-mail da coordenação"])assert.ok(b[0].campos.some(x=>x.rotulo===label&&x.valor==="Informação incompleta"),label);
+ for(const label of ["Duração","Carga horária","PPC / matriz dos ingressantes em 2027","E-mail da coordenação"])assert.ok(b[0].campos.some(x=>x.rotulo===label&&x.valor==="Informação incompleta"),label);
  assert.ok(!JSON.stringify(c).includes("ctas.sje@ifmg.edu.br"));assert.ok(!JSON.stringify(c).includes("agrimensura.sje@ifmg.edu.br"));
  assert.equal(b.find(x=>x.titulo==="Continue seus estudos no IFMG").conteudo,"");assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });

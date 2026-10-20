@@ -17,8 +17,8 @@ test("F7.51: Subsequentemente distinto de Integrado, PPC vigente março 2024",()
  assert.deepEqual(validarEstruturaCurso(c),[]);
  assert.equal(campo("Modalidade"),"Presencial");
  assert.equal(campo("Turno"),"Noite");
- assert.equal(campo("Duração mínima"),"2 anos (4 semestres)");
- assert.equal(campo("Carga horária total"),"1.200 horas (1.110 horas de disciplinas e 90 horas de atividades complementares obrigatórias)");
+ assert.equal(campo("Duração"),"2 anos (4 semestres)");
+ assert.equal(campo("Carga horária"),"1.200 horas (1.110 horas de disciplinas e 90 horas de atividades complementares obrigatórias)");
  assert.equal(campo("Estágio supervisionado"),"Não obrigatório");
  assert.equal(campo("Trabalho de Conclusão de Curso"),"Não obrigatório");
  assert.equal(campo("E-mail da coordenação"),"Informação incompleta");

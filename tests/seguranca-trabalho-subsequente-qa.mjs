@@ -20,8 +20,8 @@ test("F7.53: subsequente próprio, três campi do PS2027, 24 blocos",()=>{
   assert.deepEqual(validarEstruturaCurso(c),[]);
   assert.equal(blocos.length,24);
   assert.equal(dados("Eixo tecnológico"),"Segurança");
-  assert.match(dados("Duração mínima"),/Governador Valadares: 3 semestres/);
-  assert.match(dados("Duração mínima"),/Ouro Preto e Santa Luzia: 4 semestres/);
+  assert.match(dados("Duração"),/Governador Valadares: 3 semestres/);
+  assert.match(dados("Duração"),/Ouro Preto e Santa Luzia: 4 semestres/);
   assert.ok(blocos.find(x=>x.tipo==="introducao").conteudo.length<=280);
   assert.deepEqual(blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
@@ -50,8 +50,8 @@ test("F7.53: não confunde estágio, TCC e complementares",()=>{
   assert.match(faq.itens[2].resposta,/120 horas de estágio supervisionado ou de TCC/);
   assert.match(faq.itens[2].resposta,/Governador Valadares.*120 horas para quem optar por realizá-lo/);
   assert.match(faq.itens[3].resposta,/4,54%/);
-  assert.match(dados("Carga horária total"),/1.095 horas de disciplinas/);
-  assert.match(dados("Carga horária total"),/1.200 horas de disciplinas e 120 horas de estágio ou TCC/);
+  assert.match(dados("Carga horária"),/1.095 horas de disciplinas/);
+  assert.match(dados("Carga horária"),/1.200 horas de disciplinas e 120 horas de estágio ou TCC/);
 });
 
 test("F7.53: experiência Vale 2025 é do subsequente GV, com galeria própria",()=>{

@@ -3,7 +3,7 @@ const data=JSON.parse(readFileSync("data/cursos-publicados.json","utf8")),c=data
 test("F7.11: Eletroeletrônica Integrado Ribeirão das Neves distingue oferta estadual",()=>{
  assert.ok(c);assert.deepEqual(c.campi,["Ribeirão das Neves"]);assert.equal(c.tipo,"Integrado");assert.equal(c.modalidade,"Presencial");
  const tab=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.equal(tab.linhas.length,1);assert.equal(tab.linhas[0][3],"Informação incompleta");
- assert.ok(b[0].campos.some(x=>x.rotulo==="Carga horária total"&&x.valor==="Informação incompleta"));
+ assert.ok(b[0].campos.some(x=>x.rotulo==="Carga horária"&&x.valor==="Informação incompleta"));
  assert.ok(!JSON.stringify(c).includes("guilherme.silva@ifmg.edu.br"));
  assert.ok(!JSON.stringify(c).includes("3.330 horas"));
  assert.equal(b.find(x=>x.titulo==="Continue seus estudos no IFMG").conteudo,"");

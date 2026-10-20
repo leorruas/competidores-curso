@@ -10,7 +10,7 @@ test("F7.27: bacharelado EAS Governador Valadares e PPC atualizado", () => {
   assert.equal(course.tipo, "Bacharelado");
   assert.deepEqual(course.campi, ["Governador Valadares"]);
   const fields = Object.fromEntries(blocks[0].campos.map(x => [x.rotulo, x.valor]));
-  assert.equal(fields["Carga horária total"], "3.600 horas");
+  assert.equal(fields["Carga horária"], "3.600 horas");
   assert.match(fields["PPC / matriz"], /2026/);
   assert.equal(fields["E-mail da coordenação"], "coordenacao.eas.gv@ifmg.edu.br");
   assert.match(fields["Turno"], /Manhã e noite/);

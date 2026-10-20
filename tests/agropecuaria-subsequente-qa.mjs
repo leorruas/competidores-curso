@@ -9,7 +9,7 @@ test("F7.43: Técnico Agropecuária Subsequente tem currículo 2025 e não mistu
  assert.ok(data.courses.some(x=>x.id==="tecnico-em-agropecuaria-integrado"&&x.tipo==="Integrado"));
  assert.equal(b.length,23);assert.equal(b.filter(x=>x.tipo==="galeria").length,1);
  const campos=b.find(x=>x.tipo==="dados-basicos").campos;
- for(const [k,v] of [["Carga horária total","1.620 horas"],["Estágio supervisionado obrigatório","240 horas"],["E-mail da coordenação","Informação incompleta"]])assert.ok(campos.some(x=>x.rotulo===k&&x.valor===v),k);
+ for(const [k,v] of [["Carga horária","1.620 horas"],["Estágio supervisionado obrigatório","240 horas"],["E-mail da coordenação","Informação incompleta"]])assert.ok(campos.some(x=>x.rotulo===k&&x.valor===v),k);
  const tbl=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
  assert.deepEqual(tbl.linhas,[["Bambuí","Presencial","Manhã e tarde","3 semestres","1.620 horas","Informação incompleta"]]);
  const f=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");

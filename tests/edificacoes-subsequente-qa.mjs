@@ -15,8 +15,8 @@ test("F7.48: integrado e subsequente distintos e PPC 2025 preservado",()=>{
  assert.ok(data.courses.some(x=>x.id==="tecnico-em-edificacoes-integrado"));
  assert.equal(b.length,23);
  assert.deepEqual(validarEstruturaCurso(c),[]);
- assert.match(campo("Carga horária total"),/1.210 horas.*1.080.*130/);
- assert.equal(campo("Duração mínima"),"2 anos (4 semestres)");
+ assert.match(campo("Carga horária"),/1.210 horas.*1.080.*130/);
+ assert.equal(campo("Duração"),"2 anos (4 semestres)");
  assert.equal(campo("Estágio supervisionado"),"Não obrigatório");
  assert.equal(campo("Trabalho de Conclusão de Curso"),"Não obrigatório");
  assert.equal(campo("E-mail da coordenação"),"Informação incompleta");

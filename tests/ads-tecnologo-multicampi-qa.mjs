@@ -5,7 +5,7 @@ const data=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
 const c=data.courses.find(x=>x.id==="analise-e-desenvolvimento-de-sistemas-tecnologo"),b=c?.blocos||[];
 test("F7.21: ADS tecnológico multicampi preserva PPCs e modalidade",()=>{
  assert.ok(c);assert.equal(c.nome,"Análise e Desenvolvimento de Sistemas");assert.equal(c.tipo,"Tecnólogo");assert.equal(c.nivel,"Graduação");assert.deepEqual(c.campi,["Ouro Preto","Ribeirão das Neves"]);
- assert.ok(b[0].campos.some(x=>x.rotulo==="Carga horária total"&&x.valor.includes("2.000 horas")));
+ assert.ok(b[0].campos.some(x=>x.rotulo==="Carga horária"&&x.valor.includes("2.000 horas")));
  assert.ok(b[0].campos.some(x=>x.rotulo==="Duração"&&x.valor.includes("3 anos")));
  const camp=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.ok(camp);assert.deepEqual(camp.linhas.map(x=>x[0]),c.campi);
  assert.ok(!camp.linhas[0][1].includes("28%"));assert.match(camp.linhas[1][1],/28% EaD/);

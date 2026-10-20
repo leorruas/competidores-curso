@@ -3,7 +3,7 @@ test("F7.15: Metalurgia integrado tem nome curto e ofertas distintas",()=>{
  assert.ok(c);assert.equal(c.nome,"Técnico em Metalurgia");assert.equal(c.tipo,"Integrado");assert.deepEqual(c.campi,["Ouro Branco","Ouro Preto"]);
  const tab=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.deepEqual(tab.linhas.map(x=>x[0]),c.campi);
  assert.equal(tab.linhas[0][3],"coord.integradometalurgia.obr@ifmg.edu.br");assert.equal(tab.linhas[1][3],"Informação incompleta");
- assert.ok(b[0].campos.some(x=>x.rotulo==="Carga horária total"&&x.valor.includes("Ouro Preto, 3.450 horas")&&x.valor.includes("Ouro Branco, Informação incompleta")));
+ assert.ok(b[0].campos.some(x=>x.rotulo==="Carga horária"&&x.valor.includes("Ouro Preto, 3.450 horas")&&x.valor.includes("Ouro Branco, Informação incompleta")));
  assert.ok(!JSON.stringify(c).includes("daniel.fraga@ifmg.edu.br"));
  assert.equal(b.find(x=>x.titulo==="Continue seus estudos no IFMG").conteudo,"");
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);

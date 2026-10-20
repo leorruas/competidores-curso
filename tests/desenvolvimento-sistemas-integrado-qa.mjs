@@ -29,7 +29,7 @@ test("F7.P1: duas ofertas na tabela com pendências próprias, sem importar PPC"
   ["Contagem","Presencial","Manhã e tarde","Informação incompleta","Informação incompleta","Informação incompleta"],
   ["Itabirito","Presencial","Manhã e tarde","Informação incompleta","Informação incompleta","Informação incompleta"]
  ]);
- for(const rotulo of ["Duração mínima","Carga horária total","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
+ for(const rotulo of ["Duração","Carga horária","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
    assert.equal(field(rotulo),"Informação incompleta");
  const i=b.indexOf(t);
  assert.equal(b[i+1].titulo,"Campus Contagem");

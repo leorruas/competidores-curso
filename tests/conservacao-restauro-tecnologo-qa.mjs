@@ -5,7 +5,7 @@ const data=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
 const c=data.courses.find(x=>x.id==="conservacao-e-restauro-tecnologo"),b=c?.blocos||[];
 test("F7.24: Conservação e Restauro é tecnólogo, PPC 2023 vigente, 2550h, três anos",()=>{
  assert.ok(c);assert.equal(c.nome,"Conservação e Restauro");assert.equal(c.tipo,"Tecnólogo");assert.equal(c.nivel,"Graduação");assert.deepEqual(c.campi,["Ouro Preto"]);
- const f=b[0].campos;assert.ok(f.some(x=>x.rotulo==="Carga horária total"&&x.valor==="2.550 horas"));
+ const f=b[0].campos;assert.ok(f.some(x=>x.rotulo==="Carga horária"&&x.valor==="2.550 horas"));
  assert.ok(f.some(x=>x.rotulo==="Duração"&&x.valor.includes("3 anos")));
  assert.ok(f.some(x=>x.rotulo==="PPC / matriz"&&x.valor.includes("2023")));
  assert.ok(f.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="Informação incompleta"));

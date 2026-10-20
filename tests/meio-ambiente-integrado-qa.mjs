@@ -4,7 +4,7 @@ test("F7.13: Meio Ambiente Integrado diferencia GV e nova oferta Santa Luzia",()
  const t=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.deepEqual(t.linhas.map(x=>x[0]),c.campi);
  assert.equal(t.linhas[0][3],"coordenacao.tma.gv@ifmg.edu.br");assert.equal(t.linhas[1][3],"Informação incompleta");
  assert.match(t.linhas[1][1],/10,73% EaD/);assert.ok(!/EaD/.test(t.linhas[0][1]));
- const basic=b[0].campos;assert.ok(basic.some(x=>x.rotulo==="Carga horária total"&&x.valor==="Informação incompleta"));
+ const basic=b[0].campos;assert.ok(basic.some(x=>x.rotulo==="Carga horária"&&x.valor==="Informação incompleta"));
  assert.ok(!JSON.stringify(c).includes("strabalho.santaluzia@ifmg.edu.br"));
  assert.ok(!JSON.stringify(c).includes("curso-tecnico-integrado-em-seguranca-do-trabalho"));
  assert.ok(!JSON.stringify(c).includes("3.420 horas"));

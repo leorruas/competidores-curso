@@ -11,7 +11,7 @@ test("F7.37: Logística Tecnólogo Sabará mantém formação e PPC 2025 própri
  assert.deepEqual(course.campi,["Sabará"]);
  assert.ok(data.courses.some(x=>x.id==="tecnico-em-logistica-subsequente"&&x.tipo==="Subsequente"));
  const basic=b.find(x=>x.tipo==="dados-basicos").campos;
- assert.ok(basic.some(x=>x.rotulo==="Carga horária total"&&x.valor==="1.600 horas"));
+ assert.ok(basic.some(x=>x.rotulo==="Carga horária"&&x.valor==="1.600 horas"));
  assert.ok(basic.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="logistica.sabara@ifmg.edu.br"));
  const offer=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
  assert.deepEqual(offer.linhas,[["Sabará","Presencial (20% de atividades EaD nas disciplinas)","Noite","5 semestres","1.600 horas","logistica.sabara@ifmg.edu.br"]]);

@@ -105,6 +105,8 @@ test("F8.3A: publicação da pós permite continuidade apenas com nível acima",
     assert.ok(curso);
     curso.nivel = "Pós-graduação";
     curso.tipo = "Especialização";
+    curso.blocos[0].campos[0].valor = "Cursos de pós-graduação";
+    curso.blocos[0].campos[1].valor = "Pós-graduação lato sensu";
     const inicio = curso.blocos.findIndex(b => b.titulo === "Continue seus estudos no IFMG");
     const fim = curso.blocos.findIndex(b => b.titulo === "Experiências e conquistas dos estudantes");
     curso.blocos.splice(inicio, fim - inicio,
@@ -128,6 +130,8 @@ test("F8.3A: publicação da pós permite omitir continuidade quando não há n�
     assert.ok(curso);
     curso.nivel = "Pós-graduação";
     curso.tipo = "Mestrado profissional";
+    curso.blocos[0].campos[0].valor = "Cursos de pós-graduação";
+    curso.blocos[0].campos[1].valor = "Mestrado";
     const inicio = curso.blocos.findIndex(b => b.titulo === "Continue seus estudos no IFMG");
     const fim = curso.blocos.findIndex(b => b.titulo === "Experiências e conquistas dos estudantes");
     curso.blocos.splice(inicio, fim - inicio);

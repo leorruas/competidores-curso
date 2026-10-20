@@ -5,7 +5,7 @@ const data=JSON.parse(readFileSync("data/cursos-publicados.json","utf8"));
 const c=data.courses.find(x=>x.id==="ciencia-da-computacao-bacharelado"),b=c?.blocos||[];
 test("F7.22: Ciência da Computação Bacharelado separa Formiga e Ibirité",()=>{
  assert.ok(c);assert.equal(c.nome,"Ciência da Computação");assert.equal(c.tipo,"Bacharelado");assert.deepEqual(c.campi,["Formiga","Ibirité"]);
- const campos=b[0].campos;assert.ok(campos.some(z=>z.rotulo==="Carga horária total"&&z.valor.includes("3.205")&&z.valor.includes("Informação incompleta")));
+ const campos=b[0].campos;assert.ok(campos.some(z=>z.rotulo==="Carga horária"&&z.valor.includes("3.205")&&z.valor.includes("Informação incompleta")));
  const t=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.deepEqual(t.linhas.map(x=>x[0]),c.campi);
  assert.match(t.linhas[0][2],/Manhã e tarde/);assert.match(t.linhas[1][2],/Noite/);assert.match(t.linhas[1][1],/38,3% EaD/);
  assert.equal(t.linhas[0][3],"coord.ccomp.formiga@ifmg.edu.br");assert.equal(t.linhas[1][3],"Informação incompleta");

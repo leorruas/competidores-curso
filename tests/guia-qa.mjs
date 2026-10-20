@@ -2051,3 +2051,41 @@ test("marcador Informação incompleta pode ser copiado em todos os campos corre
   assert.doesNotMatch(h.fieldHTML(settings,0,0),/data-copy-field=/,"configuração não vira botão de cópia");
   assert.doesNotMatch(h.fieldHTML({label:"Vazio",value:"",setting:false,rich:false},0,0),/data-copy-field=/,"valor vazio não é marcador");
 });
+
+test("todas as galerias de cursos orientam estilo Com bordas e legenda pelo título da imagem", () => {
+  const h=testContext();
+  let total=0;
+  for (const course of json.courses) {
+    for (const [i,block] of course.blocos.entries()) {
+      if (block.tipo !== "galeria") continue;
+      total++;
+      const fields=h.editorFields(block);
+      assert.equal(fields[0].label,"Estilo",course.id);
+      assert.equal(fields[0].value,"Com bordas",course.id);
+      assert.equal(fields[0].setting,true,course.id+": escolher estilo no Wagtail");
+      assert.equal(fields[1].label,"Imagens",course.id);
+      assert.equal(fields[1].value,"Informação incompleta",course.id);
+      const html=h.editorBlock(block,i,course);
+      assert.match(html,/Com bordas/,course.id);
+      assert.match(html,/legenda vem do título da imagem/,course.id);
+      assert.match(html,/coordenação/,course.id);
+      assert.match(html,/data-copy-field="1"/,course.id+": marcador copiável");
+      assert.equal((html.match(/data-copy-field=/g)||[]).length,1,course.id+": estilo não copiável");
+      assert.equal(h.blockPreview(block,i),"",course.id+": foto provisória não inventada");
+    }
+  }
+  assert.ok(total>=json.courses.length,"todos os cursos devem incluir pelo menos uma galeria");
+});
+
+test("legenda de galeria preenchida usa o título da imagem, sem botão para copiar uma legenda avulsa", () => {
+  const h=testContext();
+  const fields=h.editorFields({tipo:"galeria",itens:[
+    {legenda:"Aula prática — Campus Arcos",alt:"Estudantes em atividade prática",url:"https://example.edu/foto.jpg"}
+  ]});
+  assert.equal(fields[0].value,"Com bordas");
+  assert.equal(fields[1].label,"Imagem 1 · Título da imagem (legenda)");
+  assert.equal(fields[1].setting,true);
+  assert.equal(fields[1].value,"Aula prática — Campus Arcos");
+  assert.equal(fields[2].value,"Estudantes em atividade prática");
+  assert.equal(fields[3].setting,true);
+});

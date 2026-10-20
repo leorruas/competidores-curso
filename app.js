@@ -212,12 +212,15 @@
         raw("Link " + (i+1) + " · URL", x.url)
       ])
     ];
-    if (b.tipo === "galeria" && !b.itens.length) return [raw("Imagens", "Informação incompleta")];
-    if (b.tipo === "galeria") return b.itens.flatMap((x,i) => [
-      raw("Imagem " + (i+1) + " · Legenda", x.legenda),
-      raw("Imagem " + (i+1) + " · Texto alternativo", x.alt),
-      raw("Imagem " + (i+1) + " · URL de referência", x.url, true)
-    ]);
+    if (b.tipo === "galeria") return [
+      raw("Estilo", "Com bordas", true),
+      ...(b.itens.length ? b.itens.flatMap((x,i) => [
+        // A legenda vem do título cadastrado na imagem; não é texto a colar.
+        raw("Imagem " + (i+1) + " · Título da imagem (legenda)", x.legenda || "Informação incompleta", true),
+        raw("Imagem " + (i+1) + " · Texto alternativo", x.alt),
+        raw("Imagem " + (i+1) + " · URL de referência", x.url, true)
+      ]) : [raw("Imagens", "Informação incompleta")])
+    ];
     if (b.tipo === "tabela") return [{
       label:"Tabela",
       value:blockCopy(b),
@@ -259,7 +262,7 @@
       '<span class="block-badge" aria-hidden="true">' + String(i+1).padStart(2,"0") + '</span>' +
       '<header class="block-card-header"><h2 class="block-card-title" id="block-heading-' + i +
       '">' + escapeHTML(b.tipo === "faq" && b.titulo === "Informações dos campi" ? "FAQ · Informações dos campi" : blockName[b.tipo]) + '</h2></header>' +
-      (b.tipo === "galeria" ? '<div class="gallery-guidance" role="note"><strong>Galeria da experiência: ' + escapeHTML(b.referencia || "Experiência do curso") + '</strong><p>Insira qualquer imagem provisória para preencher esta galeria. A coordenação do curso deverá substituí-la pela imagem definitiva correspondente à experiência.</p></div>' : "") +
+      (b.tipo === "galeria" ? '<div class="gallery-guidance" role="note"><strong>Galeria da experiência: ' + escapeHTML(b.referencia || "Experiência do curso") + '</strong><p>Selecione o estilo <strong>Com bordas</strong>. As imagens definitivas ainda não estão disponíveis: use uma imagem provisória apenas para montar o bloco e solicite à coordenação a substituição antes da publicação. A <strong>legenda vem do título da imagem</strong> cadastrado no Wagtail; revise esse título ao selecionar a imagem. Não crie legendas ou fotos de experiências que ainda não foram fornecidas.</p></div>' : "") +
       '<div class="editor-fields">' + fields.map((field,j) => fieldHTML(field,i,j)).join("") + '</div>' +
       '</section>';
   }

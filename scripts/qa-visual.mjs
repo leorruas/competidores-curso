@@ -51,7 +51,21 @@ try {
       const combined = course.blocos.filter((b,i) => i>0 && b.tipo==="texto" &&
          ["Graduação","Pós-graduação"].includes(b.titulo) &&
          course.blocos[i-1]?.titulo==="Continue seus estudos no IFMG").length;
-       assert.equal(await page.locator("#course-body .block-card").count(), course.blocos.length - combined, course.id + " — blocos Wagtail");
+       const invisible=course.blocos.filter(b=>b.tipo==="galeria" && b.itens.length===0).length;
+       const achievementsIndex=course.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
+       let emptyAchievements=0;
+       if(achievementsIndex>=0){
+         let hasContent=false;
+         for(let i=achievementsIndex;i<course.blocos.length;i++){
+           const item=course.blocos[i];
+           if(i>achievementsIndex && item.tipo==="texto" && item.titulo)break;
+           const content=String(item.conteudo||"").trim();
+           if(item.tipo==="texto" && content && content!=="Informação incompleta")hasContent=true;
+         }
+         emptyAchievements=hasContent?0:1;
+       }
+       const expected=course.blocos.length-combined-invisible-emptyAchievements;
+       assert.equal(await page.locator("#course-body .block-card").count(),expected,course.id+" — blocos visíveis do guia");
        if(combined) {
          const i=course.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
          const rich=page.locator('#course-body #bloco-'+i+' .rich-example');

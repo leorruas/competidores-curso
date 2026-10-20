@@ -1487,7 +1487,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **abril de 2025**, o curso de **Ciência da Computação do Campus Formiga** divulgou a apresentação pública de um Trabalho de Conclusão de Curso sobre um **protótipo de aplicação web para extração de dados não estruturados**, desenvolvido por um estudante da graduação. O trabalho investigou formas de transformar informações não estruturadas em dados úteis para automação e análise."
+          "conteudo": "Em **abril de 2025**, o **Campus Formiga** divulgou um TCC de Ciência da Computação sobre um **protótipo web para extrair dados de documentos digitalizados**. O resumo acadêmico descreve testes com três métodos, com taxas de acerto de **96,67% (ROI), 86,67% (YOLO) e 80% (Llama 3)** nos documentos avaliados. A fonte apresenta o projeto e seus resultados experimentais, mas **não confirma a realização ou aprovação da defesa**."
         },
         {
           "tipo": "galeria",
@@ -1496,7 +1496,7 @@
         },
         {
           "tipo": "texto",
-          "conteudo": "Em **julho de 2026**, a agenda de apresentações de TCC do bacharelado em **Ciência da Computação de Formiga** incluiu um **protótipo de sistema web para gestão de projetos de pesquisa em um Polo de Inovação do IFMG**. O trabalho abordou a organização de propostas, equipes, orçamentos e registros de horas em uma aplicação, para substituir procedimentos dispersos em planilhas."
+          "conteudo": "Em **julho de 2026**, um TCC de **Ciência da Computação do Campus Formiga** descreveu o desenvolvimento de um **protótipo web para gestão de projetos de pesquisa** de um Polo de Inovação. O resumo da pesquisa apresenta funcionalidades para propostas, equipes, orçamentos e registro de horas, com **Spring Boot, Angular e MySQL**. A notícia é uma agenda de defesa e **não comprova a implantação do sistema no Polo nem a aprovação do trabalho**."
         },
         {
           "tipo": "galeria",
@@ -4363,12 +4363,8 @@
         },
         {
           "tipo": "texto",
-          "conteudo": "Em **Governador Valadares**, o bacharelado em Engenharia de Produção teve seu **reconhecimento renovado pela Portaria SERES/MEC nº 16, de 2 de fevereiro de 2026**.",
+          "conteudo": "Em **2025**, estudantes de Engenharia de Produção de **Bambuí** lideraram a **revitalização do espaço do Diretório Acadêmico do curso**, com apoio de professores e contribuições de empresas parceiras em equipamentos. O ambiente renovado passou a apoiar a convivência e a organização estudantil.",
           "titulo": "Experiências e conquistas dos estudantes"
-        },
-        {
-          "tipo": "texto",
-          "conteudo": "Em **2025**, estudantes de Engenharia de Produção de **Bambuí** lideraram a **revitalização do espaço do Diretório Acadêmico do curso**, com apoio de professores e contribuições de empresas parceiras em equipamentos. O ambiente renovado passou a apoiar a convivência e a organização estudantil."
         },
         {
           "tipo": "galeria",

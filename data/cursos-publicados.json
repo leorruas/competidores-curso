@@ -9411,6 +9411,253 @@
       ]
     },
     {
+      "id": "mestrado-profissional-em-sustentabilidade-e-tecnologia-ambiental",
+      "nome": "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+      "nivel": "Pós-graduação",
+      "tipo": "Mestrado profissional",
+      "campi": [
+        "Bambuí"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Categoria",
+              "valor": "Cursos de pós-graduação"
+            },
+            {
+              "rotulo": "Tipo de oferta",
+              "valor": "Mestrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "24 meses"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "O mestrado desenvolve pesquisas aplicadas sobre conservação da biodiversidade, tecnologias ambientais e gestão sustentável de recursos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com possibilidade de disciplinas híbridas conforme programação acadêmica"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Titulação",
+              "valor": "Mestre em Sustentabilidade e Tecnologia Ambiental"
+            },
+            {
+              "rotulo": "Área de concentração",
+              "valor": "Ciências Ambientais"
+            },
+            {
+              "rotulo": "Integralização",
+              "valor": "Mínimo de 24 créditos; cada crédito equivale a 15 horas acadêmicas"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Exame de qualificação",
+              "valor": "Obrigatório"
+            },
+            {
+              "rotulo": "Trabalho final",
+              "valor": "Dissertação com defesa, Produção Técnica e Tecnológica e artigo submetido a revista científica"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "coordenacao.mpsta@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental",
+          "conteudo": "Desenvolva **pesquisas aplicadas a problemas ambientais**, conectando conservação da biodiversidade, tecnologias para tratamento e aproveitamento de recursos, gestão ambiental e sustentabilidade. O programa reúne profissionais de diferentes áreas na elaboração de estudos e soluções para organizações e territórios."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Pesquise biodiversidade, tecnologias ambientais e gestão de recursos em um mestrado profissional com projetos aplicados e colaboração entre diferentes áreas do conhecimento."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o programa",
+          "conteudo": "O mestrado é destinado a **pessoas com graduação concluída** que desejam aprofundar estudos e desenvolver pesquisas sobre questões ambientais. Sua abordagem multidisciplinar permite reunir experiências profissionais e acadêmicas relacionadas à ecologia, ao uso de recursos, à tecnologia e ao planejamento ambiental."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Linhas de pesquisa",
+          "conteudo": "As pesquisas do programa estão organizadas em **três linhas**, que aproximam estudos de ecossistemas, desenvolvimento tecnológico e planejamento de ações ambientais."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Linha de pesquisa",
+            "Temas investigados"
+          ],
+          "linhas": [
+            [
+              "Ecologia Aplicada",
+              "Biodiversidade, funcionamento de ecossistemas, conservação, agroecologia e relações entre espécies e ambientes."
+            ],
+            [
+              "Tecnologias Ambientais",
+              "Sistemas de energia, tratamento e aproveitamento de resíduos, tecnologias para uso de recursos e soluções ambientais."
+            ],
+            [
+              "Planejamento e Gestão Ambiental",
+              "Gestão de territórios e recursos hídricos, serviços ecossistêmicos, avaliação de impactos e políticas de sustentabilidade."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação relaciona **desenvolvimento sustentável, métodos de pesquisa, ecologia, tecnologias ambientais e planejamento**. Os componentes podem abordar gestão de resíduos sólidos, qualidade do ar, recuperação de áreas degradadas, energias renováveis e economia ecológica. A escolha das disciplinas optativas acompanha o projeto de pesquisa e a programação de cada semestre."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Etapa da formação",
+            "Como funciona"
+          ],
+          "linhas": [
+            [
+              "Créditos acadêmicos",
+              "Integralização de pelo menos 24 créditos, conforme a organização curricular do programa."
+            ],
+            [
+              "Disciplinas",
+              "Componentes obrigatórios e optativos ligados à área ambiental e ao tema de pesquisa."
+            ],
+            [
+              "Qualificação",
+              "Apresentação e avaliação do desenvolvimento da pesquisa."
+            ],
+            [
+              "Trabalho final",
+              "Elaboração, defesa e entrega da dissertação, com produção técnica e tecnológica e submissão de artigo científico."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Como acontecem as aulas e atividades",
+          "conteudo": "O programa é **presencial**, com encontros acadêmicos concentrados e atividades de pesquisa orientada. Conforme o planejamento de cada disciplina, parte das atividades pode ocorrer em **formato híbrido**, inclusive em outros campi do IFMG e instituições parceiras. A programação de locais e encontros depende dos componentes ofertados no semestre."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Atividades de pesquisa, laboratórios ou trabalhos de campo ligados ao Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental · Campus Bambuí.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Dissertação e produção técnica",
+          "conteudo": "Ao longo da formação, você desenvolve uma **pesquisa orientada** que passa pelo exame de qualificação e pela **defesa da dissertação**. O trabalho final é acompanhado de **Produção Técnica e Tecnológica** relacionada à investigação e de **submissão de artigo científico**, aproximando os resultados acadêmicos de problemas ambientais concretos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Projetos de pesquisa e temas ambientais",
+          "conteudo": "Os projetos podem investigar **conservação de ecossistemas, impactos ambientais, saneamento, recursos hídricos, agroecossistemas, resíduos e alternativas energéticas**. A linha de Tecnologias Ambientais, por exemplo, contempla estudos ligados a sistemas energéticos, novos materiais e uso eficiente de recursos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece o mestrado",
+          "conteudo": "O **Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental** tem sede no **Campus Bambuí**. O programa reúne docentes de diferentes campi e de instituições colaboradoras, com atividades presenciais e possibilidade de disciplinas híbridas de acordo com o planejamento acadêmico."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Duração",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Bambuí",
+              "Presencial, com disciplinas que podem incluir atividades híbridas",
+              "24 meses",
+              "coordenacao.mpsta@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Bambuí",
+          "conteudo": "No **Campus Bambuí**, a formação está ligada à investigação de **problemas ambientais e possibilidades de transformação de práticas profissionais**. A participação de docentes e pesquisadores de outros campi e instituições permite relacionar diferentes ambientes, métodos e campos de conhecimento aos projetos dos mestrandos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, publicações e oportunidades",
+          "conteudo": "O mestrado articula pesquisa, produção de conhecimento e desenvolvimento de **soluções técnicas e tecnológicas**. Os estudos podem incluir atividades de campo, análises laboratoriais, avaliação de impactos, elaboração de produtos técnicos e publicação de resultados, conforme as necessidades de cada projeto."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **2026**, a mestranda **Jeicilene Barros Carvalho** participou da publicação de um estudo sobre **vespas sociais em áreas próximas a uma agroindústria canavieira de Bambuí**, em coautoria com pesquisadores do IFMG e de instituições parceiras. O trabalho, publicado na revista *Acta Biológica Paranaense*, registrou **69 indivíduos de nove espécies** e discutiu o papel ecológico dessas vespas no ambiente estudado."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Pesquisa de Jeicilene Barros Carvalho e coautores sobre diversidade de vespas sociais e conservação da biodiversidade · 2026. A matéria institucional apresenta fotografia de campo, cujo direito de reprodução precisa ser confirmado.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Que temas podem ser pesquisados no mestrado?",
+              "resposta": "As três linhas são **Ecologia Aplicada, Tecnologias Ambientais e Planejamento e Gestão Ambiental**. Os projetos podem tratar de biodiversidade, conservação, resíduos, recursos hídricos, energias renováveis e políticas ambientais, entre outros assuntos relacionados às linhas."
+            },
+            {
+              "pergunta": "Como funciona a integralização?",
+              "resposta": "A formação exige **pelo menos 24 créditos**, além de **qualificação, dissertação, produção técnica e tecnológica e submissão de artigo científico**. Cada crédito corresponde a 15 horas de atividade acadêmica."
+            },
+            {
+              "pergunta": "As disciplinas são todas realizadas em Bambuí?",
+              "resposta": "O programa tem **sede em Bambuí e modalidade presencial**. Algumas disciplinas podem reunir atividades híbridas e ocorrer em outros campi ou instituições colaboradoras, conforme o calendário e o plano de ensino."
+            },
+            {
+              "pergunta": "A dissertação é obrigatória?",
+              "resposta": "Sim. O mestrando realiza pesquisa orientada, participa do exame de qualificação e deve **defender e entregar a dissertação**, com os demais resultados acadêmicos exigidos pelo programa."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "O ingresso no **Mestrado Profissional em Sustentabilidade e Tecnologia Ambiental** ocorre por **processo seletivo específico** para pessoas com graduação concluída. A seleção considera um pré-projeto vinculado às linhas e aos projetos de pesquisa do programa, além de outras etapas definidas no edital correspondente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O mestrado desenvolve competências para **investigar problemas ambientais, interpretar dados, avaliar impactos e propor soluções para o uso e a gestão de recursos**. A formação permite trabalhar com métodos de pesquisa, elaboração de projetos, análise de alternativas e comunicação de resultados técnicos e científicos.\n\nEssas competências podem ser aplicadas a atividades de **gestão ambiental, consultoria, conservação, saneamento, planejamento territorial, pesquisa, inovação e desenvolvimento de tecnologias ambientais** em organizações públicas, privadas e do terceiro setor. A relação entre pesquisa e produção técnica permite examinar problemas reais e formular respostas sustentadas por evidências."
+        }
+      ]
+    },
+    {
       "id": "processos-gerenciais-tecnologo",
       "nome": "Processos Gerenciais",
       "nivel": "Graduação",

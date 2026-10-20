@@ -3033,16 +3033,6 @@
         },
         {
           "tipo": "texto",
-          "titulo": "Semana da Educação Física 2026",
-          "conteudo": "Entre **1º e 3 de setembro de 2026**, o curso realizou a **3ª Semana da Educação Física** no Campus Bambuí. Estudantes participaram de palestras e conversas sobre identidade docente, arbitragem, carreira e possibilidades de trabalho. A programação incluiu um relato de estudante sobre experiências com a rede municipal de ensino."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "3ª Semana da Educação Física · Bambuí · setembro de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
           "titulo": "Perguntas frequentes",
           "conteudo": "Veja orientações sobre ingresso, cotas, assistência estudantil e atividades do curso."
         },
@@ -3992,16 +3982,6 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **2025**, a programação de Trabalhos de Conclusão de Curso do **Campus Betim** incluiu o projeto **“Implementação de controlador PID em um sistema barra-bola utilizando Arduino”**, de estudante do Bacharelado em Engenharia de Controle e Automação. A apresentação foi agendada para dezembro de 2025, no Laboratório de Automação 1. O trabalho demonstra uma aplicação acadêmica de programação, sensores e controle de sistemas dinâmicos."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Projeto de TCC sobre controlador PID e sistema barra-bola com Arduino · Engenharia de Controle e Automação Betim · programação de 2025",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Projeto Relatividade em Cena em Sabará",
           "conteudo": "Em **julho de 2025**, estudantes de **Engenharia de Controle e Automação do Campus Sabará** desenvolveram o projeto **“Relatividade em Cena”**, com uma proposta de oficina para aproximar estudantes dos cursos técnicos de conceitos da Teoria da Relatividade por meio de atividades criativas. A programação divulgada previa encontros em 28 e 29 de julho."
         },
         {
@@ -4684,16 +4664,6 @@
         {
           "tipo": "galeria",
           "referencia": "Apresentações de estudantes de Engenharia Elétrica de Formiga no COBENGE · setembro de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Semana da Engenharia Elétrica em Ipatinga",
-          "conteudo": "De **30 de junho a 4 de julho de 2025**, o **Campus Ipatinga** realizou a **Semana da Engenharia Elétrica**, reunindo estudantes, professores e profissionais. A programação teve apresentações de pesquisas, minicursos, oficinas, palestras e visita técnica, aproximando as atividades do curso de ambientes profissionais."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Semana da Engenharia Elétrica · Campus Ipatinga · junho e julho de 2025",
           "itens": []
         },
         {

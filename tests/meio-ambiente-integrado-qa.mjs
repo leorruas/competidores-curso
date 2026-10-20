@@ -11,15 +11,14 @@ test("F7.13: Meio Ambiente Integrado diferencia GV e nova oferta Santa Luzia",()
  assert.equal(b.find(x=>x.titulo==="Continue seus estudos no IFMG").conteudo,"");
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
-test("F7.13: somente duas experiências verificáveis 2025 em GV, com galerias separadas",()=>{
- const g=b.map((x,i)=>x.tipo==="galeria"?{...x,i}:null).filter(Boolean);
- assert.equal(g.length,3);assert.equal(new Set(g.map(x=>x.referencia)).size,3);
- assert.ok(g.every(x=>Array.isArray(x.itens)&&x.itens.length===0&&b[x.i-1].tipo==="texto"));
- const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes"),j=b.findIndex((x,k)=>k>i&&x.titulo==="Perguntas frequentes");
- const ex=b.slice(i,j).filter(x=>x.tipo==="texto"&&x.conteudo);
- assert.equal(ex.length,2);assert.ok(ex.every(x=>b[b.indexOf(x)+1].tipo==="galeria"));
- assert.match(ex[0].conteudo,/209 metros/);assert.match(ex[0].conteudo,/2025/);
- assert.match(ex[1].conteudo,/Baguari/);assert.match(ex[1].conteudo,/Edificações/);assert.match(ex[1].conteudo,/Engenharia Ambiental e Sanitária/);
- assert.ok(ex.every(x=>!x.conteudo.includes("Santa Luzia")));
+test("F9.4: prêmio da Jornada de Foguetes sem visita técnica na seção de conquistas",()=>{
+ const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
+ assert.ok(i>0);
+ assert.match(b[i].conteudo,/troféu de campeão/);
+ assert.match(b[i].conteudo,/209 metros/);
+ assert.match(b[i].conteudo,/Governador Valadares/);
+ assert.equal(b[i+1].titulo,"Perguntas frequentes");
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,1);
+ assert.doesNotMatch(JSON.stringify(c),/Visita à Usina Hidrelétrica de Baguari/);
  assert.ok(b.find(x=>x.tipo==="faq"&&!x.titulo).itens.every(x=>!/^O que (é|são)/i.test(x.pergunta)));
 });

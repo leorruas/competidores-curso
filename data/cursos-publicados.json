@@ -5542,6 +5542,274 @@
       ]
     },
     {
+      "id": "especializacao-em-analise-estrategica-de-dados",
+      "nome": "Especialização em Análise Estratégica de Dados",
+      "nivel": "Pós-graduação",
+      "tipo": "Especialização",
+      "campi": [
+        "Formiga"
+      ],
+      "modalidade": "EaD",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Categoria",
+              "valor": "Cursos de pós-graduação"
+            },
+            {
+              "rotulo": "Tipo de oferta",
+              "valor": "Pós-graduação lato sensu"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "375 horas"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Três semestres"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "A especialização articula estatística, Python, aprendizado de máquina e comunicação de resultados para apoiar decisões fundamentadas em dados."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Educação a distância (EaD)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Formiga"
+            },
+            {
+              "rotulo": "Titulação",
+              "valor": "Especialista em Análise Estratégica de Dados"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Trabalho final",
+              "valor": "TCC obrigatório; carga horária específica: Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Especialização em Análise Estratégica de Dados",
+          "conteudo": "Aprenda a **analisar dados para apoiar decisões em organizações**. A especialização articula estatística, programação em Python, aprendizado de máquina e comunicação dos resultados para estudar problemas de gestão e de diferentes áreas de atividade."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude estatística, Python, aprendizado de máquina e projetos aplicados em uma especialização a distância voltada à análise de dados e à tomada de decisões."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A especialização é destinada a pessoas com **diploma de curso superior** nas áreas de Ciência, Tecnologia, Engenharia, Gestão, Administração, Matemática, Estatística e áreas afins. O percurso aprofunda técnicas de investigação, interpretação de dados e aplicação dos resultados a situações de trabalho."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação passa por **fundamentos de probabilidade e estatística, programação em Python, análise estatística aplicada, aprendizado de máquina, projetos e storytelling**. As disciplinas relacionam métodos quantitativos e comunicação de resultados, com atividades voltadas à análise e à solução de problemas."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Semestre",
+            "Componente curricular",
+            "Carga horária"
+          ],
+          "linhas": [
+            [
+              "Primeiro",
+              "Ambientação à Plataforma EaD",
+              "15 horas"
+            ],
+            [
+              "Primeiro",
+              "Introdução e Pesquisa para Análise Estratégica de Dados",
+              "30 horas"
+            ],
+            [
+              "Primeiro",
+              "Introdução à Probabilidade e Estatística",
+              "60 horas"
+            ],
+            [
+              "Primeiro",
+              "Python para Análise Estratégica de Dados",
+              "60 horas"
+            ],
+            [
+              "Primeiro",
+              "Projeto Aplicado I",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Estatística Aplicada em Análise de Dados",
+              "60 horas"
+            ],
+            [
+              "Segundo",
+              "Aprendizado de Máquina",
+              "60 horas"
+            ],
+            [
+              "Segundo",
+              "Projeto Aplicado II",
+              "30 horas"
+            ],
+            [
+              "Terceiro",
+              "Storytelling",
+              "30 horas"
+            ],
+            [
+              "**Total**",
+              "**Três semestres**",
+              "**375 horas**"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Aprendizagem a distância",
+          "conteudo": "A especialização é realizada na modalidade **EaD** e utiliza o **Moodle** para organizar materiais, exercícios, avaliações e atividades síncronas e assíncronas. Os estudos incluem interpretação de dados, programação, análise de resultados e elaboração de projetos aplicados."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "atividades de estudo e de análise de dados na modalidade EaD, Campus Formiga.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Trabalho de Conclusão de Curso",
+          "conteudo": "O **Trabalho de Conclusão de Curso (TCC)** é obrigatório e pode ser desenvolvido como **relatório técnico, artigo científico indexado ou artigo apresentado em congresso técnico** sobre tema relacionado à formação. O TCC é orientado por docente do IFMG e desenvolvido sobre temas relacionados à área da especialização."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Projetos aplicados à análise de dados",
+          "conteudo": "As disciplinas **Projeto Aplicado I e II** permitem relacionar os conteúdos de estatística, programação e aprendizado de máquina a problemas que envolvem coleta, tratamento, interpretação e apresentação de dados. A organização do curso aproxima técnicas de investigação e análise das decisões tomadas em diferentes contextos profissionais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Competências desenvolvidas",
+          "conteudo": "Ao longo da formação, você estuda formas de **formular questões de análise, organizar conjuntos de dados, aplicar métodos estatísticos e computacionais, interpretar padrões e comunicar resultados**. A combinação de Python, aprendizado de máquina e storytelling ajuda a elaborar análises que possam orientar decisões."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece a especialização",
+          "conteudo": "A **Especialização em Análise Estratégica de Dados** é oferecida pelo **Campus Formiga**, a distância, com duração de três semestres e carga horária de 375 horas."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Duração",
+            "Carga horária",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Formiga",
+              "Educação a distância",
+              "Três semestres",
+              "375 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Formiga",
+          "conteudo": "No **Campus Formiga**, a especialização reúne professores das áreas de Computação, Estatística, Matemática, Engenharias e Gestão. Os conteúdos são desenvolvidos em ambiente virtual, com disciplinas que envolvem programação, estatística, projetos e análise de problemas organizacionais."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, projetos e oportunidades",
+          "conteudo": "Os **projetos aplicados e o TCC** permitem investigar questões relacionadas à análise de dados, desde a definição do problema e a escolha de métodos até a apresentação dos resultados. Essa trajetória pode incluir estudos sobre processos organizacionais, avaliação de informações e apoio a decisões, conforme o tema de cada trabalho."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": ""
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Nível",
+            "Relação com o curso"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Administração",
+              "Formiga",
+              "Mestrado profissional",
+              "Pesquisas aplicadas a Finanças e tomada de decisões podem usar métodos quantitativos, econometria e análise de dados para estudar problemas organizacionais e financeiros."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Que formação é aceita para ingresso?",
+              "resposta": "O curso se destina a graduados em Ciência, Tecnologia, Engenharia, Gestão, Administração, Matemática, Estatística e áreas afins. A seleção específica define a documentação necessária."
+            },
+            {
+              "pergunta": "Quais ferramentas e métodos são abordados?",
+              "resposta": "A formação inclui **Python, estatística, análise aplicada, aprendizado de máquina, projetos e storytelling**, com atividades desenvolvidas no ambiente virtual do curso."
+            },
+            {
+              "pergunta": "Como funciona o TCC?",
+              "resposta": "O TCC é obrigatório e pode ser apresentado como relatório técnico, artigo científico indexado ou artigo apresentado em congresso técnico relacionado à área."
+            },
+            {
+              "pergunta": "A especialização inclui projetos práticos?",
+              "resposta": "Sim. **Projeto Aplicado I e II** são disciplinas do percurso formativo e permitem desenvolver análises que relacionam os métodos estudados a problemas e decisões."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "O ingresso na **Especialização em Análise Estratégica de Dados** ocorre por **processo seletivo próprio**, destinado a pessoas com graduação nas áreas contempladas pelo curso. As regras e a documentação exigida são divulgadas no edital correspondente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A especialização amplia conhecimentos para **analisar informações, identificar padrões, avaliar resultados e produzir estudos que apoiem decisões**. Métodos estatísticos e computacionais podem ser usados para examinar processos, prever comportamentos, identificar tendências e comunicar evidências a equipes e gestores.\n\nEssas competências podem contribuir para atividades em **empresas, organizações públicas, instituições de pesquisa, serviços, indústria e áreas de gestão, tecnologia e análise de dados**, conforme a formação anterior e as atribuições profissionais. O uso de Python, aprendizado de máquina e técnicas de comunicação de resultados permite aproximar problemas organizacionais de análises fundamentadas em dados."
+        }
+      ]
+    },
+    {
       "id": "especializacao-em-gestao-da-manutencao",
       "nome": "Especialização em Gestão da Manutenção",
       "nivel": "Pós-graduação",

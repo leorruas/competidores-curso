@@ -5744,6 +5744,273 @@
       ]
     },
     {
+      "id": "especializacao-em-inteligencia-artificial",
+      "nome": "Especialização em Inteligência Artificial",
+      "nivel": "Pós-graduação",
+      "tipo": "Especialização",
+      "campi": [
+        "Ouro Preto"
+      ],
+      "modalidade": "Presencial",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Curso",
+              "valor": "Especialização em Inteligência Artificial"
+            },
+            {
+              "rotulo": "Nível",
+              "valor": "Pós-graduação lato sensu · Especialização"
+            },
+            {
+              "rotulo": "Titulação",
+              "valor": "Especialista em Inteligência Artificial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
+            },
+            {
+              "rotulo": "Campus",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com 20% das horas das disciplinas em EaD"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "20 meses"
+            },
+            {
+              "rotulo": "Carga horária total",
+              "valor": "420 horas, sendo 360 de disciplinas e 60 de TCC"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Trabalho final",
+              "valor": "Trabalho de Conclusão de Curso obrigatório, com elaboração, orientação e defesa, 60 horas"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "inteligencia.artificial@ifmg.edu.br"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Especialização em Inteligência Artificial",
+          "conteudo": "A especialização aprofunda conhecimentos para **desenvolver e avaliar soluções de inteligência artificial**. A formação relaciona estatística, programação, aprendizado de máquina, redes neurais, análise de informações e questões éticas ligadas à aplicação dessas tecnologias."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude programação, modelos de aprendizado de máquina e aplicações de IA em uma especialização que combina encontros presenciais, atividades digitais e TCC aplicado."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "A especialização é voltada a pessoas com **graduação concluída**, especialmente em áreas de Computação, Engenharias, Ciência de Dados, Estatística e formações relacionadas. As atividades exigem estudo de métodos computacionais e quantitativos para analisar problemas e elaborar soluções."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "O percurso inclui **estatística, Python para Ciência de Dados, programação genética, aprendizado de máquina, redes neurais, visão computacional, recuperação de informação e previsão de séries temporais**. Também aborda **ética em inteligência artificial, sociedade e algoritmos, metodologia científica e projetos**."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Etapa",
+            "Componente curricular",
+            "Carga horária"
+          ],
+          "linhas": [
+            [
+              "Primeiro período",
+              "Estatística Geral e Modelos Estatísticos",
+              "30 horas"
+            ],
+            [
+              "Primeiro período",
+              "Ética em Inteligência Artificial",
+              "30 horas"
+            ],
+            [
+              "Primeiro período",
+              "Python para Ciência de Dados",
+              "30 horas"
+            ],
+            [
+              "Primeiro período",
+              "Metodologia Científica e Produção de Texto",
+              "30 horas"
+            ],
+            [
+              "Primeiro período",
+              "Programação Genética",
+              "30 horas"
+            ],
+            [
+              "Primeiro período",
+              "Aprendizado de Máquina",
+              "30 horas"
+            ],
+            [
+              "Segundo período",
+              "Redes Neurais e Aprendizado Profundo",
+              "30 horas"
+            ],
+            [
+              "Segundo período",
+              "Sociedade e Algoritmos",
+              "30 horas"
+            ],
+            [
+              "Segundo período",
+              "Projetos",
+              "30 horas"
+            ],
+            [
+              "Segundo período",
+              "Análise e Previsão de Séries Temporais",
+              "30 horas"
+            ],
+            [
+              "Terceiro período",
+              "Visão Computacional",
+              "30 horas"
+            ],
+            [
+              "Terceiro período",
+              "Recuperação da Informação",
+              "30 horas"
+            ],
+            [
+              "Trabalho final",
+              "Trabalho de Conclusão de Curso",
+              "60 horas"
+            ],
+            [
+              "**Total**",
+              "**Doze disciplinas e TCC**",
+              "**420 horas**"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Como acontecem as aulas",
+          "conteudo": "A formação tem **modalidade presencial com parte da carga das disciplinas em EaD**. A organização acadêmica combina atividades no Campus Ouro Preto, encontros remotos síncronos e estudos em ambiente virtual. Os dias de encontro e as plataformas utilizadas são definidos na programação da oferta."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Ambiente de estudos, atividade de laboratório ou trabalho com tecnologias de IA ligados à especialização no Campus Ouro Preto.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Trabalho de Conclusão de Curso",
+          "conteudo": "O **TCC obrigatório corresponde a 60 horas da formação** e envolve elaboração, orientação e apresentação do trabalho perante uma banca. O projeto pode assumir formato de monografia, artigo ou produto técnico, conforme as regras acadêmicas. O estudante relaciona os conhecimentos estudados a um problema de pesquisa ou de aplicação da inteligência artificial."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Projetos e soluções de inteligência artificial",
+          "conteudo": "A disciplina **Projetos** e o TCC permitem explorar soluções que utilizam modelos computacionais e técnicas de análise de dados. O trabalho pode envolver **classificação, previsão, reconhecimento de padrões, tratamento de informações ou interação com sistemas digitais**, conforme as perguntas investigadas e a orientação acadêmica."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Ética e impacto social",
+          "conteudo": "A formação inclui estudos de **ética em inteligência artificial** e **sociedade e algoritmos**, que ampliam a análise das consequências do uso dessas tecnologias. O curso permite discutir responsabilidade no tratamento de informações, limites dos sistemas automatizados e efeitos das decisões apoiadas por algoritmos."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece a especialização",
+          "conteudo": "A **Especialização em Inteligência Artificial** é oferecida pelo **Campus Ouro Preto**, com atividades presenciais e parte da carga de disciplinas organizada a distância. O percurso possui 420 horas, incluindo 60 horas para o trabalho final, distribuídas ao longo de 20 meses."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Duração",
+            "Carga horária",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Ouro Preto",
+              "Presencial, com 20% da carga das disciplinas em EaD",
+              "20 meses",
+              "420 horas, incluindo TCC de 60 horas",
+              "inteligencia.artificial@ifmg.edu.br"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Ouro Preto",
+          "conteudo": "A formação no **Campus Ouro Preto** reúne áreas como computação, automação, análise de dados e estudos sobre aplicações de IA. A organização acadêmica permite desenvolver as disciplinas e orientar projetos com participação de docentes de diferentes áreas, mantendo a sede do curso em Ouro Preto."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, projetos e oportunidades",
+          "conteudo": "As atividades de pesquisa e os projetos da especialização podem envolver **experimentação com modelos computacionais, análise de conjuntos de dados e desenvolvimento de produtos técnicos**. A definição do tema, das ferramentas e dos resultados depende da orientação e do desenvolvimento de cada trabalho. O TCC cria espaço para relacionar métodos de IA a situações investigadas pelo estudante."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": "Em **2025**, a estudante **Ivanete Fátima de Azevedo** desenvolveu o **chatbot Aurora** como Trabalho de Conclusão de Curso da especialização. A assistente virtual foi incorporada ao **Diário da Mãe em Construção**, iniciativa ligada a uma rede de apoio materno em Ouro Preto, para facilitar o acesso pelo WhatsApp a cartas e conteúdos de acolhimento.\n\nO projeto passou a ser utilizado em março de 2025 e foi desenvolvido com orientação acadêmica do IFMG. A experiência mostra uma aplicação de inteligência artificial voltada ao acesso à informação e à interação com uma comunidade."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "Chatbot Aurora, projeto de TCC de Ivanete Fátima de Azevedo, 2025, Campus Ouro Preto.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "Que formação é exigida para ingressar na especialização?",
+              "resposta": "É necessário possuir **graduação concluída**, conforme as áreas de formação aceitas no processo seletivo da turma. O edital informa os requisitos acadêmicos e os documentos necessários."
+            },
+            {
+              "pergunta": "Qual é a relação entre atividades presenciais e a distância?",
+              "resposta": "O curso é **presencial com 20% da carga de disciplinas em EaD**. A organização pode incluir encontros remotos síncronos e atividades no Campus Ouro Preto, de acordo com a programação acadêmica."
+            },
+            {
+              "pergunta": "O trabalho final pode ser um produto técnico?",
+              "resposta": "Sim. O **TCC obrigatório de 60 horas** admite elaboração de monografia, artigo ou produto técnico, com orientação e avaliação em banca, conforme as normas do curso."
+            },
+            {
+              "pergunta": "A especialização cobra mensalidade?",
+              "resposta": "As condições de **gratuidade, mensalidades e eventual taxa de inscrição** são definidas no edital de cada oferta. Consulte o processo seletivo vigente para verificar as condições aplicáveis à turma."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "O ingresso na **Especialização em Inteligência Artificial** ocorre por **processo seletivo próprio**, destinado a pessoas com graduação concluída nas áreas de formação previstas no edital. A seleção pode compreender análise de documentos e avaliação escrita, conforme as regras da oferta. Os requisitos e o calendário são divulgados no edital correspondente."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "A especialização desenvolve conhecimentos para **analisar dados, formular modelos computacionais, avaliar resultados e propor aplicações de inteligência artificial** em situações técnicas e organizacionais. As disciplinas exploram estatística, programação, aprendizado de máquina, redes neurais e tratamento de informações, além de suas implicações éticas.\n\nOs conhecimentos podem contribuir para atividades em **tecnologia, indústria, serviços, pesquisa, análise de dados e desenvolvimento de sistemas**, de acordo com a formação profissional anterior. Os projetos e o TCC permitem investigar problemas concretos e desenvolver soluções fundamentadas nos métodos estudados."
+        }
+      ]
+    },
+    {
       "id": "especializacao-em-sistemas-de-energia-renovavel",
       "nome": "Especialização em Sistemas de Energia Renovável: Geração, Distribuição e Eficiência Energética",
       "nivel": "Pós-graduação",

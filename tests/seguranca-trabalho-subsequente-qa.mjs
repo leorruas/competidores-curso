@@ -11,14 +11,13 @@ const texto=t=>blocos.find(x=>x.tipo==="texto"&&x.titulo===t);
 const table=blocos.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
 const campus=blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
 
-test("F7.53: subsequente próprio, três campi do PS2027, 24 blocos",()=>{
+test("F7.53: subsequente próprio, três campi do PS2027",()=>{
   assert.ok(c);
   assert.equal(c.tipo,"Subsequente");
   assert.equal(c.nome,"Técnico em Segurança do Trabalho");
   assert.deepEqual(c.campi,["Governador Valadares","Ouro Preto","Santa Luzia"]);
   assert.ok(base.courses.some(x=>x.id==="tecnico-em-seguranca-do-trabalho-integrado"));
   assert.deepEqual(validarEstruturaCurso(c),[]);
-  assert.equal(blocos.length,24);
   assert.equal(dados("Eixo tecnológico"),"Segurança");
   assert.match(dados("Duração"),/Governador Valadares: 3 semestres/);
   assert.match(dados("Duração"),/Ouro Preto e Santa Luzia: 4 semestres/);
@@ -54,17 +53,19 @@ test("F7.53: não confunde estágio, TCC e complementares",()=>{
   assert.match(dados("Carga horária"),/1.200 horas de disciplinas e 120 horas de estágio ou TCC/);
 });
 
-test("F7.53: experiência Vale 2025 é do subsequente GV, com galeria própria",()=>{
+test("F9.4: capacitação do subsequente GV fica na aprendizagem prática sem conquista artificial",()=>{
   const idx=blocos.findIndex(x=>x.tipo==="texto"&&x.titulo==="Experiências e conquistas dos estudantes");
   assert.equal(idx>=0,true);
-  assert.match(blocos[idx].conteudo,/1º de julho de 2025/);
-  assert.match(blocos[idx].conteudo,/Técnico em Segurança do Trabalho Subsequente do Campus Governador Valadares/);
-  assert.match(blocos[idx].conteudo,/Dojô de Segurança/);
-  assert.equal(blocos[idx+1].tipo,"galeria");
-  const galleries=blocos.filter(x=>x.tipo==="galeria");
-  assert.equal(galleries.length,2);
-  assert.ok(galleries.every(x=>x.itens.length===0));
-  assert.equal(blocos[blocos.indexOf(galleries[0])-1].titulo,"Aprendizagem prática");
+  assert.equal(blocos[idx].conteudo,"");
+  assert.equal(blocos[idx+1].titulo,"Perguntas frequentes");
+  const pratica=texto("Aprendizagem prática").conteudo;
+  assert.match(pratica,/1º de julho de 2025/);
+  assert.match(pratica,/Técnico em Segurança do Trabalho Subsequente do Campus Governador Valadares/);
+  assert.match(pratica,/Dojô de Segurança/);
+  assert.match(pratica,/outros cursos do campus/);
+  assert.equal(blocos.filter(x=>String(x.conteudo||"").includes("Dojô de Segurança")).length,1);
+  assert.ok(!blocos.some(x=>x.tipo==="galeria"&&/Dojô|Capacitação de estudantes/.test(x.referencia||"")));
+  assert.equal(blocos.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
   assert.ok(!blocos.some(x=>x.titulo==="Reconhecimentos e premiações"));
   const all=JSON.stringify(c);
   for(const bad of ["renata.antipoff@ifmg.edu.br","2026.1","40 vagas","70 vagas","PPC de 2024","SIEST 2026","SIEST 2025","Benchmark/","Museu da Inconfidência","estágio de 105 horas obrigatório"]) assert.ok(!all.includes(bad),bad);

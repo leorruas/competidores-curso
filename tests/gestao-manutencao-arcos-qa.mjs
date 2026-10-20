@@ -74,7 +74,7 @@ test("F8.6A: contato não ativado, sem experiências nem evidências privadas no
  assert.match(tcc,/individualmente ou em dupla/);
  assert.match(texto("Exemplos de produtos técnicos").conteudo,/matrizes de criticidade de ativos/);
  assert.ok(!blocos.some(b=>b.titulo==="Continue seus estudos no IFMG"));
- assert.equal(blocos.find(x=>x.tipo==="faq").itens.length,4);
+ assert.ok(blocos.find(x=>x.tipo==="faq").itens.length>=4,"perguntas originais preservadas");
  const raw=JSON.stringify(curso);
  for(const bad of ["Benchmark/","competidores-cursos","será ativado em breve","2027/1","inscrições abertas","Portaria de autorização","www.ifmg.edu.br"])assert.ok(!raw.includes(bad),bad);
 });

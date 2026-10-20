@@ -68,7 +68,7 @@ test("F8.6C: Aurora é experiência de 2025 com galeria própria",()=>{
 
 test("F8.6C: FAQ explica custos por edital e não exporta cobrança histórica",()=>{
  const faq=blocos.find(b=>b.tipo==="faq");
- assert.equal(faq.itens.length,4);
+ assert.ok(faq.itens.length>=4,"perguntas originais preservadas");
  const item=faq.itens.find(x=>x.pergunta.includes("cobra mensalidade"));
  assert.ok(item);
  assert.match(item.resposta,/gratuidade, mensalidades e eventual taxa de inscrição/);

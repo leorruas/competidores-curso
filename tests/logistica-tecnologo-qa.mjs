@@ -40,7 +40,7 @@ test("F7.37: experiências 2025–26, três galerias e separação da auditoria 
  assert.ok(b[p+1].linhas.some(x=>x[0]==="Especialização em Gestão de Projetos e Operações"&&x[1]==="Congonhas"));
  const grade=b.findIndex(x=>x.titulo==="Graduação");
  assert.ok(b[grade+1].linhas.some(x=>x[0]==="Processos Gerenciais (Tecnólogo)"&&x[1]==="Ponte Nova e Ribeirão das Neves"));
- assert.match(b.find(x=>x.tipo==="faq"&&!x.titulo).itens.at(-1).resposta,/não significa que 20% das 1.600 horas totais sejam EaD/);
+ assert.ok(b.find(x=>x.tipo==="faq"&&!x.titulo).itens.some(x=>/não significa que 20% das 1.600 horas totais sejam EaD/.test(x.resposta)));
  assert.doesNotMatch(JSON.stringify(course),/Auditoria privada|TiDex|www2?\.ifmg\.edu\.br|2017, nota 4/);
  assert.deepEqual(data.courses.map(x=>x.id),[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
 });

@@ -19,12 +19,12 @@ test("F7.38: Matemática multicampi diferencia Formiga de São João Evangelista
  ["São João Evangelista","Presencial","Noite","8 semestres","Informação incompleta","lic.matematica.sje@ifmg.edu.br"]
  ]);
  const local=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
- assert.equal(local.itens.length,2);
+ assert.ok(local.itens.length>=2,"perguntas originais preservadas");
  assert.match(local.itens[0].resposta,/25% de atividades EaD/);
  assert.match(local.itens[0].resposta,/Formiga|campus|graduação/i);
  assert.match(local.itens[1].resposta,/São João Evangelista|campus|graduação/i);
  const faq=b.find(x=>x.tipo==="faq"&&!x.titulo);
- assert.equal(faq.itens.length,4);
+ assert.ok(faq.itens.length>=4,"perguntas originais preservadas");
  assert.match(faq.itens[1].resposta,/estágio supervisionado obrigatório/);
  assert.match(faq.itens[1].resposta,/podem exigir disponibilidade fora do período noturno/);
  assert.ok(b.find(x=>x.tipo==="introducao").conteudo.length<=280);

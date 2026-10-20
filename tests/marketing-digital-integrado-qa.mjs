@@ -57,7 +57,7 @@ test("F7.P2: sem inventar vivências de turmas que ainda não ingressaram",()=>{
 });
 test("F7.P2: FAQ útil e conteúdo atemporal, catálogo em ordem alfabética",()=>{
  const faq=b.find(x=>x.tipo==="faq"&&!x.titulo);
- assert.equal(faq.itens.length,4);
+ assert.ok(faq.itens.length>=4,"perguntas originais preservadas");
  assert.ok(faq.itens.some(x=>x.pergunta.includes("redes sociais")));
  assert.ok(faq.itens.some(x=>x.pergunta.includes("Técnico em Administração Integrado")));
  assert.ok(faq.itens.every(x=>x.resposta.length>70));

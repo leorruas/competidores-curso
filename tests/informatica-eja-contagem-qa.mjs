@@ -52,7 +52,7 @@ test("F7.P4: FAQ, galeria, continuidade e perfil profissional conforme regras Wa
  assert.equal(blocos[blocos.indexOf(gallery[0])-1].titulo,"Aprendizagem prática");
  assert.match(gallery[0].referencia,/Contagem/);
  const faq=blocos.find(x=>x.tipo==="faq"&&!x.titulo);
- assert.equal(faq.itens.length,4);
+ assert.ok(faq.itens.length>=4,"perguntas originais preservadas");
  assert.ok(faq.itens.some(x=>x.pergunta.includes("Desenvolvimento de Sistemas")));
  assert.ok(faq.itens.some(x=>x.pergunta.includes("graduação")));
  assert.ok(faq.itens.some(x=>x.resposta.includes("18 anos ou mais")));

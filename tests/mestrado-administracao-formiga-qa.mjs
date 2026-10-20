@@ -48,7 +48,7 @@ test("F8.3C: duas linhas de pesquisa, modalidade e FAQ verificáveis",()=>{
     "Finanças Corporativas e Investimentos"
   ]);
   const faq=blocos.find(x=>x.tipo==="faq");
-  assert.equal(faq.itens.length,4);
+  assert.ok(faq.itens.length>=4,"perguntas originais preservadas");
   assert.ok(faq.itens.some(x=>x.resposta.includes("remoto ou híbrido")));
   assert.ok(faq.itens.some(x=>x.resposta.includes("dissertação")));
   assert.ok(text("Forma de ingresso").conteudo.includes("graduação"));

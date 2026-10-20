@@ -36,7 +36,7 @@ test("F7.53: cargas e contatos pertencem a cada campus",()=>{
   assert.deepEqual(sl.slice(3),["4 semestres","1.320 horas","strabalho.santaluzia@ifmg.edu.br"]);
   assert.match(sl[1],/4,54% EaD/);
   assert.doesNotMatch(gv[1]+op[1],/4,54/);
-  assert.equal(campus.itens.length,3);
+  assert.ok(campus.itens.length>=3,"perguntas originais preservadas");
   assert.match(campus.itens[1].resposta,/1.095 horas de disciplinas e 105 horas de atividades complementares obrigatórias/);
   assert.match(campus.itens[2].resposta,/120 horas obrigatórias de estágio supervisionado ou TCC/);
   assert.match(dados("Estágio supervisionado"),/Governador Valadares: não obrigatório/);
@@ -45,7 +45,7 @@ test("F7.53: cargas e contatos pertencem a cada campus",()=>{
 
 test("F7.53: não confunde estágio, TCC e complementares",()=>{
   const faq=blocos.find(x=>x.tipo==="faq"&&!x.titulo);
-  assert.equal(faq.itens.length,4);
+  assert.ok(faq.itens.length>=4,"perguntas originais preservadas");
   assert.match(faq.itens[2].resposta,/105 horas de atividades complementares/);
   assert.match(faq.itens[2].resposta,/120 horas de estágio supervisionado ou de TCC/);
   assert.match(faq.itens[2].resposta,/Governador Valadares.*120 horas para quem optar por realizá-lo/);

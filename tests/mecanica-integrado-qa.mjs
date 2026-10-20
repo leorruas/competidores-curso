@@ -16,14 +16,14 @@ test("F7.4: Técnico em Mecânica Integrado agrupa os quatro campi da matriz 202
  assert.equal(local.itens.length,4);
  assert.ok(b.some(x=>x.tipo==="faq"&&!x.titulo));
 });
-test("F7.4: experiências 2025+ possuem galerias correspondentes e não misturam modalidades",()=>{
+test("F9.3: Mecânica Integrado preserva apenas galeria pertinente de práticas",()=>{
  const gs=b.filter(x=>x.tipo==="galeria");
- assert.equal(gs.length,4);
- assert.equal(new Set(gs.map(x=>x.referencia)).size,4);
+ assert.equal(gs.length,1);
+ assert.equal(new Set(gs.map(x=>x.referencia)).size,1);
  assert.ok(gs.every(x=>Array.isArray(x.itens)&&x.itens.length===0));
  for(const ix of b.map((x,i)=>x.tipo==="galeria"?i:-1).filter(i=>i>=0))assert.equal(b[ix-1].tipo,"texto");
- assert.match(b.find(x=>x.titulo==="Experiências e conquistas dos estudantes").conteudo,/Stéfany/);
- assert.ok(b.some(x=>x.tipo==="texto"&&/João Lucas Vieira Campos/.test(x.conteudo||"")));
- assert.ok(b.some(x=>x.tipo==="texto"&&/27 de fevereiro de 2026/.test(x.conteudo||"")));
+ assert.equal(b.find(x=>x.titulo==="Experiências e conquistas dos estudantes").conteudo,"Informação incompleta");
+ assert.ok(!b.some(x=>x.tipo==="texto"&&/João Lucas Vieira Campos/.test(x.conteudo||"")));
+ assert.ok(!b.some(x=>x.tipo==="texto"&&/27 de fevereiro de 2026/.test(x.conteudo||"")));
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });

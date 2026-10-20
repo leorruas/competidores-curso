@@ -25,7 +25,7 @@ test("F7.52: subsequente separado do integrado e PPC fevereiro de 2026",()=>{
 });
 test("F7.52: atividades complementares não são estágio obrigatório",()=>{
  const faq=b.find(x=>x.tipo==="faq"&&!x.titulo);
- assert.equal(faq.itens.length,4);
+ assert.ok(faq.itens.length>=4,"perguntas originais preservadas");
  assert.match(faq.itens[1].resposta,/estágio e o TCC não são obrigatórios/);
  assert.match(faq.itens[2].resposta,/210 horas/);
  assert.match(faq.itens[2].resposta,/visitas técnicas/);

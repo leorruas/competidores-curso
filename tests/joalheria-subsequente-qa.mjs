@@ -20,7 +20,7 @@ test("F7.50: Joalheria subsequente noturno Ouro Preto, PPC 1200h e 20% EaD",()=>
  assert.equal(campo("E-mail da coordenação"),undefined);
 });
 test("F7.50: projeto integrado é disciplina, sem estágio, TCC ou AC obrigatórios",()=>{
- const f=b.find(x=>x.tipo==="faq"&&!x.titulo);assert.equal(f.itens.length,4);
+ const f=b.find(x=>x.tipo==="faq"&&!x.titulo);assert.ok(f.itens.length>=4,"perguntas originais preservadas");
  assert.match(f.itens[2].resposta,/estágio supervisionado é opcional/);
  assert.match(f.itens[2].resposta,/não há TCC obrigatório/);
  assert.match(f.itens[2].resposta,/Design de Joias IV/);

@@ -9,11 +9,11 @@ test("auditoria emite inventário transversal sem excluir cursos",()=>{
   const result=auditarCursos(all);
   assert.equal(result.resumo.cursos,all.length);
   assert.ok(result.resumo.continuidadeComSubtituloSeparado>0);
-  assert.ok(result.resumo.tituloFaqIsolado>0);
-  assert.ok(result.resumo.linksForaDoLugar>0);
+  assert.equal(result.resumo.tituloFaqIsolado,0);
+  assert.equal(result.resumo.linksForaDoLugar,0);
   assert.ok(result.resumo.faqSemCotas>0);
-  assert.ok(result.achados.some(x=>x.curso==="tecnico-em-mecanica-integrado"&&x.tipo==="conquista-revisar"));
-  assert.ok(result.achados.some(x=>x.curso==="tecnico-em-mecanica-integrado"&&x.tipo==="links-deslocados"));
+  assert.ok(!result.achados.some(x=>x.curso==="tecnico-em-mecanica-integrado"&&x.tipo==="conquista-revisar"));
+  assert.ok(!result.achados.some(x=>x.curso==="tecnico-em-mecanica-integrado"&&x.tipo==="links-deslocados"));
 });
 
 test("auditoria identifica FAQ, links e casos suspeitos em cursos sintéticos",()=>{

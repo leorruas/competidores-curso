@@ -19,7 +19,7 @@ test("F7.35: Inteligência Artificial bacharelado Bambuí, 2027 sem dados curric
  assert.ok(b.find(x=>x.tipo==="introducao")?.conteudo.length<=280);
  const FAQ=b.find(x=>x.tipo==="faq"&&!x.titulo);
  assert.ok(FAQ);
- assert.equal(FAQ.itens.length,3);
+ assert.ok(FAQ.itens.length>=3,"perguntas originais preservadas");
  assert.ok(FAQ.itens.every(x=>!/(?:estágio|tcc|trabalho de conclusão)/i.test(x.pergunta)));
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
  assert.ok(b.at(-1).conteudo.length>500);

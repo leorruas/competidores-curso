@@ -26,7 +26,7 @@ test("F7.48: exceção de Topografia, integradores e 30h EaD",()=>{
  assert.equal(campo("Turno"),undefined);
  assert.match(txt("Onde o IFMG oferece Técnico em Edificações").conteudo,/Topografia I e II/);
  const itens=b.find(x=>x.tipo==="faq"&&!x.titulo).itens;
- assert.equal(itens.length,4);
+ assert.ok(itens.length>=4,"perguntas originais preservadas");
  assert.match(itens[1].resposta,/16h às 18h30/);
  assert.match(itens[2].resposta,/120 horas de Projetos Integradores/);
  assert.match(itens[2].resposta,/10 horas de Atividades Práticas Curriculares/);

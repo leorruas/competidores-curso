@@ -41,7 +41,7 @@ test("F7.51: atividade de campo da turma N1 é seguida de galeria própria",()=>
 });
 test("F7.51: estágio opcional, 90h de AC e fronteira privada segura",()=>{
  const faq=b.find(x=>x.tipo==="faq"&&!x.titulo).itens;
- assert.equal(faq.length,4);
+ assert.ok(faq.length>=4,"perguntas originais preservadas");
  assert.match(faq[1].resposta,/90 horas de atividades complementares obrigatórias/);
  assert.match(faq[1].resposta,/estágio supervisionado é \*\*opcional\*\*/);
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);

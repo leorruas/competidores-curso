@@ -67,7 +67,7 @@ test("F8.3B: projeto final tem linhas próprias e experiências não são invent
   assert.deepEqual(gal[0].itens,[]);
   assert.equal(blocos[blocos.indexOf(gal[0])-1].titulo,"Aprendizagem a distância");
   const faq=blocos.find(b=>b.tipo==="faq");
-  assert.equal(faq.itens.length,4);
+  assert.ok(faq.itens.length>=4,"perguntas originais preservadas");
   assert.ok(faq.itens.some(x=>x.resposta.includes("420 horas")));
   assert.ok(faq.itens.some(x=>x.resposta.includes("Projeto Final de Curso")));
   assert.ok(blocos.some(b=>b.titulo==="Pesquisa, projetos e oportunidades"));

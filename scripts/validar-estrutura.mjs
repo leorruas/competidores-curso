@@ -60,6 +60,24 @@ export function validarEstruturaCurso(curso) {
     if (blocos.filter(b => b?.tipo === "texto" && b.titulo === titulo).length !== 1)
       erros.push("seção obrigatória deve aparecer uma vez: " + titulo);
   }
+  // Contrato de hierarquia do Wagtail: H2 e H3 exigem blocos Texto separados.
+  // O próprio conteúdo do H2 fica vazio, para não misturar H2 e H3 no mesmo campo.
+  for (const [i,b] of blocos.entries()) {
+    if (b?.tipo !== "texto") continue;
+    if (b.titulo === "Continue seus estudos no IFMG") {
+      if (b.nivelTitulo !== 2 || String(b.conteudo || "").trim())
+        erros.push("bloco " + i + ": Continue seus estudos no IFMG deve ser H2 isolado, sem conteúdo no mesmo bloco");
+    }
+    if (b.titulo === "Graduação" || b.titulo === "Pós-graduação") {
+      if (b.nivelTitulo !== 3)
+        erros.push("bloco " + i + ": Graduação/Pós-graduação devem ser H3 em bloco Texto separado");
+      const antecedente = blocos.slice(0,i).findLastIndex(x => x?.tipo === "texto" &&
+        x.titulo === "Continue seus estudos no IFMG");
+      const fechamento = pos("Experiências e conquistas dos estudantes");
+      if (antecedente < 0 || (fechamento >= 0 && i >= fechamento))
+        erros.push("bloco " + i + ": subtítulo H3 deve ficar dentro da seção Continue seus estudos no IFMG");
+    }
+  }
   const continuidade = pos("Continue seus estudos no IFMG");
   if (!posGraduacao && pos("Experiências e conquistas dos estudantes") <= continuidade)
     erros.push("continuidade deve anteceder as experiências");

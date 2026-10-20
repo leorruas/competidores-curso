@@ -51,7 +51,7 @@ function pilotoPos(tipo) {
 function incluirContinuacao(curso, nivel = "Mestrado profissional") {
   const i = curso.blocos.findIndex(b => b.titulo === "Experiências e conquistas dos estudantes");
   curso.blocos.splice(i, 0,
-    {tipo:"texto",titulo:"Continue seus estudos no IFMG",conteudo:""},
+    {tipo:"texto",titulo:"Continue seus estudos no IFMG",conteudo:"",nivelTitulo:2},
     {tipo:"tabela",cabecalhoPrimeiraLinha:true,colunas:["Curso","Campus","Nível","Relação com o curso"],
       linhas:[["Mestrado Profissional em Administração","Formiga",nivel,
         "Pesquisa aplicada após a especialização"]]}

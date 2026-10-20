@@ -2128,3 +2128,30 @@ test("todas as tabelas têm primeira linha como cabeçalho e legenda ignorada no
   }
   assert.ok(count>=json.courses.length,"ao menos uma tabela por curso");
 });
+
+test("H2 e H3 de continuidade são copiados em blocos separados", () => {
+  const h=testContext();
+  let titles=0,children=0;
+  for(const c of json.courses){
+    const i=c.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+    if(i<0)continue;
+    const parent=c.blocos[i];
+    titles++;
+    assert.equal(parent.nivelTitulo,2,c.id);
+    assert.equal(parent.conteudo,"",c.id);
+    assert.equal(h.editorFields(parent)[0].html,"<h2>Continue seus estudos no IFMG</h2>",c.id);
+    assert.ok(h.blockPreview(parent,i).includes("<h2>Continue seus estudos no IFMG</h2>"),c.id);
+    for(let j=i+1;j<c.blocos.length;j++){
+      const b=c.blocos[j];
+      if(b.titulo==="Experiências e conquistas dos estudantes")break;
+      if(b.tipo!=="texto"||!["Graduação","Pós-graduação"].includes(b.titulo))continue;
+      children++;
+      assert.equal(b.nivelTitulo,3,c.id);
+      assert.ok(h.editorFields(b)[0].html.startsWith("<h3>"+b.titulo+"</h3>"),c.id);
+      assert.ok(h.blockPreview(b,j).includes("<h3>"+b.titulo+"</h3>"),c.id);
+      assert.notEqual(i,j,c.id);
+    }
+    assert.ok(h.isApprovedCourse(c),c.id);
+  }
+  assert.ok(titles>0&&children>0);
+});

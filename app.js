@@ -61,13 +61,27 @@
       !b.campos.slice(rotulos.length).some(x => rotulos.includes(x.rotulo));
   }
 
+  function validContinuityHeadings(c) {
+    const blocks = c.blocos || [];
+    const start = blocks.findIndex(b => b.tipo === "texto" && b.titulo === "Continue seus estudos no IFMG");
+    const end = blocks.findIndex(b => b.tipo === "texto" && b.titulo === "Experiências e conquistas dos estudantes");
+    return blocks.every((b,i) => {
+      if (b.tipo !== "texto") return true;
+      if (b.titulo === "Continue seus estudos no IFMG")
+        return b.nivelTitulo === 2 && !String(b.conteudo || "").trim();
+      if (b.titulo === "Graduação" || b.titulo === "Pós-graduação")
+        return b.nivelTitulo === 3 && start >= 0 && i > start && (end < 0 || i < end);
+      return true;
+    });
+  }
+
   function isApprovedCourse(c) {
     if (!c || typeof c !== "object" || c.demo || c.publicacao_autorizada !== true || !STATUS_PUBLICO.has(c.status)) return false;
     if (!checkedText(c.id, 140) || !/^[a-z0-9][a-z0-9-]*$/.test(c.id)) return false;
     if (!checkedText(c.nome, 200) || !c.nome.trim() || !checkedText(c.nivel, 100)) return false;
     if (!Array.isArray(c.campi) || !c.campi.every(v => checkedText(v, 150))) return false;
     if (!Array.isArray(c.blocos) || c.blocos.length === 0) return false;
-    if (!c.blocos.every(b => validateBlock(b)) || !validBasicFields(c)) return false;
+    if (!c.blocos.every(b => validateBlock(b)) || !validBasicFields(c) || !validContinuityHeadings(c)) return false;
     if ("pendencias" in c || "revisao_coordenacao" in c || "validacao" in c) return false;
     return true;
   }
@@ -75,6 +89,7 @@
     if (!b || !ALLOWED_TYPES.has(b.tipo)) return false;
     if ("instrucao" in b || "validacao" in b) return false;
     if (b.titulo !== undefined && !checkedText(b.titulo, 200)) return false;
+    if (b.nivelTitulo !== undefined && (![2,3].includes(b.nivelTitulo) || b.tipo !== "texto")) return false;
     if (["texto", "introducao"].includes(b.tipo) && !checkedText(b.conteudo || "", b.tipo === "introducao" ? 280 : 12000)) return false;
     if (b.tipo === "dados-basicos") return Array.isArray(b.campos) && b.campos.every(x => checkedText(x.rotulo, 160) && checkedText(x.valor, 500) && !("validacao" in x));
     if (b.tipo === "tabela") return b.cabecalhoPrimeiraLinha === true && (!("legenda" in b) || b.legenda === "") && Array.isArray(b.colunas) && b.colunas.length > 0 && b.colunas.every(x => checkedText(x, 160)) && Array.isArray(b.linhas) && b.linhas.every(x => Array.isArray(x) && x.length === b.colunas.length && x.every(v => checkedText(v, 1200)));
@@ -121,7 +136,8 @@
     if (b.tipo === "galeria" && !(b.itens || []).length) return "";
     if (b.tipo === "texto" && (b.conteudo || "").trim() === "Informação incompleta") return "";
     const id = "bloco-" + i, label = '<span class="block-overline">' + escapeHTML(blockName[b.tipo]) + "</span>";
-    const head = b.titulo ? "<h2>" + escapeHTML(b.titulo) + "</h2>" : "";
+    const tag = b.nivelTitulo === 3 ? "h3" : "h2";
+    const head = b.titulo ? "<" + tag + ">" + escapeHTML(b.titulo) + "</" + tag + ">" : "";
     if (b.tipo === "introducao") return '<section class="content-section intro-section" id="' + id + '">' + label + (b.conteudo ? "<p>" + renderInline(b.conteudo) + "</p>" : "") + "</section>";
     if (b.tipo === "dados-basicos") return '<section class="content-section" id="' + id + '">' + label + head + '<div class="table-wrap"><table><tbody>' + b.campos.map(x => '<tr><th scope="row">' + escapeHTML(x.rotulo) + '</th><td>' + escapeHTML(x.valor) + '</td></tr>').join("") + "</tbody></table></div></section>";
     if (b.tipo === "texto") return '<section class="content-section" id="' + id + '">' + label + head + textContentToHTML(b.conteudo) + "</section>";
@@ -138,8 +154,9 @@
   function asPlain(value) {
     return String(value || "").replace(/==([^=\n]+)==/g,"$1").replace(/\*\*([^*\n]+)\*\*/g,"$1");
   }
-  function richHTML(value, title = "") {
-    const heading = title ? "<h2>" + escapeHTML(title) + "</h2>" : "";
+  function richHTML(value, title = "", nivel = 2) {
+    const tag = nivel === 3 ? "h3" : "h2";
+    const heading = title ? "<" + tag + ">" + escapeHTML(title) + "</" + tag + ">" : "";
     return heading + textContentToHTML(value).replace(/<mark>/g, "<strong>").replace(/<\/mark>/g, "</strong>");
   }
   function tableHTML(b) {
@@ -178,13 +195,13 @@
         // mesmo quando o corpo da seção ainda não foi produzido.
         return [
           ...(b.titulo ? [{label:"Título da seção",value:b.titulo,rich:true,
-            html:richHTML("",b.titulo)}] : []),
+            html:richHTML("",b.titulo,b.nivelTitulo || 2)}] : []),
           {label:"Conteúdo",value:"Informação incompleta",rich:false,html:""}
         ];
       }
       const value = [b.titulo || "", b.conteudo || ""].filter(Boolean).join("\n\n");
       return value ? [{label:"Conteúdo", value, rich:true,
-        html:richHTML(b.conteudo || "", b.titulo || "")}] : [];
+        html:richHTML(b.conteudo || "", b.titulo || "", b.nivelTitulo || 2)}] : [];
     }
     if (b.tipo === "introducao") return [rich("Conteúdo em destaque", b.conteudo)];
     // Mesmo componente Wagtail para dois usos editoriais distintos:

@@ -56,7 +56,7 @@ function validarBloco(b, p) {
   }
   if (b.tipo === "introducao" && (!vazioOuString(b.conteudo, 280) || false)) denuncia(p+".conteudo", "Introdução deve ter de 1 a 280 caracteres");
   if (b.tipo === "introducao") validarVozInstitucional(b.conteudo,p+".conteudo");
-  // Ordem, categoria, tipo e limite de 180 caracteres da Apresentação: validarEstruturaCurso.
+  // Ordem, categoria, tipo, apresentação e H2/H3 isolados: validarEstruturaCurso.
   if (b.tipo === "dados-basicos" && (!Array.isArray(b.campos) || !b.campos.length || !b.campos.every(x => objeto(x) && string(x.rotulo,160) && string(x.valor,500)))) denuncia(p+".campos","campos inválidos");
   if (b.tipo === "tabela" && (!Array.isArray(b.colunas) || !b.colunas.length || !b.colunas.every(x => string(x,160)) || !Array.isArray(b.linhas) || !b.linhas.every(row => Array.isArray(row) && row.length === b.colunas.length && row.every(x => string(x,1200))))) denuncia(p, "tabela inválida ou número de colunas divergente");
   // A configuração do cabeçalho e a legenda vazia são verificadas para cada tabela

@@ -110,7 +110,7 @@ test("F8.3A: publicação da pós permite continuidade apenas com nível acima",
     const inicio = curso.blocos.findIndex(b => b.titulo === "Continue seus estudos no IFMG");
     const fim = curso.blocos.findIndex(b => b.titulo === "Experiências e conquistas dos estudantes");
     curso.blocos.splice(inicio, fim - inicio,
-      {tipo:"texto",titulo:"Continue seus estudos no IFMG",conteudo:""},
+      {tipo:"texto",titulo:"Continue seus estudos no IFMG",conteudo:"",nivelTitulo:2},
       {tipo:"tabela",cabecalhoPrimeiraLinha:true,colunas:["Curso","Campus","Nível","Relação com o curso"],
         linhas:[["Mestrado Profissional em Administração","Formiga",nivelAlvo,
           "Aprofunda pesquisa aplicada em Finanças."]]}
@@ -173,4 +173,13 @@ test("validador público bloqueia qualquer tabela sem cabeçalho ou com legenda 
   });
   assert.notEqual(caption.status,0);
   assert.match(caption.output,/Legenda da tabela deve ficar em branco/);
+});
+
+test("publicação rejeita subtítulo H3 sem nível correto", () => {
+  const result=runValidation(data=>{
+    const c=data.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
+    c.blocos.find(b=>b.titulo==="Pós-graduação").nivelTitulo=2;
+  });
+  assert.notEqual(result.status,0);
+  assert.match(result.output,/devem ser H3/);
 });

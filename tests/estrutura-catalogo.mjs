@@ -94,3 +94,17 @@ test("validação estrutural rejeita tabela nova sem cabeçalho ou com legenda",
   delete first.blocos[idx].legenda;
   assert.deepEqual(validarEstruturaCurso(first),[]);
 });
+
+test("continuidade preserva níveis hierárquicos separados", () => {
+  const original = catalogo.courses.find(c => c.id === "engenharia-mecanica-bacharelado");
+  assert.deepEqual(validarEstruturaCurso(original), []);
+  const a = structuredClone(original);
+  a.blocos.find(b => b.titulo === "Pós-graduação").nivelTitulo = 2;
+  assert.ok(validarEstruturaCurso(a).some(e => e.includes("H3")));
+  const b = structuredClone(original);
+  b.blocos.find(x => x.titulo === "Continue seus estudos no IFMG").conteudo = "Pós-graduação";
+  assert.ok(validarEstruturaCurso(b).some(e => e.includes("H2 isolado")));
+  const c = structuredClone(original);
+  delete c.blocos.find(x => x.titulo === "Continue seus estudos no IFMG").nivelTitulo;
+  assert.ok(validarEstruturaCurso(c).some(e => e.includes("H2 isolado")));
+});

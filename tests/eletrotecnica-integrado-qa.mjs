@@ -28,7 +28,7 @@ test("F7.6: oito experiências recentes possuem galeria individual, sem atribuir
  assert.equal(new Set(gs.map(x=>x.referencia)).size,gs.length);
  assert.ok(gs.every(x=>Array.isArray(x.itens)&&x.itens.length===0&&b[x.index-1].tipo==="texto"));
  const experiences=b.slice(ix,b.findIndex((x,i)=>i>ix&&x.titulo==="Perguntas frequentes")).filter(x=>x.tipo==="texto"&&x.conteudo).map(x=>x.conteudo);
- assert.equal(experiences.length,4);
+ assert.equal(experiences.length,5);
  assert.ok(experiences.every((x,i)=>b[b.findIndex(y=>y.conteudo===x)+1].tipo==="galeria"));
  assert.ok(experiences.some(x=>/vice-campeonato nacional/.test(x)&&/Administração e Informática/.test(x)));
  assert.ok(experiences.some(x=>/50 estudantes dos dois cursos/.test(x)));

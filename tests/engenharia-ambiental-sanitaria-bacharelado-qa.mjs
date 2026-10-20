@@ -22,19 +22,15 @@ test("F7.27: bacharelado EAS Governador Valadares e PPC atualizado", () => {
   assert.deepEqual(blocks.slice(-2).map(x => x.titulo), ["Forma de ingresso", "Mundo do Trabalho"]);
   assert.ok(!JSON.stringify(course).includes("3.993,33"));
 });
-test("F7.27: três experiências 2025, galerias próprias, egressa COP30", () => {
-  const first = blocks.findIndex(x => x.titulo === "Experiências e conquistas dos estudantes");
-  assert.ok(first > 0);
-  for (const i of [first, first + 2, first + 4]) {
-    assert.equal(blocks[i].tipo, "texto");
-    assert.equal(blocks[i+1].tipo, "galeria");
-    assert.equal(blocks[i+1].itens.length, 0);
-  }
-  assert.match(blocks[first].conteudo, /janeiro de 2025/);
-  assert.match(blocks[first + 2].conteudo, /outubro de 2025/);
-  assert.match(blocks[first + 4].conteudo, /egressa/);
-  assert.match(blocks[first + 4].conteudo, /novembro de 2025/);
-  assert.equal(blocks.filter(x => x.tipo === "galeria").length, 4);
-  const sorted = [...data.courses].sort((a,b) => a.nome.localeCompare(b.nome, "pt-BR", {sensitivity:"base", numeric:true}) || String(a.tipo||"").localeCompare(String(b.tipo||""), "pt-BR") || a.id.localeCompare(b.id, "pt-BR"));
-  assert.deepEqual(data.courses.map(x => x.id), sorted.map(x => x.id));
+test("F9.4: destaca pesquisa de egressa divulgada na COP30 sem galerias vazias",()=>{
+ const first=blocks.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
+ assert.ok(first>0);
+ assert.match(blocks[first].conteudo,/egressa/);
+ assert.match(blocks[first].conteudo,/novembro de 2025/);
+ assert.match(blocks[first].conteudo,/COP30/);
+ assert.equal(blocks[first+1].titulo,"Perguntas frequentes");
+ assert.equal(blocks.filter(x=>x.tipo==="galeria").length,1);
+ assert.doesNotMatch(JSON.stringify(course),/Visita técnica à UHE Baguari|Visita técnica de estudantes de Engenharia Ambiental e Sanitária à Cenibra/);
+ const sorted=[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR"));
+ assert.deepEqual(data.courses.map(x=>x.id),sorted.map(x=>x.id));
 });

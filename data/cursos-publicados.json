@@ -13961,25 +13961,6 @@
         },
         {
           "tipo": "links",
-          "estilo": "Padrão",
-          "itens": [
-            {
-              "rotulo": "Como ingressar no IFMG",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/"
-            },
-            {
-              "rotulo": "Reserva de vagas e cotas",
-              "url": "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/"
-            },
-            {
-              "rotulo": "Assistência estudantil",
-              "url": "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
-            }
-          ]
-        },
-        {
-          "tipo": "links",
-          "estilo": "Padrão",
           "itens": [
             {
               "rotulo": "Como ingressar no IFMG",

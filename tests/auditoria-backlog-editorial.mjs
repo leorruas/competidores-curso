@@ -11,7 +11,7 @@ test("auditoria emite inventário transversal sem excluir cursos",()=>{
   assert.ok(result.resumo.continuidadeComSubtituloSeparado>0);
   assert.equal(result.resumo.tituloFaqIsolado,0);
   assert.equal(result.resumo.linksForaDoLugar,0);
-  assert.ok(result.resumo.faqSemCotas>0);
+  assert.equal(result.resumo.faqSemCotas,0);
   assert.ok(!result.achados.some(x=>x.curso==="tecnico-em-mecanica-integrado"&&x.tipo==="conquista-revisar"));
   assert.ok(!result.achados.some(x=>x.curso==="tecnico-em-mecanica-integrado"&&x.tipo==="links-deslocados"));
 });

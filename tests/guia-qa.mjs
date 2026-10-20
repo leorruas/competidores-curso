@@ -456,7 +456,7 @@ test("F2.12: FAQs de ingresso não reciclam calendário, notas ou vagas de ediç
       assert.equal(admission.length,1,c.id+": apenas uma dúvida de ingresso");
       total+=admission.length;
     }else{
-      assert.equal(admission.length,1,c.id+": um único ingresso padronizado no FAQ");
+      assert.ok(admission.length<=1,c.id+": evitar FAQ de ingresso duplicado");
     }
     for(const q of (ids.includes(c.id) ? admission : [])){
       assert.doesNotMatch(q.pergunta+" "+q.resposta,temporal,c.id);

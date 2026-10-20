@@ -8,18 +8,17 @@ test("F7.15: Metalurgia integrado tem nome curto e ofertas distintas",()=>{
  assert.equal(b.find(x=>x.titulo==="Continue seus estudos no IFMG").conteudo,"");
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
-test("F7.15: apenas experiências verificadas e galerias correspondentes; mantém catálogo alfabético",()=>{
- const gals=b.map((x,i)=>x.tipo==="galeria"?{...x,i}:null).filter(Boolean);assert.equal(gals.length,3);
- assert.equal(new Set(gals.map(x=>x.referencia)).size,3);assert.ok(gals.every(x=>x.itens.length===0&&b[x.i-1].tipo==="texto"));
- const k=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes"),e=b.findIndex((x,i)=>i>k&&x.titulo==="Perguntas frequentes");
- const events=b.slice(k,e).filter(x=>x.tipo==="texto"&&x.conteudo);assert.equal(events.length,2);
- assert.ok(events.every(x=>b[b.indexOf(x)+1].tipo==="galeria"));
- assert.match(events[0].conteudo,/28 estudantes classificados/);assert.match(events[0].conteudo,/2026/);
- assert.match(events[1].conteudo,/Museu da Inconfidência/);assert.match(events[1].conteudo,/Mineração/);
- assert.ok(events.every(x=>x.conteudo.includes("Ouro Preto")));
+test("F9.4: classificação na OBMEP, sem visita ao museu como conquista",()=>{
+ const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
+ assert.ok(i>0);
+ assert.match(b[i].conteudo,/28 estudantes classificados/);
+ assert.match(b[i].conteudo,/segunda fase/);
+ assert.match(b[i].conteudo,/classificação não representa premiação/);
+ assert.equal(b[i+1].titulo,"Perguntas frequentes");
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,1);
+ assert.doesNotMatch(JSON.stringify(c),/Museu da Inconfidência/);
  assert.ok(!JSON.stringify(c).includes("III Seminário"));
  assert.ok(b.find(x=>x.tipo==="faq"&&!x.titulo).itens.every(x=>!/^O que (é|são)/i.test(x.pergunta)));
- const names=data.courses.map(x=>x.id);
- const sorted=[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id);
- assert.deepEqual(names,sorted);
+ const sorted=[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR"));
+ assert.deepEqual(data.courses.map(x=>x.id),sorted.map(x=>x.id));
 });

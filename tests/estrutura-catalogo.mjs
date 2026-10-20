@@ -22,11 +22,12 @@ test("um curso novo pode ser incluído sem atualizar listas de ID e galerias", (
   assert.deepEqual(validarEstruturaCurso(novo), []);
 });
 
-test("impede retirada de galeria após experiência de estudante", () => {
-  const c = structuredClone(catalogo.courses.find(c => c.id === "tecnico-em-biotecnologia-integrado"));
-  const i = c.blocos.findIndex(b => b.titulo === "Experiências e conquistas dos estudantes");
-  c.blocos.splice(i + 1, 1);
-  assert.ok(validarEstruturaCurso(c).some(x => x.includes("imediatamente depois")));
+test("F9.4: não exige fotografias nem galerias para relatos estudantis",()=>{
+ const c=structuredClone(catalogo.courses.find(c=>c.id==="tecnico-em-biotecnologia-integrado"));
+ c.blocos=c.blocos.filter(b=>b.tipo!=="galeria");
+ assert.deepEqual(validarEstruturaCurso(c),[]);
+ const resumo=c.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes");
+ assert.ok(resumo);
 });
 
 test("impede galeria órfã e referência duplicada", () => {

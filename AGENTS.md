@@ -1,5 +1,17 @@
 # AGENTS.md — Guia de Cursos IFMG (GitHub Pages)
 
+## REGRA ATUAL — SEM COLETA DE IMAGENS (20/10/2026, F9.4 / #65)
+
+**Instrução editorial mais recente do usuário; prevalece sobre quaisquer trechos históricos abaixo sobre F3.7, galeria obrigatória, imagem provisória, fotos pendentes ou cobrança à coordenação.**
+
+- Este projeto **não coleta nem pesquisa fotografias**. Não requisitar fotos, não criar tarefas para obtê-las, não usar placeholders, não inventar legendas nem texto alternativo.
+- `Experiências e conquistas dos estudantes`: **somente resultados e realizações relevantes, atribuídos ao curso e campus com fonte** (pesquisa ou produto efetivamente desenvolvido, artigo publicado, prêmio, reconhecimento ao estudante ou extensão com resultado demonstrado). Não preencher com visitas de rotina, colação, anúncio de evento, abertura de edital, seleção rotineira de bolsa, simples reconhecimento regulatório do curso ou notícia sem vínculo estudantil demonstrado. Distinguir resumo técnico com resultados de uma banca apenas anunciada; jamais afirmar aprovação ou implantação sem comprovação.
+- **Se não houver conquista comprovada, não exibir nem copiar uma seção artificial de conquistas.** O registro vazio ou `Informação incompleta` pode permanecer temporariamente na fonte para auditoria, mas não é conteúdo Wagtail.
+- Galerias antigas vazias no JSON e nos roteiros são **legado inativo, sem solicitação de imagens**. Não exibir nem copiar blocos `galeria` sem itens; tornar galeria opcional no validador, inclusive depois de um relato. Não adicionar novas galerias vazias. Bloco de galeria com imagem já cadastrada é possível somente se houver finalidade editorial aprovada; **não é parte deste levantamento**.
+- Em qualquer roteiro antigo que diga `Insira qualquer imagem provisória`, `galeria obrigatória`, `solicite foto` ou instruções equivalentes, **ignorar a instrução antiga**. Os registros de fonte e o histórico podem permanecer para rastreabilidade.
+- O QA deve cobrir a ausência de galeria no modo Copiar/Visualizar e evitar impor contagem de galerias. Manter pesquisa e justificativas no repositório privado; nunca expor anotações confidenciais no público.
+
+
 Esta aplicação é uma ferramenta de **copiar campos e blocos para o Wagtail**, não um portal de marketing, nem o site institucional de cursos já publicado. A pesquisa e os modelos brutos estão no repositório privado `leorruas/competidores-cursos`; não importar notas privadas ou análises de concorrentes para cá.
 
 ## Contrato dos Dados básicos no Wagtail (20/10/2026)

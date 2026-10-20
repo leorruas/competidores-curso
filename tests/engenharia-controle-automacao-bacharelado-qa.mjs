@@ -17,15 +17,17 @@ test("F7.29: três campi e diferenças curriculares verificadas",()=>{
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
  assert.ok(!JSON.stringify(c).includes("11,40%"));
 });
-test("F9.4: projetos acadêmicos mantidos, sem colação rotineira",()=>{
+test("F9.4: mantém projeto de Sabará, exclui TCC somente anunciado de Betim",()=>{
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
  assert.ok(i>0);
- for(const n of [i,i+2]){assert.equal(b[n].tipo,"texto");assert.equal(b[n+1].tipo,"galeria");assert.deepEqual(b[n+1].itens,[]);}
- assert.match(b[i].conteudo,/2025/);assert.match(b[i].conteudo,/Betim/);
- assert.match(b[i+2].conteudo,/julho de 2025/);assert.match(b[i+2].conteudo,/Sabará/);
- assert.equal(b[i+4].titulo,"Perguntas frequentes");
- assert.equal(b.filter(x=>x.tipo==="galeria").length,5);
+ assert.equal(b[i].tipo,"texto");
+ assert.match(b[i].conteudo,/Relatividade em Cena/);
+ assert.match(b[i].conteudo,/Sabará/);
+ assert.equal(b[i+1].tipo,"galeria");
+ assert.deepEqual(b[i+1].itens,[]);
+ assert.equal(b[i+2].titulo,"Perguntas frequentes");
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,4);
  assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
- assert.doesNotMatch(JSON.stringify(c),/Colação de grau de bacharéis|Concluintes de Engenharia de Controle e Automação em Sabará/);
+ assert.doesNotMatch(JSON.stringify(c),/TCC sobre controlador PID|A apresentação foi agendada|Colação de grau de bacharéis|Concluintes de Engenharia de Controle e Automação em Sabará/);
  assert.deepEqual(data.courses.map(x=>x.id),[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
 });

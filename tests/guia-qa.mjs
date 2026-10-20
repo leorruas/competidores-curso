@@ -80,7 +80,7 @@ test("metadados de pesquisa não vazam e placeholders são copiáveis para o CMS
       assert.equal((h.editorBlock(b,0).match(/data-copy-field=/g)||[]).length,2);
     }
     const gallery=c.blocos.find(x=>x.tipo==="galeria"&&!x.itens.length);
-    if(gallery)assert.equal((h.editorBlock(gallery,0).match(/data-copy-field=/g)||[]).length,1);
+    if(gallery)assert.equal(h.editorBlock(gallery,0),"","galeria vazia não deve aparecer para cópia");
   }
 });
 
@@ -120,8 +120,7 @@ test("campos incompletos aparecem identificados com botão de copiar", () => {
   assert.match(displayed,/data-copy-field=/);
   const gallery=course.blocos.find(b=>b.tipo==="galeria");
   assert.equal(gallery.itens.length,0);
-  assert.match(h.editorBlock(gallery,3),/Informação incompleta/);
-  assert.match(h.editorBlock(gallery,3),/data-copy-field=/);
+  assert.equal(h.editorBlock(gallery,3),"");
 });
 
 test("catálogo mantém ofertas reais e filtros multicampi", () => {
@@ -1403,7 +1402,7 @@ test("F1.6: a prévia omite somente blocos vazios, sem suprimir os campos do edi
   assert.equal(h.blockPreview(emptyGallery,0),"");
   assert.equal(h.blockPreview(emptyIntro,1),"");
   assert.equal(h.blockPreview(pending,2),"");
-  assert.match(h.editorBlock(emptyGallery,0),/Informação incompleta/);
+  assert.equal(h.editorBlock(emptyGallery,0),"");
   assert.match(h.editorBlock(pending,2),/Pesquisa, extensão e oportunidades/);
   assert.match(h.blockPreview({tipo:"texto",titulo:"Mundo do Trabalho",conteudo:"Atuação profissional."},3),/Mundo do Trabalho/);
 });
@@ -1421,33 +1420,29 @@ test("F2.5/F3.1: Agronomia informa contato SJE e empresa júnior Safra em Bambu�
   assert.ok(matched>0,"galeria da Safra Jr. deve existir");
   assert.equal(c.blocos[matched-1].tipo,"texto");
   assert.match(c.blocos[matched-1].conteudo,/Safra Júnior/);
-  assert.equal(c.blocos[matched].itens.length,0,"foto provisória deve ser fornecida pelo editor");
+  assert.equal(c.blocos[matched].itens.length,0,"registro histórico, sem pedido de foto");
   const mentions=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]);
   assert.equal(mentions.filter(t=>t.includes("Safra Júnior")).length,1,"não repetir a oportunidade no FAQ");
 });
 
-test("F3.7: cada experiência estruturada possui galeria própria e aviso no editor", () => {
+test("F9.4: imagens ausentes não geram cartões, cópia ou pedido de fotografia", () => {
   const h=testContext();
-  for(const c of json.courses){
-    const galleries=c.blocos.filter(b=>b.tipo==="galeria");
-    assert.ok(galleries.length>0,c.id+": curso precisa de galerias");
-    for(const [i,b] of c.blocos.entries()){
-      if(b.tipo!=="galeria")continue;
-      assert.ok(b.referencia&&b.referencia.length>10,c.id+": galeria identificada");
-      assert.equal(b.itens.length,0,c.id+": não reutilizar foto sem autorização");
-      assert.equal(b.tipo,"galeria");
-      const previous=c.blocos[i-1];
-      assert.equal(previous.tipo,"texto",c.id+": galeria deve acompanhar texto da experiência");
-      const html=h.editorBlock(b,i);
-      assert.match(html,/use uma imagem provisória apenas para montar o bloco/);
-      assert.match(html,/solicite à coordenação a substituição antes da publicação/);
-      assert.match(html,/Com bordas/);
-      assert.match(html,/legenda vem do título da imagem/);
-      assert.ok(html.includes(b.referencia.replaceAll("&","&amp;")),c.id+": identificação visível");
-      assert.match(html,/data-copy-field=/,c.id+": marcador da galeria deve ser copiável");
-      assert.equal(h.blockPreview(b,i),"",c.id+": galeria não preenchida oculta na prévia");
+  for(const c of json.courses) {
+    for(const [i,b] of c.blocos.entries()) {
+      if(b.tipo!=="galeria" || b.itens.length) continue;
+      assert.equal(h.editorBlock(b,i,c),"",c.id+": não pedir galeria vazia");
+      assert.deepEqual(h.editorFields(b),[],c.id+": nenhum campo para foto pendente");
+      assert.equal(h.blockPreview(b,i),"",c.id+": sem galeria no visual");
     }
-    assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
+    h.state.tab="editor";
+    h.renderCourse(c);
+    const editor=h.elements.get("course-content").innerHTML;
+    assert.doesNotMatch(editor,/Galeria da experiência|use uma imagem provisória|Galeria ·/,c.id);
+    h.state.tab="preview";
+    h.renderCourse(c);
+    const preview=h.elements.get("course-content").innerHTML;
+    assert.doesNotMatch(preview,/Galeria ·|Galeria da experiência/,c.id);
+    assert.deepEqual(c.blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
 });
 
@@ -1938,7 +1933,7 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   }
-  assert.ok(json.courses.every(c=>c.blocos.some(b=>b.tipo==="galeria")),"todo curso deve possuir galeria; não congelar contagem global");
+  assert.ok(json.courses.every(c=>c.blocos.some(b=>b.titulo==="Experiências e conquistas dos estudantes")),"manter seção editorial na fonte para auditoria");
 });
 
 
@@ -2059,29 +2054,17 @@ test("marcador Informação incompleta pode ser copiado em todos os campos corre
   assert.doesNotMatch(h.fieldHTML({label:"Vazio",value:"",setting:false,rich:false},0,0),/data-copy-field=/,"valor vazio não é marcador");
 });
 
-test("todas as galerias de cursos orientam estilo Com bordas e legenda pelo título da imagem", () => {
+test("F9.4: registros vazios de galeria são legado não copiável", () => {
   const h=testContext();
-  let total=0;
-  for (const course of json.courses) {
-    for (const [i,block] of course.blocos.entries()) {
-      if (block.tipo !== "galeria") continue;
-      total++;
-      const fields=h.editorFields(block);
-      assert.equal(fields[0].label,"Estilo",course.id);
-      assert.equal(fields[0].value,"Com bordas",course.id);
-      assert.equal(fields[0].setting,true,course.id+": escolher estilo no Wagtail");
-      assert.equal(fields[1].label,"Imagens",course.id);
-      assert.equal(fields[1].value,"Informação incompleta",course.id);
-      const html=h.editorBlock(block,i,course);
-      assert.match(html,/Com bordas/,course.id);
-      assert.match(html,/legenda vem do título da imagem/,course.id);
-      assert.match(html,/coordenação/,course.id);
-      assert.match(html,/data-copy-field="1"/,course.id+": marcador copiável");
-      assert.equal((html.match(/data-copy-field=/g)||[]).length,1,course.id+": estilo não copiável");
-      assert.equal(h.blockPreview(block,i),"",course.id+": foto provisória não inventada");
-    }
+  let n=0;
+  for(const c of json.courses)for(const [i,b] of c.blocos.entries()) {
+    if(b.tipo!=="galeria" || b.itens.length) continue;
+    n++;
+    assert.deepEqual(h.editorFields(b),[],c.id);
+    assert.equal(h.editorBlock(b,i,c),"",c.id);
+    assert.equal(h.blockPreview(b,i),"",c.id);
   }
-  assert.ok(total>=json.courses.length,"todos os cursos devem incluir pelo menos uma galeria");
+  assert.ok(n>0,"cobre o catálogo migrado sem fotos");
 });
 
 test("legenda de galeria preenchida usa o título da imagem, sem botão para copiar uma legenda avulsa", () => {

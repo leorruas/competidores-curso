@@ -3556,7 +3556,7 @@
           "itens": [
             {
               "pergunta": "Campus Governador Valadares",
-              "resposta": "O curso é **noturno e presencial**, com duração mínima de dez semestres. A matriz atualizada em **2026** para turmas desde 2023 prevê **3.600 horas**, **160 horas de estágio supervisionado obrigatório** e **60 horas de TCC obrigatório**. O campus dispõe de Laboratório de Construção Civil e Laboratório de Ensaios Mecânicos."
+              "resposta": "O curso é **noturno e presencial**, com duração mínima de dez semestres. A matriz atualizada em **2026** para turmas desde 2023 prevê **3.600 horas**, **160 horas de estágio supervisionado obrigatório** e **60 horas de TCC obrigatório**. O campus dispõe de Laboratório de Construção Civil e Laboratório de Ensaios Mecânicos.\n\nNa avaliação presencial do **MEC**, realizada entre **31 de agosto e 2 de setembro de 2026**, o **Bacharelado em Engenharia Civil do Campus Governador Valadares** recebeu **conceito 4**, com **média contínua de 4,29 em cinco pontos**. A avaliação analisou a organização didático-pedagógica, o corpo docente e a infraestrutura."
             },
             {
               "pergunta": "Campus Piumhi",
@@ -3619,16 +3619,6 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **setembro de 2026**, o **Bacharelado em Engenharia Civil do Campus Governador Valadares** recebeu **conceito 4 em avaliação presencial do MEC**, com média contínua de **4,29 em cinco pontos**. A análise envolveu o projeto pedagógico, o corpo docente e a infraestrutura, com participação da comunidade acadêmica. Uma estudante do 10º período relatou a contribuição de projetos e atividades práticas para a formação. O curso também havia alcançado **nota 5 no Enade**, resultado distinto da avaliação de 2026."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Engenharia Civil · conceito 4 na avaliação presencial do MEC · Campus Governador Valadares · setembro de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Estudantes de Engenharia Civil reconhecidos em Piumhi",
           "conteudo": "Em reconhecimento ao desempenho acadêmico de **2025**, **dois estudantes de Engenharia Civil do Campus Piumhi** foram homenageados como **Destaque Acadêmico do IFMG**, em cerimônia na Reitoria. A distinção valorizou o comprometimento e a trajetória dos estudantes nas atividades do curso."
         },
         {

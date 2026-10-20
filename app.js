@@ -103,14 +103,14 @@
     return result;
   }
   const blockName = { "dados-basicos": "Dados básicos", "texto": "Texto", "introducao": "Introdução", "tabela": "Tabela", "faq": "FAQ", "galeria": "Galeria", "links": "Links", "link-unico": "Link único" };
-  function blockCopy(b) {
+  function blockCopy(b, omitTitle = false) {
     if (b.tipo === "dados-basicos") return b.campos.map(x => x.rotulo + ": " + x.valor).join("\n");
     if (b.tipo === "tabela") return [b.colunas.join("\t"),...b.linhas.map(row => row.join("\t"))].join("\n");
     if (b.tipo === "faq") return b.itens.map(x => "Pergunta: " + x.pergunta + "\nResposta: " + x.resposta).join("\n\n");
     if (b.tipo === "links") return b.itens.map(x => x.rotulo + " — " + x.url).join("\n");
     if (b.tipo === "link-unico") return [b.link.rotulo,b.link.descricao || "",b.link.url].join("\n");
     if (b.tipo === "galeria") return b.itens.map(x => (x.legenda || "") + " — " + (x.alt || "") + " — " + x.url).join("\n");
-    if (b.tipo === "texto" && /^(?:formas? de ingresso|mundo do trabalho)$/i.test((b.titulo || "").trim()))
+    if (b.tipo === "texto" && (omitTitle || /^(?:formas? de ingresso|mundo do trabalho)$/i.test((b.titulo || "").trim())))
       return b.conteudo || "";
     return [b.titulo || "",b.conteudo || ""].filter(Boolean).join("\n\n");
   }
@@ -146,11 +146,17 @@
     return "<table><thead><tr>" + b.colunas.map(x => "<th>" + escapeHTML(x) + "</th>").join("") +
       "</tr></thead><tbody>" + b.linhas.map(row => "<tr>" + row.map(x => "<td>" + renderInline(x).replace(/<mark>/g,"<strong>").replace(/<\/mark>/g,"</strong>") + "</td>").join("") + "</tr>").join("") + "</tbody></table>";
   }
-  function editorFields(b) {
+  function editorFields(b, omitTitle = false) {
     const raw = (label, value, setting = false) => ({label, value: String(value ?? ""), rich: false, html: "", setting});
     const rich = (label, value) => ({label, value: String(value ?? ""), rich: true, html: richHTML(value)});
     if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor));
     if (b.tipo === "texto") {
+      // O primeiro bloco textual apresenta o curso. O nome já é o título
+      // copiável da página e não deve ser repetido nos parágrafos.
+      if (omitTitle) return [{
+        label:"Conteúdo", value:String(b.conteudo || ""), rich:true,
+        html:richHTML(b.conteudo || "")
+      }];
       // Esses títulos já existem no Wagtail: mostrá-los como rótulos no guia,
       // mas copiar exclusivamente o corpo, tanto em HTML quanto em texto simples.
       if (/^(?:formas? de ingresso|mundo do trabalho)$/i.test((b.titulo || "").trim())) {
@@ -165,8 +171,8 @@
       }
       // Um bloco Texto do Wagtail corresponde a um único campo Rich Text.
       // O título, quando existe, vai no mesmo conteúdo que os parágrafos.
-      // Quando ainda não há conteúdo, manter o título da seção visível,
-      // mas não oferecer cópia de um placeholder para o Wagtail.
+      // Quando ainda não há conteúdo, manter o título da seção visível
+      // e permitir copiar o marcador de informação incompleta para o Wagtail.
       if (/^informação incompleta$/i.test((b.conteudo || "").trim())) {
         // O título é parte da instrução de preenchimento e deve ser copiável,
         // mesmo quando o corpo da seção ainda não foi produzido.
@@ -221,22 +227,34 @@
     }];
     return [];
   }
-  function fieldHTML(field, blockIndex, fieldIndex) {
+  function fieldHTML(field, blockIndex, fieldIndex, pageTitle = false) {
     const content = field.rich
       ? '<div class="field-example rich-example' + (field.table ? ' table-wrap editor-table' : '') + '">' + (field.html || '<span class="review-value">Informação incompleta</span>') + '</div>'
       : '<div class="field-example text-example">' + escapeHTML(field.value || "Informação incompleta") + '</div>';
-    const incomplete = !field.value.trim() || /^informação incompleta$/i.test(field.value.trim());
+    const empty = !field.value.trim();
+    const attributes = pageTitle
+      ? "data-copy-page-title"
+      : 'data-copy-field="' + fieldIndex + '" data-copy-block="' + blockIndex + '"';
     const action = field.setting
       ? '<span class="editor-setting" aria-label="Selecionar esta opção no Wagtail">selecionar no Wagtail</span>'
-      : incomplete ? '<span class="editor-setting">Informação incompleta</span>'
-      : '<button type="button" class="copy-button" data-copy-field="' + fieldIndex +
-          '" data-copy-block="' + blockIndex + '">' + (field.table ? "Copiar tabela" : "Copiar") + ' <span aria-hidden="true">↗</span></button>';
+      : empty ? '<span class="editor-setting">Informação incompleta</span>'
+      : '<button type="button" class="copy-button" ' + attributes + '>' +
+          (field.table ? "Copiar tabela" : "Copiar") + ' <span aria-hidden="true">↗</span></button>';
     return '<div class="editor-field"><div class="editor-field-top"><span class="editor-field-label">' +
       escapeHTML(field.label) + '</span><div class="editor-field-actions">' + action +
       '</div></div>' + content + '</div>';
   }
-  function editorBlock(b, i) {
-    const fields = editorFields(b);
+  function isIntroBlock(course, b, i) {
+    return Boolean(course && b?.tipo === "texto" && b.titulo === course.nome &&
+      i === course.blocos.findIndex(x => x.tipo === "texto"));
+  }
+  function pageTitleHTML(course) {
+    return '<section class="page-title-field" aria-label="Título da página">' +
+      fieldHTML({label:"Título da página",value:course.nome,rich:false,html:"",setting:false},-1,0,true) +
+      '</section>';
+  }
+  function editorBlock(b, i, course = null) {
+    const fields = editorFields(b, isIntroBlock(course, b, i));
     return '<section class="block-card" id="bloco-' + i + '" aria-labelledby="block-heading-' + i + '">' +
       '<span class="block-badge" aria-hidden="true">' + String(i+1).padStart(2,"0") + '</span>' +
       '<header class="block-card-header"><h2 class="block-card-title" id="block-heading-' + i +
@@ -290,7 +308,7 @@
       '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +
       (!activePreview ? '' : '') +
-      (activePreview ? course.blocos.map(blockPreview).join("") : course.blocos.map(editorBlock).join("")) +
+      (activePreview ? course.blocos.map(blockPreview).join("") : pageTitleHTML(course) + course.blocos.map((b,i) => editorBlock(b,i,course)).join("")) +
       '' +
       '</div><aside class="course-side"><div class="side-label">NESTA PÁGINA</div><nav aria-label="Índice dos blocos">' +
       headings.map(x => '<a href="#bloco-' + x.index + '" data-anchor="' + x.index + '"><span class="side-number">' + String(x.index+1).padStart(2,"0") + '</span>' + escapeHTML(x.title) + '</a>').join("") +
@@ -380,11 +398,17 @@
         if (c) { renderCourse(c); $("tab-" + selected).focus(); }
         return;
       }
+      const pageTitleButton = e.target.closest("[data-copy-page-title]");
+      if (pageTitleButton) {
+        const c = state.current === "demonstracao" ? demo : state.courses.find(x => x.id === state.current || x.aliases?.includes(state.current));
+        if (c) await performCopy(pageTitleButton, c.nome);
+        return;
+      }
       const button = e.target.closest("[data-copy-field]");
       if (button) {
         const c = state.current === "demonstracao" ? demo : state.courses.find(x => x.id === state.current || x.aliases?.includes(state.current));
         const b = c?.blocos[Number(button.dataset.copyBlock)];
-        const field = b ? editorFields(b)[Number(button.dataset.copyField)] : null;
+        const field = b ? editorFields(b, isIntroBlock(c, b, Number(button.dataset.copyBlock)))[Number(button.dataset.copyField)] : null;
         if (field && !field.setting) {
           await performCopy(button, field.value, field.rich ? field.html : "");
         }

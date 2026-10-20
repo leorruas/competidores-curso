@@ -353,6 +353,13 @@ h1 em{color:var(--accent);font-style:normal}
   scroll-margin-top:110px;
 }
 .block-card:first-child{border-top:0}
+.page-title-field{padding:4px 8px 24px;margin:0 0 30px;border-bottom:1px solid var(--line)}
+.page-title-field .editor-field{padding:0;border:0}
+.page-title-field .editor-field-top{align-items:center}
+.page-title-field .editor-field-label{font:600 13px/1.45 var(--sans);color:var(--ink)}
+.page-title-field .copy-button{padding:5px 0}
+.page-title-field .text-example{margin-top:7px;overflow-wrap:anywhere}
+
 .block-badge{
   position:absolute;
   top:25px;

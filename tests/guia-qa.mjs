@@ -37,7 +37,7 @@ function testContext(clipboard = {}) {
   const ending = "  init();\n})();";
   assert.ok(source.includes(ending),"Não foi possível isolar a aplicação para testes");
   const instrumented = source.replace(ending,
-    "  return {demo,state,editorFields,editorBlock,blockPreview,blockCopy,tableHTML,richHTML,copyValue,renderCatalog,isApprovedCourse};\n})();");
+    "  return {demo,state,editorFields,editorBlock,blockPreview,blockCopy,tableHTML,richHTML,copyValue,renderCatalog,renderCourse,pageTitleHTML,isIntroBlock,fieldHTML,isApprovedCourse};\n})();");
   const hooks = vm.runInNewContext(instrumented, vm.createContext(sandbox), {timeout:2500});
   return { ...hooks, elements, clipboardState };
 }
@@ -63,7 +63,7 @@ test("o catálogo inclui somente roteiros autorizados sem controles privados", (
   assert.equal(h.isApprovedCourse({...json.courses[0],status:"pendente"}),false);
 });
 
-test("metadados de pesquisa não vazam e placeholders não são copiáveis", () => {
+test("metadados de pesquisa não vazam e placeholders são copiáveis para o CMS", () => {
   const forbidden=new Set(["validacao","pendencias","revisao_coordenacao","instrucao"]);
   function walk(v) {
     if (Array.isArray(v)) return v.forEach(walk);
@@ -77,10 +77,10 @@ test("metadados de pesquisa não vazam e placeholders não são copiáveis", () 
   for (const c of json.courses) {
     for (const b of c.blocos.filter(x=>x.tipo==="texto"&&x.conteudo==="Informação incompleta")) {
       assert.equal(h.editorFields(b)[0].label,"Título da seção");
-      assert.equal((h.editorBlock(b,0).match(/data-copy-field=/g)||[]).length,1);
+      assert.equal((h.editorBlock(b,0).match(/data-copy-field=/g)||[]).length,2);
     }
     const gallery=c.blocos.find(x=>x.tipo==="galeria"&&!x.itens.length);
-    if(gallery)assert.equal((h.editorBlock(gallery,0).match(/data-copy-field=/g)||[]).length,0);
+    if(gallery)assert.equal((h.editorBlock(gallery,0).match(/data-copy-field=/g)||[]).length,1);
   }
 });
 
@@ -106,7 +106,7 @@ test("a tela vazia é breve e a demonstração é explicitamente fictícia", () 
   assert.doesNotMatch(filtered,/href="#curso\/demonstracao"/);
 });
 
-test("campos incompletos aparecem identificados sem botão de copiar", () => {
+test("campos incompletos aparecem identificados com botão de copiar", () => {
   const h=testContext();
   const course=json.courses.find(c=>c.id==="direito-bacharelado-arcos");
   const dados=course.blocos.find(b=>b.tipo==="dados-basicos");
@@ -117,9 +117,11 @@ test("campos incompletos aparecem identificados sem botão de copiar", () => {
   const displayed=h.editorBlock(dados,0);
   assert.doesNotMatch(displayed,/Precisa de validação|Confirmar|Levantar avaliações|Listar projetos efetivamente/);
   assert.match(displayed,/Informação incompleta/);
+  assert.match(displayed,/data-copy-field=/);
   const gallery=course.blocos.find(b=>b.tipo==="galeria");
   assert.equal(gallery.itens.length,0);
   assert.match(h.editorBlock(gallery,3),/Informação incompleta/);
+  assert.match(h.editorBlock(gallery,3),/data-copy-field=/);
 });
 
 test("catálogo mantém ofertas reais e filtros multicampi", () => {
@@ -1012,7 +1014,7 @@ test("as seções editoriais existem, independentemente da posição contextual 
       assert.equal(fields[0].value,b.titulo);
       assert.equal(fields[1].value,"Informação incompleta");
       const markup=h.editorBlock(b,2);
-      assert.equal((markup.match(/data-copy-field=/g)||[]).length,1);
+      assert.equal((markup.match(/data-copy-field=/g)||[]).length,2);
       assert.doesNotMatch(markup,/Precisa de validação|confirmar com a coordenação/i);
     }
   }
@@ -1065,7 +1067,7 @@ test("título permanece copiável quando Texto tem conteúdo incompleto", () => 
   assert.match(fields[0].html,/<h2>Pesquisa, extensão e oportunidades<\/h2>/);
   assert.equal(fields[1].value,"Informação incompleta");
   const html=h.editorBlock(b,5);
-  assert.equal((html.match(/data-copy-field=/g)||[]).length,1);
+  assert.equal((html.match(/data-copy-field=/g)||[]).length,2);
   assert.doesNotMatch(html,/Levantar|Listar projetos|Confirmar|Precisa de validação/);
 });
 
@@ -1432,7 +1434,7 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
       assert.match(html,/Insira qualquer imagem provisória/);
       assert.match(html,/A coordenação do curso deverá substituí-la/);
       assert.ok(html.includes(b.referencia.replaceAll("&","&amp;")),c.id+": identificação visível");
-      assert.doesNotMatch(html,/data-copy-field=/,c.id+": nunca copiar placeholder");
+      assert.match(html,/data-copy-field=/,c.id+": marcador da galeria deve ser copiável");
       assert.equal(h.blockPreview(b,i),"",c.id+": galeria não preenchida oculta na prévia");
     }
     assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"],c.id);
@@ -1973,5 +1975,79 @@ test("cópia simples e seção incompleta não inserem títulos das duas seçõe
   const incompleto={tipo:"texto",titulo:"Mundo do Trabalho",conteudo:"Informação incompleta"};
   const rendered=h.editorBlock(incompleto,0);
   assert.match(rendered,/Mundo do Trabalho/);
-  assert.doesNotMatch(rendered,/data-copy-field=/);
+  assert.match(rendered,/data-copy-field=/);
+});
+
+test("título da página é o primeiro campo de cópia em todos os 73 cursos", () => {
+  const h=testContext();
+  assert.equal(json.courses.length,73);
+  for (const course of json.courses) {
+    h.renderCourse(course);
+    const markup=h.elements.get("course-content").innerHTML;
+    const titleMarkup=h.pageTitleHTML(course);
+    assert.match(titleMarkup,/data-copy-page-title/,course.id);
+    assert.match(titleMarkup,/Título da página/,course.id);
+    assert.ok(titleMarkup.includes(course.nome.replaceAll("&","&amp;")),course.id);
+    assert.ok(markup.indexOf('data-copy-page-title') < markup.indexOf('id="bloco-0"'),course.id+": primeiro campo antes de Dados básicos");
+    assert.equal((markup.match(/data-copy-page-title/g)||[]).length,1,course.id+": título copiável uma única vez");
+    assert.equal((markup.match(/<h1>/g)||[]).length,1,course.id+": título visual preservado");
+    assert.match(h.editorBlock(course.blocos[0],0,course),/Categoria/,course.id);
+    assert.ok(!course.blocos[0].campos.some(x=>x.rotulo==="Curso"||x.rotulo==="Título da página"),course.id+": não duplicar Dados básicos");
+    assert.equal(h.isIntroBlock(course,course.blocos[1],1),true,course.id);
+  }
+  assert.match(h.pageTitleHTML(h.demo),/data-copy-page-title/);
+});
+
+test("texto introdutório copia só parágrafos, sem o nome repetido do curso, nos 73 roteiros", async () => {
+  const h=testContext();
+  for (const course of json.courses) {
+    const intro=course.blocos[1];
+    assert.equal(intro.tipo,"texto",course.id);
+    assert.equal(intro.titulo,course.nome,course.id);
+    const field=h.editorFields(intro,true)[0];
+    assert.equal(field.label,"Conteúdo",course.id);
+    assert.equal(field.value,intro.conteudo,course.id);
+    assert.equal(h.blockCopy(intro,true),intro.conteudo,course.id);
+    assert.ok(!field.html.includes("<h2>"),course.id+": não enviar cabeçalho na cópia HTML");
+    const editor=h.editorBlock(intro,1,course);
+    assert.ok(!editor.includes("<h2>"+course.nome+"</h2>"),course.id+": não renderizar título dentro dos parágrafos");
+    assert.match(editor,/data-copy-field="0"/,course.id);
+    assert.match(h.blockPreview(intro,1),/<h2>/,course.id+": manter o título na prévia");
+    const rest=h.editorFields({tipo:"texto",titulo:"Para quem é o curso",conteudo:"Descrição normal."})[0];
+    assert.ok(rest.html.includes("<h2>Para quem é o curso</h2>"));
+  }
+  const direito=json.courses.find(c=>c.nome==="Direito");
+  const field=h.editorFields(direito.blocos[1],true)[0];
+  assert.equal(await h.copyValue(field.value,field.html),"rich");
+  const copied=h.clipboardState.items[0].data;
+  assert.ok(!(await copied["text/html"].text()).includes("<h2>Direito</h2>"));
+  assert.ok(!(await copied["text/plain"].text()).startsWith("Direito"));
+  assert.match(await copied["text/plain"].text(),/Estude Direito em uma instituição pública federal/);
+});
+
+test("marcador Informação incompleta pode ser copiado em todos os campos correspondentes", async () => {
+  const h=testContext();
+  const incomplete="Informação incompleta";
+  const candidates=[
+    {tipo:"dados-basicos",campos:[{rotulo:"Duração",valor:incomplete}]},
+    {tipo:"texto",titulo:"Experiências e conquistas dos estudantes",conteudo:incomplete},
+    {tipo:"galeria",itens:[]},
+    {tipo:"links",itens:[]},
+    {tipo:"introducao",conteudo:incomplete}
+  ];
+  for (const [i,b] of candidates.entries()) {
+    const fields=h.editorFields(b);
+    const fieldIndex=fields.findIndex(f=>f.value===incomplete);
+    assert.ok(fieldIndex>=0,"caso "+i+": campo incompleto");
+    assert.match(h.fieldHTML(fields[fieldIndex],i,fieldIndex),/data-copy-field=/,"caso "+i+": permitir copiar");
+    const rendered=h.editorBlock(b,i);
+    assert.ok((rendered.match(/data-copy-field=/g)||[]).length >= 1,"caso "+i+": botão visível");
+    const result=await h.copyValue(fields[fieldIndex].value,fields[fieldIndex].html);
+    assert.ok(["plain","rich"].includes(result));
+  }
+  assert.equal(h.editorFields({tipo:"texto",titulo:"Mundo do Trabalho",conteudo:incomplete})[0].value,incomplete);
+  assert.match(h.editorBlock({tipo:"texto",titulo:"Mundo do Trabalho",conteudo:incomplete},1),/data-copy-field=/);
+  const settings={label:"Estilo",value:"Padrão",setting:true,rich:false};
+  assert.doesNotMatch(h.fieldHTML(settings,0,0),/data-copy-field=/,"configuração não vira botão de cópia");
+  assert.doesNotMatch(h.fieldHTML({label:"Vazio",value:"",setting:false,rich:false},0,0),/data-copy-field=/,"valor vazio não é marcador");
 });

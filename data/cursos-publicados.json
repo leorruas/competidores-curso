@@ -3301,32 +3301,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **janeiro de 2025**, estudantes do **7º período de Engenharia Ambiental e Sanitária** participaram de uma visita técnica à **Cenibra**, em Belo Oriente. A atividade, vinculada à disciplina de sistemas de esgotamento e tratamento de efluentes, permitiu conhecer a **Estação de Tratamento de Efluentes** da indústria, além de práticas de reuso de resíduos e gestão socioambiental."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Visita técnica de estudantes de Engenharia Ambiental e Sanitária à Cenibra · Belo Oriente · janeiro de 2025",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Visita à Usina Hidrelétrica de Baguari",
-          "conteudo": "Em **outubro de 2025**, estudantes de Engenharia Ambiental e Sanitária participaram de uma visita à **Usina Hidrelétrica de Baguari**, junto a turmas de cursos técnicos. Conheceram a casa de força, os geradores, a barragem e o sistema de transposição de peixes, além de ações de monitoramento e educação ambiental ligadas à produção de energia."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Visita técnica à UHE Baguari · estudantes de Engenharia Ambiental e Sanitária · outubro de 2025",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Pesquisa sobre dengue apresentada na COP30",
           "conteudo": "Em **novembro de 2025**, um estudo desenvolvido por uma **egressa de Engenharia Ambiental e Sanitária do Campus Governador Valadares** integrou um livro digital de iniciativas sustentáveis da Rede Federal, lançado durante a **COP30**. A pesquisa combinou **sistemas de informação geográfica** e análise de dados ambientais e sociais para mapear áreas com maior suscetibilidade à reprodução do mosquito transmissor da dengue na zona urbana da cidade. O trabalho originou um TCC e um relatório de pesquisa."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Pesquisa de egressa sobre suscetibilidade espacial à dengue em Governador Valadares · publicação em e-book da COP30 · novembro de 2025",
-          "itens": []
         },
         {
           "tipo": "texto",

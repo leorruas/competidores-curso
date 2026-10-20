@@ -65,8 +65,10 @@ export function validarEstruturaCurso(curso) {
     if (blocos.filter(b => b?.tipo === "texto" && b.titulo === titulo).length !== 1)
       erros.push("seção obrigatória deve aparecer uma vez: " + titulo);
   }
-  // Contrato de hierarquia do Wagtail: H2 e H3 exigem blocos Texto separados.
-  // O próprio conteúdo do H2 fica vazio, para não misturar H2 e H3 no mesmo campo.
+  // Contrato transitório do JSON: H2 e H3 permanecem como registros Texto separados.
+  // No modo Copiar, app.js os apresenta juntos no mesmo campo rico quando adjacentes.
+  // Confirmar a colagem real na homologação antes de mudar o contrato de dados (F9.1).
+  // O conteúdo do registro H2 permanece vazio, sem parágrafo artificial.
   for (const [i,b] of blocos.entries()) {
     if (b?.tipo !== "texto") continue;
     if (b.titulo === "Continue seus estudos no IFMG") {

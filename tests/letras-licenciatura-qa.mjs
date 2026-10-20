@@ -24,21 +24,28 @@ test("F7.36: Letras Português Inglês Congonhas usa PPC e contato do PS2027",()
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
  assert.ok(b.at(-1).conteudo.length>500);
 });
-test("F7.36: experiências 2025+ documentadas, quatro galerias e prêmio identificado",()=>{
- assert.equal(b.length,28);
- assert.equal(b.filter(x=>x.tipo==="galeria").length,4);
+test("F9.4: Letras distingue avaliação do curso, aprendizagem e produção estudantil",()=>{
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
  assert.ok(i>0);
  assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
- const actual=[i,i+2,i+4];
- for(const k of actual){assert.equal(b[k].tipo,"texto");assert.equal(b[k+1].tipo,"galeria");assert.deepEqual(b[k+1].itens,[]);}
- assert.match(b[i].conteudo,/cinco estrelas no Guia da Faculdade 2025/);
- assert.match(b[i].conteudo,/3 de maio de 2025/);
- assert.match(b[i].conteudo,/Conceição Evaristo/);
- assert.match(b[i+2].conteudo,/SUNY Cortland/);
- assert.match(b[i+2].conteudo,/2026/);
- assert.match(b[i+4].conteudo,/3 de outubro de 2026/);
- assert.match(b[i+4].conteudo,/pôsteres de pesquisas/);
+ const end=b.findIndex((x,k)=>k>i&&x.titulo==="Perguntas frequentes");
+ const relatos=b.slice(i,end).filter(x=>x.tipo==="texto");
+ assert.equal(relatos.length,1);
+ assert.match(relatos[0].conteudo,/3 de outubro de 2026.*Campus Congonhas/);
+ assert.match(relatos[0].conteudo,/pôsteres de pesquisas.*PIBID.*II Semana de Letras/);
+ assert.doesNotMatch(relatos[0].conteudo,/cinco estrelas|Bienal|SUNY|CCBB|Academia Mineira/);
+ const campus=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens[0];
+ assert.match(campus.resposta,/cinco estrelas no Guia da Faculdade 2025/);
+ const pratica=b.find(x=>x.titulo==="Aprendizagem prática no Campus Congonhas");
+ assert.match(pratica.conteudo,/3 de maio de 2025.*Bienal Mineira do Livro.*Conceição Evaristo/);
+ const oportunidades=b.find(x=>x.titulo==="Pesquisa, extensão e oportunidades");
+ assert.match(oportunidades.conteudo,/26 de maio e 2 de junho de 2026.*SUNY Cortland/);
+ assert.match(oportunidades.conteudo,/estudantes de Letras participaram de entrevistas/);
+ assert.ok(!b.some(x=>x.tipo==="galeria"&&/Bienal|SUNY|Academic Exchange/.test(x.referencia||"")));
+ for(const termo of ["cinco estrelas no Guia da Faculdade 2025","Bienal Mineira do Livro","SUNY Cortland"]){
+   const occurrences=b.reduce((n,x)=>n+Number(String(x.conteudo||"").includes(termo))+(x.itens||[]).filter(y=>String(y.resposta||"").includes(termo)).length,0);
+   assert.equal(occurrences,1,termo);
+ }
  const pos=b.findIndex(x=>x.titulo==="Pós-graduação");
  assert.ok(b[pos+1].linhas.some(x=>x[0]==="Especialização em Ensino de Língua Portuguesa e Literatura na Educação Básica"&&x[1].includes("Sabará")));
  assert.ok(b[pos+1].linhas.some(x=>x[0]==="Especialização em Ensino de Língua Portuguesa na Educação Básica"&&x[1]==="Ouro Preto"));

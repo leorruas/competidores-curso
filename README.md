@@ -4,6 +4,10 @@ Ferramenta estática de apoio à preparação das páginas dos cursos do IFMG no
 
 **Estado atual (16/10/2026):** publicados **oito roteiros multicampi e individuais para revisão pela coordenação**, representando **29 ofertas/campi representadas no catálogo de revisão**, incluindo Administração Bacharelado em seis campi, Técnico em Administração Integrado em oito, **Engenharia Mecânica em Arcos e Betim**, **Agronomia em Bambuí e São João Evangelista** e **Engenharia de Produção em Bambuí, Congonhas e Governador Valadares**. Os roteiros de Agronomia e Engenharia de Produção conservam os identificadores anteriores de Bambuí como aliases para não quebrar links. O catálogo não equivale à publicação ou homologação do conteúdo no Wagtail. Campos incompletos ou divergentes são sinalizados no próprio roteiro. A demonstração fictícia continua disponível por URL.
 
+## Política de imagens de 20/10/2026
+
+Este projeto não inclui coleta de fotografias. Galerias vazias mantidas como referências históricas no JSON não aparecem nas abas Copiar ou Visualizar, nem geram campos a preencher no Wagtail. A seção Experiências e conquistas dos estudantes aparece para cópia somente quando há realizações relevantes e documentadas; não precisa de imagem.
+
 ## Abrir e publicar o site
 
 O site é composto por `index.html`, `style.css`, `app.js` e `data/cursos-publicados.json`. Não há compilação, backend, banco de dados nem necessidade de instalar pacotes. Para testes, sirva a pasta por HTTP, por exemplo com `python3 -m http.server 8000` e acesse `http://localhost:8000/` (abrir o HTML por `file://` pode bloquear a leitura do JSON).

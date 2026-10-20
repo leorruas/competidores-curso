@@ -159,3 +159,22 @@ test("F9.6: pós-graduação pode não ter Links quando a exceção está docume
   assert.ok(curso, "deve existir uma pós-graduação sem Links a avaliar");
   assert.deepEqual(validarEstruturaCurso(curso), []);
 });
+
+test("F9.6: somente quatro pós-graduações têm exceção documentada de Links", () => {
+ const ids=[
+  "especializacao-em-gestao-da-manutencao",
+  "especializacao-em-inteligencia-artificial",
+  "especializacao-em-sistemas-de-energia-renovavel",
+  "mestrado-profissional-em-administracao"
+ ];
+ const semLinks=catalogo.courses.filter(c=>c.nivel==="Pós-graduação"&&!c.blocos.some(b=>b.tipo==="links"));
+ assert.deepEqual(semLinks.map(x=>x.id).sort(),ids.sort());
+ for(const c of semLinks){
+  const faq=c.blocos.find(b=>b.tipo==="faq"&&!b.titulo);
+  assert.ok(faq?.itens?.length,c.id+": FAQ específico do programa obrigatório");
+  assert.ok(c.blocos.some(b=>b.titulo==="Forma de ingresso"&&b.conteudo?.trim()),c.id);
+  assert.deepEqual(validarEstruturaCurso(c),[],c.id);
+ }
+ // Cada nova pós sem Links precisa ser analisada e acrescentada ao registro privado
+ // de exceções F9.6; nunca inventar URL para manter uma contagem fixa.
+});

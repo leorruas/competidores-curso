@@ -178,8 +178,7 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
     ["engenharia-de-producao-bacharelado",["Diretório Acadêmico","Brazilian Journal of Production Engineering"]],
     ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]
   ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
-  assert.match(get("tecnico-em-edificacoes-integrado"),/Usina Hidrelétrica de Baguari/);
-  assert.match(get("tecnico-em-edificacoes-integrado"),/instalações da Vale/);
+  assert.equal(get("tecnico-em-edificacoes-integrado"),"","visitas didáticas não são conquistas documentadas");
   assert.match(get("tecnico-em-administracao-integrado"),/Mostra Sua UFMG/);
   for(const id of ["tecnico-em-logistica-subsequente","direito-bacharelado-arcos"]){
     assert.equal(get(id),"Informação incompleta",id+": uma única pendência, sem inventar conquista");
@@ -1446,18 +1445,15 @@ test("F9.4: imagens ausentes não geram cartões, cópia ou pedido de fotografia
   }
 });
 
-test("F3.8: Edificações reúne visitas de 2025 e 2026 com uma galeria por experiência", () => {
+test("F9.4: Edificações mantém a seção sem conquistar resultados de visitas regulares", () => {
   const c=json.courses.find(c=>c.id==="tecnico-em-edificacoes-integrado");
   const i=c.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
   assert.ok(i>=0);
-  const sequence=c.blocos.slice(i,i+6);
-  assert.deepEqual(sequence.map(b=>b.tipo),["texto","galeria","texto","galeria","texto","galeria"]);
-  assert.match(sequence[0].conteudo,/8 de outubro de 2026.*Governador Valadares/);
-  assert.match(sequence[2].conteudo,/Usina Hidrelétrica de Baguari/);
-  assert.match(sequence[4].conteudo,/junho de 2025.*Ouro Preto/);
-  assert.ok(sequence[1].referencia.includes("Vale"));
-  assert.ok(sequence[3].referencia.includes("Baguari"));
-  assert.ok(sequence[5].referencia.includes("Bauxita"));
+  assert.equal(c.blocos[i].conteudo,"");
+  assert.equal(c.blocos[i+1].titulo,"Perguntas frequentes");
+  assert.equal(c.blocos.filter(b=>b.titulo==="Experiências e conquistas dos estudantes").length,1);
+  assert.ok(!c.blocos.some(b=>b.tipo==="galeria"&&/Vale|Baguari|Bauxita/.test(b.referencia||"")));
+  assert.doesNotMatch(JSON.stringify(c.blocos),/instalações da Vale|Usina Hidrelétrica de Baguari|shopping no bairro Bauxita/);
 });
 
 test("F3.8: Administração Integrado traz NEPSO e Mostra UFMG com galerias por experiência", () => {

@@ -173,11 +173,11 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
   }
   const get=id=>sectionText(json.courses.find(c=>c.id===id),unified);
   for(const [id,terms] of [
-    ["administracao-bacharelado",["Ouro Branco","quatro estrelas","2025"]],
     ["agronomia-bacharelado",["Informação incompleta"]],
     ["engenharia-de-producao-bacharelado",["Diretório Acadêmico","Brazilian Journal of Production Engineering"]],
     ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]
   ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
+  assert.equal(get("administracao-bacharelado"),"","avaliação do curso pertence à informação do campus");
   assert.equal(get("tecnico-em-edificacoes-integrado"),"","visitas didáticas não são conquistas documentadas");
   assert.match(get("tecnico-em-administracao-integrado"),/Mostra Sua UFMG/);
   for(const id of ["tecnico-em-logistica-subsequente","direito-bacharelado-arcos"]){
@@ -919,11 +919,14 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
   const c=json.courses.find(x=>x.id==="administracao-bacharelado");
   const answer=c.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Ouro Branco").resposta;
   assert.match(answer,/8% da carga horária a distância/);
-  assert.doesNotMatch(answer,/Guia da Faculdade|quatro estrelas/);
+  assert.match(answer,/Campus Ouro Branco.*quatro estrelas no Guia da Faculdade de 2025/);
   const local=c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi");
   assert.doesNotMatch(local.itens.find(x=>x.pergunta==="Campus Formiga").resposta,/conceito 4|MEC/);
   const experiences=sectionText(c,"Experiências e conquistas dos estudantes");
-  assert.match(experiences,/Ouro Branco.*quatro estrelas.*2025/);
+  assert.equal(experiences,"");
+  for(const item of local.itens.filter(x=>x.pergunta!=="Campus Ouro Branco")){
+    assert.doesNotMatch(item.resposta,/quatro estrelas|Guia da Faculdade de 2025/,item.pergunta);
+  }
   const copies=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]).join("\n");
   assert.equal(copies.split("quatro estrelas").length-1,1,"reconhecimento de 2025 citado apenas uma vez");
   assert.doesNotMatch(experiences,/conceito 4|Formiga/,"sem usar nota do MEC de ano desconhecido como conquista recente");

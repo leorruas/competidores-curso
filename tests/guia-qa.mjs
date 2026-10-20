@@ -176,7 +176,7 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
   for(const [id,terms] of [
     ["administracao-bacharelado",["Ouro Branco","quatro estrelas","2025"]],
     ["agronomia-bacharelado",["Informação incompleta"]],
-    ["engenharia-de-producao-bacharelado",["Portaria SERES/MEC nº 16","2 de fevereiro de 2026","Diretório Acadêmico","Brazilian Journal of Production Engineering"]],
+    ["engenharia-de-producao-bacharelado",["Diretório Acadêmico","Brazilian Journal of Production Engineering"]],
     ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]
   ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
   assert.match(get("tecnico-em-edificacoes-integrado"),/Usina Hidrelétrica de Baguari/);
@@ -965,8 +965,10 @@ test("Agronomia e Engenharia de Produção preservam campi sem reciclar vagas do
   const pTable=prod.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.equal(pTable.linhas[1][3],"coordenacao.producao.congonhas@ifmg.edu.br");
   assert.equal(pTable.linhas[2][3],"coenp.gv@ifmg.edu.br");
-  assert.match(prod.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo,/Governador Valadares/);
-  assert.match(prod.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes").conteudo,/2 de fevereiro de 2026/);
+  const experiences=sectionText(prod,"Experiências e conquistas dos estudantes");
+  assert.match(experiences,/Bambuí/);
+  assert.match(experiences,/Congonhas/);
+  assert.doesNotMatch(experiences,/Portaria SERES\/MEC|reconhecimento renovado/);
 });
 
 test("Direito explica estágio e TCC com exigências concretas", () => {
@@ -1197,11 +1199,11 @@ test("F3.1: Congonhas e GV apresentam projeto, resultado e campus; SJE empresa j
     assert.ok(research.includes(term),"Produção pesquisa: "+term);
   }
   const achievements=sectionText(pro,"Experiências e conquistas dos estudantes");
-  for(const term of ["Bambuí","Congonhas","2025","Brazilian Journal of Production Engineering","Governador Valadares","Victor Rasquinho Ho Te Chang","Dominycke Guasti de Melo","impressão 3D"]) {
+  for(const term of ["Bambuí","Congonhas","2025","Brazilian Journal of Production Engineering","Victor Rasquinho Ho Te Chang","Dominycke Guasti de Melo","impressão 3D"]) {
     assert.ok(achievements.includes(term),"Produção conquista: "+term);
   }
   assert.ok(pro.blocos.filter(b=>b.tipo==="galeria").every(b=>b.itens.length===0));
-  assert.doesNotMatch(achievements,/premiados em 2026|vaga garantida/);
+  assert.doesNotMatch(achievements,/Portaria SERES\/MEC|reconhecimento renovado|premiados em 2026|vaga garantida/);
 });
 
 test("F5.3: Engenharia de Produção apresenta cada atividade uma vez no bloco adequado", () => {

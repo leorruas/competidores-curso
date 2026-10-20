@@ -4620,16 +4620,6 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **9 de junho de 2026**, estudantes do **7º período de Engenharia Elétrica do Campus Formiga** visitaram o **Centro de Operações da Distribuição da Cemig**, em Belo Horizonte. A atividade permitiu acompanhar o monitoramento da rede elétrica em tempo real e conhecer operações de distribuição com profissionais do setor."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Visita ao Centro de Operações da Distribuição da Cemig · Engenharia Elétrica Formiga · junho de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Projetos de estudantes apresentados no COBENGE 2026",
           "conteudo": "Entre **14 e 17 de setembro de 2026**, três estudantes de **Engenharia Elétrica de Formiga** apresentaram projetos no **Congresso Brasileiro de Educação em Engenharia (COBENGE)**. Os trabalhos envolveram **modelos didáticos de energias renováveis**, o projeto de extensão **Iluminando o Saber**, com modernização de iluminação escolar, e uma ferramenta computacional para ensinar números complexos."
         },
         {

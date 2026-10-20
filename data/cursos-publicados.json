@@ -220,7 +220,7 @@
             },
             {
               "pergunta": "Campus Ouro Branco",
-              "resposta": "A formação é oferecida à noite, na modalidade presencial, com **8% da carga horária a distância** na oferta verificada. Os conteúdos incluem gestão de negócios, processos e atividades organizacionais."
+              "resposta": "A formação é oferecida à noite, na modalidade presencial, com **8% da carga horária a distância** na oferta verificada. Os conteúdos incluem gestão de negócios, processos e atividades organizacionais.\n\nO Bacharelado em Administração do **Campus Ouro Branco** recebeu **quatro estrelas no Guia da Faculdade de 2025**."
             },
             {
               "pergunta": "Campus Ribeirão das Neves",
@@ -343,7 +343,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "O Bacharelado em Administração do **Campus Ouro Branco** recebeu **quatro estrelas no Guia da Faculdade de 2025**."
+          "conteudo": ""
         },
         {
           "tipo": "texto",

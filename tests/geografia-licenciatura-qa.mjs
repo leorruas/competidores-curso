@@ -14,7 +14,7 @@ test("F7.32: Geografia Ouro Preto usa matriz vigente e organização da licencia
  assert.equal(c.modalidade,"Presencial");
  const basicos=b.find(x=>x.tipo==="dados-basicos");
  assert.ok(basicos.campos.some(x=>x.rotulo==="Carga horária"&&x.valor==="3.200 horas"));
- assert.ok(basicos.campos.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="Informação incompleta"));
+ assert.ok(!basicos.campos.some(x=>x.rotulo==="E-mail da coordenação"));
  const tabela=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
  assert.equal(tabela.linhas.length,1);
  assert.equal(tabela.linhas[0][0],"Ouro Preto");

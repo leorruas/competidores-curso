@@ -16,7 +16,6 @@ function pilotoPos(tipo) {
     {rotulo:"Modalidade",valor:mestrado ? "Presencial" : "EaD"},
     {rotulo:"Eixo tecnológico",valor:"Gestão e Negócios"},
     {rotulo:"Campi",valor:"Formiga"},
-    {rotulo:"E-mail da coordenação",valor:"Informação incompleta"},
     ...(mestrado
       ? [{rotulo:"Integralização",valor:"30 créditos, incluindo dissertação"}]
       : [{rotulo:"Trabalho final",valor:"Projeto Final de Curso obrigatório: 45 horas"}])

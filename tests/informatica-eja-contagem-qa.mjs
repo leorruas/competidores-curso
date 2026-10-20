@@ -24,7 +24,7 @@ test("F7.P4: curso Informática EJA Contagem independente dos integrados regular
  assert.equal(blocos.length,23);
  assert.deepEqual(validarEstruturaCurso(c),[]);
  assert.equal(field("Campi"),"Contagem");
- assert.equal(field("Turno"),"Noite");
+ assert.equal(field("Turno"),undefined);
  assert.equal(field("Tipo de oferta"),"Técnico integrado EJA");
  assert.ok(blocos.find(x=>x.tipo==="introducao").conteudo.length<=280);
  assert.deepEqual(blocos.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
@@ -33,7 +33,7 @@ test("F7.P4: público de 18 anos ou mais e médio incompleto, currículo não in
  assert.match(text("Para quem é o curso").conteudo,/18 anos ou mais/);
  assert.match(text("Forma de ingresso").conteudo,/ainda não ter concluído o ensino médio/);
  assert.equal(field("Eixo tecnológico"),"Informação e Comunicação");
- for(const key of ["Duração","Carga horária","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
+ for(const key of ["Duração","Carga horária","Estágio supervisionado","Trabalho de Conclusão de Curso"])
   assert.equal(field(key),"Informação incompleta",key);
  const table=blocos.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");
  assert.deepEqual(table.colunas,["Campus","Modalidade","Turno","Duração mínima","Carga horária total","E-mail da coordenação"]);

@@ -10,7 +10,7 @@ test("F7.36: Letras Português Inglês Congonhas usa PPC e contato do PS2027",()
  assert.deepEqual(c.campi,["Congonhas"]);
  const v=b.find(x=>x.tipo==="dados-basicos").campos;
  assert.ok(v.some(x=>x.rotulo==="Carga horária"&&x.valor==="3.992 horas"));
- assert.ok(v.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="coordletras.congonhas@ifmg.edu.br"));
+ assert.ok(!v.some(x=>x.rotulo==="E-mail da coordenação"));
  const t=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
  assert.deepEqual(t.linhas,[["Congonhas","Presencial","Noite","9 semestres","3.992 horas","coordletras.congonhas@ifmg.edu.br"]]);
  const loc=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");

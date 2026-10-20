@@ -7,9 +7,9 @@ test("F7.25: Design de Interiores é tecnólogo, PPC 2025, 1690h, 3 anos, 11,54%
  assert.ok(c);assert.equal(c.nome,"Design de Interiores");assert.equal(c.tipo,"Tecnólogo");assert.equal(c.nivel,"Graduação");assert.deepEqual(c.campi,["Santa Luzia"]);
  const f=b[0].campos;assert.ok(f.some(x=>x.rotulo==="Carga horária"&&x.valor==="1.690 horas"));
  assert.ok(f.some(x=>x.rotulo==="Duração"&&x.valor.includes("3 anos")));
- assert.ok(f.some(x=>x.rotulo==="PPC / matriz"&&x.valor.includes("2025")));
+ assert.ok(!f.some(x=>x.rotulo==="PPC / matriz"));
  assert.ok(f.some(x=>x.rotulo==="Modalidade"&&x.valor.includes("11,54% EaD")));
- assert.equal(f.find(x=>x.rotulo==="E-mail da coordenação").valor,"des.interiores.santaluzia@ifmg.edu.br");
+ assert.equal(f.find(x=>x.rotulo==="E-mail da coordenação")?.valor,undefined);
  const tab=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.deepEqual(tab.linhas,[["Santa Luzia","Presencial (11,54% EaD na oferta de 2027)","Noite · 3 anos","des.interiores.santaluzia@ifmg.edu.br"]]);
  const faq=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");assert.equal(faq.itens.length,1);assert.match(faq.itens[0].resposta,/TCC é obrigatório \(90 horas\)/);assert.match(faq.itens[0].resposta,/estágio é não obrigatório/);
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);

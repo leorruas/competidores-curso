@@ -6,7 +6,7 @@ const c=data.courses.find(x=>x.id==="educacao-fisica-licenciatura"),b=c?.blocos|
 test("F7.26: licenciatura em Educação Física Bambuí, PPC 2025, estágio e TCC",()=>{
  assert.ok(c);assert.equal(c.nome,"Educação Física");assert.equal(c.tipo,"Licenciatura");assert.deepEqual(c.campi,["Bambuí"]);
  const f=b[0].campos;assert.equal(f.find(x=>x.rotulo==="Carga horária").valor,"3.270 horas");
- assert.equal(f.find(x=>x.rotulo==="E-mail da coordenação").valor,"Informação incompleta");
+ assert.equal(f.find(x=>x.rotulo==="E-mail da coordenação")?.valor,undefined);
  assert.match(JSON.stringify(b),/400 horas/);assert.match(JSON.stringify(b),/TCC/);
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
  const t=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.equal(t.linhas.length,1);assert.equal(t.linhas[0][0],"Bambuí");

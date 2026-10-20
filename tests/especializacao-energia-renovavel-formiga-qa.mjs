@@ -29,7 +29,7 @@ test("F8.3B: matriz PPC de agosto de 2026: 420h incluem 45h de projeto final",()
   assert.equal(campo("Duração"),"Três semestres");
   assert.match(campo("Carga horária"),/420 horas, incluindo 45 horas de Projeto Final/);
   assert.match(campo("Trabalho final"),/obrigatório, 45 horas/);
-  assert.equal(campo("E-mail da coordenação"),"Informação incompleta");
+  assert.equal(campo("E-mail da coordenação"),undefined);
   const curriculo=blocos.find(b=>b.tipo==="tabela"&&b.colunas[0]==="Semestre");
   assert.ok(curriculo);
   assert.equal(curriculo.linhas.length,11);

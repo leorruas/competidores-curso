@@ -6,8 +6,8 @@ const c=data.courses.find(x=>x.id==="tecnico-em-nutricao-e-dietetica-integrado")
 test("F7.17: Nutrição e Dietética integrado SJE com nome curto e contato funcional",()=>{
  assert.ok(c);assert.equal(c.nome,"Técnico em Nutrição e Dietética");assert.equal(c.tipo,"Integrado");assert.deepEqual(c.campi,["São João Evangelista"]);
  const tab=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.deepEqual(tab.linhas,[["São João Evangelista","Presencial","Manhã e tarde","ctnd.sje@ifmg.edu.br"]]);
- for(const rotulo of ["Duração","Carga horária","PPC / matriz dos ingressantes em 2027"])assert.ok(b[0].campos.some(z=>z.rotulo===rotulo&&z.valor==="Informação incompleta"));
- assert.ok(b[0].campos.some(z=>z.rotulo==="E-mail da coordenação"&&z.valor==="ctnd.sje@ifmg.edu.br"));
+ for(const rotulo of ["Duração","Carga horária"])assert.ok(b[0].campos.some(z=>z.rotulo===rotulo&&z.valor==="Informação incompleta"));
+ assert.ok(!b[0].campos.some(z=>z.rotulo==="E-mail da coordenação"));
  assert.ok(!JSON.stringify(c).includes("3820")&&!JSON.stringify(c).includes("3.820")&&!JSON.stringify(c).includes("3.600"));
  assert.equal(b.find(x=>x.titulo==="Continue seus estudos no IFMG").conteudo,"");assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });

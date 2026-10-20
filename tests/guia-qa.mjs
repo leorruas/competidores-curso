@@ -2178,7 +2178,7 @@ test("Dados básicos omitem turno, PPC/matriz e e-mails da coordenação em todo
       assert.ok(!proibidos.test(field.label),c.id+": campo não cadastrado "+field.label);
       count++;
     }
-    assert.ok(c.blocos.some(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação")),c.id+": tabela de ofertas preservada");
+    assert.ok(c.blocos.some(b=>b.tipo==="tabela"&&b.colunas.some(col=>col.startsWith("E-mail da coordenação"))),c.id+": tabela de ofertas preservada");
     const copied=h.editorBlock(basicos,0,c);
     assert.ok(!/editor-field-label[^>]*>(?:Turno|PPC|E-mail da coordenação|Contatos)/i.test(copied),c.id);
   }

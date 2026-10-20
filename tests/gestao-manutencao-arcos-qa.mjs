@@ -59,7 +59,7 @@ test("F8.6A: TCC admite artigo ou produto técnico sem prometer ausência de ava
 });
 
 test("F8.6A: contato não ativado, sem experiências nem evidências privadas no guia",()=>{
- assert.equal(campo("E-mail da coordenação"),"pos.manutencao.arcos@ifmg.edu.br");
+ assert.equal(campo("E-mail da coordenação"),undefined);
  const campi=blocos.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
  assert.equal(campi.linhas.length,1);
  assert.equal(campi.linhas[0][4],"pos.manutencao.arcos@ifmg.edu.br");

@@ -32,7 +32,7 @@ test("F8.6C: 360h de disciplinas e 60h TCC integram 420h sem duplicação",()=>{
  assert.match(campo("Trabalho final"),/obrigatório/);
  assert.match(campo("Trabalho final"),/60 horas/);
  assert.equal(campo("Estágio supervisionado"),"Informação incompleta");
- assert.equal(campo("E-mail da coordenação"),"inteligencia.artificial@ifmg.edu.br");
+ assert.equal(campo("E-mail da coordenação"),undefined);
  const tabela=blocos.find(b=>b.tipo==="tabela"&&b.colunas[0]==="Etapa");
  assert.deepEqual(tabela.colunas,["Etapa","Componente curricular","Carga horária"]);
  assert.equal(tabela.linhas.length,14);

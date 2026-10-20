@@ -7,8 +7,8 @@ test("F7.24: Conservação e Restauro é tecnólogo, PPC 2023 vigente, 2550h, tr
  assert.ok(c);assert.equal(c.nome,"Conservação e Restauro");assert.equal(c.tipo,"Tecnólogo");assert.equal(c.nivel,"Graduação");assert.deepEqual(c.campi,["Ouro Preto"]);
  const f=b[0].campos;assert.ok(f.some(x=>x.rotulo==="Carga horária"&&x.valor==="2.550 horas"));
  assert.ok(f.some(x=>x.rotulo==="Duração"&&x.valor.includes("3 anos")));
- assert.ok(f.some(x=>x.rotulo==="PPC / matriz"&&x.valor.includes("2023")));
- assert.ok(f.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="Informação incompleta"));
+ assert.ok(!f.some(x=>x.rotulo==="PPC / matriz"));
+ assert.ok(!f.some(x=>x.rotulo==="E-mail da coordenação"));
  const t=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.deepEqual(t.linhas,[["Ouro Preto","Presencial","Noite · 3 anos","Informação incompleta"]]);
  const local=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");assert.equal(local.itens.length,1);
  assert.match(local.itens[0].resposta,/TCC é obrigatório/);assert.match(local.itens[0].resposta,/estágio é não obrigatório/);

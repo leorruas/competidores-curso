@@ -13,7 +13,7 @@ test("F7.34: Gestão da Qualidade Ouro Preto e PPC 2025",()=>{
  assert.deepEqual(c.campi,["Ouro Preto"]);
  const basic=b.find(x=>x.tipo==="dados-basicos").campos;
  assert.ok(basic.some(x=>x.rotulo==="Carga horária"&&x.valor==="1.660 horas"));
- assert.ok(basic.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="Informação incompleta"));
+ assert.ok(!basic.some(x=>x.rotulo==="E-mail da coordenação"));
  const table=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
  assert.deepEqual(table.linhas,[["Ouro Preto","Presencial (27,7% EaD)","Noite","6 semestres","1.660 horas","Informação incompleta"]]);
  const local=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");

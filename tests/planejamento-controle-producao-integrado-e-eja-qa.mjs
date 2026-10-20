@@ -26,8 +26,8 @@ test("F7.P3: dois registros independentes, com nome comum e modalidade explícit
   assert.deepEqual(c.blocos.slice(-2).map(b=>b.titulo),["Forma de ingresso","Mundo do Trabalho"]);
   assert.equal(txt(c,"Experiências e conquistas dos estudantes").conteudo,"");
  }
- assert.equal(field(regular,"Turno"),"Manhã e tarde");
- assert.equal(field(eja,"Turno"),"Noite");
+ assert.equal(field(regular,"Turno"),undefined);
+ assert.equal(field(eja,"Turno"),undefined);
  assert.equal(field(eja,"Tipo de oferta"),"Técnico integrado EJA");
  assert.equal(field(regular,"Tipo de oferta"),"Técnico integrado");
  assert.doesNotMatch(field(regular,"Tipo de oferta"),/EJA/);
@@ -35,12 +35,12 @@ test("F7.P3: dois registros independentes, com nome comum e modalidade explícit
 test("F7.P3: eixo é Produção Industrial, demais campos sem invenção",()=>{
  for(const c of [regular,eja]){
   assert.equal(field(c,"Eixo tecnológico"),"Produção Industrial",c.id+":Eixo tecnológico");
-  for(const key of ["Duração","Carga horária","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
+  for(const key of ["Duração","Carga horária","Estágio supervisionado","Trabalho de Conclusão de Curso"])
    assert.equal(field(c,key),"Informação incompleta",c.id+":"+key);
   const table=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas[0]==="Campus");
   assert.deepEqual(table.colunas,["Campus","Modalidade","Turno","Duração mínima","Carga horária total","E-mail da coordenação"]);
   assert.equal(table.linhas.length,1);
-  assert.equal(table.linhas[0][2],field(c,"Turno"));
+  assert.ok(["Manhã e tarde","Noite"].includes(table.linhas[0][2]));
   assert.equal(table.linhas[0][4],"Informação incompleta");
   assert.equal(table.linhas[0][5],"Informação incompleta");
   assert.equal(c.blocos[c.blocos.indexOf(table)+1].titulo,"Campus João Monlevade");

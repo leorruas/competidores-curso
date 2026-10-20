@@ -7,7 +7,7 @@ test("F7.23: Ciências Biológicas Licenciatura reúne Bambuí e SJE sem inventa
  assert.ok(c);assert.equal(c.nome,"Ciências Biológicas");assert.equal(c.tipo,"Licenciatura");assert.equal(c.nivel,"Graduação");assert.deepEqual(c.campi,["Bambuí","São João Evangelista"]);
  const fields=b[0].campos;assert.ok(fields.some(x=>x.rotulo==="Duração"&&x.valor.includes("Informação incompleta")));
  assert.ok(fields.some(x=>x.rotulo==="Carga horária"&&x.valor.includes("Informação incompleta")));
- assert.ok(fields.some(x=>x.rotulo==="PPC / matriz"&&x.valor.includes("2026")&&x.valor.includes("2022")));
+ assert.ok(!fields.some(x=>x.rotulo==="PPC / matriz"));
  const t=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");assert.deepEqual(t.linhas,[["Bambuí","Presencial","Noite","Informação incompleta"],["São João Evangelista","Presencial","Noite","Informação incompleta"]]);
  assert.equal(b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.length,2);
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);

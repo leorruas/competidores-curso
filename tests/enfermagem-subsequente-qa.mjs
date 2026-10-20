@@ -11,12 +11,12 @@ test("F7.49: curso novo é subsequente Piumhi, noturno presencial e piso 1200h",
  assert.ok(c);assert.equal(c.nome,"Técnico em Enfermagem");
  assert.equal(c.tipo,"Subsequente");assert.deepEqual(c.campi,["Piumhi"]);
  assert.equal(c.modalidade,"Presencial");
- assert.equal(field("Turno"),"Noite");
+ assert.equal(field("Turno"),undefined);
  assert.equal(field("Duração"),"2 anos (4 semestres)");
  assert.match(field("Carga horária"),/Mínimo de 1.200 horas/);
  assert.match(field("Carga horária"),/Informação incompleta/);
  assert.equal(field("Estágio supervisionado"),"Informação incompleta");
- assert.equal(field("E-mail da coordenação"),"Informação incompleta");
+ assert.equal(field("E-mail da coordenação"),undefined);
  assert.equal(b.length,23);
  assert.deepEqual(validarEstruturaCurso(c),[]);
 });

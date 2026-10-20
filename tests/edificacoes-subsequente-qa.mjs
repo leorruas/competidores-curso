@@ -19,11 +19,11 @@ test("F7.48: integrado e subsequente distintos e PPC 2025 preservado",()=>{
  assert.equal(campo("Duração"),"2 anos (4 semestres)");
  assert.equal(campo("Estágio supervisionado"),"Não obrigatório");
  assert.equal(campo("Trabalho de Conclusão de Curso"),"Não obrigatório");
- assert.equal(campo("E-mail da coordenação"),"Informação incompleta");
+ assert.equal(campo("E-mail da coordenação"),undefined);
  assert.match(campo("Modalidade"),/30 horas EaD/);
 });
 test("F7.48: exceção de Topografia, integradores e 30h EaD",()=>{
- assert.match(campo("Turno"),/16h às 18h30/);
+ assert.equal(campo("Turno"),undefined);
  assert.match(txt("Onde o IFMG oferece Técnico em Edificações").conteudo,/Topografia I e II/);
  const itens=b.find(x=>x.tipo==="faq"&&!x.titulo).itens;
  assert.equal(itens.length,4);

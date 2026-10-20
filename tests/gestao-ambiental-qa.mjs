@@ -14,7 +14,7 @@ test("F7.33: Gestão Ambiental tecnólogo GV, currículo 2026, estágio e coorde
  assert.equal(c.modalidade,"Presencial");
  const basicos=b.find(x=>x.tipo==="dados-basicos")?.campos||[];
  assert.ok(basicos.some(x=>x.rotulo==="Carga horária"&&x.valor==="1.700 horas"));
- assert.ok(basicos.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="coordenacao.tga.gv@ifmg.edu.br"));
+ assert.ok(!basicos.some(x=>x.rotulo==="E-mail da coordenação"));
  const table=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
  assert.deepEqual(table.linhas, [["Governador Valadares","Presencial","Noite","4 semestres","1.700 horas","coordenacao.tga.gv@ifmg.edu.br"]]);
  const local=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");

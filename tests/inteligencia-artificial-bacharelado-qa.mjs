@@ -13,7 +13,7 @@ test("F7.35: Inteligência Artificial bacharelado Bambuí, 2027 sem dados curric
  assert.deepEqual(c.campi,["Bambuí"]);
  const basicos=b.find(x=>x.tipo==="dados-basicos")?.campos||[];
  assert.ok(basicos.some(x=>x.rotulo==="Carga horária"&&x.valor==="3.200 horas"));
- assert.ok(basicos.some(x=>x.rotulo==="E-mail da coordenação"&&x.valor==="ia.bambui@ifmg.edu.br"));
+ assert.ok(!basicos.some(x=>x.rotulo==="E-mail da coordenação"));
  const tabela=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
  assert.deepEqual(tabela.linhas,[["Bambuí","Manhã e tarde","Presencial, com componentes EaD","8 semestres","3.200 horas","ia.bambui@ifmg.edu.br"]]);
  assert.ok(b.find(x=>x.tipo==="introducao")?.conteudo.length<=280);

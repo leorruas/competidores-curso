@@ -16,12 +16,12 @@ test("F7.52: subsequente separado do integrado e PPC fevereiro de 2026",()=>{
  assert.equal(b.length,23);
  assert.deepEqual(validarEstruturaCurso(c),[]);
  assert.equal(campo("Modalidade"),"Presencial");
- assert.equal(campo("Turno"),"Noite");
+ assert.equal(campo("Turno"),undefined);
  assert.equal(campo("Duração"),"2 anos (4 semestres)");
  assert.equal(campo("Carga horária"),"1.200 horas (990 horas de disciplinas e 210 horas de atividades complementares obrigatórias)");
  assert.equal(campo("Estágio supervisionado"),"Não obrigatório");
  assert.equal(campo("Trabalho de Conclusão de Curso"),"Não obrigatório");
- assert.equal(campo("E-mail da coordenação"),"Informação incompleta");
+ assert.equal(campo("E-mail da coordenação"),undefined);
 });
 test("F7.52: atividades complementares não são estágio obrigatório",()=>{
  const faq=b.find(x=>x.tipo==="faq"&&!x.titulo);

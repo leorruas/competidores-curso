@@ -19,7 +19,7 @@ test("F7.P2: página própria do Técnico em Marketing Digital Integrado Bom Des
  assert.equal(b.length,23);
  assert.deepEqual(validarEstruturaCurso(c),[]);
  assert.equal(field("Campi"),"Bom Despacho");
- assert.equal(field("Turno"),"Manhã e tarde");
+ assert.equal(field("Turno"),undefined);
  assert.equal(field("Duração"),"3 anos (6 semestres)");
  assert.equal(field("Eixo tecnológico"),"Gestão e Negócios");
  assert.ok(b.find(x=>x.tipo==="introducao").conteudo.length<=280);
@@ -27,7 +27,7 @@ test("F7.P2: página própria do Técnico em Marketing Digital Integrado Bom Des
 });
 
 test("F7.P2: carga proposta, PPC, estágio e contatos sem homologação ficam incompletos",()=>{
- for(const rotulo of ["Carga horária","Estágio supervisionado","Trabalho de Conclusão de Curso","E-mail da coordenação"])
+ for(const rotulo of ["Carga horária","Estágio supervisionado","Trabalho de Conclusão de Curso"])
   assert.equal(field(rotulo),"Informação incompleta",rotulo);
  const tabela=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Campus");
  assert.deepEqual(tabela.colunas,["Campus","Modalidade","Turno","Duração","Carga horária total","E-mail da coordenação"]);

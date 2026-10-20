@@ -13,11 +13,11 @@ test("F7.50: Joalheria subsequente noturno Ouro Preto, PPC 1200h e 20% EaD",()=>
  assert.equal(b.length,23);assert.deepEqual(validarEstruturaCurso(c),[]);
  assert.equal(campo("Carga horária"),"1.200 horas (960 presenciais e 240 EaD)");
  assert.equal(campo("Duração"),"2 anos (4 semestres)");
- assert.equal(campo("Turno"),"Noite");
+ assert.equal(campo("Turno"),undefined);
  assert.match(campo("Modalidade"),/20% de atividades EaD/);
  assert.equal(campo("Estágio supervisionado"),"Não obrigatório");
  assert.equal(campo("Trabalho de Conclusão de Curso"),"Não obrigatório");
- assert.equal(campo("E-mail da coordenação"),"Informação incompleta");
+ assert.equal(campo("E-mail da coordenação"),undefined);
 });
 test("F7.50: projeto integrado é disciplina, sem estágio, TCC ou AC obrigatórios",()=>{
  const f=b.find(x=>x.tipo==="faq"&&!x.titulo);assert.equal(f.itens.length,4);

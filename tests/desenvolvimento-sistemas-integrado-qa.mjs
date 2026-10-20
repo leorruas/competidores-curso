@@ -17,14 +17,14 @@ test("F7.P1: mesmo grupo integrado para Contagem e Itabirito, sem duplicar pági
  assert.equal(b.length,26);
  assert.deepEqual(validarEstruturaCurso(c),[]);
  assert.equal(field("Campi"),"Contagem; Itabirito");
- assert.equal(field("Turno"),"Manhã e tarde");
+ assert.equal(field("Turno"),undefined);
  assert.ok(b.find(x=>x.tipo==="introducao").conteudo.length<=280);
  assert.doesNotMatch(b.find(x=>x.tipo==="introducao").conteudo,/apenas Itabirito/);
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 test("F7.P1: duas ofertas na tabela com pendências próprias, sem importar PPC",()=>{
  const t=b.find(x=>x.tipo==="tabela"&&x.colunas?.[0]==="Campus");
- assert.deepEqual(t.colunas,["Campus","Modalidade","Turno","Duração mínima","Carga horária total","E-mail da coordenação"]);
+ assert.deepEqual(t.colunas,["Campus","Modalidade","Turno","Duração mínima","Carga horária total"]);
  assert.deepEqual(t.linhas,[
   ["Contagem","Presencial","Manhã e tarde","Informação incompleta","Informação incompleta","Informação incompleta"],
   ["Itabirito","Presencial","Manhã e tarde","Informação incompleta","Informação incompleta","Informação incompleta"]

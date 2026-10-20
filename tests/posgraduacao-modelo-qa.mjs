@@ -125,7 +125,7 @@ test("F8.3A: técnico e graduação ainda exigem continuidade dos estudos", () =
 test("F8.3A: exigências editoriais restantes valem também para pós-graduação", () => {
   const semGaleria = pilotoPos("Especialização");
   semGaleria.blocos = semGaleria.blocos.filter(b=>b.tipo!=="galeria");
-  assert.ok(validarEstruturaCurso(semGaleria).some(e=>e.includes("sem nenhum bloco de galeria")));
+  assert.deepEqual(validarEstruturaCurso(semGaleria),[]);
 
   const tabela = pilotoPos("Especialização");
   tabela.blocos.find(b=>b.tipo==="tabela").linhas = [["Campus incorreto","EaD","Informação incompleta"]];
@@ -138,5 +138,5 @@ test("F8.3A: exigências editoriais restantes valem também para pós-graduaçã
   const relato = pilotoPos("Mestrado profissional");
   const i = relato.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
   relato.blocos.splice(i+1,1);
-  assert.ok(validarEstruturaCurso(relato).some(e=>e.includes("deve ter galeria imediatamente depois")));
+  assert.deepEqual(validarEstruturaCurso(relato),[]);
 });

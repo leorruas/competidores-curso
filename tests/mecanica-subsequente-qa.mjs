@@ -21,3 +21,24 @@ test("F9.3: formatura rotineira sai das conquistas do Técnico em Mecânica Subs
  const sorted=[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR"));
  assert.deepEqual(data.courses.map(x=>x.id),sorted.map(x=>x.id));
 });
+test("F9.5/F9.6: Mecânica Subsequente mantém FAQ de ingresso, cotas e assistência com Links logo após",()=>{
+ const i=b.findIndex(x=>x.titulo==="Perguntas frequentes");
+ assert.ok(i>=0);
+ assert.equal(b[i+1].tipo,"faq");
+ assert.equal(b[i+2].tipo,"links");
+ const itens=b[i+1].itens;
+ assert.equal(itens.length,7);
+ assert.match(itens[0].pergunta,/ingress|candidat/i);
+ assert.match(itens[1].pergunta,/cotas|reserva de vagas/i);
+ assert.match(itens[2].pergunta,/assistência estudantil/i);
+ assert.match(itens[2].resposta,/não garante automaticamente/i);
+ assert.deepEqual(b[i+2].itens.map(x=>x.rotulo),[
+  "Como ingressar no IFMG","Reserva de vagas e cotas","Assistência estudantil"
+ ]);
+ assert.deepEqual(b[0].campos.slice(0,8).map(x=>x.rotulo),[
+  "Categoria","Tipo de oferta","Carga horária","Duração",
+  "Apresentação","Modalidade","Eixo tecnológico","Campi"
+ ]);
+ assert.ok(!b[0].campos.some(x=>/Turno|PPC|E-mail da coordenação/i.test(x.rotulo)));
+ assert.ok(!itens.some(x=>/graduação técnica/.test(x.resposta)),"curso técnico não é graduação");
+});

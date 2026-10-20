@@ -71,7 +71,7 @@ export function auditarCursos(courses) {
         if (b?.tipo !== "texto" || !b.conteudo || b.conteudo === "Informação incompleta") continue;
         if (has(b.conteudo,/\benem\b|\bredacao\b|\bformatura\b|\bcerimonia de formatura\b|\bcolacao de grau\b/)) {
           resumo.possiveisConquistasRotineiras++;
-          add(c,"conquista-revisar",i,"Nota individual/Enem/formatura: verificar mérito real e galeria associada; revisão humana");
+          add(c,"conquista-revisar",i,"Nota individual/Enem/formatura: verificar mérito real e fonte; não coletar imagens; revisão humana");
         }
       }
     }

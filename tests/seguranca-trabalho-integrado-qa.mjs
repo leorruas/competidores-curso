@@ -11,14 +11,15 @@ test("F7.20: segurança do trabalho integrado multicampi, contato verificável e
  assert.ok(!JSON.stringify(c).includes("3.275")&&!JSON.stringify(c).includes("3753")&&!JSON.stringify(c).includes("strabalho.santaluzia@ifmg.edu.br"));
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
-test("F7.20: experiências 2025-26 de GV com 3 galerias próprias, sem atribuir a novos campi",()=>{
- const exp=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");assert.ok(exp>=0);
- const gals=b.filter(x=>x.tipo==="galeria");assert.equal(gals.length,4);assert.ok(gals.every(x=>x.itens.length===0));
- const texts=b.slice(exp+1).filter(x=>x.tipo==="texto"&&!x.titulo);
- assert.equal(texts.length,2);const experiences=[b[exp],...texts];
- for(const e of experiences){const idx=b.indexOf(e);assert.equal(b[idx+1].tipo,"galeria");assert.match(e.conteudo,/Governador Valadares/);}
- assert.match(experiences[0].conteudo,/2025/);assert.match(experiences[1].conteudo,/maio de 2026/);assert.match(experiences[2].conteudo,/outubro de 2026/);
- assert.equal(b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.length,3);assert.ok(b.find(x=>x.tipo==="faq"&&!x.titulo).itens.length>=4);
+test("F9.4: SIPAT e visitas à Vale não são conquistas do curso",()=>{
+ const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
+ assert.ok(i>=0);
+ assert.equal(b[i].conteudo,"");
+ assert.equal(b[i+1].titulo,"Perguntas frequentes");
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,1);
+ assert.doesNotMatch(JSON.stringify(c),/SIPAT da Cemig|Visita à Vale · segundo ano|Visita à Vale · terceiro ano/);
+ assert.equal(b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.length,3);
+ assert.ok(b.find(x=>x.tipo==="faq"&&!x.titulo).itens.length>=4);
  const sorted=[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR"));
  assert.deepEqual(data.courses.map(x=>x.id),sorted.map(x=>x.id));
 });

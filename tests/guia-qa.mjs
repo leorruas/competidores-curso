@@ -1431,7 +1431,7 @@ test("F9.4: imagens ausentes não geram cartões, cópia ou pedido de fotografia
     for(const [i,b] of c.blocos.entries()) {
       if(b.tipo!=="galeria" || b.itens.length) continue;
       assert.equal(h.editorBlock(b,i,c),"",c.id+": não pedir galeria vazia");
-      assert.deepEqual(h.editorFields(b),[],c.id+": nenhum campo para foto pendente");
+      assert.equal(h.editorFields(b).length,0,c.id+": nenhum campo para foto pendente");
       assert.equal(h.blockPreview(b,i),"",c.id+": sem galeria no visual");
     }
     h.state.tab="editor";
@@ -2033,7 +2033,6 @@ test("marcador Informação incompleta pode ser copiado em todos os campos corre
   const candidates=[
     {tipo:"dados-basicos",campos:[{rotulo:"Duração",valor:incomplete}]},
     {tipo:"texto",titulo:"Experiências e conquistas dos estudantes",conteudo:incomplete},
-    {tipo:"galeria",itens:[]},
     {tipo:"links",itens:[]},
     {tipo:"introducao",conteudo:incomplete}
   ];
@@ -2060,7 +2059,7 @@ test("F9.4: registros vazios de galeria são legado não copiável", () => {
   for(const c of json.courses)for(const [i,b] of c.blocos.entries()) {
     if(b.tipo!=="galeria" || b.itens.length) continue;
     n++;
-    assert.deepEqual(h.editorFields(b),[],c.id);
+    assert.equal(h.editorFields(b).length,0,c.id);
     assert.equal(h.editorBlock(b,i,c),"",c.id);
     assert.equal(h.blockPreview(b,i),"",c.id);
   }

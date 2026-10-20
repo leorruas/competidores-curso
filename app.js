@@ -135,9 +135,28 @@
       return b.conteudo || "";
     return [b.titulo || "",b.conteudo || ""].filter(Boolean).join("\n\n");
   }
+  // Histórico de galerias vazias não é solicitação de coleta ou de substituição de foto.
+  function isVisibleGallery(b) {
+    return b?.tipo !== "galeria" || (Array.isArray(b.itens) && b.itens.length > 0);
+  }
+  function isEmptyAchievement(course, b) {
+    if (b?.tipo !== "texto" || b.titulo !== "Experiências e conquistas dos estudantes") return false;
+    const blocks=course?.blocos||[];
+    const start=blocks.indexOf(b);
+    if (start<0) return false;
+    for(let i=start;i<blocks.length;i++){
+      const x=blocks[i];
+      if(i>start && x.tipo==="texto" && x.titulo) break;
+      const content=String(x.conteudo||"").trim();
+      if(x.tipo==="texto" && content && content!=="Informação incompleta") return false;
+    }
+    return true;
+  }
+  function isVisibleBlock(course,b) {
+    return isVisibleGallery(b) && !isEmptyAchievement(course,b);
+  }
   function blockPreview(b, i) {
-    // A prévia do conteúdo publicado não exibe blocos vazios ou pendências editoriais.
-    // O modo Copiar continua exibindo todos os campos para preenchimento no CMS.
+    // A prévia não inclui galerias sem arquivos nem dados incompletos.
     if (b.tipo === "introducao" && !(b.conteudo || "").trim()) return "";
     if (b.tipo === "galeria" && !(b.itens || []).length) return "";
     if (b.tipo === "texto" && (b.conteudo || "").trim() === "Informação incompleta") return "";
@@ -243,6 +262,7 @@
         raw("Link " + (i+1) + " · URL", x.url)
       ])
     ];
+    if (b.tipo === "galeria" && !b.itens.length) return [];
     if (b.tipo === "galeria") return [
       raw("Estilo", "Com bordas", true),
       ...(b.itens.length ? b.itens.flatMap((x,i) => [
@@ -303,13 +323,13 @@
     return first ? {...b,subtitulo:first.titulo,subtituloConteudo:first.conteudo||""} : b;
   }
   function editorBlock(b, i, course = null) {
-    if (hiddenContinuationSubheading(course,i)) return "";
+    if (!isVisibleBlock(course,b) || hiddenContinuationSubheading(course,i)) return "";
     const fields = editorFields(copyBlockForCourse(course,b,i), isIntroBlock(course, b, i));
     return '<section class="block-card" id="bloco-' + i + '" aria-labelledby="block-heading-' + i + '">' +
       '<span class="block-badge" aria-hidden="true">' + String(i+1).padStart(2,"0") + '</span>' +
       '<header class="block-card-header"><h2 class="block-card-title" id="block-heading-' + i +
       '">' + escapeHTML(b.tipo === "faq" && b.titulo === "Informações dos campi" ? "FAQ · Informações dos campi" : blockName[b.tipo]) + '</h2></header>' +
-      (b.tipo === "galeria" ? '<div class="gallery-guidance" role="note"><strong>Galeria da experiência: ' + escapeHTML(b.referencia || "Experiência do curso") + '</strong><p>Selecione o estilo <strong>Com bordas</strong>. As imagens definitivas ainda não estão disponíveis: use uma imagem provisória apenas para montar o bloco e solicite à coordenação a substituição antes da publicação. A <strong>legenda vem do título da imagem</strong> cadastrado no Wagtail; revise esse título ao selecionar a imagem. Não crie legendas ou fotos de experiências que ainda não foram fornecidas.</p></div>' : "") +
+      (b.tipo === "galeria" ? '<div class="gallery-guidance" role="note"><strong>Galeria já preenchida</strong><p>Use somente arquivos realmente cadastrados, com descrição e crédito quando disponíveis. Não procurar imagens nem inserir fotos provisórias.</p></div>' : "") +
       (b.tipo === "tabela" ? '<div class="gallery-guidance" role="note"><p>Em <strong>Cabeçalho de tabela</strong>, selecione <strong>Exibir a primeira linha como cabeçalho</strong>. Deixe <strong>Legenda da tabela</strong> em branco. Depois use <strong>Copiar tabela</strong>.</p></div>' : "") +
       '<div class="editor-fields">' + fields.map((field,j) => fieldHTML(field,i,j)).join("") + '</div>' +
       '</section>';
@@ -354,14 +374,15 @@
       const suffix = previousTitle ? " · " + previousTitle : "";
       const label = b.tipo === "galeria" && b.referencia ? "Galeria · " + b.referencia : b.titulo || ((b.tipo === "tabela" || b.tipo === "faq") ? blockName[b.tipo] + suffix : blockName[b.tipo]);
       return { title: label, index: i };
-    }).filter(x => !hiddenContinuationSubheading(course,x.index) &&
+    }).filter(x => isVisibleBlock(course,course.blocos[x.index]) &&
+      !hiddenContinuationSubheading(course,x.index) &&
       (!activePreview || blockPreview(copyBlockForCourse(course,course.blocos[x.index],x.index),x.index)));
     root.innerHTML = '<div class="course-head"><div><div class="course-kicker">' + (course.demo ? "Exemplo fictício" : kind) + '</div><h1>' + title + '</h1>' + (course.descricao ? '<p>' + escapeHTML(course.descricao) + '</p>' : '') + (flags ? '<div class="course-flags">' + flags + '</div>' : '') + '</div></div>' +
       '<div class="course-tabs" role="tablist" aria-label="Modo de visualização da página"><button class="course-tab" type="button" role="tab" id="tab-editor" aria-controls="course-body" data-tab="editor" aria-selected="' + (!activePreview) + '">Copiar</button><button class="course-tab" type="button" role="tab" id="tab-preview" aria-controls="course-body" data-tab="preview" aria-selected="' + activePreview + '">Visualizar</button></div>' +
       '<div class="course-layout"><div class="course-body" id="course-body" role="tabpanel" aria-labelledby="tab-' + (activePreview ? "preview" : "editor") + '">' +
       (!activePreview ? '' : '') +
       (activePreview
-      ? course.blocos.map((b,i) => hiddenContinuationSubheading(course,i) ? "" :
+      ? course.blocos.map((b,i) => !isVisibleBlock(course,b) || hiddenContinuationSubheading(course,i) ? "" :
           blockPreview(copyBlockForCourse(course,b,i),i)).join("")
       : pageTitleHTML(course) + course.blocos.map((b,i) => editorBlock(b,i,course)).join("")) +
       '' +

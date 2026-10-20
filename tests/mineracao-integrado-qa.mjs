@@ -19,13 +19,12 @@ test("F7.5: Mineração integrado distingue Congonhas e Ouro Preto",()=>{
  assert.equal(core.conteudo,"");
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
-test("F7.5: duas experiências 2025+ têm suas próprias galerias",()=>{
- const gals=b.map((x,i)=>x.tipo==="galeria"?{...x,index:i}:null).filter(Boolean);
- assert.equal(gals.length,3);
- assert.equal(new Set(gals.map(x=>x.referencia)).size,gals.length);
- assert.ok(gals.every(x=>x.itens.length===0&&b[x.index-1].tipo==="texto"));
- assert.match(b.find(x=>x.titulo==="Experiências e conquistas dos estudantes").conteudo,/julho de 2025/);
- assert.ok(b.some(x=>x.tipo==="texto"&&/junho e julho de 2026/.test(x.conteudo||"")));
+test("F9.4: visitas à Samarco e ao museu não são conquistas verificadas",()=>{
+ const ex=b.find(x=>x.titulo==="Experiências e conquistas dos estudantes");
+ assert.ok(ex);
+ assert.equal(ex.conteudo,"");
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,1);
+ assert.doesNotMatch(JSON.stringify(c),/Visita técnica à Samarco|Visita ao Museu da Inconfidência/);
  assert.ok(!JSON.stringify(c).includes("ariana.almeida@ifmg.edu.br"));
  assert.equal(c.blocos.filter(x=>x.tipo==="texto"&&x.titulo==="Experiências e conquistas dos estudantes").length,1);
 });

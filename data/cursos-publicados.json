@@ -53,18 +53,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí; Formiga; Ouro Branco; Ribeirão das Neves; Sabará; São João Evangelista"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -403,18 +391,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí; São João Evangelista"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -716,18 +692,6 @@
             {
               "rotulo": "Campi",
               "valor": "Ouro Preto; Ribeirão das Neves"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Ouro Preto: PPC de novembro/2024 em vigor; Ribeirão das Neves: PPC de agosto/2025"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta por campus"
             }
           ]
         },
@@ -1018,18 +982,6 @@
             {
               "rotulo": "Campi",
               "valor": "Santa Luzia"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "arquitetura.santaluzia@ifmg.edu.br"
             }
           ]
         },
@@ -1292,18 +1244,6 @@
             {
               "rotulo": "Área",
               "valor": "Computação e Tecnologia da Informação"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Formiga: manhã e tarde; Ibirité: noite"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Formiga: PPC publicado para turmas 2023–2025, atualização 2027 a confirmar; Ibirité: PPC de novembro de 2024"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Consulte a tabela por campus"
             }
           ]
         },
@@ -1617,18 +1557,6 @@
             {
               "rotulo": "Área",
               "valor": "Ciências Biológicas e formação de professores"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Bambuí: PPC 2026 listado pelo campus; São João Evangelista: PPC de 2022 localizado. Confirmar as versões aplicáveis a 2027"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta por campus"
             }
           ]
         },
@@ -1937,18 +1865,6 @@
             {
               "rotulo": "Área de formação",
               "valor": "Conservação e restauro do patrimônio cultural construído"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "PPC de março de 2023 e Matriz 2023.1, identificados pelo campus como vigentes"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -2251,18 +2167,6 @@
             {
               "rotulo": "Área de formação",
               "valor": "Design de Interiores e ambientes construídos"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "PPC de 2025 e matriz curricular de 2025"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "des.interiores.santaluzia@ifmg.edu.br"
             }
           ]
         },
@@ -2552,18 +2456,6 @@
             {
               "rotulo": "Campi",
               "valor": "Arcos"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noturno"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Coordenação/contato",
-              "valor": "direito.arcos@ifmg.edu.br"
             }
           ]
         },
@@ -2816,18 +2708,6 @@
             {
               "rotulo": "Área de formação",
               "valor": "Formação de professores de Educação Física"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "PPC de abril de 2025"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -3147,18 +3027,6 @@
             {
               "rotulo": "Área de formação",
               "valor": "Engenharia, meio ambiente e saneamento"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e noite"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "PPC de julho de 2026 (matriz para ingressantes a partir de 2023)"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "coordenacao.eas.gv@ifmg.edu.br"
             }
           ]
         },
@@ -3442,14 +3310,6 @@
             {
               "rotulo": "Campi",
               "valor": "Governador Valadares; Piumhi; Santa Luzia"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mails das coordenações",
-              "valor": "coordenacao.enc.gv@ifmg.edu.br; coordengcivil.piumhi@ifmg.edu.br; eng.civil.santaluzia@ifmg.edu.br"
             }
           ]
         },
@@ -3782,22 +3642,6 @@
             {
               "rotulo": "Campi",
               "valor": "Betim; Ibirité; Sabará"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação - Betim",
-              "valor": "eng.automacao.betim@ifmg.edu.br"
-            },
-            {
-              "rotulo": "E-mail da coordenação - Ibirité",
-              "valor": "eng.controle.automacao.ibirite@ifmg.edu.br"
-            },
-            {
-              "rotulo": "E-mail da coordenação - Sabará",
-              "valor": "eng.automacao.sabara@ifmg.edu.br"
             }
           ]
         },
@@ -4125,18 +3969,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí; Congonhas; Governador Valadares"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde (Bambuí); noite (Congonhas e Governador Valadares)"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -4464,22 +4296,6 @@
             {
               "rotulo": "Campi",
               "valor": "Formiga; Ipatinga; Itabirito"
-            },
-            {
-              "rotulo": "Turnos",
-              "valor": "Formiga: noite; Ipatinga: manhã, tarde e noite; Itabirito: noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação - Formiga",
-              "valor": "eng.eletrica.formiga@ifmg.edu.br"
-            },
-            {
-              "rotulo": "E-mail da coordenação - Ipatinga",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação - Itabirito",
-              "valor": "eng.eletrica.itabirito@ifmg.edu.br"
             }
           ]
         },
@@ -4830,18 +4646,6 @@
             {
               "rotulo": "Campi",
               "valor": "São João Evangelista"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "eng.florestal.sje@ifmg.edu.br"
             }
           ]
         },
@@ -5114,18 +4918,6 @@
             {
               "rotulo": "Campi",
               "valor": "Arcos; Betim"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -5420,18 +5212,6 @@
             {
               "rotulo": "Campi",
               "valor": "Ouro Branco"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "coord.graduacaoengenhariametalurgica.obr@ifmg.edu.br"
             }
           ]
         },
@@ -5701,10 +5481,6 @@
             {
               "rotulo": "Trabalho final",
               "valor": "Trabalho Prático de Conclusão de Curso obrigatório, 60 horas, em artigo ou produto técnico aplicado"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "pos.manutencao.arcos@ifmg.edu.br"
             }
           ]
         },
@@ -5989,10 +5765,6 @@
             {
               "rotulo": "Trabalho final",
               "valor": "Trabalho de Conclusão de Curso obrigatório, com elaboração, orientação e defesa, 60 horas"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "inteligencia.artificial@ifmg.edu.br"
             }
           ]
         },
@@ -6262,10 +6034,6 @@
             {
               "rotulo": "Trabalho final",
               "valor": "Projeto Final de Curso obrigatório, 45 horas"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -6546,22 +6314,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí; Congonhas; Ouro Preto"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação - Bambuí",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação - Congonhas",
-              "valor": "lic.fisica.congonhas@ifmg.edu.br"
-            },
-            {
-              "rotulo": "E-mail da coordenação - Ouro Preto",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -6896,14 +6648,6 @@
             {
               "rotulo": "Área de formação",
               "valor": "Formação de professores de Geografia"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -7217,14 +6961,6 @@
             {
               "rotulo": "Área de formação",
               "valor": "Gestão ambiental e sustentabilidade"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "coordenacao.tga.gv@ifmg.edu.br"
             }
           ]
         },
@@ -7524,14 +7260,6 @@
             {
               "rotulo": "Campi",
               "valor": "Ouro Preto"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -7840,14 +7568,6 @@
             {
               "rotulo": "Área de formação",
               "valor": "Computação e sistemas inteligentes"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde (integral)"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "ia.bambui@ifmg.edu.br"
             }
           ]
         },
@@ -8156,14 +7876,6 @@
             {
               "rotulo": "Área",
               "valor": "Formação de professores de Língua Portuguesa e Língua Inglesa"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "coordletras.congonhas@ifmg.edu.br"
             }
           ]
         },
@@ -8482,14 +8194,6 @@
             {
               "rotulo": "Área",
               "valor": "Gestão de operações e cadeias de suprimentos"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "logistica.sabara@ifmg.edu.br"
             }
           ]
         },
@@ -8798,14 +8502,6 @@
             {
               "rotulo": "Área",
               "valor": "Formação de professores de Matemática"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Consulte a tabela por campus"
             }
           ]
         },
@@ -9122,18 +8818,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -9383,10 +9067,6 @@
               "valor": "Finanças"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Integral"
-            },
-            {
               "rotulo": "Integralização",
               "valor": "30 créditos: 12 obrigatórios, 12 optativos, 2 atividades práticas supervisionadas, 4 dissertação"
             },
@@ -9397,10 +9077,6 @@
             {
               "rotulo": "Trabalho final",
               "valor": "Dissertação com defesa"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -9634,14 +9310,6 @@
             {
               "rotulo": "Área",
               "valor": "Gestão de negócios e processos organizacionais"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Ponte Nova: coordenacao.processosgerenciais@ifmg.edu.br; Ribeirão das Neves: Informação incompleta"
             }
           ]
         },
@@ -9958,14 +9626,6 @@
             {
               "rotulo": "Campi",
               "valor": "Betim"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -10257,14 +9917,6 @@
             {
               "rotulo": "Campi",
               "valor": "Ouro Branco; Sabará; São João Evangelista"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Ouro Branco: noite; Sabará: manhã; São João Evangelista: manhã e tarde"
-            },
-            {
-              "rotulo": "E-mails das coordenações",
-              "valor": "Ouro Branco: coord.graduacaosistemasdeinformacao.obr@ifmg.edu.br; Sabará: bsi.sabara@ifmg.edu.br; São João Evangelista: bsi.sje@ifmg.edu.br"
             }
           ]
         },
@@ -10613,18 +10265,6 @@
             {
               "rotulo": "Campi",
               "valor": "Arcos; Bambuí; Formiga; Ouro Branco; Ouro Preto; Ponte Nova; Ribeirão das Neves; Sabará"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Contatos",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -11037,18 +10677,6 @@
             {
               "rotulo": "Campi",
               "valor": "São João Evangelista"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz dos ingressantes em 2027",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -11315,18 +10943,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -11611,18 +11227,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí; São João Evangelista"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC e matriz para ingressantes de 2027",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Consultar a tabela de campi"
             }
           ]
         },
@@ -11937,16 +11541,8 @@
               "valor": "Bambuí"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
               "rotulo": "Estágio supervisionado obrigatório",
               "valor": "240 horas"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -12234,18 +11830,6 @@
             {
               "rotulo": "Campi",
               "valor": "Betim; Ibirité; Ipatinga; Itabirito; Ouro Preto"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Consulte a tabela por campus"
             }
           ]
         },
@@ -12643,18 +12227,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "biotecnologia.bambui@ifmg.edu.br"
             }
           ]
         },
@@ -12940,20 +12512,12 @@
               "valor": "Santa Luzia"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Informação incompleta"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Não obrigatório"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
               "valor": "Não obrigatório"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "ead.defesacivil.santaluzia@ifmg.edu.br"
             }
           ]
         },
@@ -13227,19 +12791,11 @@
               "valor": "Contagem; Itabirito"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Informação incompleta"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
               "valor": "Informação incompleta"
             }
           ]
@@ -13553,14 +13109,6 @@
             {
               "rotulo": "Campi",
               "valor": "Congonhas; Governador Valadares; Ouro Preto; Piumhi; Santa Luzia"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -13966,20 +13514,12 @@
               "valor": "Ouro Preto"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite, com possibilidade de Topografia I e II das 16h às 18h30"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Não obrigatório"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
               "valor": "Não obrigatório"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -14269,18 +13809,6 @@
             {
               "rotulo": "Campi",
               "valor": "Ribeirão das Neves"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC da turma 2027",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -14605,18 +14133,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -14904,18 +14420,6 @@
             {
               "rotulo": "Campi",
               "valor": "Sabará"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz para ingressantes em 2027",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "coordeletro.sabara@ifmg.edu.br"
             }
           ]
         },
@@ -15238,18 +14742,6 @@
             {
               "rotulo": "Campi",
               "valor": "Conselheiro Lafaiete; Formiga; Ipatinga"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz para ingressantes de 2027",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Consultar contatos por campus na tabela"
             }
           ]
         },
@@ -15649,16 +15141,8 @@
               "valor": "Conselheiro Lafaiete; Ipatinga"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Conselheiro Lafaiete: não obrigatório; Ipatinga: 200 horas obrigatórias"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -15948,15 +15432,7 @@
               "valor": "Piumhi"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
               "rotulo": "Estágio supervisionado",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
               "valor": "Informação incompleta"
             }
           ]
@@ -16230,18 +15706,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí; Formiga; Ibirité; Ouro Branco; Ponte Nova; Ribeirão das Neves; Sabará; São João Evangelista"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC aplicável para ingressantes em 2027",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Consultar tabela por campus"
             }
           ]
         },
@@ -16696,19 +16160,11 @@
               "valor": "Contagem"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Informação incompleta"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
               "valor": "Informação incompleta"
             }
           ]
@@ -16977,20 +16433,12 @@
               "valor": "Ouro Preto"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Não obrigatório"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
               "valor": "Não obrigatório"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -17271,14 +16719,6 @@
             {
               "rotulo": "Campi",
               "valor": "Governador Valadares; Ribeirão das Neves"
-            },
-            {
-              "rotulo": "Turno / encontros",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -17588,19 +17028,11 @@
               "valor": "Bom Despacho"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Informação incompleta"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
               "valor": "Informação incompleta"
             }
           ]
@@ -17870,18 +17302,6 @@
             {
               "rotulo": "Campi",
               "valor": "Arcos; Betim; Congonhas; Conselheiro Lafaiete"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz para ingressantes",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Contatos por campus na tabela de ofertas"
             }
           ]
         },
@@ -18230,14 +17650,6 @@
             {
               "rotulo": "Campi",
               "valor": "Congonhas; Conselheiro Lafaiete"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Congonhas: coordtecmec.congonhas@ifmg.edu.br; Conselheiro Lafaiete: coord.meccl@ifmg.edu.br"
             }
           ]
         },
@@ -18538,18 +17950,6 @@
             {
               "rotulo": "Campi",
               "valor": "Ibirité"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "mecatronica.ibirite@ifmg.edu.br"
             }
           ]
         },
@@ -18858,18 +18258,6 @@
             {
               "rotulo": "Campi",
               "valor": "Governador Valadares; Santa Luzia"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC para ingressantes em 2027",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Consulte os contatos por campus"
             }
           ]
         },
@@ -19197,20 +18585,12 @@
               "valor": "Ouro Preto"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Não obrigatório"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
               "valor": "Não obrigatório"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -19491,18 +18871,6 @@
             {
               "rotulo": "Campi",
               "valor": "Ouro Branco; Ouro Preto"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz dos ingressantes em 2027",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Consulte a tabela por campus"
             }
           ]
         },
@@ -19825,20 +19193,12 @@
               "valor": "Ouro Preto"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Não obrigatório"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
               "valor": "Não obrigatório"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },
@@ -20109,18 +19469,6 @@
             {
               "rotulo": "Campi",
               "valor": "Congonhas; Ouro Preto"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz para ingressantes de 2027",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Contatos por campus na tabela de ofertas"
             }
           ]
         },
@@ -20450,16 +19798,8 @@
               "valor": "Congonhas; Ouro Preto"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Congonhas: 360 horas obrigatórias; Ouro Preto: não obrigatório"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Congonhas: coordtecmin.congonhas@ifmg.edu.br; Ouro Preto: Informação incompleta"
             }
           ]
         },
@@ -20760,18 +20100,6 @@
             {
               "rotulo": "Campi",
               "valor": "São João Evangelista"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz dos ingressantes em 2027",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "ctnd.sje@ifmg.edu.br"
             }
           ]
         },
@@ -21045,19 +20373,11 @@
               "valor": "João Monlevade"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Informação incompleta"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
               "valor": "Informação incompleta"
             }
           ]
@@ -21326,19 +20646,11 @@
               "valor": "João Monlevade"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Informação incompleta"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
               "valor": "Informação incompleta"
             }
           ]
@@ -21605,18 +20917,6 @@
             {
               "rotulo": "Campi",
               "valor": "Betim"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "coord.tec.quimica.betim@ifmg.edu.br"
             }
           ]
         },
@@ -21936,18 +21236,6 @@
             {
               "rotulo": "Campi",
               "valor": "Conselheiro Lafaiete; Governador Valadares; Santa Luzia"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz dos ingressantes em 2027",
-              "valor": "Informação incompleta por campus"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Consulte a tabela por campus"
             }
           ]
         },
@@ -22275,20 +21563,12 @@
               "valor": "Governador Valadares; Ouro Preto; Santa Luzia"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite"
-            },
-            {
               "rotulo": "Estágio supervisionado",
               "valor": "Governador Valadares: não obrigatório (120 horas se realizado); Ouro Preto: não obrigatório; Santa Luzia: estágio ou TCC, com 120 horas"
             },
             {
               "rotulo": "Trabalho de Conclusão de Curso",
               "valor": "Governador Valadares: Informação incompleta; Ouro Preto: não obrigatório; Santa Luzia: alternativa ao estágio supervisionado, com 120 horas"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Governador Valadares: coordenacao.tst.gv@ifmg.edu.br; Ouro Preto: Informação incompleta; Santa Luzia: strabalho.santaluzia@ifmg.edu.br"
             }
           ]
         },
@@ -22593,18 +21873,6 @@
             {
               "rotulo": "Campi",
               "valor": "Ibirité"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "PPC de janeiro de 2026"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "energia.ibirite@ifmg.edu.br"
             }
           ]
         },
@@ -22885,18 +22153,6 @@
             {
               "rotulo": "Campi",
               "valor": "Bambuí"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde (integral)"
-            },
-            {
-              "rotulo": "PPC / matriz",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "E-mail da coordenação",
-              "valor": "Informação incompleta"
             }
           ]
         },

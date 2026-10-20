@@ -108,3 +108,19 @@ test("continuidade preserva níveis hierárquicos separados", () => {
   delete c.blocos.find(x => x.titulo === "Continue seus estudos no IFMG").nivelTitulo;
   assert.ok(validarEstruturaCurso(c).some(e => e.includes("H2 isolado")));
 });
+
+test("Dados básicos não admitem turno, PPC, matriz ou contatos da coordenação", () => {
+  const c=catalogo.courses[0];
+  assert.deepEqual(validarEstruturaCurso(c),[]);
+  for(const rotulo of ["Turno","Turnos","Turno / encontros","PPC / matriz",
+    "PPC e matriz para ingressantes em 2027","PPC / matriz dos ingressantes em 2027",
+    "E-mail da coordenação","E-mail da coordenação - Betim","E-mails das coordenações",
+    "Coordenação/contato","Contatos"]){
+    const changed=structuredClone(c);
+    changed.blocos[0].campos.push({rotulo,valor:"Informação incompleta"});
+    assert.ok(validarEstruturaCurso(changed).some(e=>e.includes("retirar Turno, PPC/matriz")),rotulo);
+  }
+  for (const original of catalogo.courses) {
+    assert.ok(original.blocos[0].campos.every(f=>!/^Turno|^PPC|^E-mail da coordenação|^Contatos/i.test(f.rotulo)),original.id);
+  }
+});

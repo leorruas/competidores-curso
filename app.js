@@ -46,6 +46,10 @@
     ]
   };
 
+  function forbiddenBasicField(label) {
+    // Turno, PPC/matriz e contato pertencem às seções de conteúdo e ofertas.
+    return /^(?:turnos?(?:$|[\s/-])|ppc(?:$|[\s/-])|matriz(?:$|[\s/-])|e-mails?\s+d(?:a|as)\s+coordenaç(?:ão|ões)(?:$|[\s-])|coordenação\/contato$|contatos$)/i.test(String(label || "").trim());
+  }
   function validBasicFields(c) {
     const b = c.blocos?.[0];
     const rotulos = ["Categoria","Tipo de oferta","Carga horária","Duração","Apresentação","Modalidade","Eixo tecnológico","Campi"];
@@ -58,7 +62,7 @@
       valores[0].valor === categorias[c.nivel] && valores[1].valor === ofertas[c.tipo] &&
       valores[4].valor.length >= 50 && valores[4].valor.length <= 180 && !/[\r\n]/.test(valores[4].valor) &&
       valores[7].valor === c.campi.join("; ") &&
-      !b.campos.slice(rotulos.length).some(x => rotulos.includes(x.rotulo));
+      !b.campos.slice(rotulos.length).some(x => rotulos.includes(x.rotulo) || forbiddenBasicField(x.rotulo));
   }
 
   function validContinuityHeadings(c) {

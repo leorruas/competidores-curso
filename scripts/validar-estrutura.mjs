@@ -12,6 +12,9 @@ export function validarEstruturaCurso(curso) {
   const ordemCadastro = ["Categoria","Tipo de oferta","Carga horária","Duração","Apresentação","Modalidade","Eixo tecnológico","Campi"];
   const categoriasCadastro = {"Graduação":"Cursos de graduação","Pós-graduação":"Cursos de pós-graduação","Técnico":"Cursos técnicos"};
   const ofertasCadastro = {"Bacharelado":"Graduação","Licenciatura":"Licenciaturas","Tecnólogo":"Tecnólogos","Especialização":"Pós-graduação lato sensu","Mestrado profissional":"Mestrado","Integrado":"Técnico integrado","Integrado ao Ensino Médio":"Técnico integrado","Integrado EJA":"Técnico integrado EJA","Subsequente":"Técnico subsequente"};
+  // Turno, PPC/matriz e contato pertencem às seções por campus ou documentos,
+  // não aos campos de cadastro copiáveis como Dados básicos.
+  const campoForaDoCadastro = label => /^(?:turnos?(?:$|[\s/-])|ppc(?:$|[\s/-])|matriz(?:$|[\s/-])|e-mails?\s+d(?:a|as)\s+coordenaç(?:ão|ões)(?:$|[\s-])|coordenação\/contato$|contatos$)/i.test(String(label || "").trim());
   const dadosBasicos = blocos.filter(b => b?.tipo === "dados-basicos");
   if (dadosBasicos.length !== 1 || blocos[0] !== dadosBasicos[0]) {
     erros.push("dados básicos devem ser o primeiro bloco e aparecer uma única vez");
@@ -34,6 +37,8 @@ export function validarEstruturaCurso(curso) {
         erros.push("dados básicos: campi divergentes da lista oficial do roteiro");
       const duplicados = campos.slice(ordemCadastro.length).filter(c => ordemCadastro.includes(c?.rotulo));
       if (duplicados.length) erros.push("dados básicos: campos de cadastro duplicados");
+      if (campos.slice(ordemCadastro.length).some(x => campoForaDoCadastro(x?.rotulo)))
+        erros.push("dados básicos: retirar Turno, PPC/matriz e e-mail da coordenação; usar seções específicas");
     }
   }
   // As tabelas do Wagtail devem exibir a primeira linha como cabeçalho.

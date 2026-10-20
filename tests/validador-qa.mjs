@@ -183,3 +183,13 @@ test("publicação rejeita subtítulo H3 sem nível correto", () => {
   assert.notEqual(result.status,0);
   assert.match(result.output,/devem ser H3/);
 });
+
+test("validador de publicação rejeita extras de turno, PPC e contatos em Dados básicos",()=>{
+ for(const rotulo of ["Turno","PPC / matriz para ingressantes","E-mail da coordenação - Arcos","Contatos"]){
+   const result=runValidation(data=>{
+     data.courses[0].blocos[0].campos.push({rotulo,valor:"Informação incompleta"});
+   });
+   assert.notEqual(result.status,0,rotulo);
+   assert.match(result.output,/dados básicos: retirar Turno, PPC\/matriz/,rotulo);
+ }
+});

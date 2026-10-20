@@ -1533,7 +1533,7 @@ test("F7.2: Medicina Veterinária Bambuí tem dados, projetos comprovados e dois
   assert.equal(c.publicacao_autorizada,true);
   const info=c.blocos.find(x=>x.tipo==="dados-basicos");
   const byLabel=Object.fromEntries(info.campos.map(x=>[x.rotulo,x.valor]));
-  assert.equal(byLabel["E-mail da coordenação"],"Informação incompleta");
+  assert.equal(byLabel["E-mail da coordenação"],undefined,"E-mail da coordenação não pertence aos Dados básicos");
   assert.equal(byLabel["Carga horária"],"Informação incompleta");
   const location=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(Array.from(location.linhas[0]),["Bambuí","Manhã e tarde","Presencial","Informação incompleta"]);
@@ -1566,7 +1566,7 @@ test("F7.2: Arquitetura e Urbanismo Santa Luzia combina informações oficiais e
   assert.deepEqual(Array.from(c.campi),["Santa Luzia"]);
   assert.equal(c.status,"em_validacao");
   const basics=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
-  assert.equal(basics["E-mail da coordenação"],"arquitetura.santaluzia@ifmg.edu.br");
+  assert.equal(basics["E-mail da coordenação"],undefined,"E-mail da coordenação não pertence aos Dados básicos");
   assert.equal(basics["Modalidade"],"Presencial (4,58% EaD)");
   assert.equal(basics["Duração"],"10 semestres");
   assert.equal(basics["Carga horária"],"Informação incompleta");
@@ -1601,11 +1601,11 @@ test("F7.2: Engenharia Metalúrgica Ouro Branco tem oferta, laboratórios e trê
   assert.equal(c.nivel,"Graduação");
   assert.equal(c.status,"em_validacao");
   const data=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
-  assert.equal(data["Turno"],"Noite");
+  assert.equal(data["Turno"],undefined,"Turno não pertence aos Dados básicos");
   assert.equal(data["Duração"],"5 anos");
   assert.equal(data["Carga horária"],"3.612 horas");
-  assert.equal(data["PPC / matriz"],"Informação incompleta");
-  assert.equal(data["E-mail da coordenação"],"coord.graduacaoengenhariametalurgica.obr@ifmg.edu.br");
+  assert.equal(data["PPC / matriz"],undefined,"PPC / matriz não pertence aos Dados básicos");
+  assert.equal(data["E-mail da coordenação"],undefined,"E-mail da coordenação não pertence aos Dados básicos");
   const campi=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(Array.from(campi.linhas[0]),["Ouro Branco","Noite","Presencial","coord.graduacaoengenhariametalurgica.obr@ifmg.edu.br"]);
   const labs=c.blocos.findIndex(b=>b.titulo==="Práticas e laboratórios");
@@ -1638,12 +1638,12 @@ test("F7.2: Engenharia Florestal de São João Evangelista inclui TCCs de 2025 e
   assert.equal(c.status,"em_validacao");
   assert.equal(c.publicacao_autorizada,true);
   const basic=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
-  assert.equal(basic["Turno"],"Manhã e tarde");
+  assert.equal(basic["Turno"],undefined,"Turno não pertence aos Dados básicos");
   assert.equal(basic["Modalidade"],"Presencial");
   assert.equal(basic["Duração"],"10 semestres");
   assert.equal(basic["Carga horária"],"Informação incompleta");
-  assert.equal(basic["PPC / matriz"],"Informação incompleta");
-  assert.equal(basic["E-mail da coordenação"],"eng.florestal.sje@ifmg.edu.br");
+  assert.equal(basic["PPC / matriz"],undefined,"PPC / matriz não pertence aos Dados básicos");
+  assert.equal(basic["E-mail da coordenação"],undefined,"E-mail da coordenação não pertence aos Dados básicos");
   const oferta=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(Array.from(oferta.linhas[0]),["São João Evangelista","Manhã e tarde","Presencial","eng.florestal.sje@ifmg.edu.br"]);
   const pratica=c.blocos.findIndex(b=>b.titulo==="Práticas de campo e infraestrutura");
@@ -1683,9 +1683,9 @@ test("F7.2: Técnico em Agroindústria integrado estreia com currículo e sem co
   assert.equal(c.status,"em_validacao");
   const dados=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
   assert.equal(dados["Duração"],"3 anos");
-  assert.equal(dados["Turno"],"Manhã e tarde");
-  assert.equal(dados["E-mail da coordenação"],"Informação incompleta");
-  assert.equal(dados["PPC / matriz"],"Informação incompleta");
+  assert.equal(dados["Turno"],undefined,"Turno não pertence aos Dados básicos");
+  assert.equal(dados["E-mail da coordenação"],undefined,"E-mail da coordenação não pertence aos Dados básicos");
+  assert.equal(dados["PPC / matriz"],undefined,"PPC / matriz não pertence aos Dados básicos");
   const campi=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(Array.from(campi.linhas[0]),["Bambuí","Manhã e tarde","Presencial","Informação incompleta"]);
   const practice=c.blocos.findIndex(b=>b.titulo==="Aprendizagem prática");
@@ -1722,9 +1722,9 @@ test("F7.2: Biotecnologia integrado tem estágio distinto de Agroindústria e jo
   assert.deepEqual(Array.from(c.campi),["Bambuí"]);
   const info=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
   assert.equal(info["Duração"],"3 anos");
-  assert.equal(info["Turno"],"Manhã e tarde");
-  assert.equal(info["PPC / matriz"],"Informação incompleta");
-  assert.equal(info["E-mail da coordenação"],"biotecnologia.bambui@ifmg.edu.br");
+  assert.equal(info["Turno"],undefined,"Turno não pertence aos Dados básicos");
+  assert.equal(info["PPC / matriz"],undefined,"PPC / matriz não pertence aos Dados básicos");
+  assert.equal(info["E-mail da coordenação"],undefined,"E-mail da coordenação não pertence aos Dados básicos");
   const practice=c.blocos.findIndex(b=>b.titulo==="Aprendizagem prática");
   assert.match(c.blocos[practice].conteudo,/Microbiologia e Biologia Molecular/);
   assert.equal(c.blocos[practice+1].tipo,"galeria");
@@ -1760,9 +1760,9 @@ test("F7.2: Eletromecânica integrada Bambuí mantém PPC, oportunidades e conqu
   assert.equal(c.status,"em_validacao");
   const dados=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
   assert.equal(dados["Duração"],"3 anos");
-  assert.equal(dados["E-mail da coordenação"],"Informação incompleta");
+  assert.equal(dados["E-mail da coordenação"],undefined,"E-mail da coordenação não pertence aos Dados básicos");
   assert.equal(dados["Carga horária"],"Informação incompleta");
-  assert.equal(dados["PPC / matriz"],"Informação incompleta");
+  assert.equal(dados["PPC / matriz"],undefined,"PPC / matriz não pertence aos Dados básicos");
   const campus=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(Array.from(campus.linhas[0]),["Bambuí","Manhã e tarde","Presencial","Informação incompleta"]);
   const practice=c.blocos.findIndex(x=>x.titulo==="Aprendizagem prática");
@@ -1801,8 +1801,8 @@ test("F7.2: Técnico em Química de Betim tem pesquisas comprovadas e estágio n
   const basicos=Object.fromEntries(c.blocos[0].campos.map(f=>[f.rotulo,f.valor]));
   assert.equal(basicos["Duração"],"3 anos");
   assert.equal(basicos["Carga horária"],"3.210 horas");
-  assert.equal(basicos["PPC / matriz"],"Informação incompleta");
-  assert.equal(basicos["E-mail da coordenação"],"coord.tec.quimica.betim@ifmg.edu.br");
+  assert.equal(basicos["PPC / matriz"],undefined,"PPC / matriz não pertence aos Dados básicos");
+  assert.equal(basicos["E-mail da coordenação"],undefined,"E-mail da coordenação não pertence aos Dados básicos");
   const campus=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(campus.linhas[0],["Betim","Manhã e tarde","Presencial","coord.tec.quimica.betim@ifmg.edu.br"]);
   const a=c.blocos.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
@@ -1844,8 +1844,8 @@ test("F7.2: Mecatrônica Ibirité mantém curso integrado e três experiências 
   assert.equal(basic["Duração"],"3 anos");
   assert.equal(basic["Carga horária"],"3.200 horas");
   assert.equal(basic["Modalidade"],"Presencial (8,3% EaD)");
-  assert.equal(basic["PPC / matriz"],"Informação incompleta");
-  assert.equal(basic["E-mail da coordenação"],"mecatronica.ibirite@ifmg.edu.br");
+  assert.equal(basic["PPC / matriz"],undefined,"PPC / matriz não pertence aos Dados básicos");
+  assert.equal(basic["E-mail da coordenação"],undefined,"E-mail da coordenação não pertence aos Dados básicos");
   const loc=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(loc.linhas[0],["Ibirité","Manhã e tarde","Presencial (8,3% EaD)","mecatronica.ibirite@ifmg.edu.br"]);
   const lab=c.blocos.findIndex(x=>x.titulo==="Aprendizagem prática e laboratórios");
@@ -2159,4 +2159,39 @@ test("H2 e H3 de continuidade são copiados em blocos separados", () => {
 test("H3 é menor que H2 na prévia e na cópia",()=>{
  assert.match(css,/\.content-section h3\{/);
  assert.match(css,/\.block-card \.rich-example h3\{/);
+});
+
+test("Dados básicos omitem turno, PPC/matriz e e-mails da coordenação em todos os cursos", () => {
+  const h=testContext();
+  const proibidos=/^(?:turnos?(?:$|[\s/-])|ppc(?:$|[\s/-])|matriz(?:$|[\s/-])|e-mails?\s+d(?:a|as)\s+coordenaç(?:ão|ões)(?:$|[\s-])|coordenação\/contato$|contatos$)/i;
+  let count=0;
+  for(const c of json.courses) {
+    const basicos=c.blocos[0];
+    const campos=h.editorFields(basicos);
+    assert.ok(h.isApprovedCourse(c),c.id+": curso permanece válido");
+    assert.ok(campos.length>=8,c.id);
+    assert.deepEqual(campos.slice(0,8).map(x=>x.label),[
+      "Categoria","Tipo de oferta","Carga horária","Duração",
+      "Apresentação","Modalidade","Eixo tecnológico","Campi"
+    ],c.id);
+    for(const field of campos) {
+      assert.ok(!proibidos.test(field.label),c.id+": campo não cadastrado "+field.label);
+      count++;
+    }
+    assert.ok(c.blocos.some(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação")),c.id+": tabela de ofertas preservada");
+    const copied=h.editorBlock(basicos,0,c);
+    assert.ok(!/editor-field-label[^>]*>(?:Turno|PPC|E-mail da coordenação|Contatos)/i.test(copied),c.id);
+  }
+  assert.ok(count >= json.courses.length*8);
+});
+test("o filtro do app rejeita dados básicos com campos indevidos",()=>{
+  const h=testContext();
+  const original=json.courses[0];
+  for(const label of ["Turno","Turnos","Turno / encontros","PPC / matriz",
+    "PPC / matriz para ingressantes em 2027","E-mail da coordenação",
+    "E-mail da coordenação - Formiga","E-mails das coordenações","Coordenação/contato","Contatos"]){
+    const copy=structuredClone(original);
+    copy.blocos[0].campos.push({rotulo:label,valor:"Exemplo"});
+    assert.equal(h.isApprovedCourse(copy),false,label);
+  }
 });

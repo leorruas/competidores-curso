@@ -26,7 +26,7 @@ test("F8.3C: mestrado Formiga é curso stricto sensu independente",()=>{
 
 test("F8.3C: dados do regulamento PPGA 01-2026 e créditos não viram carga total declarada",()=>{
   assert.equal(campo("Eixo tecnológico"),"Gestão e Negócios");
-  assert.match(campo("Nível"),/Pós-graduação stricto sensu/);
+  assert.equal(campo("Tipo de oferta"),"Mestrado");
   assert.equal(campo("Área de concentração"),"Finanças");
   assert.equal(campo("Duração"),"24 meses");
   assert.equal(campo("Turno"),"Integral");

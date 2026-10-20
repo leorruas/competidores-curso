@@ -18,7 +18,7 @@ test("F7.P2: página própria do Técnico em Marketing Digital Integrado Bom Des
  assert.equal(c.modalidade,"Presencial");
  assert.equal(b.length,23);
  assert.deepEqual(validarEstruturaCurso(c),[]);
- assert.equal(field("Campus"),"Bom Despacho");
+ assert.equal(field("Campi"),"Bom Despacho");
  assert.equal(field("Turno"),"Manhã e tarde");
  assert.equal(field("Duração"),"3 anos (6 semestres)");
  assert.equal(field("Eixo tecnológico"),"Gestão e Negócios");

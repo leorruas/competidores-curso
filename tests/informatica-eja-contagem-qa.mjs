@@ -23,7 +23,7 @@ test("F7.P4: curso Informática EJA Contagem independente dos integrados regular
  assert.equal(data.courses.filter(x=>x.id===c.id).length,1);
  assert.equal(blocos.length,23);
  assert.deepEqual(validarEstruturaCurso(c),[]);
- assert.equal(field("Campus"),"Contagem");
+ assert.equal(field("Campi"),"Contagem");
  assert.equal(field("Turno"),"Noite");
  assert.equal(field("Tipo de oferta"),"Técnico integrado EJA");
  assert.ok(blocos.find(x=>x.tipo==="introducao").conteudo.length<=280);

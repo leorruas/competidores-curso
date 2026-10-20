@@ -37,6 +37,6 @@ test("F9.4: Gestão da Qualidade não apresenta visitas de rotina como conquista
  const t=b.find(x=>x.tipo==="tabela"&&x.colunas[0]==="Curso");
  assert.ok(t.linhas.some(x=>x[0]==="Processos Gerenciais (Tecnólogo)"&&x[1]==="Ponte Nova e Ribeirão das Neves"));
  const txt=JSON.stringify(c);
- assert.doesNotMatch(txt,/Auditoria privada|adriano\\.martins@ifmg\\.edu\\.br|https:\\/\\/www2?\\.ifmg\\.edu\\.br/);
+ assert.doesNotMatch(txt,/Auditoria privada|adriano[.]martins@ifmg[.]edu[.]br|www2?[.]ifmg[.]edu[.]br/);
  assert.deepEqual(data.courses.map(x=>x.id),[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
 });

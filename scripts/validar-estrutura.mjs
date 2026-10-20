@@ -8,6 +8,34 @@ export function validarEstruturaCurso(curso) {
     return ["curso sem blocos"];
   }
   const blocos = curso.blocos;
+  // Ordem de cadastro no Wagtail: oito campos obrigatórios, seguidos de dados complementares.
+  const ordemCadastro = ["Categoria","Tipo de oferta","Carga horária","Duração","Apresentação","Modalidade","Eixo tecnológico","Campi"];
+  const categoriasCadastro = {"Graduação":"Cursos de graduação","Pós-graduação":"Cursos de pós-graduação","Técnico":"Cursos técnicos"};
+  const ofertasCadastro = {"Bacharelado":"Graduação","Licenciatura":"Licenciaturas","Tecnólogo":"Tecnólogos","Especialização":"Pós-graduação lato sensu","Mestrado profissional":"Mestrado","Integrado":"Técnico integrado","Integrado ao Ensino Médio":"Técnico integrado","Integrado EJA":"Técnico integrado EJA","Subsequente":"Técnico subsequente"};
+  const dadosBasicos = blocos.filter(b => b?.tipo === "dados-basicos");
+  if (dadosBasicos.length !== 1 || blocos[0] !== dadosBasicos[0]) {
+    erros.push("dados básicos devem ser o primeiro bloco e aparecer uma única vez");
+  } else {
+    const campos = dadosBasicos[0].campos;
+    if (!Array.isArray(campos) || campos.length < ordemCadastro.length ||
+        ordemCadastro.some((rotulo, i) => campos[i]?.rotulo !== rotulo)) {
+      erros.push("dados básicos: ordem obrigatória dos oito campos de cadastro");
+    } else {
+      const valores = campos.slice(0, ordemCadastro.length).map(x => x.valor);
+      if (valores.some(x => typeof x !== "string" || !x.trim()))
+        erros.push("dados básicos: os oito campos precisam de valor ou Informação incompleta");
+      if (valores[0] !== categoriasCadastro[curso.nivel])
+        erros.push("dados básicos: categoria incompatível com o nível do curso");
+      if (valores[1] !== ofertasCadastro[curso.tipo])
+        erros.push("dados básicos: tipo de oferta incompatível com a formação");
+      if (typeof valores[4] !== "string" || valores[4].trim().length < 50 || valores[4].length > 180 || /[\r\n]/.test(valores[4]))
+        erros.push("dados básicos: apresentação obrigatória com 50 a 180 caracteres, em uma linha");
+      if (Array.isArray(curso.campi) && valores[7] !== curso.campi.join("; "))
+        erros.push("dados básicos: campi divergentes da lista oficial do roteiro");
+      const duplicados = campos.slice(ordemCadastro.length).filter(c => ordemCadastro.includes(c?.rotulo));
+      if (duplicados.length) erros.push("dados básicos: campos de cadastro duplicados");
+    }
+  }
   // Na pós-graduação, a continuidade é opcional: só faz sentido apresentar
   // uma formação de nível superior disponível no IFMG e comprovada editorialmente.
   // A validação estrutural confere o avanço de nível; a evidência da oferta

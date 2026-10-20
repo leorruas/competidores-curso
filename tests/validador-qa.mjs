@@ -134,3 +134,18 @@ test("F8.3A: publicação da pós permite omitir continuidade quando não há n�
   });
   assert.equal(result.status, 0, result.output);
 });
+
+
+test("validador de publicação bloqueia apresentação longa e ordem incorreta", () => {
+  const maior = runValidation(data => {
+    data.courses[0].blocos[0].campos[4].valor = "A".repeat(181);
+  });
+  assert.notEqual(maior.status, 0);
+  assert.match(maior.output, /180 caracteres/);
+  const deslocado = runValidation(data => {
+    const campos = data.courses[0].blocos[0].campos;
+    [campos[0], campos[1]] = [campos[1], campos[0]];
+  });
+  assert.notEqual(deslocado.status, 0);
+  assert.match(deslocado.output, /ordem obrigatória/);
+});

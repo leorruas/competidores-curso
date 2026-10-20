@@ -22,8 +22,14 @@
     descricao:"", status:"demonstracao", publicacao_autorizada:false, demo:true,
     blocos:[
       {tipo:"dados-basicos",titulo:"Dados básicos",campos:[
-        {rotulo:"Curso",valor:"Curso demonstrativo"},
-        {rotulo:"Campus",valor:"Campus fictício"}
+        {rotulo:"Categoria",valor:"Cursos de graduação"},
+        {rotulo:"Tipo de oferta",valor:"Graduação"},
+        {rotulo:"Carga horária",valor:"Exemplo"},
+        {rotulo:"Duração",valor:"Exemplo"},
+        {rotulo:"Apresentação",valor:"Esta é uma página demonstrativa com dados fictícios para conhecer a experiência de preenchimento do guia."},
+        {rotulo:"Modalidade",valor:"Exemplo"},
+        {rotulo:"Eixo tecnológico",valor:"Exemplo"},
+        {rotulo:"Campi",valor:"Campus fictício"}
       ]},
       {tipo:"texto",titulo:"Sobre o curso",conteudo:"Texto de exemplo com **negrito**.\n\nOutro parágrafo para testar a cópia."},
       {tipo:"introducao",conteudo:"Destaque de exemplo para esta página."},
@@ -40,13 +46,28 @@
     ]
   };
 
+  function validBasicFields(c) {
+    const b = c.blocos?.[0];
+    const rotulos = ["Categoria","Tipo de oferta","Carga horária","Duração","Apresentação","Modalidade","Eixo tecnológico","Campi"];
+    const categorias = {"Graduação":"Cursos de graduação","Pós-graduação":"Cursos de pós-graduação","Técnico":"Cursos técnicos"};
+    const ofertas = {"Bacharelado":"Graduação","Licenciatura":"Licenciaturas","Tecnólogo":"Tecnólogos","Especialização":"Pós-graduação lato sensu","Mestrado profissional":"Mestrado","Integrado":"Técnico integrado","Integrado ao Ensino Médio":"Técnico integrado","Integrado EJA":"Técnico integrado EJA","Subsequente":"Técnico subsequente"};
+    if (!b || b.tipo !== "dados-basicos" || !Array.isArray(b.campos) || b.campos.length < rotulos.length) return false;
+    if (c.blocos.filter(x => x.tipo === "dados-basicos").length !== 1) return false;
+    const valores = b.campos.slice(0, rotulos.length);
+    return valores.every((x, i) => x.rotulo === rotulos[i] && typeof x.valor === "string" && !!x.valor.trim()) &&
+      valores[0].valor === categorias[c.nivel] && valores[1].valor === ofertas[c.tipo] &&
+      valores[4].valor.length >= 50 && valores[4].valor.length <= 180 && !/[\r\n]/.test(valores[4].valor) &&
+      valores[7].valor === c.campi.join("; ") &&
+      !b.campos.slice(rotulos.length).some(x => rotulos.includes(x.rotulo));
+  }
+
   function isApprovedCourse(c) {
     if (!c || typeof c !== "object" || c.demo || c.publicacao_autorizada !== true || !STATUS_PUBLICO.has(c.status)) return false;
     if (!checkedText(c.id, 140) || !/^[a-z0-9][a-z0-9-]*$/.test(c.id)) return false;
     if (!checkedText(c.nome, 200) || !c.nome.trim() || !checkedText(c.nivel, 100)) return false;
     if (!Array.isArray(c.campi) || !c.campi.every(v => checkedText(v, 150))) return false;
     if (!Array.isArray(c.blocos) || c.blocos.length === 0) return false;
-    if (!c.blocos.every(b => validateBlock(b))) return false;
+    if (!c.blocos.every(b => validateBlock(b)) || !validBasicFields(c)) return false;
     if ("pendencias" in c || "revisao_coordenacao" in c || "validacao" in c) return false;
     return true;
   }

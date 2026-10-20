@@ -8,10 +8,14 @@ function pilotoPos(tipo) {
   const nome = mestrado ? "Mestrado Profissional em Administração" :
     "Especialização em Sistemas de Energia Renovável";
   const campos = [
-    {rotulo:"Curso",valor:nome},
-    {rotulo:"Nível",valor:mestrado ? "Pós-graduação stricto sensu" : "Pós-graduação lato sensu"},
+    {rotulo:"Categoria",valor:"Cursos de pós-graduação"},
+    {rotulo:"Tipo de oferta",valor:mestrado ? "Mestrado" : "Pós-graduação lato sensu"},
+    {rotulo:"Carga horária",valor:mestrado ? "Informação incompleta" : "420 horas"},
     {rotulo:"Duração",valor:mestrado ? "24 meses" : "Três semestres"},
-    {rotulo:"Carga horária total",valor:mestrado ? "Informação incompleta" : "420 horas"},
+    {rotulo:"Apresentação",valor:"Formação de pós-graduação que reúne pesquisa, atividades acadêmicas e desenvolvimento de projeto aplicado."},
+    {rotulo:"Modalidade",valor:mestrado ? "Presencial" : "EaD"},
+    {rotulo:"Eixo tecnológico",valor:"Gestão e Negócios"},
+    {rotulo:"Campi",valor:"Formiga"},
     {rotulo:"E-mail da coordenação",valor:"Informação incompleta"},
     ...(mestrado
       ? [{rotulo:"Integralização",valor:"30 créditos, incluindo dissertação"}]

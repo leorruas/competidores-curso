@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-20",
   "courses": [
     {
       "id": "administracao-bacharelado",
@@ -23,12 +23,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Administração"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação — Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "O bacharelado em Administração forma profissionais para planejar, organizar e melhorar atividades de organizações públicas, privadas e do terceiro setor."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com carga EaD variável por campus"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -41,14 +57,6 @@
             {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial, com carga EaD variável por campus"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz",
@@ -360,32 +368,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Agronomia"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação — Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Recursos Naturais"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Bambuí e São João Evangelista"
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
+              "rotulo": "Apresentação",
+              "valor": "Estude Agronomia em uma instituição pública federal e prepare-se para trabalhar com produção agrícola, manejo de recursos naturais e desenvolvimento de tecnologias para o campo."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí; São João Evangelista"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -660,12 +676,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Análise e Desenvolvimento de Sistemas"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Superior de Tecnologia (Tecnólogo)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Tecnólogos"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "2.000 horas em cada campus"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos (6 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a projetar, desenvolver, testar e manter programas e aplicações que resolvem problemas de pessoas, empresas e serviços públicos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ribeirão das Neves: 28% EaD na oferta de 2027)"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -676,20 +708,8 @@
               "valor": "Ouro Preto; Ribeirão das Neves"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (Ribeirão das Neves: 28% EaD na oferta de 2027)"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos (6 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "2.000 horas em cada campus"
             },
             {
               "rotulo": "PPC / matriz",
@@ -951,36 +971,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Arquitetura e Urbanismo"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação — Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Infraestrutura"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Santa Luzia"
+              "rotulo": "Duração",
+              "valor": "10 semestres"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Tarde"
+              "rotulo": "Apresentação",
+              "valor": "O Bacharelado em Arquitetura e Urbanismo reúne projeto de edificações, desenho de espaços públicos, planejamento urbano, paisagismo, tecnologia da construção e patrimônio cultural."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial (4,58% EaD)"
             },
             {
-              "rotulo": "Duração prevista",
-              "valor": "10 semestres"
+              "rotulo": "Eixo tecnológico",
+              "valor": "Infraestrutura"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Campi",
+              "valor": "Santa Luzia"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -1212,40 +1236,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Ciência da Computação"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Informação e Comunicação"
-            },
-            {
-              "rotulo": "Área",
-              "valor": "Computação e Tecnologia da Informação"
-            },
-            {
-              "rotulo": "Campi",
-              "valor": "Formiga; Ibirité"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (Ibirité: 38,3% EaD na oferta de 2027)"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Formiga: manhã e tarde; Ibirité: noite"
+              "rotulo": "Carga horária",
+              "valor": "Formiga: Informação incompleta para ingressantes em 2027; Ibirité: 3.205 horas"
             },
             {
               "rotulo": "Duração",
               "valor": "4 anos (8 semestres)"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Formiga: Informação incompleta para ingressantes em 2027; Ibirité: 3.205 horas"
+              "rotulo": "Apresentação",
+              "valor": "Entenda como os computadores funcionam e aprenda a criar soluções computacionais para problemas complexos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ibirité: 38,3% EaD na oferta de 2027)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Formiga; Ibirité"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Computação e Tecnologia da Informação"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Formiga: manhã e tarde; Ibirité: noite"
             },
             {
               "rotulo": "PPC / matriz",
@@ -1526,40 +1554,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Ciências Biológicas"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Licenciatura"
+              "rotulo": "Tipo de oferta",
+              "valor": "Licenciaturas"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Desenvolvimento Educacional e Social"
-            },
-            {
-              "rotulo": "Área",
-              "valor": "Ciências Biológicas e formação de professores"
-            },
-            {
-              "rotulo": "Campi",
-              "valor": "Bambuí; São João Evangelista"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta para a matriz de 2027 (por campus)"
             },
             {
               "rotulo": "Duração",
               "valor": "Informação incompleta para a matriz de 2027 (por campus)"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta para a matriz de 2027 (por campus)"
+              "rotulo": "Apresentação",
+              "valor": "Conheça a diversidade da vida, os processos que mantêm os organismos e as relações entre seres vivos e ambientes."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí; São João Evangelista"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Ciências Biológicas e formação de professores"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
             },
             {
               "rotulo": "PPC / matriz",
@@ -1835,40 +1867,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Conservação e Restauro"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Superior de Tecnologia (Tecnólogo)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Tecnólogos"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Produção Cultural e Design"
-            },
-            {
-              "rotulo": "Área de formação",
-              "valor": "Conservação e restauro do patrimônio cultural construído"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Ouro Preto"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
+              "rotulo": "Carga horária",
+              "valor": "2.550 horas"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos (6 semestres)"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "2.550 horas"
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a identificar, estudar e preservar edificações e conjuntos urbanos de valor histórico e cultural."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Cultural e Design"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Conservação e restauro do patrimônio cultural construído"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
             },
             {
               "rotulo": "PPC / matriz",
@@ -2138,40 +2174,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Design de Interiores"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Superior de Tecnologia (Tecnólogo)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Tecnólogos"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Produção Cultural e Design"
-            },
-            {
-              "rotulo": "Área de formação",
-              "valor": "Design de Interiores e ambientes construídos"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Santa Luzia"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (11,54% EaD na oferta de 2027)"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
+              "rotulo": "Carga horária",
+              "valor": "1.690 horas"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos (6 semestres)"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "1.690 horas"
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a planejar e transformar ambientes internos, considerando como as pessoas usam os espaços."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (11,54% EaD na oferta de 2027)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Cultural e Design"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Santa Luzia"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Design de Interiores e ambientes construídos"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
             },
             {
               "rotulo": "PPC / matriz",
@@ -2432,32 +2472,36 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Direito"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Desenvolvimento Educacional e Social"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Categoria / tipo",
-              "valor": "Graduação / Bacharelado"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Arcos"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "5 anos"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Apresentação",
+              "valor": "Estude Direito em uma instituição pública federal, com formação voltada à compreensão das leis, dos direitos e das relações entre pessoas, organizações e instituições."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial (30% EaD)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Arcos"
             },
             {
               "rotulo": "Turno",
@@ -2683,40 +2727,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Educação Física"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Licenciatura"
+              "rotulo": "Tipo de oferta",
+              "valor": "Licenciaturas"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Desenvolvimento Educacional e Social"
-            },
-            {
-              "rotulo": "Área de formação",
-              "valor": "Formação de professores de Educação Física"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Bambuí"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
+              "rotulo": "Carga horária",
+              "valor": "3.270 horas"
             },
             {
               "rotulo": "Duração",
               "valor": "4 anos (8 semestres)"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "3.270 horas"
+              "rotulo": "Apresentação",
+              "valor": "Forme-se para ensinar Educação Física na educação básica, articulando esporte, jogos, dança, lutas e cultura corporal à aprendizagem."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Formação de professores de Educação Física"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
             },
             {
               "rotulo": "PPC / matriz",
@@ -3003,40 +3051,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Engenharia Ambiental e Sanitária"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação (Bacharelado)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Ambiente e Saúde"
-            },
-            {
-              "rotulo": "Área de formação",
-              "valor": "Engenharia, meio ambiente e saneamento"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Governador Valadares"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e noite"
+              "rotulo": "Carga horária",
+              "valor": "3.600 horas"
             },
             {
               "rotulo": "Duração",
               "valor": "5 anos (10 semestres)"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "3.600 horas"
+              "rotulo": "Apresentação",
+              "valor": "Estude água, saneamento, resíduos, qualidade ambiental e planejamento de soluções para cidades e territórios."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Governador Valadares"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Engenharia, meio ambiente e saneamento"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e noite"
             },
             {
               "rotulo": "PPC / matriz",
@@ -3293,12 +3345,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Engenharia Civil"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação (Bacharelado)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Consulte as informações de cada campus"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "5 anos (10 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a projetar, dimensionar, construir, gerenciar e avaliar edificações e obras de infraestrutura, relacionando segurança, tecnologia, planejamento e sustentabilidade."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com componentes EaD em Piumhi e Santa Luzia"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -3306,23 +3374,11 @@
             },
             {
               "rotulo": "Campi",
-              "valor": "Governador Valadares, Piumhi e Santa Luzia"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial, com componentes EaD em Piumhi e Santa Luzia"
+              "valor": "Governador Valadares; Piumhi; Santa Luzia"
             },
             {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "5 anos (10 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Consulte as informações de cada campus"
             },
             {
               "rotulo": "E-mails das coordenações",
@@ -3624,12 +3680,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Engenharia de Controle e Automação"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação (Bacharelado)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "3.600 horas em cada campus"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "5 anos (10 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a projetar sistemas automatizados, combinar sensores, máquinas e softwares e criar soluções para monitorar e controlar processos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com componentes EaD em Ibirité e Sabará"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -3637,23 +3709,11 @@
             },
             {
               "rotulo": "Campi",
-              "valor": "Betim, Ibirité e Sabará"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial, com componentes EaD em Ibirité e Sabará"
+              "valor": "Betim; Ibirité; Sabará"
             },
             {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "5 anos (10 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "3.600 horas em cada campus"
             },
             {
               "rotulo": "E-mail da coordenação - Betim",
@@ -3958,36 +4018,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Engenharia de Produção"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação — Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Produção Industrial"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Bambuí, Congonhas e Governador Valadares"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "5 anos"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde (Bambuí); noite (Congonhas e Governador Valadares)"
+              "rotulo": "Apresentação",
+              "valor": "Estude Engenharia de Produção em uma instituição pública federal e desenvolva conhecimentos para planejar, gerenciar e melhorar sistemas de produção de bens e serviços."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Industrial"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí; Congonhas; Governador Valadares"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde (Bambuí); noite (Congonhas e Governador Valadares)"
             },
             {
               "rotulo": "PPC / matriz",
@@ -4288,12 +4352,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Engenharia Elétrica"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação (Bacharelado)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "3.600 horas por campus"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "5 anos (10 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Estude geração, transmissão e distribuição de energia elétrica, além de eletrônica, máquinas elétricas, automação e sistemas de controle."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -4301,23 +4381,11 @@
             },
             {
               "rotulo": "Campi",
-              "valor": "Formiga, Ipatinga e Itabirito"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
+              "valor": "Formiga; Ipatinga; Itabirito"
             },
             {
               "rotulo": "Turnos",
               "valor": "Formiga: noite; Ipatinga: manhã, tarde e noite; Itabirito: noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "5 anos (10 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "3.600 horas por campus"
             },
             {
               "rotulo": "E-mail da coordenação - Formiga",
@@ -4645,36 +4713,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Engenharia Florestal"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação — Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Recursos Naturais"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Campus",
-              "valor": "São João Evangelista"
+              "rotulo": "Duração",
+              "valor": "10 semestres"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
+              "rotulo": "Apresentação",
+              "valor": "Forme-se para trabalhar com manejo florestal, restauração de áreas degradadas, produção sustentável e conservação de recursos naturais."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
-              "rotulo": "Duração prevista",
-              "valor": "10 semestres"
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Campi",
+              "valor": "São João Evangelista"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -4920,12 +4992,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Engenharia Mecânica"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação — Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "5 anos"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Estude máquinas, materiais, fabricação, energia e projetos para atuar no desenvolvimento e na manutenção de sistemas mecânicos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com atividades EaD conforme o campus"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -4936,20 +5024,8 @@
               "valor": "Arcos; Betim"
             },
             {
-              "rotulo": "Duração",
-              "valor": "5 anos"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial, com atividades EaD conforme o campus"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz",
@@ -5217,36 +5293,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Engenharia Metalúrgica"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação — Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
+              "rotulo": "Carga horária",
+              "valor": "3.612 horas"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Ouro Branco"
+              "rotulo": "Duração",
+              "valor": "5 anos"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Noite"
+              "rotulo": "Apresentação",
+              "valor": "A graduação em Engenharia Metalúrgica do IFMG forma profissionais para estudar, obter, transformar e aplicar metais e ligas metálicas."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
-              "rotulo": "Duração prevista",
-              "valor": "5 anos"
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "3.612 horas"
+              "rotulo": "Campi",
+              "valor": "Ouro Branco"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
             },
             {
               "rotulo": "PPC / matriz",
@@ -5477,36 +5557,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Especialização em Gestão da Manutenção"
+              "rotulo": "Categoria",
+              "valor": "Cursos de pós-graduação"
             },
             {
-              "rotulo": "Nível",
-              "valor": "Pós-graduação lato sensu · Especialização"
+              "rotulo": "Tipo de oferta",
+              "valor": "Pós-graduação lato sensu"
             },
             {
-              "rotulo": "Titulação",
-              "valor": "Especialista em Gestão da Manutenção"
-            },
-            {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Arcos"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Educação a distância (EaD)"
+              "rotulo": "Carga horária",
+              "valor": "480 horas, incluindo 60 horas de Trabalho Prático de Conclusão de Curso"
             },
             {
               "rotulo": "Duração",
               "valor": "12 meses, organizados em dois semestres"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "480 horas, incluindo 60 horas de Trabalho Prático de Conclusão de Curso"
+              "rotulo": "Apresentação",
+              "valor": "Aprofunde conhecimentos sobre planejamento, análise de falhas, confiabilidade, indicadores e custos de manutenção."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Educação a distância (EaD)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Arcos"
+            },
+            {
+              "rotulo": "Titulação",
+              "valor": "Especialista em Gestão da Manutenção"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -5759,36 +5843,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Especialização em Inteligência Artificial"
+              "rotulo": "Categoria",
+              "valor": "Cursos de pós-graduação"
             },
             {
-              "rotulo": "Nível",
-              "valor": "Pós-graduação lato sensu · Especialização"
+              "rotulo": "Tipo de oferta",
+              "valor": "Pós-graduação lato sensu"
             },
             {
-              "rotulo": "Titulação",
-              "valor": "Especialista em Inteligência Artificial"
-            },
-            {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Informação e Comunicação"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Ouro Preto"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial, com 20% das horas das disciplinas em EaD"
+              "rotulo": "Carga horária",
+              "valor": "420 horas, sendo 360 de disciplinas e 60 de TCC"
             },
             {
               "rotulo": "Duração",
               "valor": "20 meses"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "420 horas, sendo 360 de disciplinas e 60 de TCC"
+              "rotulo": "Apresentação",
+              "valor": "A especialização aprofunda conhecimentos para desenvolver e avaliar soluções de inteligência artificial."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com 20% das horas das disciplinas em EaD"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Titulação",
+              "valor": "Especialista em Inteligência Artificial"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -6026,36 +6114,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Especialização em Sistemas de Energia Renovável: Geração, Distribuição e Eficiência Energética"
+              "rotulo": "Categoria",
+              "valor": "Cursos de pós-graduação"
             },
             {
-              "rotulo": "Nível",
-              "valor": "Pós-graduação lato sensu · Especialização"
+              "rotulo": "Tipo de oferta",
+              "valor": "Pós-graduação lato sensu"
             },
             {
-              "rotulo": "Titulação",
-              "valor": "Especialista em Sistemas de Energia Renovável"
-            },
-            {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Formiga"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Educação a distância (EaD)"
+              "rotulo": "Carga horária",
+              "valor": "420 horas, incluindo 45 horas de Projeto Final de Curso"
             },
             {
               "rotulo": "Duração",
               "valor": "Três semestres"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "420 horas, incluindo 45 horas de Projeto Final de Curso"
+              "rotulo": "Apresentação",
+              "valor": "Aprofunde conhecimentos em geração, distribuição, armazenamento e uso eficiente de energia."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Educação a distância (EaD)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Formiga"
+            },
+            {
+              "rotulo": "Titulação",
+              "valor": "Especialista em Sistemas de Energia Renovável"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -6313,12 +6405,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Física"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação (Licenciatura)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Licenciaturas"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informações específicas por campus na tabela"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "4 anos (8 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Forme-se para ensinar Física na educação básica, unindo conhecimento científico, experimentação e formação pedagógica."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com componentes EaD em Ouro Preto"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -6326,23 +6434,11 @@
             },
             {
               "rotulo": "Campi",
-              "valor": "Bambuí, Congonhas e Ouro Preto"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial, com componentes EaD em Ouro Preto"
+              "valor": "Bambuí; Congonhas; Ouro Preto"
             },
             {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "4 anos (8 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informações específicas por campus na tabela"
             },
             {
               "rotulo": "E-mail da coordenação - Bambuí",
@@ -6650,40 +6746,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Geografia"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Licenciatura"
+              "rotulo": "Tipo de oferta",
+              "valor": "Licenciaturas"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Desenvolvimento Educacional e Social"
+              "rotulo": "Carga horária",
+              "valor": "3.200 horas"
             },
             {
-              "rotulo": "Área de formação",
-              "valor": "Formação de professores de Geografia"
+              "rotulo": "Duração",
+              "valor": "4 anos (8 semestres)"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Ouro Preto"
+              "rotulo": "Apresentação",
+              "valor": "Forme-se para ensinar Geografia na educação básica, relacionando território, sociedade e natureza."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Preto"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Formação de professores de Geografia"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "4 anos (8 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "3.200 horas"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -6960,40 +7060,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Gestão Ambiental"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Tecnólogo"
+              "rotulo": "Tipo de oferta",
+              "valor": "Tecnólogos"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Ambiente e Saúde"
+              "rotulo": "Carga horária",
+              "valor": "1.700 horas"
             },
             {
-              "rotulo": "Área de formação",
-              "valor": "Gestão ambiental e sustentabilidade"
+              "rotulo": "Duração",
+              "valor": "2 anos (4 semestres)"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Governador Valadares"
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a avaliar impactos ambientais, acompanhar a qualidade da água, do solo e do ar e propor soluções para o uso responsável dos recursos naturais."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Governador Valadares"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Gestão ambiental e sustentabilidade"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "2 anos (4 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "1.700 horas"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -7260,36 +7364,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Gestão da Qualidade"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Tecnólogo"
+              "rotulo": "Tipo de oferta",
+              "valor": "Tecnólogos"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Gestão e Negócios"
+              "rotulo": "Carga horária",
+              "valor": "1.660 horas"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Ouro Preto"
+              "rotulo": "Duração",
+              "valor": "3 anos (6 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a analisar processos, identificar problemas e propor melhorias na produção de bens e serviços."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial, com componentes EaD"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Preto"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "3 anos (6 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "1.660 horas"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -7561,40 +7669,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Inteligência Artificial"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Informação e Comunicação"
+              "rotulo": "Carga horária",
+              "valor": "3.200 horas"
             },
             {
-              "rotulo": "Área de formação",
-              "valor": "Computação e sistemas inteligentes"
+              "rotulo": "Duração",
+              "valor": "4 anos (8 semestres)"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Bambuí"
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a criar e avaliar sistemas capazes de reconhecer padrões, trabalhar com dados e apoiar decisões."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial, com componentes EaD"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Área de formação",
+              "valor": "Computação e sistemas inteligentes"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Manhã e tarde (integral)"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "4 anos (8 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "3.200 horas"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -7866,40 +7978,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Letras (Português/Inglês)"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Licenciatura"
+              "rotulo": "Tipo de oferta",
+              "valor": "Licenciaturas"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Desenvolvimento Educacional e Social"
+              "rotulo": "Carga horária",
+              "valor": "3.992 horas"
             },
             {
-              "rotulo": "Área",
-              "valor": "Formação de professores de Língua Portuguesa e Língua Inglesa"
+              "rotulo": "Duração",
+              "valor": "4 anos e meio (9 semestres)"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Congonhas"
+              "rotulo": "Apresentação",
+              "valor": "Forme-se para ensinar Língua Portuguesa, Língua Inglesa e suas literaturas na educação básica."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Congonhas"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Formação de professores de Língua Portuguesa e Língua Inglesa"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "4 anos e meio (9 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "3.992 horas"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -8181,40 +8297,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Logística"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Tecnólogo"
+              "rotulo": "Tipo de oferta",
+              "valor": "Tecnólogos"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Gestão e Negócios"
+              "rotulo": "Carga horária",
+              "valor": "1.600 horas"
             },
             {
-              "rotulo": "Área",
-              "valor": "Gestão de operações e cadeias de suprimentos"
+              "rotulo": "Duração",
+              "valor": "2 anos e meio (5 semestres)"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Sabará"
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a planejar transportes, organizar estoques e melhorar a circulação de produtos, materiais e informações."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial, com componentes EaD"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Sabará"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Gestão de operações e cadeias de suprimentos"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "2 anos e meio (5 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "1.600 horas"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -8486,40 +8606,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Matemática"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Licenciatura"
+              "rotulo": "Tipo de oferta",
+              "valor": "Licenciaturas"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Desenvolvimento Educacional e Social"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta para as matrizes de 2027"
             },
             {
-              "rotulo": "Área",
-              "valor": "Formação de professores de Matemática"
+              "rotulo": "Duração",
+              "valor": "4 anos (8 semestres)"
             },
             {
-              "rotulo": "Campi",
-              "valor": "Formiga; São João Evangelista"
+              "rotulo": "Apresentação",
+              "valor": "Forme-se para ensinar Matemática na educação básica, combinando números, álgebra, geometria, funções e estatística com didática e experiências em escolas."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial; Formiga inclui atividades EaD"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Formiga; São João Evangelista"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Formação de professores de Matemática"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "4 anos (8 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta para as matrizes de 2027"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -8803,36 +8927,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Medicina Veterinária"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação — Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Ambiente e Saúde"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Bambuí"
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
+              "rotulo": "Apresentação",
+              "valor": "A graduação prepara profissionais para cuidar da saúde e do bem-estar animal, prevenir doenças e atuar em saúde pública e segurança dos alimentos."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
-              "rotulo": "Duração prevista",
-              "valor": "Informação incompleta"
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Campi",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -9049,44 +9177,48 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Mestrado Profissional em Administração"
+              "rotulo": "Categoria",
+              "valor": "Cursos de pós-graduação"
             },
             {
-              "rotulo": "Nível",
-              "valor": "Pós-graduação stricto sensu · Mestrado profissional"
+              "rotulo": "Tipo de oferta",
+              "valor": "Mestrado"
             },
             {
-              "rotulo": "Área de concentração",
-              "valor": "Finanças"
-            },
-            {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Gestão e Negócios"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Formiga"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (o regulamento admite disciplinas presenciais, remotas ou híbridas conforme decisão do colegiado)"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Integral"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "24 meses"
             },
             {
-              "rotulo": "Integralização",
-              "valor": "30 créditos: 12 obrigatórios, 12 optativos, 2 atividades práticas supervisionadas, 4 dissertação"
+              "rotulo": "Apresentação",
+              "valor": "Desenvolva pesquisas aplicadas em Finanças, relacionando decisões de investimento, comportamento financeiro e gestão de organizações."
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Modalidade",
+              "valor": "Presencial (o regulamento admite disciplinas presenciais, remotas ou híbridas conforme decisão do colegiado)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Formiga"
+            },
+            {
+              "rotulo": "Área de concentração",
+              "valor": "Finanças"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Integral"
+            },
+            {
+              "rotulo": "Integralização",
+              "valor": "30 créditos: 12 obrigatórios, 12 optativos, 2 atividades práticas supervisionadas, 4 dissertação"
             },
             {
               "rotulo": "Exame de qualificação",
@@ -9295,40 +9427,44 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Processos Gerenciais"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Superior de Tecnologia (Tecnólogo)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Tecnólogos"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Gestão e Negócios"
+              "rotulo": "Carga horária",
+              "valor": "1.600 horas em cada campus"
             },
             {
-              "rotulo": "Área",
-              "valor": "Gestão de negócios e processos organizacionais"
+              "rotulo": "Duração",
+              "valor": "Ponte Nova: 5 semestres; Ribeirão das Neves: 4 semestres"
             },
             {
-              "rotulo": "Campi",
-              "valor": "Ponte Nova; Ribeirão das Neves"
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a analisar e organizar processos, planejar atividades, acompanhar resultados e propor melhorias para organizações."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial (Ribeirão das Neves: 24% de atividades EaD)"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ponte Nova; Ribeirão das Neves"
+            },
+            {
+              "rotulo": "Área",
+              "valor": "Gestão de negócios e processos organizacionais"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "Ponte Nova: 5 semestres; Ribeirão das Neves: 4 semestres"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "1.600 horas em cada campus"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -9612,36 +9748,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Química"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Licenciatura"
+              "rotulo": "Tipo de oferta",
+              "valor": "Licenciaturas"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Desenvolvimento Educacional e Social"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Betim"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial, com atividades a distância"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Noite"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Apresentação",
+              "valor": "Estude os fenômenos e as transformações da matéria e aprenda a ensinar Química na Educação Básica."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com atividades a distância"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Desenvolvimento Educacional e Social"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Betim"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Noite"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -9900,12 +10040,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Sistemas de Informação"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Ouro Branco: 3.004 horas; Sabará: 3.000 horas; São João Evangelista: Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "4 anos (8 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a projetar, desenvolver e aprimorar sistemas digitais que ajudam pessoas e organizações a resolver problemas."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Sabará: 11,4% EaD na oferta de 2027)"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -9916,20 +10072,8 @@
               "valor": "Ouro Branco; Sabará; São João Evangelista"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (Sabará: 11,4% EaD na oferta de 2027)"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Ouro Branco: noite; Sabará: manhã; São João Evangelista: manhã e tarde"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "4 anos (8 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Ouro Branco: 3.004 horas; Sabará: 3.000 horas; São João Evangelista: Informação incompleta"
             },
             {
               "rotulo": "E-mails das coordenações",
@@ -10245,32 +10389,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Administração"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Categoria / tipo",
-              "valor": "Técnico Integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Campi",
-              "valor": "Arcos; Bambuí; Formiga; Ouro Branco; Ouro Preto; Ponte Nova; Ribeirão das Neves; Sabará"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Gestão e Negócios"
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
+              "rotulo": "Apresentação",
+              "valor": "O Técnico em Administração Integrado permite cursar o ensino médio e uma formação técnica no IFMG."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial, com carga EaD variável por campus"
             },
             {
-              "rotulo": "Carga horária",
-              "valor": "Informação incompleta"
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Arcos; Bambuí; Formiga; Ouro Branco; Ouro Preto; Ponte Nova; Ribeirão das Neves; Sabará"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -10653,36 +10805,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Agrimensura"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Infraestrutura"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "São João Evangelista"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Apresentação",
+              "valor": "Aprenda topografia, cartografia e medição de terrenos enquanto cursa o ensino médio, usando tecnologias de representação do espaço."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Infraestrutura"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "São João Evangelista"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz dos ingressantes em 2027",
@@ -10920,36 +11076,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Agroindústria"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico Integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Produção Alimentícia"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Bambuí"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Apresentação",
+              "valor": "O Técnico em Agroindústria permite cursar o ensino médio e a formação profissional no mesmo percurso."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Alimentícia"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -11205,12 +11365,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Agropecuária"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Curse o ensino médio e estude produção vegetal e animal, cultivos, manejo de solos e práticas de sustentabilidade no campo."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -11218,23 +11394,11 @@
             },
             {
               "rotulo": "Campi",
-              "valor": "Bambuí e São João Evangelista"
+              "valor": "Bambuí; São João Evangelista"
             },
             {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC e matriz para ingressantes de 2027",
@@ -11517,36 +11681,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Agropecuária"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Recursos Naturais"
+              "rotulo": "Carga horária",
+              "valor": "1.620 horas"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Bambuí"
+              "rotulo": "Duração",
+              "valor": "1 ano e meio (3 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda sobre produção agrícola, criação de animais, manejo de solos e organização do trabalho rural depois de concluir o ensino médio."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "1 ano e meio (3 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "1.620 horas"
             },
             {
               "rotulo": "Estágio supervisionado obrigatório",
@@ -11805,12 +11973,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Automação Industrial"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico Integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "O Técnico em Automação Industrial reúne o ensino médio e a formação profissional em um percurso de três anos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ibirité: 8,3% EaD)"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -11818,23 +12002,11 @@
             },
             {
               "rotulo": "Campi",
-              "valor": "Betim, Ibirité, Ipatinga, Itabirito e Ouro Preto"
+              "valor": "Betim; Ibirité; Ipatinga; Itabirito; Ouro Preto"
             },
             {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (Ibirité: 8,3% EaD)"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz",
@@ -12203,36 +12375,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Biotecnologia"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico Integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Produção Industrial"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Bambuí"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Apresentação",
+              "valor": "O Técnico em Biotecnologia integra o ensino médio à formação profissional em um percurso de três anos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Industrial"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -12487,36 +12663,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Defesa Civil"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Segurança"
+              "rotulo": "Carga horária",
+              "valor": "800 horas (640 horas EaD e 160 horas presenciais)"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Santa Luzia"
+              "rotulo": "Duração",
+              "valor": "1 ano e meio (3 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a identificar riscos, mapear áreas vulneráveis e apoiar ações de prevenção e resposta a desastres."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Educação a distância (80% EaD e 20% presencial obrigatório)"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Segurança"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Santa Luzia"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "1 ano e meio (3 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "800 horas (640 horas EaD e 160 horas presenciais)"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -12763,12 +12943,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Desenvolvimento de Sistemas"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Estude o ensino médio junto com uma formação técnica voltada à criação de programas e aplicações digitais."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -12779,20 +12975,8 @@
               "valor": "Contagem; Itabirito"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -13079,24 +13263,32 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Edificações"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Categoria / tipo",
-              "valor": "Técnico / Integrado ao Ensino Médio"
-            },
-            {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Infraestrutura"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
               "rotulo": "Carga horária",
               "valor": "Informação incompleta"
             },
             {
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Estude construção civil em uma instituição pública federal, cursando o ensino médio junto com uma formação técnica em Edificações."
+            },
+            {
               "rotulo": "Modalidade",
               "valor": "Presencial, com até 10,3% EaD, dependendo do campus"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Infraestrutura"
             },
             {
               "rotulo": "Campi",
@@ -13475,36 +13667,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Edificações"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Infraestrutura"
+              "rotulo": "Carga horária",
+              "valor": "1.210 horas (1.080 de disciplinas e 130 de atividades complementares obrigatórias)"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Ouro Preto"
+              "rotulo": "Duração",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a interpretar projetos, acompanhar obras, analisar materiais e organizar etapas da construção civil."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial (30 horas EaD em Desenho Técnico)"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Infraestrutura"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Preto"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite, com possibilidade de Topografia I e II das 16h às 18h30"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "2 anos (4 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "1.210 horas (1.080 de disciplinas e 130 de atividades complementares obrigatórias)"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -13769,36 +13965,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Eletroeletrônica"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Ribeirão das Neves"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Apresentação",
+              "valor": "Estude o ensino médio junto com uma formação técnica que reúne eletricidade e eletrônica."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ribeirão das Neves"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC da turma 2027",
@@ -14093,36 +14293,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Eletromecânica"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico Integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Bambuí"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Apresentação",
+              "valor": "O Técnico em Eletromecânica reúne o ensino médio e a formação profissional em um percurso de três anos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -14381,36 +14585,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Eletrônica"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Sabará"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial, com 16,67% EaD na oferta de 2027"
+              "rotulo": "Carga horária",
+              "valor": "3.250 horas"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "3.250 horas"
+              "rotulo": "Apresentação",
+              "valor": "Estude o ensino médio junto com uma formação técnica em circuitos, componentes e sistemas eletrônicos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com 16,67% EaD na oferta de 2027"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Sabará"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz para ingressantes em 2027",
@@ -14703,12 +14911,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Eletrotécnica"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Varia conforme o campus: Conselheiro Lafaiete, 3.238 horas; Ipatinga, 3.205 horas; Formiga, Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Estude o ensino médio junto com uma formação técnica voltada à energia elétrica, aos circuitos, às instalações e à manutenção de equipamentos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -14721,18 +14945,6 @@
             {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Varia conforme o campus: Conselheiro Lafaiete, 3.238 horas; Ipatinga, 3.205 horas; Formiga, Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz para ingressantes de 2027",
@@ -15100,12 +15312,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Eletrotécnica"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Conselheiro Lafaiete: 1.202 horas; Ipatinga: 1.400 horas"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Conselheiro Lafaiete: 4 semestres; Ipatinga: 3 semestres"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a interpretar circuitos elétricos, instalar e manter equipamentos e compreender sistemas de comando e automação."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial, com atividades a distância em parte das disciplinas"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -15116,20 +15344,8 @@
               "valor": "Conselheiro Lafaiete; Ipatinga"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial, com atividades a distância em parte das disciplinas"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "Conselheiro Lafaiete: 4 semestres; Ipatinga: 3 semestres"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Conselheiro Lafaiete: 1.202 horas; Ipatinga: 1.400 horas"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -15388,36 +15604,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Enfermagem"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Ambiente e Saúde"
+              "rotulo": "Carga horária",
+              "valor": "Mínimo de 1.200 horas; carga total: Informação incompleta"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Piumhi"
+              "rotulo": "Duração",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Estude cuidados de enfermagem, promoção da saúde e prevenção de doenças, com atenção às necessidades de pessoas em diferentes fases da vida."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Piumhi"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração prevista",
-              "valor": "2 anos (4 semestres)"
-            },
-            {
-              "rotulo": "Carga horária da formação",
-              "valor": "Mínimo de 1.200 horas; carga total: Informação incompleta"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -15661,12 +15881,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Informática"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Curse o ensino médio enquanto aprende programação, redes, bancos de dados e desenvolvimento de aplicações e sistemas."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ibirité: 8,3% EaD; Sabará: 16,67% EaD no PS2027)"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -15677,20 +15913,8 @@
               "valor": "Bambuí; Formiga; Ibirité; Ouro Branco; Ponte Nova; Ribeirão das Neves; Sabará; São João Evangelista"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (Ibirité: 8,3% EaD; Sabará: 16,67% EaD no PS2027)"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC aplicável para ingressantes em 2027",
@@ -16113,36 +16337,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Informática"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado à Educação de Jovens e Adultos (EJA)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado EJA"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Informação e Comunicação"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Contagem"
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Conclua o ensino médio pela Educação de Jovens e Adultos (EJA) e estude uma área técnica ligada ao uso de computadores, aplicativos e informações digitais."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Informação e Comunicação"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Contagem"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -16383,36 +16611,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Joalheria"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Produção Industrial"
+              "rotulo": "Carga horária",
+              "valor": "1.200 horas (960 presenciais e 240 EaD)"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Ouro Preto"
+              "rotulo": "Duração",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a criar, desenhar, fabricar e reparar joias, combinando técnicas de ourivesaria, lapidação de gemas, modelagem tridimensional e conhecimento dos materiais."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial (20% de atividades EaD)"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Industrial"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Preto"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "2 anos (4 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "1.200 horas (960 presenciais e 240 EaD)"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -16668,28 +16900,36 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Logística"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Categoria / tipo",
-              "valor": "Técnico / Subsequente"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
             },
             {
-              "rotulo": "Campi",
-              "valor": "Governador Valadares; Ribeirão das Neves"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Gestão e Negócios"
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "O Técnico em Logística Subsequente é destinado a quem concluiu o ensino médio e deseja trabalhar com transporte, armazenagem, estoques, compras e distribuição de produtos."
             },
             {
               "rotulo": "Modalidade",
               "valor": "EaD, com atividades presenciais conforme o campus"
             },
             {
-              "rotulo": "Carga horária",
-              "valor": "Informação incompleta"
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Governador Valadares; Ribeirão das Neves"
             },
             {
               "rotulo": "Turno / encontros",
@@ -16968,36 +17208,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Marketing Digital"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Gestão e Negócios"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Bom Despacho"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos (6 semestres)"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a planejar ações de comunicação, compreender públicos e relacionar empresas e organizações a seus clientes e comunidades em ambientes digitais."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Bom Despacho"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -17241,12 +17485,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Mecânica"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Estude o ensino médio junto com uma formação técnica voltada ao funcionamento, à fabricação e à manutenção de máquinas e equipamentos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial; Arcos: 6% EaD no quadro de ofertas de 2027"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -17259,18 +17519,6 @@
             {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial; Arcos: 6% EaD no quadro de ofertas de 2027"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC / matriz para ingressantes",
@@ -17589,12 +17837,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Mecânica"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Congonhas: Informação incompleta; Conselheiro Lafaiete: 1.200 horas"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a fabricar e manter máquinas, interpretar desenhos técnicos e trabalhar com usinagem, soldagem e controle de qualidade."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Conselheiro Lafaiete: 20% EaD na oferta de 2027)"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -17605,20 +17869,8 @@
               "valor": "Congonhas; Conselheiro Lafaiete"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (Conselheiro Lafaiete: 20% EaD na oferta de 2027)"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "2 anos (4 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Congonhas: Informação incompleta; Conselheiro Lafaiete: 1.200 horas"
             },
             {
               "rotulo": "E-mail da coordenação",
@@ -17886,36 +18138,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Mecatrônica"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico Integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Ibirité"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (8,3% EaD)"
+              "rotulo": "Carga horária",
+              "valor": "3.200 horas"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "3.200 horas"
+              "rotulo": "Apresentação",
+              "valor": "O Técnico em Mecatrônica integra o ensino médio à formação profissional em mecânica, eletroeletrônica e computação."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (8,3% EaD)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ibirité"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -18195,12 +18451,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Meio Ambiente"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Estude o ensino médio junto com uma formação técnica voltada ao cuidado com o meio ambiente."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Santa Luzia: 10,73% EaD no PS2027)"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -18211,20 +18483,8 @@
               "valor": "Governador Valadares; Santa Luzia"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (Santa Luzia: 10,73% EaD no PS2027)"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "PPC para ingressantes em 2027",
@@ -18520,36 +18780,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Meio Ambiente"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Ambiente e Saúde"
+              "rotulo": "Carga horária",
+              "valor": "1.200 horas (1.110 horas de disciplinas e 90 horas de atividades complementares obrigatórias)"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Ouro Preto"
+              "rotulo": "Duração",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a identificar impactos ambientais, coletar e interpretar dados, acompanhar o uso da água e organizar ações de gestão e conservação."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Preto"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "2 anos (4 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "1.200 horas (1.110 horas de disciplinas e 90 horas de atividades complementares obrigatórias)"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -18805,12 +19069,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Metalurgia"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Varia conforme o campus: Ouro Preto, 3.450 horas; Ouro Branco, Informação incompleta para 2027"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Estude o ensino médio junto com a formação técnica voltada à produção e transformação de metais."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -18821,20 +19101,8 @@
               "valor": "Ouro Branco; Ouro Preto"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Varia conforme o campus: Ouro Preto, 3.450 horas; Ouro Branco, Informação incompleta para 2027"
             },
             {
               "rotulo": "PPC / matriz dos ingressantes em 2027",
@@ -19125,36 +19393,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Metalurgia"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
+              "rotulo": "Carga horária",
+              "valor": "1.200 horas (990 horas de disciplinas e 210 horas de atividades complementares obrigatórias)"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Ouro Preto"
+              "rotulo": "Duração",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a entender como metais e ligas são obtidos, transformados e analisados, incluindo técnicas de fundição, conformação mecânica, tratamentos térmicos e controle de qualidade."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ouro Preto"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "2 anos (4 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "1.200 horas (990 horas de disciplinas e 210 horas de atividades complementares obrigatórias)"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -19400,12 +19672,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Mineração"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Varia conforme o campus; Ouro Preto: 3.450 horas"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Curse o ensino médio e estude pesquisa mineral, extração, beneficiamento de minérios, segurança e cuidados ambientais."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ouro Preto: 0,87% EaD no quadro de ofertas de 2027)"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -19418,18 +19706,6 @@
             {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (Ouro Preto: 0,87% EaD no quadro de ofertas de 2027)"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Varia conforme o campus; Ouro Preto: 3.450 horas"
             },
             {
               "rotulo": "PPC / matriz para ingressantes de 2027",
@@ -19727,12 +20003,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Mineração"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Congonhas: 1.560 horas; Ouro Preto: 1.210 horas"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "2 anos (4 semestres)"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a investigar depósitos minerais, acompanhar processos de extração e tratar minérios, utilizando conhecimentos de geologia, mineralogia, topografia e segurança."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (Ouro Preto: 5% de atividades EaD na oferta de 2027)"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -19743,20 +20035,8 @@
               "valor": "Congonhas; Ouro Preto"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (Ouro Preto: 5% de atividades EaD na oferta de 2027)"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "2 anos (4 semestres)"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Congonhas: 1.560 horas; Ouro Preto: 1.210 horas"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -20028,36 +20308,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Nutrição e Dietética"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Ambiente e Saúde"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "São João Evangelista"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Duração",
               "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a trabalhar com alimentação, preparo de refeições e segurança dos alimentos enquanto cursa o ensino médio."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Ambiente e Saúde"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "São João Evangelista"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz dos ingressantes em 2027",
@@ -20300,36 +20584,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Planejamento e Controle da Produção"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Produção Industrial"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Campus",
-              "valor": "João Monlevade"
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a organizar etapas de produção, acompanhar materiais, prazos e recursos e usar informações para orientar o trabalho de equipes."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Industrial"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "João Monlevade"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -20570,36 +20858,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Planejamento e Controle da Produção"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado à Educação de Jovens e Adultos (EJA)"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado EJA"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Produção Industrial"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Campus",
-              "valor": "João Monlevade"
+              "rotulo": "Duração",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a organizar etapas de produção, acompanhar materiais, prazos e recursos e usar informações para orientar o trabalho de equipes."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Produção Industrial"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "João Monlevade"
+            },
+            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "Informação incompleta"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -20840,36 +21132,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Química"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico Integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Betim"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
+              "rotulo": "Carga horária",
+              "valor": "3.210 horas"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "3.210 horas"
+              "rotulo": "Apresentação",
+              "valor": "O Técnico em Química reúne o ensino médio e a formação profissional em um mesmo percurso."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Betim"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -21160,12 +21456,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Segurança do Trabalho"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta por campus para 2027"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "3 anos"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a identificar riscos nos ambientes de trabalho e a propor medidas para prevenir acidentes e proteger a saúde das pessoas."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -21176,20 +21488,8 @@
               "valor": "Conselheiro Lafaiete; Governador Valadares; Santa Luzia"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Manhã e tarde"
-            },
-            {
-              "rotulo": "Duração",
-              "valor": "3 anos"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta por campus para 2027"
             },
             {
               "rotulo": "PPC / matriz dos ingressantes em 2027",
@@ -21486,12 +21786,28 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Segurança do Trabalho"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico subsequente ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico subsequente"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "Governador Valadares: 1.200 horas; Ouro Preto: 1.200 horas (1.095 horas de disciplinas e 105 horas de atividades complementares obrigatórias); Santa Luzia: 1.320 horas (1.200 horas de disciplinas e 120 horas de estágio ou TCC)"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "Governador Valadares: 3 semestres; Ouro Preto e Santa Luzia: 4 semestres"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "Aprenda a identificar riscos no trabalho, orientar medidas de prevenção e acompanhar condições de saúde e segurança em diferentes atividades profissionais."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial; em Santa Luzia, 4,54% da carga horária a distância"
             },
             {
               "rotulo": "Eixo tecnológico",
@@ -21502,20 +21818,8 @@
               "valor": "Governador Valadares; Ouro Preto; Santa Luzia"
             },
             {
-              "rotulo": "Modalidade",
-              "valor": "Presencial; em Santa Luzia, 4,54% da carga horária a distância"
-            },
-            {
               "rotulo": "Turno",
               "valor": "Noite"
-            },
-            {
-              "rotulo": "Duração mínima",
-              "valor": "Governador Valadares: 3 semestres; Ouro Preto e Santa Luzia: 4 semestres"
-            },
-            {
-              "rotulo": "Carga horária total",
-              "valor": "Governador Valadares: 1.200 horas; Ouro Preto: 1.200 horas (1.095 horas de disciplinas e 105 horas de atividades complementares obrigatórias); Santa Luzia: 1.320 horas (1.200 horas de disciplinas e 120 horas de estágio ou TCC)"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -21795,36 +22099,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Técnico em Sistemas de Energia Renovável"
+              "rotulo": "Categoria",
+              "valor": "Cursos técnicos"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Técnico integrado ao Ensino Médio"
+              "rotulo": "Tipo de oferta",
+              "valor": "Técnico integrado"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Controle e Processos Industriais"
-            },
-            {
-              "rotulo": "Campus",
-              "valor": "Ibirité"
-            },
-            {
-              "rotulo": "Modalidade",
-              "valor": "Presencial (8,3% EaD)"
-            },
-            {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde"
+              "rotulo": "Carga horária",
+              "valor": "3.200 horas"
             },
             {
               "rotulo": "Duração",
               "valor": "3 anos"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "3.200 horas"
+              "rotulo": "Apresentação",
+              "valor": "Estude o ensino médio junto com a formação técnica voltada à produção e ao uso eficiente de energia de fontes renováveis."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Presencial (8,3% EaD)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Controle e Processos Industriais"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Ibirité"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde"
             },
             {
               "rotulo": "PPC / matriz",
@@ -22076,36 +22384,40 @@
           "tipo": "dados-basicos",
           "campos": [
             {
-              "rotulo": "Curso",
-              "valor": "Zootecnia"
+              "rotulo": "Categoria",
+              "valor": "Cursos de graduação"
             },
             {
-              "rotulo": "Tipo de curso",
-              "valor": "Graduação — Bacharelado"
+              "rotulo": "Tipo de oferta",
+              "valor": "Graduação"
             },
             {
-              "rotulo": "Eixo tecnológico",
-              "valor": "Recursos Naturais"
+              "rotulo": "Carga horária",
+              "valor": "Informação incompleta"
             },
             {
-              "rotulo": "Campus",
-              "valor": "Bambuí"
+              "rotulo": "Duração",
+              "valor": "4,5 anos"
             },
             {
-              "rotulo": "Turno",
-              "valor": "Manhã e tarde (integral)"
+              "rotulo": "Apresentação",
+              "valor": "Estude nutrição, genética, reprodução e bem-estar animal para atuar na produção, no manejo e na gestão de sistemas de criação."
             },
             {
               "rotulo": "Modalidade",
               "valor": "Presencial"
             },
             {
-              "rotulo": "Duração prevista",
-              "valor": "4,5 anos"
+              "rotulo": "Eixo tecnológico",
+              "valor": "Recursos Naturais"
             },
             {
-              "rotulo": "Carga horária total",
-              "valor": "Informação incompleta"
+              "rotulo": "Campi",
+              "valor": "Bambuí"
+            },
+            {
+              "rotulo": "Turno",
+              "valor": "Manhã e tarde (integral)"
             },
             {
               "rotulo": "PPC / matriz",

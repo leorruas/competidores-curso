@@ -535,7 +535,7 @@ test("F2.13: dados de duração específicos não são projetados a outros campi
   for(const id of uncertain){
     const c=json.courses.find(c=>c.id===id);
     const fields=c.blocos.find(b=>b.tipo==="dados-basicos").campos;
-    assert.ok(!fields.some(f=>f.rotulo==="Duração"),id+": prazo ainda não validado como universal");
+    assert.equal(fields.find(f=>f.rotulo==="Duração")?.valor,"Informação incompleta",id+": prazo ainda não validado como universal");
     assert.ok(c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi").itens.length===c.campi.length,id);
   }
   const get=(id,campus)=>json.courses.find(c=>c.id===id)
@@ -913,7 +913,7 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
     const c=json.courses.find(x=>x.id===id);
     const faq=c.blocos.find(x=>x.tipo==="faq"&&x.titulo!=="Informações dos campi").itens;
     assert.ok(faq.length>=3,id);
-    assert.equal(c.blocos.find(x=>x.tipo==="dados-basicos").campos.some(x=>x.rotulo==="Duração"),id==="engenharia-de-producao-bacharelado",id+": só exibir duração comprovada para o grupo");
+    assert.equal(c.blocos.find(x=>x.tipo==="dados-basicos").campos.find(x=>x.rotulo==="Duração")?.valor,id==="engenharia-de-producao-bacharelado"?"5 anos":"Informação incompleta",id+": não presumir duração sem comprovação");
     for(const q of questions)assert.ok(!faq.some(x=>x.pergunta===q),id+": "+q);
   }
   const c=json.courses.find(x=>x.id==="administracao-bacharelado");
@@ -1524,7 +1524,7 @@ test("F7.2: Medicina Veterinária Bambuí tem dados, projetos comprovados e dois
   const info=c.blocos.find(x=>x.tipo==="dados-basicos");
   const byLabel=Object.fromEntries(info.campos.map(x=>[x.rotulo,x.valor]));
   assert.equal(byLabel["E-mail da coordenação"],"Informação incompleta");
-  assert.equal(byLabel["Carga horária total"],"Informação incompleta");
+  assert.equal(byLabel["Carga horária"],"Informação incompleta");
   const location=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(Array.from(location.linhas[0]),["Bambuí","Manhã e tarde","Presencial","Informação incompleta"]);
   const ext=c.blocos.findIndex(x=>x.titulo==="Pesquisa, extensão e oportunidades");
@@ -1558,8 +1558,8 @@ test("F7.2: Arquitetura e Urbanismo Santa Luzia combina informações oficiais e
   const basics=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
   assert.equal(basics["E-mail da coordenação"],"arquitetura.santaluzia@ifmg.edu.br");
   assert.equal(basics["Modalidade"],"Presencial (4,58% EaD)");
-  assert.equal(basics["Duração prevista"],"10 semestres");
-  assert.equal(basics["Carga horária total"],"Informação incompleta");
+  assert.equal(basics["Duração"],"10 semestres");
+  assert.equal(basics["Carga horária"],"Informação incompleta");
   const campusTable=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(Array.from(campusTable.linhas[0]),["Santa Luzia","Tarde","Presencial (4,58% EaD)","arquitetura.santaluzia@ifmg.edu.br"]);
   const project=c.blocos.findIndex(b=>b.titulo==="Projetos e experiências acadêmicas");
@@ -1592,8 +1592,8 @@ test("F7.2: Engenharia Metalúrgica Ouro Branco tem oferta, laboratórios e trê
   assert.equal(c.status,"em_validacao");
   const data=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
   assert.equal(data["Turno"],"Noite");
-  assert.equal(data["Duração prevista"],"5 anos");
-  assert.equal(data["Carga horária total"],"3.612 horas");
+  assert.equal(data["Duração"],"5 anos");
+  assert.equal(data["Carga horária"],"3.612 horas");
   assert.equal(data["PPC / matriz"],"Informação incompleta");
   assert.equal(data["E-mail da coordenação"],"coord.graduacaoengenhariametalurgica.obr@ifmg.edu.br");
   const campi=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
@@ -1630,8 +1630,8 @@ test("F7.2: Engenharia Florestal de São João Evangelista inclui TCCs de 2025 e
   const basic=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
   assert.equal(basic["Turno"],"Manhã e tarde");
   assert.equal(basic["Modalidade"],"Presencial");
-  assert.equal(basic["Duração prevista"],"10 semestres");
-  assert.equal(basic["Carga horária total"],"Informação incompleta");
+  assert.equal(basic["Duração"],"10 semestres");
+  assert.equal(basic["Carga horária"],"Informação incompleta");
   assert.equal(basic["PPC / matriz"],"Informação incompleta");
   assert.equal(basic["E-mail da coordenação"],"eng.florestal.sje@ifmg.edu.br");
   const oferta=c.blocos.find(b=>b.tipo==="tabela"&&b.colunas.includes("E-mail da coordenação"));
@@ -1751,7 +1751,7 @@ test("F7.2: Eletromecânica integrada Bambuí mantém PPC, oportunidades e conqu
   const dados=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
   assert.equal(dados["Duração"],"3 anos");
   assert.equal(dados["E-mail da coordenação"],"Informação incompleta");
-  assert.equal(dados["Carga horária total"],"Informação incompleta");
+  assert.equal(dados["Carga horária"],"Informação incompleta");
   assert.equal(dados["PPC / matriz"],"Informação incompleta");
   const campus=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(Array.from(campus.linhas[0]),["Bambuí","Manhã e tarde","Presencial","Informação incompleta"]);
@@ -1790,7 +1790,7 @@ test("F7.2: Técnico em Química de Betim tem pesquisas comprovadas e estágio n
   assert.equal(c.status,"em_validacao");
   const basicos=Object.fromEntries(c.blocos[0].campos.map(f=>[f.rotulo,f.valor]));
   assert.equal(basicos["Duração"],"3 anos");
-  assert.equal(basicos["Carga horária total"],"3.210 horas");
+  assert.equal(basicos["Carga horária"],"3.210 horas");
   assert.equal(basicos["PPC / matriz"],"Informação incompleta");
   assert.equal(basicos["E-mail da coordenação"],"coord.tec.quimica.betim@ifmg.edu.br");
   const campus=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
@@ -1832,7 +1832,7 @@ test("F7.2: Mecatrônica Ibirité mantém curso integrado e três experiências 
   assert.equal(c.status,"em_validacao");
   const basic=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
   assert.equal(basic["Duração"],"3 anos");
-  assert.equal(basic["Carga horária total"],"3.200 horas");
+  assert.equal(basic["Carga horária"],"3.200 horas");
   assert.equal(basic["Modalidade"],"Presencial (8,3% EaD)");
   assert.equal(basic["PPC / matriz"],"Informação incompleta");
   assert.equal(basic["E-mail da coordenação"],"mecatronica.ibirite@ifmg.edu.br");
@@ -1877,7 +1877,7 @@ test("F7.2: Automação Industrial integrado consolida cinco campi e experiênci
   assert.equal(c.publicacao_autorizada,true);
   const basic=Object.fromEntries(c.blocos[0].campos.map(x=>[x.rotulo,x.valor]));
   assert.equal(basic["Duração"],"3 anos");
-  assert.equal(basic["Carga horária total"],"Informação incompleta");
+  assert.equal(basic["Carga horária"],"Informação incompleta");
   assert.equal(basic["Modalidade"],"Presencial (Ibirité: 8,3% EaD)");
   const camp=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(camp.linhas.map(x=>x[0]),c.campi);

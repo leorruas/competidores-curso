@@ -36,6 +36,15 @@ export function validarEstruturaCurso(curso) {
       if (duplicados.length) erros.push("dados básicos: campos de cadastro duplicados");
     }
   }
+  // As tabelas do Wagtail devem exibir a primeira linha como cabeçalho.
+  // A legenda do próprio bloco deve permanecer vazia, sem texto inventado.
+  for (const [i, bloco] of blocos.entries()) {
+    if (bloco?.tipo !== "tabela") continue;
+    if (bloco.cabecalhoPrimeiraLinha !== true)
+      erros.push("tabela " + i + ": selecionar Exibir a primeira linha como cabeçalho");
+    if ("legenda" in bloco && bloco.legenda !== "")
+      erros.push("tabela " + i + ": Legenda da tabela deve ficar em branco");
+  }
   // Na pós-graduação, a continuidade é opcional: só faz sentido apresentar
   // uma formação de nível superior disponível no IFMG e comprovada editorialmente.
   // A validação estrutural confere o avanço de nível; a evidência da oferta

@@ -122,7 +122,8 @@
               "Empreendedorismo",
               "Gestão de projetos, criação de iniciativas e inovação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -214,7 +215,8 @@
               "Presencial",
               "adm.sje@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -329,7 +331,8 @@
               "Formiga",
               "Pesquisa aplicada em Finanças, investimentos e decisões nas organizações."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -467,7 +470,8 @@
               "Gestão rural",
               "Planejamento, economia e organização de atividades agropecuárias."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -518,7 +522,8 @@
               "Presencial",
               "agronomia.sje@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -637,7 +642,8 @@
               "Bambuí",
               "Tecnologias ambientais, produção sustentável e gestão dos impactos sobre recursos naturais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -775,7 +781,8 @@
               "Projetos e extensão",
               "Desenvolver soluções e relacionar conhecimentos técnicos a demandas da comunidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -813,7 +820,8 @@
               "Noite · 3 anos",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -867,7 +875,8 @@
               "Bambuí",
               "Estudo de técnicas computacionais para análise e desenvolvimento de sistemas inteligentes."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -897,7 +906,8 @@
               "Ribeirão das Neves",
               "Sistemas, processos e serviços aplicados à gestão pública e ao território."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -1066,7 +1076,8 @@
               "Paisagismo e patrimônio",
               "Projeto de áreas livres, leitura de paisagens, história, preservação e intervenções em bens culturais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -1098,7 +1109,8 @@
               "Presencial (4,58% EaD)",
               "arquitetura.santaluzia@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -1148,7 +1160,8 @@
               "Santa Luzia (EaD)",
               "Prevenção e gestão de riscos e desastres associados à ocupação do território, às edificações e ao planejamento urbano."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -1343,7 +1356,8 @@
               "Pesquisa e extensão",
               "Formular problemas, desenvolver projetos e dialogar com demandas da comunidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -1381,7 +1395,8 @@
               "Noite · 4 anos",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -1435,7 +1450,8 @@
               "Bambuí",
               "Estudo de modelos, algoritmos e aplicações de sistemas inteligentes."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -1465,7 +1481,8 @@
               "Formiga (EaD)",
               "Aplicação de inteligência artificial em processos, projetos e inovação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -1657,7 +1674,8 @@
               "Ensino de Ciências e Biologia",
               "Relacionar conteúdos científicos a práticas educativas, experimentos e projetos de aprendizagem."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -1695,7 +1713,8 @@
               "Noite",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -1749,7 +1768,8 @@
               "Bambuí",
               "Saúde animal, fisiologia, microbiologia e relações entre organismos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -1779,7 +1799,8 @@
               "Bambuí",
               "Pesquisa aplicada a ecologia, biodiversidade, gestão e sustentabilidade ambiental."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -1970,7 +1991,8 @@
               "Gestão e educação patrimonial",
               "Compreender a participação das comunidades e dos profissionais envolvidos na preservação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -2002,7 +2024,8 @@
               "Noite · 3 anos",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -2052,7 +2075,8 @@
               "Ouro Preto",
               "Paisagem cultural, espaço urbano, território e relações entre sociedade e patrimônio."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -2077,7 +2101,8 @@
               "Congonhas",
               "Organização de projetos, recursos, equipes e processos de trabalho."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -2281,7 +2306,8 @@
               "Gestão e prática profissional",
               "Organizar processos de projeto, recursos, apresentações e documentação das soluções."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -2313,7 +2339,8 @@
               "Noite · 3 anos",
               "des.interiores.santaluzia@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -2363,7 +2390,8 @@
               "Ouro Preto",
               "Materiais, patrimônio construído, documentação e intervenções em ambientes históricos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -2393,7 +2421,8 @@
               "Congonhas",
               "Planejamento de projetos, organização de processos e gestão de equipes."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -2571,7 +2600,8 @@
               "Formação prática",
               "Atividades previstas no PPC e regulamentos próprios"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -2611,7 +2641,8 @@
               "Presencial (30% EaD)",
               "direito.arcos@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -2692,7 +2723,8 @@
               "Ouro Branco (presencial)",
               "Gestão de organizações, decisões empresariais e processos associados à atuação jurídica em negócios."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -2830,7 +2862,8 @@
               "Estágio, pesquisa e extensão",
               "Desenvolver propostas de ensino, experiências na escola e projetos com a comunidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -2862,7 +2895,8 @@
               "Noite · 4 anos",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -2912,7 +2946,8 @@
               "Bambuí, Congonhas e Ouro Preto",
               "Didática, formação de professores e estudos interdisciplinares em educação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -2942,7 +2977,8 @@
               "Ouro Branco",
               "Pesquisa aplicada à educação, práticas de ensino e produtos educacionais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -3158,7 +3194,8 @@
               "Projeto e gestão",
               "Organizar diagnósticos, relatórios técnicos, projetos de engenharia e planos de gestão ambiental."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -3190,7 +3227,8 @@
               "Manhã e noite · 5 anos",
               "coordenacao.eas.gv@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -3240,7 +3278,8 @@
               "Governador Valadares",
               "Análise de riscos, segurança em atividades técnicas e prevenção de acidentes no trabalho."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -3440,7 +3479,8 @@
               "Sustentabilidade e segurança",
               "Avaliar impactos ambientais, normas técnicas, condições de trabalho e desempenho das construções."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -3512,7 +3552,8 @@
               "3.600 horas",
               "eng.civil.santaluzia@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -3575,7 +3616,8 @@
               "Ouro Preto",
               "Conservação do patrimônio edificado, planejamento e técnicas aplicadas à preservação de bens culturais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -3783,7 +3825,8 @@
               "Gestão e projetos de engenharia",
               "Avaliar requisitos, riscos, custos e a implantação de soluções tecnológicas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -3855,7 +3898,8 @@
               "3.600 horas",
               "eng.automacao.sabara@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "titulo": "Informações dos campi",
@@ -3913,7 +3957,8 @@
               "Governador Valadares",
               "Avaliação de riscos, prevenção de acidentes e segurança em instalações e processos industriais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -4117,7 +4162,8 @@
               "Projetos e inovação",
               "Desenvolvimento de soluções e organização de projetos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -4183,7 +4229,8 @@
               "Presencial",
               "coenp.gv@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -4294,7 +4341,8 @@
               "Bambuí",
               "Sustentabilidade dos processos, gestão ambiental e soluções técnicas para a produção."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -4455,7 +4503,8 @@
               "Programação e projetos",
               "Utilizar ferramentas computacionais e desenvolver análises e projetos de engenharia."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -4527,7 +4576,8 @@
               "3.600 horas",
               "eng.eletrica.itabirito@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -4590,7 +4640,8 @@
               "Bambuí",
               "Estudos de sustentabilidade, tecnologias energéticas e soluções para problemas ambientais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -4808,7 +4859,8 @@
               "Tecnologia e produtos florestais",
               "Propriedades da madeira, processamento, produção de carvão vegetal e outros produtos de origem florestal."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -4840,7 +4892,8 @@
               "Presencial",
               "eng.florestal.sje@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -4890,7 +4943,8 @@
               "Bambuí",
               "Ecologia aplicada, planejamento ambiental, recuperação de áreas degradadas e sustentabilidade de sistemas produtivos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -5087,7 +5141,8 @@
               "Gestão técnica",
               "Manutenção, segurança, controle e acompanhamento de projetos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -5138,7 +5193,8 @@
               "Presencial",
               "eng.mecanica.betim@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -5250,7 +5306,8 @@
               "Bambuí",
               "Tecnologias sustentáveis, controle de impactos ambientais e aplicação de soluções técnicas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -5388,7 +5445,8 @@
               "Análise e controle de qualidade",
               "Caracterização, ensaios, identificação de falhas e melhoria de processos produtivos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -5420,7 +5478,8 @@
               "Presencial",
               "coord.graduacaoengenhariametalurgica.obr@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -5475,7 +5534,8 @@
               "Bambuí",
               "Pesquisa sobre tecnologias ambientais, resíduos, materiais e energia, com possibilidades de estudo relacionadas aos impactos de processos industriais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -5718,7 +5778,8 @@
               "**Dois semestres**",
               "**480 horas**"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -5767,7 +5828,8 @@
               "480 horas, incluindo trabalho final de 60 horas",
               "pos.manutencao.arcos@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -5989,7 +6051,8 @@
               "**Doze disciplinas e TCC**",
               "**420 horas**"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -6038,7 +6101,8 @@
               "420 horas, incluindo TCC de 60 horas",
               "inteligencia.artificial@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -6245,7 +6309,8 @@
               "**Três semestres**",
               "**420 horas**"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -6286,7 +6351,8 @@
               "Integração de Sistemas de Energia Renovável em Redes Elétricas",
               "Analisar a conexão de fontes renováveis às redes e seus efeitos na distribuição de eletricidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -6310,7 +6376,8 @@
               "420 horas, incluindo Projeto Final de Curso",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -6342,7 +6409,8 @@
               "Mestrado profissional",
               "A linha Tecnologias Ambientais inclui sistemas de energias renováveis, conectando projetos energéticos à sustentabilidade e à pesquisa aplicada."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -6508,7 +6576,8 @@
               "Estágio e educação inclusiva",
               "Conhecer a rotina escolar, observar aulas e desenvolver propostas adequadas a diferentes estudantes."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -6580,7 +6649,8 @@
               "3.225 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -6643,7 +6713,8 @@
               "Ouro Branco",
               "Pesquisa aplicada em educação profissional e tecnológica e produção de recursos educacionais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -6845,7 +6916,8 @@
               "Estágio e extensão",
               "Desenvolver experiências em escolas e projetos de Geografia com a comunidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -6881,7 +6953,8 @@
               "3.200 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -6931,7 +7004,8 @@
               "Ouro Branco",
               "Estudos sobre educação, currículo e processos de aprendizagem."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -6961,7 +7035,8 @@
               "Arcos e Ponte Nova (EaD)",
               "Formação continuada em práticas pedagógicas e educação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -7159,7 +7234,8 @@
               "Extensão e estágio",
               "Desenvolver projetos com a comunidade e aplicar conhecimentos em experiências de trabalho supervisionado."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -7195,7 +7271,8 @@
               "1.700 horas",
               "coordenacao.tga.gv@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -7245,7 +7322,8 @@
               "Bambuí e São João Evangelista",
               "Ecologia e educação ambiental, com foco em formação docente."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -7275,7 +7353,8 @@
               "Ribeirão das Neves",
               "Gestão de políticas públicas e questões do desenvolvimento territorial e regional."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -7459,7 +7538,8 @@
               "Pesquisa e extensão",
               "Desenvolver estudos de caso, projetos e atividades com públicos externos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -7495,7 +7575,8 @@
               "1.660 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -7545,7 +7626,8 @@
               "Ponte Nova e Ribeirão das Neves",
               "Processos, rotinas e decisões organizacionais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -7580,7 +7662,8 @@
               "Formiga",
               "Pesquisa aplicada em gestão e finanças."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -7772,7 +7855,8 @@
               "Pesquisa, projetos e responsabilidade",
               "Planejar experimentos, avaliar resultados e considerar limites e impactos das tecnologias."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -7808,7 +7892,8 @@
               "3.200 horas",
               "ia.bambui@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -7878,7 +7963,8 @@
               "Ouro Branco, Sabará e São João Evangelista",
               "Sistemas de informação, dados e tecnologias aplicadas a organizações."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -7908,7 +7994,8 @@
               "Formiga (EaD)",
               "Aplicação de IA e agentes inteligentes a problemas organizacionais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -8077,7 +8164,8 @@
               "Extensão e estágios",
               "Desenvolver atividades com a comunidade e experiências docentes em escolas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -8113,7 +8201,8 @@
               "3.992 horas",
               "coordletras.congonhas@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -8163,7 +8252,8 @@
               "Bambuí e São João Evangelista",
               "Formação para ensino de ciências e diálogo interdisciplinar no ambiente escolar."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -8198,7 +8288,8 @@
               "Ouro Branco",
               "Pesquisa aplicada à educação profissional e ao ensino."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -8400,7 +8491,8 @@
               "Extensão e projetos",
               "Investigar desafios reais de organizações e comunidades e desenvolver propostas de solução."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -8436,7 +8528,8 @@
               "1.600 horas",
               "logistica.sabara@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -8486,7 +8579,8 @@
               "Ponte Nova e Ribeirão das Neves",
               "Planejamento, gestão de rotinas, processos e tomada de decisões organizacionais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -8516,7 +8610,8 @@
               "Ribeirão das Neves",
               "Planejamento de políticas e serviços públicos com enfoque territorial."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -8705,7 +8800,8 @@
               "Pesquisa, extensão e estágio",
               "Investigar desafios do ensino e vivenciar a docência em escolas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -8749,7 +8845,8 @@
               "Informação incompleta",
               "lic.matematica.sje@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -8803,7 +8900,8 @@
               "Ouro Preto",
               "Ensino interdisciplinar, dados, cartografia e leitura de informações espaciais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -8838,7 +8936,8 @@
               "São João Evangelista (EaD)",
               "Metodologias e tecnologias para planejar atividades educacionais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9022,7 +9121,8 @@
               "Inspeção e tecnologia de alimentos",
               "Condições sanitárias, qualidade e segurança de produtos de origem animal."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9049,7 +9149,8 @@
               "Presencial",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -9094,7 +9195,8 @@
               "Bambuí",
               "Pesquisa em saúde ambiental, sanidade animal, zoonoses, epidemiologia e sustentabilidade de sistemas produtivos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9268,7 +9370,8 @@
               "Finanças Corporativas e Investimentos",
               "Financiamento e investimentos das organizações, criação de valor, função financeira e alocação de ativos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9308,7 +9411,8 @@
               "30",
               "450"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9340,7 +9444,8 @@
               "24 meses",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9526,7 +9631,8 @@
               "Projetos e extensão",
               "Aplicar conhecimentos de gestão em demandas de organizações e comunidades."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9570,7 +9676,8 @@
               "1.600 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -9624,7 +9731,8 @@
               "Sabará",
               "Desenvolve o planejamento e a análise de transportes, estoques e distribuição."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9659,7 +9767,8 @@
               "Formiga",
               "Pesquisa aplicada a problemas de administração e gestão de organizações."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9843,7 +9952,8 @@
               "Pesquisa e extensão",
               "Relacionar ciência, educação e demandas de escolas e comunidades."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9879,7 +9989,8 @@
               "Informação incompleta",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -9929,7 +10040,8 @@
               "Betim, Ibirité e Sabará",
               "Amplia estudos de sistemas, processos e tecnologias de automação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -9964,7 +10076,8 @@
               "Ouro Branco",
               "Desenvolve estudos e pesquisa sobre educação profissional e práticas de ensino."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -10139,7 +10252,8 @@
               "Pesquisa, projetos e extensão",
               "Investigar problemas reais e desenvolver soluções com orientação acadêmica."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -10191,7 +10305,8 @@
               "Informação incompleta",
               "bsi.sje@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -10249,7 +10364,8 @@
               "Bambuí",
               "Desenvolve estudos de sistemas inteligentes, aprendizado de máquina e dados."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -10279,7 +10395,8 @@
               "Ribeirão das Neves",
               "Aplicação de sistemas e análise de processos em serviços e políticas públicas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -10488,7 +10605,8 @@
               "Empreendedorismo",
               "Desenvolvimento de ideias, projetos e iniciativas de negócios."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -10575,7 +10693,8 @@
               "Presencial (16,67% EaD)",
               "coordadm.sabara@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -10653,7 +10772,8 @@
               "Congonhas",
               "Planejamento e melhoria de processos produtivos, organização de operações e análise de custos"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -10688,7 +10808,8 @@
               "Formiga",
               "Pesquisa aplicada em finanças e tomada de decisões financeiras nas organizações"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -10775,7 +10896,8 @@
               "Subsequente",
               "Ponte Nova (presencial) e Governador Valadares (EaD), com ofertas documentadas; confirmar seleção em vigor"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -10904,7 +11026,8 @@
               "Formação geral",
               "Articulação de matemática, ciências da natureza, linguagens e ciências humanas à formação técnica."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -10936,7 +11059,8 @@
               "Manhã e tarde",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -10986,7 +11110,8 @@
               "Governador Valadares, Piumhi e Santa Luzia",
               "Topografia, planejamento territorial e apoio a projetos e obras."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -11006,7 +11131,8 @@
               "São João Evangelista (EaD com encontros presenciais)",
               "Aprofundamento em conhecimentos e aplicações da Agrimensura."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -11171,7 +11297,8 @@
               "Empreendedorismo e sustentabilidade",
               "Planejamento de iniciativas agroindustriais, inovação e uso responsável de recursos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -11203,7 +11330,8 @@
               "Presencial",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -11258,7 +11386,8 @@
               "Bambuí",
               "Gestão de organizações, planejamento, finanças e empreendedorismo em atividades agroindustriais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -11278,7 +11407,8 @@
               "Bambuí",
               "Tecnologias para produção sustentável, gestão ambiental e impactos associados às cadeias produtivas. A pós-graduação é uma possibilidade de continuidade após a conclusão de uma graduação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -11460,7 +11590,8 @@
               "Formação geral",
               "Estudar linguagens, matemática, ciências da natureza e ciências humanas em diálogo com os problemas do meio rural."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -11498,7 +11629,8 @@
               "Manhã e tarde / 3 anos",
               "agropecuaria.sje@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -11557,7 +11689,8 @@
               "São João Evangelista",
               "Manejo de florestas, conservação ambiental e uso sustentável dos recursos naturais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -11577,7 +11710,8 @@
               "Bambuí",
               "Tecnologias sustentáveis e pesquisa aplicada a questões ambientais ligadas à produção e ao uso dos recursos naturais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -11638,7 +11772,8 @@
               "Técnico em Agropecuária Subsequente",
               "Oferta em Bambuí, horários, critérios e matriz próprios."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "links",
@@ -11780,7 +11915,8 @@
               "Estágio supervisionado",
               "Aplicar conhecimentos em situação profissional com orientação e acompanhamento."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -11816,7 +11952,8 @@
               "1.620 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -11871,7 +12008,8 @@
               "São João Evangelista",
               "Estuda recursos florestais, conservação e manejo de áreas naturais e produtivas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -11891,7 +12029,8 @@
               "Bambuí",
               "Pesquisa e tecnologias aplicadas à sustentabilidade, aos recursos naturais e ao meio ambiente."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -12072,7 +12211,8 @@
               "Manutenção, projetos e segurança",
               "Diagnóstico de falhas, testes, documentação técnica, segurança e melhoria de processos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -12128,7 +12268,8 @@
               "Presencial",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -12194,7 +12335,8 @@
               "Arcos e Betim",
               "Máquinas, processos de fabricação, manutenção e projetos mecânicos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -12214,7 +12356,8 @@
               "Bambuí",
               "Estudos sobre tecnologias ambientais, materiais, processos produtivos e energia; possível continuidade após graduação compatível."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -12470,7 +12613,8 @@
               "Saúde e parasitologia",
               "Imunodiagnóstico, parasitas, saúde pública e técnicas em Biotecnologia."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -12502,7 +12646,8 @@
               "Presencial",
               "biotecnologia.bambui@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -12552,7 +12697,8 @@
               "Bambuí",
               "Saúde animal, microbiologia e prevenção de doenças."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -12572,7 +12718,8 @@
               "Bambuí",
               "Tecnologias ambientais e processos sustentáveis; possibilidade de continuidade acadêmica após a graduação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -12762,7 +12909,8 @@
               "Gestão operacional e comunicação",
               "Compreender a coordenação de equipes, a organização de medidas de contingência e a articulação entre instituições e comunidades."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -12798,7 +12946,8 @@
               "800 horas",
               "ead.defesacivil.santaluzia@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -12848,7 +12997,8 @@
               "Governador Valadares",
               "Estuda impactos ambientais, recursos hídricos e sistemas relacionados à prevenção e ao controle de riscos ambientais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -12868,7 +13018,8 @@
               "Santa Luzia",
               "Aprofunda gestão de riscos e desastres, mapeamento, planejamento de medidas preventivas, resposta e recuperação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -13046,7 +13197,8 @@
               "Formação geral",
               "Relacionar matemática, linguagens, ciências da natureza e humanas às aplicações tecnológicas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -13090,7 +13242,8 @@
               "Informação incompleta",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -13140,7 +13293,8 @@
               "Ouro Preto e Ribeirão das Neves",
               "Projeto, implementação, testes e manutenção de sistemas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -13160,7 +13314,8 @@
               "Ouro Preto",
               "Aplicações de programação, dados e métodos de inteligência artificial, conforme os requisitos do programa."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -13216,7 +13371,8 @@
               "Técnico em Automação Industrial",
               "Sistemas e processos de automação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "links",
@@ -13406,7 +13562,8 @@
               "Presencial",
               "edificacoes.santaluzia@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -13491,7 +13648,8 @@
               "Santa Luzia",
               "Infraestrutura, planejamento e execução de edificações"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -13531,7 +13689,8 @@
               "Bambuí",
               "Impactos ambientais, sustentabilidade e tecnologias aplicáveis ao ambiente construído"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -13637,7 +13796,8 @@
               "Concomitante",
               "Congonhas; verificar requisitos, horários das duas instituições e oferta vigente"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -13770,7 +13930,8 @@
               "Projetos integradores",
               "Articular conhecimentos das disciplinas em situações de planejamento, projeto e prática de construção."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -13806,7 +13967,8 @@
               "1.210 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -13861,7 +14023,8 @@
               "Santa Luzia",
               "Desenvolve projetos de espaços internos, materiais, ergonomia, iluminação e acessibilidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -13891,7 +14054,8 @@
               "Congonhas",
               "Aprofunda planejamento, acompanhamento e gestão de projetos e operações em diferentes setores."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -14064,7 +14228,8 @@
               "Formação geral",
               "Articular matemática, ciências, linguagens e ciências humanas aos estudos da área."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -14096,7 +14261,8 @@
               "Manhã e tarde / 3 anos",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -14146,7 +14312,8 @@
               "Arcos e Betim",
               "Máquinas, manutenção e integração de equipamentos eletromecânicos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -14166,7 +14333,8 @@
               "Formiga (EaD)",
               "Geração e distribuição de energia, fontes renováveis e eficiência energética."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -14250,7 +14418,8 @@
               "Oferta de Eletroeletrônica pelo Trilhas de Futuro",
               "Público atendido, inscrições, turno e organização do programa."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "links",
@@ -14392,7 +14561,8 @@
               "Segurança e projetos integradores",
               "Prevenção de riscos, organização do trabalho e aplicação prática de conteúdos técnicos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -14424,7 +14594,8 @@
               "Presencial",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -14479,7 +14650,8 @@
               "Ouro Branco",
               "Materiais metálicos, processos industriais, tratamentos e fabricação de componentes."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -14499,7 +14671,8 @@
               "Bambuí",
               "Tecnologias ambientais, materiais, energia e soluções sustentáveis para sistemas produtivos. A pós-graduação exige formação superior compatível."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -14680,7 +14853,8 @@
               "Formação geral",
               "Estudar linguagens, matemática, ciências da natureza e humanas integradas à formação técnica."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -14712,7 +14886,8 @@
               "Manhã e tarde / 3 anos",
               "coordeletro.sabara@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -14762,7 +14937,8 @@
               "Ouro Branco, Sabará e São João Evangelista",
               "Programação, aplicações, dados e soluções de tecnologia da informação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -14787,7 +14963,8 @@
               "Bambuí",
               "Projetos e tecnologias relacionados a sustentabilidade e soluções ambientais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -14866,7 +15043,8 @@
               "Técnico em Eletrônica Subsequente",
               "Requisitos, duração e horários próprios dessa modalidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "links",
@@ -15006,7 +15184,8 @@
               "Formação geral",
               "Relacionar os conhecimentos técnicos com matemática, linguagens, ciências da natureza e ciências humanas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -15050,7 +15229,8 @@
               "Manhã e tarde / 3 anos",
               "eletrotecnica.ipatinga@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -15108,7 +15288,8 @@
               "Arcos e Betim",
               "Máquinas, processos industriais e integração de sistemas mecânicos e elétricos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -15133,7 +15314,8 @@
               "Bambuí",
               "Pesquisa aplicada em tecnologias ambientais e sustentabilidade, conforme as linhas de pesquisa e os requisitos do programa."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -15268,7 +15450,8 @@
               "Técnico em Eletrotécnica Subsequente",
               "Oferta disponível, duração e organização das aulas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "links",
@@ -15407,7 +15590,8 @@
               "Segurança e normas técnicas",
               "Aplicar procedimentos de prevenção de riscos e normas pertinentes a serviços com eletricidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -15451,7 +15635,8 @@
               "1.400 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -15500,7 +15685,8 @@
               "Betim, Ibirité e Sabará",
               "Estuda instrumentação, controle, automação de processos, sistemas industriais e integração de tecnologias."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -15525,7 +15711,8 @@
               "Bambuí",
               "Possibilita pesquisa aplicada a tecnologias, uso de recursos e sustentabilidade, temas associados à produção e ao uso de energia."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -15699,7 +15886,8 @@
               "Urgência e acompanhamento clínico",
               "Compreender cuidados e procedimentos em serviços de saúde conforme a orientação e a supervisão profissional."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -15735,7 +15923,8 @@
               "Mínimo de 1.200 horas; total: Informação incompleta",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -15780,7 +15969,8 @@
               "Bambuí",
               "Desenvolve estudos de corpo, movimento, educação e promoção de hábitos saudáveis, no campo de atuação da licenciatura."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -15800,7 +15990,8 @@
               "Bambuí",
               "Permite aprofundar pesquisa aplicada sobre meio ambiente e saúde ambiental, após uma formação superior compatível."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -15980,7 +16171,8 @@
               "Formação geral",
               "Relacionar matemática, linguagens, ciências e sociedade às tecnologias."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -16054,7 +16246,8 @@
               "Manhã e tarde / 3 anos",
               "informatica.sje@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -16132,7 +16325,8 @@
               "Ouro Preto e Ribeirão das Neves",
               "Construção, testes e manutenção de software."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -16152,7 +16346,8 @@
               "Ouro Preto",
               "Métodos e aplicações de inteligência artificial. O programa exige diploma superior compatível, conforme o edital."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -16294,7 +16489,8 @@
               "Oferta própria do programa, como Trilhas de Futuro",
               "Público-alvo, calendário e regras distintas do integrado."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "links",
@@ -16436,7 +16632,8 @@
               "Segurança e ética digital",
               "Reconhecer cuidados com privacidade, senhas e uso responsável de informações."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -16472,7 +16669,8 @@
               "Informação incompleta",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -16517,7 +16715,8 @@
               "Ouro Preto e Ribeirão das Neves",
               "Aprofunda análise, criação, testes e manutenção de softwares."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -16537,7 +16736,8 @@
               "Ouro Preto",
               "Aprofunda aplicações de computação e inteligência artificial após concluir uma graduação compatível."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -16714,7 +16914,8 @@
               "Oficina, manutenção e segurança",
               "Organizar ferramentas e materiais e acompanhar procedimentos de manutenção e trabalho seguro."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -16750,7 +16951,8 @@
               "1.200 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -16800,7 +17002,8 @@
               "Ouro Branco",
               "Estuda metais, ligas, processos de transformação e propriedades de materiais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -16825,7 +17028,8 @@
               "Congonhas",
               "Aprofunda planejamento, produção, acompanhamento de projetos e organização de operações."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17022,7 +17226,8 @@
               "Informação aplicada à logística",
               "Uso de sistemas e dados para apoiar decisões"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17047,7 +17252,8 @@
               "EaD",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -17101,7 +17307,8 @@
               "Congonhas",
               "Planejamento da produção, operações, processos e melhoria de fluxos de trabalho"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17126,7 +17333,8 @@
               "Ouro Branco",
               "Planejamento empresarial, administração de recursos e melhoria da gestão"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17307,7 +17515,8 @@
               "Ética e responsabilidade",
               "Analisar como transparência, inclusão, uso de dados e responsabilidade social afetam a comunicação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17343,7 +17552,8 @@
               "Informação incompleta",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17383,7 +17593,8 @@
               "Ouro Branco, Sabará e São João Evangelista",
               "Aprofunda o desenvolvimento e o uso de sistemas e informações digitais em organizações."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17408,7 +17619,8 @@
               "Formiga",
               "Desenvolve estudos e aplicações de gestão de organizações após formação superior compatível."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17576,7 +17788,8 @@
               "Formação geral",
               "Estudar linguagens, ciências da natureza, matemática, ciências humanas e suas relações com a técnica."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17626,7 +17839,8 @@
               "Manhã e tarde / 3 anos",
               "coord.meccl@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -17688,7 +17902,8 @@
               "Betim, Ibirité e Sabará",
               "Sistemas de controle, automação de máquinas e integração de processos industriais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17708,7 +17923,8 @@
               "Bambuí",
               "Pesquisa em tecnologias ambientais, sistemas energéticos e materiais; exige graduação e seleção própria."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17793,7 +18009,8 @@
               "Técnico em Mecânica Subsequente",
               "Oferta disponível, duração e organização das aulas."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "links",
@@ -17932,7 +18149,8 @@
               "Segurança e projetos",
               "Aplicar procedimentos de trabalho seguro, organizar documentação e propor melhorias em processos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -17976,7 +18194,8 @@
               "1.200 horas",
               "coord.meccl@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -18030,7 +18249,8 @@
               "Betim, Ibirité e Sabará",
               "Automação, controle e integração de equipamentos e processos industriais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -18055,7 +18275,8 @@
               "Bambuí",
               "Pesquisa aplicada a sustentabilidade e tecnologias de materiais, energia e meio ambiente."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -18237,7 +18458,8 @@
               "Qualidade e segurança",
               "Prevenção de riscos, acompanhamento de processos e práticas de organização e manutenção."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -18269,7 +18491,8 @@
               "Presencial (8,3% EaD)",
               "mecatronica.ibirite@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -18319,7 +18542,8 @@
               "Betim e Arcos",
               "Projetos mecânicos, máquinas, materiais e processos de fabricação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -18339,7 +18563,8 @@
               "Bambuí",
               "Tecnologias ambientais, energia e processos produtivos sustentáveis, após formação superior compatível."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -18550,7 +18775,8 @@
               "Formação geral",
               "Relacionar matemática, linguagens, ciências da natureza e humanas a problemas ambientais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -18588,7 +18814,8 @@
               "Manhã e tarde / 3 anos",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -18647,7 +18874,8 @@
               "Bambuí e São João Evangelista",
               "Solos, sistemas de produção vegetal e uso sustentável dos recursos naturais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -18667,7 +18895,8 @@
               "Bambuí",
               "Pesquisa aplicada a sustentabilidade, gestão e tecnologias ambientais, conforme as linhas do programa."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -18737,7 +18966,8 @@
               "Técnico em Meio Ambiente Subsequente",
               "Campus, duração e organização próprios dessa modalidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "links",
@@ -18883,7 +19113,8 @@
               "Educação e percepção ambiental",
               "Organizar ações de sensibilização, observação e diálogo com comunidades sobre questões ambientais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -18919,7 +19150,8 @@
               "1.200 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -18969,7 +19201,8 @@
               "Ouro Preto",
               "Aprofunda estudos do território, da paisagem e do ensino de temas geográficos e ambientais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -18989,7 +19222,8 @@
               "Bambuí",
               "Desenvolve pesquisa aplicada a sustentabilidade, tecnologias ambientais e gestão de recursos naturais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -19168,7 +19402,8 @@
               "Formação geral",
               "Relacionar matemática, ciências, linguagens e humanidades às tecnologias e ao mundo do trabalho."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -19206,7 +19441,8 @@
               "Manhã e tarde / 3 anos",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -19260,7 +19496,8 @@
               "Bambuí, Congonhas e Governador Valadares",
               "Organização e melhoria de processos de fabricação e controle da produção."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -19280,7 +19517,8 @@
               "Bambuí",
               "Pesquisa aplicada a tecnologias e sustentabilidade, conforme o programa, as linhas de pesquisa e os requisitos de ingresso."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -19350,7 +19588,8 @@
               "Técnico em Metalurgia Subsequente, onde houver oferta",
               "Campus, horários, organização curricular e requisitos próprios dessa modalidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "links",
@@ -19496,7 +19735,8 @@
               "Pesquisa aplicada e gestão",
               "Desenvolver estudos técnicos de processos, organizar informações e considerar segurança e impactos ambientais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -19532,7 +19772,8 @@
               "1.200 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -19577,7 +19818,8 @@
               "Betim, Ibirité e Sabará",
               "Estuda controle de processos, instrumentação, automação e sistemas aplicados à indústria."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -19597,7 +19839,8 @@
               "Congonhas",
               "Aprofunda planejamento, organização e acompanhamento de projetos e operações, inclusive em ambientes industriais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -19767,7 +20010,8 @@
               "Formação geral",
               "Relacionar os conhecimentos da educação básica aos desafios técnicos, sociais e ambientais da atividade mineral."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -19805,7 +20049,8 @@
               "Manhã e tarde / 3 anos",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -19859,7 +20104,8 @@
               "Governador Valadares",
               "Estudo de impactos ambientais, tratamento de resíduos e gestão de recursos naturais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -19879,7 +20125,8 @@
               "Bambuí",
               "Pesquisa aplicada a questões ambientais e tecnologias de sustentabilidade; exige graduação compatível."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -19959,7 +20206,8 @@
               "Técnico em Mineração Concomitante",
               "Compatibilidade dos horários, campus e critérios da modalidade."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "links",
@@ -20102,7 +20350,8 @@
               "Planejamento e gestão",
               "Relacionar documentação técnica, qualidade, recursos e condições de trabalho aos projetos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20146,7 +20395,8 @@
               "1.210 horas",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -20205,7 +20455,8 @@
               "Governador Valadares",
               "Desenvolve estudos de avaliação, planejamento e gestão ambiental."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20230,7 +20481,8 @@
               "Congonhas",
               "Planejamento, acompanhamento e gestão de projetos e operações em diferentes setores."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20407,7 +20659,8 @@
               "Formação geral",
               "Articular biologia, química, matemática, linguagens e ciências humanas à formação profissional."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20439,7 +20692,8 @@
               "Manhã e tarde",
               "ctnd.sje@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -20489,7 +20743,8 @@
               "Bambuí e São João Evangelista",
               "Produção agrícola, manejo de alimentos na origem e organização de sistemas de cultivo."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20514,7 +20769,8 @@
               "São João Evangelista (EaD)",
               "Gestão ambiental e sustentabilidade em processos produtivos e serviços."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20683,7 +20939,8 @@
               "Comunicação entre equipes",
               "Acompanhar atividades que envolvem diferentes pessoas e setores."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20719,7 +20976,8 @@
               "Informação incompleta",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20759,7 +21017,8 @@
               "Betim, Ibirité e Sabará",
               "Estuda automação, instrumentação e controle de processos industriais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20784,7 +21043,8 @@
               "Formiga",
               "Desenvolve estudos e projetos aplicados à gestão de organizações após formação superior compatível."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20957,7 +21217,8 @@
               "Comunicação entre equipes",
               "Acompanhar atividades que envolvem diferentes pessoas e setores."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -20993,7 +21254,8 @@
               "Informação incompleta",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -21033,7 +21295,8 @@
               "Betim, Ibirité e Sabará",
               "Estuda automação, instrumentação e controle de processos industriais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -21058,7 +21321,8 @@
               "Formiga",
               "Desenvolve estudos e projetos aplicados à gestão de organizações após formação superior compatível."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -21231,7 +21495,8 @@
               "Segurança e gestão",
               "Biossegurança, prevenção de riscos, organização do laboratório e empreendedorismo."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -21263,7 +21528,8 @@
               "Presencial",
               "coord.tec.quimica.betim@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -21313,7 +21579,8 @@
               "Ouro Branco",
               "Materiais, transformações físico-químicas, processos industriais e análises."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -21333,7 +21600,8 @@
               "Bambuí",
               "Pesquisas em gestão ambiental, tecnologias sustentáveis e processos industriais, como continuidade possível após uma graduação compatível."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -21555,7 +21823,8 @@
               "Formação geral",
               "Articular matemática, biologia, química, física, linguagens e ciências humanas aos desafios da área."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -21599,7 +21868,8 @@
               "Manhã e tarde · 3 anos",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -21657,7 +21927,8 @@
               "Bambuí, Congonhas e Governador Valadares",
               "Organização de processos, melhoria contínua, análise de riscos e ergonomia."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -21687,7 +21958,8 @@
               "Congonhas",
               "Planejamento, organização de equipes e melhoria de processos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -21885,7 +22157,8 @@
               "Gestão e comunicação preventiva",
               "Elaborar registros, acompanhar indicadores e comunicar orientações de prevenção em equipes e organizações."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -21937,7 +22210,8 @@
               "1.320 horas",
               "strabalho.santaluzia@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -21995,7 +22269,8 @@
               "Governador Valadares, Piumhi e Santa Luzia",
               "Aborda projetos e atividades da construção, setor em que a prevenção de acidentes é parte do trabalho técnico."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -22020,7 +22295,8 @@
               "Congonhas",
               "Aprofunda planejamento, acompanhamento e organização de operações, inclusive em ambientes com riscos ocupacionais."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -22198,7 +22474,8 @@
               "Formação geral",
               "Articulação de matemática, física, química, linguagens e humanidades com os problemas estudados no curso."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -22230,7 +22507,8 @@
               "Manhã e tarde",
               "energia.ibirite@ifmg.edu.br"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -22280,7 +22558,8 @@
               "Ouro Branco",
               "Materiais, processos industriais e uso de energia em sistemas produtivos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -22305,7 +22584,8 @@
               "Bambuí",
               "Tecnologias, recursos naturais e sustentabilidade dos processos produtivos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -22479,7 +22759,8 @@
               "Gestão, tecnologia e bem-estar",
               "Organização de propriedades, qualidade da produção, sustentabilidade e condições de criação."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",
@@ -22501,7 +22782,8 @@
               "Presencial",
               "Informação incompleta"
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "faq",
@@ -22546,7 +22828,8 @@
               "Bambuí",
               "Estudo de agroecossistemas, sustentabilidade, gestão ambiental e temas relacionados à saúde ambiental e aos sistemas produtivos."
             ]
-          ]
+          ],
+          "cabecalhoPrimeiraLinha": true
         },
         {
           "tipo": "texto",

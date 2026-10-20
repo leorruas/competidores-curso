@@ -1140,14 +1140,20 @@ test("Tabela inteira: um botão e estrutura HTML mais TSV", () => {
   const h=testContext();
   const b=h.demo.blocos.find(x=>x.tipo==="tabela");
   const fields=h.editorFields(b);
-  assert.equal(fields.length,1);
-  assert.equal(fields[0].table,true);
-  assert.match(fields[0].html,/^<table><thead><tr><th>Campus<\/th><th>Turno<\/th>/);
-  assert.equal((fields[0].html.match(/<tr>/g)||[]).length,3);
-  assert.equal(fields[0].value,"Campus\tTurno\nCampus fictício\tDiurno\nOutra unidade fictícia\tNoturno");
+  assert.equal(fields.length,2);
+  assert.equal(fields[0].label,"Cabeçalho de tabela");
+  assert.equal(fields[0].value,"Exibir a primeira linha como cabeçalho");
+  assert.equal(fields[0].setting,true);
+  assert.equal(fields[1].table,true);
+  assert.match(fields[1].html,/^<table><thead><tr><th>Campus<\/th><th>Turno<\/th>/);
+  assert.equal((fields[1].html.match(/<tr>/g)||[]).length,3);
+  assert.equal(fields[1].value,"Campus\tTurno\nCampus fictício\tDiurno\nOutra unidade fictícia\tNoturno");
   const rendered=h.editorBlock(b,3);
+  assert.match(rendered,/Exibir a primeira linha como cabeçalho/);
+  assert.match(rendered,/Legenda da tabela/);
   assert.match(rendered,/>Copiar tabela/);
   assert.equal((rendered.match(/data-copy-field=/g)||[]).length,1);
+  assert.match(rendered,/data-copy-field="1"/);
   assert.doesNotMatch(rendered,/data-copy-whole|copiar formatado/);
 });
 
@@ -2090,4 +2096,35 @@ test("legenda de galeria preenchida usa o título da imagem, sem botão para cop
   assert.equal(fields[1].value,"Aula prática — Campus Arcos");
   assert.equal(fields[2].value,"Estudantes em atividade prática");
   assert.equal(fields[3].setting,true);
+});
+
+test("todas as tabelas têm primeira linha como cabeçalho e legenda ignorada no modo Copiar", () => {
+  const h=testContext();
+  let count=0;
+  for (const course of json.courses) {
+    for (const [i,b] of course.blocos.entries()) {
+      if (b.tipo!=="tabela") continue;
+      count++;
+      assert.equal(b.cabecalhoPrimeiraLinha,true,course.id+": cabeçalho obrigatório");
+      assert.ok(b.legenda === undefined || b.legenda === "",course.id+": legenda deve permanecer vazia");
+      const fields=h.editorFields(b);
+      assert.equal(fields.length,2,course.id+": configuração + conteúdo");
+      assert.equal(fields[0].label,"Cabeçalho de tabela",course.id);
+      assert.equal(fields[0].value,"Exibir a primeira linha como cabeçalho",course.id);
+      assert.equal(fields[0].setting,true,course.id);
+      assert.equal(fields[1].label,"Tabela",course.id);
+      assert.equal(fields[1].table,true,course.id);
+      assert.ok(!fields.some(f=>f.label==="Legenda da tabela"),course.id+": não gerar campo de legenda");
+      const editor=h.editorBlock(b,i,course);
+      assert.match(editor,/Cabeçalho de tabela/,course.id);
+      assert.match(editor,/Exibir a primeira linha como cabeçalho/,course.id);
+      assert.match(editor,/Legenda da tabela<\/strong> em branco/,course.id);
+      assert.equal((editor.match(/data-copy-field=/g)||[]).length,1,course.id+": um botão Copiar tabela");
+      assert.match(editor,/data-copy-field="1"/,course.id);
+      assert.match(fields[1].html,/<thead>/,course.id+": cabeçalho no HTML copiado");
+      assert.equal(fields[1].value,h.blockCopy(b),course.id+": TSV mantido");
+      assert.ok(!fields[1].html.includes("<caption>"),course.id+": não copiar legenda no HTML");
+    }
+  }
+  assert.ok(count>=json.courses.length,"ao menos uma tabela por curso");
 });

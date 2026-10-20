@@ -33,7 +33,7 @@
       ]},
       {tipo:"texto",titulo:"Sobre o curso",conteudo:"Texto de exemplo com **negrito**.\n\nOutro parágrafo para testar a cópia."},
       {tipo:"introducao",conteudo:"Destaque de exemplo para esta página."},
-      {tipo:"tabela",colunas:["Campus","Turno"],linhas:[["Campus fictício","Diurno"],["Outra unidade fictícia","Noturno"]]},
+      {tipo:"tabela",colunas:["Campus","Turno"],linhas:[["Campus fictício","Diurno"],["Outra unidade fictícia","Noturno"]],cabecalhoPrimeiraLinha:true},
       {tipo:"texto",titulo:"Perguntas frequentes",conteudo:""},
       {tipo:"faq",itens:[
         {pergunta:"Este curso existe?",resposta:"Não. É uma demonstração."},
@@ -77,7 +77,7 @@
     if (b.titulo !== undefined && !checkedText(b.titulo, 200)) return false;
     if (["texto", "introducao"].includes(b.tipo) && !checkedText(b.conteudo || "", b.tipo === "introducao" ? 280 : 12000)) return false;
     if (b.tipo === "dados-basicos") return Array.isArray(b.campos) && b.campos.every(x => checkedText(x.rotulo, 160) && checkedText(x.valor, 500) && !("validacao" in x));
-    if (b.tipo === "tabela") return Array.isArray(b.colunas) && b.colunas.length > 0 && b.colunas.every(x => checkedText(x, 160)) && Array.isArray(b.linhas) && b.linhas.every(x => Array.isArray(x) && x.length === b.colunas.length && x.every(v => checkedText(v, 1200)));
+    if (b.tipo === "tabela") return b.cabecalhoPrimeiraLinha === true && (!("legenda" in b) || b.legenda === "") && Array.isArray(b.colunas) && b.colunas.length > 0 && b.colunas.every(x => checkedText(x, 160)) && Array.isArray(b.linhas) && b.linhas.every(x => Array.isArray(x) && x.length === b.colunas.length && x.every(v => checkedText(v, 1200)));
     if (b.tipo === "faq") return Array.isArray(b.itens) && b.itens.length > 0 && b.itens.every(x => checkedText(x.pergunta, 300) && checkedText(x.resposta, 2000));
     if (b.tipo === "links") return Array.isArray(b.itens) && true && b.itens.every(x => checkedText(x.rotulo, 160) && isValidURL(x.url));
     if (b.tipo === "link-unico") return b.link && checkedText(b.link.rotulo, 160) && isValidURL(b.link.url);
@@ -221,13 +221,16 @@
         raw("Imagem " + (i+1) + " · URL de referência", x.url, true)
       ]) : [raw("Imagens", "Informação incompleta")])
     ];
-    if (b.tipo === "tabela") return [{
-      label:"Tabela",
-      value:blockCopy(b),
-      rich:true,
-      html:tableHTML(b),
-      table:true
-    }];
+    if (b.tipo === "tabela") return [
+      raw("Cabeçalho de tabela", "Exibir a primeira linha como cabeçalho", true),
+      {
+        label:"Tabela",
+        value:blockCopy(b),
+        rich:true,
+        html:tableHTML(b),
+        table:true
+      }
+    ];
     return [];
   }
   function fieldHTML(field, blockIndex, fieldIndex, pageTitle = false) {
@@ -263,6 +266,7 @@
       '<header class="block-card-header"><h2 class="block-card-title" id="block-heading-' + i +
       '">' + escapeHTML(b.tipo === "faq" && b.titulo === "Informações dos campi" ? "FAQ · Informações dos campi" : blockName[b.tipo]) + '</h2></header>' +
       (b.tipo === "galeria" ? '<div class="gallery-guidance" role="note"><strong>Galeria da experiência: ' + escapeHTML(b.referencia || "Experiência do curso") + '</strong><p>Selecione o estilo <strong>Com bordas</strong>. As imagens definitivas ainda não estão disponíveis: use uma imagem provisória apenas para montar o bloco e solicite à coordenação a substituição antes da publicação. A <strong>legenda vem do título da imagem</strong> cadastrado no Wagtail; revise esse título ao selecionar a imagem. Não crie legendas ou fotos de experiências que ainda não foram fornecidas.</p></div>' : "") +
+      (b.tipo === "tabela" ? '<div class="gallery-guidance" role="note"><p>Em <strong>Cabeçalho de tabela</strong>, selecione <strong>Exibir a primeira linha como cabeçalho</strong>. Deixe <strong>Legenda da tabela</strong> em branco. Depois use <strong>Copiar tabela</strong>.</p></div>' : "") +
       '<div class="editor-fields">' + fields.map((field,j) => fieldHTML(field,i,j)).join("") + '</div>' +
       '</section>';
   }

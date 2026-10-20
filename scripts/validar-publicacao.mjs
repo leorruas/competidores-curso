@@ -59,6 +59,8 @@ function validarBloco(b, p) {
   // Ordem, categoria, tipo e limite de 180 caracteres da Apresentação: validarEstruturaCurso.
   if (b.tipo === "dados-basicos" && (!Array.isArray(b.campos) || !b.campos.length || !b.campos.every(x => objeto(x) && string(x.rotulo,160) && string(x.valor,500)))) denuncia(p+".campos","campos inválidos");
   if (b.tipo === "tabela" && (!Array.isArray(b.colunas) || !b.colunas.length || !b.colunas.every(x => string(x,160)) || !Array.isArray(b.linhas) || !b.linhas.every(row => Array.isArray(row) && row.length === b.colunas.length && row.every(x => string(x,1200))))) denuncia(p, "tabela inválida ou número de colunas divergente");
+  // A configuração do cabeçalho e a legenda vazia são verificadas para cada tabela
+  // por validarEstruturaCurso; não validar apenas a tabela principal de ofertas.
   if (b.tipo === "faq" && (!Array.isArray(b.itens) || !b.itens.length || !b.itens.every(x => objeto(x) && string(x.pergunta,300) && string(x.resposta,2000)))) denuncia(p,"FAQ precisa de perguntas e respostas");
   if (b.tipo === "faq" && Array.isArray(b.itens))
     b.itens.forEach((x,i)=>validarVozInstitucional(x?.resposta,p+".itens["+i+"].resposta"));

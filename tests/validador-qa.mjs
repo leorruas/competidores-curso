@@ -111,7 +111,7 @@ test("F8.3A: publicação da pós permite continuidade apenas com nível acima",
     const fim = curso.blocos.findIndex(b => b.titulo === "Experiências e conquistas dos estudantes");
     curso.blocos.splice(inicio, fim - inicio,
       {tipo:"texto",titulo:"Continue seus estudos no IFMG",conteudo:""},
-      {tipo:"tabela",colunas:["Curso","Campus","Nível","Relação com o curso"],
+      {tipo:"tabela",cabecalhoPrimeiraLinha:true,colunas:["Curso","Campus","Nível","Relação com o curso"],
         linhas:[["Mestrado Profissional em Administração","Formiga",nivelAlvo,
           "Aprofunda pesquisa aplicada em Finanças."]]}
     );
@@ -152,4 +152,25 @@ test("validador de publicação bloqueia apresentação longa e ordem incorreta"
   });
   assert.notEqual(deslocado.status, 0);
   assert.match(deslocado.output, /ordem obrigatória/);
+});
+
+test("validador público bloqueia qualquer tabela sem cabeçalho ou com legenda preenchida", () => {
+  const missing=runValidation(data=>{
+    const t=data.courses[0].blocos.find(b=>b.tipo==="tabela");
+    delete t.cabecalhoPrimeiraLinha;
+  });
+  assert.notEqual(missing.status,0);
+  assert.match(missing.output,/Exibir a primeira linha como cabeçalho/);
+  const disabled=runValidation(data=>{
+    const t=data.courses[1].blocos.find(b=>b.tipo==="tabela");
+    t.cabecalhoPrimeiraLinha=false;
+  });
+  assert.notEqual(disabled.status,0);
+  assert.match(disabled.output,/Exibir a primeira linha como cabeçalho/);
+  const caption=runValidation(data=>{
+    const t=data.courses[2].blocos.find(b=>b.tipo==="tabela");
+    t.legenda="Cursos por campus";
+  });
+  assert.notEqual(caption.status,0);
+  assert.match(caption.output,/Legenda da tabela deve ficar em branco/);
 });

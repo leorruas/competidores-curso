@@ -71,3 +71,26 @@ test("rejeita campo deslocado, apresentação acima do limite e tipo incompatív
   trocado.blocos[0].campos[1].valor = "Licenciaturas";
   assert.ok(validarEstruturaCurso(trocado).some(e => e.includes("tipo de oferta incompatível")));
 });
+
+test("todas as tabelas do catálogo mantêm cabeçalho selecionado e legenda em branco", () => {
+  let count=0;
+  for(const course of catalogo.courses) for(const b of course.blocos) {
+    if(b.tipo!=="tabela")continue;
+    count++;
+    assert.equal(b.cabecalhoPrimeiraLinha,true,course.id);
+    assert.ok(b.legenda === undefined || b.legenda === "",course.id);
+  }
+  assert.ok(count >= catalogo.courses.length);
+});
+
+test("validação estrutural rejeita tabela nova sem cabeçalho ou com legenda", () => {
+  const first = structuredClone(catalogo.courses[0]);
+  const idx=first.blocos.findIndex(b=>b.tipo==="tabela");
+  delete first.blocos[idx].cabecalhoPrimeiraLinha;
+  assert.ok(validarEstruturaCurso(first).some(x=>x.includes("primeira linha como cabeçalho")));
+  first.blocos[idx].cabecalhoPrimeiraLinha=true;
+  first.blocos[idx].legenda="Legenda desnecessária";
+  assert.ok(validarEstruturaCurso(first).some(x=>x.includes("Legenda da tabela deve ficar em branco")));
+  delete first.blocos[idx].legenda;
+  assert.deepEqual(validarEstruturaCurso(first),[]);
+});

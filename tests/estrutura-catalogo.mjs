@@ -124,3 +124,38 @@ test("Dados básicos não admitem turno, PPC, matriz ou contatos da coordenaçã
     assert.ok(original.blocos[0].campos.every(f=>!/^Turno|^PPC|^E-mail da coordenação|^Contatos/i.test(f.rotulo)),original.id);
   }
 });
+
+test("F9.5/F9.6: FAQ e links inválidos são bloqueados pelo validador", () => {
+  const original = catalogo.courses.find(c => c.id === "administracao-bacharelado");
+  const faqIndex = original.blocos.findIndex(b => b.tipo === "faq" && !b.titulo);
+  const linkIndex = original.blocos.findIndex(b => b.tipo === "links");
+  assert.ok(faqIndex >= 0 && linkIndex === faqIndex + 1);
+  const semCotas = structuredClone(original);
+  semCotas.blocos[faqIndex].itens = semCotas.blocos[faqIndex].itens.filter(
+    x => !/cotas?|reserva de vagas/i.test(x.pergunta)
+  );
+  assert.ok(validarEstruturaCurso(semCotas).some(e => e.includes("pergunta explícita sobre cotas")));
+
+  const deslocado = structuredClone(original);
+  const [link] = deslocado.blocos.splice(linkIndex,1);
+  deslocado.blocos.splice(faqIndex,0,link);
+  assert.ok(validarEstruturaCurso(deslocado).some(e => e.includes("imediatamente após o FAQ")));
+
+  const faltandoServico = structuredClone(original);
+  faltandoServico.blocos[linkIndex].itens = faltandoServico.blocos[linkIndex].itens.filter(
+    x => !/assistencia-estudantil/.test(x.url)
+  );
+  assert.ok(validarEstruturaCurso(faltandoServico).some(e => e.includes("três destinos institucionais")));
+
+  const duplicado = structuredClone(original);
+  duplicado.blocos.splice(linkIndex + 1,0,structuredClone(duplicado.blocos[linkIndex]));
+  assert.ok(validarEstruturaCurso(duplicado).some(e => e.includes("no máximo um bloco Links")));
+});
+
+test("F9.6: pós-graduação pode não ter Links quando a exceção está documentada", () => {
+  const curso = catalogo.courses.find(c =>
+    c.nivel === "Pós-graduação" && !c.blocos.some(b => b.tipo === "links")
+  );
+  assert.ok(curso, "deve existir uma pós-graduação sem Links a avaliar");
+  assert.deepEqual(validarEstruturaCurso(curso), []);
+});

@@ -18,7 +18,7 @@ Para publicar no **GitHub Pages**, abra **Settings → Pages**, selecione **Depl
 
 A rotina [QA visual de páginas de cursos](.github/workflows/qa-visual.yml) pode ser executada no GitHub Actions ou sempre que forem modificados os arquivos da interface. Com Playwright/Chromium, ela abre os **oito cursos** nas larguras **375 px, 768 px e 1.440 px** e confere carregamento, catálogo, busca, responsividade, índice lateral, campos copiáveis, área de transferência, alternância entre `Copiar` e `Visualizar` e abertura dos FAQs. O resultado reúne **24 combinações de curso e largura**, arquivos PNG e um `report.json` no artefato `f1-6-capturas-e-metricas`, retido por 14 dias no workflow.
 
-O índice lateral usa títulos de blocos e associações contextuais. No mobile, os links do índice deslizam horizontalmente **sem aumentar a largura da página**. Galerias vazias, introduções vazias e seções de texto marcadas apenas como `Informação incompleta` são omitidas **somente na aba Visualizar**, mantendo-se visíveis e não copiáveis no modo de preenchimento quando apropriado.
+O índice lateral usa títulos de blocos e associações contextuais. No mobile, os links do índice deslizam horizontalmente **sem aumentar a largura da página**. Galerias vazias não aparecem no modo Copiar nem no Visualizar. A seção de conquistas também fica oculta se não houver resultado documentado. Outros campos com dados acadêmicos incompletos continuam identificados no roteiro.
 
 **Limite:** o teste e as capturas comprovam comportamento do guia no navegador, não fidelidade de colagem do HTML no Wagtail, homologação acadêmica nem publicação das páginas no portal institucional. O teste real de cópia e colagem no CMS continua na F6.3.
 

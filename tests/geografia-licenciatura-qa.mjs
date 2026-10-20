@@ -28,23 +28,19 @@ test("F7.32: Geografia Ouro Preto usa matriz vigente e organização da licencia
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
 
-test("F7.32: experiências 2025-2026 com galeria por experiência e fonte de auditoria excluída",()=>{
- assert.equal(b.length,28);
- assert.equal(b.filter(x=>x.tipo==="galeria").length,4);
- assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
+test("F9.4: Geografia mantém pesquisa publicada e remove visitas de rotina",()=>{
+ assert.equal(b.length,23);
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,1);
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
  assert.ok(i>0);
- for(const k of [i,i+2,i+4]){
-  assert.equal(b[k].tipo,"texto");
-  assert.equal(b[k+1].tipo,"galeria");
-  assert.deepEqual(b[k+1].itens,[]);
- }
- assert.match(b[i].conteudo,/fevereiro de 2025/);
- assert.match(b[i+2].conteudo,/setembro de 2025/);
- assert.match(b[i+4].conteudo,/setembro de 2026/);
+ assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
+ assert.match(b[i].conteudo,/Caminhos da sustentabilidade na educação de jovens e adultos/);
+ assert.match(b[i].conteudo,/setembro de 2026/);
+ assert.equal(b[i+1].titulo,"Perguntas frequentes");
+ assert.ok(!b.some(x=>x.tipo==="galeria"&&/Vale do Aço|Escola Família Agrícola|EJA/.test(x.referencia||"")));
  const pos=b.findIndex(x=>x.titulo==="Pós-graduação");
  assert.ok(b[pos+1].linhas.some(x=>x[0].includes("PROFGEO")&&x[1].includes("Ouro Preto")));
  const txt=JSON.stringify(c);
- assert.doesNotMatch(txt,/Auditoria privada|igor\.santos@ifmg\.edu\.br|https:\/\/www2?\.ifmg\.edu\.br/);
+ assert.doesNotMatch(txt,/Auditoria privada|igor\\.santos@ifmg\\.edu\\.br|https:\\/\\/www2?\\.ifmg\\.edu\\.br/);
  assert.deepEqual(data.courses.map(x=>x.id),[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
 });

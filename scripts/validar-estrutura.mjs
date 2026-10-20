@@ -65,6 +65,46 @@ export function validarEstruturaCurso(curso) {
     if (blocos.filter(b => b?.tipo === "texto" && b.titulo === titulo).length !== 1)
       erros.push("seção obrigatória deve aparecer uma vez: " + titulo);
   }
+  // F9.5/F9.6: os tópicos de orientação ao candidato e a ordem dos Links
+  // são requisitos determinísticos, já conferidos no catálogo. O FAQ de campi
+  // é independente e não substitui o FAQ de candidatos.
+  const faqHeading = pos("Perguntas frequentes");
+  const linkPositions = blocos.flatMap((b,i) => b?.tipo === "links" ? [i] : []);
+  const normFAQ = value => String(value ?? "").normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"").toLowerCase();
+  if (faqHeading >= 0) {
+    const candidate = blocos[faqHeading+1];
+    if (candidate?.tipo !== "faq" || candidate.titulo)
+      erros.push("FAQ de candidatos deve vir imediatamente depois de Perguntas frequentes");
+    else {
+      const perguntas = Array.isArray(candidate.itens) ? candidate.itens.map(x => normFAQ(x?.pergunta)) : [];
+      for (const [assunto, expressao] of [
+        ["ingresso",/ingress|inscri|candidat|processo seletivo|matricul|sisu|entrar/],
+        ["cotas",/cotas?|reserva de vagas|acoes afirmativas/],
+        ["assistência estudantil",/assistencia|auxilio|permanencia|apoio financeiro/]
+      ]) {
+        if (!perguntas.some(p => expressao.test(p)))
+          erros.push("FAQ de candidatos sem pergunta explícita sobre " + assunto);
+      }
+    }
+    if (linkPositions.length > 1)
+      erros.push("deve existir no máximo um bloco Links por curso");
+    if (!posGraduacao && !linkPositions.length)
+      erros.push("curso técnico ou de graduação sem Links de orientação ao candidato");
+    if (linkPositions.length && linkPositions[0] !== faqHeading+2)
+      erros.push("Links devem vir imediatamente após o FAQ de candidatos");
+    if (!posGraduacao && linkPositions.length) {
+      const urls = Array.isArray(blocos[linkPositions[0]].itens)
+        ? blocos[linkPositions[0]].itens.map(x => x?.url) : [];
+      const servicos = [
+        "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/",
+        "https://portal.ifmg.edu.br/estudantes/como-ingressar-no-ifmg/reserva-de-vagas-cotas/",
+        "https://portal.ifmg.edu.br/estudantes/nucleos-de-apoio/assistencia-estudantil/"
+      ];
+      if (servicos.some(url => !urls.includes(url)))
+        erros.push("Links sem algum dos três destinos institucionais de ingresso, cotas e assistência");
+    }
+  }
   // Contrato transitório do JSON: H2 e H3 permanecem como registros Texto separados.
   // No modo Copiar, app.js os apresenta juntos no mesmo campo rico quando adjacentes.
   // Confirmar a colagem real na homologação antes de mudar o contrato de dados (F9.1).

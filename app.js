@@ -110,6 +110,8 @@
     if (b.tipo === "links") return b.itens.map(x => x.rotulo + " — " + x.url).join("\n");
     if (b.tipo === "link-unico") return [b.link.rotulo,b.link.descricao || "",b.link.url].join("\n");
     if (b.tipo === "galeria") return b.itens.map(x => (x.legenda || "") + " — " + (x.alt || "") + " — " + x.url).join("\n");
+    if (b.tipo === "texto" && /^(?:formas? de ingresso|mundo do trabalho)$/i.test((b.titulo || "").trim()))
+      return b.conteudo || "";
     return [b.titulo || "",b.conteudo || ""].filter(Boolean).join("\n\n");
   }
   function blockPreview(b, i) {
@@ -149,6 +151,12 @@
     const rich = (label, value) => ({label, value: String(value ?? ""), rich: true, html: richHTML(value)});
     if (b.tipo === "dados-basicos") return b.campos.map(x => raw(x.rotulo, x.valor));
     if (b.tipo === "texto") {
+      // Esses títulos já existem no Wagtail: mostrá-los como rótulos no guia,
+      // mas copiar exclusivamente o corpo, tanto em HTML quanto em texto simples.
+      if (/^(?:formas? de ingresso|mundo do trabalho)$/i.test((b.titulo || "").trim())) {
+        return [{label:b.titulo, value:String(b.conteudo || ""), rich:true,
+          html:richHTML(b.conteudo || "")}];
+      }
       // Cabeçalhos de FAQ são títulos de seção, sem segundo campo de conteúdo.
       if (/^perguntas frequentes$/i.test((b.titulo || "").trim()) &&
           (!String(b.conteudo || "").trim() || /^informação incompleta$/i.test(b.conteudo.trim()))) {

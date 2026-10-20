@@ -1931,3 +1931,46 @@ test("F3.8: experiências datadas no conteúdo copiável são de 2025 em diante"
   }
   assert.ok(json.courses.every(c=>c.blocos.some(b=>b.tipo==="galeria")),"todo curso deve possuir galeria; não congelar contagem global");
 });
+
+
+test("Forma de ingresso e Mundo do Trabalho copiam só o conteúdo em todos os cursos", async () => {
+  const h=testContext();
+  for (const c of json.courses) {
+    for (const title of ["Forma de ingresso","Mundo do Trabalho"]) {
+      const block=c.blocos.find(b=>b.tipo==="texto"&&b.titulo===title);
+      assert.ok(block,c.id+": bloco "+title+" não encontrado");
+      const fields=h.editorFields(block);
+      assert.equal(fields.length,1,c.id+" / "+title);
+      assert.equal(fields[0].label,title,c.id+" / "+title);
+      assert.equal(fields[0].value,block.conteudo,c.id+" / "+title);
+      assert.equal(h.blockCopy(block),block.conteudo,c.id+" / "+title);
+      assert.ok(!fields[0].html.includes("<h2>"),c.id+" / "+title+": título não pode ir para a área de transferência");
+      assert.match(h.blockPreview(block,0),new RegExp("<h2>"+title+"</h2>"),c.id+" / "+title+": título continua na prévia");
+      const rendered=h.editorBlock(block,0);
+      assert.match(rendered,new RegExp("editor-field-label[^>]*>"+title+"<"),c.id+" / "+title+": título continua visível no editor");
+      assert.equal((rendered.match(/data-copy-field=/g)||[]).length,block.conteudo?.trim() ? 1 : 0,c.id+" / "+title);
+    }
+  }
+  const original={tipo:"texto",titulo:"Sobre o curso",conteudo:"Texto com **destaque**."};
+  const regular=h.editorFields(original)[0];
+  assert.match(regular.value,/^Sobre o curso\\n\\n/);
+  assert.match(regular.html,/<h2>Sobre o curso<\\/h2>/);
+  const example=h.editorFields(json.courses[0].blocos.find(b=>b.titulo==="Mundo do Trabalho"))[0];
+  const result=await h.copyValue(example.value,example.html);
+  assert.equal(result,"rich");
+  const data=h.clipboardState.items[0].data;
+  assert.equal(await data["text/plain"].text(),example.value.replace(/\\*\\*([^*]+)\\*\\*/g,"$1"));
+  assert.ok(!(await data["text/html"].text()).includes("<h2>Mundo do Trabalho</h2>"));
+});
+
+test("cópia simples e seção incompleta não inserem títulos das duas seções finais", async () => {
+  const h=testContext({failRich:true});
+  const example={tipo:"texto",titulo:"Forma de ingresso",conteudo:"Você pode ingressar pelo edital vigente."};
+  const field=h.editorFields(example)[0];
+  assert.equal(await h.copyValue(field.value,field.html),"plain");
+  assert.deepEqual(h.clipboardState.plain,["Você pode ingressar pelo edital vigente."]);
+  const incompleto={tipo:"texto",titulo:"Mundo do Trabalho",conteudo:"Informação incompleta"};
+  const rendered=h.editorBlock(incompleto,0);
+  assert.match(rendered,/Mundo do Trabalho/);
+  assert.doesNotMatch(rendered,/data-copy-field=/);
+});

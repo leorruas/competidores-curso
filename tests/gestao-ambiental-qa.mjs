@@ -38,6 +38,6 @@ test("F9.4: Gestão Ambiental mantém resultado de egresso, sem visita de rotina
  assert.ok(b[p+1].linhas.some(x=>x[0]==="Especialização em Meio Ambiente"&&x[1].includes("São João Evangelista")));
  assert.ok(b[p+1].linhas.some(x=>x[0].includes("Sustentabilidade e Tecnologia Ambiental")&&x[1]==="Bambuí"));
  const copy=JSON.stringify(c);
- assert.doesNotMatch(copy,/Auditoria privada|matriz privada|TCC obrigatório|coordenacao\\.enc\\.gv@ifmg\\.edu\\.br|https:\\/\\/www2?\\.ifmg\\.edu\\.br/);
+ assert.doesNotMatch(copy,/Auditoria privada|matriz privada|TCC obrigatório|coordenacao\.enc\.gv@ifmg\.edu\.br|https:\/\/www2?\.ifmg\.edu\.br/);
  assert.deepEqual(data.courses.map(x=>x.id),[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
 });

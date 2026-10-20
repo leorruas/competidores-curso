@@ -8912,6 +8912,269 @@
       ]
     },
     {
+      "id": "mba-em-gestao-de-negocios-com-aplicacoes-de-inteligencia-artificial",
+      "nome": "MBA em Gestão de Negócios com Aplicações de Inteligência Artificial",
+      "nivel": "Pós-graduação",
+      "tipo": "Especialização",
+      "campi": [
+        "Arcos"
+      ],
+      "modalidade": "EaD",
+      "status": "em_validacao",
+      "publicacao_autorizada": true,
+      "blocos": [
+        {
+          "tipo": "dados-basicos",
+          "campos": [
+            {
+              "rotulo": "Categoria",
+              "valor": "Cursos de pós-graduação"
+            },
+            {
+              "rotulo": "Tipo de oferta",
+              "valor": "Pós-graduação lato sensu"
+            },
+            {
+              "rotulo": "Carga horária",
+              "valor": "360 horas de componentes curriculares"
+            },
+            {
+              "rotulo": "Duração",
+              "valor": "12 meses, em dois semestres"
+            },
+            {
+              "rotulo": "Apresentação",
+              "valor": "O MBA articula gestão de negócios e inteligência artificial em planejamento, marketing, finanças, análise de dados e melhoria de processos."
+            },
+            {
+              "rotulo": "Modalidade",
+              "valor": "Educação a distância (EaD)"
+            },
+            {
+              "rotulo": "Eixo tecnológico",
+              "valor": "Gestão e Negócios"
+            },
+            {
+              "rotulo": "Campi",
+              "valor": "Arcos"
+            },
+            {
+              "rotulo": "Titulação",
+              "valor": "Especialista em Gestão de Negócios com Aplicações em Inteligência Artificial"
+            },
+            {
+              "rotulo": "Estágio supervisionado",
+              "valor": "Informação incompleta"
+            },
+            {
+              "rotulo": "Trabalho final",
+              "valor": "Trabalho de Conclusão de Curso obrigatório, em formato de produto técnico aplicado; carga horária específica: Informação incompleta"
+            },
+            {
+              "rotulo": "E-mail da coordenação",
+              "valor": "Informação incompleta"
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "MBA em Gestão de Negócios com Aplicações de Inteligência Artificial",
+          "conteudo": "O MBA reúne **gestão, análise de dados e aplicações de inteligência artificial** em decisões de negócios. A formação aborda planejamento, marketing, finanças, produtividade, liderança e uso responsável de tecnologias, com estudos voltados à aplicação de ferramentas em problemas de organizações."
+        },
+        {
+          "tipo": "introducao",
+          "conteudo": "Estude estratégias de negócios, finanças, marketing e análise de dados com aplicações de IA. O trabalho final propõe uma solução técnica para um problema de gestão."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Para quem é o curso",
+          "conteudo": "O MBA é destinado a **pessoas com graduação concluída em qualquer área** que desejam aplicar ferramentas de inteligência artificial à gestão de negócios, equipes, processos e serviços. A formação também atende profissionais interessados em avaliar oportunidades e limites dessas tecnologias em decisões de organizações."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "O que você vai estudar",
+          "conteudo": "A formação contempla **fundamentos de inteligência artificial na gestão, planejamento estratégico, inovação, marketing e vendas, ética e governança da IA, produtividade, finanças, análise preditiva, Business Intelligence e liderança**. As disciplinas combinam estudo conceitual com atividades orientadas à aplicação de ferramentas em situações de negócios."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Semestre",
+            "Componente curricular",
+            "Carga horária"
+          ],
+          "linhas": [
+            [
+              "Primeiro",
+              "Fundamentos de Inteligência Artificial na Gestão",
+              "60 horas"
+            ],
+            [
+              "Primeiro",
+              "Planejamento Estratégico e Inovação com Inteligência Artificial",
+              "30 horas"
+            ],
+            [
+              "Primeiro",
+              "Marketing e Vendas para Negócios Locais com Inteligência Artificial",
+              "60 horas"
+            ],
+            [
+              "Primeiro",
+              "Ética, Governança da Inteligência Artificial e Responsabilidade Social",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Otimização de Processos e Produtividade com Inteligência Artificial",
+              "60 horas"
+            ],
+            [
+              "Segundo",
+              "Finanças, Custos e Análise Preditiva com Inteligência Artificial",
+              "60 horas"
+            ],
+            [
+              "Segundo",
+              "Análise de Dados e Business Intelligence com Inteligência Artificial",
+              "30 horas"
+            ],
+            [
+              "Segundo",
+              "Gestão de Pessoas e Liderança com Inteligência Artificial",
+              "30 horas"
+            ],
+            [
+              "**Total**",
+              "**Oito disciplinas em dois semestres**",
+              "**360 horas**"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Como funciona a aprendizagem a distância",
+          "conteudo": "As atividades do MBA utilizam o **Moodle** para acesso a materiais de estudo, exercícios, fóruns e avaliações. O curso prevê atividades **síncronas e assíncronas**, com mediação e acompanhamento acadêmico. O Campus Arcos funciona como sede e polo de apoio. As orientações para participação em atividades e eventuais avaliações presenciais integram a organização de cada oferta."
+        },
+        {
+          "tipo": "galeria",
+          "referencia": "estudo de análise de dados, trabalho com ferramentas de gestão ou ambiente institucional de aprendizagem do Campus Arcos.",
+          "itens": []
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Trabalho de Conclusão de Curso",
+          "conteudo": "O **Trabalho de Conclusão de Curso é obrigatório** e tem formato aplicado. Ao final da formação, o estudante desenvolve um **produto técnico** que utiliza uma ferramenta de inteligência artificial em uma situação de gestão, com dados reais ou fictícios. A proposta permite relacionar os estudos do curso a um problema definido e apresentar a solução desenvolvida."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Exemplos de aplicação",
+          "conteudo": "As atividades e o trabalho final podem explorar **organização de informações de clientes, apoio à análise de custos e fluxo de caixa, comunicação de negócios, automação de rotinas e visualização de dados**. A escolha da ferramenta e da aplicação depende do problema, do contexto, das orientações acadêmicas e das condições de uso dos dados."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Ética, governança e uso de dados",
+          "conteudo": "A formação inclui uma disciplina dedicada à **ética, governança da inteligência artificial e responsabilidade social**. O uso de ferramentas de IA em negócios exige considerar qualidade dos dados, limites dos resultados, impactos sobre pessoas e acompanhamento das decisões tomadas com auxílio dessas tecnologias."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Onde o IFMG oferece o MBA",
+          "conteudo": "O IFMG oferece a formação vinculada ao **Campus Arcos**, na modalidade de educação a distância. A organização curricular prevê 360 horas distribuídas em oito disciplinas e a entrega de um trabalho final aplicado."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Campus",
+            "Modalidade",
+            "Duração mínima",
+            "Carga horária",
+            "E-mail da coordenação"
+          ],
+          "linhas": [
+            [
+              "Arcos",
+              "Educação a distância",
+              "12 meses",
+              "360 horas",
+              "Informação incompleta"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Campus Arcos",
+          "conteudo": "A proposta do MBA articula **formação em gestão, tecnologias digitais e aplicações de inteligência artificial**. O curso reúne temas de Administração e análise de dados e utiliza o ambiente virtual institucional para organizar os estudos e atividades de aprendizagem."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Pesquisa, projetos e oportunidades",
+          "conteudo": "O currículo propõe atividades em que os estudantes podem **formular problemas, analisar dados e desenvolver soluções técnicas**, especialmente no trabalho de conclusão. As propostas são avaliadas no âmbito das disciplinas e da orientação acadêmica."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Continue seus estudos no IFMG",
+          "conteudo": "A formação em gestão e análise de dados pode dialogar com pesquisas de nível de mestrado. O **Mestrado Profissional em Administração**, no Campus Formiga, desenvolve pesquisas na área de **Finanças**, com linhas ligadas à tomada de decisões, finanças corporativas e investimentos. A relação com este MBA está especialmente nos estudos de finanças, custos e análise preditiva."
+        },
+        {
+          "tipo": "tabela",
+          "colunas": [
+            "Curso",
+            "Campus",
+            "Nível",
+            "Relação com o curso"
+          ],
+          "linhas": [
+            [
+              "Mestrado Profissional em Administração",
+              "Formiga",
+              "Mestrado profissional",
+              "Finanças, análise preditiva e tomada de decisão"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Experiências e conquistas dos estudantes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Perguntas frequentes",
+          "conteudo": ""
+        },
+        {
+          "tipo": "faq",
+          "itens": [
+            {
+              "pergunta": "O MBA é um mestrado ou uma especialização?",
+              "resposta": "Trata-se de uma **pós-graduação lato sensu**, que confere o título de **especialista**. A sigla MBA identifica esta formação na área de gestão; não corresponde ao grau de mestrado."
+            },
+            {
+              "pergunta": "Como funciona o trabalho final?",
+              "resposta": "A conclusão do curso exige a entrega de **um produto técnico que aplique uma ferramenta de IA** a um problema escolhido, com dados reais ou fictícios. A elaboração e a avaliação seguem as orientações do curso."
+            },
+            {
+              "pergunta": "O curso oferece atendimento e atividades em tempo real?",
+              "resposta": "Sim. O ensino é organizado no Moodle e pode incluir **encontros síncronos**, além de atividades assíncronas, fóruns, exercícios e acompanhamento acadêmico."
+            },
+            {
+              "pergunta": "O MBA cobra mensalidades?",
+              "resposta": "O regulamento admite **cobrança de taxas e mensalidades** e também a possibilidade de ofertas sem cobrança. As condições financeiras de cada turma são definidas nas regras da seleção correspondente."
+            }
+          ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Forma de ingresso",
+          "conteudo": "O ingresso no **MBA em Gestão de Negócios com Aplicações de Inteligência Artificial** é destinado a pessoas com **graduação concluída** e ocorre por **processo seletivo próprio**. Os critérios, os documentos exigidos, as vagas e as condições da oferta são apresentados no edital vigente do curso."
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Mundo do Trabalho",
+          "conteudo": "O MBA desenvolve conhecimentos para **avaliar aplicações de inteligência artificial em planejamento estratégico, marketing, vendas, finanças, análise de dados, melhoria de processos e gestão de equipes**. A formação ajuda a examinar problemas de negócios, selecionar ferramentas adequadas e interpretar resultados sem dispensar avaliação humana.\n\nEssas aplicações podem contribuir para atividades em **organizações públicas e privadas, comércio, serviços e áreas administrativas**, respeitando as atribuições profissionais de cada área. O trabalho final permite desenvolver uma solução aplicada e discutir seus limites técnicos e de gestão."
+        }
+      ]
+    },
+    {
       "id": "medicina-veterinaria-bacharelado",
       "nome": "Medicina Veterinária",
       "nivel": "Graduação",

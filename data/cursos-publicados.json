@@ -17929,7 +17929,7 @@
             },
             {
               "rotulo": "Apresentação",
-              "valor": "Estude o ensino médio junto com uma formação técnica voltada ao funcionamento, à fabricação e à manutenção de máquinas e equipamentos."
+              "valor": "Ensino médio integrado à formação em Mecânica, com desenho técnico, materiais, processos de fabricação e manutenção de máquinas."
             },
             {
               "rotulo": "Modalidade",
@@ -18150,6 +18150,14 @@
               "resposta": "Quem concluiu o ensino fundamental ou vai concluí-lo até a matrícula pode participar do processo seletivo para o ensino médio integrado, conforme os requisitos do edital vigente."
             },
             {
+              "pergunta": "Há reserva de vagas e cotas para o ingresso no Técnico em Mecânica?",
+              "resposta": "O processo seletivo do IFMG prevê modalidades de reserva de vagas. Os critérios de participação e a documentação necessária são definidos no edital vigente e na página institucional de reserva de vagas e cotas. A inscrição em uma modalidade depende do atendimento às condições aplicáveis."
+            },
+            {
+              "pergunta": "Como saber quais serviços de assistência estudantil estão disponíveis?",
+              "resposta": "Consulte a área institucional de Assistência Estudantil e as orientações do campus em que pretende estudar. Os serviços, auxílios, critérios e prazos dependem de regras e chamadas vigentes; a matrícula no curso não garante automaticamente a concessão de auxílio."
+            },
+            {
               "pergunta": "O curso é igual nos quatro campi?",
               "resposta": "A formação aborda temas comuns de Mecânica, mas a matriz curricular, os espaços de prática, a organização das atividades e as oportunidades acadêmicas são específicos de cada campus. Em Arcos, o quadro de ofertas de 2027 registra 6% EaD."
             },
@@ -18164,14 +18172,6 @@
             {
               "pergunta": "Posso cursar uma graduação depois do técnico?",
               "resposta": "Sim. Com o ensino médio concluído, você pode participar de processos seletivos de graduação, como Engenharia Mecânica e Engenharia de Produção. A seleção e a matrícula seguem as regras de cada curso."
-            },
-            {
-              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
-              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
-            },
-            {
-              "pergunta": "Como funciona a assistência estudantil neste curso?",
-              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },
@@ -18264,7 +18264,7 @@
             },
             {
               "rotulo": "Apresentação",
-              "valor": "Aprenda a fabricar e manter máquinas, interpretar desenhos técnicos e trabalhar com usinagem, soldagem e controle de qualidade."
+              "valor": "Formação técnica subsequente em Mecânica, com desenho técnico, fabricação, manutenção de máquinas e controle da qualidade."
             },
             {
               "rotulo": "Modalidade",
@@ -18484,6 +18484,14 @@
               "resposta": "O subsequente é destinado a quem **já concluiu o ensino médio**. A formação técnica tem duração de dois anos e não inclui uma nova etapa de ensino médio."
             },
             {
+              "pergunta": "Há reserva de vagas e cotas para o ingresso no Técnico em Mecânica?",
+              "resposta": "O processo seletivo do IFMG prevê modalidades de reserva de vagas. Os critérios de participação e a documentação necessária são definidos no edital vigente e na página institucional de reserva de vagas e cotas. A inscrição em uma modalidade depende do atendimento às condições aplicáveis."
+            },
+            {
+              "pergunta": "Como saber quais serviços de assistência estudantil estão disponíveis?",
+              "resposta": "Consulte a área institucional de Assistência Estudantil e as orientações do campus em que pretende estudar. Os serviços, auxílios, critérios e prazos dependem de regras e chamadas vigentes; a matrícula no curso não garante automaticamente a concessão de auxílio."
+            },
+            {
               "pergunta": "Qual é a diferença entre Mecânica Integrado e Subsequente?",
               "resposta": "No **integrado**, o estudante cursa o ensino médio e a formação técnica em um único percurso, com duração de três anos. No **subsequente**, a pessoa já terminou o ensino médio e cursa a formação técnica em **dois anos**, com aulas à noite em Congonhas e Conselheiro Lafaiete."
             },
@@ -18493,19 +18501,11 @@
             },
             {
               "pergunta": "Como funcionam as atividades a distância em Conselheiro Lafaiete?",
-              "resposta": "O curso é **presencial e noturno**, mas a oferta de ingresso de 2027 prevê **20% de atividades EaD**. Essas atividades são organizadas pelos professores e se integram às disciplinas, sem transformar a graduação técnica em curso totalmente a distância."
+              "resposta": "O curso é **presencial e noturno**, mas a oferta de ingresso de 2027 prevê **20% de atividades EaD**. Essas atividades são organizadas pelos professores e se integram às disciplinas, sem transformar o curso técnico em uma oferta totalmente a distância."
             },
             {
               "pergunta": "Quais atividades técnicas são aprendidas?",
               "resposta": "Você aprende a **interpretar desenhos técnicos, medir peças, conhecer propriedades dos materiais, compreender processos de fabricação, planejar manutenção e trabalhar com procedimentos de qualidade e segurança**. As atividades práticas variam conforme o campus e a etapa da formação."
-            },
-            {
-              "pergunta": "Como funciona a reserva de vagas e as cotas neste curso?",
-              "resposta": "As modalidades de reserva de vagas seguem as regras da seleção do IFMG. O edital vigente e a página institucional sobre cotas apresentam as condições de participação e a documentação necessária."
-            },
-            {
-              "pergunta": "Como funciona a assistência estudantil neste curso?",
-              "resposta": "O IFMG possui ações de assistência estudantil. Os tipos de apoio, os critérios e os períodos de solicitação são definidos em regulamentos e editais; consulte os canais de Assistência Estudantil do campus."
             }
           ]
         },

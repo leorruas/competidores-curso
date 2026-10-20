@@ -14,14 +14,13 @@ test("F7.28 três ofertas locais e currículos distintos",()=>{
  assert.match(f.itens[2].resposta,/180 horas de estágio/);
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
-test("F7.28 experiências 2025 e 2026 e seis galerias",()=>{
+test("F9.4: avaliação e Destaque Acadêmico mantidos, sem seleção de monitores",()=>{
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
- assert.ok(i>0);for(const n of [i,i+2,i+4]){
- assert.equal(b[n].tipo,"texto");assert.equal(b[n+1].tipo,"galeria");
- assert.deepEqual(b[n+1].itens,[]);
- }
+ assert.ok(i>0);
+ for(const n of [i,i+2]){assert.equal(b[n].tipo,"texto");assert.equal(b[n+1].tipo,"galeria");assert.deepEqual(b[n+1].itens,[]);}
  assert.match(b[i].conteudo,/2026/);
- assert.match(b[i+2].conteudo,/2025/);
- assert.match(b[i+4].conteudo,/selecionados/);
- assert.equal(b.filter(x=>x.tipo==="galeria").length,6);
+ assert.match(b[i+2].conteudo,/Destaque Acadêmico/);
+ assert.equal(b[i+4].titulo,"Perguntas frequentes");
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,5);
+ assert.doesNotMatch(JSON.stringify(c),/selecionados para monitoria|Seleção de monitores bolsistas em Cálculo I/);
 });

@@ -1431,8 +1431,10 @@ test("F3.7: cada experiência estruturada possui galeria própria e aviso no edi
       const previous=c.blocos[i-1];
       assert.equal(previous.tipo,"texto",c.id+": galeria deve acompanhar texto da experiência");
       const html=h.editorBlock(b,i);
-      assert.match(html,/Insira qualquer imagem provisória/);
-      assert.match(html,/A coordenação do curso deverá substituí-la/);
+      assert.match(html,/use uma imagem provisória apenas para montar o bloco/);
+      assert.match(html,/solicite à coordenação a substituição antes da publicação/);
+      assert.match(html,/Com bordas/);
+      assert.match(html,/legenda vem do título da imagem/);
       assert.ok(html.includes(b.referencia.replaceAll("&","&amp;")),c.id+": identificação visível");
       assert.match(html,/data-copy-field=/,c.id+": marcador da galeria deve ser copiável");
       assert.equal(h.blockPreview(b,i),"",c.id+": galeria não preenchida oculta na prévia");

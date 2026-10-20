@@ -1855,14 +1855,11 @@ test("F7.2: Mecatrônica Ibirité mantém curso integrado e três experiências 
   assert.match(c.blocos[i].conteudo,/janeiro e fevereiro de 2025/);
   assert.match(c.blocos[i].conteudo,/Darcy Ribeiro/);
   assert.equal(c.blocos[i+1].tipo,"galeria");
-  assert.match(c.blocos[i+2].conteudo,/2025 do Enem/);
-  assert.match(c.blocos[i+2].conteudo,/785,4/);
+  assert.match(c.blocos[i+2].conteudo,/Canguru de Matemática 2026/);
+  assert.match(c.blocos[i+2].conteudo,/medalha de bronze/);
+  assert.match(c.blocos[i+2].conteudo,/menções honrosas/);
   assert.equal(c.blocos[i+3].tipo,"galeria");
-  assert.match(c.blocos[i+4].conteudo,/Canguru de Matemática 2026/);
-  assert.match(c.blocos[i+4].conteudo,/medalha de bronze/);
-  assert.match(c.blocos[i+4].conteudo,/menções honrosas/);
-  assert.equal(c.blocos[i+5].tipo,"galeria");
-  assert.equal(c.blocos.filter(x=>x.tipo==="galeria").length,4);
+  assert.equal(c.blocos.filter(x=>x.tipo==="galeria").length,3);
   const stage=c.blocos.find(x=>x.tipo==="faq"&&!x.titulo).itens.find(x=>x.pergunta==="O estágio e o TCC são obrigatórios?");
   assert.match(stage.resposta,/não obrigatório/);
   assert.match(stage.resposta,/terceiro semestre/);

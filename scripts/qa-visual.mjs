@@ -48,7 +48,15 @@ try {
       await page.locator("#course-view:not([hidden]) .course-head h1").waitFor();
       assert.equal((await page.locator(".course-head h1").innerText()).trim(), course.nome, course.id);
       const editor = await metrics(page);
-      assert.equal(await page.locator("#course-body .block-card").count(), course.blocos.length, course.id + " — blocos Wagtail");
+      const combined = course.blocos.filter((b,i) => i>0 && b.tipo==="texto" &&
+         ["Graduação","Pós-graduação"].includes(b.titulo) &&
+         course.blocos[i-1]?.titulo==="Continue seus estudos no IFMG").length;
+       assert.equal(await page.locator("#course-body .block-card").count(), course.blocos.length - combined, course.id + " — blocos Wagtail");
+       if(combined) {
+         const i=course.blocos.findIndex(b=>b.titulo==="Continue seus estudos no IFMG");
+         const rich=page.locator('#course-body #bloco-'+i+' .rich-example');
+         assert.ok((await rich.first().innerHTML()).includes("<h2>Continue seus estudos no IFMG</h2><h3>"),course.id+" — H2/H3 no mesmo campo de cópia");
+       }
       assert.ok(editor.horizontalOverflow <= 2, JSON.stringify({ width, course: course.id, mode: "copiar", ...editor }));
       assert.ok(await page.locator(".course-side nav a").count() >= 12, course.id + ": índice");
       const sideLabels = await page.locator(".course-side nav").innerText();

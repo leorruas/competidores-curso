@@ -36,11 +36,11 @@ test("F7.46: dados curriculares não são transferidos entre campi", () => {
 
 test("F7.46: galeria por experiência, sem atribuir atividade do integrado", () => {
   const galerias = curso.blocos.filter(b => b.tipo === "galeria");
-  assert.equal(galerias.length, 2);
+  assert.equal(galerias.length, 1);
   assert.ok(galerias.every(g => g.itens.length === 0));
   const ix = curso.blocos.findIndex(b => b.tipo === "texto" && b.titulo === "Experiências e conquistas dos estudantes");
-  assert.match(curso.blocos[ix].conteudo, /27 de fevereiro de 2026/);
-  assert.equal(curso.blocos[ix + 1].tipo, "galeria");
+  assert.equal(curso.blocos[ix].conteudo, "Informação incompleta");
+  assert.equal(curso.blocos[ix + 1].titulo, "Perguntas frequentes");
   assert.ok(!/bolsistas de Ipatinga|premiados de Ipatinga/i.test(all));
 });
 

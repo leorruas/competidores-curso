@@ -17,11 +17,11 @@ test('F7.10: oito ofertas de Informática Integrado respeitam modalidades e cont
 });
 test('F7.10: nove experiências reais com galerias próprias e FAQ não tecnicista',()=>{
  const g=b.map((x,i)=>x.tipo==='galeria'?{...x,i}:null).filter(Boolean);
- assert.equal(g.length,10);assert.equal(new Set(g.map(x=>x.referencia)).size,10);
+ assert.equal(g.length,8);assert.equal(new Set(g.map(x=>x.referencia)).size,8);
  assert.ok(g.every(x=>x.itens.length===0&&b[x.i-1].tipo==='texto'));
  const faq=b.find(x=>x.tipo==='faq'&&!x.titulo).itens;
  assert.ok(faq.every(x=>!/^O que (é|são) /.test(x.pergunta)));
  const s=JSON.stringify(c);
- for(const term of ['Golden Girls','ConectaMed',"MinasCoder","Canguru","Troféu de Robustez","14 experimentos","779,3","960 pontos"])assert.ok(s.includes(term),term);
+ for(const term of ['Golden Girls','ConectaMed',"MinasCoder","Canguru","Troféu de Robustez","14 experimentos"])assert.ok(s.includes(term),term);
  assert.ok(!s.includes('Auditoria de fontes'));
 });

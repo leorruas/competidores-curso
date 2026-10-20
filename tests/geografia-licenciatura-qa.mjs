@@ -41,6 +41,6 @@ test("F9.4: Geografia mantém pesquisa publicada e remove visitas de rotina",()=
  const pos=b.findIndex(x=>x.titulo==="Pós-graduação");
  assert.ok(b[pos+1].linhas.some(x=>x[0].includes("PROFGEO")&&x[1].includes("Ouro Preto")));
  const txt=JSON.stringify(c);
- assert.doesNotMatch(txt,/Auditoria privada|igor\\.santos@ifmg\\.edu\\.br|https:\\/\\/www2?\\.ifmg\\.edu\\.br/);
+ assert.doesNotMatch(txt,/Auditoria privada|igor[.]santos@ifmg[.]edu[.]br|www2?[.]ifmg[.]edu[.]br/);
  assert.deepEqual(data.courses.map(x=>x.id),[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
 });

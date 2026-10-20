@@ -33,7 +33,7 @@ function pilotoPos(tipo) {
         conteudo:mestrado?"Finanças comportamentais e finanças corporativas.":"Projeto técnico aplicado."},
       {tipo:"galeria",referencia:"Ambientes e atividades de pós-graduação em Formiga",itens:[]},
       {tipo:"texto",titulo:"Onde o IFMG oferece o curso",conteudo:"O Campus Formiga oferece esta formação."},
-      {tipo:"tabela",colunas:["Campus","Modalidade","E-mail da coordenação"],
+      {tipo:"tabela",cabecalhoPrimeiraLinha:true,colunas:["Campus","Modalidade","E-mail da coordenação"],
         linhas:[["Formiga",mestrado?"Presencial":"EaD","Informação incompleta"]]},
       {tipo:"texto",titulo:"Experiências e conquistas dos estudantes",
         conteudo:mestrado?"Uma dissertação defendida em 2025 investigou finanças.":""},
@@ -52,7 +52,7 @@ function incluirContinuacao(curso, nivel = "Mestrado profissional") {
   const i = curso.blocos.findIndex(b => b.titulo === "Experiências e conquistas dos estudantes");
   curso.blocos.splice(i, 0,
     {tipo:"texto",titulo:"Continue seus estudos no IFMG",conteudo:""},
-    {tipo:"tabela",colunas:["Curso","Campus","Nível","Relação com o curso"],
+    {tipo:"tabela",cabecalhoPrimeiraLinha:true,colunas:["Curso","Campus","Nível","Relação com o curso"],
       linhas:[["Mestrado Profissional em Administração","Formiga",nivel,
         "Pesquisa aplicada após a especialização"]]}
   );

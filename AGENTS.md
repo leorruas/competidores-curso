@@ -2,6 +2,12 @@
 
 Esta aplicação é uma ferramenta de **copiar campos e blocos para o Wagtail**, não um portal de marketing, nem o site institucional de cursos já publicado. A pesquisa e os modelos brutos estão no repositório privado `leorruas/competidores-cursos`; não importar notas privadas ou análises de concorrentes para cá.
 
+## Marcador obrigatório para pendências de revisão acadêmica
+
+- Quando uma página, auditoria ou **pull request** tiver pendência acadêmica, curricular, normativa ou de condição essencial de oferta ainda não resolvida, usar **exatamente `PRECISA DE REVISÃO` EM CAIXA ALTA**, de forma visível e inequívoca. Nas PRs do Guia, colocar **`[PRECISA DE REVISÃO]` no início do título** e **`## PRECISA DE REVISÃO ACADÊMICA` no início da descrição**, com os problemas concretos que exigem conferência e os limites do que já está comprovado. Atualizar também o item correspondente do backlog privado com o mesmo marcador e as pendências específicas, sem criar itens duplicados.
+- **Não retirar ou atenuar a identificação porque CI, testes ou QA visual passaram.** Esses testes demonstram apenas consistência técnica. A PR fica em rascunho enquanto não houver decisão editorial expressa. Pode haver decisão específica de integrar ao **Guia** uma página `em_validacao` com informações incertas claramente marcadas `Informação incompleta`; registrar essa decisão e preservar a revisão pendente no roteiro/auditoria, sem confundir integração no Guia com **homologação no Wagtail**. Remover o marcador da PR somente após resolver documentalmente as pendências ou registrar essa decisão expressa e suas ressalvas.
+- **Não inserir o aviso `PRECISA DE REVISÃO` no texto institucional copiável para a página do curso.** Sinalização e justificativas pertencem a PR, backlog, auditoria e metadados privados; dados desconhecidos continuam como `Informação incompleta` nos campos de cadastro.
+
 ## Conteúdo editorial
 - Usar **voz institucional direta**: `O curso prevê estágio e TCC`, nunca `Segundo o PPC...`, `O PS 2027 informa...` ou `a coordenação deve confirmar...` dentro do texto copiável. Se um fato não estiver confirmado, deixar **Informação incompleta** no conteúdo público e registrar a validação somente na vault privada; não inventar.
 - **Agrupar mesma formação e mesmo tipo/grau entre campi**: uma página para Administração Bacharelado reúne todas as seis ofertas 2027; Técnico em Administração Integrado é separado. Técnico em Logística Subsequente e Tecnologia em Logística também são separados. Dados específicos ficam por campus.

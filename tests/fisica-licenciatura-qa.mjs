@@ -24,14 +24,14 @@ test("F7.31: Física licenciatura multicampi e PPCs de 2023/2026",()=>{
  assert.match(local.itens[2].resposta,/TCC I/);
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
-test("F7.31: experiência 2025-2026 e galeria específica sem inventar participação",()=>{
+test("F9.4: PIBID contextualizado como oportunidade e visitas removidas das conquistas",()=>{
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
  assert.ok(i>0);
- for(const j of [i,i+2,i+4]){assert.equal(b[j].tipo,"texto");assert.equal(b[j+1].tipo,"galeria");assert.deepEqual(b[j+1].itens,[]);}
- assert.match(b[i].conteudo,/59 bolsistas em conjunto/);
- assert.match(b[i+2].conteudo,/Centro de Ciências/);
- assert.match(b[i+4].conteudo,/setembro de 2025/);
- assert.equal(b.filter(x=>x.tipo==="galeria").length,6);
+ assert.equal(b[i].conteudo,"");
+ assert.equal(b[i+1].titulo,"Perguntas frequentes");
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,3);
+ assert.ok(b.some(x=>x.titulo==="Pesquisa, extensão e oportunidades"&&/PIBID de Física/.test(x.conteudo)));
+ assert.ok(!b.some(x=>x.tipo==="galeria"&&/Centro de Ciências|Escola Família Agrícola|Subprojeto de Física do PIBID/.test(x.referencia||"")));
  assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
  assert.deepEqual(data.courses.map(x=>x.id),[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
 });

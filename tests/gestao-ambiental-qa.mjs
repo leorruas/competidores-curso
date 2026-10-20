@@ -25,25 +25,19 @@ test("F7.33: Gestão Ambiental tecnólogo GV, currículo 2026, estágio e coorde
  assert.ok(b.find(x=>x.tipo==="introducao").conteudo.length<=280);
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
-test("F7.33: experiências datadas 2025, galerias e auditoria restrita",()=>{
- assert.equal(b.length,26);
- assert.equal(b.filter(x=>x.tipo==="galeria").length,3);
+test("F9.4: Gestão Ambiental mantém resultado de egresso, sem visita de rotina",()=>{
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
  assert.ok(i>0);
- assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
- for(const k of [i,i+2]){
-  assert.equal(b[k].tipo,"texto");
-  assert.equal(b[k+1].tipo,"galeria");
-  assert.deepEqual(b[k+1].itens,[]);
- }
- assert.match(b[i].conteudo,/29 de janeiro de 2025/);
- assert.match(b[i].conteudo,/Cenibra/);
- assert.match(b[i+2].conteudo,/5 de junho de 2025/);
- assert.match(b[i+2].conteudo,/egresso de Gestão Ambiental/);
+ assert.match(b[i].conteudo,/5 de junho de 2025/);
+ assert.match(b[i].conteudo,/Guilherme Freitas/);
+ assert.match(b[i].conteudo,/biodigestores desenvolvidos com comunidades/);
+ assert.equal(b[i+1].titulo,"Perguntas frequentes");
+ assert.equal(b.filter(x=>x.tipo==="galeria").length,1);
+ assert.doesNotMatch(JSON.stringify(c),/Visita dos estudantes de Gestão Ambiental à Cenibra/);
  const p=b.findIndex(x=>x.titulo==="Pós-graduação");
  assert.ok(b[p+1].linhas.some(x=>x[0]==="Especialização em Meio Ambiente"&&x[1].includes("São João Evangelista")));
  assert.ok(b[p+1].linhas.some(x=>x[0].includes("Sustentabilidade e Tecnologia Ambiental")&&x[1]==="Bambuí"));
  const copy=JSON.stringify(c);
- assert.doesNotMatch(copy,/Auditoria privada|matriz privada|TCC obrigatório|coordenacao\.enc\.gv@ifmg\.edu\.br|https:\/\/www2?\.ifmg\.edu\.br/);
+ assert.doesNotMatch(copy,/Auditoria privada|matriz privada|TCC obrigatório|coordenacao\\.enc\\.gv@ifmg\\.edu\\.br|https:\\/\\/www2?\\.ifmg\\.edu\\.br/);
  assert.deepEqual(data.courses.map(x=>x.id),[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR")).map(x=>x.id));
 });

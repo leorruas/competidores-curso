@@ -2155,3 +2155,8 @@ test("H2 e H3 de continuidade são copiados em blocos separados", () => {
   }
   assert.ok(titles>0&&children>0);
 });
+
+test("H3 é menor que H2 na prévia e na cópia",()=>{
+ assert.match(css,/\.content-section h3\{/);
+ assert.match(css,/\.block-card \.rich-example h3\{/);
+});

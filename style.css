@@ -167,6 +167,7 @@ h1 em{color:var(--accent);font-style:normal}
 .content-section:first-child{border-top:0;padding-top:0}
 .block-overline{display:block;color:var(--accent);font:500 10px var(--mono);margin-bottom:18px;letter-spacing:.04em;text-transform:uppercase}
 .content-section h2{font-size:clamp(29px,3.5vw,44px);font-weight:600;line-height:1.07;letter-spacing:-.064em;margin:0 0 20px}
+.content-section h3{font-size:clamp(23px,2.6vw,31px);font-weight:600;line-height:1.16;letter-spacing:-.038em;margin:0 0 17px}
 .content-section p,.content-section li{color:var(--muted);font-size:17px;line-height:1.65}
 .content-section p{margin:0 0 17px}
 .content-section strong{color:var(--ink)}
@@ -414,6 +415,7 @@ h1 em{color:var(--accent);font-style:normal}
   margin:0 0 15px;
   color:var(--ink);
 }
+.block-card .rich-example h3{font:600 17px/1.35 var(--sans);letter-spacing:-.015em;margin:0 0 14px;color:var(--ink)}
 .block-card .rich-example p{font-size:16px;line-height:1.65}
 .block-card .text-example{
   font:400 14px/1.6 var(--sans);

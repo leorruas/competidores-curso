@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "courses": [
     {
       "id": "administracao-bacharelado",
@@ -5112,7 +5112,7 @@
         },
         {
           "tipo": "texto",
-          "conteudo": "Em **Arcos**, a aprendizagem é organizada por **Trabalhos Acadêmicos Integradores (TAI)**: estudantes relacionam conteúdos de diferentes disciplinas para desenvolver soluções, produtos ou protótipos e apresentar seus resultados. A formação também integra ações de extensão.",
+          "conteudo": "Em **Arcos**, a aprendizagem é organizada por **Trabalhos Acadêmicos Integradores (TAI)**: estudantes relacionam conteúdos de diferentes disciplinas para desenvolver soluções, produtos ou protótipos e apresentar seus resultados. A formação também integra ações de extensão.\n\nEm **Betim**, trabalhos finais de estudantes de Engenharia Mecânica divulgados para bancas em janeiro e fevereiro de 2026 abordaram o **ciclo de vida de baterias de veículos elétricos**, a **manutenção preditiva de equipamentos** e a **otimização de processos de usinagem CNC**. Esses são exemplos de temas desenvolvidos na conclusão da graduação.",
           "titulo": "Projetos e experiências acadêmicas"
         },
         {
@@ -5291,13 +5291,8 @@
         },
         {
           "tipo": "texto",
-          "conteudo": "Em **Betim**, trabalhos finais de estudantes de Engenharia Mecânica divulgados para bancas em janeiro e fevereiro de 2026 abordaram o **ciclo de vida de baterias de veículos elétricos**, a **manutenção preditiva de equipamentos** e a **otimização de processos de usinagem CNC**. Esses são exemplos de temas desenvolvidos na conclusão da graduação.",
+          "conteudo": "",
           "titulo": "Experiências e conquistas dos estudantes"
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Trabalhos finais e bancas · Betim",
-          "itens": []
         },
         {
           "tipo": "texto",

@@ -21,15 +21,16 @@ test("F7.6: Eletrotécnica Integrado distingue três campi e não reaproveita ca
  assert.equal(b.find(x=>x.titulo==="Continue seus estudos no IFMG").conteudo,"");
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
-test("F7.6: oito experiências recentes possuem galeria individual, sem atribuir prêmios a cursos errados",()=>{
+test("F9.4: reconhecimentos preservados, preparação profissional fora de conquistas",()=>{
  const ix=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
  const gs=b.map((x,i)=>x.tipo==="galeria"?{...x,index:i}:null).filter(Boolean);
- assert.equal(gs.length,6);
+ assert.ok(!gs.some(x=>/Preparação para o Mundo do Trabalho/.test(x.referencia)));
  assert.equal(new Set(gs.map(x=>x.referencia)).size,gs.length);
  assert.ok(gs.every(x=>Array.isArray(x.itens)&&x.itens.length===0&&b[x.index-1].tipo==="texto"));
  const experiences=b.slice(ix,b.findIndex((x,i)=>i>ix&&x.titulo==="Perguntas frequentes")).filter(x=>x.tipo==="texto"&&x.conteudo).map(x=>x.conteudo);
- assert.equal(experiences.length,5);
- assert.ok(experiences.every((x,i)=>b[b.findIndex(y=>y.conteudo===x)+1].tipo==="galeria"));
+ assert.doesNotMatch(experiences.join("\n"),/Preparação para o Mundo do Trabalho/);
+ assert.match(b.find(x=>x.titulo==="Pesquisa, extensão e oportunidades").conteudo,/Preparação para o Mundo do Trabalho/);
+ assert.ok(experiences.some(x=>/Paola Arantes Lopes/.test(x)));
  assert.ok(experiences.some(x=>/vice-campeonato nacional/.test(x)&&/Administração e Informática/.test(x)));
  assert.ok(experiences.some(x=>/50 estudantes dos dois cursos/.test(x)));
  assert.ok(experiences.some(x=>/Daniel Victor/.test(x)));

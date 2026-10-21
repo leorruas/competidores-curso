@@ -1,5 +1,13 @@
 # AGENTS.md — Guia de Cursos IFMG (GitHub Pages)
 
+## F8.8 — cobertura documental da pós-graduação (21/10/2026)
+
+- O usuário autorizou incluir todas as pós-graduações documentadas no Guia, inclusive títulos adicionais verificados. Essa decisão substitui os limites históricos de uma ou duas páginas por rodada. Não equivale a homologação acadêmica nem publicação no Wagtail.
+- Os novos roteiros permanecem `em_validacao`; fatos ausentes ou conflitantes usam `Informação incompleta`. Perfis profissionais comprovados podem ser concisos; não ampliar textos para atingir uma contagem artificial de caracteres. Se o perfil não estiver apurado, manter o marcador incompleto. Os critérios anteriores continuam protegidos nos cursos já existentes.
+- Os IDs revisados em `tests/fixtures/pos-f8-8.json` também têm exceção documentada de Links de serviço: não inventar URLs do portal novo nem aplicar seleção de graduação à pós. A lista é explícita; futuras inserções exigem nova conferência.
+- Separar ênfases de cursos e polos UAB de campi acadêmicos. Preservar diferenças locais e distinguir oferta histórica de turma atual. Não coletar imagens nem acrescentar galerias vazias.
+- FAQ institucional dos campi permanece separado do FAQ de candidatos, imediatamente depois da tabela de oferta. Informação local não comprovada pode permanecer incompleta e não deve aparecer como resposta pronta.
+
 ## REGRA ATUAL — SEM COLETA DE IMAGENS (20/10/2026, F9.4 / #65)
 
 **Instrução editorial mais recente do usuário; prevalece sobre quaisquer trechos históricos abaixo sobre F3.7, galeria obrigatória, imagem provisória, fotos pendentes ou cobrança à coordenação.**

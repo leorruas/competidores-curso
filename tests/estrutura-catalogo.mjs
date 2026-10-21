@@ -161,12 +161,13 @@ test("F9.6: pós-graduação pode não ter Links quando a exceção está docume
   assert.deepEqual(validarEstruturaCurso(curso), []);
 });
 
-test("F9.6: somente quatro pós-graduações têm exceção documentada de Links", () => {
+test("F9.6/F8.8: somente pós-graduações com exceção revisada podem omitir Links", () => {
  const ids=[
   "especializacao-em-gestao-da-manutencao",
   "especializacao-em-inteligencia-artificial",
   "especializacao-em-sistemas-de-energia-renovavel",
-  "mestrado-profissional-em-administracao"
+  "mestrado-profissional-em-administracao",
+  ...JSON.parse(readFileSync("tests/fixtures/pos-f8-8.json", "utf8"))
  ];
  const semLinks=catalogo.courses.filter(c=>c.nivel==="Pós-graduação"&&!c.blocos.some(b=>b.tipo==="links"));
  assert.deepEqual(semLinks.map(x=>x.id).sort(),ids.sort());

@@ -7,6 +7,8 @@ const source = readFileSync("app.js", "utf8");
 const html = readFileSync("index.html", "utf8");
 const css = readFileSync("style.css", "utf8");
 const json = JSON.parse(readFileSync("data/cursos-publicados.json", "utf8"));
+// F8.8: perfis documentados concisos ou incompletos, sem texto artificial para atingir tamanho.
+const posF88 = new Set(JSON.parse(readFileSync("tests/fixtures/pos-f8-8.json", "utf8")));
 
 function testContext(clipboard = {}) {
   const elements = new Map();
@@ -76,6 +78,11 @@ test("metadados de pesquisa não vazam e placeholders são copiáveis para o CMS
   const h=testContext();
   for (const c of json.courses) {
     for (const b of c.blocos.filter(x=>x.tipo==="texto"&&x.conteudo==="Informação incompleta")) {
+      if (["Forma de ingresso","Mundo do Trabalho"].includes(b.titulo)) {
+        assert.equal(h.editorFields(b).length,1);
+        assert.equal(h.editorFields(b)[0].value,"Informação incompleta");
+        continue;
+      }
       assert.equal(h.editorFields(b)[0].label,"Título da seção");
       assert.equal((h.editorBlock(b,0).match(/data-copy-field=/g)||[]).length,2);
     }
@@ -570,7 +577,9 @@ test("F1B.10: os oito cursos encerram com Forma de ingresso e Mundo do Trabalho"
     assert.equal(form[0].tipo,"texto");
     assert.ok(h.editorFields(form[0]).length===1,c.id+": Rich Text único com título");
     assert.ok(h.editorFields(form[0])[0].rich,c.id);
-    assert.ok(work[0].conteudo.length>250,c.id+": atividades profissionais concretas");
+    assert.ok(posF88.has(c.id)
+      ? work[0].conteudo === "Informação incompleta" || work[0].conteudo.length > 50
+      : work[0].conteudo.length>250,c.id+": atividades profissionais concretas ou lacuna explícita");
     assert.doesNotMatch(form[0].conteudo,/2026|2027|novembro|setembro|inscriç(?:ões|ão) (?:aberta|encerrada)|Quer ser lembrado/i,c.id);
     assert.doesNotMatch(form[0].conteudo,/informação incompleta|precisa de validação|pendente|controle privado/i,c.id);
     if(graduationIds.includes(c.id)){
@@ -755,7 +764,9 @@ test("F3.6: todos os oito cursos descrevem tarefas reais no Mundo do Trabalho", 
   for(const course of json.courses) {
     const matching=course.blocos.filter(x=>x.tipo==="texto"&&x.titulo==="Mundo do Trabalho");
     assert.equal(matching.length,1,course.id);
-    assert.ok(matching[0].conteudo.length>500,course.id);
+    assert.ok(posF88.has(course.id)
+      ? matching[0].conteudo === "Informação incompleta" || matching[0].conteudo.length > 50
+      : matching[0].conteudo.length>500,course.id);
     for(const term of expected.get(course.id)||[]) {
       assert.ok(matching[0].conteudo.toLowerCase().includes(term.toLowerCase()),course.id+": "+term);
     }
@@ -1000,7 +1011,7 @@ test("as seções editoriais existem, independentemente da posição contextual 
   const h=testContext();
   for (const c of json.courses) {
     const gallery=c.blocos.find(b=>b.tipo==="galeria");
-    assert.ok(gallery,c.nome);
+    if(gallery && !gallery.itens.length) assert.equal(h.editorBlock(gallery,0),"",c.nome+": legado vazio inativo");
     const texts=c.blocos.filter(b=>b.tipo==="texto");
     const titles=texts.map(b=>b.titulo || "");
     assert.ok(!titles.some(t=>/^Reconhecimentos e (?:premiações|avaliações)$/.test(t)),c.nome+": evitar seção duplicada");
@@ -1010,6 +1021,12 @@ test("as seções editoriais existem, independentemente da posição contextual 
     for (const b of texts.filter(b=>b.conteudo==="Informação incompleta")) {
       assert.ok(b.titulo,c.nome+": seção incompleta precisa de título");
       const fields=h.editorFields(b);
+      if (["Forma de ingresso","Mundo do Trabalho"].includes(b.titulo)) {
+        assert.equal(fields.length,1);
+        assert.equal(fields[0].label,b.titulo);
+        assert.equal(fields[0].value,"Informação incompleta");
+        continue;
+      }
       assert.equal(fields[0].label,"Título da seção");
       assert.equal(fields[0].value,b.titulo);
       assert.equal(fields[1].value,"Informação incompleta");
@@ -1945,7 +1962,8 @@ test("Forma de ingresso e Mundo do Trabalho copiam só o conteúdo em todos os c
       assert.equal(fields[0].value,block.conteudo,c.id+" / "+title);
       assert.equal(h.blockCopy(block),block.conteudo,c.id+" / "+title);
       assert.ok(!fields[0].html.includes("<h2>"),c.id+" / "+title+": título não pode ir para a área de transferência");
-      assert.match(h.blockPreview(block,0),new RegExp("<h2>"+title+"</h2>"),c.id+" / "+title+": título continua na prévia");
+      if(block.conteudo === "Informação incompleta") assert.equal(h.blockPreview(block,0),"",c.id+": lacuna não vira conteúdo institucional");
+      else assert.match(h.blockPreview(block,0),new RegExp("<h2>"+title+"</h2>"),c.id+" / "+title+": título continua na prévia");
       const rendered=h.editorBlock(block,0);
       assert.match(rendered,new RegExp("editor-field-label[^>]*>"+title+"<"),c.id+" / "+title+": título continua visível no editor");
       assert.equal((rendered.match(/data-copy-field=/g)||[]).length,block.conteudo?.trim() ? 1 : 0,c.id+" / "+title);
@@ -1976,9 +1994,9 @@ test("cópia simples e seção incompleta não inserem títulos das duas seçõe
   assert.match(rendered,/data-copy-field=/);
 });
 
-test("título da página é o primeiro campo de cópia em todos os 73 cursos", () => {
+test("título da página é o primeiro campo de cópia em todo o catálogo", () => {
   const h=testContext();
-  assert.equal(json.courses.length,73);
+  assert.ok(json.courses.length>=73,"preservar cobertura já existente");
   for (const course of json.courses) {
     h.renderCourse(course);
     const markup=h.elements.get("course-content").innerHTML;
@@ -1996,7 +2014,7 @@ test("título da página é o primeiro campo de cópia em todos os 73 cursos", (
   assert.match(h.pageTitleHTML(h.demo),/data-copy-page-title/);
 });
 
-test("texto introdutório copia só parágrafos, sem o nome repetido do curso, nos 73 roteiros", async () => {
+test("texto introdutório copia só parágrafos, sem o nome repetido do curso, em todo o catálogo", async () => {
   const h=testContext();
   for (const course of json.courses) {
     const intro=course.blocos[1];

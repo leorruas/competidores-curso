@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "courses": [
     {
       "id": "administracao-bacharelado",
@@ -22792,7 +22792,7 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "No **Campus Bambuí**, o **Grupo de Estudos em Animais Silvestres (GEAS)**, criado por estudantes de Zootecnia, desenvolve estudos, seminários, palestras, visitas técnicas e cursos sobre conservação, nutrição, legislação e manejo de animais silvestres e exóticos. O grupo divulga suas atividades e organiza a participação de estudantes conforme sua programação."
+          "conteudo": "No **Campus Bambuí**, o **Grupo de Estudos em Animais Silvestres (GEAS)**, criado por estudantes de Zootecnia, desenvolve estudos, seminários, palestras, visitas técnicas e cursos sobre conservação, nutrição, legislação e manejo de animais silvestres e exóticos. O grupo divulga suas atividades e organiza a participação de estudantes conforme sua programação.\n\nEm **maio de 2025**, estudantes do sexto período de Zootecnia do **Campus Bambuí** participaram de uma conversa sobre extensão com dois profissionais formados no próprio curso. O encontro ocorreu na disciplina Componentes Curriculares Exclusivos de Extensão III e abordou o trabalho com produtores, escolas e comunidades, a importância de uma abordagem humanizada e as diferentes atividades de gestão em propriedades rurais."
         },
         {
           "tipo": "galeria",
@@ -22830,12 +22830,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **maio de 2025**, estudantes do sexto período de Zootecnia do **Campus Bambuí** participaram de uma conversa sobre extensão com dois profissionais formados no próprio curso. O encontro ocorreu na disciplina Componentes Curriculares Exclusivos de Extensão III e abordou o trabalho com produtores, escolas e comunidades, a importância de uma abordagem humanizada e as diferentes atividades de gestão em propriedades rurais."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Encontro sobre extensão com egressos de Zootecnia · Bambuí · maio de 2025",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",

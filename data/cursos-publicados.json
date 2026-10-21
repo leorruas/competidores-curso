@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "courses": [
     {
       "id": "administracao-bacharelado",
@@ -3957,12 +3957,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **julho de 2025**, estudantes de **Engenharia de Controle e Automação do Campus Sabará** desenvolveram o projeto **“Relatividade em Cena”**, com uma proposta de oficina para aproximar estudantes dos cursos técnicos de conceitos da Teoria da Relatividade por meio de atividades criativas. A programação divulgada previa encontros em 28 e 29 de julho."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Projeto estudantil Relatividade em Cena · Engenharia de Controle e Automação Sabará · julho de 2025",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",

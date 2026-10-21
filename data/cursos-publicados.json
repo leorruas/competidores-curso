@@ -8631,11 +8631,11 @@
             },
             {
               "rotulo": "Carga horária",
-              "valor": "Informação incompleta"
+              "valor": "450 horas"
             },
             {
               "rotulo": "Duração",
-              "valor": "Informação incompleta"
+              "valor": "24 meses"
             },
             {
               "rotulo": "Apresentação",
@@ -8659,7 +8659,7 @@
             },
             {
               "rotulo": "Trabalho final",
-              "valor": "Informação incompleta"
+              "valor": "Trabalho de conclusão de curso obrigatório, com 90 horas incluídas nas 450 horas totais"
             }
           ]
         },
@@ -8702,16 +8702,16 @@
               "Bambuí",
               "EaD",
               "Informação incompleta",
-              "Informação incompleta",
-              "Informação incompleta",
+              "450 horas",
+              "24 meses",
               "Informação incompleta"
             ],
             [
               "São João Evangelista",
               "EaD",
               "Informação incompleta",
-              "Informação incompleta",
-              "Informação incompleta",
+              "450 horas",
+              "24 meses",
               "Informação incompleta"
             ]
           ],
@@ -8730,6 +8730,11 @@
               "resposta": "A formação está vinculada academicamente ao Campus São João Evangelista."
             }
           ]
+        },
+        {
+          "tipo": "texto",
+          "titulo": "Trabalho final",
+          "conteudo": "Trabalho de conclusão de curso obrigatório, com 90 horas incluídas nas 450 horas totais."
         },
         {
           "tipo": "texto",
@@ -8771,7 +8776,7 @@
         {
           "tipo": "texto",
           "titulo": "Mundo do Trabalho",
-          "conteudo": "Informação incompleta"
+          "conteudo": "A formação aprofunda a gestão de organizações, o planejamento de estratégias, a organização de recursos e a tomada de decisões. Os estudos articulam Marketing, Finanças, Recursos Humanos, Operações, Logística e inovação, de acordo com as ênfases e a formação anterior."
         }
       ]
     },
@@ -9077,8 +9082,7 @@
       "nivel": "Pós-graduação",
       "tipo": "Especialização",
       "campi": [
-        "Ouro Branco",
-        "São João Evangelista"
+        "Ouro Branco"
       ],
       "modalidade": "Presencial",
       "status": "em_validacao",
@@ -9105,7 +9109,7 @@
             },
             {
               "rotulo": "Apresentação",
-              "valor": "Amplie sua formação em Gestão de Negócios, observando as características acadêmicas de cada campus."
+              "valor": "Aprofunde sua formação em Gestão de Negócios na especialização do IFMG."
             },
             {
               "rotulo": "Modalidade",
@@ -9117,7 +9121,7 @@
             },
             {
               "rotulo": "Campi",
-              "valor": "Ouro Branco; São João Evangelista"
+              "valor": "Ouro Branco"
             },
             {
               "rotulo": "Estágio supervisionado",
@@ -9132,11 +9136,11 @@
         {
           "tipo": "texto",
           "titulo": "Especialização em Gestão de Negócios",
-          "conteudo": "Amplie sua formação em Gestão de Negócios, observando as características acadêmicas de cada campus."
+          "conteudo": "Aprofunde sua formação em Gestão de Negócios na especialização do IFMG."
         },
         {
           "tipo": "introducao",
-          "conteudo": "Amplie sua formação em Gestão de Negócios, observando as características acadêmicas de cada campus."
+          "conteudo": "Aprofunde sua formação em Gestão de Negócios na especialização do IFMG."
         },
         {
           "tipo": "texto",
@@ -9171,14 +9175,6 @@
               "Informação incompleta",
               "Informação incompleta",
               "Informação incompleta"
-            ],
-            [
-              "São João Evangelista",
-              "Informação incompleta",
-              "Informação incompleta",
-              "Informação incompleta",
-              "Informação incompleta",
-              "Informação incompleta"
             ]
           ],
           "cabecalhoPrimeiraLinha": true
@@ -9190,10 +9186,6 @@
             {
               "pergunta": "Campus Ouro Branco",
               "resposta": "A formação está vinculada academicamente ao Campus Ouro Branco."
-            },
-            {
-              "pergunta": "Campus São João Evangelista",
-              "resposta": "A formação está vinculada academicamente ao Campus São João Evangelista."
             }
           ]
         },

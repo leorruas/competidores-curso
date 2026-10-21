@@ -42,6 +42,10 @@ test("F8.8: ênfases e polos não criam cursos ou campi artificiais", () => {
   assert.deepEqual(get("especializacao-em-ensino-de-ciencias-e-matematica").campi, ["Bambuí"]);
   assert.match(value(get("especializacao-em-ensino-de-ciencias-e-matematica"), "Modalidade"), /EaD/);
   assert.equal(courses.filter(c => c.id === "especializacao-em-gestao").length, 1);
+  assert.deepEqual(get("especializacao-em-gestao").campi,["Bambuí","São João Evangelista"]);
+  assert.equal(value(get("especializacao-em-gestao"),"Carga horária"),"450 horas");
+  assert.equal(value(get("especializacao-em-gestao"),"Duração"),"24 meses");
+  assert.deepEqual(get("especializacao-em-gestao-de-negocios").campi,["Ouro Branco"],"não duplicar SJE sem comprovar curso distinto");
 });
 
 test("F8.8: Educação de Neves e Educação Básica de Piumhi permanecem distintas", () => {
@@ -87,6 +91,19 @@ test("F8.8: formação adicional em Sistemas Inteligentes preserva TCC incluído
   assert.equal(value(c, "Duração"), "15 meses");
   assert.match(value(c, "Trabalho final"), /60 horas incluídas nas 510/);
   assert.doesNotMatch(text(c), /inscrições abertas|turmas anuais garantidas/i);
+});
+
+test("F8.8: rascunhos reaproveitados preservam carga acadêmica e ressalvas financeiras",()=>{
+  const dados=get("especializacao-em-analise-estrategica-de-dados");
+  assert.equal(value(dados,"Carga horária"),"375 horas");
+  assert.match(value(dados,"Trabalho final"),/TCC obrigatório.*Informação incompleta/);
+  const mba=get("mba-em-gestao-de-negocios-com-aplicacoes-de-inteligencia-artificial");
+  assert.match(value(mba,"Carga horária"),/360/);
+  assert.match(value(mba,"Trabalho final"),/produto técnico aplicado.*Informação incompleta/);
+  assert.doesNotMatch(text(mba),/curso totalmente gratuito|turma já iniciada|emprego garantido/i);
+  const mpsta=get("mestrado-profissional-em-sustentabilidade-e-tecnologia-ambiental");
+  assert.match(value(mpsta,"Integralização"),/24 créditos/);
+  assert.equal(value(mpsta,"Carga horária"),"Informação incompleta");
 });
 
 test("F8.8: novos roteiros respeitam o cadastro e não acrescentam galerias vazias", () => {

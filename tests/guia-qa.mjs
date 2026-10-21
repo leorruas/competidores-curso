@@ -1456,15 +1456,14 @@ test("F9.4: Edificações mantém a seção sem conquistar resultados de visitas
   assert.doesNotMatch(JSON.stringify(c.blocos),/instalações da Vale|Usina Hidrelétrica de Baguari|shopping no bairro Bauxita/);
 });
 
-test("F9.4: Administração Integrado preserva orientação UFMG fora de conquistas", () => {
+test("F9.4: Administração Integrado retira visita UFMG por decisão editorial", () => {
   const c=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
   const practice=sectionText(c,"Projetos e experiências");
   assert.match(practice,/programa Nossa Escola Pesquisa Sua Opinião \(NEPSO\)/);
-  assert.match(practice,/30 de maio de 2026.*Campus Ponte Nova/);
-  assert.match(practice,/Mostra Sua UFMG/);
+  assert.doesNotMatch(JSON.stringify(c.blocos),/Mostra Sua UFMG/);
   assert.doesNotMatch(practice,/resultados publicados|pesquisa concluída|questionários aplicados/);
   assert.equal(sectionText(c,"Experiências e conquistas dos estudantes"),"");
-  assert.equal(c.blocos.filter(b=>b.tipo==="texto"&&/Mostra Sua UFMG/.test(b.conteudo||"")).length,1);
+  assert.equal(c.blocos.filter(b=>b.tipo==="texto"&&/Mostra Sua UFMG/.test(b.conteudo||"")).length,0);
   assert.ok(!c.blocos.some(b=>b.tipo==="galeria"&&/Mostra Sua UFMG/.test(b.referencia||"")));
 });
 

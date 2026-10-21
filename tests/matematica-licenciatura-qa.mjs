@@ -32,21 +32,17 @@ test("F7.38: Matemática multicampi diferencia Formiga de São João Evangelista
  assert.ok(b.at(-1).conteudo.length>500);
 });
 
-test("F7.38: experiências comprovadas, três galerias e auditoria privada isolada",()=>{
- assert.equal(b.length,26);
- assert.equal(b.filter(x=>x.tipo==="galeria").length,3);
+test("F9.4: formação em extensão preservada fora de conquistas, sem galeria obrigatória",()=>{
  assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
- assert.ok(i>0);
- for(const k of [i,i+2]){
-  assert.equal(b[k].tipo,"texto");
-  assert.equal(b[k+1].tipo,"galeria");
-  assert.deepEqual(b[k+1].itens,[]);
- }
- assert.match(b[i].conteudo,/julho de 2026/);
- assert.match(b[i].conteudo,/escolas da cidade/);
- assert.match(b[i+2].conteudo,/junho de 2026/);
- assert.match(b[i+2].conteudo,/Encontro Institucional/);
+ assert.equal(b[i].conteudo, "");
+ assert.equal(b[i+1].titulo,"Perguntas frequentes");
+ const opportunities=b.find(x=>x.titulo==="Pesquisa, extensão e oportunidades").conteudo;
+ assert.match(opportunities,/julho de 2026/);
+ assert.match(opportunities,/escolas da cidade/);
+ assert.match(opportunities,/junho de 2026/);
+ assert.match(opportunities,/Encontro Institucional/);
+ assert.ok(!b.some(x=>x.tipo==="galeria"&&/Ações de extensão de licenciandos|Bolsistas do PIBID/.test(x.referencia||"")));
  const p=b.findIndex(x=>x.titulo==="Pós-graduação");
  assert.ok(b[p+1].linhas.some(x=>x[0]==="Especialização em Educação Matemática e suas Tecnologias"&&x[1]==="São João Evangelista (EaD)"));
  assert.ok(b[p+1].linhas.some(x=>x[0]==="Especialização em Educação Matemática"&&x[1]==="Sabará"));

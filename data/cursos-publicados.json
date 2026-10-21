@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "courses": [
     {
       "id": "administracao-bacharelado",
@@ -8836,7 +8836,7 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Os campi **Formiga e São João Evangelista** participam do **Programa Institucional de Bolsa de Iniciação à Docência (PIBID)**, que aproxima licenciandos de escolas públicas e professores supervisores. Os estudantes também podem participar de pesquisa em Educação Matemática, projetos de extensão, atividades com softwares educacionais e desenvolvimento de materiais didáticos. A participação em bolsas e projetos depende das seleções de cada período."
+          "conteudo": "Os campi **Formiga e São João Evangelista** participam do **Programa Institucional de Bolsa de Iniciação à Docência (PIBID)**, que aproxima licenciandos de escolas públicas e professores supervisores. Os estudantes também podem participar de pesquisa em Educação Matemática, projetos de extensão, atividades com softwares educacionais e desenvolvimento de materiais didáticos. A participação em bolsas e projetos depende das seleções de cada período.\n\nEm **julho de 2026**, estudantes da **Licenciatura em Matemática do Campus Formiga** realizaram **ações de extensão em escolas da cidade**, aproximando o aprendizado da graduação do ensino de Matemática na educação básica. As atividades buscaram tornar o estudo dos conteúdos matemáticos mais dinâmico.\n\nEm **junho de 2026**, **bolsistas do PIBID do Campus Formiga** participaram do **Encontro Institucional do programa**, realizado no **Campus Bambuí**. A atividade integrou estudantes e equipes das licenciaturas em uma programação de formação e troca de experiências relacionadas à docência."
         },
         {
           "tipo": "texto",
@@ -8916,22 +8916,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **julho de 2026**, estudantes da **Licenciatura em Matemática do Campus Formiga** realizaram **ações de extensão em escolas da cidade**, aproximando o aprendizado da graduação do ensino de Matemática na educação básica. As atividades buscaram tornar o estudo dos conteúdos matemáticos mais dinâmico."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Ações de extensão de licenciandos de Matemática em escolas de Formiga · julho de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Bolsistas compartilham experiências no encontro do PIBID",
-          "conteudo": "Em **junho de 2026**, **bolsistas do PIBID do Campus Formiga** participaram do **Encontro Institucional do programa**, realizado no **Campus Bambuí**. A atividade integrou estudantes e equipes das licenciaturas em uma programação de formação e troca de experiências relacionadas à docência."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Bolsistas do PIBID do Campus Formiga no Encontro Institucional em Bambuí · junho de 2026",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",

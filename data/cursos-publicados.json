@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "courses": [
     {
       "id": "administracao-bacharelado",
@@ -10623,7 +10623,7 @@
         },
         {
           "tipo": "texto",
-          "conteudo": "Em **2026**, estudantes do Técnico em Administração do **Campus Sabará** participaram de visita técnica à **Expo Favela Minas**, onde conheceram iniciativas de negócios e inovação.",
+          "conteudo": "Em **2026**, estudantes do Técnico em Administração do **Campus Sabará** participaram de visita técnica à **Expo Favela Minas**, onde conheceram iniciativas de negócios e inovação.\n\nEm 30 de maio de 2026, estudantes do terceiro ano do Técnico em Administração Integrado do Campus Ponte Nova participaram da Mostra Sua UFMG, em Belo Horizonte, junto com estudantes de Informática. Conheceram cursos superiores, projetos, laboratórios e informações sobre formas de ingresso e assistência estudantil, em uma atividade de orientação para a continuidade dos estudos.",
           "titulo": "Projetos e experiências"
         },
         {
@@ -10830,12 +10830,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em 30 de maio de 2026, estudantes do terceiro ano do Técnico em Administração Integrado do Campus Ponte Nova participaram da Mostra Sua UFMG, em Belo Horizonte, junto com estudantes de Informática. Conheceram cursos superiores, projetos, laboratórios e informações sobre formas de ingresso e assistência estudantil, em uma atividade de orientação para a continuidade dos estudos."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Visita à Mostra Sua UFMG · Ponte Nova · maio de 2026",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",

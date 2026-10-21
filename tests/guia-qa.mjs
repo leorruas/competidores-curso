@@ -179,7 +179,7 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
     ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]
   ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
   assert.equal(get("tecnico-em-edificacoes-integrado"),"","visitas didáticas não são conquistas documentadas");
-  assert.match(get("tecnico-em-administracao-integrado"),/Mostra Sua UFMG/);
+  assert.equal(get("tecnico-em-administracao-integrado"),"");
   for(const id of ["tecnico-em-logistica-subsequente","direito-bacharelado-arcos"]){
     assert.equal(get(id),"Informação incompleta",id+": uma única pendência, sem inventar conquista");
   }
@@ -814,7 +814,7 @@ test("fase 1: galeria acompanha projetos e Administração não tem link ou dest
   assert.equal(e.blocos.find(b=>b.tipo==="texto").titulo,"Técnico em Edificações");
   const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
   const achievement=tec.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes");
-  assert.match(achievement.conteudo,/Mostra Sua UFMG/);
+  assert.equal(achievement.conteudo,"");
   assert.ok(!Object.hasOwn(achievement,"validacao"));
 });
 
@@ -1456,19 +1456,16 @@ test("F9.4: Edificações mantém a seção sem conquistar resultados de visitas
   assert.doesNotMatch(JSON.stringify(c.blocos),/instalações da Vale|Usina Hidrelétrica de Baguari|shopping no bairro Bauxita/);
 });
 
-test("F3.8: Administração Integrado traz NEPSO e Mostra UFMG com galerias por experiência", () => {
+test("F9.4: Administração Integrado preserva orientação UFMG fora de conquistas", () => {
   const c=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
-  const proj=c.blocos.findIndex(b=>b.titulo==="Projetos e experiências");
-  assert.equal(c.blocos[proj+1].referencia,"Visita à Expo Favela Minas · Sabará");
-  assert.match(c.blocos[proj+2].conteudo,/programa Nossa Escola Pesquisa Sua Opinião \(NEPSO\)/);
-  assert.equal(c.blocos[proj+3].tipo,"galeria");
-  assert.match(c.blocos[proj+3].referencia,/NEPSO/);
-  const i=c.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
-  assert.match(c.blocos[i].conteudo,/30 de maio de 2026.*Campus Ponte Nova/);
-  assert.match(c.blocos[i].conteudo,/Mostra Sua UFMG/);
-  assert.match(c.blocos[i+1].referencia,/Mostra Sua UFMG/);
-  assert.equal(c.blocos[i+1].tipo,"galeria");
-  assert.doesNotMatch(c.blocos[proj+2].conteudo,/resultados publicados|pesquisa concluída|questionários aplicados/);
+  const practice=sectionText(c,"Projetos e experiências");
+  assert.match(practice,/programa Nossa Escola Pesquisa Sua Opinião \(NEPSO\)/);
+  assert.match(practice,/30 de maio de 2026.*Campus Ponte Nova/);
+  assert.match(practice,/Mostra Sua UFMG/);
+  assert.doesNotMatch(practice,/resultados publicados|pesquisa concluída|questionários aplicados/);
+  assert.equal(sectionText(c,"Experiências e conquistas dos estudantes"),"");
+  assert.equal(c.blocos.filter(b=>b.tipo==="texto"&&/Mostra Sua UFMG/.test(b.conteudo||"")).length,1);
+  assert.ok(!c.blocos.some(b=>b.tipo==="galeria"&&/Mostra Sua UFMG/.test(b.referencia||"")));
 });
 
 test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promessa de vaga", () => {

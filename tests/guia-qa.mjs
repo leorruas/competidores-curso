@@ -1495,7 +1495,7 @@ test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promess
   }
 });
 
-test("F7.1: Zootecnia Bambuí integra catálogo com conteúdos e duas galerias", () => {
+test("F9.4: Zootecnia preserva conversa curricular fora de conquistas", () => {
   assert.ok(json.courses.length>=9,"Zootecnia e oito pilotos preservados");
   const c=json.courses.find(x=>x.id==="zootecnia-bacharelado");
   assert.ok(c,"Zootecnia publicada como roteiro em validação");
@@ -1505,9 +1505,12 @@ test("F7.1: Zootecnia Bambuí integra catálogo com conteúdos e duas galerias",
   const texts=c.blocos.filter(x=>x.tipo==="texto");
   assert.ok(texts.some(x=>x.titulo==="Pesquisa, extensão e oportunidades"&&x.conteudo.includes("GEAS")));
   const xp=texts.find(x=>x.titulo==="Experiências e conquistas dos estudantes");
-  assert.ok(xp&&xp.conteudo.includes("maio de 2025")&&xp.conteudo.includes("sexto período"));
+  assert.equal(xp.conteudo, "");
+  const opportunities=sectionText(c,"Pesquisa, extensão e oportunidades");
+  assert.match(opportunities,/maio de 2025/);
+  assert.match(opportunities,/sexto período/);
+  assert.ok(!c.blocos.some(b=>b.tipo==="galeria"&&/Encontro sobre extensão com egressos/.test(b.referencia||"")));
   const gal=c.blocos.filter(x=>x.tipo==="galeria");
-  assert.equal(gal.length,2);
   for(const g of gal) assert.deepEqual(Array.from(g.itens),[]);
   for(const b of texts) assert.doesNotMatch(b.conteudo||"",/Segundo o site|a apresentação institucional registra|a coordenação deve confirmar/i);
   const campiTable=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));

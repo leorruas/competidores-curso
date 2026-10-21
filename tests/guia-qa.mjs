@@ -174,8 +174,7 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
   const get=id=>sectionText(json.courses.find(c=>c.id===id),unified);
   for(const [id,terms] of [
     ["agronomia-bacharelado",["Informação incompleta"]],
-    ["engenharia-de-producao-bacharelado",["Diretório Acadêmico","Brazilian Journal of Production Engineering"]],
-    ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]
+    ["engenharia-de-producao-bacharelado",["Diretório Acadêmico","Brazilian Journal of Production Engineering"]]
   ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
   assert.equal(get("administracao-bacharelado"),"","avaliação do curso pertence à informação do campus");
   assert.equal(get("tecnico-em-edificacoes-integrado"),"","visitas didáticas não são conquistas documentadas");
@@ -888,9 +887,11 @@ test("Betim: estágio e PFC específicos; ingresso sem números da edição ante
 test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar premiações", () => {
   const c=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
   const research=sectionText(c,"Pesquisa, extensão e oportunidades");
-  const works=sectionText(c,"Experiências e conquistas dos estudantes");
+  const works=sectionText(c,"Projetos e experiências acadêmicas");
+  assert.equal(sectionText(c,"Experiências e conquistas dos estudantes"), "");
+  assert.ok(!c.blocos.some(b=>b.tipo==="galeria"&&/Trabalhos finais e bancas/.test(b.referencia||"")));
   assert.ok(research.startsWith("Em **2026**, o **Campus Arcos**"));
-  assert.ok(works.startsWith("Em **Betim**"));
+  assert.ok(works.includes("Em **Betim**"));
   assert.match(research,/Em \*\*Betim\*\*[\s\S]*impressão 3D/);
   assert.doesNotMatch(research,/Outro projeto tratou do ensino de química|ensino de química aplicado/i);
   assert.match(works,/Em \*\*Betim\*\*[\s\S]*baterias de veículos elétricos/);

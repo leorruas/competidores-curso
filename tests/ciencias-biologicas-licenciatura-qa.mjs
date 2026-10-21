@@ -15,10 +15,10 @@ test("F7.23: Ciências Biológicas Licenciatura reúne Bambuí e SJE sem inventa
 test("F9.4: PIBID Bambuí preservado, sem anúncio de banca tratado como conquista",()=>{
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
  assert.ok(i>=0);
- assert.match(b[i].conteudo,/23 e 24 de setembro de 2025/);
- assert.equal(b[i+1].tipo,"galeria");
- assert.equal(b[i+2].titulo,"Perguntas frequentes");
- assert.equal(b.filter(x=>x.tipo==="galeria").length,2);
+ assert.equal(b[i].conteudo, "");
+ assert.equal(b[i+1].titulo,"Perguntas frequentes");
+ assert.match(b.find(x=>x.titulo==="Pesquisa, extensão e oportunidades").conteudo,/23 e 24 de setembro de 2025/);
+ assert.ok(!b.some(x=>x.tipo==="galeria"&&/Campanha de Valorização/.test(x.referencia||"")));
  assert.doesNotMatch(JSON.stringify(c),/Divulgação de defesa pública de TCC|8 de janeiro de 2026/);
  assert.ok(!JSON.stringify(c).includes("anderson.melo@ifmg.edu.br")&&!JSON.stringify(c).includes("lic.biologicas.sje@ifmg.edu.br"));
  const sorted=[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR"));

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "courses": [
     {
       "id": "administracao-bacharelado",
@@ -220,7 +220,7 @@
             },
             {
               "pergunta": "Campus Ouro Branco",
-              "resposta": "A formação é oferecida à noite, na modalidade presencial, com **8% da carga horária a distância** na oferta verificada. Os conteúdos incluem gestão de negócios, processos e atividades organizacionais."
+              "resposta": "A formação é oferecida à noite, na modalidade presencial, com **8% da carga horária a distância** na oferta verificada. Os conteúdos incluem gestão de negócios, processos e atividades organizacionais.\n\nO Bacharelado em Administração do **Campus Ouro Branco** recebeu **quatro estrelas no Guia da Faculdade de 2025**."
             },
             {
               "pergunta": "Campus Ribeirão das Neves",
@@ -343,7 +343,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "O Bacharelado em Administração do **Campus Ouro Branco** recebeu **quatro estrelas no Guia da Faculdade de 2025**."
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -1737,7 +1737,7 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "A formação oferece possibilidades de participação em projetos de ensino, pesquisa e extensão relacionados à biodiversidade, à educação científica e ao meio ambiente. No **PIBID Biologia**, os campi Bambuí e São João Evangelista atuam com escolas parceiras para desenvolver práticas pedagógicas e fortalecer a formação inicial de professores."
+          "conteudo": "A formação oferece possibilidades de participação em projetos de ensino, pesquisa e extensão relacionados à biodiversidade, à educação científica e ao meio ambiente. No **PIBID Biologia**, os campi Bambuí e São João Evangelista atuam com escolas parceiras para desenvolver práticas pedagógicas e fortalecer a formação inicial de professores.\n\nEm **23 e 24 de setembro de 2025**, estudantes do **PIBID de Ciências Biológicas do Campus Bambuí** participaram, em parceria com o projeto de extensão **Saúde com MotivAÇÃO**, de atividades de valorização da vida. A programação envolveu momentos de reflexão e ações voltadas ao bem-estar da comunidade acadêmica."
         },
         {
           "tipo": "texto",
@@ -1812,12 +1812,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **23 e 24 de setembro de 2025**, estudantes do **PIBID de Ciências Biológicas do Campus Bambuí** participaram, em parceria com o projeto de extensão **Saúde com MotivAÇÃO**, de atividades de valorização da vida. A programação envolveu momentos de reflexão e ações voltadas ao bem-estar da comunidade acadêmica."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Campanha de Valorização da Vida · PIBID Ciências Biológicas e Saúde com MotivAÇÃO · Bambuí · setembro de 2025",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -3561,7 +3556,7 @@
           "itens": [
             {
               "pergunta": "Campus Governador Valadares",
-              "resposta": "O curso é **noturno e presencial**, com duração mínima de dez semestres. A matriz atualizada em **2026** para turmas desde 2023 prevê **3.600 horas**, **160 horas de estágio supervisionado obrigatório** e **60 horas de TCC obrigatório**. O campus dispõe de Laboratório de Construção Civil e Laboratório de Ensaios Mecânicos."
+              "resposta": "O curso é **noturno e presencial**, com duração mínima de dez semestres. A matriz atualizada em **2026** para turmas desde 2023 prevê **3.600 horas**, **160 horas de estágio supervisionado obrigatório** e **60 horas de TCC obrigatório**. O campus dispõe de Laboratório de Construção Civil e Laboratório de Ensaios Mecânicos.\n\nNa avaliação presencial do **MEC**, realizada entre **31 de agosto e 2 de setembro de 2026**, o **Bacharelado em Engenharia Civil do Campus Governador Valadares** recebeu **conceito 4**, com **média contínua de 4,29 em cinco pontos**. A avaliação analisou a organização didático-pedagógica, o corpo docente e a infraestrutura."
             },
             {
               "pergunta": "Campus Piumhi",
@@ -3624,16 +3619,6 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **setembro de 2026**, o **Bacharelado em Engenharia Civil do Campus Governador Valadares** recebeu **conceito 4 em avaliação presencial do MEC**, com média contínua de **4,29 em cinco pontos**. A análise envolveu o projeto pedagógico, o corpo docente e a infraestrutura, com participação da comunidade acadêmica. Uma estudante do 10º período relatou a contribuição de projetos e atividades práticas para a formação. O curso também havia alcançado **nota 5 no Enade**, resultado distinto da avaliação de 2026."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Engenharia Civil · conceito 4 na avaliação presencial do MEC · Campus Governador Valadares · setembro de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Estudantes de Engenharia Civil reconhecidos em Piumhi",
           "conteudo": "Em reconhecimento ao desempenho acadêmico de **2025**, **dois estudantes de Engenharia Civil do Campus Piumhi** foram homenageados como **Destaque Acadêmico do IFMG**, em cerimônia na Reitoria. A distinção valorizou o comprometimento e a trajetória dos estudantes nas atividades do curso."
         },
         {
@@ -3957,12 +3942,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **julho de 2025**, estudantes de **Engenharia de Controle e Automação do Campus Sabará** desenvolveram o projeto **“Relatividade em Cena”**, com uma proposta de oficina para aproximar estudantes dos cursos técnicos de conceitos da Teoria da Relatividade por meio de atividades criativas. A programação divulgada previa encontros em 28 e 29 de julho."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Projeto estudantil Relatividade em Cena · Engenharia de Controle e Automação Sabará · julho de 2025",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -4620,16 +4600,6 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **9 de junho de 2026**, estudantes do **7º período de Engenharia Elétrica do Campus Formiga** visitaram o **Centro de Operações da Distribuição da Cemig**, em Belo Horizonte. A atividade permitiu acompanhar o monitoramento da rede elétrica em tempo real e conhecer operações de distribuição com profissionais do setor."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Visita ao Centro de Operações da Distribuição da Cemig · Engenharia Elétrica Formiga · junho de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Projetos de estudantes apresentados no COBENGE 2026",
           "conteudo": "Entre **14 e 17 de setembro de 2026**, três estudantes de **Engenharia Elétrica de Formiga** apresentaram projetos no **Congresso Brasileiro de Educação em Engenharia (COBENGE)**. Os trabalhos envolveram **modelos didáticos de energias renováveis**, o projeto de extensão **Iluminando o Saber**, com modernização de iluminação escolar, e uma ferramenta computacional para ensinar números complexos."
         },
         {
@@ -5112,7 +5082,7 @@
         },
         {
           "tipo": "texto",
-          "conteudo": "Em **Arcos**, a aprendizagem é organizada por **Trabalhos Acadêmicos Integradores (TAI)**: estudantes relacionam conteúdos de diferentes disciplinas para desenvolver soluções, produtos ou protótipos e apresentar seus resultados. A formação também integra ações de extensão.",
+          "conteudo": "Em **Arcos**, a aprendizagem é organizada por **Trabalhos Acadêmicos Integradores (TAI)**: estudantes relacionam conteúdos de diferentes disciplinas para desenvolver soluções, produtos ou protótipos e apresentar seus resultados. A formação também integra ações de extensão.\n\nEm **Betim**, trabalhos finais de estudantes de Engenharia Mecânica divulgados para bancas em janeiro e fevereiro de 2026 abordaram o **ciclo de vida de baterias de veículos elétricos**, a **manutenção preditiva de equipamentos** e a **otimização de processos de usinagem CNC**. Esses são exemplos de temas desenvolvidos na conclusão da graduação.",
           "titulo": "Projetos e experiências acadêmicas"
         },
         {
@@ -5291,13 +5261,8 @@
         },
         {
           "tipo": "texto",
-          "conteudo": "Em **Betim**, trabalhos finais de estudantes de Engenharia Mecânica divulgados para bancas em janeiro e fevereiro de 2026 abordaram o **ciclo de vida de baterias de veículos elétricos**, a **manutenção preditiva de equipamentos** e a **otimização de processos de usinagem CNC**. Esses são exemplos de temas desenvolvidos na conclusão da graduação.",
+          "conteudo": "",
           "titulo": "Experiências e conquistas dos estudantes"
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Trabalhos finais e bancas · Betim",
-          "itens": []
         },
         {
           "tipo": "texto",
@@ -8119,7 +8084,7 @@
         {
           "tipo": "texto",
           "titulo": "Aprendizagem prática no Campus Congonhas",
-          "conteudo": "A licenciatura combina produção de materiais didáticos, leitura e análise de textos, **aulas de língua inglesa, projetos culturais e experiências em escolas**. O campus dispõe de **laboratórios de informática com recursos de edição e análise linguística** e biblioteca com acervo físico e digital. A formação inclui **399 horas de extensão curricularizada**, **200 horas de atividades complementares** e **700 horas de estágio obrigatório** em Português e Inglês."
+          "conteudo": "A licenciatura combina produção de materiais didáticos, leitura e análise de textos, **aulas de língua inglesa, projetos culturais e experiências em escolas**. O campus dispõe de **laboratórios de informática com recursos de edição e análise linguística** e biblioteca com acervo físico e digital. A formação inclui **399 horas de extensão curricularizada**, **200 horas de atividades complementares** e **700 horas de estágio obrigatório** em Português e Inglês.\n\nEm **3 de maio de 2025**, estudantes de Letras visitaram a **Bienal Mineira do Livro**, em Belo Horizonte, onde acompanharam uma palestra de **Conceição Evaristo**. A atividade integrou as comemorações do Dia Internacional da Língua Portuguesa e aproximou os estudantes da produção literária contemporânea e dos debates sobre representatividade."
         },
         {
           "tipo": "galeria",
@@ -8159,14 +8124,14 @@
           "itens": [
             {
               "pergunta": "Campus Congonhas",
-              "resposta": "O curso é presencial e noturno. A formação tem **3.992 horas** e duração mínima de **nove semestres**, com **399 horas de extensão curricularizada**, **200 horas de atividades complementares** e **700 horas de estágio obrigatório**: 400 em Língua Portuguesa e Literatura e 300 em Língua Inglesa. Os estágios incluem observação e regência. Parte das atividades em escolas pode ocorrer **de manhã ou à tarde**, mesmo com aulas regulares à noite. O curso também prevê TCC."
+              "resposta": "O curso é presencial e noturno. A formação tem **3.992 horas** e duração mínima de **nove semestres**, com **399 horas de extensão curricularizada**, **200 horas de atividades complementares** e **700 horas de estágio obrigatório**: 400 em Língua Portuguesa e Literatura e 300 em Língua Inglesa. Os estágios incluem observação e regência. Parte das atividades em escolas pode ocorrer **de manhã ou à tarde**, mesmo com aulas regulares à noite. O curso também prevê TCC.\n\nA **Licenciatura em Letras do Campus Congonhas recebeu cinco estrelas no Guia da Faculdade 2025**, classificação máxima da avaliação realizada pelo Estadão e pela Quero Educação."
             }
           ]
         },
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Os estudantes podem participar de **projetos de pesquisa, extensão, monitoria, atividades literárias e programas de iniciação à docência**, conforme cada seleção. O **PIBID de Letras** promove contato com escolas públicas e experiências de leitura, produção textual e ensino de Português e Inglês. A formação também estimula pesquisa linguística, projetos culturais e produção de materiais didáticos."
+          "conteudo": "Os estudantes podem participar de **projetos de pesquisa, extensão, monitoria, atividades literárias e programas de iniciação à docência**, conforme cada seleção. O **PIBID de Letras** promove contato com escolas públicas e experiências de leitura, produção textual e ensino de Português e Inglês. A formação também estimula pesquisa linguística, projetos culturais e produção de materiais didáticos.\n\nEntre **26 de maio e 2 de junho de 2026**, o curso recebeu pesquisadores da **State University of New York at Cortland (SUNY Cortland)**. Na **Academic Exchange Week**, estudantes de Letras participaram de entrevistas de pesquisa sobre aprendizagem da língua inglesa, de uma roda de conversa em inglês sobre bilinguismo e formação docente e de atividades de intercâmbio acadêmico."
         },
         {
           "tipo": "texto",
@@ -8246,27 +8211,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "A **Licenciatura em Letras do Campus Congonhas recebeu cinco estrelas no Guia da Faculdade 2025**, classificação máxima da avaliação realizada pelo Estadão e pela Quero Educação.\n\nEm **3 de maio de 2025**, estudantes de Letras visitaram a **Bienal Mineira do Livro**, em Belo Horizonte, onde acompanharam uma palestra de **Conceição Evaristo**. A atividade integrou as comemorações do Dia Internacional da Língua Portuguesa e aproximou os estudantes da produção literária contemporânea e dos debates sobre representatividade."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Estudantes de Letras de Congonhas na Bienal Mineira do Livro e palestra de Conceição Evaristo · 3 de maio de 2025",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Intercâmbio acadêmico com pesquisadores dos Estados Unidos",
-          "conteudo": "Entre **26 de maio e 2 de junho de 2026**, o curso recebeu pesquisadores da **State University of New York at Cortland (SUNY Cortland)**. Na **Academic Exchange Week**, estudantes de Letras participaram de entrevistas de pesquisa sobre aprendizagem da língua inglesa, de uma roda de conversa em inglês sobre bilinguismo e formação docente e de atividades de intercâmbio acadêmico."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Academic Exchange Week com estudantes de Letras e pesquisadores da SUNY Cortland · maio e junho de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "II Semana de Letras reúne pesquisas, sarau e formação docente",
-          "conteudo": "De **30 de setembro a 3 de outubro de 2026**, o Campus Congonhas realizou a **II Semana de Letras**, com o tema *Linguagens em Diálogo*. Estudantes apresentaram **pôsteres de pesquisas, projetos de extensão, atividades do PIBID e trabalhos de disciplinas**, participaram de debates e de um **sarau com música e poesia** e realizaram visitas ao **Centro Cultural Banco do Brasil (CCBB) e à Academia Mineira de Letras**. Egressas compartilharam experiências de trabalho e continuidade dos estudos."
+          "conteudo": "De **30 de setembro a 3 de outubro de 2026**, estudantes da **Licenciatura em Letras do Campus Congonhas** apresentaram **pôsteres de pesquisas, projetos de extensão, experiências docentes, atividades do PIBID e trabalhos de disciplinas** durante a **II Semana de Letras**, com o tema *Linguagens em Diálogo*. As apresentações compartilharam a produção acadêmica dos graduandos e permitiram discutir os trabalhos com diferentes públicos."
         },
         {
           "tipo": "galeria",
@@ -8836,7 +8781,7 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Os campi **Formiga e São João Evangelista** participam do **Programa Institucional de Bolsa de Iniciação à Docência (PIBID)**, que aproxima licenciandos de escolas públicas e professores supervisores. Os estudantes também podem participar de pesquisa em Educação Matemática, projetos de extensão, atividades com softwares educacionais e desenvolvimento de materiais didáticos. A participação em bolsas e projetos depende das seleções de cada período."
+          "conteudo": "Os campi **Formiga e São João Evangelista** participam do **Programa Institucional de Bolsa de Iniciação à Docência (PIBID)**, que aproxima licenciandos de escolas públicas e professores supervisores. Os estudantes também podem participar de pesquisa em Educação Matemática, projetos de extensão, atividades com softwares educacionais e desenvolvimento de materiais didáticos. A participação em bolsas e projetos depende das seleções de cada período.\n\nEm **julho de 2026**, estudantes da **Licenciatura em Matemática do Campus Formiga** realizaram **ações de extensão em escolas da cidade**, aproximando o aprendizado da graduação do ensino de Matemática na educação básica. As atividades buscaram tornar o estudo dos conteúdos matemáticos mais dinâmico.\n\nEm **junho de 2026**, **bolsistas do PIBID do Campus Formiga** participaram do **Encontro Institucional do programa**, realizado no **Campus Bambuí**. A atividade integrou estudantes e equipes das licenciaturas em uma programação de formação e troca de experiências relacionadas à docência."
         },
         {
           "tipo": "texto",
@@ -8916,22 +8861,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **julho de 2026**, estudantes da **Licenciatura em Matemática do Campus Formiga** realizaram **ações de extensão em escolas da cidade**, aproximando o aprendizado da graduação do ensino de Matemática na educação básica. As atividades buscaram tornar o estudo dos conteúdos matemáticos mais dinâmico."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Ações de extensão de licenciandos de Matemática em escolas de Formiga · julho de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "Bolsistas compartilham experiências no encontro do PIBID",
-          "conteudo": "Em **junho de 2026**, **bolsistas do PIBID do Campus Formiga** participaram do **Encontro Institucional do programa**, realizado no **Campus Bambuí**. A atividade integrou estudantes e equipes das licenciaturas em uma programação de formação e troca de experiências relacionadas à docência."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Bolsistas do PIBID do Campus Formiga no Encontro Institucional em Bambuí · junho de 2026",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -10830,12 +10760,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em 30 de maio de 2026, estudantes do terceiro ano do Técnico em Administração Integrado do Campus Ponte Nova participaram da Mostra Sua UFMG, em Belo Horizonte, junto com estudantes de Informática. Conheceram cursos superiores, projetos, laboratórios e informações sobre formas de ingresso e assistência estudantil, em uma atividade de orientação para a continuidade dos estudos."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Visita à Mostra Sua UFMG · Ponte Nova · maio de 2026",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -12393,26 +12318,6 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **maio de 2025**, estudantes do Técnico em Automação Industrial do **Campus Betim** realizaram visitas técnicas à **Tiberina Automotive**, em Juatuba, nos dias 21 e 28. A atividade da disciplina de Manufatura Industrial permitiu observar **prensas automatizadas, robôs utilizados na troca de peças, estampagem de metais, metrologia e controle de qualidade**."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Visita técnica à Tiberina Automotive · Betim · maio de 2025",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "",
-          "conteudo": "Em **agosto de 2025**, a equipe **AutFog**, com participação de **dois estudantes de Automação Industrial e uma estudante de Química** do **Campus Betim**, participou da **68ª Jornada de Foguetes**, no Rio de Janeiro. A programação incluiu oficinas, palestras e uma visita à equipe de foguetes e nanossatélites **Supernova**, da Universidade Federal de Juiz de Fora."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Equipe AutFog na 68ª Jornada de Foguetes · Betim · agosto de 2025",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "",
           "conteudo": "Em **setembro de 2025**, uma estudante do **segundo ano de Automação Industrial do Campus Betim** participou, com duas estudantes de Química, da apresentação de pesquisa sobre **ações afirmativas e educação antirracista** nos currículos técnicos do campus, durante o Congresso Brasileiro de Pesquisadores/as Negros/as, em Ouro Preto."
         },
         {
@@ -15274,7 +15179,7 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "Os estudantes podem participar de projetos de ensino, pesquisa, extensão, visitas técnicas, monitorias e eventos científicos, conforme as atividades e seleções disponíveis em cada campus. Essas experiências podem relacionar os estudos de eletricidade a temas como energia, automação, sustentabilidade e preparação para novos estudos."
+          "conteudo": "Os estudantes podem participar de projetos de ensino, pesquisa, extensão, visitas técnicas, monitorias e eventos científicos, conforme as atividades e seleções disponíveis em cada campus. Essas experiências podem relacionar os estudos de eletricidade a temas como energia, automação, sustentabilidade e preparação para novos estudos.\n\nNo primeiro semestre de **2025**, o **Campus Ipatinga** concluiu o projeto de ensino **Preparação para o Mundo do Trabalho**, que envolveu estudantes dos cursos integrados em **Eletrotécnica e Automação Industrial** e da graduação em Engenharia Elétrica. As atividades incluíram conversas sobre carreira, processos seletivos, comunicação e trabalho em equipe."
         },
         {
           "tipo": "texto",
@@ -15379,16 +15284,6 @@
         {
           "tipo": "galeria",
           "referencia": "Projeto Suporte e homenagem a Daniel Victor · Eletrotécnica Ipatinga · 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "",
-          "conteudo": "No primeiro semestre de **2025**, o **Campus Ipatinga** concluiu o projeto de ensino **Preparação para o Mundo do Trabalho**, que envolveu estudantes dos cursos integrados em **Eletrotécnica e Automação Industrial** e da graduação em Engenharia Elétrica. As atividades incluíram conversas sobre carreira, processos seletivos, comunicação e trabalho em equipe."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Projeto Preparação para o Mundo do Trabalho · Eletrotécnica e outros cursos · Ipatinga · 2025",
           "itens": []
         },
         {
@@ -18564,16 +18459,6 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Entre **janeiro e fevereiro de 2025**, estudantes do **segundo ano de Mecatrônica**, junto a turmas de Automação Industrial e Sistemas de Energia Renovável do **Campus Ibirité**, participaram de um projeto interdisciplinar sobre a formação do povo brasileiro, com base na obra de **Darcy Ribeiro**. A atividade reuniu estudos de História, Geografia, Filosofia e Sociologia para discutir a diversidade cultural e a constituição da sociedade brasileira."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Projeto interdisciplinar sobre a formação do povo brasileiro · Ibirité · fevereiro de 2025",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "",
           "conteudo": "No **Concurso Canguru de Matemática 2026**, o **Campus Ibirité** teve três estudantes de Mecatrônica entre os premiados: **Lucas Sampaio Gouveia Tinoco**, do primeiro ano, recebeu **medalha de bronze**, enquanto **Lucas Prates Gonçalves de Sena** e **Sara Vitória Pinali Reis**, ambos do segundo ano, receberam **menções honrosas**."
         },
         {
@@ -19093,7 +18978,7 @@
         {
           "tipo": "texto",
           "titulo": "Aprendizagem prática",
-          "conteudo": "A formação relaciona a observação do ambiente com **levantamentos de campo, coleta e interpretação de dados, estudos sobre água, solos e resíduos e análises ambientais**. As disciplinas permitem aplicar procedimentos de monitoramento a situações reais. Além das **1.110 horas de disciplinas**, são exigidas **90 horas de atividades complementares**. O estágio supervisionado é opcional."
+          "conteudo": "A formação relaciona a observação do ambiente com **levantamentos de campo, coleta e interpretação de dados, estudos sobre água, solos e resíduos e análises ambientais**. As disciplinas permitem aplicar procedimentos de monitoramento a situações reais. Além das **1.110 horas de disciplinas**, são exigidas **90 horas de atividades complementares**. O estágio supervisionado é opcional.\n\nEm **15 de agosto de 2026**, estudantes da turma **N1 do Técnico em Meio Ambiente Subsequente** participaram de uma atividade de campo no **Parque Natural Municipal das Andorinhas**, em Ouro Preto. Na disciplina de **Gestão de Recursos Hídricos**, eles percorreram parte do parque e mediram a qualidade da água no **Poço do Baú** e no **Poço das Crianças**, utilizando equipamento multiparâmetro para verificar **oxigênio dissolvido, pH, temperatura e condutividade elétrica**."
         },
         {
           "tipo": "galeria",
@@ -19205,12 +19090,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **15 de agosto de 2026**, estudantes da turma **N1 do Técnico em Meio Ambiente Subsequente** participaram de uma atividade de campo no **Parque Natural Municipal das Andorinhas**, em Ouro Preto. Na disciplina de **Gestão de Recursos Hídricos**, eles percorreram parte do parque e mediram a qualidade da água no **Poço do Baú** e no **Poço das Crianças**, utilizando equipamento multiparâmetro para verificar **oxigênio dissolvido, pH, temperatura e condutividade elétrica**."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Atividade da turma N1 no Parque Natural Municipal das Andorinhas, em 15 de agosto de 2026 · Ouro Preto",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -21541,7 +21421,7 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e bolsas",
-          "conteudo": "O **Campus Betim** desenvolve projetos de **iniciação científica, extensão e divulgação de conhecimentos**. Estudantes do Técnico em Química já participaram de pesquisa em eletroquímica, estudos sobre educação antirracista e apresentação de trabalhos científicos em universidades e encontros acadêmicos. A participação em novos projetos depende da organização de cada equipe."
+          "conteudo": "O **Campus Betim** desenvolve projetos de **iniciação científica, extensão e divulgação de conhecimentos**. Estudantes do Técnico em Química já participaram de pesquisa em eletroquímica, estudos sobre educação antirracista e apresentação de trabalhos científicos em universidades e encontros acadêmicos. A participação em novos projetos depende da organização de cada equipe.\n\nEm **junho de 2026**, uma estudante do **Técnico em Química** apoiou as atividades do projeto de extensão **IF Sempre Aberto**, durante a visita de **32 estudantes do nono ano** de uma escola municipal ao Campus Betim. A programação apresentou espaços, laboratórios, cursos e experiências da formação técnica aos visitantes."
         },
         {
           "tipo": "texto",
@@ -21626,21 +21506,11 @@
         {
           "tipo": "texto",
           "titulo": "",
-          "conteudo": "Em **agosto de 2026**, uma estudante do **Técnico Integrado em Química** e um estudante de Automação Industrial representaram o **Campus Betim** na **88ª Jornada de Foguetes**. A dupla conquistou o **vice-campeonato** na turma em que competiu; ambos receberam **medalhas de ouro na Olimpíada Brasileira de Foguetes de 2026**. A participação reuniu atividades de construção e lançamento de foguetes e troca de experiências com estudantes de outras instituições."
+          "conteudo": "Em **agosto de 2026**, uma estudante do **Técnico Integrado em Química** e um estudante de Automação Industrial representaram o **Campus Betim** na **88ª Jornada de Foguetes**. A dupla conquistou o **vice-campeonato na turma 03**, resultado que também recebeu **medalha de ouro na classificação nacional**. A participação reuniu atividades de construção e lançamento de foguetes e troca de experiências com estudantes de outras instituições."
         },
         {
           "tipo": "galeria",
           "referencia": "Vice-campeonato na Jornada de Foguetes · Betim · agosto de 2026",
-          "itens": []
-        },
-        {
-          "tipo": "texto",
-          "titulo": "",
-          "conteudo": "Em **junho de 2026**, uma estudante do **Técnico em Química** apoiou as atividades do projeto de extensão **IF Sempre Aberto**, durante a visita de **32 estudantes do nono ano** de uma escola municipal ao Campus Betim. A programação apresentou espaços, laboratórios, cursos e experiências da formação técnica aos visitantes."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Projeto de extensão IF Sempre Aberto · Betim · junho de 2026",
           "itens": []
         },
         {
@@ -22147,7 +22017,7 @@
         {
           "tipo": "texto",
           "titulo": "Aprendizagem prática",
-          "conteudo": "As atividades práticas podem envolver **avaliação de riscos, uso de instrumentos de medição, análise de medidas de proteção, elaboração de documentos técnicos e estudos sobre situações de trabalho**. Em **Governador Valadares**, o curso conta com laboratório e instrumentação voltados a práticas relacionadas às Normas Regulamentadoras. Em **Ouro Preto**, o currículo inclui **105 horas de atividades complementares obrigatórias**, cumpridas por atividades aceitas pelo curso, como visitas técnicas, pesquisa, extensão, eventos ou estágio opcional. Em **Santa Luzia**, a formação exige **120 horas de estágio supervisionado ou trabalho de conclusão de curso**, conforme a opção curricular escolhida."
+          "conteudo": "As atividades práticas podem envolver **avaliação de riscos, uso de instrumentos de medição, análise de medidas de proteção, elaboração de documentos técnicos e estudos sobre situações de trabalho**. Em **Governador Valadares**, o curso conta com laboratório e instrumentação voltados a práticas relacionadas às Normas Regulamentadoras. Em **Ouro Preto**, o currículo inclui **105 horas de atividades complementares obrigatórias**, cumpridas por atividades aceitas pelo curso, como visitas técnicas, pesquisa, extensão, eventos ou estágio opcional. Em **Santa Luzia**, a formação exige **120 horas de estágio supervisionado ou trabalho de conclusão de curso**, conforme a opção curricular escolhida.\n\nEm **1º de julho de 2025**, estudantes do **Técnico em Segurança do Trabalho Subsequente do Campus Governador Valadares** participaram de uma **capacitação na Vale**, no **Dojô de Segurança**, instalado na estação ferroviária da cidade. Acompanhados pelo professor **Heitor Cardoso**, conheceram práticas de prevenção de acidentes, procedimentos seguros e trabalho em equipe. A atividade reuniu também estudantes de outros cursos do campus."
         },
         {
           "tipo": "galeria",
@@ -22288,12 +22158,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **1º de julho de 2025**, estudantes do **Técnico em Segurança do Trabalho Subsequente do Campus Governador Valadares** participaram de uma **capacitação na Vale**, no **Dojô de Segurança**, instalado na estação ferroviária da cidade. Acompanhados pelo professor **Heitor Cardoso**, conheceram práticas de prevenção de acidentes, procedimentos seguros e trabalho em equipe. A atividade reuniu também estudantes de outros cursos do campus."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Capacitação de estudantes do Técnico em Segurança do Trabalho Subsequente no Dojô de Segurança da Vale · Governador Valadares · 1º de julho de 2025",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -22580,12 +22445,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **janeiro e fevereiro de 2025**, estudantes do segundo ano de **Sistemas de Energia Renovável** participaram de um projeto interdisciplinar sobre a formação do povo brasileiro, com atividades ligadas à obra de Darcy Ribeiro. A turma visitou **Sabará**, onde conheceu construções históricas e espaços culturais, relacionando os estudos de História, Geografia, Filosofia e Sociologia ao patrimônio da cidade. O projeto envolveu também turmas de outros cursos técnicos do Campus Ibirité, com roteiros de visita diferentes."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Projeto interdisciplinar sobre a formação do povo brasileiro · visita da turma de Sistemas de Energia Renovável a Sabará · 2025",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",
@@ -22792,7 +22652,7 @@
         {
           "tipo": "texto",
           "titulo": "Pesquisa, extensão e oportunidades",
-          "conteudo": "No **Campus Bambuí**, o **Grupo de Estudos em Animais Silvestres (GEAS)**, criado por estudantes de Zootecnia, desenvolve estudos, seminários, palestras, visitas técnicas e cursos sobre conservação, nutrição, legislação e manejo de animais silvestres e exóticos. O grupo divulga suas atividades e organiza a participação de estudantes conforme sua programação."
+          "conteudo": "No **Campus Bambuí**, o **Grupo de Estudos em Animais Silvestres (GEAS)**, criado por estudantes de Zootecnia, desenvolve estudos, seminários, palestras, visitas técnicas e cursos sobre conservação, nutrição, legislação e manejo de animais silvestres e exóticos. O grupo divulga suas atividades e organiza a participação de estudantes conforme sua programação.\n\nEm **maio de 2025**, estudantes do sexto período de Zootecnia do **Campus Bambuí** participaram de uma conversa sobre extensão com dois profissionais formados no próprio curso. O encontro ocorreu na disciplina Componentes Curriculares Exclusivos de Extensão III e abordou o trabalho com produtores, escolas e comunidades, a importância de uma abordagem humanizada e as diferentes atividades de gestão em propriedades rurais."
         },
         {
           "tipo": "galeria",
@@ -22830,12 +22690,7 @@
         {
           "tipo": "texto",
           "titulo": "Experiências e conquistas dos estudantes",
-          "conteudo": "Em **maio de 2025**, estudantes do sexto período de Zootecnia do **Campus Bambuí** participaram de uma conversa sobre extensão com dois profissionais formados no próprio curso. O encontro ocorreu na disciplina Componentes Curriculares Exclusivos de Extensão III e abordou o trabalho com produtores, escolas e comunidades, a importância de uma abordagem humanizada e as diferentes atividades de gestão em propriedades rurais."
-        },
-        {
-          "tipo": "galeria",
-          "referencia": "Encontro sobre extensão com egressos de Zootecnia · Bambuí · maio de 2025",
-          "itens": []
+          "conteudo": ""
         },
         {
           "tipo": "texto",

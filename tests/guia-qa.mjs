@@ -173,13 +173,12 @@ test("F5: reconhecimentos e experiências formam uma seção única em todos os 
   }
   const get=id=>sectionText(json.courses.find(c=>c.id===id),unified);
   for(const [id,terms] of [
-    ["administracao-bacharelado",["Ouro Branco","quatro estrelas","2025"]],
     ["agronomia-bacharelado",["Informação incompleta"]],
-    ["engenharia-de-producao-bacharelado",["Diretório Acadêmico","Brazilian Journal of Production Engineering"]],
-    ["engenharia-mecanica-bacharelado",["baterias de veículos elétricos","manutenção preditiva","usinagem CNC"]]
+    ["engenharia-de-producao-bacharelado",["Diretório Acadêmico","Brazilian Journal of Production Engineering"]]
   ])for(const term of terms)assert.ok(get(id).includes(term),id+": "+term);
+  assert.equal(get("administracao-bacharelado"),"","avaliação do curso pertence à informação do campus");
   assert.equal(get("tecnico-em-edificacoes-integrado"),"","visitas didáticas não são conquistas documentadas");
-  assert.match(get("tecnico-em-administracao-integrado"),/Mostra Sua UFMG/);
+  assert.equal(get("tecnico-em-administracao-integrado"),"");
   for(const id of ["tecnico-em-logistica-subsequente","direito-bacharelado-arcos"]){
     assert.equal(get(id),"Informação incompleta",id+": uma única pendência, sem inventar conquista");
   }
@@ -814,7 +813,7 @@ test("fase 1: galeria acompanha projetos e Administração não tem link ou dest
   assert.equal(e.blocos.find(b=>b.tipo==="texto").titulo,"Técnico em Edificações");
   const tec=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
   const achievement=tec.blocos.find(b=>b.titulo==="Experiências e conquistas dos estudantes");
-  assert.match(achievement.conteudo,/Mostra Sua UFMG/);
+  assert.equal(achievement.conteudo,"");
   assert.ok(!Object.hasOwn(achievement,"validacao"));
 });
 
@@ -888,9 +887,11 @@ test("Betim: estágio e PFC específicos; ingresso sem números da edição ante
 test("Betim tem pesquisa do campus e temas de trabalhos finais sem inventar premiações", () => {
   const c=json.courses.find(x=>x.id==="engenharia-mecanica-bacharelado");
   const research=sectionText(c,"Pesquisa, extensão e oportunidades");
-  const works=sectionText(c,"Experiências e conquistas dos estudantes");
+  const works=sectionText(c,"Projetos e experiências acadêmicas");
+  assert.equal(sectionText(c,"Experiências e conquistas dos estudantes"), "");
+  assert.ok(!c.blocos.some(b=>b.tipo==="galeria"&&/Trabalhos finais e bancas/.test(b.referencia||"")));
   assert.ok(research.startsWith("Em **2026**, o **Campus Arcos**"));
-  assert.ok(works.startsWith("Em **Betim**"));
+  assert.ok(works.includes("Em **Betim**"));
   assert.match(research,/Em \*\*Betim\*\*[\s\S]*impressão 3D/);
   assert.doesNotMatch(research,/Outro projeto tratou do ensino de química|ensino de química aplicado/i);
   assert.match(works,/Em \*\*Betim\*\*[\s\S]*baterias de veículos elétricos/);
@@ -919,11 +920,14 @@ test("FAQ não repete duração e matérias que já aparecem nos dados básicos"
   const c=json.courses.find(x=>x.id==="administracao-bacharelado");
   const answer=c.blocos.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.find(x=>x.pergunta==="Campus Ouro Branco").resposta;
   assert.match(answer,/8% da carga horária a distância/);
-  assert.doesNotMatch(answer,/Guia da Faculdade|quatro estrelas/);
+  assert.match(answer,/Campus Ouro Branco.*quatro estrelas no Guia da Faculdade de 2025/);
   const local=c.blocos.find(b=>b.tipo==="faq"&&b.titulo==="Informações dos campi");
   assert.doesNotMatch(local.itens.find(x=>x.pergunta==="Campus Formiga").resposta,/conceito 4|MEC/);
   const experiences=sectionText(c,"Experiências e conquistas dos estudantes");
-  assert.match(experiences,/Ouro Branco.*quatro estrelas.*2025/);
+  assert.equal(experiences,"");
+  for(const item of local.itens.filter(x=>x.pergunta!=="Campus Ouro Branco")){
+    assert.doesNotMatch(item.resposta,/quatro estrelas|Guia da Faculdade de 2025/,item.pergunta);
+  }
   const copies=c.blocos.flatMap(b=>[b.conteudo||"",...(b.itens||[]).map(i=>i.resposta||"")]).join("\n");
   assert.equal(copies.split("quatro estrelas").length-1,1,"reconhecimento de 2025 citado apenas uma vez");
   assert.doesNotMatch(experiences,/conceito 4|Formiga/,"sem usar nota do MEC de ano desconhecido como conquista recente");
@@ -1456,19 +1460,15 @@ test("F9.4: Edificações mantém a seção sem conquistar resultados de visitas
   assert.doesNotMatch(JSON.stringify(c.blocos),/instalações da Vale|Usina Hidrelétrica de Baguari|shopping no bairro Bauxita/);
 });
 
-test("F3.8: Administração Integrado traz NEPSO e Mostra UFMG com galerias por experiência", () => {
+test("F9.4: Administração Integrado retira visita UFMG por decisão editorial", () => {
   const c=json.courses.find(c=>c.id==="tecnico-em-administracao-integrado");
-  const proj=c.blocos.findIndex(b=>b.titulo==="Projetos e experiências");
-  assert.equal(c.blocos[proj+1].referencia,"Visita à Expo Favela Minas · Sabará");
-  assert.match(c.blocos[proj+2].conteudo,/programa Nossa Escola Pesquisa Sua Opinião \(NEPSO\)/);
-  assert.equal(c.blocos[proj+3].tipo,"galeria");
-  assert.match(c.blocos[proj+3].referencia,/NEPSO/);
-  const i=c.blocos.findIndex(b=>b.titulo==="Experiências e conquistas dos estudantes");
-  assert.match(c.blocos[i].conteudo,/30 de maio de 2026.*Campus Ponte Nova/);
-  assert.match(c.blocos[i].conteudo,/Mostra Sua UFMG/);
-  assert.match(c.blocos[i+1].referencia,/Mostra Sua UFMG/);
-  assert.equal(c.blocos[i+1].tipo,"galeria");
-  assert.doesNotMatch(c.blocos[proj+2].conteudo,/resultados publicados|pesquisa concluída|questionários aplicados/);
+  const practice=sectionText(c,"Projetos e experiências");
+  assert.match(practice,/programa Nossa Escola Pesquisa Sua Opinião \(NEPSO\)/);
+  assert.doesNotMatch(JSON.stringify(c.blocos),/Mostra Sua UFMG/);
+  assert.doesNotMatch(practice,/resultados publicados|pesquisa concluída|questionários aplicados/);
+  assert.equal(sectionText(c,"Experiências e conquistas dos estudantes"),"");
+  assert.equal(c.blocos.filter(b=>b.tipo==="texto"&&/Mostra Sua UFMG/.test(b.conteudo||"")).length,0);
+  assert.ok(!c.blocos.some(b=>b.tipo==="galeria"&&/Mostra Sua UFMG/.test(b.referencia||"")));
 });
 
 test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promessa de vaga", () => {
@@ -1495,7 +1495,7 @@ test("F3.8: oportunidades de pesquisa recentes são datadas e não viram promess
   }
 });
 
-test("F7.1: Zootecnia Bambuí integra catálogo com conteúdos e duas galerias", () => {
+test("F9.4: Zootecnia preserva conversa curricular fora de conquistas", () => {
   assert.ok(json.courses.length>=9,"Zootecnia e oito pilotos preservados");
   const c=json.courses.find(x=>x.id==="zootecnia-bacharelado");
   assert.ok(c,"Zootecnia publicada como roteiro em validação");
@@ -1505,9 +1505,12 @@ test("F7.1: Zootecnia Bambuí integra catálogo com conteúdos e duas galerias",
   const texts=c.blocos.filter(x=>x.tipo==="texto");
   assert.ok(texts.some(x=>x.titulo==="Pesquisa, extensão e oportunidades"&&x.conteudo.includes("GEAS")));
   const xp=texts.find(x=>x.titulo==="Experiências e conquistas dos estudantes");
-  assert.ok(xp&&xp.conteudo.includes("maio de 2025")&&xp.conteudo.includes("sexto período"));
+  assert.equal(xp.conteudo, "");
+  const opportunities=sectionText(c,"Pesquisa, extensão e oportunidades");
+  assert.match(opportunities,/maio de 2025/);
+  assert.match(opportunities,/sexto período/);
+  assert.ok(!c.blocos.some(b=>b.tipo==="galeria"&&/Encontro sobre extensão com egressos/.test(b.referencia||"")));
   const gal=c.blocos.filter(x=>x.tipo==="galeria");
-  assert.equal(gal.length,2);
   for(const g of gal) assert.deepEqual(Array.from(g.itens),[]);
   for(const b of texts) assert.doesNotMatch(b.conteudo||"",/Segundo o site|a apresentação institucional registra|a coordenação deve confirmar/i);
   const campiTable=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
@@ -1799,19 +1802,24 @@ test("F7.2: Técnico em Química de Betim tem pesquisas comprovadas e estágio n
   const campus=c.blocos.find(x=>x.tipo==="tabela"&&x.colunas.includes("E-mail da coordenação"));
   assert.deepEqual(campus.linhas[0],["Betim","Manhã e tarde","Presencial","coord.tec.quimica.betim@ifmg.edu.br"]);
   const a=c.blocos.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
-  assert.match(c.blocos[a].conteudo,/outubro de 2025/);
-  assert.match(c.blocos[a].conteudo,/Scilab/);
-  assert.equal(c.blocos[a+1].tipo,"galeria");
-  assert.match(c.blocos[a+2].conteudo,/setembro de 2025/);
-  assert.match(c.blocos[a+2].conteudo,/educação antirracista/);
-  assert.equal(c.blocos[a+3].tipo,"galeria");
-  assert.match(c.blocos[a+4].conteudo,/agosto de 2026/);
-  assert.match(c.blocos[a+4].conteudo,/vice-campeonato/);
-  assert.equal(c.blocos[a+5].tipo,"galeria");
-  assert.match(c.blocos[a+6].conteudo,/junho de 2026/);
-  assert.match(c.blocos[a+6].conteudo,/IF Sempre Aberto/);
-  assert.equal(c.blocos[a+7].tipo,"galeria");
-  assert.equal(c.blocos.filter(x=>x.tipo==="galeria").length,5);
+  const end=c.blocos.findIndex((x,i)=>i>a&&x.titulo==="Perguntas frequentes");
+  const relatos=c.blocos.slice(a,end).filter(x=>x.tipo==="texto");
+  assert.equal(relatos.length,3);
+  assert.match(relatos[0].conteudo,/outubro de 2025.*Campus Betim/);
+  assert.match(relatos[0].conteudo,/Scilab/);
+  assert.match(relatos[1].conteudo,/setembro de 2025.*educação antirracista/);
+  assert.match(relatos[1].conteudo,/duas estudantes.*Química/);
+  assert.match(relatos[1].conteudo,/uma estudante de Automação Industrial/);
+  assert.match(relatos[2].conteudo,/agosto de 2026.*88ª Jornada de Foguetes/);
+  assert.match(relatos[2].conteudo,/vice-campeonato na turma 03/);
+  assert.match(relatos[2].conteudo,/medalha de ouro na classificação nacional/);
+  assert.doesNotMatch(relatos.map(x=>x.conteudo).join(" "),/IF Sempre Aberto|Olimpíada Brasileira de Foguetes/);
+  const extensao=c.blocos.find(x=>x.titulo==="Pesquisa, extensão e bolsas");
+  assert.match(extensao.conteudo,/junho de 2026.*Técnico em Química.*IF Sempre Aberto/);
+  assert.match(extensao.conteudo,/32 estudantes do nono ano/);
+  assert.equal(c.blocos.filter(x=>String(x.conteudo||"").includes("IF Sempre Aberto")).length,1);
+  assert.ok(!c.blocos.some(x=>x.tipo==="galeria"&&/IF Sempre Aberto/.test(x.referencia||"")));
+  assert.equal(c.blocos.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
   const op=c.blocos.findIndex(x=>x.titulo==="Continue seus estudos no IFMG");
   assert.deepEqual(c.blocos.slice(op+1,op+5).map(x=>x.titulo||x.tipo),["Graduação","tabela","Pós-graduação","tabela"]);
   const faq=c.blocos.find(x=>x.tipo==="faq"&&!x.titulo);
@@ -1825,7 +1833,7 @@ test("F7.2: Técnico em Química de Betim tem pesquisas comprovadas e estágio n
   for(const k of ["validacao","pendencias","instrucao"]) assert.ok(!Object.hasOwn(c,k));
 });
 
-test("F7.2: Mecatrônica Ibirité mantém curso integrado e três experiências comprovadas", () => {
+test("F9.4: Mecatrônica Ibirité preserva premiações verificadas sem relato curricular como conquista", () => {
   assert.ok(json.courses.length>=18,"Mecatrônica e cursos anteriores preservados");
   const c=json.courses.find(x=>x.id==="tecnico-em-mecatronica-integrado");
   assert.ok(c);
@@ -1843,16 +1851,15 @@ test("F7.2: Mecatrônica Ibirité mantém curso integrado e três experiências 
   assert.deepEqual(loc.linhas[0],["Ibirité","Manhã e tarde","Presencial (8,3% EaD)","mecatronica.ibirite@ifmg.edu.br"]);
   const lab=c.blocos.findIndex(x=>x.titulo==="Aprendizagem prática e laboratórios");
   assert.match(c.blocos[lab].conteudo,/Automação, Eletrônica, Circuitos Elétricos/);
-  assert.equal(c.blocos[lab+1].tipo,"galeria");
   const i=c.blocos.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
-  assert.match(c.blocos[i].conteudo,/janeiro e fevereiro de 2025/);
-  assert.match(c.blocos[i].conteudo,/Darcy Ribeiro/);
-  assert.equal(c.blocos[i+1].tipo,"galeria");
-  assert.match(c.blocos[i+2].conteudo,/Canguru de Matemática 2026/);
-  assert.match(c.blocos[i+2].conteudo,/medalha de bronze/);
-  assert.match(c.blocos[i+2].conteudo,/menções honrosas/);
-  assert.equal(c.blocos[i+3].tipo,"galeria");
-  assert.equal(c.blocos.filter(x=>x.tipo==="galeria").length,3);
+  const end=c.blocos.findIndex((x,k)=>k>i&&x.titulo==="Perguntas frequentes");
+  const relatos=c.blocos.slice(i,end).filter(x=>x.tipo==="texto");
+  assert.equal(relatos.length,1);
+  assert.match(relatos[0].conteudo,/Canguru de Matemática 2026.*Campus Ibirité/);
+  assert.match(relatos[0].conteudo,/Lucas Sampaio Gouveia Tinoco.*medalha de bronze/);
+  assert.match(relatos[0].conteudo,/Lucas Prates Gonçalves de Sena.*Sara Vitória Pinali Reis.*menções honrosas/);
+  assert.doesNotMatch(JSON.stringify(c),/Darcy Ribeiro|formação do povo brasileiro|Enem 2025|785,4/);
+  assert.equal(c.blocos.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
   const stage=c.blocos.find(x=>x.tipo==="faq"&&!x.titulo).itens.find(x=>x.pergunta==="O estágio e o TCC são obrigatórios?");
   assert.match(stage.resposta,/não obrigatório/);
   assert.match(stage.resposta,/terceiro semestre/);
@@ -1893,18 +1900,23 @@ test("F7.2: Automação Industrial integrado consolida cinco campi e experiênci
   assert.deepEqual(c.blocos.slice(cont+1,cont+5).map(x=>x.titulo||x.tipo),["Graduação","tabela","Pós-graduação","tabela"]);
   assert.deepEqual(c.blocos[cont+2].linhas.map(x=>x[0]),["Engenharia de Controle e Automação","Engenharia Elétrica","Engenharia Mecânica"]);
   const j=c.blocos.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
-  const events=c.blocos.slice(j,j+16);
-  assert.equal(events.length,16);
-  const evidence=["Tiberina Automotive","68ª Jornada de Foguetes","educação antirracista","88ª Jornada de Foguetes","Menção Oral","exposição de robótica","OBMEP","Bolsas de Excelência Usiminas"];
+  const end=c.blocos.findIndex((x,i)=>i>j&&x.titulo==="Perguntas frequentes");
+  const events=c.blocos.slice(j,end).filter(x=>x.tipo==="texto");
+  assert.equal(events.length,6);
+  const evidence=["educação antirracista","88ª Jornada de Foguetes","Menção Oral","exposição de robótica","OBMEP","Bolsas de Excelência Usiminas"];
   evidence.forEach((term,i)=>{
-    assert.equal(events[2*i].tipo,"texto");
-    assert.ok(events[2*i].conteudo.includes(term),term);
-    assert.equal(events[2*i+1].tipo,"galeria",term+" precisa de galeria própria");
+    assert.ok(events[i].conteudo.includes(term),term);
   });
   assert.match(events[0].conteudo,/Betim/);
-  assert.match(events[10].conteudo,/Ouro Preto/);
-  assert.match(events[12].conteudo,/Ipatinga/);
-  assert.equal(c.blocos.filter(x=>x.tipo==="galeria").length,9);
+  assert.match(events[0].conteudo,/duas estudantes de Química/);
+  assert.match(events[1].conteudo,/vice-campeonato.*turma 03/);
+  assert.match(events[2].conteudo,/Brayan Thessalonico Flaubert/);
+  assert.match(events[3].conteudo,/Ouro Preto/);
+  assert.match(events[4].conteudo,/Ipatinga.*medalha de prata/);
+  assert.match(events[5].conteudo,/Automação Industrial e Eletrotécnica.*50 premiados/);
+  assert.doesNotMatch(JSON.stringify(c),/Tiberina Automotive|68ª Jornada de Foguetes|AutFog|Supernova/);
+  assert.equal(c.blocos.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
+  assert.ok(c.blocos.some(x=>x.titulo==="Aprendizagem prática"&&/programação, montagem, medição/.test(x.conteudo)));
   const faq=c.blocos.find(x=>x.tipo==="faq"&&!x.titulo);
   const stage=faq.itens.find(x=>x.pergunta.includes("estágio"));
   assert.match(stage.resposta,/No \*\*Campus Betim\*\*/);

@@ -13,10 +13,13 @@ test("F7.19: Sistemas de Energia Renovável integrado Ibirité usa PPC 2026 e of
  const f=b.find(x=>x.tipo==="faq"&&!x.titulo);assert.ok(f.itens.some(x=>/estágio obrigatório/.test(x.pergunta)&&/não obrigatório/.test(x.resposta)));
  assert.ok(f.itens.some(x=>/TCC/.test(x.pergunta)&&/Trabalho Prático Final obrigatório/.test(x.resposta)));
 });
-test("F7.19: relato de 2025 tem galeria própria, sem atribuir prêmios de outros cursos",()=>{
- const gals=b.map((x,i)=>x.tipo==="galeria"?{...x,i}:null).filter(Boolean);assert.equal(gals.length,2);
- assert.ok(gals.every(x=>x.itens.length===0&&b[x.i-1].tipo==="texto"));assert.ok(gals[1].referencia.includes("Sabará"));
- const e=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");assert.match(b[e].conteudo,/janeiro e fevereiro de 2025/);assert.match(b[e].conteudo,/Sabará/);assert.equal(b[e+1].tipo,"galeria");
+test("F9.4: visita curricular não preenche conquistas nem gera tarefa de galeria",()=>{
+ const e=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");assert.ok(e>0);
+ assert.equal(b[e].conteudo,"");assert.equal(b[e+1].titulo,"Perguntas frequentes");
+ assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
+ assert.ok(!b.some(x=>x.tipo==="galeria"&&/Sabará|Darcy|formação do povo brasileiro/i.test(x.referencia||"")));
+ assert.ok(!JSON.stringify(c).includes("Darcy Ribeiro"));
+ assert.ok(b.some(x=>x.titulo==="Aprendizagem prática"&&/Trabalho Prático Final de 50 horas/.test(x.conteudo)));
  assert.ok(!JSON.stringify(c).includes("Canguru")&&!JSON.stringify(c).includes("Auditoria privada"));
  assert.ok(b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi").itens.length===1);
  const sorted=[...data.courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR"));

@@ -22,20 +22,21 @@ test("F7.30: três campi distintos, turnos, PPCs e contatos",()=>{
  assert.match(loc.itens[2].resposta,/120 horas/);
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
-test("F9.4: quatro resultados estudantis próprios, sem semana genérica de Ipatinga",()=>{
+test("F9.4: preserva projetos, extensão e pesquisa sem visita curricular como conquista",()=>{
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
  assert.ok(i>0);
- for(const n of [i,i+2,i+4,i+6]){
-   assert.equal(b[n].tipo,"texto");
-   assert.equal(b[n+1].tipo,"galeria");
-   assert.deepEqual(b[n+1].itens,[]);
- }
- assert.match(b[i].conteudo,/Cemig/);
- assert.match(b[i+2].conteudo,/COBENGE/);
- assert.match(b[i+4].conteudo,/junho de 2026/);
- assert.match(b[i+6].conteudo,/Bristol/);
- assert.equal(b[i+8].titulo,"Perguntas frequentes");
- assert.equal(b.filter(x=>x.tipo==="galeria").length,7);
+ const end=b.findIndex((x,n)=>n>i&&x.titulo==="Perguntas frequentes");
+ const relatos=b.slice(i,end).filter(x=>x.tipo==="texto");
+ assert.equal(relatos.length,3);
+ assert.match(relatos[0].conteudo,/Engenharia Elétrica de Formiga.*COBENGE/);
+ assert.match(relatos[0].conteudo,/Iluminando o Saber/);
+ assert.match(relatos[1].conteudo,/19 de junho de 2026.*Campus Ipatinga/);
+ assert.match(relatos[1].conteudo,/9º ano de escolas públicas/);
+ assert.match(relatos[2].conteudo,/egressos.*Campus Itabirito/);
+ assert.match(relatos[2].conteudo,/Bristol/);
+ assert.ok(!b.some(x=>x.tipo==="galeria"&&/Cemig|Centro de Operações da Distribuição/i.test(x.referencia||"")));
+ assert.doesNotMatch(JSON.stringify(c),/Cemig|CEMIG/);
+ assert.ok(b.some(x=>x.titulo==="Atividades práticas no Campus Formiga"&&/laboratórios/.test(x.conteudo)));
  assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
  assert.doesNotMatch(JSON.stringify(c),/Semana da Engenharia Elétrica em Ipatinga|Semana da Engenharia Elétrica · Campus Ipatinga/);
  const sorted=[...courses].sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR",{sensitivity:"base",numeric:true})||String(a.tipo||"").localeCompare(String(b.tipo||""),"pt-BR")||a.id.localeCompare(b.id,"pt-BR"));

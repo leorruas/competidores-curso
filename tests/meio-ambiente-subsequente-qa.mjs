@@ -13,7 +13,6 @@ test("F7.51: Subsequentemente distinto de Integrado, PPC vigente março 2024",()
  assert.equal(c.tipo,"Subsequente");
  assert.deepEqual(c.campi,["Ouro Preto"]);
  assert.ok(data.courses.some(x=>x.id==="tecnico-em-meio-ambiente-integrado"&&x.tipo==="Integrado"));
- assert.equal(b.length,24);
  assert.deepEqual(validarEstruturaCurso(c),[]);
  assert.equal(campo("Modalidade"),"Presencial");
  assert.equal(campo("Turno"),undefined);
@@ -23,21 +22,21 @@ test("F7.51: Subsequentemente distinto de Integrado, PPC vigente março 2024",()
  assert.equal(campo("Trabalho de Conclusão de Curso"),"Não obrigatório");
  assert.equal(campo("E-mail da coordenação"),undefined);
 });
-test("F7.51: atividade de campo da turma N1 é seguida de galeria própria",()=>{
+test("F9.4: medições da turma N1 ficam na aprendizagem prática sem conquista artificial",()=>{
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
  assert.ok(i>0);
- assert.match(b[i].conteudo,/15 de agosto de 2026/);
- assert.match(b[i].conteudo,/turma \*\*N1 do Técnico em Meio Ambiente Subsequente\*\*/);
- assert.match(b[i].conteudo,/Parque Natural Municipal das Andorinhas/);
- assert.match(b[i].conteudo,/Poço do Baú/);
- assert.match(b[i].conteudo,/Poço das Crianças/);
- assert.match(b[i].conteudo,/pH/);
- assert.equal(b[i+1].tipo,"galeria");
- const gs=b.filter(x=>x.tipo==="galeria");
- assert.equal(gs.length,2);
- assert.ok(gs.every(x=>x.itens.length===0));
- assert.equal(new Set(gs.map(x=>x.referencia)).size,2);
- assert.equal(b[b.indexOf(gs[0])-1].titulo,"Aprendizagem prática");
+ assert.equal(b[i].conteudo,"");
+ assert.equal(b[i+1].titulo,"Perguntas frequentes");
+ const pratica=txt("Aprendizagem prática").conteudo;
+ assert.match(pratica,/15 de agosto de 2026/);
+ assert.match(pratica,/turma \*\*N1 do Técnico em Meio Ambiente Subsequente\*\*/);
+ assert.match(pratica,/Parque Natural Municipal das Andorinhas/);
+ assert.match(pratica,/Poço do Baú/);
+ assert.match(pratica,/Poço das Crianças/);
+ assert.match(pratica,/oxigênio dissolvido, pH, temperatura e condutividade elétrica/);
+ assert.equal(b.filter(x=>String(x.conteudo||"").includes("Parque Natural Municipal das Andorinhas")).length,1);
+ assert.ok(!b.some(x=>x.tipo==="galeria"&&/turma N1|Parque Natural Municipal das Andorinhas/.test(x.referencia||"")));
+ assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
 });
 test("F7.51: estágio opcional, 90h de AC e fronteira privada segura",()=>{
  const faq=b.find(x=>x.tipo==="faq"&&!x.titulo).itens;

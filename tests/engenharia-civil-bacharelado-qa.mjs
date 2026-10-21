@@ -14,13 +14,21 @@ test("F7.28 três ofertas locais e currículos distintos",()=>{
  assert.match(f.itens[2].resposta,/180 horas de estágio/);
  assert.deepEqual(b.slice(-2).map(x=>x.titulo),["Forma de ingresso","Mundo do Trabalho"]);
 });
-test("F9.4: avaliação e Destaque Acadêmico mantidos, sem seleção de monitores",()=>{
+test("F9.4: avaliação do curso fica em GV e Destaque Acadêmico em conquistas de Piumhi",()=>{
  const i=b.findIndex(x=>x.titulo==="Experiências e conquistas dos estudantes");
  assert.ok(i>0);
- for(const n of [i,i+2]){assert.equal(b[n].tipo,"texto");assert.equal(b[n+1].tipo,"galeria");assert.deepEqual(b[n+1].itens,[]);}
- assert.match(b[i].conteudo,/2026/);
- assert.match(b[i+2].conteudo,/Destaque Acadêmico/);
- assert.equal(b[i+4].titulo,"Perguntas frequentes");
- assert.equal(b.filter(x=>x.tipo==="galeria").length,5);
+ const end=b.findIndex((x,k)=>k>i&&x.titulo==="Perguntas frequentes");
+ const relatos=b.slice(i,end).filter(x=>x.tipo==="texto");
+ assert.equal(relatos.length,1);
+ assert.match(relatos[0].conteudo,/2025.*dois estudantes de Engenharia Civil do Campus Piumhi.*Destaque Acadêmico/);
+ assert.doesNotMatch(relatos[0].conteudo,/conceito 4|MEC|4,29|Enade/);
+ const local=b.find(x=>x.tipo==="faq"&&x.titulo==="Informações dos campi");
+ const gv=local.itens.find(x=>x.pergunta==="Campus Governador Valadares");
+ assert.match(gv.resposta,/31 de agosto e 2 de setembro de 2026.*Campus Governador Valadares.*conceito 4.*4,29/);
+ for(const item of local.itens.filter(x=>x!==gv))assert.doesNotMatch(item.resposta,/conceito 4|4,29/,item.pergunta);
+ assert.equal(b.filter(x=>x.titulo==="Experiências e conquistas dos estudantes").length,1);
+ assert.ok(!b.some(x=>x.tipo==="galeria"&&/conceito 4/.test(x.referencia||"")));
+ const textos=b.flatMap(x=>[x.conteudo||"",...(x.itens||[]).map(y=>y.resposta||"")]).join("\n");
+ assert.equal(textos.split("4,29").length-1,1);
  assert.doesNotMatch(JSON.stringify(c),/selecionados para monitoria|Seleção de monitores bolsistas em Cálculo I/);
 });
